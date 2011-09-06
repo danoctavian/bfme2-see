@@ -1,0 +1,183 @@
+SCRIPT:TIMER
+"Anti lag"
+End
+
+SCRIPT:HEADS_ON_ROGASH
+"Rogash Head total:"
+End
+
+SCRIPT:GUNDABAD_OBJ_1
+"Prevent the Orc Chieftains from winning by collecting 300 Goblin heads"
+End
+
+SCRIPT:GUNDABAD_OBJ_2
+"Rogash Must Survive"
+End
+
+SCRIPT:GUNDABAD_OBJ_3
+"Rogash must break 3 Goblin Head piles in the Orc camps"
+End
+
+SCRIPT:GUNDABAD_OBJ_5
+"Bonus: Dominate a Snow Troll"
+End
+
+SCRIPT:GUNDABAD_OBJ_6
+"Bonus: Destroy all of the Goblin Battle Towers"
+End
+
+SCRIPT:ORC_SPOT_ANG_1
+"There they are! Kill!"
+End
+
+SCRIPT:GUN_INTRO_1
+"ROGASH: Speak."
+End
+
+SCRIPT:GUN_INTRO_5
+"DARK RANGER: The orcs are engaged in a competition to elect a new leader."
+End
+
+SCRIPT:GUN_INTRO_8
+"DARK RANGER: The first chieftain to kill 250 goblins becomes the new Headman of Gundabad."
+End
+
+SCRIPT:GUN_INTRO_2
+"DARK RANGER: The chieftains are spread throughout the area killing goblins and each other."
+End
+
+SCRIPT:GUN_INTRO_9
+"DARK RANGER: Some of the leaders have already been eliminated, by both treachery and goblin ambushes."
+End
+
+SCRIPT:GUN_INTRO_3
+"DARK RANGER: It seems the goblins don't like being hunted for sport."
+End
+
+SCRIPT:GUN_INTRO_4
+"ROGASH: Done well. Return unit, look more. I call when needed."
+End
+
+SCRIPT:GUN_INTRO_6
+"DARK RANGER: I obey."
+End
+
+SCRIPT:GUN_INTRO_10
+"If we kill 300 Goblins, none of the Orcs can win."
+End
+
+SCRIPT:GUN_INTRO_11
+"And as per your orders, reinforcements await your summons. You need only light the signal fire and they will come."
+End
+
+SCRIPT:GUN_INTRO_7
+"ROGASH: Return; tell master that orcs be his soon. You stay. We kill goblins, make game ours."
+End
+
+SCRIPT:TROLL_TO_BIG
+"Run! There's better hunting elsewhere!"
+End
+
+SCRIPT:GUN_END_01
+"(raised Voices and Arguing)"
+End
+
+SCRIPT:GUN_END_02
+"ORC CHIEFTAINS: No one has enough. I have the most...No! I should lead!... Bah! You could never lead!...If not me, who then?"
+End
+
+SCRIPT:GUN_END_03
+"ROGASH: Strongest Leads."
+End
+
+SCRIPT:GUN_END_04
+"ORC CHIEFTAIN: Gundabad will never follow a half-troll!"
+End
+
+SCRIPT:GUN_END_05
+"ROGASH: Not me. Dark King."
+End
+
+SCRIPT:GOBLIN_TOWERS_01
+"Those towers might have archers in them. Destroy the towers to get them out!"
+End
+
+SCRIPT:WARG_ATTACK_01
+"The half-troll is coming this way. Don't let him kill any more goblins. Stop Him!"
+End
+
+SCRIPT:GOB_CAMP_2_RUN
+"RUN! Then let the spiderlings take care of them!"
+End
+
+SCRIPT:SNOW_TROLLS_SEEN
+"Those snow trolls would be welcome in our ranks. Use Rogash's Dominate Troll power to take them over."
+End
+
+SCRIPT:GUN_OBJECTIVE_BOX
+"You must kill at least 300 goblins to upset the competition."
+End
+
+SCRIPT:GUN_RUNAWAY_GOBS
+"What's that! Back to the camp! RUN!"
+End
+
+SCRIPT:ALL_TOWERS_GONE
+"All of the Battle Towers have been destroyed."
+End
+
+SCRIPT:TROLL_OBJECTIVE_COMPLETE
+"Bonus Objective: Dominate Troll Completed"
+End
+
+SCRIPT:GUNDABAD_ORC_AMBUSH_01
+"Now you die, half-troll!"
+End
+
+SCRIPT:GOBLIN_AMBUSH
+"More for the SLAUGHTER!"
+End
+
+SCRIPT:ORC_CHIEF_02_DEAD
+"An Orc Chieftain has been removed from the competition."
+End
+
+SCRIPT:GOBBO_CAMP_5_SEE
+"Here they come! Get them!"
+End
+
+SCRIPT:GUNDABAD_ORC_AMBUSH
+"The intruder is here! Kill them! Kill the goblins!"
+End
+
+SCRIPT:2ND_WARG_AMBUSH
+"The Intruders are here! Kill them!"
+End
+
+SCRIPT:KILL_THE_HEAD_PILES
+"These must be the heads the Orcs have already collected. Crush them and any others you may find."
+End
+
+SCRIPT:GOBLIN_Highway_AMBUSH
+"Get them!"
+End
+
+SCRIPT:RANGERS_ARRIVE
+"Commander - just south of here lies a large goblin camp, well defended by towers and troops."
+End
+
+SCRIPT:GUNDABAD_HEADPILES_DESTROYED
+"All Head Piles Destroyed"
+End
+
+SCRIPT:GUNDABAD_SIGNALFIRE_REMINDER
+"Light The Signal Fire to summon Reinforcements."
+End
+
+SCRIPT:GUNDABAD_OBJ_7
+"Bonus: Light The Signal Fire"
+End
+
+SCRIPT:GUNDABAD_FORCES_ARRIVE
+"Your forces will be here soon."
+End

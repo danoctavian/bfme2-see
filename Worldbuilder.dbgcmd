@@ -1,0 +1,4 @@
+debug.errors -
+debug.add c - *
+debug.add a - *
+debug.add l - *

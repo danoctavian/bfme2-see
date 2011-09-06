@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://www.pogoalpha.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[Под знаменем Короля-чародея™]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[РЕГИСТРАЦИЯ]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[ОК]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[ОТМЕНА]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[ПОВТОРИТЬ ПОПЫТКУ]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[ЗАКРЫТЬ]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[ВЫХОД]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[ЗАВЕРШИТЬ ПОЗЖЕ]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[ПОКА НЕ НАДО]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[ЗАРЕГИСТРИРОВАТЬ]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[ДА]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[НЕТ]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[НАЗАД]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[ДАЛЕЕ]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[НАЗАД]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[ГОТОВО]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>Для регистрации требуется соединение с Интернетом.</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[Если соединение не установлено, установите его сейчас.  После этого щелкните на кнопке <b>''Далее''</b>.<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Что делать, если нет доступа в Интернет?</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>Для подтверждения регистрации и доступа к специальным предложениям требуется соединение с Интернетом.</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[Если соединение не установлено, установите его сейчас.  После этого щелкните на кнопке <b>''Далее''</b>.<BR><BR>]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Что делать, если нет доступа в Интернет?</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>Установка связи с EA... </b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>Процесс может занять некоторое время. Просим вас подождать.</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>Соединение установлено.</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>Подготовка к регистрации…</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>Не удалось установить связь с EA</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[Не удалось установить связь с системой регистрации продуктов EA. Для регистрации требуется соединение с Интернетом. Если оно не установлено, установите его сейчас.]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[Когда соединение будет установлено, щелкните на кнопке <b>"Повторить попытку"</B>.]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Что делать, если эта ошибка повторилась несколько раз?</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>Для регистрации необходимо соединение с Интернетом.</b> Регистрация не является обязательной и не требуется для запуска игры. Если же вы сами хотите пройти ее, но не можете установить соединение с системой регистрации продуктов EA, предпримите следующие действия:]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[Убедитесь, что соединение с Интернетом функционирует.]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[Обратитесь в службу технической поддержки, реквизиты которой приводятся в Руководстве пользователя игры.]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[Посетите веб-сайт <font color="#333399"><a href="http://www.eagamereg.com"><u>www.eagamereg.com</u></a> и заполните регистрационную анкету.</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>Установка связи с EA</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[Программа устанавливает связь с системой регистрации продуктов EA. Этот процесс может занять некоторое время. Просим вас подождать.]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>Нет доступа в Интернет? Не беда!</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[Игра "{client:game-name}" может функционировать и без регистрации. Если же вам понадобится обратиться в службу технической поддержки, вы сможете зарегистрировать игру по телефону. Реквизиты службы технической поддержки приведены в Руководстве пользователя игры.<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[Надеемся, что игра вам понравится!]]></message>
+         <message id="NOINTERNET-4"><![CDATA[Electronic Arts]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>Вы действительно хотите выйти?</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>Отказавшись от регистрации, вы не  получите:</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[<li>Выгодные специальные предложения</li>]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[<li>Привилегированную техническую поддержку</li>]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>Эксклюзивную информацию об играх EA</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>Совет или секретный код для этой игры</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>Зарегистрируйтесь в ближайшее время!</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>Эта версия игры "{client:game-name}" не подлежит регистрации.</b> Игра может функционировать и без регистрации. Если же вы интересуетесь играми нашей компании и хотите подписаться на рассылку новостей, посетите веб-сайт <font color="#333399"><a href="http://www.ea.com"><u>www.ea.com</u></a></font>.<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>Получите бесплатный совет или секретный код для этой игры!</b> <BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>Зарегистрировав* свою копию игры "{client:game-name}", вы получите:</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>Совет или секретный код для этой игры</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>Эксклюзивную информацию об играх EA</li>]]></message>
+         <message id="START1A-5"><![CDATA[<li>Привилегированную техническую поддержку</li>]]></message>
+         <message id="START1A-6"><![CDATA[<li>Выгодные специальные предложения</li><BR><BR><i>*Регистрация проходит на английском языке</i>]]></message>
+         <message id="START1B-1"><![CDATA[<b>Вы уже зарегистрировали игру "{client:game-name}".</b>]]></message>
+         <message id="START1B-2"><![CDATA[Вы хотите изменить регистрационную информацию или ответить на дополнительные вопросы для получения доступа к специальным предложениям?]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[<font face="Arial Bold, Arial">]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[</font>]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

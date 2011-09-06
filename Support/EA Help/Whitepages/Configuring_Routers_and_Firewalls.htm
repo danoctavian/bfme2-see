@@ -1,0 +1,300 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Configuring Routers and Firewalls</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="../default_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../default.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js"></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Online Connectivity and Performance Troubleshooting\nConfiguring Routers and Firewalls");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(0);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../Electronic_Arts_Technical_Support.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Configuring Routers and Firewalls</h1>
+
+<p>Each game which has an online component requires certain <span style="font-weight: bold;"><B>'Ports'</B></span> 
+ to be available to connect to that feature. [Ports are numbered connections 
+ that a computer uses to sort types of network traffic.] By default, all 
+ ports to the Internet, and most LAN ports are closed by your router so 
+ that traffic cannot flow through them. By opening just the ports required 
+ by a game, you will be able to connect to the online service while still 
+ keeping unwanted traffic closed. Please select your specific router type 
+ for basic instructions on opening ports: </p>
+
+<p>&nbsp; &nbsp; </p>
+
+<p><strong style="font-weight: bold;">To configure a SMC Model# SMC7004VWBR 
+ Wireless Barricade Router: </strong></p>
+
+<ol>
+	
+	<li class=kadov-p
+		class=kadov-p>Before you attempt to configure your router please 
+ visit www.smc.com and download the latest firmware update. </li>
+	
+	<li class=kadov-p
+		class=kadov-p>To access the SMC Wireless Barricade's management 
+ interface, open your web browser <em>(Microsoft Internet Explorer, Netscape 
+ Navigator, etc.).</em> In the address box enter <a href="http://192.168.2.1"
+													target=_blank>http://192.168.2.1</a> 
+ which is the default address for the SMC7004VWBR Wireless Router. Then 
+ click [Login]. <em>(By default there is no password)</em></li>
+	
+	<ol>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">Note</strong> 
+ : If you changed the router's IP address or specified a password, then 
+ enter the new address in your web browser and specified password at the 
+ login screen. For more information, please consult your SMC User's Guide. 
+ </li>
+	</ol>
+	
+	<li class=kadov-p
+		class=kadov-p>At the home page of the SMC management interface, 
+ click <strong>Advanced Setup</strong>. </li>
+	
+	<li class=kadov-p
+		class=kadov-p>On the left hand side of the <strong>Advanced Setup</strong> 
+ screen click on <strong>NAT</strong> and then select <strong>Special Application</strong> 
+ from the sub menu. </li>
+	
+	<li class=kadov-p
+		class=kadov-p>On the <strong>Special Application</strong> screen 
+ you will need to set up an individual rule for each computer. For each 
+ computer define the following settings. </li>
+	
+	<ol>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">TRIGGER</strong><strong> 
+ PORT</strong> : Enter a port number that is used to initiate the connection. 
+ Do not use a standard port. </li>
+	</ol>
+</ol>
+
+<ol>
+	
+	<ol>
+		
+		<ul>
+			
+			<li class=kadov-p
+				class=kadov-p><strong style="font-weight: bold;">Example</strong> 
+ : You can use 27901 for the first computer and 27902 for the second and 
+ so on. The trigger port must be unique for each computer. </li>
+		</ul>
+	</ol>
+</ol>
+
+<ul>
+	
+	<ol>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">TRIGGER TYPE</strong> 
+ : Select UDP, the protocol used by most games. </li>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">PUBLIC</strong><strong> 
+ PORT</strong> : Enter the same port number here that you entered in the 
+ Trigger Port field for each computer. </li>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">PUBLIC TYPE</strong> 
+ : Select UDP, the protocol used by most games. </li>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">ENABLED</strong> 
+ : Check this box to enable the settings you entered for each computer. 
+ </li>
+	</ol>
+</ul>
+
+<ol>
+	
+	<ol>
+		
+		<ul>
+			
+			<li class=kadov-p
+				class=kadov-p><strong style="font-weight: bold;">Note</strong> 
+ : Write down each port number used in step 5, as you may need this to 
+ configure the in-game options of the game you are trying to play online. 
+ </li>
+		</ul>
+	</ol>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><strong style="font-weight: bold;">To configure a Linksys Model# BEFSR11 
+ or BEFSR41 Router: </strong></p>
+
+<ol>
+	
+	<li class=kadov-p
+		class=kadov-p>Before you attempt to configure your router please 
+ visit www.linksys.com and download the latest firmware update.</li>
+	
+	<li class=kadov-p
+		class=kadov-p>To access the web based utility of your Linksys Router, 
+ open your web browser <em>(Microsoft Internet Explorer, Netscape Navigator, 
+ etc.)</em>. In the address box enter <a href="http://192.168.1.1"
+										target=_blank>http://192.168.1.1</a> 
+ which is the default address for the Linksys BEFSR11/BEFSR41 Router. A 
+ password request page window will pop up. Leave the user name blank and 
+ enter admin <em>(all lower case, no capitol letters)</em> in the password 
+ field. Then, click <strong>OK</strong>. </li>
+	
+	<ol>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">Note</strong> 
+ : If you changed the routers IP address, or specified a user name or new 
+ password, then enter the new IP address in your web browser and/or enter 
+ the specified user name and new password at the password request window. 
+ For more information, consult your Linksys User's Guide. </li>
+	</ol>
+	
+	<li class=kadov-p
+		class=kadov-p>From the main setup page click on the <strong>Advanced</strong> 
+ tab, then the <strong>Forwarding</strong> tab and finally at the bottom 
+ of the screen click on <strong>Port Triggering</strong>. </li>
+	
+	<li class=kadov-p
+		class=kadov-p>On the <strong>Port Triggering</strong> screen you 
+ will need to set up an individual rule for each computer connected to 
+ your Router/Firewall. For each computer define the following settings.</li>
+	
+	<ol>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">APPLICATION 
+ NAME</strong> : Enter the name of the game you are trying to configure 
+ the router for. </li>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">TRIGGER</strong><strong> 
+ PORT RANGE</strong> : Enter a port number that is used to initiate the 
+ connection. Do not use a standard port. </li>
+	</ol>
+</ol>
+
+<ol>
+	
+	<ol>
+		
+		<ul>
+			
+			<li class=kadov-p
+				class=kadov-p><strong style="font-weight: bold;">Example</strong> 
+ : You can use 27901 for the first computer and 27902 for the second and 
+ so on. Be sure to enter the same port number in both fields under this 
+ heading. </li>
+		</ul>
+	</ol>
+</ol>
+
+<ul>
+	
+	<ol>
+		
+		<li class=kadov-p
+			class=kadov-p><strong style="font-weight: bold;">INCOMING</strong><strong> 
+ PORT RANGE</strong> : Enter the same port number here that you entered 
+ in the Trigger Port Range field for each computer. Be sure to enter the 
+ same port number in both fields under this heading. </li>
+	</ol>
+</ul>
+
+<ol>
+	
+	<ol>
+		
+		<ul>
+			
+			<li class=kadov-p
+				class=kadov-p><strong style="font-weight: bold;">Note</strong> 
+ : Write down each port number used in step 4, as you may need this to 
+ configure the in-game options of the game you are trying to play online.</li>
+		</ul>
+	</ol>
+</ol>
+
+<p name=other>&nbsp;</p>
+
+<p name=other><strong style="font-weight: bold;">Other Routers: </strong></p>
+
+<p>If you own a different brand of router, please refer to the documentation 
+ or the manufacturer's website. If you are unable to find any useful information 
+ on opening ports or setting up port forwarding, refer to the following 
+ website which contains most common and some obscure router configuration 
+ information. </p>
+
+<p><a href="http://www.portforward.com/"
+		target=_blank>http://www.portforward.com/</a></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

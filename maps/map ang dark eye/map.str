@@ -1,0 +1,207 @@
+SCRIPT:ShardRecovered
+"Palantir Shard Recovered"
+End
+
+SCRIPT:Shards_Collected
+"Shards Collected:"
+End
+
+SCRIPT:GOAL_DARKEYE_01
+"Kill King Arveleg and retrieve the Palantir"
+End
+
+SCRIPT:GOAL_DARKEYE_02
+"Establish a Base in this region"
+End
+
+SCRIPT:GOAL_DARKEYE_03
+"Investigate the area and discover the fate of the Palantir."
+End
+
+SCRIPT:GOAL_DARKEYE_04
+"Collect the 7 Palantir Shards"
+End
+
+SCRIPT:GOAL_DARKEYE_05
+"Destroy the entire Arnor outpost and retrieve any Shards they may have gathered"
+End
+
+SCRIPT:GOAL_DARKEYE_06
+"The Witch-king will be most displeased if the forces of Arnor secure 4 shards. Do not allow this!"
+End
+
+SCRIPT:GOAL_DARKEYE_06_ANNOUNCE
+"Prevent Arnor from securing 4 shards in their outpost."
+END
+
+SCRIPT:DARKEYE_OBJ_COMP_01
+"King Arveleg has been killed"
+End
+
+SCRIPT:DARKEYE_OBJ_COMP_03
+"You have recovered your powers"
+End
+
+SCRIPT:DARKEYE_OBJ_COMP_04
+"You have retrieved all of the shards! Arnor will rue this day!"
+End
+
+SCRIPT:DARKEYE_OBJ_COMP_05
+"The Arnor Outpost has been Destroyed"
+End
+
+SCRIPT:DARKEYE_OBJ_COMP_06
+"We must still recover the Shards that Arnor has by sieging their base"
+End
+
+SCRIPT:Prince_Line01
+"KING ARVELEG: Quickly - they cannot be far behind. The Palantir must reach the safety of the outpost."
+End
+
+SCRIPT:Prince_Line02
+"ARNOR OFFICER: We will guard the road ahead to cover your retreat, sire."
+End
+
+SCRIPT:AngmarArrivalLine01
+"ANGMAR OFFICER: They must have come this way. We have to catch them before they reach the fortress just beyond the downs."
+End
+
+SCRIPT:AngmarArrivalLine02
+"ANGMAR OFFICER: The king cannot be allowed to reach the fortress alive!"
+End
+
+SCRIPT:Palintirexplodes01
+"KING ARVELEG: Foul creatures, I know what you seek - but you shall not have it!"
+End
+
+SCRIPT:Palintirexplodes02
+"KING ARVELEG: Return to your master and tell him you have failed!"
+End
+
+SCRIPT:Palintirexplodes03
+"ANGMAR OFFICER: Noooooo!"
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_01
+"King Arveleg must be stopped before he reaches the Arnor fortress."
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_02
+"You must build a Fortress, a Hall of the King's Men and a Mill in order to establish a presence in this area."
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_03
+"Investigate the area and discover the fate of the Palantir."
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_04
+"When the Palantir exploded, the pieces must have fallen in the area. We must retrieve them before the Arnorians do."
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_05
+"A Palantir shard has been found by the Arnorians. We must retrieve the other shards before they do."
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_06
+"Our Builder has arrived."
+END
+
+SCRIPT:RANGERS_ARRIVE_01
+"DARK RANGER: The pursuit force was supposed to be here. Let's set up camp and search the area."
+End
+
+SCRIPT:RECOVER_SHARD_INTRO_02
+"I can feel the power in this object; we must take it to the Witch-king."
+End
+
+SCRIPT:RECOVER_SHARD_INTRO_01
+"MORGOMIR: I feel a deadness in this place."
+End
+
+SCRIPT:RECOVER_SHARD_INTRO_04
+"You are to retrieve all of the shards in the area. We cannot allow Arnor to retrieve any more."
+End
+
+SCRIPT:SHARD_COLLECT_01
+"Sir, This is where the lookouts saw the object land."
+End
+
+SCRIPT:SHARD_COLLECT_02
+"What is it? Gather it up and we'll take it back to the outpost."
+End
+
+SCRIPT:SHARD_COLLECT_03
+"We'll dispatch more patrols to investigate the other areas after we return with the object."
+End
+
+SCRIPT:ARNORHASSHARD
+"Arnor has a shard! Stop them before they return to the fort!"
+End
+
+SCRIPT:PLAYERHASSHARD
+"We've picked up one of the Palantir shards!"
+END
+
+SCRIPT:STOPARNOR
+"Prevent the shard from reaching the safety of the enemy fortress!"
+END
+
+SCRIPT:ARNORSHARDCOUNTER
+"Arnor Shard Count:"
+End
+
+SCRIPT:SHARD_RETURN_HINT
+"Send the unit carrying the shard back to the fortress to drop it off."
+End
+
+SCRIPT:SHARD_PICKED_UP_HINT
+"Return the shard to the lit area in front of your fortress."
+End
+
+SCRIPT:DARK_EYE_FAILED
+"The King is too far ahead of us! We have failed."
+End
+
+SCRIPT:DARK_EYE_POWER_1
+"MORGOMIR: We have no power here. There must be some reason."
+End
+
+SCRIPT:DARK_EYE_POWER_2
+"MORGOMIR: Our Strength Returns."
+End
+
+SCRIPT:DARK_EYE_POWER_3
+"MORGOMIR: Our powers become ours once again."
+End
+
+SCRIPT:DARK_EYE_POWER_4
+"MORGOMIR: Yes, One more and we shall once again be at full strength!"
+End
+
+SCRIPT:DARK_EYE_POWER_5
+"MORGOMIR: Our powers are complete once again!"
+End
+
+SCRIPT:DARK_EYE_POWER_6
+"MORGOMIR: I feel a deadness in this place"
+End
+
+SCRIPT:DARK_EYE_3_SHARDS_COLLECTED
+"They have collected a third shard. We must prevent them from claiming another!"
+End
+
+SCRIPT:DARK_EYE_DESTROY_BASE_AUDIO
+"We must destroy their base and recover the shards they have taken."
+End
+
+SCRIPT:DARK_EYE_POWERS_RETURN
+"Some of your powers have returned"
+End
+
+SCRIPT:DARK_EYE_ALL_POWERS_RETURN
+"All of your powers have returned"
+End
+
+SCRIPT:ARNOR_HAS_4_SHARDS
+"Arnor has collected four shards. All is lost!"
+End

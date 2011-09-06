@@ -1,0 +1,433 @@
+﻿=============================================================
+The Lord of the Rings(tm), The Battle for Middle-earth(tm) II,
+The Rise of the Witch-king, Readme File
+MRea
+=============================================================
+
+
+Version 2.01 – April, 2007
+
+General - Unit
+------------------------------
+
+
+• 	All Lumbermills now cost 350 and spawn 5 workers instead of 4.
+
+• 	Structure and Technology armor more resistant to Pierce (2% from 20%).
+
+• 	Factory Armor more resistant to Pierce (2% from 10%).
+
+• 	Resource Armor more resistant to Pierce (5% from 10%).
+
+• 	All units that use siege armor are more resistant to Pierce (5% from 20%).
+
+• 	HeroMini Foot more resistant to Slash (45% from 60%); 
+	more resistant to Pierce (45% from 60%); more vulnerable to Structural (80% from 50%)
+
+• 	HeroMiniMounted more resistant to Slash (25% from 60%); more resistant to Pierce (35% from 60%); 
+	more vulnerable to Structural (80% from 50%); more vulnerable to Specialist (130% from 100%).
+
+• 	Hero Armor more vulnerable to Slash (40% from 25%); more resistant to Pierce (20% from 25%); 
+	more vulnerable to Specialist (30% from 25%); more vulnerable to Crush (50% from 10%); 
+	more resistant to magic (35% from 75%); more resistant to Poison (50% from 75%).
+
+• 	Tough Hero Armor more vulnerable to Specialist (30% from 15%); more vulnerable to Crush (35% from 10%); 
+	more resistant to Flame (20% from 25%); more resistant to Magic (25% from 50%); 
+	more vulnerable to Hero (65% from 50%); more resistant to Structural (40% from 50%).
+
+• 	HeroLight Armor more vulnerable to Crush (50% from 15%); more resistant to Flame (25% from 35%) 
+	
+
+• 	HeroArmorMounted more resistant to Slash (25% from 50%); more resistant to Pierce (15% from 50%); 
+	more vulnerable to Flame (40% from 25%); more resistant to Magic (50% from 100%); 
+	more resistant to Poison (50% from 75%); more vulnerable to Structural (80% from 50%).
+
+
+General - Creeps & Powers
+------------------------------
+
+• 	The “Heal” power radius has been increased to 200 (originally 150) and no longer works on machines or monsters; 
+	it restores up to 60% health (originally 100%).
+
+• 	The Structure Rebuild power timer has been reduced to 4m (originally 6m); 
+	further its area of effect has been reduced to 150 (originally 300).
+
+• 	Both Darkness and Freezing Rain’s recharge time have been reduced to 6m (originally 9m).
+ 
+• 	Freezing Rain’s duration now lasts for 2m30sec.
+
+• 	Cloud Break’s recharge time has been reduced to 7m30s (originally 8m20s).
+
+
+• 	The following powers have been rearranged:
+
+		• Dwarves - Dwarven riches switched with Summon Hobbit Allies;
+ 
+		• Dwarves - Undermine switched with Cloud Break;
+
+		• Mordor - Awaken Wyrm switched with Barrage; Barricade switched with Industry;
+
+		• Isengard – Summon Wildmen Allies switched with Devastation; Watcher switched by Fuel the fires.
+
+		• Goblins – Summon Spiderling Allies switched with Summon Wildmen Allies
+
+
+• 	The Barricade archer’s range has been increased to 320 (originally 275).
+
+
+General - Angmar
+------------------------------
+
+• 	Thrall masters now cost 200 (originally 100); Gundabad Warriors and Rhudaur Axe Throwers are now free (originally 50); 
+	Summoned Wolfriders have been reduced to 350 (originally 400).
+
+• 	Angmar’s Resource building hitpoints have been reduced to 2100.
+
+• 	Summon Wights ability (15pp) now summons 5 wights instead of 4.
+
+• 	Sorcerer’s Well of Souls heal radius has been reduced to 320 (originally 400).
+
+• 	Sorcerer’s Corpse Rain recharge has been reduced to 3m20sec (originally 4m).
+
+• 	Rhudaur Axe Thrower damage has been reduced to 45 (originally 75).
+
+• 	Rogash’s Leap ability recharge has been increased to 1m30sec (originally 1m); 
+	Battle Rage’s duration has been reduced to 1m (originally 1m30sec).
+
+• 	Sorcerer’s speed has been increased to 40 (originally 35).
+
+• 	The Dark Ranger’s Longshot ability now requires the unit to be Level 2;
+	more vulnerable to Crush damage (200% from 100%).
+
+• 	Rhudaur Spearmen more resistant to Pierce (75% from 100%).
+
+• 	Karsh’s cost has been increased to 2000.
+
+• 	Snow Trolls more vulnerable to specialist (175% damage from 125%).
+
+• 	Hill Troll more resistant to Pierce (80% from 100%).
+
+
+General - MotW
+------------------------------
+
+• 	Increased the movement of Gondor Soldiers, Archers and Rohan spearmen to 50 (originally 45); 
+	member speed has been increased to 55 (originally 50).
+
+• 	Tower guard more resistant to Pierce (75%/40% from 90%/50%).
+
+• 	Rohan Spearmen more resistant to Pierce (75% from 100%).
+
+• 	Gondor Soldier more resistant to Pierce (70%/35% from 85%/40%)
+
+• 	Knights more resistant to Pierce (45% from 55%).
+
+•	Rohirrim more resistant to Pierce (50% from 60%)
+
+• 	The Ranger’s Longshot ability now requires the unit to be Level 2; more resistant to Pierce (75% from 90%).
+
+• 	The Level 3 Archery upgrade cost has been decreased to 500 (originally 1000).
+
+• 	The Fire arrow upgrade now requires a Level 3 Archery Range.
+
+
+General - Dwarven
+------------------------------
+
+
+• 	Dwarven Axethrower damage has been reduced to 45 (originally 75); 
+
+• 	Dwarven Guardian more resistant to Pierce (50%/25% from 60%/30%).
+
+• 	Dwarven Phalanxes more resistant to Pierce (45% from 70%).
+
+• 	Battle wagon more resistant to Slash (30%/15% from 50%/25%); 
+	more resistant to Pierce (20%/10% from 30%/15%); Battle Wagon’s Oil decay now 2 with a reload of 1m20sec (originally 1m).
+
+
+General - Elven
+------------------------------
+
+
+• 	Haldir now costs 1200.
+
+• 	Mirkwood archers now require a Level 2 Barracks.
+
+• 	The Level 2 Barrack upgrade cost has been increased to 1000.
+
+• 	The Giant Eagle’s health has been increased to 3000 (originally 2000); 
+	more vulnerable to slash (25% from 0%); more resistant to Flame (30% from 50%); 
+	more resistant to Magic (30% from 50%); suffers a 70% damage penalty vs. heroes; speed increased (120 from 88).
+
+• 	Lorien warrior more resistant to Pierce (75%/40% from 100%/50%).
+
+• 	Lindon Horse Archers more vulnerable to Crush (100%/100% from 1%/1%). 
+
+• 	Rivendell Lancer more resistant to Pierce (45%/25% from 60%/30%).
+
+
+
+General - Goblins
+------------------------------
+
+• 	Increased the movement rate of the Half Troll Swordsmen to 55 (originally 50); 
+	member speed has been increased to 60 (originally 55); more resistant to Pierce (80%/40% from 100%/50%).
+
+• 	Half-Troll Marauders more resistant to Pierce (80%/40% from 100%/60%).
+
+• 	Drogoth more resistant to Pierce (40% from 55%).
+
+• 	Increased the movement of Goblin Fighter to 65 (originally 63); 
+	member speed increased to 70 (originally 67%); more resistant to Pierce (90%/45% from 110%/65%).
+
+• 	Increased Azog’s Great Battle Rage recharge to 2m (originally 1m).
+
+• 	Spiderlings more resistant to Pierce (65% from 75%)
+
+• 	Spider Riders more resistant to Pierce (40%/20% from 45%/25%)
+
+
+General - Isengard
+------------------------------
+
+• 	Increased the movement rate for Uruk-Hai swordsmen to 55 (originally 50); 
+	member speed increased to 60 (originally 55); more resistant to Pierce (60%/30% from 70%/35%).
+
+• 	Increased the movement rate for Uruk Crossbowmen to 55 (originally 50); member speed increased to 60 (originally 55);
+
+• 	Increased the movement rate for Uruk Pikemen to 55 (originally 50); 
+	member speed increased to 60 (originally 55); more resistant to Pierce (100%/60% from 125%/90%).
+
+• 	Increased the movement rate for Uruk Deathbringers to 55 (originally 50); member speed increased to 60 (originally 55).
+
+• 	Increased Sharku’s health to 2500 (originally 2400).
+
+• 	Lurtz’s Carnage duration has been reduced to 20s (originally 30s); 
+	recharge timer has been increased to 2m (1m); movement rate increased to 55.
+
+• 	Reduced the Wildmen Axe Throwers damage to 45 (originally 75).
+
+• 	Grima Wormtongue movement increased to 55 (originally 50); increased damage to 130 (originally 100).
+
+
+General - Mordor
+------------------------------
+
+• 	The catapult’s minimum range has been increased to 150 from 100.
+
+• 	Gothmog’s Fury (Lvl 4 ability) recharge time has been increased to 2 minutes from 1 minute.
+
+• 	Both Khamul and Morgomir now suffer a 30% damage penalty to structures.
+
+• 	Increased the movement rate for Corsairs to 55 (originally 50); 
+	member speed increased to 60 (originally 55); more resistant to Pierce (75% from 90%).
+
+• 	Orc Warriors more resistant to Pierce (85%/40% from 100%/50%).
+
+• 	Black Orc Warriors more resistant to Pierce (60%/30% from 80%/40%).
+
+• 	Orc Archers more vulnerable to Crush (200% from 100%).
+
+• 	Easterlings more resistant to Pierce (110%/55% from 115%/75%).
+
+• 	Haradrim Lancers more resistant to Pierce (75%/35% from (110%/40%)
+
+
+
+General - BUG FIXES
+------------------------------
+
+
+Angmar 
+---------
+
+
+• 	Fell Strength can no longer target buildings.
+
+•	The Dark Iron Forge now shoots arrows at Level 3.
+
+• 	Ice Arrows now do damage to all fortress expansions.
+
+• 	Gundabad Orcs now take poison damage from enemies.
+
+• 	The Balrog and Shade of the Wolf no longer take poison damage when near anything that has an AOE poison effect.
+
+• 	Improved the ability to see the Dark Iron Blades upgrade for Hill Troll units.
+
+• 	Karsh no longer stands in place and takes damage after autocasting Whisper of Death.
+
+• 	The exploit of manually attacking with the Troll Stone Thrower has been removed.  
+	Manual attacking is equivalent to the auto attack speed.
+
+•	The Troll Stone Thrower upgraded with Ice shot has an equal splash damage radius as the other siege units.
+
+• 	The 2nd damage state for the Wall Troll Stone Thrower is now different from the 1st damage state. 
+ 
+• 	The Wall Troll Stone Thrower now casts a shadow on “medium” level of detail.
+
+• 	The 2nd damage state for the Fortress Troll Stone Thrower is now different from the 1st damage state.  
+
+• 	The Angmar Mill’s 2nd damage stage is now visibly different from the 1st stage.
+
+• 	The Wall and Wall Tower now show a visual difference between the 1st and 2nd stages.
+
+• 	Reduced the damage that the “Call of the Pack” does to structures.
+
+• 	Sorcerer’s Well of Souls no longer works on Tainted land, Frozen land and Elven wood.  
+	Further it can no longer be cast on the Olog CAH’s oil spill ability, the Ring and the Dwarven Catapult’s oil barrels.
+
+•	Rogash, Karsh, Witch-King, Morgomir and Hwaldar now will use their special abilities in normal gameplay.
+
+• 	The Hall of King’s Men no longer has a floating shadow associated with its 2nd damage state.
+
+• 	The pickbox now displays properly for these situations:
+
+		• 2nd damage stage for all levels of following structures - Den, Hall of King’s Men and Mill.
+
+		• 2nd damage stage for all Dark Iron Forge.
+
+		• 1st damage stage for Level 2 & 3 Dark Iron Forge.
+
+		• Level 2 & 3 of the Mill.
+
+		• 2nd damage stage for Fortress, Troll Stone Thrower tower, Wall tower and Fortress tower.
+
+
+• 	Temple of Twilight now has lights on night maps for High and Medium Level of Detail settings.
+
+• 	Karsh no longer continues to capture a flag after he’s teleported to a new location.
+
+
+Elves
+---------
+
+• 	Demolishing the Ent Moot now gives 50% of the original cost.
+
+• 	Demolishing the Heroic Statue now gives +150 instead +75.
+
+• 	Farsight’s duration has been reduced.  It no longer lasts longer than its recharge time.
+
+• 	Reduced Silverthorn arrow magic damage by 10 to 50 and removed their RoF penalty; rate of fire equal to non-silverthorn.
+
+
+Dwarves
+---------
+
+• 	Dwarven catapults no longer gain experience levels.
+
+• 	The Men of Dale banner carrier keeps pace with the unit.
+
+• 	The AI will now use the Captain of Dale’s special abilities.
+
+• 	The Dwarven Axe Throwers'damage has been reduced to 45 (base) and 70 (upgraded).
+
+
+Isengard
+---------
+
+• 	Berserkers can now change their battle stance. 
+
+• 	Wormtongue can no longer target flying heroes with his corrode allegiance spell.
+
+• 	Saruman can no longer gain permanent control of an enemy’s Thrall master.
+
+
+
+MoTW
+---------
+
+• 	The AI will now build the Knights of Dol Amroth.
+
+• 	Rohirrim horses no longer change color after switching weapons.
+
+• 	Lone Tower summon structure no longer keeps the player in the game.
+
+•	The hobbit toggle weapon shortcuts now work when sticks are currently selected.
+
+• 	Summon Dunedain Allies (spell) no longer takes command points from the user’s pool.
+
+
+Goblins
+---------
+
+• 	Gorkil will no longer use Poisoned Stinger on structures when set to autocast.
+
+•	The totem generated by Gorkil’s skull totem ability is no longer treated as a structure thereby removing 
+	it from keeping player in the game.
+
+• 	Azog now casts a shadow on Medium and Low level of detail settings.
+
+•	The AI will now use Azog’s and the Fire Drake’s special abilities.
+
+• 	The Fire Drake no longer breathes fire at the player after Untamed allegiance is cast.
+
+• 	Goblin AI will now use their poison more effectively.
+
+
+Mordor
+---------
+
+• 	Haradrim Lancers now gain bonus damage from the Forged blades upgrade.
+
+• 	Removed the shortcut key from Gothmog’s Iron Hand helptext since it’s a passive ability.
+
+• 	Gothmog no longer runs in place after moving if the user gives him a move order in the opposite direction.
+
+
+War of the Ring
+---------
+
+• 	Modified the AI’s retreat algorithm; reduced its retreat chances prior to actually fighting the battle.
+
+• 	Shelob now occupies the Dead Marshes.
+
+• 	The AI will no longer spawn next to the player in Lostriand when playing a 1 human versus 5 AI opponents.
+
+
+
+Create-A-Hero 
+---------
+
+• 	New Elf Archer body texture is now available.
+
+• 	Increase the Elf’s auto-acquire range to be comparable to the other heroes.
+
+• 	Olog Hai Great Troll now has body armor and upgrades available.
+
+• 	Olog Hai’s Meta-impact splash damage now has a FX.
+
+• 	Olog Hai chest option is now available.
+
+• 	A Servant of Sauron CAH poison ability now affects mountain giants and half trolls.
+
+
+
+General Bug Fixes
+---------
+
+•	GameSpy’s copyright notice has been corrected.
+
+• 	The additional “to” has been removed from the Settings button in the Palantir in a MP game.
+
+• 	The Signal fire located with the fortress territory is now claimed by the player in the fortress position.
+
+• 	The textures on very low detail on the Gundabad tournament map have been fixed.
+
+• 	When joining a multiplayer WOTR game the map image is no longer blank.
+
+• 	CAH reinforcements can no longer be garrisoned onto transport ships.
+
+• 	The flag capturing process now stops when the user teleports the capturing units to another location. 
+
+• 	Darkness powers can no longer buff mini-hero hordes. 
+
+• 	A CAH now earns the “War Veteran” award after fighting 20 online battles for winning or losing.
+
+• 	The Corrupted Man CAH coerce ability no longer affects mini-hero hordes or 
+	large summoned non-hero units (Watcher, Dragonstrike, etc.).
+
+•	The Collector Edition’s artwork now appears in the game.
+
+
+
+

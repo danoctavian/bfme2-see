@@ -1,0 +1,8 @@
+# RUN = the game to launch
+RUN  = . game.dat
+
+#
+# Sku's to check for patches
+#
+SKU1 = english SOFTWARE\Electronic Arts\Electronic Arts\The Lord of the Rings, The Rise of the Witch-king
+

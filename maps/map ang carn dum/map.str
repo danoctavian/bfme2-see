@@ -1,0 +1,218 @@
+SCRIPT:1Test
+"Second Wave:"
+End
+
+SCRIPT:2test
+"Third Wave:"
+End
+
+SCRIPT:3test
+"Fourth Wave:"
+End
+
+SCRIPT:4test
+"Fifth Wave:"
+End
+
+SCRIPT:5test
+"Final Wave:"
+End
+
+SCRIPT:1STWAVETIMER
+"Time Remaining:"
+End
+
+SCRIPT:2STWAVETIMER
+"Time until Elves attack:"
+End
+
+SCRIPT:CARNDUM_INITIALATTACK
+"The Elves have come! Ready the defenses!"
+End
+
+SCRIPT:Elvesattackgate
+"They're attacking the front gate!"
+End
+
+SCRIPT:ElvesAttackWall
+"They're attacking the weakened wall!"
+End
+
+SCRIPT:ELVESSOON
+"They'll be here soon!"
+End
+
+SCRIPT:ELVESENTERGATE
+"They're through the gate!"
+End
+
+SCRIPT:ELVESENTERWall
+"They're through the Wall!"
+End
+
+SCRIPT:ELVELENTER2NDGATE
+"They've broken through the main gate!"
+End
+
+SCRIPT:ELVESENTERCITADELGATE
+"They're attacking the citadel gate!"
+End
+
+SCRIPT:ElvesAttackingCitadel
+"The elves are attacking the citadel!"
+End
+
+SCRIPT:ELVISHATTACKDRIVENOFF
+"Their walls are too strong! Fall back and await reinforcements!"
+End
+
+SCRIPT:SEIGEWEAPONSARRIVE
+"Now Angmar must face the might of our siege engines!"
+End
+
+SCRIPT:CARNDUMOPEN
+"Dread lord, Soon the fortress of Carn Dum will be besieged by the elvish army."
+End
+
+SCRIPT:CARNDUMOPEN2
+"And soon the Elf Lord Glorfindel will be here with a larger army of Elves supported by the trebuchets of Men."
+End
+
+SCRIPT:CARNDUMOPEN3
+"And As per your orders, Rogash and his forces await in the west for your signal. We merely need to light the signal fire and he will come."
+End
+
+SCRIPT:ROGASHARRIVES
+"Rogash has returned with his army!"
+End
+
+SCRIPT:CARNDUMOBJECTIVE1
+"Survive the Elves attack"
+End
+
+SCRIPT:CARNDUMOBJECTIVE2
+"Bonus: Capture the Signal Fire to Summon Rogash"
+End
+
+SCRIPT:CARNDUMOBJECTIVE2PT2
+"Bonus: Capture the Signal Fire"
+End
+
+SCRIPT:CARNDUMOBJECTIVE3
+"The Witch-king must survive"
+End
+
+SCRIPT:CARNDUM_SECONDATTACK
+"Here they come again!"
+End
+
+SCRIPT:CARNDUM_THIRDATTACK
+"More elves are on their way"
+End
+
+SCRIPT:CARNDUM_FOURTHATTACK
+"Another force has arrived!"
+End
+
+SCRIPT:GETROGASH
+"Rogash and his forces are awaiting a signal to return. If you wish to summon him, light the Signal Fire."
+End
+
+SCRIPT:ROGASHTIMER
+"Rogash arrives in:"
+End
+
+SCRIPT:RETAKEAREA
+"The elves are building in the outer areas. Retake them before they establish a true foothold."
+End
+
+SCRIPT:REBUILDAREA
+"The area has been retaken. Use these Builders to re-establish yourself."
+End
+
+SCRIPT:CDRETAKEOBJ
+"Bonus: Retake the Outer area"
+End
+
+SCRIPT:CDREBUILDOBJ
+"Bonus: Rebuild the lost buildings"
+End
+
+SCRIPT:GLOFINDELSPEEKS
+"Come my brothers, tear down these walls!"
+End
+
+SCRIPT:GLOFINDALSPEEKS2
+"On to the citadel - Carn Dum falls this day!"
+End
+
+SCRIPT:GLOFINDELLEAVES
+"Fear not, I shall return!"
+End
+
+SCRIPT:GLORFINDELCLOSE
+"My lord, Glorfindel's forces are almost here!"
+End
+
+SCRIPT:GLORFINDELARRIVES
+"Glorfindel is Here!"
+End
+
+SCRIPT:CARN_DUM_LINDON_ELVES_ARRIVE
+"My Lord, The Elves of Lindon are here!"
+End
+
+SCRIPT:GLOFINDELOBJ
+"Defeat Glorfindel's attack"
+End
+
+SCRIPT:GLORFINDELOBJHINT
+"Glorfindel is leading the final attack, defeat him and the attack and the day is ours!"
+End
+
+SCRIPT:LULLHINT
+"The Elves are reforming their ranks, we have time to rebuild!"
+End
+
+
+////////////////////Newest lines as of 10/05/06////////////////////////////
+
+SCRIPT:POSTERNHINT
+"Use your postern gates to flank the enemy attacks"
+End
+
+SCRIPT:ROGASHARRIVED
+"Rogash has arrived to help you destroy the Elves final attack. Look for him in the South"
+End
+
+SCRIPT:ROGASHNOTREADY
+"Rogash is not in position yet, he will alert us as soon as he is ready."
+End
+
+SCRIPT:ROGASHALMOSTREADY
+"Rogash is almost in position to attack the Elves. Be patient, he will be here soon!"
+End
+
+
+/////////////////////////New lines as of 10/20/06
+
+SCRIPT:SIGNALFIRELIT
+"The Signal Fire has been lit"
+End
+
+
+
+
+/////////////// DO NOT LOCALIZE BELOW THIS LINE! TESTING ONLY ////////////////////////
+
+SCRIPT:PHASE2BEGINS
+"PHASE 2 HAS STARTED"
+End
+
+SCRIPT:PHASE3BEGINS
+"PHASE 3 HAS STARTED"
+End
+
+SCRIPT:PHASE4BEGINS
+"PHASE 4 HAS STARTED"
+End

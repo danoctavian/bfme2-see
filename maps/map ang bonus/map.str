@@ -1,0 +1,107 @@
+SCRIPT:ANGBonusMissionIntroText_01
+"GLORFINDEL: After much bloody strife, the Witch-king has fled before us to the distant barren reaches of Angmar,\nwhere he began his quest for vengeance."
+END
+
+SCRIPT:ANGBonusMissionIntroText_02
+"It is here that he and his servants will make their final stand."
+END
+
+SCRIPT:ANGBonusMissionIntroText_03
+"EARNUR: Together, Men and Elves will bring an end to the reign of the Iron Crown!"
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_01
+"Earnur must survive."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_02
+"Glorfindel must survive."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_03
+"Slay Morgomir, the Lieutenant of Carn Dum, along with his retinue."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_04
+"Slay the Whispering Wraith, and bring peace to his soul forever."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_05
+"Slay Rogash, the Troll of the North, and all who stand at his side."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_06
+"Defeat the Witch-king of Angmar and restore peace to the West!"
+END
+
+SCRIPT:ANGBonusMissionScene1Text_01
+"MORGOMIR: You have come far enough, princeling. I will spill your life's blood upon the ice of Angmar."
+END
+
+SCRIPT:ANGBonusMissionScene1Text_02
+"EARNUR: The loyal hound growls! His master will be most disappointed."
+END
+
+SCRIPT:ANGBonusMissionScene1Text_03
+"GLORFINDEL: We have slain the Witch-king's right hand, but this valley holds greater dangers still."
+END
+
+SCRIPT:ANGBonusMissionScene2Text_01
+"KARSH: My master bids me silence you. Come with me and die forever."
+END
+
+SCRIPT:ANGBonusMissionScene2Text_02
+"GLORFINDEL: Peace, lost son of Arnor. Our steel will ease your disquiet spirit."
+END
+
+SCRIPT:ANGBonusMissionScene2Text_03
+"EARNUR: He suffered long, and now goes to his rest as a true Captain of Numenor.\nWe have done a great thing this day."
+END
+
+SCRIPT:ANGBonusMissionScene3Text_01
+"ROGASH: Little Man should have stayed in white city. Rogash show you strength of Trolls!"
+END
+
+SCRIPT:ANGBonusMissionScene3Text_02
+"EARNUR: Your strength is great, Troll of the North, but even you will not hinder us so near your master's den."
+END
+
+SCRIPT:ANGBonusMissionScene3Text_03
+"GLORFINDEL: He was a most dangerous adversary. We can only hope there will never be another like him."
+END
+
+SCRIPT:ANGBonusMissionScene4Text_01
+"EARNUR: At last, his minions fallen, his realm in ruins, the Witch-king deigns to show himself."
+END
+
+SCRIPT:ANGBonusMissionScene4Text_02
+"WITCH-KING: The legions of Arnor's dead sing silently of my vengeance forever. Now their fate shall be yours."
+END
+
+SCRIPT:ANGBonusMissionScene4Text_03
+"GLORFINDEL: The Witch-king is finally defeated! A new peace has come to the land!"
+END
+
+SCRIPT:ANGBonusMissionScene4Text_04
+"GLORFINDEL: The Witch-king leaves the field! Quickly now, take down his minions!"
+END
+
+SCRIPT:ANGBonusMissionScene4Text_05
+"EARNUR: The Witch-king returns! Now we must defeat him once and for all time!"
+END
+
+SCRIPT:ANGBonusMissionHintText_01
+"Earnur and Glorfindel must both survive this final ordeal."
+END
+
+SCRIPT:ANGBonusMissionHintText_02
+"Our builders have arrived; we can build a camp and recruit reinforcements for this final struggle!"
+END
+
+SCRIPT:ANGBonusMissionHintText_13
+"Medium Difficulty"
+END
+
+SCRIPT:ANGBonusMissionHintText_14
+"Hard Difficulty"
+END

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<tocdata>
+<item name="Welcome" url="Welcome.htm" />
+<book name="Controller Troubleshooting" >
+  <item name="Start Controller Troubleshooting" url="Controller/Start_Controller_Issues.htm" />
+  <item name="Controller Calibration" url="Whitepages/Controller_Calibration.htm" />
+</book>
+<book name="Crash Troubleshooting" >
+  <item name="Start Crash Troubleshooting" url="Crash/Start_Crashes.htm" />
+  <item name="Crashing After the Splash Screen" url="Crash/Crashing_After_a_Full_Black_Screen.htm" />
+  <item name="Crashing After a Full Black Screen" url="Crash/Crashing_After_the_Splash_Screen.htm" />
+</book>
+<book name="DirectX Troubleshooting" >
+  <item name="Start DirectX Troubleshooting" url="Direct_X/Start_Direct_X.htm" />
+  <item name="'Direct3D' or 'D3D' Errors" url="Direct_X/_Direct3D__or__D3D__Errors.htm" />
+  <item name="'GET SETUP' Error When Installing DirectX" url="Direct_X/_GET_SETUP__Error_When_Installing_DirectX.htm" />
+  <item name="DirectX Version Does not Update After Installation" url="Direct_X/DirectX_Version_Does_not_Update_After_Installation.htm" />
+  <item name="Reinstalling DirectX" url="Whitepages/Reinstalling_DirectX.htm" />
+</book>
+<book name="Error Message Troubleshooting" >
+  <item name="Start Error Message Troubleshooting" url="Error_Message/Start_Error.htm" />
+  <item name="Ending Background Tasks" url="Whitepages/Ending_Background_Tasks.htm" />
+  <item name="'Cannot locate CD/DVD-ROM'" url="Error_Message/_Cannot_locate_CD_DVD-ROM_.htm" />
+  <item name="'CD/DVD Emulation Software Detected'" url="Error_Message/_CD_DVD_Emulation_Software_Detected_.htm" />
+  <item name="'Program has caused an error' or 'Error in &lt;gamename&gt;.exe'" url="Error_Message/_Program_has_caused_an_error__or__Error_in__gamename_.exe_.htm" />
+</book>
+<book name="Graphics Troubleshooting" >
+  <item name="Start Graphics Troubleshooting" url="Graphics/Start_Graphics_Issues.htm" />
+  <item name="Changing Desktop Resolution" url="Whitepages/Changing_Desktop_Resolution.htm" />
+  <item name="Finding the Minimum System Requirements" url="Whitepages/Finding_the_Minimum_System_Requirements.htm" />
+  <item name="Updating Drivers" url="Whitepages/Updating_Drivers.htm" />
+</book>
+<book name="Installation Troubleshooting" >
+  <item name="Start Installation Troubleshooting" url="Install/INST_Start_Installation_Troubleshooting.htm" />
+  <item name="Pre-Installation Preparation" url="Install/INST_DirectX_Install_Hangs.htm" />
+  <item name="Emptying your Temp Folder" url="Whitepages/Emptying_your_Temp_Folder.htm" />
+  <item name="Preparing your Hard Drive" url="Whitepages/Preparing_your_Hard_Drive_.htm" />
+  <item name="Ending Background Tasks" url="Whitepages/Ending_Background_Tasks.htm" />
+  <item name="CD/DVD-ROM Troubleshooting" url="Whitepages/CD_DVD-ROM_Troubleshooting_.htm" />
+  <item name="Auto-play Screen Does not Appear" url="Install/Autoplay_Screen_Does_not_Appear.htm" />
+  <item name="Virus Warning During Installation" url="Install/Virus_Warning_During_Installation.htm" />
+  <item name="Transfer or File Error During Installation" url="Install/Transfer_or_File_Error_During_Installation.htm" />
+</book>
+<book name="Lock-up and Freeze Troubleshooting" >
+  <item name="Start Locking-up and Freeze Troubleshooting" url="Lock-up_and_Freeze/Start_Locking_up_and_Freezing.htm" />
+  <item name="Locking up with a Repeating Sound" url="Lock-up_and_Freeze/Locking_up_with_a_Repeating_Sound.htm" />
+  <item name="Random or General Lockups" url="Lock-up_and_Freeze/Random_or_General_Lockups.htm" />
+</book>
+<book name="Online Connectivity and Performance Troubleshooting" >
+  <item name="Start Online Connectivity and Performance Troubleshooting" url="Online_Connectivity_and_Performance/Start_Online_Connectivity_and_Performance.htm" />
+  <item name="Configuring Routers and Firewalls" url="Whitepages/Configuring_Routers_and_Firewalls.htm" />
+  <item name="UO Trace" url="Whitepages/UO_Trace.htm" />
+</book>
+<book name="Sound Troubleshooting" >
+  <item name="Start Sound Troubleshooting" url="Sound/Start_Sound.htm" />
+  <item name="Lowering Sound Acceleration" url="Whitepages/Lowering_Sound_Acceleration.htm" />
+  <item name="Finding the Minimum System Requirements" url="Whitepages/Finding_the_Minimum_System_Requirements.htm" />
+  <item name="Updating Drivers" url="Whitepages/Updating_Drivers.htm" />
+</book>
+<book name="Access more help Online!" >
+  <item name="Start Getting More Help Online" url="Getting_More_Help_Online/Start_Getting_More_Help_Online.htm" />
+</book>
+
+</tocdata>

@@ -1,0 +1,175 @@
+SCRIPT:FORNOST_GOAL_1
+"The Witch-king must survive"
+End
+
+SCRIPT:FORNOST_GOAL_2
+"Enter the City of Fornost"
+End
+
+SCRIPT:FORNOST_GOAL_4
+"Destroy 75%  of the Fornost Civilian Buildings"
+End
+
+SCRIPT:FORNOST_GOAL_3
+"Destroy the Citadel of Fornost"
+End
+
+SCRIPT:FORNOST_GOAL_5
+"Defeat the Elven Counterattack"
+End
+
+SCRIPT:FORNOST_GOAL_6
+"Crush the Hobbit Attack"
+End
+
+SCRIPT:FORNOST_GOAL_7
+"Bonus: Defeat the Fornost Army"
+End
+
+SCRIPT:FORNOST_GOAL_8
+"Bonus: Destroy all of the buildings outside the walls"
+End
+
+SCRIPT:FORNOST_GOAL_9
+"Bonus: Capture the Signal Fire"
+End
+
+SCRIPT:FORNOST_GOAL_10
+"Bonus: Capture the Inn"
+End
+
+SCRIPT:FORNOST_GOAL_11
+"Bonus: Destroy the 5 Arnor Blacksmiths"
+End
+
+SCRIPT:FORNOST_GOAL_3_COMPLETE
+"The Citadel of Fornost has been Destroyed!"
+End
+
+SCRIPT:FORNOST_GOAL_4_COMPLETE
+"The city has been razed"
+End
+
+SCRIPT:FORNOST_GOAL_5_COMPLETE
+"The filty Hobbits have been destroyed"
+End
+
+SCRIPT:FORNOST_GOAL_6_COMPLETE
+"The Elven Counterattack has met its end"
+End
+
+SCRIPT:FORNOST_GOAL_7_COMPLETE
+"The Army of Fornost lies in ruin"
+End
+
+SCRIPT:FORNOST_BLACKSMITH_HINT
+"Those Blacksmiths are providing the enemy with Upgraded Armor and weapons. Destroy them to keep to make the enemy weaker."
+End
+
+SCRIPT:FORNOST_BLACKSMITH_DESTROYED
+"Blacksmith Destroyed"
+End
+
+SCRIPT:SEE_FORNOST_BARRICADE
+"You'll have to remove the barricade in order to get to the main gate."
+End
+
+SCRIPT:FORNOSTOUTERBUILDINGS
+"Destroy these buildings to give us some maneuvering room."
+End
+
+SCRIPT:FORNOST_INTRO_1
+"WITCH-KING: Fornost, the capital of men and seat of Isildur's heirs. More than that, it is a symbol to men."
+End
+
+SCRIPT:FORNOST_INTRO_2
+"WITCH-KING: It is a symbol that must be destroyed."
+End
+
+SCRIPT:FORNOST_INTRO_3
+"The Army of Fornost stands against us. It must be overcome if we are to enter the city."
+End
+
+SCRIPT:FORNOST_BATTLE_END_01
+"Evil will never enter Fornost. CHARGE!"
+End
+
+SCRIPT:FORNOST_BATTLE_END_GOOD
+"Arnor Officer: This will be the result of all attempts to enter our city!"
+End
+
+SCRIPT:FORNOST_BATTLE_END_EVIL
+"Arnor Officer: Retreat! Back to the city! Let them face the walls if they wish to come farther!"
+End
+
+SCRIPT:FORNOST_ARCHERS_DEFENSE
+"We must hold the gate! Archers commence firing!"
+End
+
+SCRIPT:ELF_ATTACK_01
+"Elves, we must stop this attack!"
+End
+
+SCRIPT:FORNOST_HINT_BUILD
+"Perhaps we underestimated man's persistence. Besiege the city and tear down its gates."
+End
+
+SCRIPT:FORNOST_HINT_BUILD_EVIL
+"The army has been beaten - now only the city remains. Construct siege engines to destroy the gates of Fornost"
+End
+
+SCRIPT:HOBBIT_ATTACK
+"HOBBITS! The Men need our assistance! Attack!"
+End
+
+SCRIPT:HOBBIT_ATTACK_HINT
+"Crush the feeble Hobbit Counterattack"
+End
+
+SCRIPT:ELF_ATTACK
+"Elves! Evil must not be allowed to triumph this day! Charge!"
+End
+
+SCRIPT:ELF_ATTACK_HINT
+"Stop the Elvish counterattack"
+End
+
+SCRIPT:ELF_CAMP_ATTACK
+"Wipe the blight from this land!"
+End
+
+SCRIPT:PRINCE_RIDES_OUT
+"Come my brothers! Ride out and vanquish this foe!"
+End
+
+SCRIPT:CAVALRY_WARNING
+"Cavalry! Guard the Flanks!"
+End
+
+SCRIPT:FORNOST_OBJ_COMPLETE
+"Objective Complete"
+End
+
+SCRIPT:FORNOST_CIVBUILDING_HINT
+"Raze Fornost to the ground. Destroy the Civilian buildings and collect whatever treasures they hold."
+End
+
+SCRIPT:FORGES_DESTROYED
+"All of the Forges have been destroyed"
+End
+
+SCRIPT:OUTER_BUILDINGS_CLEARED
+"The outer area has been cleared"
+End
+
+SCRIPT:FORNOST_10_BUILDINGS_LEFT
+"Destroy 10 more Civilian buildings."
+End
+
+SCRIPT:FORNOST_5_BUILDINGS_LEFT
+"Destroy 5 more civilian buildings."
+End
+
+SCRIPT:WITCHKING_ARRIVAL
+"The Witch King has arrived"
+End

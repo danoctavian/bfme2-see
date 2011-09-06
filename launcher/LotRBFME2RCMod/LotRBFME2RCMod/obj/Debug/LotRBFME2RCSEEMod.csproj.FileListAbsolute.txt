@@ -1,0 +1,11 @@
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\lotrbfme2RCMod.exe.config
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\lotrbfme2RCMod.exe
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\lotrbfme2RCMod.pdb
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\ResolveAssemblyReference.cache
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\lotrbfme2RCMod.g.resources
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.About.resources
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.RCModLauncherMain.resources
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.Properties.Resources.resources
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCSEEMod.csproj.GenerateResource.Cache
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\lotrbfme2RCMod.exe
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\lotrbfme2RCMod.pdb

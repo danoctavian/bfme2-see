@@ -1,0 +1,255 @@
+SCRIPT:ANGAngmarIntroText_01
+"WITCH-KING: Here, among these dark peaks, we will build a stronghold to bring ruin to the North Kingdom."
+END
+
+SCRIPT:ANGAngmarIntroText_02
+"WITCH-KING: There is great evil in this place... especially the Black Numenoreans,\n Men whose dark loyalties and fire for dominion we must rekindle."
+END
+
+SCRIPT:ANGAngmarIntroText_03
+"WITCH-KING: What's this? A warrior Troll, who fights like a trained swordsman?  He would make a useful servant indeed!"
+END
+
+SCRIPT:ANGAngmarObjectiveText_01
+"The Witch-king must survive."
+END
+
+SCRIPT:ANGAngmarObjectiveText_02
+"Morgomir must survive."
+END
+
+SCRIPT:ANGAngmarObjectiveText_03
+"Help the mysterious warrior Troll defeat his attackers."
+END
+
+SCRIPT:ANGAngmarObjectiveText_04
+"Rogash must survive."
+END
+
+SCRIPT:ANGAngmarObjectiveText_05
+"Bring Rogash to the plateau of the Snow Trolls."
+END
+
+SCRIPT:ANGAngmarObjectiveText_06
+"Slay the Black Numenoreans who stand watch on the Snow Trolls' plateau."
+END
+
+SCRIPT:ANGAngmarObjectiveText_07
+"Subjugate the Black Numenoreans in the mountains, and bring the remaining Trolls and Wolves to our banner."
+END
+
+SCRIPT:ANGAngmarObjectiveText_08
+"Find and clear three fortress sites."
+END
+
+SCRIPT:ANGAngmarObjectiveText_09
+"Protect your fortresses from the Black Numenorean counterattack."
+END
+
+SCRIPT:ANGAngmarNewObjectiveText_01
+"Help the mysterious warrior Troll defeat his attackers."
+END
+
+SCRIPT:ANGAngmarNewObjectiveText_02
+"Help the mysterious warrior Troll defeat his attackers - but spare the Rangers; they may prove useful."
+END
+
+SCRIPT:ANGAngmarNewObjectiveText_03
+"As we encounter new buildings, our Builders can construct more of them. Build a Den, a Mill, and a Dark Iron Forge as we discover them."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveText_01
+"The Witch-king must reach level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveText_02
+"Morgomir must reach level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveText_03
+"Rogash must reach level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveText_04
+"Build a Den, a Mill, and a Dark Iron Forge, once you have discovered them."
+END
+
+SCRIPT:ANGAngmarObjectiveComplete_01
+"Our fortresses stand as a sign of our resolve. We must protect them from the inevitable Black Numenorean counterattack!"
+END
+
+SCRIPT:ANGAngmarObjectiveComplete_02
+"We have 'persuaded' all the Trolls in the valley to march with us. We can recruit them at the Den at valley's end."
+END
+
+SCRIPT:ANGAngmarObjectiveComplete_03
+"We have fended off the Black Numenorean attacks, and they now bow to our will! This is but the first victory of many!"
+END
+
+SCRIPT:ANGAngmarBonusObjectiveComplete_01
+"The Witch-king has reached level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveComplete_02
+"Morgomir has reached level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveComplete_03
+"Rogash has reached level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveComplete_04
+"We have mastered the construction of the new structures we discovered in this valley!"
+END
+
+SCRIPT:ANGAngmarVOText_01
+"WITCH-KING: Pathetic. The Dark Lord would spit on what I see before me.\nNow you will be reminded of your cause, and your arrows will fly at the heart of Arnor, whither they always should have been pointed."
+END
+
+SCRIPT:ANGAngmarVOText_02
+"WITCH-KING: Troll of the North. What brings you to this place?"
+END
+
+SCRIPT:ANGAngmarVOText_03
+"ROGASH: Come to kill iron faced Men, who live in old ruins to north, keep Trolls fighting Trolls.\nRogash bring Trolls together, take gold and meat from Men in green lands."
+END
+
+SCRIPT:ANGAngmarVOText_04
+"WITCH-KING: Your destiny is at my side, Rogash, not scrabbling for scraps. Bring your brethren to my banner,\nand there will be gold to grasp, meat to devour, and blood to stain your blades without end."
+END
+
+SCRIPT:ANGAngmarVOText_05
+"ROGASH: Fight stop NOW!\nNew master speaks."
+END
+
+SCRIPT:ANGAngmarVOText_06
+"WITCH-KING: Men goad you to battle amongst yourselves.\nBut if it is the blood of Men you thirst for, then it is the blood of Men you shall have."
+END
+
+SCRIPT:ANGAngmarVOText_07
+"Now we must build our fortresses. We must reach the three building sites, and clear them of any opposition."
+END
+
+SCRIPT:ANGAngmarVOText_08
+"WITCH-KING: This one mountain is ours now. The rest will follow. Spires of iron will guard these peaks forever!"
+END
+
+SCRIPT:ANGAngmarVOText_09
+"We have cleared a building site, and started building a Fortress!"
+END
+
+SCRIPT:ANGAngmarVOText_10
+"We have finished building one of our Fortresses!"
+END
+
+SCRIPT:ANGAngmarVOText_11
+"The Black Numenoreans have summoned a dragon to aid them!"
+END
+
+SCRIPT:ANGAngmarVOText_12
+"ROGASH: Dark King, look out! Giants nearby, with Troll slaves!"
+END
+
+SCRIPT:ANGAngmarVOText_13
+"The Black Numenoreans have come! Defend the fortresses at all costs!"
+END
+
+SCRIPT:ANGAngmarHintText_01
+"Use the resources plundered from the valley to upgrade your fortresses and recruit more forces to protect them from the Black Numenoreans' attack!"
+END
+
+SCRIPT:ANGAngmarHintText_02
+"Some Black Numenoreans have arrived in advance of the main force - finish them before their brethren arrive!"
+END
+
+SCRIPT:ANGAngmarHintText_03
+"The captive Snow Trolls here have joined us! They are powerful creatures, fleet of foot and strong as iron."
+END
+
+SCRIPT:ANGAngmarHintText_04
+"It's a Black Numenorean camp! Kill them and seize the Mill!"
+END
+
+SCRIPT:ANGAngmarHintText_05
+"We've spotted some Snow Troll slaves! If we kill their guards, they may join us!"
+END
+
+SCRIPT:ANGAngmarHintText_06
+"Look! A den of Hill Trolls is under attack! It might be useful - don't let it fall!"
+END
+
+SCRIPT:ANGAngmarHintText_07
+"We've taken the Mill for ourselves! It will grind out more resources for us to use."
+END
+
+SCRIPT:ANGAngmarHintText_08
+"We've defeated these Black Numenoreans, and this Den is ours! We can use it to recruit new Trolls and Wolves!"
+END
+
+SCRIPT:ANGAngmarHintText_09
+"We've defeated these Black Numenoreans, but they were able to destroy the Den!"
+END
+
+SCRIPT:ANGAngmarHintText_10
+"These Black Numenoreans guard a Forge used to smelt Dark Iron - slay them and we can seize it!"
+END
+
+SCRIPT:ANGAngmarHintText_11
+"We've taken control of this Dark Iron Forge! We can use it to build Stone Throwers and upgrade our troops with Dark Iron weapons and armor!"
+END
+
+SCRIPT:ANGAngmarHintText_12
+"Now that we control a Troll Den, our Builders can build more."
+END
+
+SCRIPT:ANGAngmarHintText_13
+"Now that we control a Battle Tower, our Builders can build more."
+END
+
+SCRIPT:ANGAngmarHintText_14
+"Now that we control a Dark Iron Forge, our Builders can build more."
+END
+
+SCRIPT:ANGAngmarHintText_15
+"Now that we control a Mill, our Builders can build more."
+END
+
+SCRIPT:ANGAngmarHintText_16
+"These walls are too strong for us! We should find siege engines to bring them down."
+END
+
+SCRIPT:ANGAngmarHintText_17
+"They have a cave troll! But Rogash can bend his Troll brethren to his will."
+END
+
+SCRIPT:ANGAngmarEndCineText_01
+"Either your lives or your wills are forfeit. Choose now."
+END
+
+SCRIPT:ANGAngmarEndCineText_02
+"Your will is ours, dread lord, now and forever."
+END
+
+SCRIPT:ANGAngmarEndCineText_03
+"You are broken, but I will re-forge you into a blade worthy of the Iron Crown."
+END
+
+SCRIPT:ANGAngmarDebugText_12
+"Easy Difficulty"
+END
+
+SCRIPT:ANGAngmarDebugText_13
+"Medium Difficulty"
+END
+
+SCRIPT:ANGAngmarDebugText_14
+"Hard Difficulty"
+END
+
+SCRIPT:ANGAngmarDebugText_15
+"NumPlayerFortresses:"
+END
+
+SCRIPT:ANGAngmarCounterattackTimer
+"Counterattack arrives in:"
+END

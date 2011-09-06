@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://www.pogoalpha.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[L'Avènement du Roi-sorcier™]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[S'ENREGISTRER]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[OK]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[ANNULER]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[REESSAYER]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[FERMER]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[QUITTER]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[FINIR PLUS TARD]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[ENREG. PLUS TARD]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[ENREG. MAINTENANT]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[OUI]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[NON]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[RETOUR]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[SUITE]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[RETOUR]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[TERMINE]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>Pour vous enregistrer, vous devez être connecté à Internet.</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[Si vous n'êtes pas connecté à Internet, faites-le maintenant. Cliquez ensuite sur le bouton <b>Suite</b> pour continuer.<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Que dois-je faire si je n'ai pas de connexion Internet ?</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>Afin de vérifier votre enregistrement ou de consulter les offres promotionnelles, vous devez disposer d'une connexion Internet.</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[Si vous n'êtes pas connecté à Internet, faites-le maintenant. Cliquez ensuite sur le bouton <b>Suite</b> pour continuer.]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Que dois-je faire si je n'ai pas de connexion Internet ?</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>Connexion à EA…</b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>Merci de patienter, cela peut prendre quelques minutes…</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>Connexion établie.</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>Lancement de l'enregistrement…</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>Impossible de se connecter à EA</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[Echec de la connexion au service d'enregistrement des produits EA. Afin d'enregistrer votre produit, vous devez être connecté à Internet. Si vous ne l'êtes pas déjà, connectez-vous dès maintenant.]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[Une fois connecté, cliquez sur le bouton <b>Réessayer</B>.]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Que faire si je ne parviens pas à me connecter au bout de plusieurs tentatives ?</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>Afin d'enregistrer votre produit, vous devez avoir une connexion Internet.</b> Il n'est pas indispensable de procéder à l'enregistrement pour pouvoir jouer. Néanmoins, si vous souhaitez le faire mais ne parvenez pas à vous connecter au service d'enregistrement des produits EA au bout de plusieurs tentatives, nous vous conseillons de procéder comme suit :]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[Vérifiez le bon fonctionnement de votre connexion Internet.]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[Contactez l'assistance technique de EA. Reportez-vous à votre manuel de jeu pour plus d'informations à ce sujet.]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[Allez sur <font color="#333399"><a href="http://www.eagamereg.com"><u>www.eagamereg.com</u></a> et remplissez le formulaire d'enregistrement en ligne.</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>Connexion à EA</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[Nous essayons de contacter le service d'enregistrement des produits EA. Merci de patienter quelques instants…]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>Vous n'avez pas de connexion Internet ? Ce n'est pas un problème !</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[Vous pouvez jouer à {client:game-name} sans l'enregistrer. Si vous devez contacter l'assistance technique par la suite, vous pourrez enregistrer votre jeu par téléphone. Reportez-vous à votre manuel de jeu pour plus d'informations à ce sujet.<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[Amusez-vous bien !]]></message>
+         <message id="NOINTERNET-4"><![CDATA[Electronic Arts]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>Voulez-vous vraiment quitter ?</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>En n'enregistrant pas votre produit, vous passez à côté de nombreux avantages comme :</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[&nbsp;]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[<li>Une assistance technique complète</li>]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>Des infos exclusives sur vos jeux EA préférés</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>Un code ou une astuce pour votre jeu !</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>Enregistrez-vous au plus vite et profitez de votre jeu !</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>Cette version de {client:game-name} ne peut être enregistrée.</b> Vous n'avez pas besoin d'enregistrer ce produit pour y jouer. Visitez <font color="#333399"><a href="http://www.ea.com"><u>www.ea.com</u></a></font> pour obtenir les dernières infos sur les produits EA et vous inscrire pour recevoir les lettres d'informations EA.<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>Obtenez un code ou une astuce pour votre jeu et bien d'autres choses encore !</b> <BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>Enregistrez {client:game-name} dès maintenant et bénéficiez de tous ces avantages !</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>Un code ou une astuce pour votre jeu !</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>Des infos exclusives sur vos jeux EA préférés</li>]]></message>
+         <message id="START1A-5"><![CDATA[<li>Une assistance technique complète</li>]]></message>
+         <message id="START1A-6"><![CDATA[&nbsp;]]></message>
+         <message id="START1B-1"><![CDATA[<b>Vous avez déjà enregistré {client:game-name}.</b>]]></message>
+         <message id="START1B-2"><![CDATA[Voulez-vous consulter les informations vous concernant ou répondre à un questionnaire pour obtenir des offres spéciales EA ?]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[<font face="Arial Narrow, Arial">]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[</font>]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

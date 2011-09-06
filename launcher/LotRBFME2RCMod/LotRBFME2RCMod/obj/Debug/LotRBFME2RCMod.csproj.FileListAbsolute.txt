@@ -1,0 +1,41 @@
+C:\Users\Bart de Bree\AppData\Local\Temporary Projects\LotRBFME2RCMod\bin\Debug\LotRBFME2RCMod.exe
+C:\Users\Bart de Bree\AppData\Local\Temporary Projects\LotRBFME2RCMod\bin\Debug\LotRBFME2RCMod.pdb
+C:\Users\Bart de Bree\AppData\Local\Temporary Projects\LotRBFME2RCMod\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Bart de Bree\AppData\Local\Temporary Projects\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.Properties.Resources.resources
+C:\Users\Bart de Bree\AppData\Local\Temporary Projects\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.csproj.GenerateResource.Cache
+C:\Users\Bart de Bree\AppData\Local\Temporary Projects\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.exe
+C:\Users\Bart de Bree\AppData\Local\Temporary Projects\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.pdb
+C:\Users\Bart de Bree\AppData\Local\Temporary Projects\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.RCModLauncherMain.resources
+C:\Users\Bart de Bree\AppData\Local\Temporary Projects\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.g.resources
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.exe
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.pdb
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\LotRBFME2RCMod.exe
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\LotRBFME2RCMod.pdb
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.RCModLauncherMain.resources
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.Properties.Resources.resources
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.csproj.GenerateResource.Cache
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.g.resources
+F:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\LotRBFME2RCMod.exe.config
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\lotrbfme2RCMod.exe.config
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\lotrbfme2RCMod.exe
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\lotrbfme2RCMod.pdb
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\lotrbfme2RCMod.exe
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\lotrbfme2RCMod.pdb
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\ResolveAssemblyReference.cache
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\lotrbfme2RCMod.g.resources
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.About.resources
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.RCModLauncherMain.resources
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.Properties.Resources.resources
+E:\Documents\Visual Studio 2008\Projects\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.csproj.GenerateResource.Cache
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\lotrbfme2RCMod.exe.config
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\lotrbfme2RCMod.exe
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\lotrbfme2RCMod.pdb
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\lotrbfme2RCMod.exe
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\bin\Debug\lotrbfme2RCMod.pdb
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\ResolveAssemblyReference.cache
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\lotrbfme2RCMod.g.resources
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.About.resources
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.Properties.Resources.resources
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.csproj.GenerateResource.Cache
+E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCMod\obj\Debug\LotRBFME2RCMod.RCModLauncherMain.resources
