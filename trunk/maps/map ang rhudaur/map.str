@@ -1,0 +1,139 @@
+SCRIPT:ANGRhudaurIntroText_01
+"ANGMAR OFFICER: Before Hwaldar was captured, he secretly gathered supporters in the hills. \n Even now our agents walk among them."
+END
+
+SCRIPT:ANGRhudaurIntroText_02
+"ANGMAR OFFICER: There are four villages of Rhudaur Hillmen in this area. We must find them and kill all who do not join us!"
+END
+
+SCRIPT:ANGRhudaurIntroText_03
+"If we free Hwaldar from Arnor's outpost in the south before raising rebellion in the villages, more of the Hillmen will join us."
+END
+
+SCRIPT:ANGRhudaurObjectiveText_01
+"Raise rebellion amongst the Hillmen by clearing all four of their villages of warrior folk."
+END
+
+SCRIPT:ANGRhudaurObjectiveText_02
+"Discover where Hwaldar is held captive and free him from Arnor's clutches."
+END
+
+SCRIPT:ANGRhudaurObjectiveText_03
+"Destroy the two fortresses of Arnor to the west."
+END
+
+SCRIPT:ANGRhudaurObjectiveText_04
+"Slay King Argeleb."
+END
+
+SCRIPT:ANGRhudaurVillageCleared_01
+"We have raised rebellion in one of the four hill villages. Three yet remain loyal to Arnor."
+END
+
+SCRIPT:ANGRhudaurVillageCleared_02
+"We have raised rebellion in two of the four hill villages. Two still remain."
+END
+
+SCRIPT:ANGRhudaurVillageCleared_03
+"We have raised rebellion in three of the four hill villages. Only one remains!"
+END
+
+SCRIPT:ANGRhudaurBonusObjectiveText_01
+"The rebellion is underway. To strengthen it, find and clear the remaining two villages of Hillman warriors loyal to Arnor."
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_01
+"We have cleared Arnor's dogs from the last village! The Hillmen of Rhudaur have risen in rebellion against Arnor!"
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_02
+"We have freed Hwaldar from his captivity."
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_03
+"We have destroyed the fortresses of Arnor here!"
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_04
+"We have slain King Argeleb!"
+END
+
+SCRIPT:ANGRhudaurBonusObjectiveComplete_01
+"By clearing all the villages, we have removed all that remains of the Hillmen loyal to Arnor!"
+END
+
+SCRIPT:ANGRhudaurHintText_01
+"The Arnor forces in the strongholds nearby have been alerted to our presence."
+END
+
+SCRIPT:ANGRhudaurHintText_02
+"More Thrall Masters have arrived. We can also build a base with our new Builders now. Prepare to fight!"
+END
+
+SCRIPT:ANGRhudaurHintText_03
+"Our spies report that news of our attack has spread. Rhudaur has undoubtedly called for aid."
+END
+
+SCRIPT:ANGRhudaurHintText_04
+"The Black King is here and we stand with him!"
+END
+
+SCRIPT:ANGRhudaurHintText_05
+"There is an Arnor outpost near this village, to the south. We should investigate."
+END
+
+SCRIPT:ANGRhudaurHintText_06
+"We have cleared this village of all but Hwaldar's supporters."
+END
+
+SCRIPT:ANGRhudaurHintText_07
+"Thrall Masters can summon different types of units to swell the ranks of Angmar. But beware: if the Thrall Master is killed, the entire unit will break!"
+END
+
+SCRIPT:ANGRhudaurHintText_08
+"More Thrall Masters have arrived to do battle against Arnor. They can now summon rebel Rhudaur Hillmen!"
+END
+
+SCRIPT:ANGRhudaurHintText_09
+"Thanks to our great efforts in raising the rebellion, a large number of rebel Hillmen have come to join our ranks!"
+END
+
+SCRIPT:ANGRhudaurHintText_10
+"Now that the Hillmen have risen against Arnor, it is time for the final conquest of Rhudaur."
+END
+
+SCRIPT:ANGRhudaurHintText_11
+"King Argeleb of Arthedain has arrived to help the men of Arnor! Let the ravens feast on his flesh!"
+END
+
+SCRIPT:ANGRhudaurHintText_13
+"We have destroyed one of Arnor's fortresses!"
+END
+
+SCRIPT:ANGRhudaurHintText_14
+"Hwaldar is held captive in one of the towers in this outpost! Destroy his prison to free him!"
+END
+
+SCRIPT:ANGRhudaurHintText_15
+"We have Thrall Masters to summon hordes of rebel Hillmen to our ranks. \n Now build an outpost and raise an army to lay waste to this land!"
+END
+
+SCRIPT:ANGRhudaurHintText_16
+"The two strongholds to the west are all that remain in our way!"
+END
+
+SCRIPT:ANGRhudaurHintText_17
+"ANGMAR OFFICER: Be cautious: if we venture too close to the Arnor fortresses to the west, they may become aware of us before we are ready!"
+END
+
+SCRIPT:ANGRhudaurHintText_18
+"Hwaldar Hillchief is free! Death to the Dunedain!"
+END
+
+SCRIPT:ANGRhudaurHintText_19
+"Men of the North Kingdom! This day we shatter the upstart of Angmar and restore the glory of the Dunedain! To battle, and victory!"
+END
+
+SCRIPT:ANGRhudaurHintText_20
+"Evil shall never reign in Rhudaur! Death to Hwaldar and his dark master!"
+END

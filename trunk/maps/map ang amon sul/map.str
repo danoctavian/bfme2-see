@@ -1,0 +1,143 @@
+SCRIPT:ANGAmonSulIntroText_01
+"WITCH-KING: While this fortress stands, the lands to the west are safe from my vengeance."
+END
+
+SCRIPT:ANGAmonSulIntroText_02
+"HWALDAR: Then it will stand no longer, dread lord."
+END
+
+SCRIPT:ANGAmonSulIntroText_03
+"WITCH-KING: We must strike without mercy. The pretenders guard the walls of Amon Sul with more than sinew and steel."
+END
+
+SCRIPT:ANGAmonSulIntroText_04
+"HWALDAR: Take cover in this tower!"
+END
+
+SCRIPT:ANGAmonSulObjectiveText_01
+"Destroy the Tower of Amon Sul."
+END
+
+SCRIPT:ANGAmonSulObjectiveText_02
+"Destroy one of the Mallorn Trees that power Amon Sul's magical attacks."
+END
+
+SCRIPT:ANGAmonSulObjectiveText_03
+"Destroy the four remaining Mallorn Trees."
+END
+
+SCRIPT:ANGAmonSulObjectiveText_04
+"Build a Mill, a Dark Iron Forge, and a Hall of the King's Men."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_01
+"The Witch-king must reach level 10."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_02
+"Hwaldar must reach level 6."
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_01
+"We've destroyed the central tower!" "
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_01-1
+"'Mighty' Amon Sul is fallen!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_02
+"We've destroyed one of the Mallorn trees!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_03
+"We've destroyed all of the Mallorn Trees!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_04
+"The Witch-king has reached the apex of his power!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_05
+"Hwaldar has reached level 6!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_06
+"We have built a camp - now we must use it!"
+END
+
+SCRIPT:ANGAmonSulHintText_01
+"We've breached the gate!"
+END
+
+SCRIPT:ANGAmonSulHintText_02
+"Be on guard! They strike at us with mystic forces!"
+END
+
+SCRIPT:ANGAmonSulHintText_03
+"WITCH-KING: It seems they know how to use their trinket; but they channel its might through accursed Mallorn trees."
+END
+
+SCRIPT:ANGAmonSulHintText_04
+"Splinter the trees, and its power will wane."
+END
+
+SCRIPT:ANGAmonSulHintText_05
+"We've destroyed another Mallorn tree!"
+END
+
+SCRIPT:ANGAmonSulHintText_06
+"We will need a secure encampment to lay siege to this bastion. Build a Mill, a Dark Iron Forge, and a Hall of the King's Men."
+END
+
+SCRIPT:ANGAmonSulHintText_07
+"Rangers in the swamps to the north pelt us with arrows! Kill them and their sport will cease!"
+END
+
+SCRIPT:ANGAmonSulHintText_08
+"We must use our new Builders to rebuild our forces and strike back at Amon Sul!"
+END
+
+SCRIPT:ANGAmonSulCloudBreakTreeVO
+"This Mallorn Tree allows the Palantir of Amon Sul to part the clouds, stunning the minions of darkness."
+END
+
+SCRIPT:ANGAmonSulElvenWoodTreeVO
+"The Palantir of Amon Sul can channel the power of nature with this tree, creating lush Elven forests to protect the forces of light."
+END
+
+SCRIPT:ANGAmonSulDunedainTreeVO
+"The fortress's defenders can use this Mallorn Tree to call to their Dunedain allies for aid."
+END
+
+SCRIPT:ANGAmonSulRebuildTreeVO
+"The Palantir of Amon Sul uses this Mallorn Tree to miraculously repair damage to buildings."
+END
+
+SCRIPT:ANGAmonSulSunflareTreeVO
+"The mightiest of the Mallorn gifts, this tree allows the Palantir of Amon Sul to focus the fury of the sun itself against any who dare menace the fortress."
+END
+
+SCRIPT:ANGAmonSulCloudBreakTreeTooltip
+"This Mallorn Tree grants the Cloud Break power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulElvenWoodTreeTooltip
+"This Mallorn Tree grants the Elven Wood power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulDunedainTreeTooltip
+"This Mallorn Tree grants the Summon Dunedain power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulRebuildTreeTooltip
+"This Mallorn Tree grants the Rebuild power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulSunflareTreeTooltip
+"This Mallorn Tree grants the Sunflare power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulSunflareTimer
+"Amon Sul Sunflare Attack:"
+END

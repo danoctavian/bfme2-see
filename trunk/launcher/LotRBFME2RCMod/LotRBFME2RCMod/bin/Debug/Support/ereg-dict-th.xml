@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://account.ea.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[The Lord of the Rings(tm), The Battle for Middle-earth(tm) II]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[ลงทะเบียน]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[ตกลง]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[ยกเลิก]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[ลองอีกครั้ง]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[ปิด]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[ออก]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[ทำภายหลัง]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[ลงทะเบียนภายหลัง]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[ลงทะเบียนทันที]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[ใช่]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[ไม่ใช่]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[ย้อนกลับ]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[ต่อไป]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[ย้อนกลับ]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[เสร็จ]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>ในการลงทะเบียนเกมของคุณ คุณจะต้องเชื่อมต่อสู่อินเตอร์เน็ต</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[หากคุณยังไม่ได้เชื่อมต่อสู่อินเตอร์เน็ต ให้เชื่อมต่อเดี๋ยวนี้ หลังจากเชื่อมต่อ<br>ได้แล้ว ให้กดปุ่ม <b>ต่อไป</b> เพื่อดำเนินการต่อ<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>จะทำอย่างไร หากไม่มีการเชื่อมต่อสู่อินเตอร์เน็ต?</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>เพื่อยืนยันการลงทะเบียนหรือรับข้อมูลพิเศษอื่นๆ คุณจะต้องเชื่อมต่อสู่อินเตอร์เน็ต</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[หากคุณยังไม่ได้เชื่อมต่อสู่อินเตอร์เน็ต ให้เชื่อมต่อเดี๋ยวนี้ หลังจากเชื่อมต่อได้แล้ว ให้กดปุ่ม <b>ต่อไป</b> เพื่อดำเนินการต่อ]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>จะทำอย่างไร หากไม่มีการเชื่อมต่อสู่อินเตอร์เน็ต?</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>กำลังติดต่ออีเอ... </b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>กรุณารอสักครู่</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>การติดต่อสำเร็จ</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>กำลังเริ่มการลงทะเบียน…</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>ไม่สามารถติดต่ออีเอได้</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[เราไม่สามารถติดต่อระบบลงทะเบียนผลิตภัณฑ์ได้ <br>ในการลงทะเบียนคุณจะต้องเชื่อมต่อสู่อินเตอร์เน็ต หากคุณยังไม่ได้เชื่อมต่อสู่อินเตอร์เน็ต กรุณาเชื่อมต่อเดี๋ยวนี้]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[เมื่อคุณเชื่อมต่อได้แล้ว กดปุ่ม <b>ลองอีกครั้ง</b>]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>จะทำอย่างไรดีหากไม่สามารถเชื่อมต่อสู่<br>อินเตอร์เน็ตได้ หลังจากได้ลองหลายครั้งแล้ว?</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>ในการลงทะเบียนเกมของคุณ คุณจะต้องมีการเชื่อมต่อสู่อินเตอร์เน็ต</b><br>คุณไม่จำเป็นต้องทำการลงทะเบียนผลิตภัณฑ์ คุณก็สามารถเล่นเกมได้ อย่างไรก็ตาม หากคุณต้องการทำการลงทะเบียนผลิตภัณฑ์ แล้วไม่สามารถเชื่อมต่อสู่ระบบลงทะเบียนผลิตภัณฑ์ของอีเอได้ เราขอแนะนำให้:]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[ตรวจสอบว่าการเชื่อมต่อของคุณสามารถใช้ได้]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[ติดต่อฝ่ายบริการทางเทคนิคของอีเอ โดยดูรายละเอียดในหนังสือคู่มือ]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[ไปยังเว็บไซต์ <font color="#333399"><a href="http://www.eagamereg.com"><u>www.eagamereg.com</u></a> แล้วกรอกข้อมูลลงในแบบฟอร์มการลงทะเบียน</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>กำลังติดต่ออีเอ</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[เรากำลังติดต่อระบบลงทะเบียนผลิตภัณฑ์ของอีเอ <br>กรุณารอสักครู่ การทำงานอาจใช้เวลาระยะหนึ่ง]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>ไม่มีการเชื่อมต่อสู่อินเตอร์เน็ต? ไม่มีปัญหา!</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[คุณยังสามารถเล่นเกม {client:game-name} ของคุณได้โดยมิได้ทำการลงทะเบียน หากคุณต้องการความช่วยเหลือทางโทรศัพท์ พนักงานจะทำการสอบถามข้อมูลและลงทะเบียนให้กับคุณทางโทรศัพท์ กรุณาดูหมายเลขโทรศัพท์ของฝ่ายบริการทางเทคนิคได้ในหนังสือคู่มือ<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[ขอให้สนุกกับการเล่นเกม!]]></message>
+         <message id="NOINTERNET-4"><![CDATA[อิเล็คโทรนิค อาร์ต]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>คุณแน่ใจหรือว่าต้องการจะยุติ?</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>หากไม่ได้ทำการลงทะเบียนผลิตภัณฑ์ คุณอาจจะพลาดสิทธิประโยชน์ต่อไปนี้:</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[&nbsp;]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[<li>บริการทางเทคนิคอย่างใกล้ชิด</li>]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>บทความพิเศษเกี่ยวกับเกมอีเอที่คุณโปรดปราน</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>สูตรเกมหรือคำแนะนำในการเล่นเกมฟรี!</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>ลงทะเบียนโดยเร็วเพื่อเพิ่มความสนุกสนานในการเล่นเกม</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>เกม {client:game-name} เวอร์ชั่นนี้ไม่สามารถลงทะเบียนได้</b> <br>หากคุณไม่ได้ทำการลงทะเบียนคุณก็ยังสามารถเล่นเกมได้ และคุณสามารถไปที่เว็บไซต์ <font color="#333399"><a href="http://www.ea.com"><u>www.ea.com</u></a></font> เพื่อรับข้อมูลล่าสุดเกี่ยวกับผลิตภัณฑ์ของอีเอ และลงทะเบียนเพื่อรับจดหมายข่าวจากอีเอ<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>ดูสูตรเกมหรือคำแนะนำในการเล่นเกม และอื่นๆ อีกมากมาย!</b> <BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>ลงทะเบียน {client:game-name} ทันทีเพื่อรับสิทธิประโยชน์เหล่านี้!</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>สูตรเกมหรือคำแนะนำในการเล่นเกมฟรี!</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>บทความพิเศษเกี่ยวกับเกมอีเอที่คุณโปรดปราน</li>]]></message>
+         <message id="START1A-5"><![CDATA[<li>บริการทางเทคนิคอย่างใกล้ชิด</li>]]></message>
+         <message id="START1A-6"><![CDATA[&nbsp;]]></message>
+         <message id="START1B-1"><![CDATA[<b>คุณลงทะเบียนไว้อยู่แล้ว {client:game-name}</b>]]></message>
+         <message id="START1B-2"><![CDATA[คุณต้องการจะดูข้อมูลในการลงทะเบียนอีกครั้ง หรือตอบคำถามเพิ่มเติมเพื่อรับ<br>ของสมนาคุณพิเศษเกี่ยวกับเกมของอีเอหรือไม่?]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[<font face="_sans">]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[</font>]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

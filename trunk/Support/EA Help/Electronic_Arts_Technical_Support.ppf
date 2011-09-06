@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="Electronic Arts Technical Support">
+ <windowlist>
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow" skin="WebHelp_Skin_Files\XP_Silver\XP_Silver.skn">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" /><element name="SkinInstruction" value="whskin_ep_ins.xml" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+ </contextmap>
+ <topiclist defaulttopic="Welcome.htm">
+  <topic>Error_Message\_Program_has_caused_an_error__or__Error_in__gamename_.exe_.htm
+  </topic>
+  <topic>Controller\Start_Controller_Issues.htm
+  </topic>
+  <topic>Crash\Crashing_After_a_Full_Black_Screen.htm
+  </topic>
+  <topic>Crash\Start_Crashes.htm
+  </topic>
+  <topic>Crash\Crashing_After_the_Splash_Screen.htm
+  </topic>
+  <topic>Direct_X\_GET_SETUP__Error_When_Installing_DirectX.htm
+  </topic>
+  <topic>Direct_X\_Direct3D__or__D3D__Errors.htm
+  </topic>
+  <topic>Direct_X\Start_Direct_X.htm
+  </topic>
+  <topic>Error_Message\_Cannot_locate_CD_DVD-ROM_.htm
+  </topic>
+  <topic>Welcome.htm
+  </topic>
+  <topic>Error_Message\Start_Error.htm
+  </topic>
+  <topic>Error_Message\_CD_DVD_Emulation_Software_Detected_.htm
+  </topic>
+  <topic>Graphics\Start_Graphics_Issues.htm
+  </topic>
+  <topic>Direct_X\DirectX_Version_Does_not_Update_After_Installation.htm
+  </topic>
+  <topic>Whitepages\Lowering_Sound_Acceleration.htm
+  </topic>
+  <topic>Install\INST_Start_Installation_Troubleshooting.htm
+  </topic>
+  <topic>Install\Autoplay_Screen_Does_not_Appear.htm
+  </topic>
+  <topic>Install\Transfer_or_File_Error_During_Installation.htm
+  </topic>
+  <topic>Install\Virus_Warning_During_Installation.htm
+  </topic>
+  <topic>Whitepages\Controller_Calibration.htm
+  </topic>
+  <topic>Whitepages\Reinstalling_DirectX.htm
+  </topic>
+  <topic>Sound\Start_Sound.htm
+  </topic>
+  <topic>Whitepages\Finding_the_Minimum_System_Requirements.htm
+  </topic>
+  <topic>Lock-up_and_Freeze\Random_or_General_Lockups.htm
+  </topic>
+  <topic>Getting_More_Help_Online\Start_Getting_More_Help_Online.htm
+  </topic>
+  <topic>Whitepages\Updating_Drivers.htm
+  </topic>
+  <topic>Install\INST_DirectX_Install_Hangs.htm
+  </topic>
+  <topic>Online_Connectivity_and_Performance\Start_Online_Connectivity_and_Performance.htm
+  </topic>
+  <topic>Lock-up_and_Freeze\Start_Locking_up_and_Freezing.htm
+  </topic>
+  <topic>Lock-up_and_Freeze\Locking_up_with_a_Repeating_Sound.htm
+  </topic>
+  <topic>Whitepages\Changing_Desktop_Resolution.htm
+  </topic>
+  <topic>Whitepages\CD_DVD-ROM_Troubleshooting_.htm
+  </topic>
+  <topic>Whitepages\Emptying_your_Temp_Folder.htm
+  </topic>
+  <topic>Whitepages\UO_Trace.htm
+  </topic>
+  <topic>Whitepages\Ending_Background_Tasks.htm
+  </topic>
+  <topic>Whitepages\Configuring_Routers_and_Firewalls.htm
+  </topic>
+  <topic>Whitepages\Preparing_your_Hard_Drive_.htm
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>English
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="toc">
+   <filename>Electronic_Arts_Technical_Support.hhc
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="ndx">
+   <filename>Electronic_Arts_Technical_Support.hhk
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>Electronic_Arts_Technical_Support.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="gls">
+   <filename>Electronic_Arts_Technical_Support.glo
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_websearch">
+   <filename>Electronic_Arts_Technical_Support.ews
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>Electronic_Arts_Technical_Support.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>Electronic_Arts_Technical_Support.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="sym">
+   <filename>Electronic_Arts_Technical_Support.syn
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

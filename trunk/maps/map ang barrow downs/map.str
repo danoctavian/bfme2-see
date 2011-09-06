@@ -1,0 +1,135 @@
+SCRIPT:ANGBarrowDownsIntroText_01
+"ANGMAR OFFICER: Here, among the graves of Arnor's fathers, we must goad the Men of Cardolan\naway from their walls and onto the field, where we can destroy them."
+END
+
+SCRIPT:ANGBarrowDownsIntroText_02
+"ANGMAR OFFICER: The barrow of Cardolan's kings lies to the southwest. Hwaldar must stand atop it!"
+END
+
+SCRIPT:ANGBarrowDownsIntroText_021
+"ANGMAR OFFICER: We cannot bring our entire host at once, or the Prince may lose his nerve.\nMore troops will arrive during the battle to help you hold the royal barrow."
+END
+
+SCRIPT:ANGBarrowDownsIntroText_03
+"ANGMAR OFFICER: Get Hwaldar to the top of the royal barrow of Cardolan, and hold it until the Prince of Cardolan risks himself in battle."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_01
+"Get Hwaldar to the top of the royal barrow of Cardolan."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_02
+"Repel Cardolan's initial attacks."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_03
+"Defeat the Cardolani vanguard."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_04
+"Slay the Prince of Cardolan and send the rest of his army scurrying from the field."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_05
+"Hold the royal barrow until we have goaded the Prince of Cardolan into showing himself on the Barrow-Downs."
+END
+
+SCRIPT:ANGBarrowDownsBonusObjectiveText_01
+"Slay the Rangers of Arnor who stand watch on the barrows."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveComplete_01
+"Hwaldar stands atop the royal barrow. The Men of Cardolan cannot long abide this defilement."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveComplete_02
+"We have held the barrow against Cardolan's first pitiful attacks. Now they will send more forces to the slaughter, just as the Witch-king planned!"
+END
+
+SCRIPT:ANGBarrowDownsObjectiveComplete_03
+"We have held off the Cardolani vanguard! The Prince has taken up our challenge, and comes fast to the field!"
+END
+
+SCRIPT:ANGBarrowDownsObjectiveComplete_04
+"The Prince of Cardolan lies slain; all Cardolan now lies open to us!"
+END
+
+SCRIPT:ANGBarrowDownsBonusObjectiveComplete_01
+"We have cleared out the Rangers who guarded the barrows. They will not nip at our reinforcements' heels now."
+END
+
+SCRIPT:ANGBarrowDownsHintText_01
+"Rangers of Arnor lurk amongst the barrows, on guard against those who would plunder or desecrate their 'hallowed' ground. They will disrupt our reinforcements if we do not slay them!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_02
+"Now our forces must hold the royal barrow against all attempts to retake it."
+END
+
+SCRIPT:ANGBarrowDownsHintText_03
+"Morgomir has arrived with reinforcements to help hold the royal barrow!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_04
+"More of the Witch-king's servants have arrived, and thirst for battle."
+END
+
+SCRIPT:ANGBarrowDownsHintText_05
+"The Witch-king's plan has worked - we have goaded the Prince into attacking! Kill him and Cardolan is finished!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_06
+"The Witch-king of Angmar has joined the battle! Smash the remaining Cardolani forces!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_07
+"If we lose the royal barrow for too long, Cardolan's pride will be satisfied and they will refuse to risk all. We cannot allow that!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_08
+"We no longer have forces on the royal barrow! We must retake it soon, or all is lost!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_09
+"We have retaken the royal barrow. Hold it against further attacks!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_10
+"We have held the barrow against Cardolan's first pitiful attacks. Now they will send more forces to the slaughter, just as the Witch-king planned!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_11
+"Morgomir has brought Sorcerers, adepts of the Iron Crown imbued with the power of the shattered Palantir of Amon Sul!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_12
+"We now have the service of Sorcerers, adepts of the Iron Crown imbued with the power of the shattered Palantir of Amon Sul!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_13
+"The Sorcerers' spells can heal our own units, rain death upon our enemies, and slow their attacks with the chill of death."
+END
+
+SCRIPT:ANGBarrowDownsHintText_14
+"Hard Difficulty"
+END
+
+SCRIPT:ANGBarrowDownsHintText_15
+"Arnor outriders have waylaid our reinforcements! Clear out the Rangers so the next group can arrive!"
+END
+
+SCRIPT:ANGBarrowDownsBarrowWarning_1
+"We must retake the royal barrow, or Cardolan will not send its army into our hands!"
+END
+
+SCRIPT:ANGBarrowDownsBarrowWarning_2
+"We have but a few moments to retake the royal barrow, or Cardolan will depart and our plan will fail!"
+END
+
+SCRIPT:ANGBarrowDownsBarrowWarning_3
+"Cardolan's army has departed the Barrow-Downs! The Witch-king will be most displeased!"
+END
+
+SCRIPT:ANGBarrowDownsBarrowTimer_01
+"Retake the royal barrow in"
+END

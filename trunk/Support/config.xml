@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ereg2-config>
+  <subs-xml-feed>https://account.ea.com/subsxml/subsxml.jsp</subs-xml-feed>
+  <test-page>http://account.ea.com/webcore/test/test.html</test-page>
+  <locale-registry-key>HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\The Lord of the Rings, The Rise of the Witch-king\Locale</locale-registry-key>
+  <regcode-registry-key>HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\Electronic Arts\The Lord of the Rings, The Rise of the Witch-king\ergc\</regcode-registry-key>
+  <member-name-registry-key>HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\Electronic Arts\The Lord of the Rings, The Rise of the Witch-king\MemberName</member-name-registry-key>
+  <registered-registry-key>HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\Electronic Arts\The Lord of the Rings, The Rise of the Witch-king\Registered</registered-registry-key>
+  <game-id>GAME-LOTRBFME2EP1</game-id>
+  <platform-id>PC</platform-id>
+  <brand>Electronic Arts</brand>
+  <debug>1</debug>
+</ereg2-config>

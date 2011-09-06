@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://account.ea.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[The Lord of the Rings(tm), The Battle for Middle-earth(tm) II, Rise of the Witch-king]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[注册]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[OK]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[取消]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[再试一次]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[关闭]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[退出]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[一会儿完成]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[稍后注册]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[现在注册]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[是]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[否]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[上一步]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[下一步]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[返回]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[完成]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>要注册游戏，需要连到Internet。</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[如果你还没有连接到Internet，请现在连接。一但连接成功，点击<b>下一步</b>按钮继续。<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>如果我没有 Internet连接，应该怎么办？</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>要验证你的注册或者获得奖励信息，你必须连接到Internet。</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[如果你还没有连接到Internet，请现在连接。一但连接成功，点击<b>下一步</b> 按钮继续。]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>如果我没有 Internet连接，应该怎么办？</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>现在连接到EA…… </b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>请稍候——这可能会花几分钟时间。</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>联系已建立！</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>执行注册……</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>连接不到EA</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[我们无法连接到EA产品注册系统。要注册产品，必须连接到Internet。如果你现在没有连接到Internet，请现在连接。]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[一旦连接上，请按 <b>再试一次</B> 按钮。]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>尝试过几次之后还是无法连接，我该怎么办？</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>要注册产品，必须有一个Internet连接。</b>仅是要玩游戏的话，不需要进行注册。当然，如果你希望注册产品，尝试几次后你又不能连接到EA注册系统，我们建议：]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[检测你的Internet连接工作。]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[联系EA技术支持。请参考用户手册或者注册卡获得联系信息。]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[来到<font color="#333399"><a href="http://www.eagamereg.com"><u>www.eagamereg.com</u></a> 填写网站注册信息。</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>连接到EA</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[我们正在尝试连接到EA的产品注册系统。请稍等，这可能会花几分钟。]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>没有Internet连接？这不是问题！</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[没有注册游戏也可以玩 {client:game-name} 。如果你从不需要技术支持，你可以通过电话注册。请参考你的游戏手册或者注册卡，上面有技术支持电话号码。<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[享受游戏吧！]]></message>
+         <message id="NOINTERNET-4"><![CDATA[Electronic Arts]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>确定要退出吗？</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>由于您没有注册您的产品，您失去获得一些收益，包括：</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[&nbsp;]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[<li>全面的技术支持</li>]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>对EA 游戏深入挖掘的乐趣</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>免费密技或者游戏提示</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>尽快注册您的游戏，享受游戏乐趣。</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>这个版本的 {client:game-name} 不能被注册。</b> 不用注册也可以进行游戏。你可以进入<font color="#333399"><a href="http://www.ea.com"><u>www.ea.com</u></a></font> 获得最新的EA产品信息，注册获得EA新闻邮件。<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>为你的游戏取得密技或者游戏提示，以及更多内容！</b> <BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>现在注册 {client:game-name} 取得收益！</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>免费密技或者游戏提示！</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>深入挖掘你喜欢的EA游戏！</li>]]></message>
+         <message id="START1A-5"><![CDATA[<li>提供全面照顾的技术支持</li>]]></message>
+         <message id="START1A-6"><![CDATA[&nbsp;]]></message>
+         <message id="START1B-1"><![CDATA[<b>你已经注册了{client:game-name}。</b>]]></message>
+         <message id="START1B-2"><![CDATA[你希望查看你的注册信息或者回复一些EA游戏的特殊提议？]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[<font face="_sans">]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[</font>]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

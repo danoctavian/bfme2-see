@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://www.pogoalpha.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[La Battaglia per la Terra di Mezzo™ II]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[REGISTRAZIONE]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[OK]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[ANNULLA]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[RIPROVA]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[CHIUDI]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[ESCI]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[PROSEGUI PIÙ TARDI]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[REGISTRA PIÙ TARDI]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[REGISTRA ORA]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[SÌ]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[NO]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[INDIETRO]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[AVANTI]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[INDIETRO]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[FINE]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>Per poter effettuare la registrazione del gioco, devi essere connesso a Internet.</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[Effettua ora la connessione a Internet, se non l'hai già fatto. Una volta connesso, clicca sul pulsante <b>Avanti</b> per continuare.<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Cosa devo fare se non dispongo di una connessione a Internet?</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>Per poter controllare la tua registrazione o dare un'occhiata alle fantastiche offerte promozionali, devi essere connesso a Internet.</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[Effettua ora la connessione a Internet, se non l'hai già fatto. Una volta connesso, clicca sul pulsante <b>Avanti</b> per continuare.]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Cosa devo fare se non dispongo di una connessione a Internet?</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>Collegamento a EA in corso...</b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>Attendere, l'operazione potrebbe richiedere alcuni secondi.</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>Collegamento stabilito.</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>Avvio registrazione in corso…</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>Impossibile effettuare il collegamento a EA.</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[Impossibile eseguire il collegamento al sistema di registrazione prodotti di EA. Per effettuare la registrazione del tuo prodotto, devi essere connesso a Internet. Effettua subito la connessione a Internet, se non l'hai già fatto.]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[Dopo aver effettuato la connessione, clicca sul pulsante <b>Riprova</B>.]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Cosa devo fare se non riesco a effettuare la connessione dopo numerosi tentativi?</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>Per poter effettuare la registrazione del prodotto devi disporre di una connessione a Internet.</b>Non è necessario registrare il prodotto per poter giocare. Se desideri registrare il prodotto, ma non riesci ad effettuare il collegamento al sistema di registrazione prodotti di EA, esegui una delle seguenti operazioni:]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[Verifica il funzionamento della connessione a Internet.]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[Contatta il supporto tecnico di EA. Fai riferimento al tuo manuale di gioco per sapere come contattare il supporto tecnico.]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[Vai all'indirizzo <font color="#333399"><a href="http://www.eagamereg.com"><u>www.eagamereg.com</u></a> e completa il modulo di registrazione.</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>Collegamento a EA</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[Collegamento al sistema di registrazione prodotti di EA... L'operazione potrebbe richiedere alcuni secondi.]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>Non disponi di una connessione a Internet? Nessun problema!</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[Puoi giocare a {client:game-name} senza dover effettuare la registrazione del gioco. In caso dovessi contattare il supporto tecnico, durante la telefonata ti verrà richiesto di registrare il gioco. Fai riferimento al tuo manuale di gioco per trovare il numero del supporto tecnico.<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[Buon divertimento!]]></message>
+         <message id="NOINTERNET-4"><![CDATA[Electronic Arts]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>Vuoi uscire?</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>Scegliendo di non registrare il prodotto, perderai alcuni vantaggi irripetibili, tra cui:</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[&nbsp;]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[<li>Supporto tecnico completo</li>]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>Le notizie più interessanti sui tuoi giochi EA preferiti</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>Trucchi o suggerimenti di gioco!</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>Registrati al più presto e buon divertimento!</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>Questa versione di {client:game-name} non può essere registrata.</b> Non è necessario registrare questo prodotto per poter giocare. Per ottenere le informazioni più recenti sui prodotti EA e per iscriverti alla relativa newsletter, visita il sito Internet <font color="#333399"><a href="http://www.ea.com"><u>www.ea.com</u></a></font>.<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>Potrai ricevere trucchi o suggerimenti di gioco e molto altro!</b> <BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>Effettua subito la registrazione a {client:game-name} e sfrutta questi eccezionali vantaggi:</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>Trucchi o suggerimenti di gioco!</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>Le notizie più interessanti sui tuoi giochi EA preferiti</li>]]></message>
+         <message id="START1A-5"><![CDATA[<li>Supporto tecnico completo</li>]]></message>
+         <message id="START1A-6"><![CDATA[&nbsp;]]></message>
+         <message id="START1B-1"><![CDATA[<b>Hai già effettuato la registrazione a {client:game-name}.</b>]]></message>
+         <message id="START1B-2"><![CDATA[Vuoi recuperare le informazioni sulla tua registrazione ed eventualmente rispondere a ulteriori domande per beneficiare delle offerte speciali sui giochi EA?]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[<font face="Arial Bold, Arial">]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[</font>]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

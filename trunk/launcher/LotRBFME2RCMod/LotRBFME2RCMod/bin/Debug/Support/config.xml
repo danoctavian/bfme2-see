@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ereg2-config>
+  <subs-xml-feed>https://account.ea.com/subsxml/subsxml.jsp</subs-xml-feed>
+  <test-page>http://account.ea.com/webcore/test/test.html</test-page>
+  <locale-registry-key>HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\The Battle for Middle-earth II\Locale</locale-registry-key>
+  <regcode-registry-key>HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\Electronic Arts\The Battle for Middle-earth II\ergc\</regcode-registry-key>
+  <member-name-registry-key>HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\Electronic Arts\The Battle for Middle-earth II\MemberName</member-name-registry-key>
+  <registered-registry-key>HKEY_LOCAL_MACHINE\SOFTWARE\Electronic Arts\Electronic Arts\The Battle for Middle-earth II\Registered</registered-registry-key>
+  <game-id>GAME-LOTR-BME2RELEASE</game-id>
+  <platform-id>PC</platform-id>
+  <brand>Electronic Arts</brand>
+  <debug>1</debug>
+</ereg2-config>

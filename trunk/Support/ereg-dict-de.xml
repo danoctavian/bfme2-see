@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://www.pogoalpha.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[Aufstieg des Hexenkönigs™]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[REGISTRIERUNG]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[OK]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[ABBRECHEN]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[ERNEUT VERSUCHEN]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[SCHLIESSEN]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[VERLASSEN]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[SPÄTER BEENDEN]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[SPÄTER REGISTRIEREN]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[JETZT REGISTRIEREN]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[JA]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[NEIN]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[ZURÜCK]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[WEITER]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[ZURÜCK]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[FERTIG]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>Dein Computer muss mit dem Internet verbunden sein, damit du dich registrieren kannst.</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[Hast du noch keine Internetverbindung aufgebaut, solltest du dies nun nachholen. Sobald die Verbindung erfolgreich hergestellt wurde, klicke auf den <b>Weiter</b>-Button, um fortzufahren.<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Was kann ich tun, wenn ich keine Internetverbindung habe?</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>Um die Registrierung überprüfen oder interessante Angebote ansehen zu können, musst du mit dem Internet verbunden sein.</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[Hast du noch keine Internetverbindung aufgebaut, solltest du dies nun nachholen. Sobald die Verbindung erfolgreich hergestellt wurde, klicke auf den <b>Weiter</b>-Button, um fortzufahren.]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Was kann ich tun, wenn ich keine Internetverbindung habe?</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>Verbindet zu EA ...</b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>Bitte hab etwas Geduld, der Vorgang kann einige Minuten dauern.</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>Verbindung aufgebaut.</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>Registrierung wird gestartet ...</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>Verbindung zu EA nicht möglich</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[Es konnte keine Verbindung zum EA-Registrierungssystem aufgebaut werden. Um dein Spiel registrieren zu können, muss dein Computer mit dem Internet verbunden sein. Hast du noch keine Internetverbindung aufgebaut, solltest du dies nun nachholen.]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[Sobald die Internetverbindung erfolgreich hergestellt wurde, klicke auf den <b>Erneut versuchen</B>-Button.]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Was kann ich tun, wenn nach mehreren Versuchen keine Verbindung aufgebaut werden konnte?</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>Dein Computer muss mit dem Internet verbunden sein, damit du dein Spiel registrieren kannst.</b>Zum Spielen brauchst du jedoch keine Registrierung. Möchtest du dein Spiel trotzdem registrieren und kannst keine Verbindung zum EA-Registrierungssystem aufbauen, solltest du Folgendes versuchen:]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[Überprüfe, ob es Probleme mit deiner Internetverbindung gibt.]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[Setze dich mit dem Technischen Kundendienst von EA in Verbindung. Die Kontaktinformationen findest du im Handbuch des Spiels.]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[Besuche die Website <font color="#333399"><a href="http://www.eagamereg.com"><u>www.eagamereg.com</u></a> und fülle das Registrierungsformular aus.</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>Kontaktiert EA</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[Es wird eine Verbindung zum EA-Registrierungssystem aufgebaut. Bitte um etwas Geduld.]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>Eine Verbindung zum Internet ist nicht möglich? Kein Problem.</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[Du kannst {client:game-name} auch ohne Registrierung spielen. Wendest du dich dann an den Technischen Kundendienst, kannst du dein Spiel per Telefon registrieren. Die Telefonnummer des Technischen Kundendienstes findest du im Handbuch deines Spiels.<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[Genieße dein Spiel!]]></message>
+         <message id="NOINTERNET-4"><![CDATA[Electronic Arts]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>Wirklich verlassen?</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>Registrierst du dein Spiel nicht, entgehen dir folgende Vorteile:</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[&nbsp;]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[<li>komplette technische Unterstützung</li>]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>Insider-Infos zu deinen EA-Lieblingsspielen</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>ein kostenloser Cheat-Code oder Spieltipp für dein Spiel</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>Registriere dich und genieße dein Spiel.</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>Diese Version von {client:game-name} kann nicht registriert werden. Du kannst dein Spiel auch ohne Registrierung spielen. Besuche die Website <font color="#333399"><a href="http://www.electronicarts.de"><u>www.electronicarts.de/u></a></font>, um aktuelle Informationen zu EA-Spielen zu erhalten und dich für den EA-Newsletter anzumelden.<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>Hol dir einen Cheat-Code, Spieltipps und noch viel mehr für dein Spiel!</b> <BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>Registriere {client:game-name} jetzt und du erhältst:</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>einen kostenlosen Cheat-Code oder Spieltipp für dein Spiel</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>Insider-Infos zu deinen EA-Lieblingsspielen</li>]]></message>
+         <message id="START1A-5"><![CDATA[<li>komplette technische Unterstützung</li>]]></message>
+         <message id="START1A-6"><![CDATA[&nbsp;]]></message>
+         <message id="START1B-1"><![CDATA[<b>Du hast das folgende Spiel bereits registriert: {client:game-name}</b>]]></message>
+         <message id="START1B-2"><![CDATA[Möchtest du deine Registrierung überprüfen oder zusätzliche Fragen beantworten, um Specials zu EA-Spielen zu erhalten?]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[<font face="Arial Bold, Arial">]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[</font>]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

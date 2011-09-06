@@ -1,0 +1,102 @@
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000014 was written to.
+
+Exception occured at
+77558da9 ntdll.dll+0x38da9, RtlIntegerToUnicodeString+0x2fc.
+
+Version: internal
+
+EAX:0x00000000 EBX:0xfffffffc ECX:0x00000000
+EDX:0x00000004 ESI:0x022b77c0 EDI:0x022b77c4
+EIP:0x77558da9 ESP:0x0018fcf0 EBP:0x0018fd40
+Flags:%00000000000000010000001000010011
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100000
+TW:%1111111111111111
+ErrOfs:      0x006d4bc2 ErrSel:  0x011a0023
+DataOfs:     0x08b98a6c DataSel: 0x0000002b
+Cr0NpxState: 0x035278b0
+ST(0) 00000000000000000000 0.000000
+ST(1) 00000000000000000000 0.000000
+ST(2) 00000000000000000000 0.000000
+ST(3) 0000000000000080ffbf -1.000000
+ST(4) 00000000000080bb0e40 48000.000000
+ST(5) 0000000000000080ff3f 1.000000
+ST(6) 00000000000000a00140 5.000000
+ST(7) 0000000000aa619cfe3f 0.610865
+
+9 addresses:
+(unknown)(0): ntdll.dll+232873 RtlIntegerToUnicodeString+764
+(unknown)(0): ntdll.dll+232632 RtlIntegerToUnicodeString+523
+(unknown)(0): Worldbuilder.exe+5947077 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1767461
+(unknown)(0): Worldbuilder.exe+7436079 FXParticleSystem::ParticleSystemTemplate::createSlaveSystem+1375
+(unknown)(0): Worldbuilder.exe+4173257 FXParticleSystem::CategoryModuleInfo<6>::operator=+393
+(unknown)(0): Worldbuilder.exe+4173119 FXParticleSystem::CategoryModuleInfo<6>::operator=+255
+(unknown)(0): Worldbuilder.exe+2764977 IRegion2D::operator=+2712926
+(unknown)(0): Worldbuilder.exe+2764847 IRegion2D::operator=+2712796
+(unknown)(0): Worldbuilder.exe+6779374 FXParticleSystem::CategoryModuleTemplate<6>::operator=+2599758
+
+Bytes around EIP:
+77558d89 c2 8b d8 8b c1 f0 0f b1 1f 3b c1 0f 85 58 fe ff Â‹Ø‹Áð.±.;Á.…Xþÿ
+77558d99 ff 33 c0 89 45 0c 89 45 08 8b 06 83 f8 ff 74 03 ÿ3À‰E.‰E.‹.ƒøÿt.
+77558da9 ff 40 14 8b 5d f4 8b 7d f0 80 3d 82 03 fe 7f 00 ÿ@.‹]ô‹}ð€=‚.þ.
+77558db9 0f 85 9a 99 04 00 8b 45 fc 57 6a 00 83 f8 ff 0f .…š™..‹EüWj.ƒøÿ.
+77558dc9 84 e3 99 04 00 50 e8 d8 6a fe ff 3d 02 01 00 00 „ã™..PèØjþÿ=....
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000014 was written to.
+
+Exception occured at
+77558da9 ntdll.dll+0x38da9, RtlIntegerToUnicodeString+0x2fc.
+
+Version: internal
+
+EAX:0x00000000 EBX:0xfffffffc ECX:0x00000000
+EDX:0x00000004 ESI:0x022b77c0 EDI:0x022b77c4
+EIP:0x77558da9 ESP:0x0018fcf0 EBP:0x0018fd40
+Flags:%00000000000000010000001000010011
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100000
+TW:%1111111111111111
+ErrOfs:      0x006d4bc2 ErrSel:  0x011a0023
+DataOfs:     0x089f4dbc DataSel: 0x0000002b
+Cr0NpxState: 0x09535a20
+ST(0) 00000000000000000000 0.000000
+ST(1) 00000000000000000000 0.000000
+ST(2) 00000000000000000000 0.000000
+ST(3) 0000000000000080ffbf -1.000000
+ST(4) 00000000000080bb0e40 48000.000000
+ST(5) 0000000000000080ff3f 1.000000
+ST(6) 00000000000000a00140 5.000000
+ST(7) 0000000000aa619cfe3f 0.610865
+
+9 addresses:
+(unknown)(0): ntdll.dll+232873 RtlIntegerToUnicodeString+764
+(unknown)(0): ntdll.dll+232632 RtlIntegerToUnicodeString+523
+(unknown)(0): Worldbuilder.exe+5947077 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1767461
+(unknown)(0): Worldbuilder.exe+7436079 FXParticleSystem::ParticleSystemTemplate::createSlaveSystem+1375
+(unknown)(0): Worldbuilder.exe+4173257 FXParticleSystem::CategoryModuleInfo<6>::operator=+393
+(unknown)(0): Worldbuilder.exe+4173119 FXParticleSystem::CategoryModuleInfo<6>::operator=+255
+(unknown)(0): Worldbuilder.exe+2764977 IRegion2D::operator=+2712926
+(unknown)(0): Worldbuilder.exe+2764847 IRegion2D::operator=+2712796
+(unknown)(0): Worldbuilder.exe+6779374 FXParticleSystem::CategoryModuleTemplate<6>::operator=+2599758
+
+Bytes around EIP:
+77558d89 c2 8b d8 8b c1 f0 0f b1 1f 3b c1 0f 85 58 fe ff Â‹Ø‹Áð.±.;Á.…Xþÿ
+77558d99 ff 33 c0 89 45 0c 89 45 08 8b 06 83 f8 ff 74 03 ÿ3À‰E.‰E.‹.ƒøÿt.
+77558da9 ff 40 14 8b 5d f4 8b 7d f0 80 3d 82 03 fe 7f 00 ÿ@.‹]ô‹}ð€=‚.þ.
+77558db9 0f 85 9a 99 04 00 8b 45 fc 57 6a 00 83 f8 ff 0f .…š™..‹EüWj.ƒøÿ.
+77558dc9 84 e3 99 04 00 50 e8 d8 6a fe ff 3d 02 01 00 00 „ã™..PèØjþÿ=....

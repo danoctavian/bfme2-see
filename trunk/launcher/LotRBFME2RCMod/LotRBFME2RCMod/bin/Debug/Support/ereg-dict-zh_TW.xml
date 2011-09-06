@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://account.ea.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[The Lord of the Rings(tm), The Battle for Middle-earth(tm) II]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[註冊]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[確認]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[取消]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[重試]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[關閉]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[離開]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[稍後再完成]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[稍後再註冊]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[立刻註冊]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[是]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[否]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[上一步]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[下一步]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[返回]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[完成]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>若要註冊您的遊戲，您必須先連上網際網路。</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[如果您還沒連上網際網路，請立刻連線。連上網際網路之後，按<b>下一步</b>鈕繼續。<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>若我無法連上網際網路，我該怎麼辦？</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>您必須連上網際網路，才能認證您的註冊資料或查詢促銷優惠。</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[如果您還沒連上網際網路，請立刻連線。連上網際網路之後，按<b>下一步</b>鈕繼續。]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>若我無法連上網際網路，我該怎麼辦？</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>連線至EA... </b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>請稍後 - 可能需要一些時間。</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>連線成功。</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>開始註冊…</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>無法連線至EA</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[我們無法連線至EA的產品註冊系統。您必須連上網際網路，才能註冊您的產品。如果您還沒連上網際網路，請立刻連線。]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[連上網際網路之後，按<b>重試</B>鈕。]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>嘗試數次後仍無法連線，我該怎麼辦？</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>您必須連上網際網路，才能註冊您的產品。</b>不註冊遊戲，您仍舊可以玩您購買的產品。然而，如果您希望註冊您的產品，而且在經過數次嘗試後，您仍無法連線至EA產品註冊系統，我們建議您依照底下的指示：]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[檢查您的網際網路是否正常。]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[與EA技術支援部門取得聯繫。關於EA技術支援部門的聯絡方式，請參考您的遊戲手冊。]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[前往<font color="#333399"><a href="http://www.eagamereg.com"><u>www.eagamereg.com</u></a>並填寫網路註冊表格。</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>連線至EA</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[我們正嘗試連線至EA的產品註冊系統。請稍後，可能需要一些時間。]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>無法連上網際網路？這不成問題！</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[不需註冊遊戲，您仍舊可以玩{client:game-name}。如果您需要技術方面的支援，您可以利用電話註冊您的遊戲。關於技術支援的電話號碼，請參閱您的遊戲手冊。<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[享受遊戲樂趣！]]></message>
+         <message id="NOINTERNET-4"><![CDATA[美商藝電]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>確定要結束？</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>若不註冊您的產品，您會損失一些好處，包含：</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[&nbsp;]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[<li>完整的技術支援</li>]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>您最喜歡的EA遊戲的獨家資料</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>免費的作弊密碼及遊戲提示！</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>立刻註冊並享受遊戲樂趣。</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>無法註冊這個版本的{client:game-name}。</b> 不需註冊本產品，您仍舊可以玩遊戲。您可以前往<font color="#333399"><a href="http://www.ea.com"><u>www.ea.com</u></a></font>取得最新的EA產品資料，並且申請EA電子報。<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>獲得遊戲的作弊密碼或提示，以及更多的好東西！</b><br>注意！若您是購買美商藝電台灣分公司出版之遊戲，您必須連上美商藝電台灣分公司官網( <a href="http://www.ea.com.tw"><u>www.ea.com.tw</u></a> )註冊方可獲得額外的本地技術支援服務。<BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>立刻註冊{client:game-name}並獲得這些好處！</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>免費的作弊密碼及遊戲提示！</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>您最喜歡的EA遊戲的獨家資料</li>]]></message>
+         <message id="START1A-5"><![CDATA[<li>完整的技術支援</li>]]></message>
+         <message id="START1A-6"><![CDATA[&nbsp;]]></message>
+         <message id="START1B-1"><![CDATA[<b>您已經註冊過{client:game-name}。</b>]]></message>
+         <message id="START1B-2"><![CDATA[您想要檢視您的註冊資料或回答一些額外的問題以獲得EA遊戲的特別優惠？]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[<font face="_sans">]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[</font>]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

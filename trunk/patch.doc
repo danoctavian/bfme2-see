@@ -1,0 +1,484 @@
+{\rtf1\adeflang1025\ansi\ansicpg1252\uc1\adeff0\deff0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Bookman Old Style};}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial{\*\falt  Helvetica};}
+{\f178\froman\fcharset238\fprq2 Times New Roman CE{\*\falt Bookman Old Style};}{\f179\froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Bookman Old Style};}{\f181\froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Bookman Old Style};}
+{\f182\froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Bookman Old Style};}{\f183\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew){\*\falt Bookman Old Style};}
+{\f184\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic){\*\falt Bookman Old Style};}{\f185\froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Bookman Old Style};}
+{\f186\froman\fcharset163\fprq2 Times New Roman (Vietnamese){\*\falt Bookman Old Style};}{\f188\fswiss\fcharset238\fprq2 Arial CE{\*\falt  Helvetica};}{\f189\fswiss\fcharset204\fprq2 Arial Cyr{\*\falt  Helvetica};}
+{\f191\fswiss\fcharset161\fprq2 Arial Greek{\*\falt  Helvetica};}{\f192\fswiss\fcharset162\fprq2 Arial Tur{\*\falt  Helvetica};}{\f193\fbidi \fswiss\fcharset177\fprq2 Arial (Hebrew){\*\falt  Helvetica};}
+{\f194\fbidi \fswiss\fcharset178\fprq2 Arial (Arabic){\*\falt  Helvetica};}{\f195\fswiss\fcharset186\fprq2 Arial Baltic{\*\falt  Helvetica};}{\f196\fswiss\fcharset163\fprq2 Arial (Vietnamese){\*\falt  Helvetica};}}{\colortbl;\red0\green0\blue0;
+\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;
+\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\*\cs10 \additive \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}}
+{\*\latentstyles\lsdstimax156\lsdlockeddef0}{\*\rsidtbl \rsid404762\rsid2499078\rsid5529697}{\*\generator Microsoft Word 11.0.8125;}{\info{\operator EALA Development Team}{\creatim\yr2007\mo4\dy10\hr10\min20}{\revtim\yr2007\mo4\dy12\hr8\min43}{\version4}
+{\edmins3}{\nofpages12}{\nofwords2191}{\nofchars12493}{\nofcharsws14655}{\vern24611}{\*\password 00000000}}{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word/2003/wordml}{\xmlns2 urn:schemas-microsoft-com:office:smarttags}}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect 
+\widowctrl\ftnbj\aenddoc\donotembedsysfont0\donotembedlingdata1\grfdocevents0\validatexml0\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3
+\jcompress\viewkind4\viewscale100\rsidroot5529697 \fet0{\*\wgrffmtfilter 013f}\ilfomacatclnup0\ltrpar \sectd \ltrsect\linex0\sectdefaultcl\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang 
+{\pntxtb (}{\pntxta )}}\pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+=============================================================
+\par The Lord of the Rings(tm), The Battle for Middle-earth(tm) II,
+\par The Rise of the Witch-king, Readme File
+\par MRea
+\par =============================================================
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 Version 2.01 \endash  April, 2007
+\par 
+\par General - Unit
+\par ------------------------------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab All Lumbermills now cost 350 and spawn 5 workers instead of 4.
+\par 
+\par \bullet \~\tab Structure and Technology armor more resistant to Pierce (2% from 20%).
+\par 
+\par \bullet \~\tab Factory Armor more resistant to Pierce (2% from 10%).
+\par 
+\par \bullet \~\tab Resource Armor more resistant to Pierce (5% from 10%).
+\par 
+\par \bullet \~\tab All units that use siege armor are more resistant to Pierce (5% from 20%).
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab 
+HeroMini Foot more resistant to Slash (45% from 60%); more resistant to Pierce (45% from 60%); more vulnerable to Structural (80% from 50%)
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab HeroMiniMounted more resistant
+ to Slash (25% from 60%); more resistant to Pierce (35% from 60%); more vulnerable to Structural (80% from 50%); more vulnerable to Specialist (130% from 100%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Hero Armor more vulnerable to Slash (40% from 25%); more resistant to Pierce (20% from 25%)
+; more vulnerable to Specialist (30% from 25%); more vulnerable to Crush (50% from 10%); 
+\par }\pard \ltrpar\ql \li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 more resistant to magic (35% from 75%); 
+\par more resistant to Poison (50% from 75%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Tough Hero Armor more vulnerable to Specialist (30% from
+ 15%); more vulnerable to Crush (35% from 10%); more resistant to Flame (20% from 25%); more resistant to Magic (25% from 50%); 
+\par }\pard \ltrpar\ql \li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 more vulnerable to Hero (65% from 50%); 
+\par more resistant to Structural (40% from 50%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab HeroLight Armor more vulnerable to Crush (50% from 15%); 
+\par }\pard \ltrpar\ql \li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 more resistant to Flame (25% from 35%) 
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab 
+HeroArmorMounted more resistant to Slash (25% from 50%); more resistant to Pierce (15% from 50%); more vulnerable to Flame (40% from 25%); more resistant to Magic (50% from 100%); more resist
+ant to Poison (50% from 75%); more vulnerable to Structural (80% from 50%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 General - Creeps & Powers
+\par ------------------------------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The \'93Heal\'94
+ power radius has been increased to 200 (originally 150) and no longer works on machines or monsters; it restores up to 60% health (originally 100%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab The Structure Rebuild power timer has been reduced to 4m 
+\par }\pard \ltrpar\ql \fi720\li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 (originally 6m); further its area of effect has been reduced 
+\par to 150 (originally 300)
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Both Darkness and Freezing Rain\rquote s recharge time have been reduced to 6m (originally 9m).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697  
+\par \bullet \~\tab Freezing Rain\rquote s duration now lasts for 2m30sec.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Cloud Break\rquote s recharge time has been reduced \line to 7m30s (originally 8m20s).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par \bullet \~\tab The following powers have been rearranged:
+\par 
+\par \tab \tab \bullet  Dwarves - Dwarven riches switched with Summon Hobbit Allies;
+\par  
+\par \tab \tab \bullet  Dwarves - Undermine switched with Cloud Break;
+\par 
+\par }\pard \ltrpar\ql \li1440\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin1440\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet  Mordor - Awaken Wyrm switched with Barrage; \line Barricade switched with Industry;
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \li1440\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin1440\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet  Isengard \endash  Summon Wildmen Allies switched with Devastation; Watcher switched by Fuel the fires.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \li1440\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin1440\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet  Goblins \endash  Summon Spiderling Allies switched with \line Summon Wildmen Allies
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par \bullet \~\tab The Barricade archer\rquote s range has been increased to 320 (originally 275).
+\par 
+\par 
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 General - Angmar
+\par ------------------------------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab 
+Thrall masters now cost 200 (originally 100); Gundabad Warriors and Rhudaur Axe Throwers are now free (originally 50); Summoned Wolfriders have been reduced to 350 (originally 400).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Angmar\rquote s Resource building hitpoints have been reduced to 2100.
+\par 
+\par \bullet \~\tab Summon Wights ability (15pp) now summons 5 wights instead of 4.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Sorcerer\rquote s Well of Souls heal radius has been reduced to 320 (originally 400).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Sorcerer\rquote s Corpse Rain recharge has been reduced \line to 3m20sec (originally 4m).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Rhudaur Axe Thrower damage has been reduced to 45 (originally 75).
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Rogash\rquote s Leap ability recharge has been increased \line to 1m30sec (originally 1m); Battle Rage
+\rquote s duration has been reduced to 1m (originally 1m30sec).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Sorcerer\rquote s speed has been increased to 40 (originally 35).
+\par 
+\par \bullet \~\tab The Dark Ranger\rquote s Longshot ability now requires the unit to be Level 2;
+\par \tab more vulnerable to Crush damage (200% from 100%).
+\par 
+\par \bullet \~\tab Rhudaur Spearmen more resistant to Pierce (75% from 100%).
+\par 
+\par \bullet \~\tab Karsh\rquote s cost has been increased to 2000.
+\par 
+\par \bullet \~\tab Snow Trolls more vulnerable to specialist (175% damage from 125%).
+\par 
+\par \bullet \~\tab Hill Troll more resistant to Pierce (80% from 100%).
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 General - MotW
+\par ------------------------------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Increased the movement of Gondor Sold
+iers, Archers and Rohan spearmen to 50 (originally 45); member speed has been increased \line to 55 (originally 50).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Tower guard more resistant to Pierce (75%/40% from 90%/50%).
+\par 
+\par \bullet \~\tab Rohan Spearmen more resistant to Pierce (75% from 100%).
+\par 
+\par \bullet \~\tab Gondor Soldier more resistant to Pierce (70%/35% from 85%/40%)
+\par 
+\par \bullet \~\tab Knights more resistant to Pierce (45% from 55%).
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \tab Rohirrim more resistant to Pierce (50% from 60%)
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The Ranger\rquote s Longshot ability now requires the unit to be Level 2; \line 
+more resistant to Pierce (75% from 90%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The Level 3 Archery upgrade cost has been decreased \line to 500 (originally 1000).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab The Fire arrow upgrade now requires a Level 3 Archery Range.
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 General - Dwarven
+\par ------------------------------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par \bullet \~\tab Dwarven Axethrower damage has been reduced to 45 (originally 75); 
+\par 
+\par \bullet \~\tab Dwarven Guardian more resistant to Pierce (50%/25% from 60%/30%).
+\par 
+\par \bullet \~\tab Dwarven Phalanxes more resistant to Pierce (45% from 70%).
+\par 
+\par \bullet \~\tab Battle wagon more resistant to Slash (30%/15% from 50%/25%); 
+\par }\pard \ltrpar\ql \li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 more resistant to Pierce (20%/10% from 30%/15%); \line Battle Wagon\rquote 
+s Oil decay now 2 with a reload of 1m20sec (originally 1m).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 General - Elven
+\par ------------------------------}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par 
+\par \bullet \~\tab Haldir now costs 1200.
+\par 
+\par \bullet \~\tab Mirkwood archers now require a Level 2 Barracks.
+\par 
+\par \bullet \~\tab The Level 2 Barrack upgrade cost has been increased to 1000.
+\par 
+\par \bullet \~\tab The Giant Eagle\rquote s health has been increased to 3000 (originally 2000); 
+\par }\pard \ltrpar\ql \li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 more vulnerable to slash (25% from 0%); 
+\par more resistant to Flame (30% from 50%); \line more resistant to Magic (30% from 50%); 
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \tab suffers a 70% damage penalty vs. heroes; speed increased (120 from 88).
+\par 
+\par \bullet \~\tab Lorien warrior more resistant to Pierce (75%/40% from 100%/50%).
+\par 
+\par \bullet \~\tab Lindon Horse Archers more vulnerable to Crush (100%/100% from
+\par }\pard \ltrpar\ql \fi720\li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 1%/1%). 
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Rivendell Lancer more resistant to Pierce (45%/25% from 60%/30%).
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 General - Goblins
+\par ------------------------------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Increased the movement rate of the Half Troll Swordsmen \line 
+to 55 (originally 50); member speed has been increased to 60 \line (originally 55); more resistant to Pierce (80%/40% from 100%/50%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Half-Troll Marauders more resistant to Pierce (80%/40% from 100%/60%).
+\par 
+\par \bullet \~\tab Drogoth more resistant to Pierce (40% from 55%).
+\par 
+\par \bullet \~\tab Increased the movement of Goblin Fighter to 65 (originally 63); 
+\par }\pard \ltrpar\ql \li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 member speed increased to 70 (originally 67%); \line more resistant to Pierce (90%/45% from 110%/65%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Increased Azog\rquote s Great Battle Rage recharge to 2m (originally 1m).
+\par 
+\par \bullet \~\tab Spiderlings more resistant to Pierce (65% from 75%)
+\par 
+\par \bullet \~\tab Spider Riders more resistant to Pierce (40%/20% from 45%/25%)
+\par 
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 General - Isengard
+\par ------------------------------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Increased the movement rate for Uruk-Hai swordsmen\line 
+ to 55 (originally 50); member speed increased to 60 (originally 55); more resistant to Pierce (60%/30% from 70%/35%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab 
+Increased the movement rate for Uruk Crossbowmen to 55 (originally 50); member speed increased to 60 (originally 55);
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Increased the movement rate for Uruk Pikemen to 55 (originally 50); 
+\par }\pard \ltrpar\ql \li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 member speed increased to 60 (originally 55); \line more resistant to Pierce (100%/60% from 125%/90%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab 
+Increased the movement rate for Uruk Deathbringers to 55 (originally 50); member speed increased to 60 (originally 55).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Increased Sharku\rquote s health to 2500 (originally 2400).
+\par 
+\par \bullet \~\tab Lurtz\rquote s Carnage duration has been reduced to 20s (originally 30s); 
+\par }\pard \ltrpar\ql \li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 recharge timer has been increased to 2m (1m); \line movement rate increased to 55.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Reduced the Wildmen Axe Throwers damage to 45 (originally 75).
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Grima Wormtongue movement increased to 55 (originally 50); \line increased damage to 130 (originally 100).
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 
+\par General - Mordor
+\par ------------------------------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab The catapult\rquote s minimum range has been increased to 150 from 100.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Gothmog\rquote s Fury (Lvl 4 ability) recharge time has been \line increased to 2 minutes from 1 minute.
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Both Khamul and Morgomir now suffer a 30% damage \line penalty to structures.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Increased the movement rate for Corsairs to 55 (originally 50); 
+\par }\pard \ltrpar\ql \li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 member speed increased to 60 (originally 55); \line more resistant to Pierce (75% from 90%).
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Orc Warriors more resistant to Pierce (85%/40% from 100%/50%).
+\par 
+\par \bullet \~\tab Black Orc Warriors more resistant to Pierce (60%/30% from 80%/40%).
+\par 
+\par \bullet \~\tab Orc Archers more vulnerable to Crush (200% from 100%).
+\par 
+\par \bullet \~\tab Easterlings more resistant to Pierce (110%/55% from 115%/75%).
+\par 
+\par \bullet \~\tab Haradrim Lancers more resistant to Pierce (75%/35% from (110%/40%)
+\par 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 General - BUG FIXES
+\par ------------------------------
+\par 
+\par 
+\par Angmar 
+\par ---------}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par \bullet \~\tab Fell Strength can no longer target buildings.
+\par 
+\par \bullet \tab The Dark Iron Forge now shoots arrows at Level 3.
+\par 
+\par \bullet \~\tab Ice Arrows now do damage to all fortress expansions.
+\par 
+\par \bullet \~\tab Gundabad Orcs now take poison damage from enemies.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The Balrog and Shade of the Wolf no longer take poison damage \line when near anything tha
+t has an AOE poison effect.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Improved the ability to see the Dark Iron Blades upgrade for Hill Troll units.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Karsh no longer stands in place and takes damage after \line auto casting Whisper of Death.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab The exploit of manually attacking with the Troll Stone Thrower has been removed.  
+\par \tab Manual attacking is equivalent to the auto attack speed.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \tab The Troll Stone Thrower upgraded with Ice shot has an equal splash damage radius as the other siege units.
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The 2nd damage state for the Wall Troll Stone Thrower is now different from the 1st damage state. 
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697  
+\par \bullet \~\tab The Wall Troll Stone Thrower now casts a shadow on \'93medium\'94 level of detail.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The 2nd damage state for the Fortress Troll Stone Thrower is now different from the 1st damage state.  
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The Angmar Mill\rquote s 2nd damage stage is now visibly different from \line the 1st stage.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The Wall and {\*\xmlopen\xmlns2{\factoidname PlaceName}}{\*\xmlopen\xmlns2{\factoidname place}}Wall
+{\*\xmlclose} {\*\xmlopen\xmlns2{\factoidname PlaceType}}Tower{\*\xmlclose}{\*\xmlclose} now show a visual difference between \line the 1st and 2nd stages.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Reduced the damage that the \'93Call of the Pack\'94 does to structures.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Sorcerer\rquote s Well of Souls no longer works on Tainted land, Frozen land \line 
+and Elven wood.  Further it can no longer be cast on the Olog CAH\rquote s oil spill ability, the Ring and the Dwarven Catapult\rquote s oil barrels.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \tab Rogash, Karsh, Witch-King, Morgomir and Hwaldar now will use their special abilities in normal gameplay.
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The Hall of King\rquote s Men no longer has a floating shadow associated with its 2nd damage state.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab The pickbox now displays properly for these situations:
+\par 
+\par }\pard \ltrpar\ql \li1440\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin1440\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet  2nd damage stage for all levels of following structures - Den, Hall of King\rquote s Men and Mill.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \tab \tab \bullet  2nd damage stage for all Dark Iron Forge.
+\par 
+\par \tab \tab \bullet  1st damage stage for Level 2 & 3 Dark Iron Forge.
+\par 
+\par \tab \tab \bullet  Level 2 & 3 of the Mill.
+\par 
+\par }\pard \ltrpar\ql \li1440\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin1440\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet  2nd damage stage for Fortress, Troll Stone Thrower tower, Wall tower and Fortress tower.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab {\*\xmlopen\xmlns2{\factoidname PlaceType}}{\*\xmlopen\xmlns2{\factoidname place}}Temple{\*\xmlclose} of 
+{\*\xmlopen\xmlns2{\factoidname PlaceName}}Twilight{\*\xmlclose}{\*\xmlclose} now has lights on night maps for High and Medium Level of Detail settings.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Karsh no longer continues to capture a flag after he\rquote s teleported to a \line new location.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 Elves
+\par ---------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Demolishing the Ent Moot now gives 50% of the original cost.
+\par 
+\par \bullet \~\tab Demolishing the Heroic Statue now gives +150 instead +75.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Farsight\rquote s duration has been reduced.  It no longer lasts longer than its recharge time.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab 
+Reduced Silverthorn arrow magic damage by 10 to 50 and removed their RoF penalty; rate of fire equal to non-silverthorn.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 Dwarves
+\par ---------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Dwarven catapults no longer gain experience levels.
+\par 
+\par \bullet \~\tab The Men of Dale banner carrier keeps pace with the unit.
+\par 
+\par \bullet \~\tab The AI will now use the Captain of Dale\rquote s special abilities.
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 Isengard
+\par ---------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Berserkers can now change their battle stance. 
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Wormtongue can no longer target flying heroes with his corrode allegiance spell.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Saruman can no longer gain permanent control of an enemy\rquote s Thrall master.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 MoTW
+\par ---------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab The AI will now build the Knights of Dol Amroth.
+\par 
+\par \bullet \~\tab Rohirrim horses no longer change color after switching weapons.
+\par 
+\par \bullet \~\tab Lone Tower summon structure no longer keeps the player in the game.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \tab The hobbit toggle weapon shortcuts now work when sticks are currently selected.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Summon Dunedain Allies (spell) no longer takes command points from the user\rquote s pool.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 Goblins
+\par ---------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Gorkil will no longer use Poisoned Stinger on structures when set to auto cast.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \tab The totem generated by Gorkil\rquote s skull totem a
+bility is no longer treated as a structure thereby removing it from keeping player in the game.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Azog now casts a shadow on Medium and Low level of detail settings.
+\par 
+\par \bullet \tab The AI will now use Azog\rquote s and the Fire Drake\rquote s special abilities.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The Fire Drake no longer breathes fire at the player after Untamed allegiance is cast.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Goblin AI will now use their poison more effectively.
+\par 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 Mordor
+\par ---------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Haradrim Lancers now gain bonus damage from the Forged blades upgrade.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Removed the shortcut key from Gothmog\rquote s Iron Hand helptext since it\rquote s a passive ability.
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Gothmog no longer runs in place after moving if the user gives him a move order in the opposite direction.
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 War of the Ring
+\par ---------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Modified the AI\rquote s retreat algorithm; 
+reduced its retreat chances prior to actually fighting the battle.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Shelob now occupies the Dead Marshes.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The AI will no longer spawn next to the player in Lostriand when playing a 1 human versus 5 AI opponents.
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 Create-A-Hero 
+\par ---------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab New Elf Archer body texture is now available.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab Increase the Elf\rquote s auto-acquire range to be comparable to the other heroes.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Olog Hai Great Troll now has body armor and upgrades available.
+\par 
+\par \bullet \~\tab Olog Hai\rquote s Meta-impact splash damage now has a FX.
+\par 
+\par \bullet \~\tab Olog Hai chest option is now available.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab A Servant of Sauron CAH poison ability now affects mountain giants and half trolls.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par }{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 \b\f1\insrsid5529697 General Bug Fixes
+\par ---------
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \tab GameSpy\rquote s copyright notice has been corrected.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The additional \'93to\'94 has been removed from the Settings button in the Palantir in a MP game.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The Signal fire located with the fortress territory is now claimed by the player in the fortress position.
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The textures on very low detail on the Gundabad tournament map have been fixed.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab When joining a multiplayer WOTR game the map image is no longer blank.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab CAH reinforcements can no longer be garrisoned onto transport ships.
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The flag capturing process now stops when the user teleports the capturing units to another location. 
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par \bullet \~\tab Darkness powers can no longer buff mini-hero hordes. 
+\par 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab A CAH now earns the \'93War Veteran\'94 award after fighting 20 online battles for winning or losing.
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin720\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 \bullet \~\tab The Corrupted Man CAH coerce ability no longer affects mini-hero hordes or large summoned non-hero 
+units (Watcher, Dragonstrike, etc.).
+\par 
+\par \bullet \tab The Collector Edition\rquote s artwork now appears in the game.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid5529697 
+\par 
+\par 
+\par }}

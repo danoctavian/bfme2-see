@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://www.pogoalpha.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[The Lord of the Rings™, The Rise of the Witch-king™]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[REGISTRATION]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[OK]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[CANCEL]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[TRY AGAIN]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[CLOSE]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[EXIT]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[FINISH LATER]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[REGISTER LATER]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[REGISTER NOW]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[YES]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[NO]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[PREVIOUS]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[NEXT]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[BACK]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[DONE]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>In order to register your game, you must be connected to the Internet.</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[If you are not already connected to the Internet, please do so now.  Once you are connected, press the <b>Next</b> button to continue.<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>What should I do if I don't have an Internet connection?</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>In order to verify your registration or check for exciting promotional offers, you must be connected to the Internet.</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[If you are not already connected to the Internet, please do so now.  Once you are connected, press the <b>Next</b> button to continue.]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>What should I do if I don't have an Internet connection?</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>Now Contacting EA... </b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>Please be patient - this may take a few moments.</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>Contact established.</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>Launching Registration…</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>Unable to contact EA</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[We are unable to contact EA's product registration system.  In order to register your product, you must be connected to the Internet.  If you are not already connected to the Internet, please do so now.]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[Once you are connected, press the <b>Try Again</B> button.]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>What should I do if I can't connect after several attempts?</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>In order to register your product, you must have an Internet connection.</b>You do not need to register your product in order to play.  However, if you wish to register your product, and you are unable to connect to the EA product registration system after several attempts, we suggest the following:]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[Verify your Internet connection is working.]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[Contact EA Technical Support.  Please reference your game manual for EA Technical Support contact information.]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[Go to <font color="#333399"><a href="http://www.eagamereg.com"><u>www.eagamereg.com</u></a> and fill out the web registration form.</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>Contacting EA</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[We are attempting to contact EA's product registration system.  Please be patient, this may take a few moments.]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>Don't have an Internet connection?  It's not a problem!</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[You can play {client:game-name} without registering the game.  If you ever need to call Technical Support, you will be asked to register your game over the phone.  Please reference your game manual for the Technical Support number.<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[Enjoy your game!]]></message>
+         <message id="NOINTERNET-4"><![CDATA[Electronic Arts]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>Are you sure you want to quit?</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>By not registering your product you're missing out on some great benefits, including:</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[<li>Special offers on EA games</li>]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[<li>Full-care technical support</li>]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>The inside scoop about your favorite EA games</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>A free cheat code or game hint for your game!</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>Register soon and enjoy your game.</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>This version of {client:game-name} cannot be registered.</b> You don't need to register this product in order to play.  You can go to <font color="#333399"><a href="http://www.ea.com"><u>www.ea.com</u></a></font> to get the latest information on EA products and sign-up for the EA newsletter.<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>Get a cheat code or game hint for your game and much more!</b> <BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>Register {client:game-name} now and receive these great benefits!</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>A free cheat code or game hint for your game!</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>The inside scoop about your favorite EA games</li>]]></message>
+         <message id="START1A-5"><![CDATA[<li>Full-care technical support</li>]]></message>
+         <message id="START1A-6"><![CDATA[<li>Special offers on EA games</li>]]></message>
+         <message id="START1B-1"><![CDATA[<b>You have already registered {client:game-name}.</b>]]></message>
+         <message id="START1B-2"><![CDATA[Do you want to review your registration information or answer some additional questions for special offers on EA games?]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[default]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[default]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

@@ -1,0 +1,158 @@
+
+////////////Counters, Timers////////////
+
+SCRIPT:End_Mission_Timer
+"Daybreak:"
+End
+
+SCRIPT:Souls_Corrupted
+"Souls Corrupted:"
+End
+
+
+//////////////Objective Text//////////////////////
+
+SCRIPT:ANGMAR_BarrowWights_ObjectiveText_01
+"Corrupt 999 souls by sending your Sorcerers to taint the barrows."
+END
+
+SCRIPT:ANGMAR_BarrowWights_ObjectiveText_03_1
+"Complete the ritual before daybreak by corrupting the thousandth soul, which must be a great spirit from the Royal Barrow."
+END
+
+SCRIPT:ANGMAR_BarrowWights_ObjectiveText_02
+"Morgomir must survive."
+END
+
+SCRIPT:ANGMAR_BarrowWights_ObjectiveText_03
+"Kill Captain Carthaen atop the Royal Barrow before daybreak to complete the ritual."
+END
+
+//////////////Pop-up Text//////////////////////
+
+
+SCRIPT:ANGMAR_BarrowWights_Hint_ObjectiveText_01
+"Place your Sorcerers atop the barrows to corrupt 1000 souls."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_ObjectiveText_02
+"Morgomir must survive."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_ObjectiveText_03
+"Slay the troublesome Captain and claim his soul atop the Royal Barrow."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_01-1
+"Sentries have been placed throughout the barrows to alert reinforcements to our presence. Beware any runners that might try to summon assistance." 
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_01-2
+"Beware any runners that might try to summon assistance."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_Captain_2nd
+"The stealthy Captain has returned. Protect your barrows carefully."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_Captain_3rd
+"Captain Carthaen will not give up. Defend your sorcerers at all costs."
+END
+
+SCRIPT:ANGMAR_BarrowWights_HintText_12
+"Easy Difficulty"
+END
+
+SCRIPT:ANGMAR_BarrowWights_HintText_13
+"Medium Difficulty"
+END
+
+SCRIPT:ANGMAR_BarrowWights_HintText_14
+"Hard Difficulty"
+END
+
+
+///////////////VOICE OVERS///////////////////
+
+
+SCRIPT:ANGMAR_BarrowWights_BarrowAttack1
+"Our barrow is under attack."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_01-1
+"ANGMAR OFFICER: Again we visit these ancient tombs,"
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_01-2
+"this time to corrupt the souls of the fallen and to turn the land against the remaining sons of Arnor."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_02-1
+"Our sorcerers must stand atop the barrows and taint fifty score souls less one. \n That final soul must then be a great spirit ripped from the depths of the Royal barrow."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_02-2
+"However, time is short."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_02-3
+"We will need to hold as many barrows as possible to complete the ritual before the new day's sun rises."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Help_01
+"Call reinforcements!"
+END
+
+SCRIPT:ANGMAR_BarrowWights_Help_02
+"Send word, we need more men!"
+END
+
+SCRIPT:ANGMAR_BarrowWights_Help_03
+"We are hard pressed, We must have aid."
+END
+
+SCRIPT:ANGMAR_BarrowWights_CarthaenSpawn_01
+"CAPTAIN CARTHAEN: You dishonored the souls of our fathers once atop these hallowed grounds, \n I will not suffer your foul presence again."
+END
+
+SCRIPT:ANGMAR_BarrowWights_CarthaenFlee_01
+"CAPTAIN CARTHAEN: I must gather more forces to purge your stench from this land."
+END
+
+SCRIPT:ANGMAR_BarrowWights_CarthaenSpawn_04
+"CAPTAIN CARTHAEN: Begone filth! I will not let you taint the spirits of our kings."
+END
+
+SCRIPT:ANGMAR_BarrowWights_AngOff_CarthaenSpawn_04
+"ANGMAR OFFICER: The Captain of Arnor has proved a worthy and persistent adversary.\nForget the mouldering spirits of Arnor's pathetic kings.\nLet us reward Captain Carthaen by completing the ritual with his soul instead!"
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Carthaen_01
+"CAPTAIN CARTHAEN: I do not fear you. You can only kill me."
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_01
+"MORGOMIR: <Laughing>"
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_02
+"MORGOMIR: How perfect is this man's punishment."
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_03
+"MORGOMIR: His dedication in life will be matched ONLY by his devotion after death."
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_04
+"MORGOMIR: Let his tortured soul hunt the leaders of our enemies."
+END
+
+
+
+
+
+
+
+
+
+

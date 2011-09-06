@@ -1,0 +1,293 @@
+//////////////////
+// UPGRADE.INC //
+////////////////
+//Moria//
+////////
+
+
+
+Upgrade Upgrade_WildFaction
+	DisplayName		= UPGRADE:WildFaction
+	Type			= PLAYER
+End
+Upgrade Upgrade_GoblinFaction
+	DisplayName		= UPGRADE:GoblinFaction
+	Type			= PLAYER
+End
+
+Upgrade Upgrade_GoblinDualEconomyChoice
+	DisplayName		= UPGRADE:GoblinDualEconomyChoice
+	Type			= PLAYER
+End
+
+
+
+Upgrade Upgrade_GoblinKingPoisonedStinger
+	Type			= OBJECT
+End
+Upgrade Upgrade_GoblinKingCallFromTheDeep
+	Type			= OBJECT
+End
+
+
+
+//---------Wild Structure Upgrades----------
+//----Cave----
+Upgrade Upgrade_WildCaveLevel2
+	Type			= OBJECT
+	BuildCost		= GOBLIN_CAVE_LEVEL2_UPGRADE_COST
+	BuildTime		= GOBLIN_CAVE_LEVEL2_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildCaveLevel2
+End
+
+Upgrade Upgrade_WildCaveLevel3
+	Type			= OBJECT
+	BuildCost		= GOBLIN_CAVE_LEVEL3_UPGRADE_COST
+	BuildTime		= GOBLIN_CAVE_LEVEL3_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildCaveLevel3
+End
+
+//----Fissure----
+Upgrade Upgrade_WildFissureLevel2
+	Type			= OBJECT
+	BuildCost		= GOBLIN_FISSURE_LEVEL2_UPGRADE_COST
+	BuildTime		= GOBLIN_FISSURE_LEVEL2_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildFissureLevel2
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK
+End
+
+Upgrade Upgrade_WildFissureLevel3
+	Type			= OBJECT
+	BuildCost		= GOBLIN_FISSURE_LEVEL3_UPGRADE_COST
+	BuildTime		= GOBLIN_FISSURE_LEVEL3_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildFissureLevel3
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK
+End
+
+//----SpiderPit----
+Upgrade Upgrade_WildSpiderPitLevel2
+	Type			= OBJECT
+	BuildCost		= GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_COST
+	BuildTime		= GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildSpiderPitLevel2
+End
+
+Upgrade Upgrade_WildSpiderPitLevel3
+	Type			= OBJECT
+	BuildCost		= GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_COST
+	BuildTime		= GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildSpiderPitLevel3
+End
+
+//----TreasureTrove----
+Upgrade Upgrade_WildTreasureTroveLevel2
+	Type			= OBJECT
+	BuildCost		= GOBLIN_TREASURETROVE_LEVEL2_UPGRADE_COST
+	BuildTime		= GOBLIN_TREASURETROVE_LEVEL2_UPGRADE_BUILDTIME
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_IMPORTANT
+	DisplayName		= Upgrade:WildTreasureTroveLevel2
+End
+
+Upgrade Upgrade_WildTreasureTroveLevel3
+	Type			= OBJECT
+	BuildCost		= GOBLIN_TREASURETROVE_LEVEL3_UPGRADE_COST
+	BuildTime		= GOBLIN_TREASURETROVE_LEVEL3_UPGRADE_BUILDTIME
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_IMPORTANT
+	DisplayName		= Upgrade:WildTreasureTroveLevel3
+End
+
+//----MineShaft----
+Upgrade Upgrade_WildMineShaftLevel2
+	Type			= OBJECT
+	BuildCost		= GOBLIN_MINE_LEVEL2_UPGRADE_COST
+	BuildTime		= GOBLIN_MINE_LEVEL2_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildMineShaftLevel2
+End
+
+Upgrade Upgrade_WildMineShaftLevel3
+	Type			= OBJECT
+	BuildCost		= GOBLIN_MINE_LEVEL3_UPGRADE_COST
+	BuildTime		= GOBLIN_MINE_LEVEL3_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildMineShaftLevel3
+End
+
+//----Tower----
+Upgrade Upgrade_SentryTowerFireArrows
+	Type			= OBJECT
+	BuildCost		= WILD_SENTRY_TOWER_ARROW_UPGRADE_BUILDCOST
+	BuildTime		= WILD_SENTRY_TOWER_ARROW_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:FortressFireArrows
+	ResearchSound	= UpgradeFlamingArrows
+End
+
+////----Wild Fortress---
+Upgrade Upgrade_WildFortressDragonNest
+	Type			= OBJECT
+	BuildCost		= WILD_DRAGONNEST_BUILDCOST
+	BuildTime		= WILD_DRAGONNEST_BUILDTIME
+	DisplayName		= Upgrade:FortressDragonsNest
+	ResearchCompleteEvaEvent = UpgradeDragonsNestReady
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+End
+
+Upgrade Upgrade_DragonNestFireDrakeButtonEnable
+	Type			= OBJECT
+End
+
+Upgrade Upgrade_HasDragonNestFireDrake
+	Type			= OBJECT
+	BuildCost		= WILD_FIREDRAKE_BUILDCOST
+	BuildTime		= WILD_FIREDRAKE_BUILDTIME
+	DisplayName		= Upgrade:FortressFireDrake
+End
+
+Upgrade Upgrade_WildFortressBatCloud
+	Type			= OBJECT
+	BuildCost		= WILD_BATCLOUD_BUILDCOST
+	BuildTime		= WILD_BATCLOUD_BUILDTIME
+	ResearchSound	= UpgradeGoblinFortressBatCloud
+	DisplayName		= Upgrade:FortressBatCloud
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+End
+
+Upgrade Upgrade_WildFortressFireArrowsTrigger
+	Type			= OBJECT
+	BuildCost		= WILD_FORTRESS_FIREARROWS_BUILDCOST
+	BuildTime		= WILD_FORTRESS_FIREARROWS_BUILDTIME
+	ResearchSound	= UpgradeGoblinFortressFireArrows
+	DisplayName		= Upgrade:FortressFireArrows
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+End
+
+Upgrade Upgrade_WildFortressWebCocoonTrigger
+	Type			= OBJECT
+	BuildCost		= WILD_FORTRESS_WEBCOCOON_BUILDCOST
+	BuildTime		= WILD_FORTRESS_WEBCOCOON_BUILDTIME
+	ResearchSound	= UpgradeGoblinFortressWebCocoon
+	DisplayName		= Upgrade:FortressWebCocoon
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+End
+
+Upgrade Upgrade_WildFortressWebCocoon
+	Type			= OBJECT
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS	
+End
+
+Upgrade Upgrade_WildFortressRazorSpines
+	Type			= OBJECT
+	BuildCost		= WILD_FORTRESS_RAZORSPINES_BUILDCOST
+	BuildTime		= WILD_FORTRESS_RAZORSPINES_BUILDTIME
+	ResearchSound	= UpgradeGoblinFortressRazorSpine
+	DisplayName		= Upgrade:FortressRazorSpines
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+End
+
+
+//------     Wild Upgrades	--------------------------------------------------------
+Upgrade Upgrade_TechnologyWildBasicTraining
+	DisplayName       = UPGRADE:WildBasicTraining
+	Type              = PLAYER
+	BuildCost		= WILD_TECH_BASIC_TRAINING_BUILDCOST	
+	BuildTime		= WILD_TECH_BASIC_TRAINING_BUILDTIME	
+	ResearchCompleteEvaEvent	= UpgradeBannerCarrierTechnologyReady-Wild
+End
+
+Upgrade Upgrade_WildBasicTraining 
+	DisplayName     = UPGRADE:WildBasicTraining 
+	Type            = OBJECT
+	Tooltip			= UPGRADE:WildBasicTraining 
+	BuildCost		= WILD_PERSONAL_BASIC_TRAINING_BUILDCOST	
+	BuildTime		= WILD_PERSONAL_BASIC_TRAINING_BUILDTIME	
+	//ResearchSound	= UpgradeHeavyArmor
+	//UpgradeFX		= FX_PorterDeliverHeavyArmor
+	ButtonImage     = BuildingNoArt
+	//Cursor			= WeaponUpgrade
+	RequiredObjectFilter = NONE +WildTreasureTrove
+	StrategicIcon	= AptStrategicUnitUpgradeBannerCarrier
+End
+
+Upgrade Upgrade_TechnologyWildFireArrows
+	DisplayName     = UPGRADE:WildFireArrowUpgrade
+	Type            = PLAYER
+	BuildCost		= WILD_TECH_FIRE_ARROWS_BUILDCOST
+	BuildTime		= WILD_TECH_FIRE_ARROWS_BUILDTIME
+	ResearchCompleteEvaEvent	= UpgradeFlameArrowsReady
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_IMPORTANT
+End
+
+Upgrade Upgrade_WildFireArrows
+	DisplayName     = UPGRADE:WildFireArrowUpgrade
+	Type            = OBJECT
+	Tooltip			= TOOLTIP:WildFlamingArrows
+	BuildCost		= WILD_PERSONAL_FIRE_ARROWS_BUILDCOST
+	BuildTime		= WILD_PERSONAL_FIRE_ARROWS_BUILDTIME
+	ResearchSound	= UpgradeFlamingArrows
+	UpgradeFX		= FX_PorterDeliverFlamingArrows
+	RequiredObjectFilter = NONE +WildTreasureTrove
+	StrategicIcon	= AptStrategicUnitUpgradeArrow
+End
+
+Upgrade Upgrade_TechnologyWildForgedBlades
+	DisplayName     = UPGRADE:WildForgedBlades
+	Type            = PLAYER
+	BuildCost		= WILD_TECH_FORGED_BLADES_BUILDCOST
+	BuildTime		= WILD_TECH_FORGED_BLADES_BUILDTIME
+	ResearchCompleteEvaEvent	= UpgradeForgedBladesReady
+End
+
+Upgrade Upgrade_WildForgedBlades
+	DisplayName     = UPGRADE:WildForgedBlades
+	Type            = OBJECT
+	Tooltip			= TOOLTIP:WildForgedBlades
+	BuildCost		= WILD_PERSONAL_FORGED_BLADES_BUILDCOST
+	BuildTime		= WILD_PERSONAL_FORGED_BLADES_BUILDTIME
+	ResearchSound	= UpgradeForgedBlades
+	UpgradeFX		= FX_PorterDeliverForgedBlades
+	ButtonImage		= BuildingNoArt
+	Cursor			= WeaponUpgrade
+	RequiredObjectFilter = NONE +WildTreasureTrove
+	StrategicIcon	= AptStrategicUnitUpgradeBlade
+End
+
+Upgrade Upgrade_TechnologyWildHeavyArmor
+	DisplayName     = UPGRADE:WildHeavyArmor
+	Type            = PLAYER
+	BuildCost		= WILD_TECH_HEAVY_ARMOR_BUILDCOST	
+	BuildTime		= WILD_TECH_HEAVY_ARMOR_BUILDTIME		
+	ResearchCompleteEvaEvent	= UpgradeScavengedArmorReady
+End
+
+Upgrade Upgrade_WildHeavyArmor
+	DisplayName     = UPGRADE:WildHeavyArmor
+	Type            = OBJECT
+	Tooltip			= TOOLTIP:WildHeavyArmor
+	BuildCost		= WILD_PERSONAL_HEAVY_ARMOR_BUILDCOST
+	BuildTime		= WILD_PERSONAL_HEAVY_ARMOR_BUILDTIME
+	ResearchSound	= UpgradeHeavyArmor
+	UpgradeFX		= FX_PorterDeliverHeavyArmor
+	ButtonImage     = BuildingNoArt
+	Cursor			= WeaponUpgrade
+	RequiredObjectFilter = NONE +WildTreasureTrove
+	StrategicIcon	= AptStrategicUnitUpgradeArmor
+End
+
+Upgrade Upgrade_WildSpiderVenomSackScience
+	DisplayName		= Upgrade:WildVenomSacs
+	Type			= PLAYER
+	BuildCost		= GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_COST
+	BuildTime		= GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_BUILDTIME
+	ResearchCompleteEvaEvent = UpgradeVenomSacsReady
+End
+
+Upgrade Upgrade_WildSpiderVenomSacks
+	DisplayName		= Upgrade:WildVenomSacs
+	Type			= OBJECT
+	Tooltip				= TOOLTIP:WildVenomSacs
+	BuildCost			= GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_COST
+	BuildTime			= GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_BUILDTIME
+	ResearchSound			= UpgradeVenomSacks
+	RequiredObjectFilter	= NONE +WildSpiderPit	
+	StrategicIcon	= AptStrategicUnitUpgradeBlade	
+End
+
+

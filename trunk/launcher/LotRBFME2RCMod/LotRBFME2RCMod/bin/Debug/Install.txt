@@ -1,0 +1,388 @@
+===================================================================================================
+The Lord of the Rings(tm), The Battle for Middle-earth(tm) II - RC MOD
+Readme File
+===================================================================================================
+
++++++Installing the RC MOD+++++
+Steps for Installation:
+1-Download and Run the RCModInstallerV#.##.exe
+--This Installer will install  RC Mod game.
+
+2-(Optional) If you want to download extra movies then download the LATEST RC Mod INTERFACE updater from http://www.moddb.com/mods/rc-mod
+
++++++Playing the RC MOD+++++
+Steps for Playing SINGLEPLAYER:
+1-Run lotrbfme2RCMod.exe
+2-Press SINGLEPLAYER (Check "Windowed?" if you want to play in a windowed screen!)
+
+Steps for Playing MULTIPLAYER:
+1-Instert your The Lord of the Rings, The Rise of the Witch-king (ROTWK) cd into your cd drive and run the game~Go to step 5!
+--Alternative for people who do not own ROTWK you must download the RC Mod CD!
+--http://rcmod.the3rdage.net/Downloads/LotrBfMe2RCMod.rar
+2-Extract the files out of the LotrBfMe2RCMod.rar (3.2 +/- GB!)
+3-Mount or Burn the "CD" to a cd/dvd.
+---Mount it with DEAMON TOOLS or another mounting program http://www.daemon-tools.cc/home
+--DEAMON TOOLS is an easy tool to work with and should not be too hard to understand, but if you have problems you can always ask in our forums!
+4-After mounting the CD you must Hide the real CD Drive - There may be some programs for this, you can also do this manually -B1 is manual hiding
+5-Run lotrbfme2RCMod.exe
+6-Press MULTIPLAYER (Check "Windowed?" if you want to play in a windowed screen!)
+
+--B--SPECIAL-CASES-USUALLY-NOT-NEEDED----
+B1-Go to My Computer
+---Select the CD Drive
+---Right click and press on Properties
+---Press on the "Hardware" tab
+---Select the name of your CD Drive
+---Press Properties
+---Change Device usage to: Do Not use this device (disable)
+~~~Whenever you want to use the real cd drive again do not forget to change the Device usage back to (Enable)
+---Press OK and close the other properties window by pressing OK again
+
+If you have any problems installing the Mod you can always ask for help at:
+http://forums.revora.net/index.php?showforum=1926
+
++++++++++++++++++++++++++++++++
+
+-=-=-=-=Version=Changes=-=-=-=-
+-(Not all changes are listed.)-
+_______________________________
+Version 1.07 - February 14, 2010
+
+=Game=
+Removed Ridder Clan & Beasts & Elves for the time being...
+~They will get massive make-overs!
+
+Cool new lotrbfme2RCMod.exe (You will see what I mean...)
+
+-Gondor-
+Gondor Balanced
+2 Mini hero hordes, 3 max allowed in battle!
+Beregond Added
+Damrod Removed -> Will become a Standard CAH
+Citadel Guards added
+New Boromir and Faramir Skins!
+AI builds all new units...
+
+-Rohan-
+Rohan Balanced
+Minor Hero Changes
+AI builds all new units...
+
+-Mordor-
+BFME 1 Value Balancing
+
+-Isengard-
+Isengard Balanced
+AI builds all new units...
+
+-Harad-
+BFME 1 Value Balancing
+
+=Maps=
+Removed old and bad quality maps...
+Will be improved later!
+
+=CAH=
+Added new things for:
+-Captain of Gondor
+-Uruk-Hai
+
+=Others=
+New Camera things! (Try them out!)
+
+Saruman Background!
+_______________________________
+Version 1.06 - January 1, 2010
+
+=Game=
+Removed Vandas & Acosa CAH Class, these will be in The Acosa Mod for the RC Mod...
+
+Mod became "Modable", people can now mod the RC Mod with the RC Mod SDK!
+
+-Rohan-
+Rohan Fortress Added
+Rohan Barracks upgrade added
+Rohan Rohirrim Banner reskin
+Newer Forged Blades color
+
+=Maps=
+ALL maps now use the RC Mod Cam System
+Many also have Rohan & Beasts AI
+
+Christmas Background! ~ Rohan
+_______________________________
+Version 1.05 - December 25, 2009
+
+=Game=
+-Rohan-
+Meadow Spellbook Power added
+Summon Elven Allies Spellbook Power added
+Rohirrim Archers can fire while running
+Royalguard added
+Rohirrim Random Skins and Random HA Skins added
+Westfoldmen Random Skins and Random HA Skins added
+Westfoldmen can mount and dismount and are built from Stables
+Yeomen archers Random Skins and Random HA Skins added
+Warriors Random Skins and Random HA Skins added
+
+-Ridder Clan-
+Statue Added - Bug => No special upgrades for Statues yet...
+
+Christmas Background! ~ Rohan
+_______________________________
+Version 1.04 - October 31, 2009
+
+=Game=
+-Rohan-
+Theoden -Minor Reskin
+Eomer -Minor Reskin
+Rohirrim archers added
+Rohirrim lancers added
+Rohirrim (toggle) removed from Rohan's stables
+Westfoldmen added
+Yeomen archers Reskin
+Warriors Reskin
+
+-Isengard-
+High Quality Isengard
+
+~RC Mod Cam works on Fords of Isen II
+
+Halloween Background!
+_______________________________
+Version 1.03 - September 8, 2009
+
+=Game=
+-Gondor-
+Faramir - Reskin
+Tower Guards (HD Version)
+
+-Rohan-
+Theoden -Reskin + Model
+Merry - Reskin
+
+-Elves-
+Haldir - Rebind
+Arwen - New Power
+
+-Dwarves-
+Gimli -Reskin + Model
+
+-Isengard-
+Saruman -Reskin
+Lurtz -Reskin
+Isengard Scout
+Isengard Captain
+
+-Mordor-
+Gothmog - NEW HERO! :p
+Black orc Archers
+
+-Ridder Clan-
+Ridder Mage - New Model + New Skin + New Powers
+Ridder Zwart - NEW HERO! :p
+
+-Vandas-
+Cradon Added
+Durgos Added
+
+-Harad-
+NEW Faction!
+Captain of Harad - NEW HERO ~ for harad 5 times ;) :p (will be changed to 2x later)
+
+~Ring Hero Enable Mode Glitch- The ring may be dropped several times due to an error we will fix in the next release...
+
+Harad Background!
+_______________________________
+Version 1.02 – April 12, 2009
+
+=Game=
+-Beasts-
+Unit changes
+
+-Gondor-
+3 New heroes: Damrod + Madril + Pippin
+
+-Rohan-
+3 New heroes: Hama + Gamling + Merry
+
+-Vandas-
+NEW faction!
+
+=Others=
+More Minor changes...
+Frodo & Gollum & Sam (Ring Carriers)
+Easter Maps!
+
+Vandas + Easter Background!
+
+_______________________________
+Version 1.01 – February 22, 2009
+
+=Game=
+-Beasts-
+New Hero: Smournakk (the Great Beast)
+Unit changes & Button fixes
+
+
+-Rohan-
+Pleasing has been Removed...
+
+-Ridder Clan-
+Blacky has 3 New powers
+White wolf has 1 new power
+Ridder Geel has been remade
+Death has a new model
+Ridder Mage's Elemental strike 'weapon' has been redone
+Wizard Summon Power works!
+
+=CAH=
+-New Places
+-New Classes
+--Acosa
+--Creatures
+-New Sub Classes
+--Ancient Bear (Sword)
+--Ancient Bear (Spear)
+--Warg - No powers yet!
+--Ranger
+-New power & cost system
+-New Layout
+
+=Others=
+New Game
+Minor changes... Not sure which ones.
+RC Mod Worldbuilder!
+
+Rohan Background! <-Same as V0.04!
+
+_______________________________
+Version 0.06 – December 31, 2008
+
+=Game=
+-Beasts-
+Inn Units HAVE been fixed.
+
+-Rohan-
+Pleasing has been temporarily KEPT...
+
+-Ridder Clan-
+Library Changed
+Wizard Summon Power still does not work, will be fixed in next release!
+
+=CAH=
+-Woman Warrior Has been ADDED!
+-Princess Geel has been added as a 'system' CAH
+
+=Maps=
+-Bridges Of Fresoan
+-Bridges Of Fresoan (Low)
+-Celebdil
+-Greenfields
+-Ruined Lands ->Improved/Changed
+
+Christmas Background! <-Same as V0.05!
+_______________________________
+Version 0.05 – December 25, 2008
+
+=Game=
+-Rohan-
+Pleasing has been temporarily added
+
+-Ridder Clan-
+Wizard Summon Power does not work, will be fixed in another release!
+Ridder Mage has 2 new powers, Elemental Strike, Dragon Strike.
+New Tech Icons
+New Techs ~ Mystic Spellbook & Master Spellbooks
+Wizards have been changed ~ Spells & Appearance
+
+=Maps=
+-rc fornost
+
+Christmas Background!
+_______________________________
+Version 0.04 – December 1, 2008
+
+=Game=
+-Beasts-
+Rebalanced
+Camp added
+Inn units added
+
+-Ridder Clan-
+Improved Gears Tech added
+New Tech Icons
+Hero Times and Costs changed
+
+Rohan Background!
+_______________________________
+Version 0.03 – October 31, 2008
+
+=Game=
+-Rohan-
+Rohan Warriors added
+Porter Changed
+
+-Beasts-
+Warg horde bug fix
+
+-Ridder Clan
+
+Halloween Background!
+_______________________________
+Version 0.02 – October 25, 2008
+
+=Game=
+-Rohan-
+Gamling added
+Changed Archers and Peasants
+Goldenhall fixed
+Arrow Tower Expansion added
+Rohan structures vision increased
+Goldenhall Flaming munitions added
+
+-Beasts-
+Hellbeast fixed
+Warg Horde locomoter changed
+
+-All Factions can be played online
+_______________________________
+Version 0.01 – October 19, 2008
+
+=Game=
+-Rohan
+-Beasts
+=Maps=
+-rc cair andros
+-rc celduin
+-rc elven plains
+-rc helms deep
+-rc isengard outlands
+-rc quelandon
+-rc ruined lands
+-rc snowy mountains
+-rc wolven plains
+
+!Rohan and Beasts' AI work only on RC maps!
+_______________________________
+
+-------{Credits}-------
+Ridder Geel		Mod Leader 
+Ridder Blauw		Acosa Faction & Mapper 
+Nieksa			Hithaeglir Faction & Modeler & Mapper 
+rutger			Ideas/Brainstormer 
+Lurtz101		Beasts Faction & Coder 
+Brabox			Mapper 
+LinkFan			Ideas/Brainstormer & Mapper 
+JohnWayne		Mapper 
+Neutron4ever		Beta Tester 
+Florisz			Beta Tester 
+Githiran		Coder & Harad Faction 
+Masterbadeend		Mapper
+Ridder Diamant (Neth)	Modeler
+CTLN7			LOTR Faction Skinner & Ideas
+Valaquenta10		Elven Faction
+
+-{Special Thanks}--
+robnkarla		LivingworldMap W3D
+Rob38		Turret & Horde Mount - Tutorial

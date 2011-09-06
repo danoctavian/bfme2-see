@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://www.pogoalpha.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[Slaget om Midgård™ II]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[REGISTRERING]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[OK]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[AVBRYT]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[FÖRSÖK IGEN]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[STÄNG]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[AVSLUTA]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[GÖR KLART SENARE]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[REGISTRERA SENARE]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[REGISTRERA NU]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[JA]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[NEJ]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[FÖREGÅENDE]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[NÄSTA]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[TILLBAKA]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[KLAR]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>För att kunna registrera ditt spel måste du vara uppkopplad på Internet.</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[Om du inte redan är uppkopplad på Internet ber vi dig att koppla upp dig nu.  När du är uppkopplad trycker du på <b>Nästa</b> för att fortsätta.<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Vad gör jag om jag inte har någon Internetanslutning?</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>För att kunna bekräfta din registrering eller läsa våra spännande reklamerbjudanden måste du vara uppkopplad på Internet.</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[Om du inte redan är uppkopplad på Internet ber vi dig att koppla upp dig nu.  När du är uppkopplad trycker du på <b>Nästa</b> för att fortsätta.]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Vad gör jag om jag inte har någon Internetanslutning?</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>Kontaktar EA... </b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>Var vänlig vänta - det här kan ta ett litet tag.</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>Kontakt upprättad.</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>Startar registrering…</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>Kan inte kontakta EA</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[Vi kunde inte kontakta EA:s system för produktregistrering.  För att kunna registrera ditt spel måste du vara uppkopplad på Internet.  Om du inte redan är uppkopplad på Internet ber vi dig att koppla upp dig nu.]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[När du är uppkopplad trycker du på <b>Försök igen</B>.]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Vad gör jag om jag inte kommer fram efter flera försök?</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>För att kunna registrera ditt spel måste du ha en Internetanslutning.</b>Du behöver inte registrera ditt spel för att kunna spela.  Men om du vill registrera ditt spel och inte kommer fram till EA:s system för produktregistrering efter flera försök, föreslår vi följande:]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[Bekräfta att din Internetanslutning fungerar.]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[Kontakta EA:s kundtjänst.  I spelmanualen hittar du information om hur du kontaktar EA:s kundtjänst.]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[Gå till <font color="#333399"><a href="http://www.eagamereg.com"><u>www.eagamereg.com</u></a> och fyll i formuläret för webbregistrering.</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>Kontaktar EA</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[Vi försöker kontakta EA:s system för produktregistrering.  Var vänlig vänta, det här kan ta ett litet tag.]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>Har du ingen Internetanslutning?  Det gör inget!</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[Du kan spela {client:game-name} utan att registrera ditt spel.  Om du någonsin behöver kontakta vår kundtjänst blir du ombedd att registrera ditt spel via telefonen.  Du hittar numret till kundtjänst i spelmanualen.<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[Vi hoppas att du får många roliga timmar med spelet!]]></message>
+         <message id="NOINTERNET-4"><![CDATA[Electronic Arts]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>Är du säker på att du vill avsluta?</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>Genom att inte registrera ditt spel går du miste om bland annat:</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[&nbsp;]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[&nbsp;]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>Insiderinformation om dina favoritspel från EA</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>En gratis fuskkod eller ett tips till ditt spel!</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>Vi hoppas att du får många roliga timmar med ditt spel, och att du väljer att registrera dig snart!</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>Denna version av {client:game-name} kan inte registreras.</b> Du behöver inte registrera den här produkten för att kunna spela.  Du kan gå till <font color="#333399"><a href="http://www.ea.com"><u>www.ea.com</u></a></font> för att få den senaste informationen om produkter från EA och prenumerera på EA:s nyhetsbrev.<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>Få en fuskkod eller ett tips till ditt spel, och mycket mer!</b> <BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>Registrera {client:game-name} nu och få de här jättebra förmånerna!</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>En gratis fuskkod eller ett tips till ditt spel</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>Insiderinformation om dina favoritspel från EA</li>]]></message>
+         <message id="START1A-5"><![CDATA[&nbsp;]]></message>
+         <message id="START1A-6"><![CDATA[&nbsp;]]></message>
+         <message id="START1B-1"><![CDATA[<b>Du har redan registrerat {client:game-name}.</b>]]></message>
+         <message id="START1B-2"><![CDATA[Vill du läsa igenom din registreringsinformation eller besvara några extra frågor och få ett specialerbjudande gällande spel från EA?]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[<font face="Arial Bold, Arial">]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[</font>]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

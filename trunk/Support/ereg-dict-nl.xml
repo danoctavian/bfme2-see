@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subs-interface-reply SYSTEM "http://www.pogoalpha.com/subsxml/subs-interface.dtd">
+<subs-interface-reply version="2.0">
+   <status>0</status>
+   <message>Success</message>
+   <get-registration-dictionary-reply>
+      <message-dictionary>
+         <message id="00GAMENAME-1"><![CDATA[The Rise of The Witch-King™]]></message>
+         <message id="BUTTONSANDLABELS-1"><![CDATA[REGISTRATIE]]></message>
+         <message id="BUTTONSANDLABELS-10"><![CDATA[OK]]></message>
+         <message id="BUTTONSANDLABELS-11"><![CDATA[ANNULEREN]]></message>
+         <message id="BUTTONSANDLABELS-12"><![CDATA[OPNIEUW PROBEREN]]></message>
+         <message id="BUTTONSANDLABELS-13"><![CDATA[SLUITEN]]></message>
+         <message id="BUTTONSANDLABELS-14"><![CDATA[STOPPEN]]></message>
+         <message id="BUTTONSANDLABELS-15"><![CDATA[LATER VOLTOOIEN]]></message>
+         <message id="BUTTONSANDLABELS-2"><![CDATA[LATER REGISTREREN]]></message>
+         <message id="BUTTONSANDLABELS-3"><![CDATA[NU REGISTREREN]]></message>
+         <message id="BUTTONSANDLABELS-4"><![CDATA[JA]]></message>
+         <message id="BUTTONSANDLABELS-5"><![CDATA[NEE]]></message>
+         <message id="BUTTONSANDLABELS-6"><![CDATA[VORIGE]]></message>
+         <message id="BUTTONSANDLABELS-7"><![CDATA[VOLGENDE]]></message>
+         <message id="BUTTONSANDLABELS-8"><![CDATA[TERUG]]></message>
+         <message id="BUTTONSANDLABELS-9"><![CDATA[KLAAR]]></message>
+         <message id="CONNECT1A-1"><![CDATA[<B>Om je game te kunnen registreren, moet je verbonden zijn met internet.</b>]]></message>
+         <message id="CONNECT1A-2"><![CDATA[Als je nog geen verbinding hebt met internet, breng die dan nu tot stand. Als je verbinding hebt, klik je op de knop <b>Volgende</b> om door te gaan.<BR><BR>]]></message>
+         <message id="CONNECT1A-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Wat moet ik doen als ik geen internetverbinding heb?</u></a></font>]]></message>
+         <message id="CONNECT1B-1"><![CDATA[<b>Om je registratie te bevestigen of te kijken of er leuke aanbiedingen zijn, moet je verbinding hebben met internet.</b>]]></message>
+         <message id="CONNECT1B-2"><![CDATA[Als je nog geen verbinding hebt met internet, breng die dan nu tot stand. Als je verbinding hebt, klik je op de knop  <b>Volgende</b> om door te gaan.]]></message>
+         <message id="CONNECT1B-3"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Wat moet ik doen als ik geen internetverbinding heb?</u></a></font>]]></message>
+         <message id="CONNECT1C-1"><![CDATA[<b>Verbinding met EA…</b>]]></message>
+         <message id="CONNECT1C-2"><![CDATA[<b>Een moment alsjeblieft. Dit kan even duren.</b>]]></message>
+         <message id="CONNECTED1A-1"><![CDATA[<b>Verbinding gemaakt.</b>]]></message>
+         <message id="CONNECTED1A-2"><![CDATA[<b>Registratie wordt gestart…</b>]]></message>
+         <message id="CONNECTED1B-1"><![CDATA[<b>Verbinding met EA niet mogelijk</b>]]></message>
+         <message id="CONNECTED1B-2"><![CDATA[We kunnen geen verbinding maken met het productregistratiesysteem van EA. Om je product te registreren moet je verbinding hebben met internet. Als je nog geen verbinding hebt met internet, breng die dan nu tot stand.]]></message>
+         <message id="CONNECTED1B-3"><![CDATA[Als je verbinding hebt, klik je op de knop <b>Opnieuw proberen</B>.]]></message>
+         <message id="CONNECTED1B-4"><![CDATA[<font color="#333399"><a href="asfunction:gotoURL,r3b"><u>Wat moet ik doen als ik na een paar keer proberen nog steeds geen verbinding heb?</u></a></font>]]></message>
+         <message id="CONNECTHOWTO-1"><![CDATA[<b>Om je product te kunnen registreren moet je een verbinding hebben met internet.</b>Je hoeft je product niet te registreren om te kunnen spelen. Als je je product wilt registreren en het lukt je niet verbinding te maken met het productregistratiesysteem van EA na een paar keer proberen, stellen we voor dat je het volgende doet:]]></message>
+         <message id="CONNECTHOWTO-2"><![CDATA[Controleer of je internetverbinding werkt.]]></message>
+         <message id="CONNECTHOWTO-3"><![CDATA[Neem contact op met de afdeling Customer Support van EA. Kijk in de handleiding van je game voor informatie over hoe je contact opneemt met de afdeling Customer Support van EA.]]></message>
+         <message id="CONNECTHOWTO-4"><![CDATA[Ga naar <font color="#333399"><a href="https://customer.ea-europe.com/"><u>customer.ea-europe.com</u></a> en vul het webregistratieformulier in.</font>]]></message>
+         <message id="CONNECTING-1"><![CDATA[<b>Verbinding met EA</b>]]></message>
+         <message id="CONNECTING-2"><![CDATA[We proberen verbinding te maken met het productregistratiesysteem van EA. Een moment alsjeblieft. Dit kan even duren.]]></message>
+         <message id="NOINTERNET-1"><![CDATA[<B>Heb je geen internetverbinding? Geen probleem!</B>]]></message>
+         <message id="NOINTERNET-2"><![CDATA[Je kunt {client:game-name} spelen zonder de game te registreren. Als je ooit contact moet opnemen met de afdeling Customer Support, wordt je gevraagd je game telefonisch te registreren. Kijk in de handleiding van je game voor het nummer van de afdeling Customer Support.<BR>]]></message>
+         <message id="NOINTERNET-3"><![CDATA[Veel plezier met je game!]]></message>
+         <message id="NOINTERNET-4"><![CDATA[Electronic Arts]]></message>
+         <message id="OFFLINEEXITCONFIRM-1"><![CDATA[<b>Weet je zeker dat je wilt stoppen?</b>]]></message>
+         <message id="REGISTERLATER-1"><![CDATA[<b>Als je je product niet registreert, loop je grote voordelen mis, zoals:</b><BR>]]></message>
+         <message id="REGISTERLATER-2"><![CDATA[&nbsp;]]></message>
+         <message id="REGISTERLATER-3"><![CDATA[<li>Volledige Customer Support</li>]]></message>
+         <message id="REGISTERLATER-4"><![CDATA[<li>Het laatste nieuws van achter de schermen over je favoriete EA-games</li>]]></message>
+         <message id="REGISTERLATER-5"><![CDATA[<li>Een gratis cheatcode of gamehint voor je game!</li>]]></message>
+         <message id="REGISTERLATER-6"><![CDATA[<BR><b>Registreer snel en veel plezier met je game.</b>]]></message>
+         <message id="SIGNIN1B-1"><![CDATA[<b>Je kunt deze versie van {client:game-name} niet registreren.</b> Je hoeft dit product niet te registreren om te kunnen spelen. Ga naar <font color="#333399">a href="http://www.eagames.nl"><u>www.eagames.nl</u></a></font> voor de laatste informatie over EA-producten en om je op te geven voor de EA-nieuwsbrief.<BR>]]></message>
+         <message id="START1A-1"><![CDATA[<b>Ontvang een cheatcode of gamehint voor je game en nog veel meer!</b> <BR><BR>]]></message>
+         <message id="START1A-2"><![CDATA[<b>Registreer nu {client:game-name} en ontvang deze fantastische voordelen!</b><BR>]]></message>
+         <message id="START1A-3"><![CDATA[<li>Een gratis cheatcode of gamehint voor je game!</li>]]></message>
+         <message id="START1A-4"><![CDATA[<li>Het laatste nieuws van achter de schermen over je favoriete EA-games</li>]]></message>
+         <message id="START1A-5"><![CDATA[<li>Volledige Customer Support</li>]]></message>
+         <message id="START1A-6"><![CDATA[&nbsp;]]></message>
+         <message id="START1B-1"><![CDATA[<b>Je hebt {client:game-name} al geregistreerd.</b>]]></message>
+         <message id="START1B-2"><![CDATA[Wil je je registratiegegevens bekijken of wijzigen, of aanvullende vragen beantwoorden voor speciale EA-gamesaanbiedingen?]]></message>
+         <message id="TITLE-PREFIX"><![CDATA[<font face="Arial Bold, Arial">]]></message>
+         <message id="TITLE-SUFFIX"><![CDATA[</font>]]></message>
+      </message-dictionary>
+   </get-registration-dictionary-reply>
+</subs-interface-reply>

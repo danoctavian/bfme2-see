@@ -1,0 +1,220 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="toc">
+  <param name="Image Width" value="16">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Welcome">
+    <param name="Local" value="Welcome.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Controller Troubleshooting">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start Controller Troubleshooting">
+      <param name="Local" value="Controller/Start_Controller_Issues.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Controller Calibration">
+      <param name="Local" value="Whitepages/Controller_Calibration.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Crash Troubleshooting">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start Crash Troubleshooting">
+      <param name="Local" value="Crash/Start_Crashes.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Crashing After the Splash Screen">
+      <param name="Local" value="Crash/Crashing_After_a_Full_Black_Screen.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Crashing After a Full Black Screen">
+      <param name="Local" value="Crash/Crashing_After_the_Splash_Screen.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="DirectX Troubleshooting">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start DirectX Troubleshooting">
+      <param name="Local" value="Direct_X/Start_Direct_X.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="'Direct3D' or 'D3D' Errors">
+      <param name="Local" value="Direct_X/_Direct3D__or__D3D__Errors.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="'GET SETUP' Error When Installing DirectX">
+      <param name="Local" value="Direct_X/_GET_SETUP__Error_When_Installing_DirectX.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="DirectX Version Does not Update After Installation">
+      <param name="Local" value="Direct_X/DirectX_Version_Does_not_Update_After_Installation.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Reinstalling DirectX">
+      <param name="Local" value="Whitepages/Reinstalling_DirectX.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Error Message Troubleshooting">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start Error Message Troubleshooting">
+      <param name="Local" value="Error_Message/Start_Error.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Ending Background Tasks">
+      <param name="Local" value="Whitepages/Ending_Background_Tasks.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="'Cannot locate CD/DVD-ROM'">
+      <param name="Local" value="Error_Message/_Cannot_locate_CD_DVD-ROM_.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="'CD/DVD Emulation Software Detected'">
+      <param name="Local" value="Error_Message/_CD_DVD_Emulation_Software_Detected_.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="'Program has caused an error' or 'Error in &lt;gamename&gt;.exe'">
+      <param name="Local" value="Error_Message/_Program_has_caused_an_error__or__Error_in__gamename_.exe_.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Graphics Troubleshooting">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start Graphics Troubleshooting">
+      <param name="Local" value="Graphics/Start_Graphics_Issues.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Changing Desktop Resolution">
+      <param name="Local" value="Whitepages/Changing_Desktop_Resolution.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Finding the Minimum System Requirements">
+      <param name="Local" value="Whitepages/Finding_the_Minimum_System_Requirements.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Updating Drivers">
+      <param name="Local" value="Whitepages/Updating_Drivers.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Installation Troubleshooting">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start Installation Troubleshooting">
+      <param name="Local" value="Install/INST_Start_Installation_Troubleshooting.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Pre-Installation Preparation">
+      <param name="Local" value="Install/INST_DirectX_Install_Hangs.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Emptying your Temp Folder">
+      <param name="Local" value="Whitepages/Emptying_your_Temp_Folder.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Preparing your Hard Drive">
+      <param name="Local" value="Whitepages/Preparing_your_Hard_Drive_.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Ending Background Tasks">
+      <param name="Local" value="Whitepages/Ending_Background_Tasks.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="CD/DVD-ROM Troubleshooting">
+      <param name="Local" value="Whitepages/CD_DVD-ROM_Troubleshooting_.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Auto-play Screen Does not Appear">
+      <param name="Local" value="Install/Autoplay_Screen_Does_not_Appear.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Virus Warning During Installation">
+      <param name="Local" value="Install/Virus_Warning_During_Installation.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Transfer or File Error During Installation">
+      <param name="Local" value="Install/Transfer_or_File_Error_During_Installation.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Lock-up and Freeze Troubleshooting">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start Locking-up and Freeze Troubleshooting">
+      <param name="Local" value="Lock-up_and_Freeze/Start_Locking_up_and_Freezing.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Locking up with a Repeating Sound">
+      <param name="Local" value="Lock-up_and_Freeze/Locking_up_with_a_Repeating_Sound.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Random or General Lockups">
+      <param name="Local" value="Lock-up_and_Freeze/Random_or_General_Lockups.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Online Connectivity and Performance Troubleshooting">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start Online Connectivity and Performance Troubleshooting">
+      <param name="Local" value="Online_Connectivity_and_Performance/Start_Online_Connectivity_and_Performance.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Configuring Routers and Firewalls">
+      <param name="Local" value="Whitepages/Configuring_Routers_and_Firewalls.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="UO Trace">
+      <param name="Local" value="Whitepages/UO_Trace.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Sound Troubleshooting">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start Sound Troubleshooting">
+      <param name="Local" value="Sound/Start_Sound.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Lowering Sound Acceleration">
+      <param name="Local" value="Whitepages/Lowering_Sound_Acceleration.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Finding the Minimum System Requirements">
+      <param name="Local" value="Whitepages/Finding_the_Minimum_System_Requirements.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Updating Drivers">
+      <param name="Local" value="Whitepages/Updating_Drivers.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Access more help Online!">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Start Getting More Help Online">
+      <param name="Local" value="Getting_More_Help_Online/Start_Getting_More_Help_Online.htm">
+    </object>
+    </ul>
+</ul>
+</html>
