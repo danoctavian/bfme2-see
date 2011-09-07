@@ -1,60 +1,79 @@
 <?xml version="1.0"?>
 <SageLuaScriptSection xmlns="http://tempuri.org/ScriptEvents.xsd">
-    <Events>
-		<!-- All internal events have a first parameter of self, which is the object receiving the event.  They may have additial parameters, depending
-			 on the specific event. -->
-        <InternalEvent Name="OnDamaged" /> <!-- OnDamaged(self, other) other is attacking object, may be nil -->
-        <InternalEvent Name="OnDestroyed" /> <!-- OnDestroyed(self) No parameters. Note that self is dead, but name and team are still valid. -->
-        <InternalEvent Name="OnArrived" /> <!-- OnArrived(self) Arrived at the end of a waypoint path.  No parameters. -->
-        <InternalEvent Name="OnUnitEntered" /> <!-- OnUnitEntered(self, areaName) Unit entered an area. Name of area is parameter. -->
-        <!-- disabled since its really slow and nobody is using it... [mh, 5/7/2004]--><InternalEvent Name="OnTeamEntered" /> <!-- OnTeamEntered(self, areaName) Sent to the last unit of a team entering an area. -->
-        <InternalEvent Name="OnUnitExited" /> <!-- OnUnitExited(self, areaName) Unit left an area. Name of area is parameter. -->
-        <!-- disabled since its really slow and nobody is using it... [mh, 5/7/2004] --><InternalEvent Name="OnTeamExited" /> <!-- OnTeamExited(self, areaName) Sent to the last unit of a team leaving an area. -->
-        <InternalEvent Name="OnTeamDestroyed" /> <!-- OnTeamDestroyed(self) Sent to the last unit of a team as it is destroyed. -->
-        <InternalEvent Name="BeScary" /> <!-- Broadcast to a unit when he uses a power that makes him radiate scariness.. -->
-		<InternalEvent Name="OnAflame" /> <!-- OnAflame(self) Broadcast to allies that I am on fire :) -->
-		<InternalEvent Name="OnQuenched" /> <!-- OnQuenched(self) Broadcast to allies that I am no longer on fire :) -->
-		<InternalEvent Name="OnCreated" /> <!-- OnCreated(self) sent when an object has been constructed -->
-		<InternalEvent Name="OnBuildingComplete" /> <!--OnBuildingComplete sent when an object has completed building. IE construction complete-->
-		<InternalEvent Name="DamageIncoming" /> <!-- DamageIncoming(self, other, delay, amount) other is shooter, delay is when the damage should hit, amount is how much.  So we can do a defense, or a "Oh heck" animation -->
-        <InternalEvent Name="OnSlaughtered" /> <!-- OnSlaughtered(self, slaughterer). -->
-        <InternalEvent Name="OnGenericEvent" /> <!-- self, string -->
-        <InternalEvent Name="OnBuildVariation" /> <!-- self, real -->
+  <Events>
+  <!-- All internal events have a first parameter of self, which is the object receiving the event.  They may have additial parameters, depending
+     on the specific event. -->
+    <InternalEvent Name="OnDamaged" /> <!-- OnDamaged(self, other) other is attacking object, may be nil -->
+    <InternalEvent Name="OnDestroyed" /> <!-- OnDestroyed(self) No parameters. Note that self is dead, but name and team are still valid. -->
+    <InternalEvent Name="OnArrived" /> <!-- OnArrived(self) Arrived at the end of a waypoint path.  No parameters. -->
+    <InternalEvent Name="OnUnitEntered" /> <!-- OnUnitEntered(self, areaName) Unit entered an area. Name of area is parameter. -->
+    <!-- disabled since its really slow and nobody is using it... [mh, 5/7/2004]--><InternalEvent Name="OnTeamEntered" /> <!-- OnTeamEntered(self, areaName) Sent to the last unit of a team entering an area. -->
+    <InternalEvent Name="OnUnitExited" /> <!-- OnUnitExited(self, areaName) Unit left an area. Name of area is parameter. -->
+    <!-- disabled since its really slow and nobody is using it... [mh, 5/7/2004] --><InternalEvent Name="OnTeamExited" /> <!-- OnTeamExited(self, areaName) Sent to the last unit of a team leaving an area. -->
+    <InternalEvent Name="OnTeamDestroyed" /> <!-- OnTeamDestroyed(self) Sent to the last unit of a team as it is destroyed. -->
+    <InternalEvent Name="BeScary" /> <!-- Broadcast to a unit when he uses a power that makes him radiate scariness.. -->
+    <InternalEvent Name="OnAflame" /> <!-- OnAflame(self) Broadcast to allies that I am on fire :) -->
+    <InternalEvent Name="OnQuenched" /> <!-- OnQuenched(self) Broadcast to allies that I am no longer on fire :) -->
+    <InternalEvent Name="OnCreated" /> <!-- OnCreated(self) sent when an object has been constructed -->
+    <InternalEvent Name="OnBuildingComplete" /> <!--OnBuildingComplete sent when an object has completed building. IE construction complete-->
+    <InternalEvent Name="DamageIncoming" /> <!-- DamageIncoming(self, other, delay, amount) other is shooter, delay is when the damage should hit, amount is how much.  So we can do a defense, or a "Oh heck" animation -->
+    <InternalEvent Name="OnSlaughtered" /> <!-- OnSlaughtered(self, slaughterer). -->
+    <InternalEvent Name="OnGenericEvent" /> <!-- self, string -->
+    <InternalEvent Name="OnBuildVariation" /> <!-- self, real -->
 
-		<!-- Scripted events are of two kinds - first is one generated by the ObjectDispatchEvent or ObjectBroadcastEvent script.  The calling is
-			DispatchedEvent(self, dispatchingObject, arbitraryString)  -->
-        <ScriptedEvent Name="ExampleGuardMe" /> <!-- GuardMe(self, other, string) other is object generating the scripted event.  May be nil. -->
-        <!-- Second kind of scripted event is a spy event. --> 
-        <ScriptedEvent Name="ExampleSpyMoving" /> <!-- SpyMoving(self, spySelf, parameters...) spySelf is the object self is spying on, parameters is the spied event paramters, may be nil. -->
-		
-		<ScriptedEvent Name="BeAfraidOfBalrog" /> <!-- Becoming afraid of balrog -->
-		<ScriptedEvent Name="BeAfraidOfRampage" /> <!-- Becoming afraid of rampage -->
-		<ScriptedEvent Name="BeAfraidOfPhial" /> <!-- Becoming afraid of Frodo -->
-		<ScriptedEvent Name="BeUncontrollablyAfraid" /> <!-- Becoming afraid whether we like it or not -->
-		<ScriptedEvent Name="BeingEnraged" /> <!-- Be enraged! Revenge!! -->
-		<ScriptedEvent Name="BeAfraidOfGateDamaged" /> <!-- Be afraid of the gate being damaged -->
-		<ScriptedEvent Name="BeTerrified" /> <!-- Run Away! -->
-		
-		<ScriptedEvent Name="ChantForUnit" />		<!-- Chant for a special unit! -->
-		<ScriptedEvent Name="StopChantForUnit" />	<!-- Stop Chant for a special unit! -->
-		<ScriptedEvent Name="BeginChanting" />		<!-- Begin Chanting! -->
-		<ScriptedEvent Name="StopChanting" />		<!-- Stop Chanting! -->
+  <!-- Scripted events are of two kinds - first is one generated by the ObjectDispatchEvent or ObjectBroadcastEvent script.  The calling is
+    DispatchedEvent(self, dispatchingObject, arbitraryString)  -->
+    <ScriptedEvent Name="ExampleGuardMe" /> <!-- GuardMe(self, other, string) other is object generating the scripted event.  May be nil. -->
+    <!-- Second kind of scripted event is a spy event. --> 
+    <ScriptedEvent Name="ExampleSpyMoving" /> <!-- SpyMoving(self, spySelf, parameters...) spySelf is the object self is spying on, parameters is the spied event paramters, may be nil. -->
+  
+    <ScriptedEvent Name="BeAfraidOfBalrog" /> <!-- Becoming afraid of balrog -->
+    <ScriptedEvent Name="BeAfraidOfRampage" /> <!-- Becoming afraid of rampage -->
+    <ScriptedEvent Name="BeAfraidOfPhial" /> <!-- Becoming afraid of Frodo -->
+    <ScriptedEvent Name="BeUncontrollablyAfraid" /> <!-- Becoming afraid whether we like it or not -->
+    <ScriptedEvent Name="BeingEnraged" /> <!-- Be enraged! Revenge!! -->
+    <ScriptedEvent Name="BeAfraidOfGateDamaged" /> <!-- Be afraid of the gate being damaged -->
+    <ScriptedEvent Name="BeTerrified" /> <!-- Run Away! -->
+    
+    <ScriptedEvent Name="ChantForUnit" />		<!-- Chant for a special unit! -->
+    <ScriptedEvent Name="StopChantForUnit" />	<!-- Stop Chant for a special unit! -->
+    <ScriptedEvent Name="BeginChanting" />		<!-- Begin Chanting! -->
+    <ScriptedEvent Name="StopChanting" />		<!-- Stop Chanting! -->
 		
 		<!-- Cinematic Events -->
 		<ScriptedEvent Name="CinematicRampageDamaged" />
 		
 		<!-- All ModelCondition and ObjectStatus events have a single parameter of self, which is the object matching the conditions. -->
-        <ModelConditionEvent Name="OnFire"> <!-- OnFire(self) self is object matching the modelconditions specified. -->
-            <Conditions>-DYING +AFLAME</Conditions>
-        </ModelConditionEvent>
-        <ModelConditionEvent Name="ExampleMovingDamaged">
-            <Conditions>+MOVING +DAMAGED -AFLAME</Conditions>
-        </ModelConditionEvent>
-        <ModelConditionEvent Name="Moving">
-            <Conditions>+MOVING</Conditions>
-        </ModelConditionEvent>
+    <ModelConditionEvent Name="OnFire"> <!-- OnFire(self) self is object matching the modelconditions specified. -->
+        <Conditions>-DYING +AFLAME</Conditions>
+    </ModelConditionEvent>
+    
+    <ModelConditionEvent Name="ExampleMovingDamaged">
+        <Conditions>+MOVING +DAMAGED -AFLAME</Conditions>
+    </ModelConditionEvent>
+    
+    <ModelConditionEvent Name="Moving">
+        <Conditions>+MOVING</Conditions>
+    </ModelConditionEvent>
+        
+		<ModelConditionEvent Name="Damaged">
+			<Conditions>+DAMAGED</Conditions>
+		</ModelConditionEvent>
+	
 		<ModelConditionEvent Name="ReallyDamaged">
 			<Conditions>+REALLYDAMAGED</Conditions>
+		</ModelConditionEvent>
+	
+		<ModelConditionEvent Name="Rubble">
+			<Conditions>+RUBBLE</Conditions>
+		</ModelConditionEvent>
+	
+		<ModelConditionEvent Name="NOTReallyDamaged">
+			<Conditions>-REALLYDAMAGED</Conditions>
+		</ModelConditionEvent>
+	
+		<ModelConditionEvent Name="NOTDamagedAtALl">
+			<Conditions>-REALLYDAMAGED -DAMAGED -RUBBLE</Conditions>
 		</ModelConditionEvent>
 	
 		<ModelConditionEvent Name="RecoverFromTerror">
@@ -76,120 +95,303 @@
 		<ModelConditionEvent Name="CinematicRampageUser">
 			<Conditions>+USER_4</Conditions>
 		</ModelConditionEvent>
-    </Events>
     
+		<ModelConditionEvent Name="UsingSpecialThreeNoPacking">
+			<Conditions>+SPECIAL_POWER_3 -UNPACKING</Conditions>
+		</ModelConditionEvent>
+		
+		<ModelConditionEvent Name="UsingSpecialThreeMounted">
+			<Conditions>+SPECIAL_POWER_3 -UNPACKING -PACKING +MOUNTED</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="UsingSpecialThreeMountedNoPacking">
+			<Conditions>+SPECIAL_POWER_3 -UNPACKING +MOUNTED</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="UsingSpecialWeaponThree">
+			<Conditions>+SPECIAL_WEAPON_THREE</Conditions>
+		</ModelConditionEvent>
+		
+		<ModelConditionEvent Name="NOTUsingSpecialWeaponThree">
+			<Conditions>-SPECIAL_WEAPON_THREE</Conditions>
+		</ModelConditionEvent>
+		
+		<ModelConditionEvent Name="OnJustBuilt">
+				<Conditions>+JUST_BUILT</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnSelected">
+				<Conditions>+SELECTED</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnDisguised">
+				<Conditions>+DISGUISED</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnDisguiseCanceled">
+				<Conditions>-DISGUISED</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="ReallyDamagedLastStand">
+			<Conditions>+REALLYDAMAGED +USER_1</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="ReallyDamagedAndAflame">
+			<Conditions>+REALLYDAMAGED +AFLAME</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="ModelConditionStealthed">
+			<Conditions>+INVISIBLE_STEALTH</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="ModelConditionNotStealthed">
+			<Conditions>-INVISIBLE_STEALTH</Conditions>
+		</ModelConditionEvent>
+
+		<ModelConditionEvent Name="ModelConditionUSER_1">
+			<Conditions>+USER_1</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="NOTModelConditionUSER_1">
+			<Conditions>-USER_1</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="ModelConditionUSER_2">
+			<Conditions>+USER_2</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="ModelConditionUSER_3">
+				<Conditions>+USER_3</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="ModelConditionUSER_5">
+				<Conditions>+USER_5</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="ModelConditionUSER_6">
+				<Conditions>+USER_6</Conditions>
+		</ModelConditionEvent>
+
+		<ModelConditionEvent Name="ModelConditionNOTUSER_6">
+				<Conditions>-USER_6</Conditions>
+		</ModelConditionEvent>
+
+		<ModelConditionEvent Name="ModelConditionUSER_8">
+				<Conditions>+USER_8</Conditions>
+		</ModelConditionEvent>
+
+		<ModelConditionEvent Name="OnEnemyNear">
+				<Conditions>+SPECIAL_ENEMY_NEAR</Conditions>
+		</ModelConditionEvent>
+
+		<ModelConditionEvent Name="OnEnemyNOTNear">
+				<Conditions>-SPECIAL_ENEMY_NEAR</Conditions>
+		</ModelConditionEvent>
+
+		<ModelConditionEvent Name="OnNotDoingMuch">
+				<Conditions>-DISGUISED -SPECIAL_ENEMY_NEAR -INVISIBLE_STEALTH -JUST_BUILT -PACKING -UNPACKING -WEAPONSET_ENRAGED -WEAPONSET_RAMPAGE -WEAPONSET_HERO_MODE -WEAPONSTATE_CLOSE_RANGE -ATTACKING -MOVING -ALERT -ACTIVELY_BEING_CONSTRUCTED -PARTIALLY_CONSTRUCTED -AWAITING_CONSTRUCTION</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnBeingStoned">
+				<Conditions>+STONED</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnNotBeingStoned">
+				<Conditions>-STONED</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnDoorJustOpened">
+      <Conditions>+DOOR_1_OPENING</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnDoorJustClosed">
+      <Conditions>+DOOR_1_CLOSING</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnRelaxed">
+      <Conditions>-ATTACKING</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnCharging">
+      <Conditions>+ATTACKING</Conditions>
+		</ModelConditionEvent>
+    
+		<ModelConditionEvent Name="OnBuildingDone">
+      <Conditions>-ACTIVELY_BEING_CONSTRUCTED -PARTIALLY_CONSTRUCTED -AWAITING_CONSTRUCTION</Conditions>
+		</ModelConditionEvent>
+    
+	</Events>
+
     <EventList Name="BaseScriptFunctions">
 		<!-- If there are any events that need to apply to all units, put them here. jba -->
     </EventList>
     
+    <EventList Name="BaseHeroFunctions" Inherit="BaseScriptFunctions">
+      <EventHandler EventName="Damaged" ScriptFunctionName="OnHeroHealed_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="ReallyDamaged" ScriptFunctionName="OnHeroInjured_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="NOTReallyDamaged" ScriptFunctionName="OnHeroHealed_SEE" DebugSingleStep="false"/>
+    </EventList>
+    
     <EventList Name="CaptureFlagFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnGenericEvent"	ScriptFunctionName="OnCaptureFlagGenericEvent" DebugSingleStep="false"/>
+      <EventHandler EventName="OnGenericEvent"	ScriptFunctionName="OnCaptureFlagGenericEvent" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="TrollFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="ReallyDamaged"	ScriptFunctionName="GoIntoRampage" DebugSingleStep="false"/>
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnTrollCreated" DebugSingleStep="false"/>
-        <EventHandler EventName="OnGenericEvent" ScriptFunctionName="OnTrollGenericEvent" DebugSingleStep="false"/>
-		<EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
+      <EventHandler EventName="ReallyDamaged"	ScriptFunctionName="GoIntoRampage" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnTrollCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="OnGenericEvent" ScriptFunctionName="OnTrollGenericEvent" DebugSingleStep="false"/>
+      <EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="CreepTrollFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="ReallyDamaged"	ScriptFunctionName="GoIntoRampage" DebugSingleStep="false"/>
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnCreepTrollCreated" DebugSingleStep="false"/>
-        <EventHandler EventName="OnGenericEvent" ScriptFunctionName="OnTrollGenericEvent" DebugSingleStep="false"/>
-		<EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
+      <EventHandler EventName="ReallyDamaged"	ScriptFunctionName="GoIntoRampage" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnCreepTrollCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="OnGenericEvent" ScriptFunctionName="OnTrollGenericEvent" DebugSingleStep="false"/>
+      <EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="DrummerTrollFunctions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="BeScary"			ScriptFunctionName="RadiateTerrorEx"			DebugSingleStep="false"/>
+      <EventHandler EventName="BeScary"			ScriptFunctionName="RadiateTerrorEx"			DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="BarrowWightFunctions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
+      <EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
     </EventList>
     
-    <EventList Name="SauronFunctions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="OnCreated"			ScriptFunctionName="OnMordorSauronCreated"		DebugSingleStep="false"/>
-		<EventHandler EventName="BeScary"			ScriptFunctionName="RadiateTerrorEx"			DebugSingleStep="false"/>
+    <EventList Name="SauronFunctions"  Inherit="BaseHeroFunctions">
+  		<EventHandler EventName="OnCreated"			ScriptFunctionName="OnMordorSauronCreated"		DebugSingleStep="false"/>
+  		<EventHandler EventName="BeScary"			ScriptFunctionName="RadiateTerrorEx"			DebugSingleStep="false"/>
     </EventList>
    
-	<EventList Name="MumakilFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnMumakilCreated" DebugSingleStep="false"/>
+    <EventList Name="MumakilFunctions" Inherit="BaseScriptFunctions">
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnMumakilCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="ReallyDamagedAndAflame"	ScriptFunctionName="GoIntoRampage" DebugSingleStep="false"/>
     </EventList>
-	
-	<EventList Name="SunbeamFunctions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+    	
+    <EventList Name="SunbeamFunctions" Inherit="BaseScriptFunctions">
+      <EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
     </EventList>
 
-    <EventList Name="TheodenFunctions" Inherit="BaseScriptFunctions">
+    <EventList Name="TheodenFunctions" Inherit="BaseHeroFunctions">
     </EventList>
     
     <EventList Name="BallistaFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnBallistaCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnBallistaCreated" DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="CatapultFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnCatapultCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnCatapultCreated" DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="TrebuchetFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnTrebuchetCreated" DebugSingleStep="false"/>
-    </EventList>
-    
-    <EventList Name="TrollSlingFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnTrollSlingCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnTrebuchetCreated" DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="StandardPorterFunctions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnPorterCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnPorterCreated" DebugSingleStep="false"/>
     </EventList>
-
+    	
+    <EventList Name="StandardPorterFunctions_SEE" Inherit="BaseScriptFunctions">
+      <EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnPorterCreated_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="ModelConditionUSER_5" ScriptFunctionName="OnPorterCommandSetSwitch2_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="ModelConditionUSER_6" ScriptFunctionName="OnPorterCommandSetSwitch1_SEE" DebugSingleStep="false"/>
+    </EventList>
+    
     <EventList Name="EvilPorterFunctions" Inherit="InfantryFunctions">
-		<EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnEvilPorterCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="BeTerrified" ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnEvilPorterCreated" DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="StandardPeasantFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnPeasantCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnPeasantCreated" DebugSingleStep="false"/>
     </EventList>
     
+    <EventList Name="RohanEowynFunctions_SEE" Inherit="BaseHeroFunctions">
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnRohanEowynCreated_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnDisguised" ScriptFunctionName="OnRohanEowynDisguised_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnDisguiseCanceled" ScriptFunctionName="OnRohanEowynDisguiseCanceled_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="ModelConditionUSER_1" ScriptFunctionName="OnRohanEowynStealthed_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="NOTModelConditionUSER_1" ScriptFunctionName="OnRohanEowynNotStealthed_SEE" DebugSingleStep="false"/>
+    </EventList>
+
     <EventList Name="GandalfFunctions" Inherit="BaseScriptFunctions">
-        <!-- <EventHandler EventName="DamageIncoming" ScriptFunctionName="GandalfConsiderUsingDefensePower" DebugSingleStep="false"/> -->
-        <EventHandler EventName="UsingSpecialOne" ScriptFunctionName="GandalfTriggerWizardBlast" DebugSingleStep="false"/>
+      <EventHandler EventName="DamageIncoming" ScriptFunctionName="GandalfConsiderUsingDefensePower" DebugSingleStep="false"/>
+      <EventHandler EventName="UsingSpecialOne" ScriptFunctionName="GandalfTriggerWizardBlast" DebugSingleStep="false"/>
+    </EventList>
+
+    <EventList Name="GandalfFunctions_SEE" Inherit="BaseHeroFunctions">
+      <EventHandler EventName="DamageIncoming" ScriptFunctionName="GandalfConsiderUsingDefensePower" DebugSingleStep="false"/>
+      <EventHandler EventName="UsingSpecialOne" ScriptFunctionName="GandalfTriggerWizardBlast" DebugSingleStep="false"/>
+			<!--	<EventHandler EventName="ReallyDamaged"	ScriptFunctionName="GandalfTriggerDefensePower_SEE" DebugSingleStep="false"/> -->
     </EventList>
     
-     <EventList Name="SarumanFunctions" Inherit="BaseScriptFunctions">
-         <!-- <EventHandler EventName="DamageIncoming" ScriptFunctionName="SarumanConsiderUsingDefensePower" DebugSingleStep="false"/> -->
+    <EventList Name="SarumanFunctions" Inherit="BaseScriptFunctions">
+      <!-- <EventHandler EventName="DamageIncoming" ScriptFunctionName="SarumanConsiderUsingDefensePower" DebugSingleStep="false"/> -->
     </EventList>
    
-	<EventList Name="LegolasFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnLegolasCreated" DebugSingleStep="false"/>
+    <EventList Name="BerserkerFunctions" Inherit="InfantryFunctions">
+      <EventHandler EventName="OnEnemyNear" ScriptFunctionName="OnEvilMenBlackRiderMounting_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnEnemyNOTNear" ScriptFunctionName="OnEvilMenBlackRiderDismounting_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="Damaged" ScriptFunctionName="OnBerserkerDamaged_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="ReallyDamaged" ScriptFunctionName="OnBerserkerReallyDamaged_SEE" DebugSingleStep="false"/>
+    </EventList>
+   
+    <EventList Name="LegolasFunctions" Inherit="BaseHeroFunctions">
+      <EventHandler EventName="OnCreated"				ScriptFunctionName="OnLegolasCreated" DebugSingleStep="false"/>
     </EventList> 
     
-    <EventList Name="GaladrielFunctions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+    <EventList Name="GaladrielFunctions" Inherit="BaseHeroFunctions">
+      <EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+    </EventList>
+
+    <EventList Name="GaladrielFunctions_SEE" Inherit="BaseHeroFunctions">
+      <EventHandler EventName="BeScary" ScriptFunctionName="RadiateUncontrollableFear_SEE" DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="MinisTirithGateFunctions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="OnDamaged" ScriptFunctionName="RadiateGateDamageFear" DebugSingleStep="false"/>  
+      <EventHandler EventName="OnDamaged" ScriptFunctionName="RadiateGateDamageFear" DebugSingleStep="false"/>  
+    </EventList>
+    
+    <EventList Name="FortressWallHubFunctions" Inherit="BaseScriptFunctions">
+      <!-- <EventHandler EventName="OnBuildingDone" ScriptFunctionName="OnFortressWallHubCreated_SEE" DebugSingleStep="false"/> -->
+      <EventHandler EventName="OnBuildingComplete" ScriptFunctionName="OnFortressWallHubCreated_SEE" DebugSingleStep="false"/>
+    </EventList>
+    
+    <EventList Name="FortressWallGateFunctions" Inherit="BaseScriptFunctions">
+      <EventHandler EventName="OnNotDoingMuch" ScriptFunctionName="OnEnemyDistant_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnDoorJustOpened" ScriptFunctionName="OnEvilMenBlackRiderMounting_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnDoorJustClosed" ScriptFunctionName="OnEvilMenBlackRiderDismounting_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnEnemyNear" ScriptFunctionName="OnEnemyClose_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnEnemyNOTNear" ScriptFunctionName="OnEnemyDistant_SEE" DebugSingleStep="false"/>
+    </EventList>
+    
+    <EventList Name="SelfRepairFunctions" Inherit="BaseScriptFunctions">
+      <EventHandler EventName="Damaged" ScriptFunctionName="OnEvilMenBlackRiderMounting_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="ReallyDamaged" ScriptFunctionName="OnEvilMenBlackRiderMounting_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="Rubble" ScriptFunctionName="OnEvilMenBlackRiderMounting_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="NOTDamagedAtALl" ScriptFunctionName="OnEvilMenBlackRiderDismounting_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnEnemyNear" ScriptFunctionName="OnEnemyClose_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnEnemyNOTNear" ScriptFunctionName="OnEnemyDistant_SEE" DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="InfantryFunctions" Inherit="BaseScriptFunctions">
-		<!-- These are events that will apply to all infantry.  Any infantry units should inherit this set. jba -->
-        <EventHandler EventName="BeAfraidOfBalrog"			ScriptFunctionName="BecomeAfraidOfBalrog"		DebugSingleStep="false"/>
-        <EventHandler EventName="BeAfraidOfRampage"			ScriptFunctionName="BecomeAfraidOfRampage"		DebugSingleStep="false"/>
-		<EventHandler EventName="BeTerrified"				ScriptFunctionName="BecomeTerrified"			DebugSingleStep="false"/>
-		<EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="BecomeUncontrollablyAfraid" DebugSingleStep="false"/>
+      <!-- These are events that will apply to all infantry.  Any infantry units should inherit this set. jba -->
+      <EventHandler EventName="BeAfraidOfBalrog"			ScriptFunctionName="BecomeAfraidOfBalrog"		DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfRampage"			ScriptFunctionName="BecomeAfraidOfRampage"		DebugSingleStep="false"/>
+  		<EventHandler EventName="BeTerrified"				ScriptFunctionName="BecomeTerrified"			DebugSingleStep="false"/>
+  		<EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="BecomeUncontrollablyAfraid" DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="InfantryBannerFunctions" Inherit="BaseScriptFunctions">
 	    <EventHandler EventName="OnCreated"					ScriptFunctionName="OnInfantryBannerCreated"	DebugSingleStep="false"/>
-		<!-- These are events that will apply to all infantry.  Any infantry units should inherit this set. jba -->
-        <EventHandler EventName="BeAfraidOfBalrog"			ScriptFunctionName="BecomeAfraidOfBalrog"		DebugSingleStep="false"/>
-        <EventHandler EventName="BeAfraidOfRampage"			ScriptFunctionName="BecomeAfraidOfRampage"		DebugSingleStep="false"/>
-		<EventHandler EventName="BeTerrified"				ScriptFunctionName="BecomeTerrified"			DebugSingleStep="false"/>
-		<EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="BecomeUncontrollablyAfraid" DebugSingleStep="false"/>
+      <!-- These are events that will apply to all infantry.  Any infantry units should inherit this set. jba -->
+      <EventHandler EventName="BeAfraidOfBalrog"			ScriptFunctionName="BecomeAfraidOfBalrog"		DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfRampage"			ScriptFunctionName="BecomeAfraidOfRampage"		DebugSingleStep="false"/>
+  		<EventHandler EventName="BeTerrified"				ScriptFunctionName="BecomeTerrified"			DebugSingleStep="false"/>
+  		<EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="BecomeUncontrollablyAfraid" DebugSingleStep="false"/>
+  		<EventHandler EventName="ModelConditionUSER_8"	ScriptFunctionName="BecomeAdvancedBannerCarrier_SEE" DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="WildInfantryFunctions" Inherit="InfantryFunctions">
@@ -197,16 +399,19 @@
         <EventHandler EventName="BeAfraidOfPhial"			ScriptFunctionName="WildInfantryBecomeAfraidOfPhial"	DebugSingleStep="false"/>
     </EventList>
     
-    
     <EventList Name="CavalryFunctions" Inherit="BaseScriptFunctions">
-		<!-- These are events that will apply to all infantry.  Any infantry units should inherit this set. jba -->
-        <EventHandler EventName="OnCreated"	ScriptFunctionName="OnCavalryCreated"		DebugSingleStep="false"/>
-        <EventHandler EventName="BeAfraidOfBalrog"	ScriptFunctionName="BecomeAfraidOfBalrog"		DebugSingleStep="false"/>
-        <EventHandler EventName="BeAfraidOfRampage"	ScriptFunctionName="BecomeAfraidOfRampage"		DebugSingleStep="false"/>
-		<EventHandler EventName="BeTerrified"			ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
-		<EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="BecomeUncontrollablyAfraid" DebugSingleStep="false"/>
+      <!-- These are events that will apply to all infantry.  Any infantry units should inherit this set. jba -->
+      <EventHandler EventName="OnCreated"	ScriptFunctionName="OnCavalryCreated"		DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfBalrog"	ScriptFunctionName="BecomeAfraidOfBalrog"		DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfRampage"	ScriptFunctionName="BecomeAfraidOfRampage"		DebugSingleStep="false"/>
+  		<EventHandler EventName="BeTerrified"			ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
+  		<EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="BecomeUncontrollablyAfraid" DebugSingleStep="false"/>
     </EventList>
 
+    <EventList Name="CavalryBannerFunctions" Inherit="CavalryFunctions">
+  		<EventHandler EventName="ModelConditionUSER_8"	ScriptFunctionName="BecomeAdvancedBannerCarrier_SEE" DebugSingleStep="false"/>
+    </EventList>
+    
     <EventList Name="RohirrimFunctions" Inherit="CavalryFunctions">
         <EventHandler EventName="OnCreated" ScriptFunctionName="OnRohirrimCreated" DebugSingleStep="false"/>
     </EventList>
@@ -221,9 +426,20 @@
          <EventHandler EventName="BeAfraidOfPhial"			ScriptFunctionName="MordorFighterBecomeAfraidOfPhial"			DebugSingleStep="false"/>
     </EventList>
 
+    <EventList Name="CreepSpiderFunctions" Inherit="CavalryFunctions">
+		<!-- This contains events specific to the wild spider riders-->
+         <EventHandler EventName="OnCreated" ScriptFunctionName="OnCreepSpiderRiderCreated" DebugSingleStep="false"/>
+         <EventHandler EventName="BeAfraidOfPhial"			ScriptFunctionName="MordorFighterBecomeAfraidOfPhial"			DebugSingleStep="false"/>
+    </EventList>
+
     <EventList Name="HaradrimArcherFunctions" Inherit="CavalryFunctions">
 		<!-- This contains events specific to the wild spider riders-->
          <EventHandler EventName="OnCreated" ScriptFunctionName="OnHaradrimArcherCreated" DebugSingleStep="false"/>
+    </EventList>
+	
+	 <EventList Name="HaradrimsSwordsmenFunctions" Inherit="CavalryFunctions">
+		<!-- This contains events specific to the wild spider riders-->
+         <EventHandler EventName="OnCreated" ScriptFunctionName="OnHaradrimsSwordsmenCreated" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="IsengardWildmanFunctions" Inherit="CavalryFunctions">
@@ -235,29 +451,58 @@
         <EventHandler EventName="OnCreated" ScriptFunctionName="OnGondorCavalryCreated" DebugSingleStep="false"/>
     </EventList>
     
-    <EventList Name="DwarvenBattleWagonFunctions" Inherit="GondorCavalryFunctions">
+    <EventList Name="DwarvenBattleWagonFunctions" Inherit="BaseHeroFunctions">
+        <EventHandler EventName="OnCreated" ScriptFunctionName="OnGondorCavalryCreated" DebugSingleStep="false"/>
         <EventHandler EventName="OnCreated" ScriptFunctionName="OnDwarvenBattleWagonCreated" DebugSingleStep="false"/>
     </EventList>
 
-    <EventList Name="EvilMenBlackRiderFunctions" Inherit="CavalryFunctions">
-        <EventHandler EventName="OnCreated" ScriptFunctionName="OnEvilMenBlackRiderCreated" DebugSingleStep="false"/>
-        <EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
-        <EventHandler EventName="UsingSpecialOne"		ScriptFunctionName="RadiateUncontrollableFear"	DebugSingleStep="false"/>
+    <EventList Name="EvilMenBlackRiderFunctions"  Inherit="BaseHeroFunctions">
+      <EventHandler EventName="BeAfraidOfBalrog"	ScriptFunctionName="BecomeAfraidOfBalrog"		DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfRampage"	ScriptFunctionName="BecomeAfraidOfRampage"		DebugSingleStep="false"/>
+  		<EventHandler EventName="BeTerrified"			ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
+  		<EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="BecomeUncontrollablyAfraid" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnEvilMenBlackRiderCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="OnJustBuilt" ScriptFunctionName="OnEvilMenBlackRiderJustBuilt_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+      <EventHandler EventName="UsingSpecialOne"		ScriptFunctionName="RadiateUncontrollableFear"	DebugSingleStep="false"/>
+      <EventHandler EventName="UsingSpecialThree" ScriptFunctionName="OnEvilMenBlackRiderMounting_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="UsingSpecialThreeMounted" ScriptFunctionName="OnEvilMenBlackRiderDismounting_SEE" DebugSingleStep="false"/>
     </EventList>
         
+  	<EventList Name="WitchkingBlackRiderFunctions">
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnEvilMenBlackRiderCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+      <EventHandler EventName="UsingSpecialOne"		ScriptFunctionName="RadiateUncontrollableFear"	DebugSingleStep="false"/>
+      <!-- <EventHandler EventName="ModelConditionUSER_1" ScriptFunctionName="OnWitchkingTransitionToFellbeast_SEE" DebugSingleStep="false"/> -->
+    </EventList>
+
+    <EventList Name="WitchkingFellBeastFunctions">
+      <EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+      <EventHandler EventName="UsingSpecialOne"		ScriptFunctionName="RadiateUncontrollableFear"	DebugSingleStep="false"/>
+      <!-- <EventHandler EventName="ModelConditionUSER_2" ScriptFunctionName="OnWitchkingTransitionToDismounted_SEE" DebugSingleStep="false"/> -->
+    </EventList>
+
+    <EventList Name="KingBrandFunctions" Inherit="BaseHeroFunctions">
+      <!-- Nothing -->
+    </EventList>
+
+    <EventList Name="LumberMillfunctions" Inherit="BaseScriptFunctions">
+      <EventHandler EventName="OnEnemyNear" ScriptFunctionName="OnWorkersEndangered_SEE" DebugSingleStep="false"/>
+    </EventList>
+
     <EventList Name="ArcherFunctions" Inherit="InfantryFunctions">
     </EventList>
     
-	<EventList Name="GondorArcherFunctions" Inherit="ArcherFunctions">
-        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnGondorArcherCreated" DebugSingleStep="false"/>
+  	<EventList Name="GondorArcherFunctions" Inherit="ArcherFunctions">
+      <EventHandler EventName="OnCreated"				ScriptFunctionName="OnGondorArcherCreated" DebugSingleStep="false"/>
     </EventList> 
 
-	<EventList Name="RohanArcherFunctions" Inherit="ArcherFunctions">
-        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnRohanArcherCreated" DebugSingleStep="false"/>
+  	<EventList Name="RohanArcherFunctions" Inherit="ArcherFunctions">
+      <EventHandler EventName="OnCreated"				ScriptFunctionName="OnRohanArcherCreated" DebugSingleStep="false"/>
     </EventList> 
 
-	<EventList Name="RohanElvenWarriorFunctions" Inherit="InfantryFunctions">
-        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnElvenWarriorCreated" DebugSingleStep="false"/>
+  	<EventList Name="RohanElvenWarriorFunctions" Inherit="InfantryFunctions">
+      <EventHandler EventName="OnCreated"				ScriptFunctionName="OnElvenWarriorCreated" DebugSingleStep="false"/>
     </EventList> 
     
     <EventList Name="RangerFunctions" Inherit="ArcherFunctions">
@@ -265,29 +510,44 @@
     </EventList>    
     
     <EventList Name="FellBeastFunctions">
-		<EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+      <EventHandler EventName="BeScary" ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+      <EventHandler EventName="UsingSpecialOne"		ScriptFunctionName="RadiateUncontrollableFear"	DebugSingleStep="false"/>
     </EventList>
-    
+
     <EventList Name="DragonStrikeDragonFunctions">
         <EventHandler EventName="OnCreated"			ScriptFunctionName="DragonStrikeDragonCreated" DebugSingleStep="false"/>
     </EventList>
 
-    <EventList Name="ShelobFunctions">
-		<EventHandler EventName="BeAfraidOfPhial"	ScriptFunctionName="ShelobBecomeAfraidOfPhial" DebugSingleStep="false"/>
-		<EventHandler EventName="BeScary"			ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
-		<EventHandler EventName="BeTerrified"		ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
+    <EventList Name="ShelobFunctions" Inherit="BaseHeroFunctions">
+  		<EventHandler EventName="BeAfraidOfPhial"	ScriptFunctionName="ShelobBecomeAfraidOfPhial" DebugSingleStep="false"/>
+  		<EventHandler EventName="BeScary"			ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+  		<EventHandler EventName="BeTerrified"		ScriptFunctionName="BecomeTerrified" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="GwaihirFunctions">
     </EventList>
 
     <EventList Name="EntFunctions" Inherit="BaseScriptFunctions">
-		<!-- This contains events specific to Ents. -->
-		<EventHandler EventName="OnDestroyed"	ScriptFunctionName="BeEnraged"		DebugSingleStep="false"/>		
-		<EventHandler EventName="BeingEnraged"	ScriptFunctionName="BecomeEnraged"	DebugSingleStep="false"/>		
-		<EventHandler EventName="OnAflame"		ScriptFunctionName="BecomeEnraged"	DebugSingleStep="false"/>		
-		<EventHandler EventName="OnQuenched"	ScriptFunctionName="StopEnraged"	DebugSingleStep="false"/>		
-        <EventHandler EventName="OnCreated"		ScriptFunctionName="OnEntCreated"	DebugSingleStep="false"/>
+  		<!-- This contains events specific to Ents. -->
+  		<EventHandler EventName="OnDestroyed"	ScriptFunctionName="BeEnraged"		DebugSingleStep="false"/>		
+  		<EventHandler EventName="BeingEnraged"	ScriptFunctionName="BecomeEnraged"	DebugSingleStep="false"/>		
+  		<EventHandler EventName="OnAflame"		ScriptFunctionName="BecomeEnraged"	DebugSingleStep="false"/>		
+  		<EventHandler EventName="OnQuenched"	ScriptFunctionName="StopEnraged"	DebugSingleStep="false"/>		
+      <EventHandler EventName="OnCreated"		ScriptFunctionName="OnEntCreated"	DebugSingleStep="false"/>
+    </EventList>
+
+  	<EventList Name="TreeBeardFunctions" Inherit="BaseHeroFunctions">
+  		<!-- This contains events specific to Ents. -->
+  		<EventHandler EventName="OnDestroyed"	ScriptFunctionName="BeEnraged"		DebugSingleStep="false"/>		
+  		<EventHandler EventName="BeingEnraged"	ScriptFunctionName="BecomeEnraged"	DebugSingleStep="false"/>		
+  		<EventHandler EventName="OnAflame"		ScriptFunctionName="BecomeEnraged"	DebugSingleStep="false"/>		
+  		<EventHandler EventName="OnQuenched"	ScriptFunctionName="StopEnraged"	DebugSingleStep="false"/>		
+      <EventHandler EventName="OnCreated"		ScriptFunctionName="OnEntCreated"	DebugSingleStep="false"/>
+    </EventList>
+	
+    <EventList Name="InfantryFunctionsRockThrow_SEE" Inherit="InfantryFunctions">
+		<!-- These are events that apply to all wild infantry -->
+    <EventHandler EventName="OnCreated"		ScriptFunctionName="OnEntCreated"	DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="MountainGiantFunctions" Inherit="BaseScriptFunctions">
@@ -315,18 +575,17 @@
 
     <EventList Name="MordorFighterFunctions" Inherit="MordorOrcFunctions">
 		<!-- This contains events specific to the MordorFighter. Kris -->
-        <EventHandler EventName="OnCreated"			ScriptFunctionName="OnMordorFighterCreated" DebugSingleStep="false"/>
         <EventHandler EventName="BeAfraidOfPhial"			ScriptFunctionName="MordorFighterBecomeAfraidOfPhial"			DebugSingleStep="false"/>
         <EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="MordorFighterBecomeUncontrollablyAfraid"	 DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="MordorInfantryBannerFunctions" Inherit="MordorOrcFunctions">
 	    <EventHandler EventName="OnCreated"					ScriptFunctionName="OnInfantryBannerCreated"	DebugSingleStep="false"/>
-		<!-- This contains events specific to the MordorFighter. Kris -->
-        <EventHandler EventName="BeAfraidOfPhial"			ScriptFunctionName="MordorFighterBecomeAfraidOfPhial"			DebugSingleStep="false"/>
-        <EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="MordorFighterBecomeUncontrollablyAfraid"	 DebugSingleStep="false"/>
+      <!-- This contains events specific to the MordorFighter. Kris -->
+      <EventHandler EventName="BeAfraidOfPhial"			ScriptFunctionName="MordorFighterBecomeAfraidOfPhial"			DebugSingleStep="false"/>
+      <EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="MordorFighterBecomeUncontrollablyAfraid"	 DebugSingleStep="false"/>
+  		<EventHandler EventName="ModelConditionUSER_8"	ScriptFunctionName="BecomeAdvancedBannerCarrier_SEE" DebugSingleStep="false"/>
     </EventList>
-
 
     <EventList Name="MordorCorsairFunctions" Inherit="InfantryFunctions">
 		<!-- This contains events specific to the Gondor Fighter horde member. jba -->
@@ -339,18 +598,48 @@
 		<!-- This contains events specific to the GoblinArcherFunctions. Kris -->
         <EventHandler EventName="BeAfraidOfPhial"			ScriptFunctionName="MordorFighterBecomeAfraidOfPhial"			DebugSingleStep="false"/>
         <EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="MordorFighterBecomeUncontrollablyAfraid"	 DebugSingleStep="false"/>
-		<EventHandler EventName="OnCreated"				ScriptFunctionName="OnWildGoblinArcherCreated" DebugSingleStep="false"/>        
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnWildGoblinArcherCreated" DebugSingleStep="false"/>        
     </EventList>
  
- 
     <EventList Name="IsengardFighterFunctions" Inherit="MordorFighterFunctions">
-		<!-- This contains events specific to the IsengardFighter. Kris -->
-        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnIsengardFighterCreated" DebugSingleStep="false"/>
+      <!-- This contains events specific to the IsengardFighter. Kris -->
+      <EventHandler EventName="OnCreated"				ScriptFunctionName="OnIsengardFighterCreated" DebugSingleStep="false"/>
+    </EventList>
+
+    <EventList Name="IsengardBannerFunctions" Inherit="MordorFighterFunctions">
+      <!-- This contains events specific to the IsengardFighter. Kris -->
+      <EventHandler EventName="OnCreated"				ScriptFunctionName="OnIsengardFighterCreated" DebugSingleStep="false"/>
+  		<EventHandler EventName="ModelConditionUSER_8"	ScriptFunctionName="BecomeAdvancedBannerCarrier_SEE" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="WargRiderFunctions" Inherit="MordorFighterFunctions">
 		<!-- This contains events specific to the IsengardFighter. Kris -->
         <EventHandler EventName="OnCreated"				ScriptFunctionName="OnIsengardFighterCreated" DebugSingleStep="false"/>
+    </EventList>
+
+    <EventList Name="GothmogFunctions"  Inherit="BaseScriptFunctions">
+      <!-- This contains events specific to the IsengardFighter. Kris -->
+      <EventHandler EventName="OnCreated" ScriptFunctionName="OnIsengardFighterCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfPhial" ScriptFunctionName="MordorFighterBecomeAfraidOfPhial"			DebugSingleStep="false"/>
+      <EventHandler EventName="BeUncontrollablyAfraid" ScriptFunctionName="MordorFighterBecomeUncontrollablyAfraid"	 DebugSingleStep="false"/>
+      <EventHandler EventName="OnRelaxed" ScriptFunctionName="OnInterludeUpgradeVariation_SEE" DebugSingleStep="false"/>
+      <!--  <EventHandler EventName="Moving"				ScriptFunctionName="OnGothmogSelected_SEE" DebugSingleStep="false"/>  -->
+    </EventList>
+
+    <EventList Name="CaptainJacksonFunctions" Inherit="BaseHeroFunctions">
+		<!-- This contains events specific to the Gondor Fighter horde member. jba -->
+      <EventHandler EventName="BeAfraidOfBalrog"			ScriptFunctionName="BecomeAfraidOfBalrog"		DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfRampage"			ScriptFunctionName="BecomeAfraidOfRampage"		DebugSingleStep="false"/>
+  		<EventHandler EventName="BeTerrified"				ScriptFunctionName="BecomeTerrified"			DebugSingleStep="false"/>
+  		<EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="BecomeUncontrollablyAfraid" DebugSingleStep="false"/>
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMordorCorsairCreated" DebugSingleStep="false"/>
+        <EventHandler EventName="RecoverFromTerror"		ScriptFunctionName="GondorFighterRecoverFromTerror"				DebugSingleStep="false"/>
+        <EventHandler EventName="BeAfraidOfGateDamaged" ScriptFunctionName="GondorFighterBecomeAfraidOfGateDamaged"		DebugSingleStep="false"/>
+    </EventList>
+
+    <EventList Name="MoriaWargRiderFunctions" Inherit="MordorFighterFunctions">
+		<!-- This contains events specific to the IsengardFighter. Kris -->
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMoriaGoblinsSwordCreated" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="IsengardArcherFunctions" Inherit="MordorFighterFunctions">
@@ -363,10 +652,14 @@
     </EventList>
     
     <EventList Name="GondorFighterFunctions" Inherit="InfantryFunctions">
-		<!-- This contains events specific to the Gondor Fighter horde member. jba -->
-        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnGondorFighterCreated" DebugSingleStep="false"/>
-        <EventHandler EventName="RecoverFromTerror"		ScriptFunctionName="GondorFighterRecoverFromTerror"				DebugSingleStep="false"/>
-        <EventHandler EventName="BeAfraidOfGateDamaged" ScriptFunctionName="GondorFighterBecomeAfraidOfGateDamaged"		DebugSingleStep="false"/>
+      <!-- This contains events specific to the Gondor Fighter horde member. jba -->
+      <EventHandler EventName="OnCreated"				ScriptFunctionName="OnGondorFighterCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="RecoverFromTerror"		ScriptFunctionName="GondorFighterRecoverFromTerror"				DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfGateDamaged" ScriptFunctionName="GondorFighterBecomeAfraidOfGateDamaged"		DebugSingleStep="false"/>
+    </EventList>
+ 
+    <EventList Name="GondorBannerFunctions" Inherit="GondorFighterFunctions">
+  		<EventHandler EventName="ModelConditionUSER_8"	ScriptFunctionName="BecomeAdvancedBannerCarrier_SEE" DebugSingleStep="false"/>
     </EventList>
  
     <EventList Name="GondorFighterHordeFunctions" Inherit="GondorFighterFunctions">
@@ -378,14 +671,40 @@
         <EventHandler EventName="UsingSpecialOne"		ScriptFunctionName="RadiateUncontrollableFear"	DebugSingleStep="false"/>
     </EventList>
     
-    <EventList Name="AragornFunctions" Inherit="BaseScriptFunctions">
+    <EventList Name="BoromirFunctions_SEE" Inherit="BaseHeroFunctions">
+		<!-- This contains events specific to Boromir -->
+        <EventHandler EventName="UsingSpecialOne"		ScriptFunctionName="RadiateUncontrollableFear"	DebugSingleStep="false"/>
+        <EventHandler EventName="ReallyDamagedLastStand"	ScriptFunctionName="GoIntoRampage" DebugSingleStep="false"/>
+    </EventList>
+
+    <EventList Name="FaramirFunctions"  Inherit="BaseHeroFunctions">
+  		<EventHandler EventName="OnRelaxed" ScriptFunctionName="OnInterludeUpgradeVariation_SEE" DebugSingleStep="false"/>
+    </EventList>
+    
+    <EventList Name="MahudFunctions_SEE" Inherit="BaseScriptFunctions">
+		<!-- This contains events specific to Boromir -->
+        <EventHandler EventName="ModelConditionUSER_6"		ScriptFunctionName="ActivateSpecialPowerMahudHorn_SEE"	DebugSingleStep="false"/>
+        <EventHandler EventName="UsingSpecialOne"		ScriptFunctionName="RadiateUncontrollableFear"	DebugSingleStep="false"/>
+    </EventList>
+    
+    <EventList Name="AragornFunctions" Inherit="BaseHeroFunctions">
 		<!-- This contains events specific to Boromir -->
         <EventHandler EventName="OnCreated"				ScriptFunctionName="OnAragornCreated" DebugSingleStep="false"/>
     </EventList>
 
-    <EventList Name="FrodoFunctions" Inherit="BaseScriptFunctions">
+    <EventList Name="MerryFunctions" Inherit="BaseHeroFunctions">
+		<!-- These are events that apply to all wild infantry -->
+      <EventHandler EventName="OnCreated"		ScriptFunctionName="OnEntCreated"	DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfBalrog"			ScriptFunctionName="BecomeAfraidOfBalrog"		DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfRampage"			ScriptFunctionName="BecomeAfraidOfRampage"		DebugSingleStep="false"/>
+  		<EventHandler EventName="BeTerrified"				ScriptFunctionName="BecomeTerrified"			DebugSingleStep="false"/>
+  		<EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="BecomeUncontrollablyAfraid" DebugSingleStep="false"/>
+    </EventList>
+
+    <EventList Name="FrodoFunctions" Inherit="MerryFunctions">
 		<!-- This contains events specific to Frodo -->
         <EventHandler EventName="UsingSpecialOne"		ScriptFunctionName="RadiatePhialFear"	DebugSingleStep="false"/>
+        <EventHandler EventName="ModelConditionUSER_1"		ScriptFunctionName="OnFrodoDisguised_SEE"	DebugSingleStep="false"/>
     </EventList>
     
     <EventList Name="FramFunctions" Inherit="FrodoFunctions">
@@ -416,7 +735,7 @@
 	<!-- Generic keep Lua Event Lists -->
 	<EventList Name="GarrisonableFunctions">
 		<EventHandler EventName="OnCreated"	ScriptFunctionName="OnGarrisonableCreated" DebugSingleStep="false"/>
-    </EventList>
+  </EventList>
     
 	<EventList Name="CreateAHeroFunctions" Inherit="BaseScriptFunctions">
         <EventHandler EventName="OnCreated"				ScriptFunctionName="OnCreateAHeroFunctions" DebugSingleStep="false"/>
@@ -437,30 +756,91 @@
     </EventList>
     
     <EventList Name="FortressFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnFortressCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="OnCreated"		ScriptFunctionName="OnFortressCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="OnBeingStoned"		ScriptFunctionName="OnFortressRingStolen_SEE" DebugSingleStep="false"/>
+      <EventHandler EventName="OnNotBeingStoned"		ScriptFunctionName="OnFortressRingStolenAftermath_SEE" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="DormitoryFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnBuildVariation"		ScriptFunctionName="OnDormitoryBuildVariation" DebugSingleStep="false"/>
+      <EventHandler EventName="OnBuildVariation"		ScriptFunctionName="OnDormitoryBuildVariation" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="GateWatchersFunctions" Inherit="BaseScriptFunctions">
-        <EventHandler EventName="OnBuildingComplete"	ScriptFunctionName="OnGateWatcherBuilt" DebugSingleStep="false"/>
-        <EventHandler EventName="BeScary"				ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
+      <EventHandler EventName="OnBuildingComplete"	ScriptFunctionName="OnGateWatcherBuilt" DebugSingleStep="false"/>
+      <EventHandler EventName="BeScary"				ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>
     </EventList>
 
     <EventList Name="NeutralGollum_RingStealerFunctions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="OnDamaged" ScriptFunctionName="NeutralGollum_RingStealerDamaged" DebugSingleStep="false"/>  
-		<EventHandler EventName="OnSlaughtered" ScriptFunctionName="NeutralGollum_RingStealerSlaughtered" DebugSingleStep="false"/>  
+  		<EventHandler EventName="OnDamaged" ScriptFunctionName="NeutralGollum_RingStealerDamaged" DebugSingleStep="false"/>  
+  		<EventHandler EventName="OnSlaughtered" ScriptFunctionName="NeutralGollum_RingStealerSlaughtered" DebugSingleStep="false"/>  
     </EventList>
     
     <EventList Name="TomBombadil_Functions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="BeScary"				ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>		
+  		<EventHandler EventName="BeScary"				ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>		
     </EventList>
     
     <EventList Name="NecromancerStatue_Functions" Inherit="BaseScriptFunctions">
-		<EventHandler EventName="OnCreated"				ScriptFunctionName="OnNecromancerStatueCreated" DebugSingleStep="false"/>
-		<EventHandler EventName="BeScary"				ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>		
+  		<EventHandler EventName="OnCreated"				ScriptFunctionName="OnNecromancerStatueCreated" DebugSingleStep="false"/>
+  		<EventHandler EventName="BeScary"				ScriptFunctionName="RadiateTerrorEx" DebugSingleStep="false"/>		
+    </EventList>
+
+  	<EventList Name="IsengardFellbeastFunctions" Inherit="FellBeastFunctions">
+      <EventHandler EventName="OnCreated" ScriptFunctionName="IsengardFellbeastCreated" DebugSingleStep="false"/>
     </EventList>
     
+		<!-- This contains events specific to the MordorFighter. Kris (Inserted by Sûlherokhh)  -->
+    <EventList Name="MordorOrcFighterFunctions" Inherit="MordorOrcFunctions">
+      <EventHandler EventName="OnCreated"	ScriptFunctionName="OnMordorOrcFighterCreated" DebugSingleStep="false"/>
+      <EventHandler EventName="BeAfraidOfPhial"			ScriptFunctionName="MordorFighterBecomeAfraidOfPhial"			DebugSingleStep="false"/>
+      <EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="MordorFighterBecomeUncontrollablyAfraid"	 DebugSingleStep="false"/>
+    </EventList>
+    
+  	<EventList Name="MordorOrcArcherFunctions" Inherit="InfantryFunctions">
+        <EventHandler EventName="OnCreated"			ScriptFunctionName="OnMordorOrcArcherCreated" DebugSingleStep="false"/>
+    </EventList>
+    
+  	<EventList Name="MorannonArcherFunctions" Inherit="InfantryFunctions">
+        <EventHandler EventName="OnCreated"			ScriptFunctionName="OnMorannonArcherCreated" DebugSingleStep="false"/>
+    </EventList>
+    
+    <EventList Name="MordorBlackUrukFunctions" Inherit="MordorFighterFunctions">
+		<!-- This contains events specific to the IsengardFighter. Kris -->
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMordorBlackUrukCreated" DebugSingleStep="false"/>
+    </EventList>
+
+    <EventList Name="MordorMorgulOrcFunctions" Inherit="MordorFighterFunctions">
+		<!-- This contains events specific to the IsengardFighter. Kris -->
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMordorMorgulOrcsCreated" DebugSingleStep="false"/>
+    </EventList>
+    
+    <EventList Name="GoblinFighterFunctions" Inherit="MordorFighterFunctions">
+		<!-- This contains events specific to the IsengardFighter. Kris -->
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMoriaGoblinsSwordCreated" DebugSingleStep="false"/>
+    </EventList>
+    
+    <EventList Name="GoblinArcherFunctions" Inherit="MordorFighterFunctions">
+		<!-- This contains events specific to the IsengardFighter. Kris -->
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMoriaGoblinsBowCreated" DebugSingleStep="false"/>
+        <EventHandler EventName="UsingSpecialWeaponThree"				ScriptFunctionName="UsingFireArrows_SEE" DebugSingleStep="false"/>
+        <EventHandler EventName="NOTUsingSpecialWeaponThree"				ScriptFunctionName="NOTUsingFireArrows_SEE" DebugSingleStep="false"/>
+    </EventList>
+    
+    <EventList Name="GoblinPikemanFunctions" Inherit="MordorFighterFunctions">
+		<!-- This contains events specific to the IsengardFighter. Kris -->
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMoriaGoblinsSpearCreated" DebugSingleStep="false"/>
+    </EventList>
+    
+    <EventList Name="UpgradeProviderFunctions" Inherit="BaseScriptFunctions">
+		<!-- This contains events specific to Ents. -->
+    <EventHandler EventName="OnCreated"		ScriptFunctionName="OnEntCreated"	DebugSingleStep="false"/>
+    
+    <EventList Name="CreepSpiderLairFunctions" Inherit="BaseScriptFunctions">
+		<!-- This contains events specific to Ents. -->
+    <EventHandler EventName="OnCreated"		ScriptFunctionName="OnCreepSpiderLairCreated_SEE"	DebugSingleStep="false"/>
+	</EventList>
+	
+	<EventList Name="DwarvenMinerFunctions" Inherit="InfantryFunctions">
+    <EventHandler EventName="OnCreated"				ScriptFunctionName="OnDwarvenMinerCreated" DebugSingleStep="false"/>
+    </EventList>
+	
 </SageLuaScriptSection>

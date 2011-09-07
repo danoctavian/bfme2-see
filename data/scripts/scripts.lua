@@ -51,7 +51,6 @@ function OnCaptureFlagGenericEvent(self,data)
 	ObjectHideSubObjectPermanently( self, "FLAG_MEN", true)
 	ObjectHideSubObjectPermanently( self, "FLAG_ELVES", true)
 	ObjectHideSubObjectPermanently( self, "FLAG_DWARVES", true)
-	ObjectHideSubObjectPermanently( self, "FLAG_ANGMAR", true)
 
 	if str == "Isengard" then
 		ObjectHideSubObjectPermanently( self, "FLAG_ISENGARD", false)
@@ -65,8 +64,6 @@ function OnCaptureFlagGenericEvent(self,data)
 		ObjectHideSubObjectPermanently( self, "FLAG_ELVES", false)
 	elseif str == "Wild" then
 		ObjectHideSubObjectPermanently( self, "FLAG_WILD", false)
-	elseif str == "Angmar" then
-		ObjectHideSubObjectPermanently( self, "FLAG_ANGMAR", false)
 	else
 		ObjectHideSubObjectPermanently( self, "FLAG_NEUTRAL", false)
 	end
@@ -86,6 +83,12 @@ end
 function OnEntCreated(self)
 	--ObjectShowSubObjectPermanently( self, "ROCK", true )
 	ObjectGrantUpgrade( self, "Upgrade_SwitchToRockThrowing" )
+end
+
+function OnTreeBeardCreated(self)
+	--ObjectShowSubObjectPermanently( self, "ROCK", true )
+	ObjectGrantUpgrade( self, "Upgrade_SwitchToRockThrowing" )
+	ObjectGrantUpgrade( self, "Upgrade_PurchasedRock" )
 end
 
 function OnMountainGiantCreated(self)
@@ -162,6 +165,9 @@ function RadiateTerrorEx(self, other, terrorRange)
 	ObjectBroadcastEventToEnemies(self, "BeTerrified", terrorRange)
 end
 	
+function RadiateUncontrollableFear_SEE(self, other, terrorRange)
+	ObjectBroadcastEventToEnemies(self, "BeUncontrollablyAfraid", terrorRange)
+end
 
 function BecomeTerrified(self, other)
 	ObjectEnterRunAwayPanicState(self, other)
@@ -194,11 +200,6 @@ end
 
 function OnMordorArcherCreated(self)
 	ObjectHideSubObjectPermanently( self, "ARROWFIRE", true )
-end
-
-function OnMordorFighterCreated(self)
-	ObjectHideSubObjectPermanently( self, "FORGED_BLADE", true )
-	ObjectHideSubObjectPermanently( self, "FORGED_BLADES", true )
 end
 
 function MordorFighterBecomeUncontrollablyAfraid(self,other)
@@ -252,10 +253,12 @@ end
 
 function OnInfantryBannerCreated(self)
 	ObjectHideSubObjectPermanently( self, "Glow", true )
+	ObjectHideSubObjectPermanently( self, "Glow1", true )
 end
 
 function OnCavalryCreated(self)
 	ObjectHideSubObjectPermanently( self, "Glow", true )
+	ObjectHideSubObjectPermanently( self, "Glow1", true )
 end
 
 function OnGondorFighterCreated(self)
@@ -263,6 +266,10 @@ function OnGondorFighterCreated(self)
 	ObjectHideSubObjectPermanently( self, "Hammer1", true )
 	ObjectHideSubObjectPermanently( self, "Glow", true )
 	ObjectHideSubObjectPermanently( self, "Glow1", true )
+end
+
+function BecomeAdvancedBannerCarrier_SEE(self)
+    -- ObjectGrantUpgrade( self, "Upgrade_BasicTraining_SEE" )
 end
 
 function OnAragornCreated(self)
@@ -330,21 +337,29 @@ function SpyMoving(self, other)
 	print(ObjectDescription(self).." spying movement of "..ObjectDescription(other));
 end
 
---function GandalfConsiderUsingDefensePower(self, other, delay, amount)
---	-- Put up the shield if a big attack is coming and we have time to block it
---	if tonumber(delay) > 1 then
---		if tonumber(amount) >= 100 then
---			ObjectDoSpecialPower(self, "SpecialPowerShieldBubble")
---			return
---		end
---	end
---	
+function GandalfConsiderUsingDefensePower(self, other, delay, amount)
+	-- Put up the shield if a big attack is coming and we have time to block it
+	if tonumber(delay) > 0.5 then
+		if tonumber(amount) >= 220 then
+			ObjectDoSpecialPower(self, "SpecialPowerShieldBubble_SEE")
+			return
+		end
+	end
+	-- if tonumber(ObjectCountNearbyEnemies(self, 50)) >= 10 then
+		-- ObjectDoSpecialPower(self, "SpecialAbilityWizardBlast")
+		-- return
+	-- end
 --	-- Or, if we are being hit and there are alot of guys arround, do our cool pushback power
 --	if tonumber(ObjectCountNearbyEnemies(self, 50)) >= 4 then
 --		ObjectDoSpecialPower(self, "SpecialPowerTelekeneticPush")
 --		return
 --	end
---end
+end
+
+
+function GandalfTriggerDefensePower_SEE(self, other, delay, amount)
+		ObjectDoSpecialPower(self, "SpecialPowerShieldBubble_SEE")
+end
 
 function GandalfTriggerWizardBlast(self)
 	ObjectCreateAndFireTempWeapon(self, "GandalfWizardBlast")
@@ -365,6 +380,87 @@ end
 --		return
 --	end
 --end
+
+function OnFortressWallHubCreated_SEE(self)
+	local num =	GetRandomNumber()
+	if num <= 0.33 then 
+  	ObjectRemoveUpgrade( self, "Upgrade_StructureLevel2" )
+  	ObjectRemoveUpgrade( self, "Upgrade_StructureLevel3" )
+    ObjectGrantUpgrade( self, "Upgrade_StructureLevel1" )
+	elseif num <= 0.66 then 
+  	ObjectRemoveUpgrade( self, "Upgrade_StructureLevel1" )
+  	ObjectRemoveUpgrade( self, "Upgrade_StructureLevel3" )
+    ObjectGrantUpgrade( self, "Upgrade_StructureLevel2" )
+	else -- if num  > 0.66 then
+  	ObjectRemoveUpgrade( self, "Upgrade_StructureLevel2" )
+  	ObjectRemoveUpgrade( self, "Upgrade_StructureLevel1" )
+  	ObjectGrantUpgrade( self, "Upgrade_StructureLevel3" )
+	end
+end
+
+function OnInterludeUpgradeVariation_SEE(self)
+	local num =	GetRandomNumber()
+	if num <= 0.1 then 
+  	ObjectRemoveUpgrade( self, "Upgrade_RaiseShield" )
+    ObjectGrantUpgrade( self, "Upgrade_PlantShield" )
+	else -- num > 0.1 then
+    ObjectRemoveUpgrade( self, "Upgrade_PlantShield" )
+  	ObjectGrantUpgrade( self, "Upgrade_RaiseShield" )
+	end
+end
+
+function InitializeFortressWallGateFunctions(self)
+  ObjectGrantUpgrade( self, "Upgrade_RaiseShield" )
+  ObjectGrantUpgrade( self, "Upgrade_EnemyDistant_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_SwitchToRockThrowing" )
+end
+
+function ActivateSpecialPowerMahudHorn_SEE(self)
+	ObjectDoSpecialPower(self, "SpecialAbilityHornOfGondor")
+end
+
+function OnRohanEowynCreated_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_EowynConditionDisguised_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_EowynConditionDisguiseCanceled_SEE" )
+	ObjectRemoveUpgrade( self, "Upgrade_EnemyClose_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_EnemyDistant_SEE" )
+end
+
+function OnEnemyClose_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_EnemyDistant_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_EnemyClose_SEE" )
+end
+
+function OnEnemyDistant_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_EnemyClose_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_EnemyDistant_SEE" )
+end
+
+function OnRohanEowynDisguised_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_EowynConditionDisguiseCanceled_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_EowynConditionDisguised_SEE" )
+	ObjectHideSubObjectPermanently( self, "HAMMER", true )
+	ObjectHideSubObjectPermanently( self, "SWORD", false )
+	ObjectHideSubObjectPermanently( self, "FORGED_BLADE", true )
+	ObjectHideSubObjectPermanently( self, "HELMET", true )
+	ObjectHideSubObjectPermanently( self, "SHIELD", false )
+	ObjectHideSubObjectPermanently( self, "Broom", true )
+end
+
+function OnRohanEowynDisguiseCanceled_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_EowynConditionDisguised_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_EowynConditionDisguiseCanceled_SEE" )
+end
+
+function OnRohanEowynStealthed_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_EowynConditionNotStealthed_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_EowynConditionStealthed_SEE" )
+end
+
+function OnRohanEowynNotStealthed_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_EowynConditionStealthed_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_EowynConditionNotStealthed_SEE" )
+end
 
 function BalrogTriggerBreatheFire(self)
 	ObjectCreateAndFireTempWeapon(self, "MordorBalrogBreath")
@@ -398,6 +494,53 @@ function OnEvilMenBlackRiderCreated(self)
 	-- @todo place appropriate functionality here
 end
 
+function OnEvilMenBlackRiderJustBuilt_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_PlantShield" )
+	ObjectGrantUpgrade( self, "Upgrade_RaiseShield" )
+end
+
+function OnEvilMenBlackRiderMounting_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_RaiseShield" )
+	ObjectGrantUpgrade( self, "Upgrade_PlantShield" )
+end
+
+function OnEvilMenBlackRiderDismounting_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_PlantShield" )
+	ObjectGrantUpgrade( self, "Upgrade_RaiseShield" )
+end
+
+function OnBerserkerDamaged_SEE(self)
+	ObjectDoSpecialPower(self, "SpecialAbilityEowynShieldMaiden")
+	-- ObjectGrantUpgrade( self, "Upgrade_PlantShield" )
+end
+
+function OnBerserkerReallyDamaged_SEE(self)
+	-- ObjectGrantUpgrade( self, "Upgrade_RaiseShield" )
+end
+
+
+-- function OnWitchkingTransitionToFellbeast_SEE
+  -- ObjectDoSpecialPower(self, "SpecialAbilityToggleMounted")
+-- end
+
+-- function OnWitchkingTransitionToDismounted_SEE
+  -- ObjectDoSpecialPower(self, "SpecialAbilityToggleMountedFromFellBeast")
+-- end
+
+function OnHeroInjured_SEE(self)
+	-- ObjectRemoveUpgrade( self, "Upgrade_RemoveBeacon_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_ReallyDamaged_SEE" )
+end
+
+function OnHeroHealed_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_ReallyDamaged_SEE" )
+	-- ObjectGrantUpgrade( self, "Upgrade_RemoveBeacon_SEE" )
+end
+
+function OnWorkersEndangered_SEE(self)
+	ObjectGrantUpgrade( self, "Upgrade_PlantShield" )
+end
+
 function OnBallistaCreated(self)
 	ObjectHideSubObjectPermanently( self, "MinedArrow", true )
 end
@@ -411,10 +554,6 @@ function OnTrebuchetCreated(self)
 	ObjectHideSubObjectPermanently( self, "FIREPLANE", true )
 end
 
-function OnTrollSlingCreated(self)
-	ObjectHideSubObjectPermanently( self, "FORGED_BLADE", true )
-end
-
 function OnPorterCreated(self)
 	ObjectHideSubObjectPermanently( self, "ARROWS", true )
 	ObjectHideSubObjectPermanently( self, "BRAZIER", true )
@@ -423,6 +562,32 @@ function OnPorterCreated(self)
 	ObjectHideSubObjectPermanently( self, "SWORDS", true )
 	ObjectHideSubObjectPermanently( self, "SHIELDS", true )
 	ObjectHideSubObjectPermanently( self, "ARMOR", true )
+	ObjectHideSubObjectPermanently( self, "BANNERS", true )
+end
+
+function OnPorterCreated_SEE(self)
+	ObjectHideSubObjectPermanently( self, "ARROWS", true )
+	ObjectHideSubObjectPermanently( self, "BRAZIER", true )
+	ObjectHideSubObjectPermanently( self, "BOWS", true )
+	ObjectHideSubObjectPermanently( self, "TREBUCHET_FIRE", true )
+	ObjectHideSubObjectPermanently( self, "SWORDS", true )
+	ObjectHideSubObjectPermanently( self, "SHIELDS", true )
+	ObjectHideSubObjectPermanently( self, "ARMOR", true )
+	ObjectHideSubObjectPermanently( self, "BANNERS", true )
+	ObjectGrantUpgrade( self, "Upgrade_PorterCommandset1_SEE" )
+end
+
+function OnPorterCommandSetSwitch2_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_PorterCommandset1_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_PorterCommandset2_SEE" )
+	ObjectHideSubObjectPermanently( self, "SWORDS", true )
+	ObjectHideSubObjectPermanently( self, "BANNERS", false )
+end
+
+function OnPorterCommandSetSwitch1_SEE(self)
+	ObjectRemoveUpgrade( self, "Upgrade_PorterCommandset2_SEE" )
+	ObjectGrantUpgrade( self, "Upgrade_PorterCommandset1_SEE" )
+	ObjectHideSubObjectPermanently( self, "SWORDS", false )
 	ObjectHideSubObjectPermanently( self, "BANNERS", true )
 end
 
@@ -477,10 +642,12 @@ end
 function OnIsengardFighterCreated(self)
 	ObjectHideSubObjectPermanently( self, "Forged_Blade", true )
 	ObjectHideSubObjectPermanently( self, "Glow", true )
+	ObjectHideSubObjectPermanently( self, "SLDR_02", true )
+	ObjectHideSubObjectPermanently( self, "GNLT_04", true )
+	ObjectHideSubObjectPermanently( self, "BOOT_01", true )
 end
 
 function OnIsengardWildmanCreated(self)
-	ObjectHideSubObjectPermanently( self, "Forged_Blade", true )
 	ObjectHideSubObjectPermanently( self, "Torch", true )
 	ObjectHideSubObjectPermanently( self, "FireArowTip", true )
 end
@@ -491,6 +658,17 @@ function OnWildSpiderRiderCreated(self)
 	ObjectHideSubObject( self, "ARROWNOCK", true )
 end
 
+function OnCreepSpiderRiderCreated(self)
+	ObjectHideSubObjectPermanently( self, "Forged_Blade", true )
+	ObjectHideSubObjectPermanently( self, "FIREAROWTIP", true )
+	ObjectHideSubObject( self, "ARROWNOCK", true )
+	-- define the locals as random numbers
+	local bow 			=	GetRandomNumber()
+	if bow <= 0.5 then
+    ObjectGrantUpgrade( self, "Upgrade_ObjectLevel10" )
+	end
+end
+
 function OnHaradrimArcherCreated(self)
 	ObjectHideSubObjectPermanently( self, "FireArowTip", true )
 	ObjectHideSubObject( self, "ArrowNock", true )
@@ -499,6 +677,9 @@ end
 function OnIsengardArcherCreated(self)
 	ObjectHideSubObject( self, "ARROWNOCK", true )
 	ObjectHideSubObjectPermanently( self, "FIREAROWTIP", true )
+	ObjectHideSubObjectPermanently( self, "SLDR_02", true )
+	ObjectHideSubObjectPermanently( self, "GNLT_04", true )
+	ObjectHideSubObjectPermanently( self, "BOOT_01", true )
 end
 
 function OnWildGoblinArcherCreated(self)
@@ -517,9 +698,6 @@ end
 function CreateAHeroHideEverything(self)
 	ObjectHideSubObjectPermanently( self, "SWORD", true )
 	ObjectHideSubObjectPermanently( self, "BOW", true )
-	ObjectHideSubObjectPermanently( self, "BOW_03", true )
-	ObjectHideSubObjectPermanently( self, "BOW_04", true )
-	ObjectHideSubObjectPermanently( self, "BOW_05", true )
 	ObjectHideSubObjectPermanently( self, "TRUNK01", true )
 	ObjectHideSubObjectPermanently( self, "STAFF_LIGHT", true )
 	ObjectHideSubObjectPermanently( self, "OBJECT01", true )
@@ -540,7 +718,6 @@ function CreateAHeroHideEverything(self)
 
 	ObjectHideSubObjectPermanently( self, "AxeWeapon", true )
 	ObjectHideSubObjectPermanently( self, "Belthronding", true )
-	-- ObjectHideSubObjectPermanently( self, "Mithlondrecurve", true )
 	ObjectHideSubObjectPermanently( self, "Dwarf_Axe01", true )
 	ObjectHideSubObjectPermanently( self, "FireBrand", true )
 	ObjectHideSubObjectPermanently( self, "FireBrand_SM", true )
@@ -590,7 +767,6 @@ function CreateAHeroHideEverything(self)
 	ObjectHideSubObjectPermanently( self, "BOOT_03", true )
 	ObjectHideSubObjectPermanently( self, "BOOT_04", true )
 	ObjectHideSubObjectPermanently( self, "BOOT_05", true )
-	ObjectHideSubObjectPermanently( self, "BOOT_06", true )
 	ObjectHideSubObjectPermanently( self, "SHLD_00", true )
 	ObjectHideSubObjectPermanently( self, "SHLD_01", true )
 	ObjectHideSubObjectPermanently( self, "SHLD_02", true )
@@ -615,36 +791,18 @@ function CreateAHeroHideEverything(self)
 	ObjectHideSubObjectPermanently( self, "HLMT_05", true )
 	ObjectHideSubObjectPermanently( self, "HLMT_06", true )
 	ObjectHideSubObjectPermanently( self, "HLMT_07", true )
-	ObjectHideSubObjectPermanently( self, "HLMT_07_LOD1", true )
-	ObjectHideSubObjectPermanently( self, "HLMT_08", true )
-	ObjectHideSubObjectPermanently( self, "HLMT_09", true )
 	ObjectHideSubObjectPermanently( self, "GNLT_00", true )
 	ObjectHideSubObjectPermanently( self, "GNLT_01", true )
 	ObjectHideSubObjectPermanently( self, "GNLT_02", true )
 	ObjectHideSubObjectPermanently( self, "GNLT_03", true )
 	ObjectHideSubObjectPermanently( self, "GNLT_04", true )
 	ObjectHideSubObjectPermanently( self, "GNLT_05", true )
-	ObjectHideSubObjectPermanently( self, "GNLT_06", true )
-	ObjectHideSubObjectPermanently( self, "GNLT_07", true )
-	ObjectHideSubObjectPermanently( self, "GNLT_08", true )
-	ObjectHideSubObjectPermanently( self, "GHLT_08", true )
-	ObjectHideSubObjectPermanently( self, "GNLT_09", true )
-	ObjectHideSubObjectPermanently( self, "GNLT_09_LOD1", true )
-	ObjectHideSubObjectPermanently( self, "GNLT_10", true )
 	ObjectHideSubObjectPermanently( self, "SPR_01", true )
-	ObjectHideSubObjectPermanently( self, "PAXE_01", true )
-	ObjectHideSubObjectPermanently( self, "PAXE_01_LOD1", true )
 	ObjectHideSubObjectPermanently( self, "SWRD_01", true )
 	ObjectHideSubObjectPermanently( self, "SWRD_02", true )
 	ObjectHideSubObjectPermanently( self, "SWRD_03", true )
 	ObjectHideSubObjectPermanently( self, "SWRD_04", true )
 	ObjectHideSubObjectPermanently( self, "SWRD_05", true )
-	ObjectHideSubObjectPermanently( self, "SWD_01", true )
-	ObjectHideSubObjectPermanently( self, "SWD_02", true )
-	ObjectHideSubObjectPermanently( self, "SWD_03", true )
-	ObjectHideSubObjectPermanently( self, "SWD_04", true )
-	ObjectHideSubObjectPermanently( self, "STFF_05", true )
-	ObjectHideSubObjectPermanently( self, "STFF_06", true )
 	ObjectHideSubObjectPermanently( self, "objSLDR_01", true )
 	ObjectHideSubObjectPermanently( self, "objSLDR_02", true )
 	ObjectHideSubObjectPermanently( self, "objSLDR_03", true )
@@ -663,7 +821,6 @@ function CreateAHeroHideEverything(self)
 	ObjectHideSubObjectPermanently( self, "HMR_01", true )
 	ObjectHideSubObjectPermanently( self, "HMR_02", true )
 	ObjectHideSubObjectPermanently( self, "HMR_03", true )
-	ObjectHideSubObjectPermanently( self, "HMR_04", true )
 	ObjectHideSubObjectPermanently( self, "AXE_01", true )
 	ObjectHideSubObjectPermanently( self, "AXE_02", true )
 	ObjectHideSubObjectPermanently( self, "AXE_03", true )
@@ -720,22 +877,952 @@ function OnFortressCreated(self)
 	ObjectSetGeometryActive( self, "HighTowerGeom", false )
 end
 
+function OnFortressRingStolen_SEE(self)
+  -- ObjectRemoveUpgrade( self, "Upgrade_RingHero" )
+  -- ObjectRemoveUpgrade( self, "Upgrade_FortressRingHero" )
+	ObjectGrantUpgrade( self, "Upgrade_RaiseShield" )
+  -- ObjectPlaySound(self, "EVA:LocalPlayerLosesRing")
+end
+function OnFortressRingStolenAftermath_SEE(self)
+  ObjectRemoveUpgrade( self, "Upgrade_RaiseShield" )
+end
+
+
 function OnGateWatcherBuilt(self)
 	ObjectDoSpecialPower(self, "SpecialAbilityGateWatchersFear")
 end	
 
+-- function NeutralGollum_RingStealerDamaged(self,other)
+
+	-- if ObjectHasUpgrade( other, "Upgrade_RingHero" ) == 0 then
+		-- ObjectChangeAllegianceFromNonPlayablePlayer( self, other )
+	-- end
+	
+-- end
+
+
 function NeutralGollum_RingStealerDamaged(self,other)
 
 	if ObjectHasUpgrade( other, "Upgrade_RingHero" ) == 0 then
-		ObjectChangeAllegianceFromNonPlayablePlayer( self, other )
+  	if ObjectPlayerSide(self) == "Isengard" then
+  		ObjectChangeAllegianceFromNonPlayablePlayer( self, other, false)
+  	elseif ObjectPlayerSide(self) == "Mordor" then
+  		ObjectChangeAllegianceFromNonPlayablePlayer( self, other, false)
+  	elseif ObjectPlayerSide(self) == "Men" then
+  		ObjectChangeAllegianceFromNonPlayablePlayer( self, other, false)
+  	elseif ObjectPlayerSide(self) == "Dwarves" then
+  		ObjectChangeAllegianceFromNonPlayablePlayer( self, other, false)
+  	elseif ObjectPlayerSide(self) == "Elves" then
+  		ObjectChangeAllegianceFromNonPlayablePlayer( self, other, false)
+  	elseif ObjectPlayerSide(self) == "Wild" then
+  		ObjectChangeAllegianceFromNonPlayablePlayer( self, other, false)
+  	else
+  		ObjectHideSubObjectPermanently( self, "FLAG_NEUTRAL", false)
+  	end    
+    -- ObjectChangeAllegianceFromNonPlayablePlayer( self, other, true)
+    ObjectChangeAllegianceFromNonPlayablePlayer( self, other)
 	end
 	
-end
-
+end  
+  
 function NeutralGollum_RingStealerSlaughtered(self,other)
 	ObjectRemoveUpgrade( other, "Upgrade_RingHero" )
+	-- ObjectRemoveUpgrade( other, "Upgrade_FortressRingHero" )
 end
+
 
 function OnNecromancerStatueCreated(self)
 	ObjectDoSpecialPower(self, "SpecialAbilityGateWatchersFear")
 end	
+
+function IsengardFellbeastCreated(self)
+	ObjectHideSubObjectPermanently( self, "NAZGUL_SKIN", true )
+end
+
+
+function OnFrodoDisguised_SEE(self)
+  OnMordorOrcFighterCreated(self)
+  OnMordorOrcArcherCreated(self)
+  OnMordorMorgulOrcsCreated(self)
+  OnMoriaGoblinsSwordCreated(self)
+  OnMoriaGoblinsSpearCreated(self)
+  OnMoriaGoblinsBowCreated(self)
+end
+
+
+function OnMordorOrcFighterCreated(self)
+
+	-- comments:
+	-- this function is very long, because of all the different subobjects we have to choose from
+	-- the basic order is: hide everything, choose a helmet, choose all other equipment depending on the fact if a helmet is shown or not
+
+	
+	-- hide all heads
+	ObjectHideSubObjectPermanently( self, "HEAD02", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_HEAD01", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_HEAD02", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_HEAD03", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD01", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD02", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD03", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD04", true )
+	
+	-- hide all hair
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HAIR01", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HAIR02", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_HAIR01", true )
+	
+	-- hide all helmets
+	ObjectHideSubObjectPermanently( self, "HELMET_01", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_02", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_03", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_04", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_05", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_06", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_07", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_08", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_09", true )
+	
+	--hide all right hand equipments (only weapons)
+	ObjectHideSubObjectPermanently( self, "RIGHT_SWORD01", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_SWORD02", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_SWORD03", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_SWORD04", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_SPEAR01", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_SPEAR02", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_SPEAR03", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_SPEAR04", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_AXE01", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_AXE02", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_AXE03", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_AXE04", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_MACE01", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_MACE02", true )
+	ObjectHideSubObjectPermanently( self, "RIGHT_MACE03", true )
+	
+	--hide all left hand equipments (shields and weapons)
+	ObjectHideSubObjectPermanently( self, "LEFT_SHIELD01", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_SHIELD02", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_SHIELD03", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_SHIELD04", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_SHIELD05", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_SHIELD06", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_SWORD01", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_SWORD02", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_SWORD03", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_SWORD04", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_AXE01", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_AXE02", true )
+	ObjectHideSubObjectPermanently( self, "LEFT_AXE03", true )
+	
+	-- define the locals as random numbers
+	local head 			=	GetRandomNumber()
+	local helmet 		=	GetRandomNumber()
+	local hair 			=	GetRandomNumber()
+	local righthand 	=	GetRandomNumber()
+	local lefthand 		=	GetRandomNumber()
+	
+	local hashelmet		= false
+	
+	
+	--//////////////////////////////////////////
+	--			HELMET
+	--//////////////////////////////////////////
+	-- start picking a helmet
+	-- this comes first because some heads and hair must have a helmet, some must not
+	
+	if helmet <= 0.4 then
+		hashelmet		= false
+	elseif helmet <= 0.466 then
+		ObjectHideSubObjectPermanently( self, "HELMET_01", false )
+		hashelmet		= true
+	elseif helmet <= 0.533 then
+		ObjectHideSubObjectPermanently( self, "HELMET_02", false )
+		hashelmet		= true
+	elseif helmet <= 0.6 then
+		ObjectHideSubObjectPermanently( self, "HELMET_03", false )
+		hashelmet		= true
+	elseif helmet <= 0.666 then
+		ObjectHideSubObjectPermanently( self, "HELMET_04", false )
+		hashelmet		= true
+	elseif helmet <= 0.733 then
+		ObjectHideSubObjectPermanently( self, "HELMET_05", false )
+		hashelmet		= true
+	elseif helmet <= 0.8 then
+		ObjectHideSubObjectPermanently( self, "HELMET_06", false )
+		hashelmet		= true
+	elseif helmet <= 0.866 then
+		ObjectHideSubObjectPermanently( self, "HELMET_07", false )
+		hashelmet		= true
+	elseif helmet <= 0.933 then
+		ObjectHideSubObjectPermanently( self, "HELMET_08", false )
+		hashelmet		= true
+	else
+		ObjectHideSubObjectPermanently( self, "HELMET_09", false )
+		hashelmet		= true
+	end
+	
+	
+	--//////////////////////////////////////////
+	--			HEAD
+	--//////////////////////////////////////////
+	-- set the heads that require a helmet
+	if hashelmet == true then
+	
+		if head <= 0.25 then
+			ObjectHideSubObjectPermanently( self, "HEAD02", false )
+		elseif head <= 0.5 then
+			ObjectHideSubObjectPermanently( self, "HELMET_HEAD01", false )
+		elseif head <= 0.75 then
+			ObjectHideSubObjectPermanently( self, "HELMET_HEAD02", false )
+		else
+			ObjectHideSubObjectPermanently( self, "HELMET_HEAD03", false )
+		end
+		
+	end
+	
+	-- now set the heads that must not have a helmet
+	if hashelmet == false then
+	
+		if head <= 0.25 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD01", false )
+		elseif head <= 0.5 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD02", false )
+		elseif head <= 0.75 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD03", false )
+		else
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD04", false )
+		end
+		
+	end	
+	
+	
+	--//////////////////////////////////////////
+	--			HAIR
+	--//////////////////////////////////////////
+	
+	-- set helmet-hair
+	if hashelmet == true then
+	
+		-- 33% chance of getting helmet-hair
+		if hair <= 0.33 then
+			ObjectHideSubObjectPermanently( self, "HELMET_HAIR01", false )
+		end
+	
+	end
+	
+	-- set non-helmet-hair 
+	if hashelmet == false then
+	
+		-- 50% chance of getting non-helmet-hair
+		if hair <= 0.25 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HAIR01", false )
+		elseif head <= 0.5 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HAIR02", false )
+		end
+	
+	end
+	
+	
+	--//////////////////////////////////////////
+	--			RIGHT HAND
+	--//////////////////////////////////////////
+	-- set the right hand subobject; note: we need one of them, so there's no "empty" possibility
+	if righthand <= 0.075 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_SWORD01", false )
+	elseif righthand <= 0.15 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_SWORD02", false )
+	elseif righthand <= 0.225 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_SWORD03", false )
+	elseif righthand <= 0.3 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_SWORD04", false )
+	elseif righthand <= 0.338 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_SPEAR01", false )
+	elseif righthand <= 0.375 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_SPEAR02", false )
+	elseif righthand <= 0.412 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_SPEAR03", false )
+	elseif righthand <= 0.45 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_SPEAR04", false )
+	elseif righthand <= 0.525 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_AXE01", false )
+	elseif righthand <= 0.6 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_AXE02", false )
+	elseif righthand <= 0.675 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_AXE03", false )
+	elseif righthand <= 0.75 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_AXE04", false )
+	elseif righthand <= 0.84 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_MACE01", false )
+	elseif righthand <= 0.92 then
+		ObjectHideSubObjectPermanently( self, "RIGHT_MACE02", false )
+	else
+		ObjectHideSubObjectPermanently( self, "RIGHT_MACE03", false )
+	end
+	
+	
+	--//////////////////////////////////////////
+	--			LEFT HAND
+	--//////////////////////////////////////////
+	-- set the left hand subobject; note: we don't necessarily need one of them, so we can have some unused possibilities
+	if lefthand <= 0.1 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SHIELD01", false )
+	elseif lefthand <= 0.2 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SHIELD02", false )
+	elseif lefthand <= 0.3 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SHIELD03", false )
+	elseif lefthand <= 0.4 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SHIELD04", false )
+	elseif lefthand <= 0.5 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SHIELD05", false )
+	elseif lefthand <= 0.6 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SHIELD06", false )
+	elseif lefthand <= 0.63 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SWORD01", false )
+	elseif lefthand <= 0.66 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SWORD02", false )
+	elseif lefthand <= 0.69 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SWORD03", false )
+	elseif lefthand <= 0.71 then
+		ObjectHideSubObjectPermanently( self, "LEFT_SWORD04", false )
+	elseif lefthand <= 0.74 then
+		ObjectHideSubObjectPermanently( self, "LEFT_AXE01", false )
+	elseif lefthand <= 0.77 then
+		ObjectHideSubObjectPermanently( self, "LEFT_AXE02", false )
+	elseif lefthand <= 0.8 then
+		ObjectHideSubObjectPermanently( self, "LEFT_AXE03", false )
+	else
+		-- do nothing
+	end
+	
+end
+
+
+function OnMorannonArcherCreated(self)
+
+	-- normal:
+	ObjectHideSubObjectPermanently( self, "ARROWFIRE", true )
+
+	-- hide all helmets
+	ObjectHideSubObjectPermanently( self, "ORCHELM1", true )
+	ObjectHideSubObjectPermanently( self, "ORCHELM2", true )
+	ObjectHideSubObjectPermanently( self, "ORCHELM3", true )
+	
+		-- define the locals as random numbers
+	local helmet 		=	GetRandomNumber()
+	
+  if helmet <= 0.33 then
+    ObjectHideSubObjectPermanently( self, "ORCHELM1", false )
+  elseif helmet <= 0.66 then
+    ObjectHideSubObjectPermanently( self, "ORCHELM2", false )
+  else
+    ObjectHideSubObjectPermanently( self, "ORCHELM3", false )
+  end
+		
+end
+
+function OnMordorOrcArcherCreated(self)
+
+	-- normal:
+	ObjectHideSubObjectPermanently( self, "ARROWFIRE", true )
+
+	-- comments:
+	-- this is basicly a copy-paste from the orc fighter above, but we have less different weapons
+
+	
+	-- hide all heads
+	ObjectHideSubObjectPermanently( self, "HEAD02", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_HEAD01", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_HEAD02", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_HEAD03", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD01", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD02", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD03", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD04", true )
+	
+	-- hide all hair
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HAIR01", true )
+	ObjectHideSubObjectPermanently( self, "NOHELMET_HAIR02", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_HAIR01", true )
+	
+	-- hide all helmets
+	ObjectHideSubObjectPermanently( self, "HELMET_01", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_02", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_03", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_04", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_05", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_06", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_07", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_08", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_09", true )
+	
+	-- hide all bows
+	ObjectHideSubObjectPermanently( self, "BOW_01", true )
+	ObjectHideSubObjectPermanently( self, "BOW_02", true )
+	ObjectHideSubObjectPermanently( self, "BOW_03", true )
+	
+	
+	
+	-- define the locals as random numbers
+	local head 			=	GetRandomNumber()
+	local helmet 		=	GetRandomNumber()
+	local hair 			=	GetRandomNumber()
+	local bow 	=	GetRandomNumber()
+	
+	local hashelmet		= false
+	
+	
+	--//////////////////////////////////////////
+	--			HELMET
+	--//////////////////////////////////////////
+	-- start picking a helmet
+	-- this comes first because some heads and hair must have a helmet, some must not
+	
+	if helmet <= 0.4 then
+		hashelmet		= false
+	elseif helmet <= 0.466 then
+		ObjectHideSubObjectPermanently( self, "HELMET_01", false )
+		hashelmet		= true
+	elseif helmet <= 0.533 then
+		ObjectHideSubObjectPermanently( self, "HELMET_02", false )
+		hashelmet		= true
+	elseif helmet <= 0.6 then
+		ObjectHideSubObjectPermanently( self, "HELMET_03", false )
+		hashelmet		= true
+	elseif helmet <= 0.666 then
+		ObjectHideSubObjectPermanently( self, "HELMET_04", false )
+		hashelmet		= true
+	elseif helmet <= 0.733 then
+		ObjectHideSubObjectPermanently( self, "HELMET_05", false )
+		hashelmet		= true
+	elseif helmet <= 0.8 then
+		ObjectHideSubObjectPermanently( self, "HELMET_06", false )
+		hashelmet		= true
+	elseif helmet <= 0.866 then
+		ObjectHideSubObjectPermanently( self, "HELMET_07", false )
+		hashelmet		= true
+	elseif helmet <= 0.933 then
+		ObjectHideSubObjectPermanently( self, "HELMET_08", false )
+		hashelmet		= true
+	else
+		ObjectHideSubObjectPermanently( self, "HELMET_09", false )
+		hashelmet		= true
+	end
+	
+	
+	--//////////////////////////////////////////
+	--			HEAD
+	--//////////////////////////////////////////
+	-- set the heads that require a helmet
+	if hashelmet == true then
+	
+		if head <= 0.25 then
+			ObjectHideSubObjectPermanently( self, "HEAD02", false )
+		elseif head <= 0.5 then
+			ObjectHideSubObjectPermanently( self, "HELMET_HEAD01", false )
+		elseif head <= 0.75 then
+			ObjectHideSubObjectPermanently( self, "HELMET_HEAD02", false )
+		else
+			ObjectHideSubObjectPermanently( self, "HELMET_HEAD03", false )
+		end
+		
+	end
+	
+	-- now set the heads that must not have a helmet
+	if hashelmet == false then
+	
+		if head <= 0.25 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD01", false )
+		elseif head <= 0.5 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD02", false )
+		elseif head <= 0.75 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD03", false )
+		else
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HEAD04", false )
+		end
+		
+	end	
+	
+	
+	--//////////////////////////////////////////
+	--			HAIR
+	--//////////////////////////////////////////
+	
+	-- set helmet-hair
+	if hashelmet == true then
+	
+		-- 33% chance of getting helmet-hair
+		if hair <= 0.33 then
+			ObjectHideSubObjectPermanently( self, "HELMET_HAIR01", false )
+		end
+	
+	end
+	
+	-- set non-helmet-hair 
+	if hashelmet == false then
+	
+		-- 50% chance of getting non-helmet-hair
+		if hair <= 0.25 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HAIR01", false )
+		elseif head <= 0.5 then
+			ObjectHideSubObjectPermanently( self, "NOHELMET_HAIR02", false )
+		end
+	
+	end
+	
+	
+	--//////////////////////////////////////////
+	--			RIGHT HAND
+	--//////////////////////////////////////////
+	-- set the bow; note: we need one of them, so there's no "empty" possibility
+	if bow <= 0.33 then
+		ObjectHideSubObjectPermanently( self, "BOW_01", false )
+	elseif bow <= 0.66 then
+		ObjectHideSubObjectPermanently( self, "BOW_02", false )
+	else
+		ObjectHideSubObjectPermanently( self, "BOW_03", false )
+	end
+	
+	
+end
+
+
+
+
+--// 中中中中中中中中中中中中中中中中中中中中中中中中中中中中中
+--   Lauri's scripts below, new area from 20070605 /Nazg�l :)
+--// 中中中中中中中中中中中中中中中中中中中中中中中中中中中中中
+
+function OnMordorBlackUrukCreated(self)
+
+	ObjectHideSubObjectPermanently( self, "SWORD01", true )
+	ObjectHideSubObjectPermanently( self, "SWORD02", true )
+	ObjectHideSubObjectPermanently( self, "SWORD03", true )
+	ObjectHideSubObjectPermanently( self, "SWORD04", true )
+	ObjectHideSubObjectPermanently( self, "SWORD05", true )
+	ObjectHideSubObjectPermanently( self, "SWORD06", true )
+	
+	-- define the locals as random numbers
+	local sword 	=	GetRandomNumber()
+	
+	-- set the bow; note: we need one of them, so there's no "empty" possibility
+	if sword <= 0.2 then
+		ObjectHideSubObjectPermanently( self, "SWORD01", false )
+	elseif sword <= 0.4 then
+		ObjectHideSubObjectPermanently( self, "SWORD02", false )
+	elseif sword <= 0.5 then
+		ObjectHideSubObjectPermanently( self, "SWORD03", false )
+	elseif sword <= 0.6 then
+		ObjectHideSubObjectPermanently( self, "SWORD04", false )
+	elseif sword <= 0.8 then
+		ObjectHideSubObjectPermanently( self, "SWORD05", false )
+	else
+		ObjectHideSubObjectPermanently( self, "SWORD06", false )
+	end
+	
+	
+end
+
+function OnMordorMorgulOrcsCreated(self)
+
+	ObjectHideSubObjectPermanently( self, "weap01", true )
+	ObjectHideSubObjectPermanently( self, "weap02", true )
+	ObjectHideSubObjectPermanently( self, "weap03", true )
+	ObjectHideSubObjectPermanently( self, "weap04", true )
+	ObjectHideSubObjectPermanently( self, "weap05", true )
+	ObjectHideSubObjectPermanently( self, "weap06", true )
+	ObjectHideSubObjectPermanently( self, "weap07", true )
+	
+	ObjectHideSubObjectPermanently( self, "helmet01", true )
+	ObjectHideSubObjectPermanently( self, "helmet02", true )
+	ObjectHideSubObjectPermanently( self, "helmet03", true )
+	ObjectHideSubObjectPermanently( self, "helmet04", true )
+	
+	ObjectHideSubObjectPermanently( self, "shield01", true )
+	ObjectHideSubObjectPermanently( self, "shield02", true )
+	ObjectHideSubObjectPermanently( self, "shield03", true )
+	ObjectHideSubObjectPermanently( self, "shield04", true )
+	ObjectHideSubObjectPermanently( self, "shield05", true )
+	
+	-- define the locals as random numbers
+	local sword 	=	GetRandomNumber()
+	local helmet 	=	GetRandomNumber()
+	local shield 	=	GetRandomNumber()
+	
+	-- set the bow; note: we need one of them, so there's no "empty" possibility
+	if sword <= 0.2 then
+		ObjectHideSubObjectPermanently( self, "weap01", false )
+	elseif sword <= 0.4 then
+		ObjectHideSubObjectPermanently( self, "weap02", false )
+	elseif sword <= 0.5 then
+		ObjectHideSubObjectPermanently( self, "weap03", false )
+	elseif sword <= 0.6 then
+		ObjectHideSubObjectPermanently( self, "weap04", false )
+	elseif sword <= 0.8 then
+		ObjectHideSubObjectPermanently( self, "weap05", false )
+	elseif sword <= 0.8 then
+		ObjectHideSubObjectPermanently( self, "weap06", false )
+	else
+		ObjectHideSubObjectPermanently( self, "weap07", false )
+	end
+	
+		-- set the bow; note: we need one of them, so there's no "empty" possibility
+	if helmet <= 0.25 then
+		ObjectHideSubObjectPermanently( self, "helmet01", false )
+	elseif helmet <= 0.5 then
+		ObjectHideSubObjectPermanently( self, "helmet02", false )
+	elseif helmet <= 0.75 then
+		ObjectHideSubObjectPermanently( self, "helmet03", false )
+	else
+		ObjectHideSubObjectPermanently( self, "helmet04", false )
+	end
+	
+		-- set the bow; note: we need one of them, so there's no "empty" possibility
+	if shield <= 0.15 then
+		ObjectHideSubObjectPermanently( self, "shield01", false )
+	elseif shield <= 0.3 then
+		ObjectHideSubObjectPermanently( self, "shield02", false )
+	elseif shield <= 0.5 then
+		ObjectHideSubObjectPermanently( self, "shield03", false )
+	elseif shield <= 0.65 then
+		ObjectHideSubObjectPermanently( self, "shield04", false )
+	elseif shield <= 0.80 then
+		ObjectHideSubObjectPermanently( self, "shield05", false )
+	else
+		ObjectHideSubObjectPermanently( self, "shield_NOWAY", false )
+	end
+	
+end
+
+--// 中中中中中中中中中中中中中中中中中中中中中中中中中中中中中
+
+function OnMoriaGoblinsSwordCreated(self)
+
+	ObjectHideSubObjectPermanently( self, "Forged_Blade", true )
+	ObjectHideSubObjectPermanently( self, "Glow", true )
+
+  ObjectHideSubObjectPermanently( self, "WEAPON01", true )
+  ObjectHideSubObjectPermanently( self, "WEAPON02", true )
+  ObjectHideSubObjectPermanently( self, "WEAPON03", true )
+  ObjectHideSubObjectPermanently( self, "WEAPON04", true )
+  ObjectHideSubObjectPermanently( self, "WEAPON05", true )
+
+  ObjectHideSubObjectPermanently( self, "HEAD01", true )
+  ObjectHideSubObjectPermanently( self, "HEAD02", true )
+  ObjectHideSubObjectPermanently( self, "HEAD03", true )
+
+  ObjectHideSubObjectPermanently( self, "ARM", true )
+  ObjectHideSubObjectPermanently( self, "SHIELD", true )
+  ObjectHideSubObjectPermanently( self, "SHOULDER", true )
+  ObjectHideSubObjectPermanently( self, "FEET", true )
+
+  -- define the locals as random numbers
+  local sword = GetRandomNumber()
+  local helmet = GetRandomNumber()
+  local shield = GetRandomNumber()
+  local feet = GetRandomNumber()
+  local shoulder = GetRandomNumber()
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if sword <= 0.2 then
+      ObjectHideSubObjectPermanently( self, "WEAPON01", false )
+    elseif sword <= 0.4 then
+      ObjectHideSubObjectPermanently( self, "WEAPON02", false )
+    elseif sword <= 0.6 then
+      ObjectHideSubObjectPermanently( self, "WEAPON03", false )
+    elseif sword <= 0.8 then
+      ObjectHideSubObjectPermanently( self, "WEAPON04", false )
+    else
+      ObjectHideSubObjectPermanently( self, "WEAPON05", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if helmet <= 0.33 then
+      ObjectHideSubObjectPermanently( self, "HEAD01", false )
+    elseif helmet <= 0.66 then
+      ObjectHideSubObjectPermanently( self, "HEAD02", false )
+    else
+      ObjectHideSubObjectPermanently( self, "HEAD03", false )
+  end
+
+  -- set the arms;
+  if shield <= 0.33 then
+      ObjectHideSubObjectPermanently( self, "ARM", false )
+    elseif shield <= 0.66 then
+      ObjectHideSubObjectPermanently( self, "SHIELD", false )
+    else
+      ObjectHideSubObjectPermanently( self, "NOTHING", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if feet <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "FEET", false )
+    else
+      ObjectHideSubObjectPermanently( self, "NOTHING", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if shoulder <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "SHOULDER", false )
+    else
+      ObjectHideSubObjectPermanently( self, "NOTHING", false )
+  end
+end
+
+--// 中中中中中中中中中中中中中中中中中中中中中中中中中中中中中
+
+function OnMoriaGoblinsSpearCreated(self)
+
+	ObjectHideSubObjectPermanently( self, "Forged_Blade", true )
+	ObjectHideSubObjectPermanently( self, "Glow", true )
+
+  ObjectHideSubObjectPermanently( self, "PIKE01", true )
+  ObjectHideSubObjectPermanently( self, "PIKE02", true )
+
+  ObjectHideSubObjectPermanently( self, "STAFF01", true )
+  ObjectHideSubObjectPermanently( self, "STAFF02", true )
+
+  ObjectHideSubObjectPermanently( self, "HEAD01", true )
+  ObjectHideSubObjectPermanently( self, "HEAD02", true )
+  ObjectHideSubObjectPermanently( self, "HEAD03", true )
+
+  ObjectHideSubObjectPermanently( self, "ARM", true )
+  ObjectHideSubObjectPermanently( self, "SHOULDER", true )
+  ObjectHideSubObjectPermanently( self, "FEET", true )
+
+  -- define the locals as random numbers
+  local sword = GetRandomNumber()
+  local staff = GetRandomNumber()
+  local helmet = GetRandomNumber()
+  local shield = GetRandomNumber()
+  local feet = GetRandomNumber()
+  local shoulder = GetRandomNumber()
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if sword <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "PIKE01", false )
+    else
+      ObjectHideSubObjectPermanently( self, "PIKE02", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if staff <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "STAFF01", false )
+    else
+      ObjectHideSubObjectPermanently( self, "STAFF02", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if helmet <= 0.33 then
+      ObjectHideSubObjectPermanently( self, "HEAD01", false )
+    elseif helmet <= 0.66 then
+      ObjectHideSubObjectPermanently( self, "HEAD02", false )
+    else
+      ObjectHideSubObjectPermanently( self, "HEAD03", false )
+  end
+
+  -- set the arms;
+  if shield <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "ARM", false )
+    else
+      ObjectHideSubObjectPermanently( self, "NOTHING", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if feet <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "FEET", false )
+    else
+      ObjectHideSubObjectPermanently( self, "NOTHING", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if shoulder <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "SHOULDER", false )
+    else
+      ObjectHideSubObjectPermanently( self, "NOTHING", false )
+  end
+end
+
+--// 中中中中中中中中中中中中中中中中中中中中中中中中中中中中中
+
+function OnMoriaGoblinsBowCreated(self)
+
+	ObjectGrantUpgrade( self, "Upgrade_RaiseShield" )
+
+	ObjectHideSubObjectPermanently( self, "FIREAROWTIP", true )
+
+  ObjectHideSubObjectPermanently( self, "BOW01", true )
+  ObjectHideSubObjectPermanently( self, "BOW02", true )
+
+  ObjectHideSubObjectPermanently( self, "HEAD01", true )
+  ObjectHideSubObjectPermanently( self, "HEAD02", true )
+  ObjectHideSubObjectPermanently( self, "HEAD03", true )
+
+  ObjectHideSubObjectPermanently( self, "ARM", true )
+  ObjectHideSubObjectPermanently( self, "SHOULDER", true )
+  ObjectHideSubObjectPermanently( self, "FEET", true )
+
+  -- define the locals as random numbers
+  local bow = GetRandomNumber()
+  local helmet = GetRandomNumber()
+  local shield = GetRandomNumber()
+  local feet = GetRandomNumber()
+  local shoulder = GetRandomNumber()
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if bow <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "BOW01", false )
+    else
+      ObjectHideSubObjectPermanently( self, "BOW02", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if helmet <= 0.33 then
+      ObjectHideSubObjectPermanently( self, "HEAD01", false )
+    elseif helmet <= 0.66 then
+      ObjectHideSubObjectPermanently( self, "HEAD02", false )
+    else
+      ObjectHideSubObjectPermanently( self, "HEAD03", false )
+  end
+
+  -- set the arms;
+  if shield <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "ARM", false )
+    else
+      ObjectHideSubObjectPermanently( self, "NOTHING", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if feet <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "FEET", false )
+    else
+      ObjectHideSubObjectPermanently( self, "NOTHING", false )
+  end
+
+  -- set the bow; note: we need one of them, so there's no "empty" possibility
+  if shoulder <= 0.5 then
+      ObjectHideSubObjectPermanently( self, "SHOULDER", false )
+    else
+      ObjectHideSubObjectPermanently( self, "NOTHING", false )
+  end
+end
+
+function OnCreepSpiderLairCreated_SEE(self)
+	ObjectHideSubObjectPermanently( self, "Cocoon02", false )
+	ObjectHideSubObjectPermanently( self, "B_Cocoon02", false )
+	ObjectHideSubObjectPermanently( self, "C_Cocoon02", false )
+	ObjectHideSubObjectPermanently( self, "D_Cocoon02", false )
+	ObjectHideSubObjectPermanently( self, "N_Window", false )
+	ObjectHideSubObjectPermanently( self, "N_Fire", false )
+end
+
+--// 中中中中中中中中中中中中中中中中中中中中中中中中中中中中中
+
+function UsingFireArrows_SEE(self)
+	ObjectHideSubObjectPermanently( self, "FIREAROWTIP", false )
+end
+
+function NOTUsingFireArrows_SEE(self)
+	ObjectHideSubObjectPermanently( self, "FIREAROWTIP", true )
+end
+
+--// 中中中中中中中中中中中中中中中中中中中中中中中中中中中中中
+function OnHaradrimsSwordsmenCreated(self)
+	-- comments:
+	-- this function is very long, because of all the different subobjects we have to choose from
+	-- the basic order is: hide everything, choose a helmet, choose all other equipment depending on the fact if a helmet is shown or not
+
+	
+	-- hide all heads
+	ObjectHideSubObjectPermanently( self, "HAT", true )
+	ObjectHideSubObjectPermanently( self, "HAT03", true )
+	
+	--Weapons
+	ObjectHideSubObjectPermanently( self, "SWRD4", true )
+	ObjectHideSubObjectPermanently( self, "SWRD3", true )
+
+	--hide all back equipments (shields and weapons)
+	ObjectHideSubObjectPermanently( self, "SHIELD02", true )
+	ObjectHideSubObjectPermanently( self, "SHIELD05", true )
+	
+	--Accessories, Etc
+	ObjectHideSubObjectPermanently( self, "SLDR_02", true )
+	ObjectHideSubObjectPermanently( self, "BOWP", true )
+	ObjectHideSubObjectPermanently( self, "BOW", true )
+	
+	
+	-- define the locals as random numbers
+	local head 			=	GetRandomNumber()
+	local helmet 		=	GetRandomNumber()
+	local hair 			=	GetRandomNumber()
+	local righthand 	=	GetRandomNumber()
+	local lefthand 		=	GetRandomNumber()
+	local back		=	GetRandomNumber()
+	
+	local hashelmet		= true
+	
+	--//////////////////////////////////////////
+	--			Head and Helmets
+	--//////////////////////////////////////////
+	-- set the heads that require a helmet
+	if hashelmet == true then
+	
+		if head <= 0.25 then
+			ObjectHideSubObjectPermanently( self, "HAT03", false )
+		elseif righthand >= 0.50 then
+		    ObjectHideSubObjectPermanently( self, "HAT", false )
+		else
+			ObjectHideSubObjectPermanently( self, "HEAD", false )
+		end
+		
+	end
+	
+	--//////////////////////////////////////////
+	--	Weapons and Right Hand Objects
+	--//////////////////////////////////////////
+	-- set the right hand subobject; note: we need one of them, so there's no "empty" possibility
+	if righthand >= 0.30 then
+		ObjectHideSubObjectPermanently( self, "SWRD3", false )
+	else
+		ObjectHideSubObjectPermanently( self, "SWRD4", false )
+	end
+	
+	--//////////////////////////////////////////
+	--		Shields and Left Hand Objects
+	--//////////////////////////////////////////
+	-- set the left hand subobject; note: we don't necessarily need one of them, so we can have some unused possibilities
+	if lefthand <= 0.20 then
+		ObjectHideSubObjectPermanently( self, "SHIELD02", false )
+	elseif righthand >= 0.50 then
+		ObjectHideSubObjectPermanently( self, "SHIELD05", false )
+	end
+	
+		--//////////////////////////////////////////
+	--			Accessories
+	--//////////////////////////////////////////
+	-- 
+	if back <= 0.10 then
+		ObjectHideSubObjectPermanently( self, "BOWP", false )
+	elseif back <= 0.20 then
+		ObjectHideSubObjectPermanently( self, "SLDR_02", false )
+	elseif back <= 0.50 then
+		ObjectHideSubObjectPermanently( self, "SLDR_02", false )
+	end
+end
+
+--// 中中中中中中中中中中中中中中中中中中中中中中中中中中中中中
+function OnDwarvenMinerCreated(self)
+	--They will be barely randomly, and they have 5 skins....20 possibilities
+	ObjectHideSubObjectPermanently( self, "SHOVEL", true )
+	ObjectHideSubObjectPermanently( self, "PICKAXE", true )
+	
+    local arms = GetRandomNumber()
+
+    if arms <= 0.50 then
+        ObjectHideSubObjectPermanently( self, "SHOVEL", false )
+    else
+        ObjectHideSubObjectPermanently( self, "PICKAXE", false )
+    end
+	
+end
+
