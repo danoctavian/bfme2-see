@@ -6,6 +6,24 @@
 
 
 ;------------------------------------------------------------------------------
+Armor BalrogArmor
+  Armor = DEFAULT	  	1%				;Likes to have things think they can attack him
+  Armor = CRUSH			1%     		;horseman crush
+  Armor = SLASH			5% //10%    	 	;soldier damage
+  Armor = CAVALRY	  	8% //10%		;horseman damage
+  Armor = URUK			7% //20%     	;soldier damage
+  Armor = PIERCE			5%     		;archer damage - has to be low because he is such an easy target
+  Armor = SIEGE		 	25%			; siege weapons can hurt him
+  Armor = STRUCTURAL	5% //10%		;structural damage (from structure arrows)
+  Armor = HERO		 	50%			; Other heroes can hurt him too.  Watch out for heroes Mr. Balrog!
+  Armor = MAGIC			150% //100%	; Gandalf can really hurt him.
+  Armor = HERO_RANGED  15% //10%    	; Hero bow damage
+  Armor = FLAME			0% ;5%  ;150%   ;fire damage
+  Armor = LOGICAL_FIRE  	0% ;1%
+  Armor = SPECIALIST 	15% //10%     	;pikes
+End
+
+;------------------------------------------------------------------------------
 Armor GoblinFighterArmor
   Armor = DEFAULT         	110%   ;  	originally 100%
   Armor = SLASH           	125%   ; 	originally 100%

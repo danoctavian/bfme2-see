@@ -4,6 +4,347 @@
 //Moria//
 ////////
 
+;------------------------------------------------------------------------------
+Weapon BalrogCrush  ; Used when the Balrog crush an enemy.
+  LeechRangeWeapon      = Yes
+  AttackRange           = 9999999.0
+  MeleeWeapon           = No
+  DelayBetweenShots     = 0            ; time between shots, msec
+  PreAttackDelay        = 0 ;PreAttackDelay+FiringDuration = UseWeaponTiming = Yes duration
+  PreAttackType         = PER_SHOT 
+  FiringDuration        = 0 ;
+  FireFX				= FX_GenericCrushImpactSound
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = BALROG_CRUSH_DAMAGE				; A whole lot of damage.
+    Radius        = 0.0
+    DelayTime     = 0
+    DamageType    = CRUSH
+    DeathType     = CRUSHED
+  End
+End
+
+;------------------------------------------------------------------------------
+Weapon BalrogDeathCrush  ; Used when the Balrog crush enemies when it dies.
+	LeechRangeWeapon      = Yes
+	AttackRange           = 9999.0
+	MeleeWeapon           = No
+	DelayBetweenShots     = 0							; time between shots, msec
+	PreAttackDelay        = 0
+	PreAttackType         = PER_SHOT 
+	FiringDuration        = 0
+	FireFX				= FX_GenericCrushImpactSound
+
+	DamageNugget							           ; A basic Nugget that just does damage
+		Damage        = BALROG_CRUSH_DAMAGE				; A whole lot of damage.
+		Radius        = 75.0
+		DamageType    = CRUSH
+		DeathType     = CRUSHED
+	End
+	
+	MetaImpactNugget                    ; A Nugget that throws things back with force
+;		HeroResist			= .75
+		ShockWaveAmount		= 70
+		ShockWaveRadius		= 100.0
+		ShockWaveTaperOff	= 0.9
+		ShockWaveZMult		= 1.20
+	End
+End
+
+;------------------------------------------------------------------------------
+Weapon MordorBalrogSwordSwipe     ; BALANCE Balrog Weapon
+  LeechRangeWeapon      = Yes
+  RadiusDamageAffects = ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+  AttackRange           = 30.0 ;40.0
+  MeleeWeapon           = No
+  DelayBetweenShots     = 1500            ; time between shots, msec
+  PreAttackDelay        = 1300             ; 300 is mace swing delay time before contact with target.
+  PreAttackType         = PER_SHOT ; Do the delay each time we attack
+  FireFX                = FX_BalrogSwordHit
+  FiringDuration        = 1500    ; Duration of the mace swing 
+  DamageDealtAtSelfPosition = Yes ; A melee based AoE.  Arc radiates from me, not them
+  LockWhenUsing				= Yes
+	FinishAttackOnceStarted = Yes
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = BALROG_SWORD_SWIPE_DAMAGE_FLAME
+    DamageScalar  = 25% NONE +COMMANDCENTER			
+    Radius        = 70.0
+    DamageType    = FLAME
+    DamageFXType  = BALROG_SWORD
+    DeathType     = BURNED
+    DamageArc      = 90
+  End
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = BALROG_SWORD_SWIPE_DAMAGE_NORMAL
+    DamageScalar  = 20% NONE +COMMANDCENTER		
+    Radius        = 70.0
+    DamageType    = SIEGE
+    DamageFXType  = BALROG_SWORD
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
+    DamageArc      = 90
+  End
+  
+	FireLogicNugget						; Lights flammables on fire
+		LogicType	= INCREASE_BURN_RATE
+		Radius		= 70.0
+		Damage		= BALROG_SWORD_SWIPE_DAMAGE_FLAME
+	End
+
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+		HeroResist		= .25
+		KillObjectFilter  	= INSTANT_DEATH_ON_METAIMPACT_OBJFILTER
+		ShockWaveAmount = 100 //80.0 ;95.0 ;140 ?!?! Sûl
+    ShockWaveRadius   = 70.0
+    ShockWaveTaperOff = 0.75
+    ShockWaveArc      = 90
+    ShockWaveZMult    = 0.600
+  End
+End
+
+;------------------------------------------------------------------------------
+Weapon MordorBalrogSwordChop     ; BALANCE Balrog Weapon
+  LeechRangeWeapon		= Yes		
+  RadiusDamageAffects 	= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+  AttackRange           = 40.0
+  MeleeWeapon			= Yes
+  DelayBetweenShots		= 2000            ; time between shots, msec
+  PreAttackDelay			= 1400
+  PreAttackType			= PER_SHOT ; Do the delay each time we attack
+  FireFX                = FX_BalrogSwordHit
+  FiringDuration        	= 1200    ; Duration of the mace swing 
+  LockWhenUsing			= Yes
+  FinishAttackOnceStarted	= Yes 
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = BALROG_SWORD_CHOP_DAMAGE_FLAME	
+    DamageScalar  = 25% NONE +COMMANDCENTER		
+    Radius        = 20.0
+    DamageType    = FLAME
+    DamageFXType  = BALROG_SWORD
+    DeathType     = BURNED
+  End
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = BALROG_SWORD_CHOP_DAMAGE_STRUCTURAL	
+    DamageScalar  = 20% NONE +COMMANDCENTER	
+    Radius        = 20.0
+    DamageType    = SIEGE
+    DamageFXType  = BALROG_SWORD
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
+    DamageScalar  = 25000% NONE +MinisGateDoor
+  End
+  
+  	FireLogicNugget						; Lights flammables on fire
+		LogicType	= INCREASE_BURN_RATE
+		Radius		= 40.0 //20.0
+		Damage		= BALROG_SWORD_CHOP_DAMAGE_FLAME
+	End
+End
+
+;------------------------------------------------------------------------------
+Weapon MordorBalrogWhip     ; BALANCE Orc Warrior Weapon
+	LeechRangeWeapon	= Yes
+	RadiusDamageAffects 	= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	AttackRange			= 300.0
+	MeleeWeapon			= No
+	DelayBetweenShots	= 30000 ;10000            		; time between shots, msec
+	PreAttackDelay		= 1400 
+	PreAttackType		= PER_SHOT				; Do the delay each time we attack
+	;FireFX				= FX_BalrogSpecialPowerRoar	//Was disabled? This plays when Balrog starts his whip, not when right click-trageting
+	FiringDuration			= 1600 
+	LockWhenUsing		= Yes
+	FinishAttackOnceStarted = Yes
+	
+	IsAimingWeapon		= Yes //SEE
+	AcceptableAimDelta	= 15 //SEE
+	AntiAirborneVehicle	= Yes //SEE
+	AntiAirborneMonster	= Yes //SEE
+
+	; ForceDisplayPercentReady	= Yes 				; As opposed to displaying clip reload time
+
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        = BALROG_WHIP_DAMAGE_FLAME
+		DamageScalar  = 25% NONE +COMMANDCENTER
+		DamageScalar  =  350% NONE AND_FLYING_UNITS		
+		Radius        = 25.0
+		DelayTime     = 0
+		DamageType    = FLAME
+		DamageFXType  = BALROG_WHIP
+		DeathType     = BURNED //NORMAL
+	End
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        = BALROG_WHIP_DAMAGE
+		DamageScalar  = 20% NONE +COMMANDCENTER
+		DamageScalar  =  300% NONE AND_FLYING_UNITS		
+		Radius        = 25.0
+		DelayTime     = 0
+		DamageType    = HERO ;SIEGE 
+		DamageFXType  = BALROG_WHIP
+		DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
+	End
+	MetaImpactNugget                    ; A Nugget that throws things back with force
+;		HeroResist			= .25
+		ShockWaveAmount		= 50.0
+		ShockWaveRadius		= 25.0
+		ShockWaveTaperOff	= 1.0
+		ShockWaveZMult		= 1.20
+		InvertShockWave		= Yes
+	End
+	
+  	FireLogicNugget						; Lights flammables on fire
+		LogicType	= INCREASE_BURN_RATE
+		Radius		= 25.0
+		Damage		= BALROG_WHIP_DAMAGE_FLAME
+	End
+End
+
+;------------------------------------------------------------------------------
+Weapon MordorBalrogBreath
+  IdleAfterFiringDelay = 0
+  AttackRange = 60.0
+  WeaponSpeed = 401         ; dist/sec 
+  RadiusDamageAffects = ENEMIES NEUTRALS NOT_SIMILAR ALLIES //ALLIES ENEMIES NOT_SIMILAR
+  DelayBetweenShots = 5000               ; time between shots, msec
+  PreAttackDelay        = 2600
+  PreAttackType         = PER_ATTACK ; Do the delay each time we attack a new target
+  PreAttackFX           = FX_GandalfPreAttackBlast
+  FireFX                = NONE ;FX_BalrogBreath ---- commented out for E3, now controled by particle spawning
+  FiringDuration      = 1400
+ DamageDealtAtSelfPosition = Yes 
+  LockWhenUsing				= Yes
+	FinishAttackOnceStarted = Yes 
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage			= BALROG_BREATH_DAMAGE
+		Radius			= BALROG_BREATH_RADIUS
+		DamageScalar  = 25% NONE +COMMANDCENTER
+		DelayTime		= 1000
+		DamageType		= FLAME
+		DamageFXType		= FLAME
+		DeathType		= BURNED
+		DamageArc		= 90
+		DamageMaxHeight = 50 ;We won't hurt something far above us.  Birds fly at around 100
+		DamageSpeed		= 400
+	End
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage = BALROG_BREATH_DAMAGE
+		Radius = BALROG_BREATH_RADIUS
+		DamageScalar = 20% NONE +COMMANDCENTER
+		DelayTime = 1000
+		DamageType = MAGIC
+		DamageFXType = FLAME
+		DeathType = BURNED
+		DamageArc	 = 90
+		DamageMaxHeight = 50 ;We won't hurt something far above us.  Birds fly at around 100
+		DamageSpeed = 400
+    DamageScalar = 25000% NONE +MinisGateDoor
+	End
+
+	FireLogicNugget						; Increases fuel where it hits
+		LogicType		= INCREASE_FUEL
+		Radius			= BALROG_FLAME_FUELINCREASE_RADIUS
+		Damage			= BALROG_FLAME_FUELINCREASE_AMOUNT
+		MinMaxBurnRate	= BALROG_FLAME_FUELINCREASE_MINMAXBURNRATE
+		MaxResistance	= BALROG_FLAME_FUELINCREASE_RESISTANCE
+	End
+  
+	FireLogicNugget						; Lights flammables on fire
+		LogicType		= INCREASE_BURN_RATE
+		Radius			= BALROG_FLAME_INCREASEBURNRATE_RADIUS
+		Damage			= BALROG_FLAME_INCREASEBURNRATE_AMOUNT
+	End
+
+End
+
+
+;------------------------------------------------------------------------------
+Weapon MordorBalrogLeap 
+  IdleAfterFiringDelay	= 0
+  AttackRange           = 840.0
+  MinimumAttackRange	= 120.0
+  WeaponSpeed           = 160.0        ; dist/sec (huge value == effectively instant)
+  ProjectileSelf		= Yes ; We don't make the projectile throw ourself
+  ClipSize              = 1               ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime        = 2200   ;1467 min for animation           ; how long to reload a Clip, msec
+  AutoReloadsClip		= Yes	
+  PreAttackDelay        = 600
+  FiringDuration		= 1500            
+  PreAttackType         = PER_SHOT ; Do the delay each time we attack a new target
+  HitPercentage       = 0 ; Never auto hits, always shoots at a ground position
+  ScatterRadius       = 0.0     ;When this weapon misses it can randomly miss by as much as this distance.
+	NoVictimNeeded			= Yes
+
+  ProjectileNugget                    ; A Nugget that creates an Object and sends it to the target with a Warhead
+    WarheadTemplateName = MordorBalrogLeapWarhead
+  End
+End
+
+;-----------------------------------
+Weapon MordorBalrogLeapWarhead
+  ProjectileCollidesWith = ENEMIES
+  RadiusDamageAffects = ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+;  FireFX = FX_BalrogLand
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = BALROG_JUMP_DAMAGE
+    Radius        = 40.0
+    DelayTime     = 1	; Moves damage from when tippy toes hit to a visually better spot
+    DamageType            = CRUSH
+    DamageFXType          = SMALL_ROCK
+    DeathType             = LASERED ;now always used instead of NORMAL (Sûl)
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+;	HeroResist			= .75
+    ShockWaveAmount   = 50.0
+    ShockWaveRadius   = 50.0
+    ShockWaveTaperOff = 0.5
+    ShockWaveZMult    = 1.20
+    DelayTime     = 1	; Moves damage from when tippy toes hit to a visually better spot
+  End
+  FireLogicNugget
+	LogicType	= INCREASE_BURN_RATE
+	Radius		= 40.0
+	Damage		= BALROG_JUMP_DAMAGE
+  End
+End
+
+;------------------------------------------------------------------------------
+Weapon MordorBalrogHeroEffect     ; BALANCE Orc Warrior Weapon
+  LeechRangeWeapon      = No
+  AttackRange           = 20.0
+  MeleeWeapon           = No
+  DelayBetweenShots     = 1300            ; time between shots, msec
+  PreAttackDelay        = 533             ; 300 is mace swing delay time before contact with target.
+  PreAttackType         = PER_SHOT ; Do the delay each time we attack
+  FiringDuration        = 733    ; Duration of the mace swing 
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage = BALROG_IGNITE_AURA_DAMAGE
+    Radius = 50.0
+    DamageType = FLAME
+  	DamageFXType = FLAME
+  	DeathType = BURNED
+  End
+  
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage = BALROG_IGNITE_AURA_DAMAGE
+    Radius = 50.0
+    DamageType = MAGIC
+  	DamageFXType = FLAME
+  	DeathType = BURNED
+  End
+  
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+    ; HeroResist			= .75
+    ShockWaveAmount   = 50.0
+    ShockWaveRadius   = 50.0
+    ShockWaveTaperOff = 1.0
+  End
+End
 
 ;------------------------------------------------------------------------------
 Weapon WildGoblinKingPoisonedStinger
