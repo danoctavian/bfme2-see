@@ -85,7 +85,7 @@
 #define EMOTION_AFRAIDOF_OBJECTFILTER			NONE +GondorGwaihir +RohanTreeBerd +RohanEntFir +RohanEntAsh +RohanEntBirch +MordorBalrog +MordorFellBeast +AngmarWitchking +MordorWitchKingOnFellBeast +MordorCaveTroll +MordorMountainTroll +MordorDrummerTroll +MordorMumakil +MordorGateWatchersExpansion +BarrowWight +NecromancerStatue +GoblinCaveTroll +SpellBookArrowVolley +TomBombadil +TomBombadil_Summoned +GoblinCaveTroll_FromTrollLair +CaveTroll_Slaved +ElvenVigilantEnt +RohanGenericEnt +RohanEntFir_Summoned +RohanEntBirch_Summoned +EvilMenBlackRider +CreateAHero
 #define EMOTION_ALWAYS_AFRAIDOF_OBJECTFILTER		NONE +MordorBalrog +RohanOathbreaker 
 #define EMOTION_POINTAT_OBJECTFILTER			NONE +MordorFellBeast +MordorWitchKingOnFellBeast +GondorGwaihir +MordorGateWatchersExpansion +SpellBookArrowVolley +AngmarWitchking
-
+#define AND_FLYING_UNITS       +Drogoth +GondorGwaihir_Summoned +GondorGwaihir +MordorFellBeast +MordorWitchKingOnFellBeast +ElvenFortressEagle +SpellBookDragonStrikeDragon
 #define CREEP_OBJECTFILTER		 		ANY +SnowTrollLair +HillTrollLair +SnowTrollLairSnow +HillTrollLairSnow +CaveTrollLair +MoriarGoblinLair +WargLair +SpiderLair +BarrowWightLair +FireDrakeLair +MoriarGoblinLairSnow +CaveTrollLairSnow +NeutralWarg +BarrowWight_Slaved +FireDrake_Slaved +MordorGoblinSwordsman_Slaved +MordorGoblinArcher_Slaved +MinorSpider_Slaved +CaveTroll_Slaved ENEMIES
 #define NOT_CREEP		 			-SnowTrollLair -HillTrollLair -CaveTrollLair -MoriarGoblinLair -WargLair -SpiderLair -BarrowWightLair -FireDrakeLair -MoriarGoblinLairSnow -CaveTrollLairSnow -NeutralWarg -BarrowWight_Slaved -FireDrake_Slaved -MordorGoblinSwordsman_Slaved -MordorGoblinArcher_Slaved -MinorSpider_Slaved -CaveTroll_Slaved 
 #define NOT_FLYING_UNITS				-Drogoth -GondorGwaihir_Summoned -GondorGwaihir -MordorFellBeast -MordorWitchKingOnFellBeast -ElvenFortressEagle -SpellBookDragonStrikeDragon -KhamulFellBeast -MorgomirFellBeast
@@ -1859,25 +1859,34 @@
 ;Gwaihir uses all the nazgul attacks for damage. 
 
 ;----------------------Balrog of Morgoth!!!-------------
+; -------------------------------------------------------------------------------
+#define BALROG_HEALTH										50000
 
-#define BALROG_HEALTH					4000
+#define	BALROG_SWORD_SWIPE_DAMAGE_NORMAL					4000	;Normal attack with knockback
+#define	BALROG_SWORD_SWIPE_DAMAGE_FLAME					5000
+#define	BALROG_SWORD_CHOP_DAMAGE_STRUCTURAL				6000	;Chop against buildings and some monsters
+#define	BALROG_SWORD_CHOP_DAMAGE_FLAME					8000
+#define	BALROG_DAMAGE_DISPLAY								8000	; In the hero tooltip, how much damage I say I do
+#define	BALROG_WHIP_DAMAGE									6000
+#define	BALROG_WHIP_DAMAGE_FLAME							3000
+#define	BALROG_BREATH_DAMAGE								7000 ;twice, magic+flame
+#define BALROG_BREATH_RADIUS								350 ;320
+#define	BALROG_JUMP_DAMAGE									2000
+#define	BALROG_SUMMONING_DAMAGE							3000
+#define	BALROG_IGNITE_AURA_DAMAGE							500 ;twice, magic+flame
+#define BALROG_LIFETIME										300000  ; 5 MINUTES!!! Use them well!
 
-#define	BALROG_SWORD_SWIPE_DAMAGE_NORMAL		1000	; Normal attack with knockback
-#define	BALROG_SWORD_SWIPE_DAMAGE_FLAME			800 	; 1000
-#define	BALROG_SWORD_CHOP_DAMAGE_STRUCTURAL		600 	; 1000		;Chop against buildings and some monsters
-#define	BALROG_SWORD_CHOP_DAMAGE_FLAME			1000 	; 1000
-#define	BALROG_DAMAGE_DISPLAY				2000	; In the hero tooltip, how much damage I say I do
-#define	BALROG_WHIP_DAMAGE				2000
-#define	BALROG_WHIP_DAMAGE_FLAME			1000
-#define	BALROG_BREATH_DAMAGE				3000
-#define BALROG_BREATH_RADIUS				210
-#define	BALROG_JUMP_DAMAGE				400
-#define	BALROG_SUMMONING_DAMAGE				1000
-#define	BALROG_IGNITE_AURA_DAMAGE			100
-#define BALROG_LIFETIME					90000
+#define BALROG_FLAME_FUELINCREASE_RADIUS					100
+#define BALROG_FLAME_FUELINCREASE_AMOUNT					50 //150
+#define BALROG_FLAME_FUELINCREASE_MINMAXBURNRATE			10
+#define BALROG_FLAME_FUELINCREASE_RESISTANCE				5
+#define BALROG_FLAME_INCREASEBURNRATE_RADIUS				100
+#define BALROG_FLAME_INCREASEBURNRATE_AMOUNT				10
 
-#define SHROUD_CLEAR_BALROG				800
-#define VISION_BALROG					400
+#define SHROUD_CLEAR_BALROG								800
+#define VISION_BALROG										600
+; -------------------------------------------------------------------------------
+
 
 #define WATCHER_LIFETIME				30000
 #define WATCHER_CALDERA_LIFETIME			32000	; This number should be bigger than LurkerLifetime by the "DestructionDelay" in "ModuleTag_HatchProcess" in "LurkerEgg"
@@ -2175,49 +2184,51 @@
 #define DWARVEN_PHALANX_HORDE_THREAT 		100
 #define DWARVEN_MENOFDALE_HORDE_THREAT 		100
 
-	;-------EVIL--------
+;--------	EVIL -----------------------------------------------------
 
-#define CAVE_TROLL_THREAT_LEVEL 		100
-#define DROGOTH_THREAT_LEVEL 			400	; Originally 5.0
-#define FIRE_DRAKE_THREAT_LEVEL 		200	; originally 100
+#define BALROG_THREAT_LEVEL		       			10000	//5000	; originally 4.0 which was located in NeutralUnits.ini
+#define DRAGONSTRIKE_DRAGON_THREAT_LEVEL 			7000	//300	; originally 5.0
+#define DROGOTH_THREAT_LEVEL 						6000	//400	; originally 5.0
+#define SUMMONEDDRAGON_THREAT_LEVEL 				5000	//300	; originally 5.0
+#define SAURON_THREAT_LEVEL 						4000	//500	; originally 100
+#define MUMAKIL_THREAT_LEVEL 						3000	//100
+#define SARUMAN_THREAT_LEVEL 						2500	//500	; originally 100
+#define WATCHER_THREAT_LEVEL 		       			2250	//3500	; originally 5.0
+#define WYRM_THREAT_LEVEL 		       				2000	//3000	; originally 5.0
+#define SHELOB_THREAT_LEVEL 						1800	//400	; originally 100
+#define WITCHKING_THREAT_LEVEL 					1500	//400	; originally 100
+#define MOUNTAIN_GIANT_THREAT_LEVEL 				1000	//100
+#define BLACKRIDER_THREAT_LEVEL 					900		//100
+#define RING_WRAITH_THREAT_LEVEL 					900		//400	; originally 5.0
+#define ATTACK_TROLL_THREAT_LEVEL 					800		//100
+#define MORDOR_MOUNTAINTROLL_THREAT_LEVEL 		700		//100
+#define CAVE_TROLL_THREAT_LEVEL 					500		//100
+#define FELL_BEAST_THREAT_LEVEL 					400		//350	; originally 100
+#define FIRE_DRAKE_THREAT_LEVEL 					250 	//200	; originally 100
+#define MORDOR_DRUMMERTROLL_THREAT_LEVEL 			200		//100
+
+
 #define GOBLIN_KING_THREAT_LEVEL 		400	; originally 100
 #define AZOG_THREAT_LEVEL			300
-#define MOUNTAIN_GIANT_THREAT_LEVEL 		100
-#define SHELOB_THREAT_LEVEL 			400	; originally 100
-#define MORDOR_MOUNTAINTROLL_THREAT_LEVEL 	100
 #define MOUTH_OF_SAURON_THREAT_LEVEL 		200	; originally 100
-#define RING_WRAITH_THREAT_LEVEL 		400	; originally 5.0
-#define SAURON_THREAT_LEVEL 			500	; originally 100
 #define SIEGETOWER_THREAT_LEVEL 		100
-#define WITCHKING_THREAT_LEVEL 			400	; originally 100
-#define ATTACK_TROLL_THREAT_LEVEL 		100
 #define MORDOR_CATAPULT_THREAT_LEVEL 		100
-#define MORDOR_DRUMMERTROLL_THREAT_LEVEL 	100
-#define FELL_BEAST_THREAT_LEVEL 		350	; originally 100
 #define GOTHMOG_THREAT_LEVEL 			400	; originally 100
 #define GROND_THREAT_LEVEL 			200	; originally 100
 #define LURTZ_THREAT_LEVEL 			300	; originally 100
 #define ISENGARD_MINE_THREAT_LEVEL 		100
-#define SARUMAN_THREAT_LEVEL 			500	; originally 100
 #define SHARKU_THREAT_LEVEL 			250	; originally 100
 #define ISENGARD_SIEGELADDER_THREAT_LEVEL 	100
 #define WORMTONGUE_THREAT_LEVEL 		300	; originally 100
 #define ISENGARD_BATTERINGRAM_THREAT_LEVEL 	100	; originally 100
 #define ISENGARD_BALLISTA_THREAT_LEVEL 		100
 #define EVILMEN_TRANSPORTSHIP_THREAT_LEVEL 	100
-#define MUMAKIL_THREAT_LEVEL 			100
 #define CORSAIRSHIP_THREAT_LEVEL 		100
-#define BLACKRIDER_THREAT_LEVEL 		100
-#define WYRM_THREAT_LEVEL 		       3000	; originally 5.0
-#define WATCHER_THREAT_LEVEL 		       3500	; originally 5.0
-#define BALROG_THREAT_LEVEL		       5000	; Originally 4.0 which was located in NeutralUnits.ini
-#define SUMMONEDDRAGON_THREAT_LEVEL 		300	; originally 5.0
-#define DRAGONSTRIKE_DRAGON_THREAT_LEVEL 	300	; originally 5.0
 #define ISENGARD_BESERKER_THREAT_LEVEL 		100
 #define HWALDAR_THREAT_LEVEL 			250	; originally 5.0
 #define ANGMAR_MORGRAMIR_BOUNTY_VALUE		300
 
-	;-------GOOD--------
+;--------	GOOD ----------------------------------------------------
 
 #define GLOIN_THREAT_LEVEL 			300	; originally 100
 #define GIMLI_THREAT_LEVEL 			300	; originally 100
