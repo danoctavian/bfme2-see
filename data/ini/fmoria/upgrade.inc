@@ -30,9 +30,7 @@ Upgrade Upgrade_GoblinKingCallFromTheDeep
 End
 
 
-
-//---------Wild Structure Upgrades----------
-//----Cave----
+;--------	CAVE  ----------------------------------------------
 Upgrade Upgrade_WildCaveLevel2
 	Type			= OBJECT
 	BuildCost		= GOBLIN_CAVE_LEVEL2_UPGRADE_COST
@@ -49,13 +47,14 @@ Upgrade Upgrade_WildCaveLevel3
 	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
-//----Fissure----
+;--------	FISSURE  -------------------------------------------
+
 Upgrade Upgrade_WildFissureLevel2
 	Type			= OBJECT
 	BuildCost		= GOBLIN_FISSURE_LEVEL2_UPGRADE_COST
 	BuildTime		= GOBLIN_FISSURE_LEVEL2_UPGRADE_BUILDTIME
 	DisplayName		= Upgrade:WildFissureLevel2
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
 Upgrade Upgrade_WildFissureLevel3
@@ -63,7 +62,7 @@ Upgrade Upgrade_WildFissureLevel3
 	BuildCost		= GOBLIN_FISSURE_LEVEL3_UPGRADE_COST
 	BuildTime		= GOBLIN_FISSURE_LEVEL3_UPGRADE_BUILDTIME
 	DisplayName		= Upgrade:WildFissureLevel3
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
 //----SpiderPit----
