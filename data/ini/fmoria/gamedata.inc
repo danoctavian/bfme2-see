@@ -1,12 +1,12 @@
-///////////////////
-// GAMEDATA.INC //
-/////////////////
-//Moria//
-////////
+; GAMEDATA.INC
 
+; #####################################################
+; Balace Macros for "Battle for Middle Earth II - Special Extended Edition"
+; #####################################################
 
-;========================WILDMEN========================
-;=======================STRUCTURES======================
+;=====	MORIA ("Wild") faction ==============================
+
+#define GOBLIN_BASICBUILDING_BUILDTIME			120 	// 2 minutes - All non resource buildings! (Barracks, Stables, Armory, etc)
 
 ;------------------------LUMBERMILL--------------------
 
@@ -69,30 +69,30 @@
 #define WILD_FORTRESS_RAZORSPINES_DAMAGE		150.0
 #define WILD_FORTRESS_RAZORSPINES_RANGE			90.0
 
-;------------------------CAVE-------------------------
+;--------	CAVE  ----------------------------------------------
 
-#define GOBLIN_CAVE_BUILDCOST				400
-#define GOBLIN_CAVE_BUILDTIME				20	; originally 30
-#define GOBLIN_CAVE_LEVEL2_UPGRADE_COST			100
-#define GOBLIN_CAVE_LEVEL2_UPGRADE_BUILDTIME		30
-#define GOBLIN_CAVE_LEVEL3_UPGRADE_COST			200
-#define GOBLIN_CAVE_LEVEL3_UPGRADE_BUILDTIME		45	; originally 60
-#define	GOBLIN_CAVE_SHROUD_CLEAR			160
-#define	GOBLIN_CAVE_VISION_RANGE			160
-#define GOBLIN_CAVE_HEALTH				1500
-#define GOBLIN_CAVE_HEALTH_DAMAGED			1000
-#define GOBLIN_CAVE_HEALTH_REALLY_DAMAGED		500
-#define	GOBLIN_CAVE_BOUNTY_VALUE			100
-#define GOBLIN_CAVE_LVL2_EXP_NEEDED			2400
-#define GOBLIN_CAVE_LVL3_EXP_NEEDED 			4800
+#define GOBLIN_CAVE_BUILDCOST					300
+#define GOBLIN_CAVE_LEVEL2_UPGRADE_COST		500 ;150
+#define GOBLIN_CAVE_LEVEL2_UPGRADE_BUILDTIME	60
+#define GOBLIN_CAVE_LEVEL3_UPGRADE_COST		1000 ;300
+#define GOBLIN_CAVE_LEVEL3_UPGRADE_BUILDTIME	80
+#define	GOBLIN_CAVE_SHROUD_CLEAR				160
+#define	GOBLIN_CAVE_VISION_RANGE				160
+#define GOBLIN_CAVE_HEALTH						20000
+#define GOBLIN_CAVE_HEALTH_DAMAGED			10000
+#define GOBLIN_CAVE_HEALTH_REALLY_DAMAGED		5000
+#define GOBLIN_CAVE_HEALTH_HOLE       			5000.0
+#define	GOBLIN_CAVE_BOUNTY_VALUE				100
+#define GOBLIN_CAVE_LVL2_EXP_NEEDED			500 ;2400
+#define GOBLIN_CAVE_LVL3_EXP_NEEDED 			1500
 #define	GOBLIN_CAVE_LVL1_EXP_AWARD 			50
 #define	GOBLIN_CAVE_LVL2_EXP_AWARD 			60
 #define	GOBLIN_CAVE_LVL3_EXP_AWARD 			70
 #define	GOBLIN_CAVE_LVL2_HP_ADD	 			1500
 #define	GOBLIN_CAVE_LVL3_HP_ADD	 			1500
 
-#define GOBLIN_CAVE_LVL2_BUILD_SPEED 			1.10   
-#define GOBLIN_CAVE_LVL3_BUILD_SPEED 			1.25 
+#define GOBLIN_CAVE_LVL2_BUILD_SPEED 			1.33  
+#define GOBLIN_CAVE_LVL3_BUILD_SPEED 			1.50  
 
 ;------------------------FISSURE-----------------------
 
