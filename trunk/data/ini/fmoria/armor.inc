@@ -4,6 +4,38 @@
 //Moria//
 ////////
 
+Armor StructureArmor
+  Armor = DEFAULT        50%		;this sets the level for all nonspecified damage types
+  Armor = CRUSH           10%		;horseman damage
+  Armor = SLASH          15% //20% ;75	;soldier damage
+  Armor = CAVALRY	  		15%
+  Armor = URUK			20% //40% ;200  
+  Armor = SPECIALIST	 	20% //40% //50% ;75
+  Armor = PIERCE          0% ;1%		;archer damage
+  Armor = FLAME         25% ;50%		;fire damage
+  Armor = SIEGE         150%		;siege damage
+  Armor = STRUCTURAL	 5% //100%		;structural damage (from structure arrows) 
+  Armor = HERO           25% //50%		;Hero damage  
+  Armor = HERO_RANGED    10%		;Hero bow damage
+  Armor = LOGICAL_FIRE	 10%
+End
+
+;------------------------------------------------------------------------------
+Armor WildStructureArmor			; NOTE - This is based on StructureArmor (original value to the far right)
+  Armor = DEFAULT		50% //60%	; this sets the level for all nonspecified damage types ; Changed from 75%
+  Armor = CRUSH			10% //1%	; horseman damage
+  Armor = SLASH			15% //40%	; soldier damage  				Changed from 75%
+  Armor = CAVALRY		15% //40%    ; 							Originally 25%
+  Armor = SPECIALIST		20% //40% 	; 						Changed from 75%
+  Armor = PIERCE			0% //2%	; archer damage		RotWK originally 20%
+  Armor = FLAME			25% //100%	; fire damage
+  Armor = FROST			25% //100%   ;
+  Armor = SIEGE			150% //150%	; siege damage
+  Armor = STRUCTURAL	5% //25%	; Grond damage destroys all.  
+  Armor = HERO			25% //50%	; Hero damage  
+  Armor = HERO_RANGED	10%	; Hero bow damage
+  Armor = LOGICAL_FIRE	10% //2%
+End
 
 ;------------------------------------------------------------------------------
 Armor BalrogArmor

@@ -473,14 +473,20 @@ End
 
 CommandSet GoblinCaveCommandSetLevel2
 	1 = Command_ConstructGoblinFighterHorde
-	2 = Command_ConstructGoblinArcherHorde
-	3 = Command_PurchaseUpgradeWildCaveLevel3
-	6 = Command_Sell
+	2 = Command_ConstructGoblinArcherHorde ;3
+	;3 = Command_ConstructGoblinPikemanHorde ;2
+	;4 = Command_ConstructGoblinDrummer
+	5 = Command_ConstructWildMarauderHorde	
+	6 = Command_Sell	
+	7 = Command_PurchaseUpgradeWildCaveLevel3
 End
 
 CommandSet GoblinCaveCommandSetLevel3
 	1 = Command_ConstructGoblinFighterHorde
-	2 = Command_ConstructGoblinArcherHorde	
+	2 = Command_ConstructGoblinArcherHorde ;3
+	;3 = Command_ConstructGoblinPikemanHorde ;2
+	;4 = Command_ConstructGoblinDrummer
+	5 = Command_ConstructWildMarauderHorde	
 	6 = Command_Sell
 End
 

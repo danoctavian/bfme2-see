@@ -4,6 +4,86 @@
 //Moria//
 ////////
 
+CommandButton Command_SpecialAbilityIgnite
+  Command                 	= SPECIAL_POWER 
+  SpecialPower            	= SpecialAbilityHeroMode
+;  Options                 	= 
+  TextLabel               	= CONTROLBAR:SpecialAbilityIgnite
+  ButtonImage             	= HSBalrogIgnite
+  ButtonBorderType        	= ACTION 
+  DescriptLabel           	= CONTROLBAR:ToolTipSpecialAbilityIgnite
+	AutoAbility			= Yes
+  InPalantir			= Yes
+End
+
+;CommandButton Command_SpecialAbilityFlamingSword
+;  Command                 	= SPECIAL_POWER 
+;  SpecialPower            	= SpecialAbilityFlamingSword
+;;  Options                 	= 
+;  TextLabel               	= CONTROLBAR:SpecialAbilityFlamingSword
+;  ButtonImage             	= HSBalrogFlamingSword
+;  ButtonBorderType        	= ACTION 
+;  DescriptLabel           	= CONTROLBAR:ToolTipSpecialAbilityFlamingSword
+;;  UnitSpecificSound       	= 
+;  InPalantir			= Yes
+;End
+
+CommandButton Command_SpecialAbilityFireWhip
+  Command                 = SPECIAL_POWER 
+  SpecialPower            = SpecialAbilityFireWhip
+  Options                 = NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT
+  ; Command                 = FIRE_WEAPON 
+  ; WeaponSlot              = SECONDARY
+  TextLabel               = CONTROLBAR:SpecialAbilityFireWhip
+  ButtonImage             = HSBalrogFireWhip
+  ButtonBorderType        = ACTION 
+  DescriptLabel           = CONTROLBAR:ToolTipSpecialAbilityFireWhip
+  CursorName              = EvilAbilityObj
+  InvalidCursorName       = GenericInvalid
+	AutoAbility			= Yes
+	PresetRange				= 300
+  InPalantir			  = Yes
+End
+
+CommandButton Command_SpecialAbilityBalrogScream
+  Command                 = SPECIAL_POWER 
+  SpecialPower            = SpecialAbilityBalrogScream
+;  Options                 = 
+  TextLabel               = CONTROLBAR:SpecialAbilityBalrogScream
+  ButtonImage             = HSBalrogScream
+  ButtonBorderType        = ACTION 
+  DescriptLabel           = CONTROLBAR:ToolTipSpecialAbilityBalrogScream
+	AutoAbility			= Yes
+  InPalantir			  = Yes
+End
+
+CommandButton Command_SpecialAbilityBalrogBreath
+  Command                 = SPECIAL_POWER 
+  SpecialPower            = SpecialAbilityBalrogBreath
+  Options                 = NEED_TARGET_POS CONTEXTMODE_COMMAND
+  TextLabel               = CONTROLBAR:SpecialAbilityBalrogBreath
+  ButtonImage             = HSBalrogBreathFire
+  ButtonBorderType        = ACTION 
+  RadiusCursorType        = FireBreathRadiusCursor   
+  DescriptLabel           = CONTROLBAR:ToolTipSpecialAbilityBalrogBreath
+	AutoAbility			= Yes
+  InPalantir			= Yes
+End
+
+CommandButton Command_SpecialAbilityBalrogWings
+  Command                 = SPECIAL_POWER 
+  SpecialPower            = SpecialAbilityBalrogWings
+  Options                 = NEED_TARGET_POS CONTEXTMODE_COMMAND
+  TextLabel               = CONTROLBAR:SpecialAbilityBalrogWings
+  ButtonImage             = HSBalrogWings
+  ButtonBorderType        = ACTION 
+  CursorName			  = EvilAbilityObj  
+  InvalidCursorName       = GenericInvalid
+  DescriptLabel           = CONTROLBAR:ToolTipSpecialAbilityBalrogWings
+;  UnitSpecificSound       = 
+	AutoAbility			= Yes
+  InPalantir			  = Yes
+End
 
 CommandButton Command_GoblinArcherPoisonArrows
 	Command			= SPECIAL_POWER

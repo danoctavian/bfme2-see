@@ -38,6 +38,7 @@ Upgrade Upgrade_WildCaveLevel2
 	BuildCost		= GOBLIN_CAVE_LEVEL2_UPGRADE_COST
 	BuildTime		= GOBLIN_CAVE_LEVEL2_UPGRADE_BUILDTIME
 	DisplayName		= Upgrade:WildCaveLevel2
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
 Upgrade Upgrade_WildCaveLevel3
@@ -45,6 +46,7 @@ Upgrade Upgrade_WildCaveLevel3
 	BuildCost		= GOBLIN_CAVE_LEVEL3_UPGRADE_COST
 	BuildTime		= GOBLIN_CAVE_LEVEL3_UPGRADE_BUILDTIME
 	DisplayName		= Upgrade:WildCaveLevel3
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
 //----Fissure----
