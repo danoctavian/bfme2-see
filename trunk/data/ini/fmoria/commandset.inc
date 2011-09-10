@@ -491,31 +491,25 @@ CommandSet GoblinCaveCommandSetLevel3
 End
 
 CommandSet GoblinFissureCommandSet	
-	1 = Command_ConstructWildMarauderHorde
-	2 = Command_ConstructGoblinTroll
-	3 = Command_ConstructWildMarauderSwordHorde
-	4 = Command_ConstructWildMountainGiant
-	5 = Command_ConstructWildBabyDrakeHorde
-	7 = Command_UpgradeWildFissureLevel2
+	1 = Command_ConstructGoblinTroll
+	2 = Command_ConstructWildMountainGiant
+	3 = Command_ConstructWildBabyDrakeHorde
+	4 = Command_UpgradeWildFissureLevel2
 	6 = Command_Sell
 End
 
 CommandSet GoblinFissureCommandSetLevel2
-	1 = Command_ConstructWildMarauderHorde
-	2 = Command_ConstructGoblinTroll
-	3 = Command_ConstructWildMarauderSwordHorde
-	4 = Command_ConstructWildMountainGiant
-	5 = Command_ConstructWildBabyDrakeHorde
-	7 = Command_PurchaseUpgradeWildFissureLevel3
+	1 = Command_ConstructGoblinTroll
+	2 = Command_ConstructWildMountainGiant
+	3 = Command_ConstructWildBabyDrakeHorde
+	4 = Command_PurchaseUpgradeWildFissureLevel3
 	6 = Command_Sell
 End
 
 CommandSet GoblinFissureCommandSetLevel3
-	1 = Command_ConstructWildMarauderHorde
-	2 = Command_ConstructGoblinTroll
-	3 = Command_ConstructWildMarauderSwordHorde
-	4 = Command_ConstructWildMountainGiant
-	5 = Command_ConstructWildBabyDrakeHorde
+	1 = Command_ConstructGoblinTroll
+	2 = Command_ConstructWildMountainGiant
+	3 = Command_ConstructWildBabyDrakeHorde
 	6 = Command_Sell
 End
 
