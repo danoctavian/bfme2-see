@@ -6,6 +6,12 @@
 
 ;NOTE: Attacks are as such: PreAttackDelay -> Both: FiringDuration & DelayBetweenShots -> After DBS starts PreAttackDelay again.
 
+//// FortressExpansion Stats!
+#define SHROUD_CLEAR_FORTRESS_EXPANSION_DIF				100
+#define VISION_FORTRESS_EXPANSION_DIF						100
+#define WEAPON_RANGE_FORTRESS_EXPANSION_MULT				1.15
+#define WEAPON_RANGE_WALL_UPGRADE_MULT					1.05
+
 ; Region Bonuses
 #define DEFAULT_REGION_RESOURCE_BONUS			10
 #define DEFAULT_REGION_ARMY_BONUS_GOOD			20
