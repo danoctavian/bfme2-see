@@ -1775,7 +1775,7 @@ Weapon RazorSpinesBasicWeapon
 		Damage			= WILD_FORTRESS_RAZORSPINES_DAMAGE		
 		DamageType		= SPECIALIST
 		DamageFXType	= SWORD_SLASH
-		DeathType		= NORMAL
+		DeathType		= LASERED ;now always used instead of NORMAL (Sûl)
 		DamageSpeed		= 1400.0
 	End
 End

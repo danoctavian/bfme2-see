@@ -4,6 +4,45 @@
 //Moria//
 ////////
 
+CommandButton Command_PurchaseUpgradeWildFortressStonePavement_SEE 
+  Command = OBJECT_UPGRADE
+  Upgrade = Upgrade_WildFortressStonePavement_SEE
+  Options = CANCELABLE
+  TextLabel = CONTROLBAR:PurchaseWildFortressStonePavement_SEE  ;each faction will need it's own strings
+  ButtonImage = BIFortressFloorMoria
+  ButtonBorderType = UPGRADE
+  DescriptLabel = CONTROLBAR:ToolTipPurchaseWildFortressStonePavement_SEE  ;each faction will need it's own strings
+  Radial = Yes
+  InPalantir = No
+End
+
+CommandButton Command_PurchaseUpgradeWildFortressWebCocoon_SEE
+	Command           = OBJECT_UPGRADE
+	Upgrade           = Upgrade_WildFortressWebCocoonTrigger
+	Options			  	= CANCELABLE NEED_UPGRADE
+	NeededUpgrade	    = Upgrade_WildFortressStonePavement_SEE
+	TextLabel         = CONTROLBAR:PurchaseUpgradeWildFortressWebCocoon
+	ButtonImage       = BWFortress_WebCocoon
+	ButtonBorderType  = UPGRADE
+	DescriptLabel     = CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoon
+	Radial            = Yes
+	InPalantir	   	  = No
+	LacksPrerequisiteLabel		= TOOLTIP:LackWildFortressStonePavement_SEE  ;each faction will need it's own strings
+End
+
+CommandButton Command_WildWallUpgradeToOpeningAI
+	Command				= OBJECT_UPGRADE 
+	Options				= CANCELABLE NOT_QUEUEABLE
+	Object        = WildCastleWallSegmentHoleTempAI
+	Upgrade				= Upgrade_PlantShield
+	TextLabel     	= CONTROLBAR:Command_DwarvenWallUpgradeToTower
+	ButtonImage   = BDWall_AxeTower
+	ButtonBorderType	= UPGRADE
+	DescriptLabel		= CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToTower
+	Radial				= Yes
+	InPalantir	  = Yes
+End
+
 CommandButton Command_SpecialAbilityIgnite
   Command                 	= SPECIAL_POWER 
   SpecialPower            	= SpecialAbilityHeroMode
@@ -483,17 +522,16 @@ End
 
 
 ;//Wild Fortress Expansions
-CommandButton Command_ConstructWildArrowDenExpansion
+CommandButton Command_ConstructWildBurrowsExpansion
 	Command          = FOUNDATION_CONSTRUCT
     Options			 = CANCELABLE
-	Object           = WildArrowDenExpansion
-	TextLabel        = CONTROLBAR:ConstructWildArrowDenExpansion
-	ButtonImage      = BWFortress_ArrowDen
+	Object           = WildBurrowsExpansion
+	TextLabel        = CONTROLBAR:ConstructWildBurrowsExpansion
+	ButtonImage      = BWFortress_Burrows
 	ButtonBorderType = BUILD 
-	DescriptLabel    = CONTROLBAR:ToolTipConstructWildArrowDenExpansion
+	DescriptLabel    = CONTROLBAR:ToolTipConstructWildBurrowsExpansion
 	Radial           = Yes  
 End
-
 CommandButton Command_ConstructWildSpiderHolesExpansion
 	Command          = FOUNDATION_CONSTRUCT
     Options			 = CANCELABLE
@@ -504,27 +542,37 @@ CommandButton Command_ConstructWildSpiderHolesExpansion
 	DescriptLabel    = CONTROLBAR:ToolTipConstructWildSpiderHolesExpansion
 	Radial           = Yes  
 End
-
-CommandButton Command_ConstructWildGiantSentryExpansion
+CommandButton Command_ConstructWildArrowDenExpansion
 	Command          = FOUNDATION_CONSTRUCT
     Options			 = CANCELABLE
-	Object           = WildGiantSentryExpansion
-	TextLabel        = CONTROLBAR:ConstructWildGiantSentryExpansion
-	ButtonImage      = BWFissure_Giant
+	Object           = WildArrowDenExpansion
+	TextLabel        = CONTROLBAR:ConstructWildArrowDenExpansion
+	ButtonImage      = BWFortress_ArrowDen
 	ButtonBorderType = BUILD 
-	DescriptLabel    = CONTROLBAR:ToolTipConstructWildGiantSentryExpansion
+	DescriptLabel    = CONTROLBAR:ToolTipConstructWildArrowDenExpansion
 	Radial           = Yes  
 End
+CommandButton Command_ConstructWildGiantSentryExpansion
+	Command				= FOUNDATION_CONSTRUCT
+    Options				= CANCELABLE
+	Object           	= WildGiantSentryExpansion
+	TextLabel         	= CONTROLBAR:ConstructWildGiantSentryExpansion
+	ButtonImage      	= BWFissure_Giant
+	ButtonBorderType  	= BUILD 
+	DescriptLabel    	 	= CONTROLBAR:ToolTipConstructWildGiantSentryExpansion
+	Radial           	= Yes  
+End
 
-CommandButton Command_ConstructWildBurrowsExpansion
-	Command          = FOUNDATION_CONSTRUCT
-    Options			 = CANCELABLE
-	Object           = WildBurrowsExpansion
-	TextLabel        = CONTROLBAR:ConstructWildBurrowsExpansion
-	ButtonImage      = BWFortress_Burrows
-	ButtonBorderType = BUILD 
-	DescriptLabel    = CONTROLBAR:ToolTipConstructWildBurrowsExpansion
-	Radial           = Yes  
+CommandButton Command_WildCastleWallHub_BeginWallSpanAI_SEE
+	Command = DOZER_CONSTRUCT
+	Object = WildCastleWallHubAI
+	Options = OPTION_ONE
+	TextLabel = CONTROLBAR:Command_WildCastleWallHub_BeginWallSpan
+	ButtonImage = BRBWildBuildWall //BIWall_BuildWall
+	ButtonBorderType = BUILD
+	DescriptLabel = CONTROLBAR:TooltipCommand_WildCastleWallHub_BeginWallSpan
+	Radial = Yes
+	InPalantir = No
 End
 
 
