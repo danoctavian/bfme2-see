@@ -161,12 +161,13 @@ Upgrade Upgrade_ElvenFortressEncasingVines
 End
 
 Upgrade Upgrade_ElvenFortressMysticFountains
-	Type			= OBJECT
-	BuildCost		= ELVEN_MYSTICFOUNTAINS_BUILDCOST
-	BuildTime		= ELVEN_MYSTICFOUNTAINS_BUILDTIME
-	DisplayName	= UPGRADE:FortressMysticFountains
-	ResearchSound	= UpgradeElfFortressMysticFountains
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+	Type				= OBJECT
+	BuildCost			= ELVEN_MYSTICFOUNTAINS_BUILDCOST
+	BuildTime			= ELVEN_MYSTICFOUNTAINS_BUILDTIME
+	DisplayName			= UPGRADE:FortressMysticFountains
+	ResearchSound		= UpgradeElfFortressMysticFountains
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
+	UpgradeFX			= FX_DwarvenFortressUpgrade
 End
 
 Upgrade Upgrade_ElvenFortressEnchantedAnvil

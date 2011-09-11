@@ -233,13 +233,13 @@ Upgrade Upgrade_DwarvenFortressOilCasks
 End
 
 Upgrade Upgrade_DwarvenFortressBanners
-	Type			= OBJECT
-	BuildCost		= DWARVEN_FORTRESS_BANNER_BUILDCOST
-	BuildTime		= DWARVEN_FORTRESS_BANNER_BUILDTIME
-	UpgradeFX		= FX_DwarvenFortressUpgrade
-	DisplayName		= Upgrade:FortressBanners
-	ResearchSound	= UpgradeDwarfFortressBanner
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+	Type				= OBJECT
+	BuildCost			= DWARVEN_FORTRESS_BANNER_BUILDCOST
+	BuildTime			= DWARVEN_FORTRESS_BANNER_BUILDTIME
+	UpgradeFX			= FX_DwarvenFortressUpgrade
+	DisplayName			= Upgrade:FortressBanners
+	ResearchSound		= UpgradeDwarfFortressBanner
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
 End
 
 Upgrade Upgrade_DwarvenFortressSiegeKegs

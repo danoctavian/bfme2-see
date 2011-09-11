@@ -323,8 +323,35 @@
 
 #define MEN_FORTRESS_WALL_EFFECTIVE_RADIUS		1500
 
-#define MEN_FORTRESS_IVORY_TOWER_VISION_TIME		30000
-#define MEN_FORTRESS_IVORY_TOWER_VISION_RANGE		99999.0  //Entire map
+// Banners
+#define MEN_FORTRESS_BANNERS_BUILDCOST					1000	//marksmod
+#define MEN_FORTRESS_BANNERS_BUILDTIME					60	//marksmod
+
+// Fortress Floor Improvement
+#define MEN_STONEWORK_PAVEMENT_BUILDCOST				2000
+#define MEN_STONEWORK_PAVEMENT_BUILDTIME				60
+
+// Houses of Healing
+#define MEN_FORTRESS_HOUSE_OF_HEALING_BUILDCOST		2500 ;2000	//marksmod
+#define MEN_FORTRESS_HOUSE_OF_HEALING_BUILDTIME			60	//marksmod
+
+// Oil Casks
+#define MEN_FORTRESS_BOILING_OIL_BUILDCOST				3000	//marksmod
+#define MEN_FORTRESS_BOILING_OIL_BUILDTIME				60	//marksmod
+
+// Flaming Munitions
+#define MEN_FORTRESS_FLAMING_MUNITIONS_BUILDCOST		3500 ;4000	//marksmod
+#define MEN_FORTRESS_FLAMING_MUNITIONS_BUILDTIME		60	//marksmod
+
+// Numenor Stonework
+#define GONDOR_NUMENORSTONEWORK_BUILDCOST        		4000 ;8000	//marksmod - moved here and spelling corrected
+#define GONDOR_NUMENORSTONEWORK_BUILDTIME        		60	//marksmod - moved here and spelling corrected
+
+// Ivory Tower
+#define MEN_FORTRESS_IVORY_TOWER_BUILDCOST				5000	//marksmod - NEE	
+#define MEN_FORTRESS_IVORY_TOWER_BUILDTIME				60	//marksmod
+#define MEN_FORTRESS_IVORY_TOWER_VISION_RANGE			99999.0 //Entire map
+#define MEN_FORTRESS_IVORY_TOWER_VISION_TIME			60000		;from 180000, Modified by Sûlherokhh
 
 ;-------------------MenTrebuchetExpansion-------------
 

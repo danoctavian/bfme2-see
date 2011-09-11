@@ -32,6 +32,10 @@
 
 ;------------------------GENERIC UNITS/STRUCTURES---------- 
 
+#define GENERIC_KEEP_FLOOR_RADIUS							400
+#define GENERIC_KEEP_FLOOR_OBJECT_FILTER			ANY +STRUCTURE -COMMANDCENTER -WALL_SEGMENT -WALL_UPGRADE -WALL_HUB -WALL_GATE -DEFENSIVE_WALL -FS_BASE_DEFENSE
+
+
 #define STATUE_BUILDTIME							30		// 30 seconds - All statues, monuments and wells!
 #define SENTRY_TOWER_COST				500
 #define SENTRY_TOWER_BUILDTIME				30
@@ -76,10 +80,10 @@
 #define INFANTRY_TAUNT_POINT_RADIUS			100
 
 
-#define DEFAULT_STRUCTURE_HEALDELAY			300
+#define DEFAULT_STRUCTURE_HEALDELAY			200 //300
 
 #define GENERIC_FACTION_GARRISONABLE			ANY +INFANTRY +BANNER -CAVALRY -SUMMONED -WildSpiderling -WildSpiderlingHorde -COMBO_HORDE -IsengardSharku -AngmarThrallMaster ;+BarrowWight +BarrowWight_Slaved 
-#define GENERIC_FACTION_SLAUGHTERABLE			ANY +INFANTRY +CAVALRY -HERO -DOZER -SUMMONED
+#define GENERIC_FACTION_SLAUGHTERABLE			ANY +INFANTRY +CAVALRY +DOZER -HERO -SUMMONED 	;was -DOZER
 #define GENERIC_BUFF_RECIPIENT_OBJECT_FILTER		ANY +INFANTRY +CAVALRY -MACHINE -IMMOBILE -DOZER -HERO -STRUCTURE -BASE_FOUNDATION -HORDE -DwarvenBattleWagon -RohanOathbreaker -MordorRamCrew +MordorWorker -IsengardRamCrew -IsengardBeserker -DwarvenZerker -DwarvenZerkerHorde -NoldorWarrior -NoldorWarriorHorde -GondorKnightsofDol -GondorKnightsofDolHorde -WildBabyDrake -WildBabyDrakeHorde -MordorBlackRider -MordorBlackRiderHorde -IsengardFanatic -IsengardBerserkerHorde 
 
 												; Afraid of objects must be SCARY kindof as well.
@@ -153,7 +157,7 @@
 #define CAMOUFLAGE_DETECTION_DISTANCE_LONG		3.0
 
 #define GENERIC_KEEP_MONEY_TIME 			6000
-#define GENERIC_KEEP_MONEY_AMOUNT			25
+#define GENERIC_KEEP_MONEY_AMOUNT			30 ;25
 #define GENERIC_KEEP_MONEY_RANGE			50
 
 #define PORTER_FIRE_EXTINGUISHER_DECREASEBURNRATE_RADIUS 	100.0

@@ -54,12 +54,13 @@ Upgrade Upgrade_MordorFortressMorgulSorcery
 End
 
 Upgrade Upgrade_MordorFortressDoomPyres
-	Type			= OBJECT
-	BuildCost		= MORDOR_DOOMPYRES_BUILDCOST
-	BuildTime		= MORDOR_DOOMPYRES_BUILDTIME
+	Type				= OBJECT
+	BuildCost			= MORDOR_DOOMPYRES_BUILDCOST
+	BuildTime			= MORDOR_DOOMPYRES_BUILDTIME
 	DisplayName	    	= UPGRADE:FortressDoomPyres
-	ResearchSound	= UpgradeMordorFortressDoomPyres
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+	ResearchSound		= UpgradeMordorFortressDoomPyres
+//	UpgradeFX			= FX_EvilFortressUpgrade_SEE
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
 End
 
 Upgrade Upgrade_MordorFortressMagmaCauldrons

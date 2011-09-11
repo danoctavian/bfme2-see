@@ -116,21 +116,23 @@ Upgrade Upgrade_MenFortressBoilingOil
 End
 
 Upgrade Upgrade_MenFortressBanners
-	Type			= OBJECT
-	BuildCost		= 500
-	BuildTime		= 5
-	DisplayName		= Upgrade:FortressBanners
-	ResearchSound	= UpgradeMenFortressBanner
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+	Type				= OBJECT
+	BuildCost			= MEN_FORTRESS_BANNERS_BUILDCOST
+	BuildTime			= MEN_FORTRESS_BANNERS_BUILDTIME
+	DisplayName			= Upgrade:FortressBanners
+	ResearchSound		= UpgradeMenFortressBanner
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
+	UpgradeFX			= FX_DwarvenFortressUpgrade
 End
 
 Upgrade Upgrade_MenFortressHouseOfHealing
-	Type			= OBJECT
-	BuildCost		= 1000
-	BuildTime		= 30
-	DisplayName		= Upgrade:FortressHouseofHealing
-	;ResearchSound	= CampSoldierUpgradeFortress
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FORTRESS
+	Type				= OBJECT
+	BuildCost			= MEN_FORTRESS_HOUSE_OF_HEALING_BUILDCOST
+	BuildTime			= MEN_FORTRESS_HOUSE_OF_HEALING_BUILDTIME
+	DisplayName			= Upgrade:FortressHouseofHealing
+	;ResearchSound			= CampSoldierUpgradeFortress
+	UpgradeFX			= FX_DwarvenFortressUpgrade
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
 End
 
 Upgrade Upgrade_MenFortressIvoryTower
