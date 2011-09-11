@@ -356,6 +356,7 @@ CommandSet WildMineShaftCommandSet
 	4 = Command_ExitGarrison
 	5 = Command_ExitGarrison
 	6 = Command_Sell
+	12 = Command_Evacuate ; Added for SEE!	
 End
 
 

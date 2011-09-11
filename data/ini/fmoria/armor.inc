@@ -23,6 +23,22 @@ Armor WildFortressArmor
 	Armor = LOGICAL_FIRE	 	5%
 End
 
+Armor WildFortressExpansionArmor
+	Armor = DEFAULT			40%    //this sets the level for all nonspecified damage types
+	Armor = CRUSH			10% ;50    //horseman damage
+	Armor = SLASH			20%	//soldier damage
+  Armor = CAVALRY	  		20%
+	Armor = URUK			30% //80%
+	Armor = SPECIALIST		30% //40% ;100
+	Armor = PIERCE			0% ;1% ;25     //archer damage
+	Armor = FLAME			10% ;100    //fire damage
+	Armor = SIEGE			200% ;300    //siege damage
+	Armor = STRUCTURAL		1% //66%    ;structural damage (from structure arrows) 
+	Armor = HERO			20%    //Hero damage  
+	Armor = HERO_RANGED	10%     //Hero bow damage
+	Armor = LOGICAL_FIRE	 	10%
+End
+
 ;------------------------------------------------------------------------------
 
 Armor WildFortressExpansionArmor
