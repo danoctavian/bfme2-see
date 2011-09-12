@@ -478,10 +478,10 @@ CommandButton Command_PurchaseUpgradeWildFortressStonePavement
   Command = OBJECT_UPGRADE
   Upgrade = Upgrade_WildFortressStonePavement
   Options = CANCELABLE
-  TextLabel = CONTROLBAR:PurchaseWildFortressStonePavement ;each faction will need it's own strings
+  TextLabel = CONTROLBAR:PurchaseWildFortressStonePavement_SEE ;each faction will need it's own strings
   ButtonImage = BIFortressFloorMoria
   ButtonBorderType = UPGRADE
-  DescriptLabel = CONTROLBAR:ToolTipPurchaseWildFortressStonePavement  ;each faction will need it's own strings
+  DescriptLabel = CONTROLBAR:ToolTipPurchaseWildFortressStonePavement_SEE  ;each faction will need it's own strings
   Radial = Yes
   InPalantir = No
 End
@@ -497,7 +497,7 @@ CommandButton Command_PurchaseUpgradeWildFortressWebCocoon
 	DescriptLabel     = CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoon
 	Radial            = Yes
 	InPalantir	   	  = No
-	LacksPrerequisiteLabel		= TOOLTIP:LackWildFortressStonePavement  ;each faction will need it's own strings
+	LacksPrerequisiteLabel		= TOOLTIP:LackWildFortressStonePavement_SEE  ;each faction will need it's own strings
 End
 
 CommandButton Command_PurchaseUpgradeWildFortressRazorSpines
