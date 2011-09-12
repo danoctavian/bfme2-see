@@ -170,13 +170,15 @@
 #define PORTER_FIRE_EXTINGUISHER_DECREASEBURNRATE_AMOUNT 	100.0
 #define PORTER_FIRE_EXTINGUISHER_ABILITY_START_RANGE	 	115 	; // should be greater than PORTER_FIRE_EXTINGUISHER_DECREASEBURNRATE_RADIUS
 
-// Command Point bonuses! -----------------------------------------------------
+// Command Point bonuses! ----------------------------------------------------- SEE
 #define GENERIC_STATUE_COMMAND_POINT_BONUS				25 //100
 #define GENERIC_ECONOMY_COMMAND_POINT_BONUS				50 //150
 #define DORMITORY_COMMAND_POINT_BONUS					100 //150
 #define DWARVEN_ECONOMY_COMMAND_POINT_BONUS				150 //200
 #define OUTPOST_COMMAND_POINT_BONUS						250 //200 //150
 #define GENERIC_FORTRESS_COMMAND_POINT_BONUS				500 //400 //500
+
+// ---------------------------------------------------------------------------------- SEE
 
 #define SHOCKWAVE_RESISTANCE_WEAK							10 //20
 #define SHOCKWAVE_RESISTANCE_STANDARD					25 //40

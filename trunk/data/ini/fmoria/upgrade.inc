@@ -70,7 +70,7 @@ Upgrade Upgrade_WildFortressWebCocoonTrigger
 	ResearchSound		= UpgradeGoblinFortressWebCocoon
 	DisplayName			= Upgrade:FortressWebCocoon
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
-	UpgradeFX			= FX_EvilFortressUpgrade_SEE
+	UpgradeFX			= FX_EvilFortressUpgrade
 End
 Upgrade Upgrade_WildFortressWebCocoon
 	Type = OBJECT
