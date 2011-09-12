@@ -1,9 +1,10 @@
-//////////////////
-// UPGRADE.INC //
-////////////////
-//Moria//
-////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
 
+; Upgrade.INC for MORIA (Wild) faction...
+; -------------------------------------------------------------------------------
+; NOTE: Keep this organized!
 
 
 Upgrade Upgrade_WildFaction
@@ -15,24 +16,89 @@ Upgrade Upgrade_GoblinFaction
 	Type			= PLAYER
 End
 
-
-
 Upgrade Upgrade_GoblinDualEconomyChoice
 	DisplayName		= UPGRADE:GoblinDualEconomyChoice
 	Type			= PLAYER
 End
 
+;--------	FORTRESS  ----------------------------------------
 
+Upgrade Upgrade_WildFortressBatCloud
+	Type				= OBJECT
+	BuildCost			= WILD_BATCLOUD_BUILDCOST
+	BuildTime			= WILD_BATCLOUD_BUILDTIME
+	ResearchSound		= UpgradeGoblinFortressBatCloud
+	DisplayName			= Upgrade:FortressBatCloud
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
+	UpgradeFX			= FX_EvilFortressUpgrade
+End
 
-Upgrade Upgrade_GoblinKingPoisonedStinger
+Upgrade Upgrade_WildFortressStonePavement
+  Type					= OBJECT
+  BuildCost				= WILD_STONEWORK_PAVEMENT_BUILDCOST
+  BuildTime				= WILD_STONEWORK_PAVEMENT_BUILDTIME
+  ResearchSound			= UpgradeGoblinFortressWebCocoon  
+  DisplayName			= Upgrade:FortressWildStonePavement
+  SkirmishAIHeuristic 		= AI_UPGRADEHEURISTIC_IMPORTANT
+  UpgradeFX				= FX_EvilFortressUpgrade  
+End
+
+Upgrade Upgrade_WildFortressRazorSpines
+	Type				= OBJECT
+	BuildCost			= WILD_FORTRESS_RAZORSPINES_BUILDCOST
+	BuildTime			= WILD_FORTRESS_RAZORSPINES_BUILDTIME
+	ResearchSound		= UpgradeGoblinFortressRazorSpine
+	DisplayName			= Upgrade:FortressRazorSpines
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
+	UpgradeFX			= FX_EvilFortressUpgrade
+End
+
+Upgrade Upgrade_WildFortressFireArrowsTrigger
+	Type				= OBJECT
+	BuildCost			= WILD_FORTRESS_FIREARROWS_BUILDCOST
+	BuildTime			= WILD_FORTRESS_FIREARROWS_BUILDTIME
+	ResearchSound		= UpgradeGoblinFortressFireArrows
+	DisplayName			= Upgrade:FortressFireArrows
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
+	UpgradeFX			= FX_EvilFortressUpgrade
+End
+
+Upgrade Upgrade_WildFortressWebCocoonTrigger
+	Type				= OBJECT
+	BuildCost			= WILD_FORTRESS_WEBCOCOON_BUILDCOST
+	BuildTime			= WILD_FORTRESS_WEBCOCOON_BUILDTIME
+	ResearchSound		= UpgradeGoblinFortressWebCocoon
+	DisplayName			= Upgrade:FortressWebCocoon
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
+	UpgradeFX			= FX_EvilFortressUpgrade_SEE
+End
+Upgrade Upgrade_WildFortressWebCocoon
+	Type = OBJECT
+	; SkirmishAIHeuristic 		= AI_UPGRADEHEURISTIC_FORTRESS ;AI_UPGRADEHEURISTIC_IMPORTANT	
+End
+
+Upgrade Upgrade_WildFortressDragonNest
+	Type				= OBJECT
+	BuildCost			= WILD_DRAGONNEST_BUILDCOST
+	BuildTime			= WILD_DRAGONNEST_BUILDTIME
+	DisplayName			= Upgrade:FortressDragonsNest
+	ResearchCompleteEvaEvent = UpgradeDragonsNestReady
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
+	UpgradeFX			= FX_EvilFortressUpgrade
+End
+Upgrade Upgrade_DragonNestFireDrakeButtonEnable
 	Type			= OBJECT
 End
-Upgrade Upgrade_GoblinKingCallFromTheDeep
-	Type			= OBJECT
+Upgrade Upgrade_HasDragonNestFireDrake
+	Type				= OBJECT
+	BuildCost			= WILD_FORTRESS_FIREDRAKE_BUILDCOST
+	BuildTime			= WILD_FORTRESS_FIREDRAKE_BUILDTIME
+	DisplayName			= Upgrade:WildFortressFireDrake
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
 End
-
 
 ;--------	CAVE  ----------------------------------------------
+
 Upgrade Upgrade_WildCaveLevel2
 	Type			= OBJECT
 	BuildCost		= GOBLIN_CAVE_LEVEL2_UPGRADE_COST
@@ -66,6 +132,24 @@ Upgrade Upgrade_WildFissureLevel3
 	DisplayName		= Upgrade:WildFissureLevel3
 	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
+
+
+
+
+
+
+
+
+
+
+Upgrade Upgrade_GoblinKingPoisonedStinger
+	Type			= OBJECT
+End
+Upgrade Upgrade_GoblinKingCallFromTheDeep
+	Type			= OBJECT
+End
+
+
 
 //----SpiderPit----
 Upgrade Upgrade_WildSpiderPitLevel2
@@ -123,84 +207,6 @@ Upgrade Upgrade_SentryTowerFireArrows
 	ResearchSound	= UpgradeFlamingArrows
 End
 
-////----Wild Fortress---
-Upgrade Upgrade_WildFortressDragonNest
-	Type			= OBJECT
-	BuildCost		= WILD_DRAGONNEST_BUILDCOST
-	BuildTime		= WILD_DRAGONNEST_BUILDTIME
-	DisplayName		= Upgrade:FortressDragonsNest
-//	UpgradeFX			= FX_EvilFortressUpgrade_SEE	
-	ResearchCompleteEvaEvent = UpgradeDragonsNestReady
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_IMPORTANT //AI_UPGRADEHEURISTIC_FORTRESS
-//	UpgradeFX			= FX_EvilFortressUpgrade_SEE	
-End
-
-Upgrade Upgrade_DragonNestFireDrakeButtonEnable
-	Type			= OBJECT
-End
-
-Upgrade Upgrade_HasDragonNestFireDrake
-	Type				= OBJECT
-	BuildCost			= WILD_FORTRESS_FIREDRAKE_BUILDCOST
-	BuildTime			= WILD_FORTRESS_FIREDRAKE_BUILDTIME
-	DisplayName			= Upgrade:WildFortressFireDrake
-	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
-End
-
-Upgrade Upgrade_WildFortressBatCloud
-	Type				= OBJECT
-	BuildCost			= WILD_BATCLOUD_BUILDCOST
-	BuildTime			= WILD_BATCLOUD_BUILDTIME
-	ResearchSound		= UpgradeGoblinFortressBatCloud
-	DisplayName			= Upgrade:FortressBatCloud
-	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
-//	UpgradeFX			= FX_EvilFortressUpgrade_SEE
-End
-
-Upgrade Upgrade_WildFortressFireArrowsTrigger
-	Type				= OBJECT
-	BuildCost			= WILD_FORTRESS_FIREARROWS_BUILDCOST
-	BuildTime			= WILD_FORTRESS_FIREARROWS_BUILDTIME
-	ResearchSound		= UpgradeGoblinFortressFireArrows
-	DisplayName			= Upgrade:FortressFireArrows
-	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
-//	UpgradeFX			= FX_EvilFortressUpgrade_SEE
-End
-
-Upgrade Upgrade_WildFortressWebCocoonTrigger
-	Type				= OBJECT
-	BuildCost			= WILD_FORTRESS_WEBCOCOON_BUILDCOST
-	BuildTime			= WILD_FORTRESS_WEBCOCOON_BUILDTIME
-	ResearchSound		= UpgradeGoblinFortressWebCocoon
-	DisplayName			= Upgrade:FortressWebCocoon
-	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
-//	UpgradeFX			= FX_EvilFortressUpgrade_SEE
-End
-
-Upgrade Upgrade_WildFortressWebCocoon
-	Type			= OBJECT
-	; SkirmishAIHeuristic 		= AI_UPGRADEHEURISTIC_FORTRESS ;AI_UPGRADEHEURISTIC_IMPORTANT	
-End
-
-Upgrade Upgrade_WildFortressRazorSpines
-	Type				= OBJECT
-	BuildCost			= WILD_FORTRESS_RAZORSPINES_BUILDCOST
-	BuildTime			= WILD_FORTRESS_RAZORSPINES_BUILDTIME
-	ResearchSound		= UpgradeGoblinFortressRazorSpine
-	DisplayName			= Upgrade:FortressRazorSpines
-	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
-//	UpgradeFX			= FX_EvilFortressUpgrade_SEE
-End
-
-Upgrade Upgrade_WildFortressStonePavement_SEE
-  Type				= OBJECT
-  BuildCost			= WILD_STONEWORK_PAVEMENT_BUILDCOST
-  BuildTime			= WILD_STONEWORK_PAVEMENT_BUILDTIME
-//  UpgradeFX		= FX_EvilFortressUpgrade_SEE
-  DisplayName		= Upgrade:FortressWildStonePavement_SEE
-  ResearchSound		= UpgradeGoblinFortressWebCocoon
-  SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
-End
 
 
 //------     Wild Upgrades	--------------------------------------------------------
