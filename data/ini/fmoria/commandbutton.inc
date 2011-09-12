@@ -1,34 +1,11 @@
-////////////////////////
-// COMMANDBUTTON.INC //
-//////////////////////
-//Moria//
-////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
 
-CommandButton Command_PurchaseUpgradeWildFortressStonePavement_SEE 
-  Command = OBJECT_UPGRADE
-  Upgrade = Upgrade_WildFortressStonePavement_SEE
-  Options = CANCELABLE
-  TextLabel = CONTROLBAR:PurchaseWildFortressStonePavement_SEE  ;each faction will need it's own strings
-  ButtonImage = BIFortressFloorMoria
-  ButtonBorderType = UPGRADE
-  DescriptLabel = CONTROLBAR:ToolTipPurchaseWildFortressStonePavement_SEE  ;each faction will need it's own strings
-  Radial = Yes
-  InPalantir = No
-End
+; CommandButton.INC for MORIA (Wild) faction...
+; -------------------------------------------------------------------------------
+; NOTE: Keep this organized!
 
-CommandButton Command_PurchaseUpgradeWildFortressWebCocoon_SEE
-	Command           = OBJECT_UPGRADE
-	Upgrade           = Upgrade_WildFortressWebCocoonTrigger
-	Options			  	= CANCELABLE NEED_UPGRADE
-	NeededUpgrade	    = Upgrade_WildFortressStonePavement_SEE
-	TextLabel         = CONTROLBAR:PurchaseUpgradeWildFortressWebCocoon
-	ButtonImage       = BWFortress_WebCocoon
-	ButtonBorderType  = UPGRADE
-	DescriptLabel     = CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoon
-	Radial            = Yes
-	InPalantir	   	  = No
-	LacksPrerequisiteLabel		= TOOLTIP:LackWildFortressStonePavement_SEE  ;each faction will need it's own strings
-End
 
 CommandButton Command_WildWallUpgradeToOpeningAI
 	Command				= OBJECT_UPGRADE 
@@ -369,6 +346,7 @@ End
 
 
 ;//----------------------------------------------------------------------------------------
+
 CommandButton Command_SelectUpgradesWildFortress
 	Command                 = PUSH_VISIBLE_COMMAND_RANGE
 	TextLabel               = CONTROLBAR:SelectUpgradesWildFortress
@@ -377,7 +355,7 @@ CommandButton Command_SelectUpgradesWildFortress
 	DescriptLabel           = CONTROLBAR:ToolTipCommandSelectUpgradesWildFortress
 	Radial                  = Yes
 	CommandRangeStart	= 6	//Starts its counting at 0, so command button 8 is 7
-	CommandRangeCount	= 7
+	CommandRangeCount	= 8
 End
 
 CommandButton Command_SelectRevivablesWildFortress
@@ -387,8 +365,8 @@ CommandButton Command_SelectRevivablesWildFortress
 	ButtonBorderType        = SYSTEM 
 	DescriptLabel           = CONTROLBAR:ToolTipCommandSelectRevivablesWildFortress
 	Radial                  = Yes
-	CommandRangeStart		= 13	//Starts its counting at 0, so command button 8 is 7
-	CommandRangeCount		= 10
+	CommandRangeStart		= 14	//Starts its counting at 0, so command button 8 is 7
+	CommandRangeCount		= 13
 End
 
 CommandButton Command_SelectRevivablesWildMonmentFortress
@@ -430,7 +408,7 @@ CommandButton Command_PurchaseNewFireDrake
   Upgrade                 = Upgrade_HasDragonNestFireDrake 
   Options				  = CANCELABLE NEED_UPGRADE
   NeededUpgrade			  = Upgrade_WildFortressDragonNest
-  ButtonImage			  = HIFireDrake
+  ButtonImage			  = HIDrogoth //HIFireDrake ;Drogoth for SEE!
   ButtonBorderType        = UPGRADE 
   Radial				  = Yes
   InPalantir	   		  = Yes
@@ -496,16 +474,30 @@ CommandButton Command_PurchaseUpgradeWildFortressFireArrows
 	InPalantir	   	  = No
 End
 
+CommandButton Command_PurchaseUpgradeWildFortressStonePavement
+  Command = OBJECT_UPGRADE
+  Upgrade = Upgrade_WildFortressStonePavement
+  Options = CANCELABLE
+  TextLabel = CONTROLBAR:PurchaseWildFortressStonePavement ;each faction will need it's own strings
+  ButtonImage = BIFortressFloorMoria
+  ButtonBorderType = UPGRADE
+  DescriptLabel = CONTROLBAR:ToolTipPurchaseWildFortressStonePavement  ;each faction will need it's own strings
+  Radial = Yes
+  InPalantir = No
+End
+
 CommandButton Command_PurchaseUpgradeWildFortressWebCocoon
 	Command           = OBJECT_UPGRADE
-	Options			  = CANCELABLE
 	Upgrade           = Upgrade_WildFortressWebCocoonTrigger
+	Options			  	= CANCELABLE NEED_UPGRADE
+	NeededUpgrade	    = Upgrade_WildFortressStonePavement
 	TextLabel         = CONTROLBAR:PurchaseUpgradeWildFortressWebCocoon
 	ButtonImage       = BWFortress_WebCocoon
 	ButtonBorderType  = UPGRADE
 	DescriptLabel     = CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoon
 	Radial            = Yes
 	InPalantir	   	  = No
+	LacksPrerequisiteLabel		= TOOLTIP:LackWildFortressStonePavement  ;each faction will need it's own strings
 End
 
 CommandButton Command_PurchaseUpgradeWildFortressRazorSpines

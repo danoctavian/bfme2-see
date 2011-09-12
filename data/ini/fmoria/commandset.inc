@@ -1,66 +1,69 @@
-/////////////////////
-// COMMANDSET.INC //
-///////////////////
-//Moria//
-////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
+
+; Commandset.INC for MORIA (Wild) faction...
+; -------------------------------------------------------------------------------
+; NOTE: Keep this organized!
+
 
 CommandSet WildFortressCommandSet
 	InitialVisible = 6
     //Main Menu
-	1   = Command_ConstructWildPorter
-	2   = Command_SelectRevivablesWildFortress ;_SEE
-	3   = Command_SelectUpgradesWildFortress; _SEE	
-	4   = Command_PurchaseNewFireDrake	
-	6	  = Command_Sell
+	1	= Command_ConstructWildPorter
+	2	= Command_SelectRevivablesWildFortress
+	3	= Command_SelectUpgradesWildFortress	
+	4	= Command_PurchaseNewFireDrake	
+	6	= Command_Sell
     //Upgrades Menu
-	7	  = Command_PurchaseUpgradeWildFortressBatCloud
-	;8 	= Command_PurchaseUpgradeWildFortressStonePavement_SEE
-	9	  = Command_PurchaseUpgradeWildFortressRazorSpines
+	7	= Command_PurchaseUpgradeWildFortressBatCloud
+	8 	= Command_PurchaseUpgradeWildFortressStonePavement
+	9	= Command_PurchaseUpgradeWildFortressRazorSpines
 	10	= Command_PurchaseUpgradeWildFortressFireArrows
-	11	= Command_PurchaseUpgradeWildFortressWebCocoon ;_SEE
+	11	= Command_PurchaseUpgradeWildFortressWebCocoon
 	12	= Command_PurchaseUpgradeWildFortressDragonNest	
 	13	= Command_SpecialAbilityBatCloud
 	14	= Command_RadialBack
     //Hero Menu
-	15	= Command_RingHeroReviveSlot		// This is for the ring hero, don't remove.
-	16	= Command_CreateAHeroReviveSlot		// Note we also need an extra slot for the Create A Hero
+	15	= Command_RingHeroReviveSlot		// This is for the ring hero, don't remove!
+	16	= Command_CreateAHeroReviveSlot	// Note we also need an extra slot for the Create A Hero!
 	17	= Command_GenericReviveSlot1		//Revives any hero. Use Slot1-Slot8 and keep them UNIQUE within the same commandset! 
 	18	= Command_GenericReviveSlot2	;Golfimbul
 	19	= Command_GenericReviveSlot3	;Bolg
 	20	= Command_GenericReviveSlot4	;Azog
 	21	= Command_GenericReviveSlot5	;The Great Goblin
 	22	= Command_GenericReviveSlot6	;Shelob
-	23	= Command_GenericReviveSlot7	;Fire Drake
-	24	= Command_GenericReviveSlot8	;Fire Drake
-	25	= Command_GenericReviveSlot9	;Fire Drake
+	23	= Command_GenericReviveSlot7	;Cave Troll of Moria
+	24	= Command_GenericReviveSlot8	;
+	25	= Command_GenericReviveSlot9	;
 	26	= Command_GenericReviveSlot10	
 	27	= Command_RadialBack		 
 End									 
 
-CommandSet WildFortressExpansionPadCornerCommandSet
-	1 = Command_ConstructWildBurrowsExpansion 
-	2 = Command_ConstructWildSpiderHolesExpansion
-	3 = Command_ConstructWildArrowDenExpansion	
-	4 = Command_ConstructWildGiantSentryExpansion
+CommandSet WildFortressExpansionPadCornerCommandSet //Added for SEE! 4 corner plots.
+	1 	= Command_ConstructWildBurrowsExpansion 
+	2 	= Command_ConstructWildSpiderHolesExpansion
+	3 	= Command_ConstructWildArrowDenExpansion	
+	4 	= Command_ConstructWildGiantSentryExpansion
 End
-CommandSet WildFortressExpansionPadSideCommandSet
-	1 = Command_ConstructWildBurrowsExpansion 
-	2 = Command_ConstructWildSpiderHolesExpansion
-	3 = Command_ConstructWildArrowDenExpansion	
-	4 = Command_ConstructWildGiantSentryExpansion
+CommandSet WildFortressExpansionPadSideCommandSet //Added for SEE! 3 side plots.
+	1 	= Command_ConstructWildBurrowsExpansion 
+	2 	= Command_ConstructWildSpiderHolesExpansion
+	3 	= Command_ConstructWildArrowDenExpansion	
+	4 	= Command_ConstructWildGiantSentryExpansion
 End
 
-CommandSet WildFortressCommandSetAI_SEE
+CommandSet WildFortressCommandSetAI
     //Main Menu
-	1   = Command_ConstructWildPorter
-	;4   = Command_PurchaseNewFireDrake	
-	6	  = Command_Sell
+	1	= Command_ConstructWildPorter
+	4	= Command_PurchaseNewFireDrake	
+	6	= Command_Sell
     //Upgrades Menu
-	7	  = Command_PurchaseUpgradeWildFortressBatCloud
-	8 	= Command_PurchaseUpgradeWildFortressStonePavement_SEE
-	9	  = Command_PurchaseUpgradeWildFortressRazorSpines
+	7	= Command_PurchaseUpgradeWildFortressBatCloud
+	8 	= Command_PurchaseUpgradeWildFortressStonePavement
+	9	= Command_PurchaseUpgradeWildFortressRazorSpines
 	10	= Command_PurchaseUpgradeWildFortressFireArrows
-	11	= Command_PurchaseUpgradeWildFortressWebCocoon_SEE
+	11	= Command_PurchaseUpgradeWildFortressWebCocoon
 	12	= Command_PurchaseUpgradeWildFortressDragonNest	
 	13	= Command_SpecialAbilityBatCloud
 	; 8	  = Command_PurchaseUpgradeWildFortressRazorSpinesAI_SEE
@@ -76,15 +79,17 @@ CommandSet WildFortressCommandSetAI_SEE
 	21	= Command_GenericReviveSlot5 
 End			
 	
-CommandSet WildFortressExpansionPadGiantSentryCommandSetAI
-	1 = Command_ConstructWildGiantSentryExpansion // (ini/fmoria\commandbutton.inc)
-End
 CommandSet WildFortressExpansionPadSpiderHolesCommandSetAI
 	1 = Command_ConstructWildSpiderHolesExpansion // (ini/fmoria\commandbutton.inc)
 End
 CommandSet WildFortressExpansionPadArrowDenCommandSetAI
 	1 = Command_ConstructWildArrowDenExpansion // (ini/fmoria\commandbutton.inc)
 End
+CommandSet WildFortressExpansionPadGiantSentryCommandSetAI
+	1 = Command_ConstructWildGiantSentryExpansion // (ini/fmoria\commandbutton.inc)
+End
+
+
 
 CommandSet WildCastleWallHubCommandSetAI_SEE
 	1 = Command_WildCastleWallHub_BeginWallSpanAI_SEE	

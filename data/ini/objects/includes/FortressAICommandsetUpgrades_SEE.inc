@@ -17,7 +17,7 @@
 	Behavior = CommandSetUpgrade ModuleTag_AIFortressCommandsetWild
 		TriggeredBy		= Upgrade_ObjectUnderAIControl
 		ConflictsWith	= Upgrade_MenFaction Upgrade_ElfFaction Upgrade_DwarfFaction Upgrade_MordorFaction Upgrade_IsengardFaction Upgrade_RhunFaction Upgrade_HaradFaction
-		CommandSet		= WildFortressCommandSetAI_SEE
+		CommandSet		= WildFortressCommandSetAI
 	End
 	;Behavior = CommandSetUpgrade ModuleTag_AIFortressCommandsetElven
 	;	TriggeredBy		= Upgrade_ObjectUnderAIControl
