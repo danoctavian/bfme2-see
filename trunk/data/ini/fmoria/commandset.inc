@@ -7,6 +7,22 @@
 ; NOTE: Keep this organized!
 
 
+CommandSet WildPorterCommandSet
+    1  = Command_Stop
+	2  = Command_PorterExtinguishFire
+	3  = Command_PorterConstructWildLumberMill 
+	4  = Command_PorterConstructWildMineShaft
+	5  = Command_PorterConstructWildCave
+	6  = Command_PorterConstructWildSpiderPit
+	7  = Command_PorterConstructWildWolfDen //Command_ConstructAngmarDen
+	8  = Command_PorterConstructWildFissure  
+	9  = Command_PorterConstructWildTreasureTrove 
+	10 = Command_PorterConstructWildSentryTower
+	11 = Command_PorterConstructWildFortress
+End
+
+; ------------------------------------------------------------------------------
+
 CommandSet WildFortressCommandSet
 	InitialVisible = 6
     //Main Menu
@@ -91,19 +107,7 @@ End
 
 ; ------------------------------------------------------------------------------
 
-CommandSet WildPorterCommandSet
-    1  = Command_Stop
-	2  = Command_PorterExtinguishFire
-	3  = Command_PorterConstructWildLumberMill 
-	4  = Command_PorterConstructWildMineShaft
-	5  = Command_PorterConstructWildCave
-	6  = Command_PorterConstructWildSpiderPit
-	7  = Command_ConstructAngmarDen
-	8  = Command_PorterConstructWildFissure  
-	9  = Command_PorterConstructWildTreasureTrove 
-	10 = Command_PorterConstructWildSentryTower
-	11 = Command_PorterConstructWildFortress
-End
+
 
 
 
@@ -603,7 +607,6 @@ CommandSet WildSpiderPitCommandSet
 	3 = Command_PurchaseUpgradeWildSpiderPitLevel2
 	6 = Command_Sell
 End
-
 CommandSet WildSpiderPitCommandSetLevel2
 	1 = Command_ConstructGoblinTroll //Command_ConstructWildSpiderlingHorde
 	;2 = Command_ConstructWildSpiderRiderHorde
@@ -611,7 +614,6 @@ CommandSet WildSpiderPitCommandSetLevel2
 	3 = Command_PurchaseUpgradeWildSpiderPitLevel3
 	6 = Command_Sell
 End
-
 CommandSet WildSpiderPitCommandSetLevel3
 	1 = Command_ConstructGoblinTroll //Command_ConstructWildSpiderlingHorde
 	;2 = Command_ConstructWildSpiderRiderHorde
@@ -625,17 +627,36 @@ CommandSet WildSpiderPitCommandSet_ForFornost
 	3 = Command_PurchaseUpgradeWildSpiderPitLevel2
 	6 = Command_Sell
 End
-
 CommandSet WildSpiderPitCommandSetLevel2_ForFornost
 	1 = Command_ConstructWildSpiderRiderHorde
 	2 = Command_PurchaseSpiderVenomSackScienceUpgrade
 	3 = Command_PurchaseUpgradeWildSpiderPitLevel3
 	6 = Command_Sell
 End
-
 CommandSet WildSpiderPitCommandSetLevel3_ForFornost
 	1 = Command_ConstructWildSpiderRiderHorde
 	2 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	6 = Command_Sell
+End
+
+CommandSet WildWolfDenCommandSet
+	;1 = Command_ConstructGoblinWargPack ;Command_ConstructWildSpiderlingHorde
+	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
+	;3 = Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
+	4 = Command_PurchaseUpgradeWildWolfDenLevel2
+	6 = Command_Sell
+End
+CommandSet WildWolfDenCommandSetLevel2
+	;1 = Command_ConstructGoblinWargPack ;Command_ConstructWildSpiderlingHorde
+	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
+	;3 = Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
+	4 = Command_PurchaseUpgradeWildWolfDenLevel3
+	6 = Command_Sell
+End
+CommandSet WildWolfDenCommandSetLevel3
+	;1 = Command_ConstructGoblinWargPack ;Command_ConstructWildSpiderlingHorde
+	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
+	;3 = Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
 	6 = Command_Sell
 End
 
@@ -771,7 +792,7 @@ End
 
 CommandSet WildFireDrakeCommandSet
 	1	= Command_ToggleStance
-	2	= Command_FireDrakeInferno	
+	2	= Command_FireDrakeBroodInferno //Command_FireDrakeInferno	
 	13 = Command_AttackMove
 	14 = Command_Stop
 	16  = Command_SetStanceBattle
