@@ -3,7 +3,7 @@
 ; ####################################################
 
 ; Commandset.INC for MORIA (Wild) faction...
-; -------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 ; NOTE: Keep this organized!
 
 
@@ -39,7 +39,7 @@ CommandSet WildFortressCommandSet
 	26	= Command_GenericReviveSlot10	
 	27	= Command_RadialBack		 
 End									 
-
+; ------------------------------------------------------------------------------
 CommandSet WildFortressExpansionPadCornerCommandSet //Added for SEE! 4 corner plots.
 	1 	= Command_ConstructWildBurrowsExpansion 
 	2 	= Command_ConstructWildSpiderHolesExpansion
@@ -52,7 +52,7 @@ CommandSet WildFortressExpansionPadSideCommandSet //Added for SEE! 3 side plots.
 	3 	= Command_ConstructWildArrowDenExpansion	
 	4 	= Command_ConstructWildGiantSentryExpansion
 End
-
+; ------------------------------------------------------------------------------
 CommandSet WildFortressCommandSetAI
     //Main Menu
 	1	= Command_ConstructWildPorter
@@ -78,7 +78,7 @@ CommandSet WildFortressCommandSetAI
 	20	= Command_GenericReviveSlot4
 	21	= Command_GenericReviveSlot5 
 End			
-	
+; ------------------------------------------------------------------------------	
 CommandSet WildFortressExpansionPadSpiderHolesCommandSetAI
 	1 = Command_ConstructWildSpiderHolesExpansion // (ini/fmoria\commandbutton.inc)
 End
@@ -89,6 +89,29 @@ CommandSet WildFortressExpansionPadGiantSentryCommandSetAI
 	1 = Command_ConstructWildGiantSentryExpansion // (ini/fmoria\commandbutton.inc)
 End
 
+; ------------------------------------------------------------------------------
+
+CommandSet WildPorterCommandSet
+    1  = Command_Stop
+	2  = Command_PorterExtinguishFire
+	3  = Command_PorterConstructWildLumberMill 
+	4  = Command_PorterConstructWildMineShaft
+	5  = Command_PorterConstructWildCave
+	6  = Command_PorterConstructWildSpiderPit
+	7  = Command_ConstructAngmarDen
+	8  = Command_PorterConstructWildFissure  
+	9  = Command_PorterConstructWildTreasureTrove 
+	10 = Command_PorterConstructWildSentryTower
+	11 = Command_PorterConstructWildFortress
+End
+
+
+
+
+
+
+
+
 
 
 CommandSet WildCastleWallHubCommandSetAI_SEE
@@ -96,7 +119,6 @@ CommandSet WildCastleWallHubCommandSetAI_SEE
 	4 = Command_CancelWallSpan
 	6 = Command_Sell
 End
-
 CommandSet WildWallUpgradeNodeCommandSetHoleAI
 	1 = Command_WildWallUpgradeToOpeningAI //Command_IsengardWallUpgradeToRegularGate
 	6 = Command_Sell
@@ -549,48 +571,51 @@ CommandSet GoblinCaveCommandSetLevel3
 End
 
 CommandSet GoblinFissureCommandSet	
-	1 = Command_ConstructGoblinTroll
-	2 = Command_ConstructWildMountainGiant
-	3 = Command_ConstructWildBabyDrakeHorde
-	4 = Command_UpgradeWildFissureLevel2
+	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
+	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	3 = Command_PurchaseTechnologyWildHeavyArmor
+	4 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
+	5 = Command_UpgradeWildFissureLevel2
 	6 = Command_Sell
 End
 
 CommandSet GoblinFissureCommandSetLevel2
-	1 = Command_ConstructGoblinTroll
-	2 = Command_ConstructWildMountainGiant
-	3 = Command_ConstructWildBabyDrakeHorde
-	4 = Command_PurchaseUpgradeWildFissureLevel3
+	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
+	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	3 = Command_PurchaseTechnologyWildHeavyArmor
+	4 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
+	5 = Command_PurchaseUpgradeWildFissureLevel3
 	6 = Command_Sell
 End
 
 CommandSet GoblinFissureCommandSetLevel3
-	1 = Command_ConstructGoblinTroll
-	2 = Command_ConstructWildMountainGiant
-	3 = Command_ConstructWildBabyDrakeHorde
+	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
+	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	3 = Command_PurchaseTechnologyWildHeavyArmor	
+	4 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
 	6 = Command_Sell
 End
 
 CommandSet WildSpiderPitCommandSet
-	1 = Command_ConstructWildSpiderlingHorde
-	2 = Command_ConstructWildSpiderRiderHorde
-	3 = Command_PurchaseSpiderVenomSackScienceUpgrade
-	4 = Command_PurchaseUpgradeWildSpiderPitLevel2
+	1 = Command_ConstructGoblinTroll //Command_ConstructWildSpiderlingHorde
+	;2 = Command_ConstructWildSpiderRiderHorde
+	2 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	3 = Command_PurchaseUpgradeWildSpiderPitLevel2
 	6 = Command_Sell
 End
 
 CommandSet WildSpiderPitCommandSetLevel2
-	1 = Command_ConstructWildSpiderlingHorde
-	2 = Command_ConstructWildSpiderRiderHorde
-	3 = Command_PurchaseSpiderVenomSackScienceUpgrade
-	4 = Command_PurchaseUpgradeWildSpiderPitLevel3
+	1 = Command_ConstructGoblinTroll //Command_ConstructWildSpiderlingHorde
+	;2 = Command_ConstructWildSpiderRiderHorde
+	2 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	3 = Command_PurchaseUpgradeWildSpiderPitLevel3
 	6 = Command_Sell
 End
 
 CommandSet WildSpiderPitCommandSetLevel3
-	1 = Command_ConstructWildSpiderlingHorde
-	2 = Command_ConstructWildSpiderRiderHorde
-	3 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	1 = Command_ConstructGoblinTroll //Command_ConstructWildSpiderlingHorde
+	;2 = Command_ConstructWildSpiderRiderHorde
+	2 = Command_PurchaseSpiderVenomSackScienceUpgrade
 	6 = Command_Sell
 End
 
@@ -616,27 +641,27 @@ End
 
 CommandSet WildTreasureTroveCommandSet
 	1 = Command_PurchaseTechnologyWildBasicTraining
-	2 = Command_PurchaseTechnologyWildHeavyArmor
-	3 = Command_PurchaseTechnologyWildForgedBlades
-	4 = Command_PurchaseTechnologyWildFireArrows
+	;2 = Command_PurchaseTechnologyWildHeavyArmor
+	;3 = Command_PurchaseTechnologyWildForgedBlades
+	;4 = Command_PurchaseTechnologyWildFireArrows
 	5 = Command_PurchaseUpgradeWildTreasureTroveLevel2
 	6 = Command_Sell
 End
 
 CommandSet WildTreasureTroveCommandSetLevel2
 	1 = Command_PurchaseTechnologyWildBasicTraining
-	2 = Command_PurchaseTechnologyWildHeavyArmor
-	3 = Command_PurchaseTechnologyWildForgedBlades
-	4 = Command_PurchaseTechnologyWildFireArrows
+	;2 = Command_PurchaseTechnologyWildHeavyArmor
+	;3 = Command_PurchaseTechnologyWildForgedBlades
+	;4 = Command_PurchaseTechnologyWildFireArrows
 	5 = Command_PurchaseUpgradeWildTreasureTroveLevel3
 	6 = Command_Sell
 End
 
 CommandSet WildTreasureTroveCommandSetLevel3
 	1 = Command_PurchaseTechnologyWildBasicTraining
-	2 = Command_PurchaseTechnologyWildHeavyArmor
-	3 = Command_PurchaseTechnologyWildForgedBlades
-	4 = Command_PurchaseTechnologyWildFireArrows
+	;2 = Command_PurchaseTechnologyWildHeavyArmor
+	;3 = Command_PurchaseTechnologyWildForgedBlades
+	;4 = Command_PurchaseTechnologyWildFireArrows
 	6 = Command_Sell	
 End
 
@@ -742,19 +767,7 @@ CommandSet WildSpellStoreCommandSet
 End
 
 
-CommandSet WildPorterCommandSet
-    1  = Command_Stop
-	2  = Command_PorterExtinguishFire
-	3  = Command_PorterConstructWildMineShaft
-	4  = Command_PorterConstructWildLumberMill
-	5  = Command_PorterConstructWildCave
-	6  = Command_PorterConstructWildSpiderPit
-	7  = Command_PorterConstructWildFissure  
-	8  = Command_PorterConstructWildSentryTower
-	9  = Command_PorterConstructWildTreasureTrove
-	10 = Command_PorterConstructWildFortress
 
-End
 
 CommandSet WildFireDrakeCommandSet
 	1	= Command_ToggleStance

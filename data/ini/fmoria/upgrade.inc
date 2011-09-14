@@ -133,9 +133,41 @@ Upgrade Upgrade_WildFissureLevel3
 	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
+;--------	SPIDER PIT  ----------------------------------------
 
+Upgrade Upgrade_WildSpiderPitLevel2
+	Type			= OBJECT
+	BuildCost		= GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_COST
+	BuildTime		= GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildSpiderPitLevel2
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
+End
 
+Upgrade Upgrade_WildSpiderPitLevel3
+	Type			= OBJECT
+	BuildCost		= GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_COST
+	BuildTime		= GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildSpiderPitLevel3
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
+End
 
+;--------	TREASUE TROVE  ----------------------------------
+
+Upgrade Upgrade_WildTreasureTroveLevel2
+	Type			= OBJECT
+	BuildCost		= GOBLIN_TREASURETROVE_LEVEL2_UPGRADE_COST
+	BuildTime		= GOBLIN_TREASURETROVE_LEVEL2_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildTreasureTroveLevel2
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
+End
+
+Upgrade Upgrade_WildTreasureTroveLevel3
+	Type			= OBJECT
+	BuildCost		= GOBLIN_TREASURETROVE_LEVEL3_UPGRADE_COST
+	BuildTime		= GOBLIN_TREASURETROVE_LEVEL3_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildTreasureTroveLevel3
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!	
+End
 
 
 
@@ -151,37 +183,9 @@ End
 
 
 
-//----SpiderPit----
-Upgrade Upgrade_WildSpiderPitLevel2
-	Type			= OBJECT
-	BuildCost		= GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_COST
-	BuildTime		= GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_BUILDTIME
-	DisplayName		= Upgrade:WildSpiderPitLevel2
-End
 
-Upgrade Upgrade_WildSpiderPitLevel3
-	Type			= OBJECT
-	BuildCost		= GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_COST
-	BuildTime		= GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_BUILDTIME
-	DisplayName		= Upgrade:WildSpiderPitLevel3
-End
 
-//----TreasureTrove----
-Upgrade Upgrade_WildTreasureTroveLevel2
-	Type			= OBJECT
-	BuildCost		= GOBLIN_TREASURETROVE_LEVEL2_UPGRADE_COST
-	BuildTime		= GOBLIN_TREASURETROVE_LEVEL2_UPGRADE_BUILDTIME
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_IMPORTANT
-	DisplayName		= Upgrade:WildTreasureTroveLevel2
-End
 
-Upgrade Upgrade_WildTreasureTroveLevel3
-	Type			= OBJECT
-	BuildCost		= GOBLIN_TREASURETROVE_LEVEL3_UPGRADE_COST
-	BuildTime		= GOBLIN_TREASURETROVE_LEVEL3_UPGRADE_BUILDTIME
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_IMPORTANT
-	DisplayName		= Upgrade:WildTreasureTroveLevel3
-End
 
 //----MineShaft----
 Upgrade Upgrade_WildMineShaftLevel2

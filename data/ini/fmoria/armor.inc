@@ -7,72 +7,57 @@
 
 ;------------------------------------------------------------------------------
 Armor WildFortressArmor
-	Armor = DEFAULT			20% //25%		;this sets the level for all nonspecified damage types
-	Armor = CRUSH			5% //10%			;horseman damage
-	Armor = SLASH			10% //20%			;soldier damage
-  Armor = CAVALRY	  		10%
-	Armor = URUK			15% //20% //40%    
-	Armor = SPECIALIST		15% //20% //25%  
-	Armor = PIERCE			0% ;1%			;archer damage
-	Armor = FLAME			5%			;fire damage
-	Armor = LOGICAL_FIRE		5%			;fire logic
-	Armor = SIEGE			125% //150%		;siege damage
-	Armor = STRUCTURAL		0% //33% //25%		;structural damage (from structure arrows)  
-	Armor = HERO			10% //20%		;Hero damage  
-	Armor = HERO_RANGED	5% //10%			;Hero bow damage
-	Armor = LOGICAL_FIRE	 	5%
+	Armor = DEFAULT				20% 		;this sets the level for all nonspecified damage types
+	Armor = CRUSH				5%  		;horseman damage
+	Armor = SLASH				10% 		;soldier damage
+  Armor = CAVALRY	  			10%
+	Armor = URUK				15%    
+	Armor = SPECIALIST			15% 
+	Armor = PIERCE				0% 		;archer damage
+	Armor = FLAME				5%			;fire damage
+	Armor = LOGICAL_FIRE			5%			;fire logic
+	Armor = SIEGE				125%		;siege damage
+	Armor = STRUCTURAL			0%			;structural damage (from structure arrows)  
+	Armor = HERO				10%		;Hero damage  
+	Armor = HERO_RANGED		5%			;Hero bow damage
+	Armor = LOGICAL_FIRE	 		5%
 End
 
 Armor WildFortressExpansionArmor
-	Armor = DEFAULT			40%    //this sets the level for all nonspecified damage types
-	Armor = CRUSH			10% ;50    //horseman damage
-	Armor = SLASH			20%	//soldier damage
-  Armor = CAVALRY	  		20%
-	Armor = URUK			30% //80%
-	Armor = SPECIALIST		30% //40% ;100
-	Armor = PIERCE			0% ;1% ;25     //archer damage
-	Armor = FLAME			10% ;100    //fire damage
-	Armor = SIEGE			200% ;300    //siege damage
-	Armor = STRUCTURAL		1% //66%    ;structural damage (from structure arrows) 
-	Armor = HERO			20%    //Hero damage  
-	Armor = HERO_RANGED	10%     //Hero bow damage
-	Armor = LOGICAL_FIRE	 	10%
-End
-
-;------------------------------------------------------------------------------
-
-Armor WildFortressExpansionArmor
-	Armor = DEFAULT			40%    //this sets the level for all nonspecified damage types
-	Armor = CRUSH			10% ;50    //horseman damage
-	Armor = SLASH			20%	//soldier damage
-  Armor = CAVALRY	  		20%
-	Armor = URUK			30% //80%
-	Armor = SPECIALIST		30% //40% ;100
-	Armor = PIERCE			0% ;1% ;25     //archer damage
-	Armor = FLAME			10% ;100    //fire damage
-	Armor = SIEGE			200% ;300    //siege damage
-	Armor = STRUCTURAL		1% //66%    ;structural damage (from structure arrows) 
-	Armor = HERO			20%    //Hero damage  
-	Armor = HERO_RANGED	10%     //Hero bow damage
-	Armor = LOGICAL_FIRE	 	10%
+	Armor = DEFAULT				40%    //this sets the level for all nonspecified damage types
+	Armor = CRUSH				10% ;50    //horseman damage
+	Armor = SLASH				20%	//soldier damage
+  Armor = CAVALRY	  			20%
+	Armor = URUK				30% //80%
+	Armor = SPECIALIST			30% //40% ;100
+	Armor = PIERCE				0% ;1% ;25     //archer damage
+	Armor = FLAME				10% ;100    //fire damage
+	Armor = SIEGE				200% ;300    //siege damage
+	Armor = STRUCTURAL			1% //66%    ;structural damage (from structure arrows) 
+	Armor = HERO				20%    //Hero damage  
+	Armor = HERO_RANGED		10%     //Hero bow damage
+	Armor = LOGICAL_FIRE	 		10%
 End
 
 ;------------------------------------------------------------------------------
 Armor WildStructureArmor			; NOTE - This is based on StructureArmor (original value to the far right)
-  Armor = DEFAULT		50% //60%	; this sets the level for all nonspecified damage types ; Changed from 75%
-  Armor = CRUSH			10% //1%	; horseman damage
-  Armor = SLASH			15% //40%	; soldier damage  				Changed from 75%
-  Armor = CAVALRY		15% //40%    ; 							Originally 25%
-  Armor = SPECIALIST		20% //40% 	; 						Changed from 75%
-  Armor = PIERCE			0% //2%	; archer damage		RotWK originally 20%
-  Armor = FLAME			25% //100%	; fire damage
-  Armor = FROST			25% //100%   ;
-  Armor = SIEGE			150% //150%	; siege damage
-  Armor = STRUCTURAL	5% //25%	; Grond damage destroys all.  
-  Armor = HERO			25% //50%	; Hero damage  
-  Armor = HERO_RANGED	10%	; Hero bow damage
-  Armor = LOGICAL_FIRE	10% //2%
+  Armor = DEFAULT       	 	50% //60%	; This sets the level for all nonspecified damage types!
+  Armor = CRUSH         	 	10% //1%	; Horseman damage
+  Armor = SLASH         	 	15% //40%	; Soldier damage  
+  Armor = CAVALRY				15% //40%   ; ???			
+  Armor = URUK					20% //40% 	; ???
+  Armor = SPECIALIST		 		20% //40% 	; Pikeman damage	
+  Armor = PIERCE					0%  //2%	; Archer damage
+  Armor = FLAME         		25% //100%	; Fire damage
+  Armor = FROST          		100%   	; Ice damage
+  Armor = SIEGE         		150%		; Siege damage
+  Armor = STRUCTURAL		 	5% //25%	; Grond damage destroys all!
+  Armor = HERO          	 	25% //50%	; Hero damage
+  Armor = HERO_RANGED   	 	10%		; Hero bow damage
+  Armor = LOGICAL_FIRE		  	10% //2%
 End
+
+
 
 ;------------------------------------------------------------------------------
 Armor BalrogArmor
