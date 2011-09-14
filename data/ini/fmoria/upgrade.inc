@@ -151,6 +151,24 @@ Upgrade Upgrade_WildSpiderPitLevel3
 	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
+;--------	WOLF DEN  ----------------------------------------
+
+Upgrade Upgrade_WildWolfDenLevel2
+	Type			= OBJECT
+	BuildCost		= GOBLIN_WOLFDEN_LEVEL2_UPGRADE_COST
+	BuildTime		= GOBLIN_WOLFDEN_LEVEL2_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildWolfDenLevel2
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
+End
+
+Upgrade Upgrade_WildWolfDenLevel3
+	Type			= OBJECT
+	BuildCost		= GOBLIN_WOLFDEN_LEVEL3_UPGRADE_COST
+	BuildTime		= GOBLIN_WOLFDEN_LEVEL3_UPGRADE_BUILDTIME
+	DisplayName		= Upgrade:WildWolfDenLevel3
+	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
+End
+
 ;--------	TREASUE TROVE  ----------------------------------
 
 Upgrade Upgrade_WildTreasureTroveLevel2

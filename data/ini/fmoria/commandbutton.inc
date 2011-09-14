@@ -779,10 +779,21 @@ END
 CommandButton Command_PorterConstructWildSpiderPit
 	Command				= DOZER_CONSTRUCT
 	Object				= WildSpiderPit
-	TextLabel			= CONTROLBAR:ConstructWildWildSpiderPit
+	TextLabel			= CONTROLBAR:ConstructWildSpiderPit
 	ButtonImage			= BWSpiderPit
 	ButtonBorderType	= BUILD 
-	DescriptLabel		= CONTROLBAR:ToolTipConstructWildWildSpiderPit
+	DescriptLabel		= CONTROLBAR:ToolTipConstructWildSpiderPit
+	Radial				= Yes  
+	;InPalantir			= Yes
+END
+
+CommandButton Command_PorterConstructWildWolfDen
+	Command				= DOZER_CONSTRUCT
+	Object				= WolfWargPit
+	TextLabel			= CONTROLBAR:ConstructWildWolfDen
+	ButtonImage			= KUTrollDenIcon
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructWildWolfDen
 	Radial				= Yes  
 	;InPalantir			= Yes
 END
@@ -878,7 +889,6 @@ CommandButton Command_PurchaseUpgradeWildSpiderPitLevel2
   Radial            = Yes
   InPalantir	   	= Yes
 End
-
 CommandButton Command_PurchaseUpgradeWildSpiderPitLevel3
   Command           = OBJECT_UPGRADE
   Upgrade           = Upgrade_WildSpiderPitLevel3
@@ -887,6 +897,29 @@ CommandButton Command_PurchaseUpgradeWildSpiderPitLevel3
   ButtonImage       = UCCommon_UpgradeStructureNew
   ButtonBorderType  = UPGRADE
   DescriptLabel     = CONTROLBAR:ToolTipBuildWildSpiderPitLevel3Upgrade
+  Radial            = Yes
+  InPalantir	   	= Yes
+End
+
+CommandButton Command_PurchaseUpgradeWildWolfDenLevel2
+  Command           = OBJECT_UPGRADE
+  Upgrade           = Upgrade_WildWolfDenLevel2
+  Options			= CANCELABLE
+  TextLabel         = CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
+  ButtonImage       = UCCommon_UpgradeStructureNew
+  ButtonBorderType  = UPGRADE
+  DescriptLabel     = CONTROLBAR:ToolTipBuildWildWolfDenLevel2Upgrade
+  Radial            = Yes
+  InPalantir	   	= Yes
+End
+CommandButton Command_PurchaseUpgradeWildWolfDenLevel3
+  Command           = OBJECT_UPGRADE
+  Upgrade           = Upgrade_WildWolfDenLevel3
+  Options			= CANCELABLE
+  TextLabel         = CONTROLBAR:ConstructWildWolfDenLevel3Upgrade
+  ButtonImage       = UCCommon_UpgradeStructureNew
+  ButtonBorderType  = UPGRADE
+  DescriptLabel     = CONTROLBAR:ToolTipBuildWildWolfDenLevel3Upgrade
   Radial            = Yes
   InPalantir	   	= Yes
 End
