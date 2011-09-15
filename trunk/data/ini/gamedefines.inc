@@ -1,8 +1,9 @@
-;///////////////////////////////////////////////////////////////////////////
-; FILE: GameData.ini (SYSTEM) /////////////////////////////////////////////
-;//////////////////////////////////////////////////////////////////////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
 
-;------------------------BALANCE DATA---------------------------- 
+; GameDefines.INI for S.E.E.... (GENERAL BALANCE DATA!)
+; ------------------------------------------------------------------------------
 
 ;NOTE: Attacks are as such: PreAttackDelay -> Both: FiringDuration & DelayBetweenShots -> After DBS starts PreAttackDelay again.
 
@@ -46,33 +47,36 @@
 #define SENTRY_TOWER_COST				500
 #define SENTRY_TOWER_BUILDTIME				30
 
-#define SHROUD_CLEAR_STANDARD				25
-#define SHROUD_CLEAR_MACHINE				250
-#define SHROUD_CLEAR_ARTILLERY				400
-#define SHROUD_CLEAR_HERO				300
-#define SHROUD_CLEAR_HOBBIT				160
-#define SHROUD_CLEAR_BASE_DEFENSE			500
-#define SHROUD_CLEAR_FLIER				600
-#define SHROUD_CLEAR_RANGED_HERO			500
-#define SHROUD_CLEAR_ENT				650
-#define SHROUD_CLEAR_GIANT				400
-#define SHROUD_CLEAR_TROLL				400
-#define SHROUD_CLEAR_TRANSPORTSHIP			200
-#define SHROUD_CLEAR_BATTLESHIP				600
-#define SHROUD_CLEAR_SKULL_TOTEM			400
+;------------------------------------------------------------------------------ SEE!
+#define SHROUD_CLEAR_STANDARD								200 //100
+#define SHROUD_CLEAR_MACHINE								250
+#define SHROUD_CLEAR_ARTILLERY								500
+#define SHROUD_CLEAR_HERO									400
+#define SHROUD_CLEAR_RANGED_HERO							500
+#define SHROUD_CLEAR_HOBBIT								225 //250
+#define SHROUD_CLEAR_BASE_DEFENSE							700 //800
+#define SHROUD_CLEAR_FLIER									750 ;900
+#define SHROUD_CLEAR_ENT									600 //700 //650
+#define SHROUD_CLEAR_GIANT									500
+#define SHROUD_CLEAR_TROLL									400
+#define SHROUD_CLEAR_TRANSPORTSHIP							400
+#define SHROUD_CLEAR_BATTLESHIP							600
+#define SHROUD_CLEAR_SKULL_TOTEM							500 //700
 
-#define VISION_STANDARD_TOMBOMB				250
-#define VISION_STANDARD_MELEE				175
-#define VISION_STANDARD_HORSE				175
-#define VISION_STANDARD_LARGE_ANIMAL			175
-#define VISION_STANDARD_SHORT				200
-#define VISION_HERO_RANGED				450
-#define VISION_HERO_STANDARD				175
-#define VISION_FLIER					400
-#define VISION_BASE_DEFENSE				600
-#define VISION_HOBBIT					100
-#define CREEP_VISION					150
-#define	VISION_ENT					500
+#define VISION_STANDARD_TOMBOMB							350
+#define VISION_STANDARD_MELEE								250
+#define VISION_STANDARD_HORSE								300
+#define VISION_STANDARD_LARGE_ANIMAL						350 // firedrake
+#define VISION_STANDARD_SHORT								150 //200
+#define VISION_HERO_RANGED									400
+#define VISION_HERO_STANDARD								175 //300
+#define VISION_FLIER										  	375 ;500
+#define VISION_BASE_DEFENSE									600 //700
+#define VISION_HOBBIT										200
+#define CREEP_VISION										250
+#define	VISION_ENT											500 //600
+#define VISION_STANDARD_MELEE_HORDEMEMBER					150
+;------------------------------------------------------------------------------ SEE!
 
 #define STANDARD_HORDE_EXIT_DELAY			10
 
@@ -86,11 +90,11 @@
 #define INFANTRY_TAUNT_POINT_RADIUS			100
 
 
-#define DEFAULT_STRUCTURE_HEALDELAY			120 //200 //300
+#define DEFAULT_STRUCTURE_HEALDELAY			200 //300
 
 #define GENERIC_FACTION_GARRISONABLE			ANY +INFANTRY +BANNER -CAVALRY -SUMMONED -WildSpiderling -WildSpiderlingHorde -COMBO_HORDE -IsengardSharku -AngmarThrallMaster ;+BarrowWight +BarrowWight_Slaved 
 #define GENERIC_FACTION_SLAUGHTERABLE			ANY +INFANTRY +CAVALRY +DOZER -HERO -SUMMONED 	;was -DOZER
-#define GENERIC_BUFF_RECIPIENT_OBJECT_FILTER		ANY +INFANTRY +CAVALRY -MACHINE -IMMOBILE -DOZER -HERO -STRUCTURE -BASE_FOUNDATION -HORDE -DwarvenBattleWagon -RohanOathbreaker -MordorRamCrew +MordorWorker -IsengardRamCrew -IsengardBeserker -DwarvenZerker -DwarvenZerkerHorde -NoldorWarrior -NoldorWarriorHorde -GondorKnightsofDol -GondorKnightsofDolHorde -WildBabyDrake -WildBabyDrakeHorde -MordorBlackRider -MordorBlackRiderHorde -IsengardFanatic -IsengardBerserkerHorde 
+#define GENERIC_BUFF_RECIPIENT_OBJECT_FILTER		ANY +INFANTRY +CAVALRY -MACHINE -IMMOBILE -DOZER -HERO -STRUCTURE -BASE_FOUNDATION -HORDE -DwarvenBattleWagon -RohanOathbreaker -MordorRamCrew ;-MordorHaradrimArcherHordeOnMumakil -MordorHaradrimArcherMumakil -DwarvenBattleWagon -RohanOathbreaker -MordorRamCrew +MordorWorker -IsengardRamCrew -IsengardBeserker -DwarvenZerker -DwarvenZerkerHorde -NoldorWarrior -NoldorWarriorHorde -GondorKnightsofDol -GondorKnightsofDolHorde -WildBabyDrake -WildBabyDrakeHorde -MordorBlackRider -MordorBlackRiderHorde -IsengardFanatic -IsengardBerserkerHorde 
 
 												; Afraid of objects must be SCARY kindof as well.
 #define EMOTION_AFRAIDOF_OBJECTFILTER			NONE +GondorGwaihir +RohanTreeBerd +RohanEntFir +RohanEntAsh +RohanEntBirch +MordorBalrog +MordorFellBeast +AngmarWitchking +MordorWitchKingOnFellBeast +MordorCaveTroll +MordorMountainTroll +MordorDrummerTroll +MordorMumakil +MordorGateWatchersExpansion +BarrowWight +NecromancerStatue +GoblinCaveTroll +SpellBookArrowVolley +TomBombadil +TomBombadil_Summoned +GoblinCaveTroll_FromTrollLair +CaveTroll_Slaved +ElvenVigilantEnt +RohanGenericEnt +RohanEntFir_Summoned +RohanEntBirch_Summoned +EvilMenBlackRider +CreateAHero
@@ -170,7 +174,7 @@
 #define PORTER_FIRE_EXTINGUISHER_DECREASEBURNRATE_AMOUNT 	100.0
 #define PORTER_FIRE_EXTINGUISHER_ABILITY_START_RANGE	 	115 	; // should be greater than PORTER_FIRE_EXTINGUISHER_DECREASEBURNRATE_RADIUS
 
-// Command Point bonuses! ----------------------------------------------------- SEE
+// Command Point bonuses! ----------------------------------------------------- SEE!
 #define GENERIC_STATUE_COMMAND_POINT_BONUS				25 //100
 #define GENERIC_ECONOMY_COMMAND_POINT_BONUS				50 //150
 #define DORMITORY_COMMAND_POINT_BONUS					100 //150
@@ -178,8 +182,7 @@
 #define OUTPOST_COMMAND_POINT_BONUS						250 //200 //150
 #define GENERIC_FORTRESS_COMMAND_POINT_BONUS				500 //400 //500
 
-// ---------------------------------------------------------------------------------- SEE
-
+// ---------------------------------------------------------------------------------- SEE!
 #define SHOCKWAVE_RESISTANCE_WEAK							10 //20
 #define SHOCKWAVE_RESISTANCE_STANDARD					25 //40
 #define SHOCKWAVE_RESISTANCE_FORMIDABLE					50 //60

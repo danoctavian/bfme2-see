@@ -14765,8 +14765,12 @@ CONTROLBAR:ConstructMordorStatue
 "Build Mordor Hero&ic Statue"
 END
 
-CONTROLBAR:ConstructWildStatue
+CONTROLBAR:ConstructWildDrum
 "Build Troll &Drum"
+END
+
+OBJECT:WildDrumDescription
+"Nearby allies will heal if not under attack \n \n Allies near the Statue gain \n +25% Damage, \n and earn experience 25% faster \n \n Reduces the cost of Infantry \n Increases command point limit by 25"
 END
 
 CONTROLBAR:ConstructMenStatue
@@ -34553,6 +34557,10 @@ OBJECT:Tree01
 "Tree"
 End
 
+OBJECT:WildDrum
+"Troll Drum"
+End
+
 OBJECT:TrollDrum
 "Ettenmoors Drum"
 End
@@ -48880,10 +48888,7 @@ CONTROLBAR:TooltipCommand_WildCastleWallHub_BeginWallSpan
 "Left click and drag to construct a Spiked Fence"
 END
 
-OBJECT:WildStatueDescription_SEE
-//"Nearby allies will heal if not under attack \n \n Allies near the statue gain \n +25% Armor, \n and earn experience 25% faster \n Increases command point limit by 25 \n \n Reduces the cost of Infantry"
-"Nearby allies will heal if not under attack \n \n Allies near the Statue gain \n +25% Damage, \n and earn experience 25% faster \n \n Reduces the cost of Infantry \n Increases command point limit by 25"
-END
+
 
 CONTROLBAR:ConstructGoblinPikemanHorde
 "Goblin &Pikemen"

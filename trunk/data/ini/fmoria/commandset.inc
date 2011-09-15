@@ -12,13 +12,14 @@ CommandSet WildPorterCommandSet
 	2  = Command_PorterExtinguishFire
 	3  = Command_PorterConstructWildLumberMill 
 	4  = Command_PorterConstructWildMineShaft
-	5  = Command_PorterConstructWildCave
-	6  = Command_PorterConstructWildSpiderPit
-	7  = Command_PorterConstructWildWolfDen //Command_ConstructAngmarDen
-	8  = Command_PorterConstructWildFissure  
-	9  = Command_PorterConstructWildTreasureTrove 
-	10 = Command_PorterConstructWildSentryTower
-	11 = Command_PorterConstructWildFortress
+	5  = Command_PorterConstructWildDrum	
+	6  = Command_PorterConstructWildCave
+	7  = Command_PorterConstructWildSpiderPit
+	8  = Command_PorterConstructWildWolfDen //Command_ConstructAngmarDen
+	9  = Command_PorterConstructWildFissure  
+	10  = Command_PorterConstructWildTreasureTrove 
+	11 = Command_PorterConstructWildSentryTower
+	12 = Command_PorterConstructWildFortress
 End
 
 ; ------------------------------------------------------------------------------
