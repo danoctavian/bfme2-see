@@ -7,6 +7,16 @@
 ; NOTE: Keep this organized!
 
 
+CommandButton Command_PorterConstructWildDrum ;SEE!
+	Command				= DOZER_CONSTRUCT
+	Object				= TrollDrum
+	TextLabel			= CONTROLBAR:ConstructWildDrum
+	ButtonImage			= BRBWildStatue //BGHeroicStatue
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= OBJECT:WildDrumDescription
+	Radial				= Yes  
+End
+
 CommandButton Command_WildWallUpgradeToOpeningAI
 	Command				= OBJECT_UPGRADE 
 	Options				= CANCELABLE NOT_QUEUEABLE

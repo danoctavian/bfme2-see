@@ -2460,3 +2460,28 @@ AudioEvent GoblinVoiceFearTrample
   Type = world everyone shrouded
   SubmixSlider = voice
 End
+
+;--------------------------------- Goblin Drummer -------------------------------
+AudioEvent MoriaGoblinsDrummerArrives_SEE
+  Sounds      = GoblinDrummerCreated //WSMoria_goblina
+  Limit	     = 1
+  Volume      = 200 //105
+  PitchShift = -15 0
+  ;VolumeShift = -10
+  Type = world everyone shrouded ;voice	;voice parameter conflicts with CampOrc announcement
+  SubmixSlider = SoundFX
+End
+
+
+AudioEvent MoriaGoblinDrumHit_SEE
+  Control = interrupt
+  Sounds =  GoblinDrum1 GoblinDrum2 GoblinDrum3 GoblinDrum4
+  Priority = normal
+  MinRange    = 200
+  MaxRange    = 600
+  Limit = 4
+  PitchShift = -5 5
+  Volume = 100 //55
+  Type   = world shrouded everyone
+  SubmixSlider = SoundFX
+End

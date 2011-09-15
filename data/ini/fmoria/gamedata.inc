@@ -3,12 +3,13 @@
 ; ####################################################
 
 ; Gamedata.INC for MORIA (Wild) faction...
-; ------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------ "SEE!" = The codes have been adapted/converted from the obsolete Beta 4.7 WiP...
 ; NOTE: Keep this organized!
 
-#define GOBLIN_RESOURCEBUILDING_BUILDTIME					60  	// 1 minute - All resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
-#define GOBLIN_BASICBUILDING_BUILDTIME						120 	// 2 minutes - All non resource buildings! (Barracks, Stables, Armory, etc)
-#define GOBLIN_FORTRESS_BUILDTIME							300 	// 5 minutes
+#define GOBLIN_RESOURCEBUILDING_BUILDTIME					60  	// 1 minute - Resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
+#define GOBLIN_SENTRY_TOWER_BUILDTIME						90 		// 1½ minutes - Battletowers!
+#define GOBLIN_BASICBUILDING_BUILDTIME						120 	// 2 minutes - Non resource buildings! (Barracks, Stables, Armory, etc)
+#define GOBLIN_FORTRESS_BUILDTIME							240 	// 4 minutes - Fortress Keeps!
 
 ;--------	FORTRESS  -------------------------------------------------------- SEE!
 
@@ -102,6 +103,15 @@
 #define WILD_CASTLE_WALLHUB_HEALTH_DAMAGED				5000 //40000
 #define WILD_CASTLE_WALLHUB_HEALTH_REALLY_DAMAGED		1000 //10000
 
+;--------	SENTRY TOWER  -------------------------------------------------- SEE!
+
+#define WILD_SENTRY_TOWER_BUILDCOST						2000
+#define WILD_SENTRY_TOWER_HEALTH							20000
+#define WILD_SENTRY_TOWER_DAMAGED						10000
+#define WILD_SENTRY_TOWER_REALLY_DAMAGED					5000
+#define WILD_SENTRY_TOWER_ARROW_UPGRADE_BUILDCOST		500
+#define WILD_SENTRY_TOWER_ARROW_UPGRADE_BUILDTIME		30
+
 ;--------	MINE SHAFT  ------------------------------------------------------ SEE!
 
 #define GOBLIN_MINE_BUILDCOST								300
@@ -162,17 +172,21 @@
 #define WILD_LUMBERMILL_LVL2_EXP_NEEDED			2000
 #define WILD_LUMBERMILL_LVL3_EXP_NEEDED 		5000
 
-;--------	DRUM  ----------------------------------------------
+;--------	DRUM  ---------------------------------------------- SEE!
 
-#define GOBLIN_DRUM_BUILDCOST					100
 
-#define GOBLIN_DRUM_SHROUD_CLEAR				160
+#define GOBLIN_DRUM_BUILDCOST					500
 #define GOBLIN_DRUM_VISION_RANGE				160
-#define GOBLIN_DRUM_HEALTH						20000
-#define GOBLIN_DRUM_HEALTH_DAMAGED			10000
-#define GOBLIN_DRUM_HEALTH_REALLY_DAMAGED		5000
+#define GOBLIN_DRUM_SHROUD_CLEAR				200
+#define GOBLIN_DRUM_HEALTH						10000 //20000
+#define GOBLIN_DRUM_HEALTH_DAMAGED			5000 //10000
+#define GOBLIN_DRUM_HEALTH_REALLY_DAMAGED		2500 //5000
 #define GOBLIN_DRUM_HEALTH_HOLE       			5000.0
-#define GOBLIN_DRUM_BOUNTY_VALUE				100
+#define GOBLIN_DRUM_BOUNTY_VALUE				30
+
+#define GOBLIN_DRUM_AOE_RADIUS					200
+#define GOBLIN_DRUM_AOE_RADIUS_DECAL			440 // should be about 2.2 times the radius
+#define GOBLIN_DRUM_REFUND_VALUE				75
 
 ;--------	CAVE  ---------------------------------------------- SEE!
 
@@ -306,15 +320,7 @@
 #define SKULL_TOTEM_STEALTH_DETECT_RATE				1000	; ms
 #define SKULL_TOTEM_STEALTH_DETECT_RADIUS			400
 
-;//------------------------SENTRY TOWER--------------------
 
-#define WILD_SENTRY_TOWER_HEALTH				1500
-#define WILD_SENTRY_TOWER_DAMAGED				1000
-#define WILD_SENTRY_TOWER_REALLY_DAMAGED			500
-#define WILD_SENTRY_TOWER_BUILDCOST				500
-#define WILD_SENTRY_TOWER_BUILDTIME				60
-#define WILD_SENTRY_TOWER_ARROW_UPGRADE_BUILDTIME		30
-#define WILD_SENTRY_TOWER_ARROW_UPGRADE_BUILDCOST		500
 
 
 ;//======================WILDMEN========================

@@ -1,9 +1,30 @@
-///////////////////////////
-// EXPERIENCELEVELS.INC //
-/////////////////////////
-//Moria//
-////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
 
+; Experiencelevels.INC for MORIA (Wild) faction...
+; ------------------------------------------------------------------------------
+; NOTE: Keep this organized!
+
+; ------------------------------------------------------------------------------ SEE!
+ExperienceLevel	WildTrollDrum1	//Based on Gondor's hero statue!
+	TargetNames					=	TrollDrum
+	RequiredExperience			=	1
+	Rank						=	1
+	AttributeModifiers				=	BasicLevelUpProduction1
+	Upgrades						=	Upgrade_StructureLevel1
+	ExperienceAward				=	25
+	SelectionDecal
+		Texture						=	decal_hero_evil
+		Style						=	SHADOW_ALPHA_DECAL
+		OpacityMin					=	30%
+		OpacityMax					=	60%
+		MinRadius			  		=	GOBLIN_DRUM_AOE_RADIUS_DECAL //is 440, was 450
+		MaxRadius					=	GOBLIN_DRUM_AOE_RADIUS_DECAL //is 450, was 450
+		MaxSelectedUnits	  			=	40
+	End		
+End	
+; ------------------------------------------------------------------------------
 
 ;------------ Wild ---------------
 ExperienceLevel	WildGenericLevel1	
