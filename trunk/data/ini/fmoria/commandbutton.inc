@@ -17,6 +17,17 @@ CommandButton Command_PorterConstructWildDrum ;SEE!
 	Radial				= Yes  
 End
 
+CommandButton  Command_PorterConstructWildWallHub ;SEE!
+	Command          	= DOZER_CONSTRUCT
+	Options			 	= CANCELABLE
+	Object           	= WildCastleWallHub
+	TextLabel        	= CONTROLBAR:Command_ConstructWildWallHub
+	ButtonImage      	= BRBWildBuildHub //BIWall_WallHub
+	ButtonBorderType 	= BUILD 
+	DescriptLabel    		= CONTROLBAR:TooltipCommand_ConstructWildWallHub
+	Radial           	= Yes  
+End
+
 CommandButton Command_WildWallUpgradeToOpeningAI
 	Command				= OBJECT_UPGRADE 
 	Options				= CANCELABLE NOT_QUEUEABLE
@@ -564,6 +575,40 @@ CommandButton Command_ConstructWildGiantSentryExpansion
 	DescriptLabel    	 	= CONTROLBAR:ToolTipConstructWildGiantSentryExpansion
 	Radial           	= Yes  
 End
+
+CommandButton Command_WildWallUpgradeToHub
+	Command				= OBJECT_UPGRADE 
+	Options				= CANCELABLE NOT_QUEUEABLE
+	Object        		= WildCastleWallHub //IsengardCastleWallHub
+	Upgrade				= Upgrade_WildWallHub //IsengardWallHub
+	TextLabel     		= CONTROLBAR:Command_WildWallUpgradeToHub
+	ButtonImage   		= BRBWildBuildHub //BIWall_WallHub
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:TooltipCommand_WildWallUpgradeToHub
+	Radial				= Yes
+	InPalantir	   		= Yes
+End
+CommandButton Command_WildWallUpgradeToOpening
+  Command               = SELL
+  TextLabel				= CONTROLBAR:Command_WildWallUpgradeToRegularGate
+  ButtonImage           = BRBWildBuildWall
+  ButtonBorderType       = SYSTEM
+  DescriptLabel			=CONTROLBAR:TooltipCommand_WildWallUpgradeToRegularGate
+  Radial				= Yes
+	InPalantir	   		= No
+End
+CommandButton Command_WildCastleWallHub_BeginWallSpan
+	Command       		= DOZER_CONSTRUCT
+	Object        		= WildCastleWallHub
+	Options				= OPTION_ONE
+	TextLabel     		= CONTROLBAR:Command_WildCastleWallHub_BeginWallSpan
+	ButtonImage   		= BRBWildBuildWall //BIWall_BuildWall
+	ButtonBorderType    	= BUILD
+	DescriptLabel       	= CONTROLBAR:TooltipCommand_WildCastleWallHub_BeginWallSpan
+	Radial				= Yes
+	InPalantir	   		= No
+End
+
 
 CommandButton Command_WildCastleWallHub_BeginWallSpanAI_SEE
 	Command = DOZER_CONSTRUCT

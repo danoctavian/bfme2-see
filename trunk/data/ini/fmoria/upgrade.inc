@@ -97,6 +97,16 @@ Upgrade Upgrade_HasDragonNestFireDrake
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
 End
 
+;--------	WALLS  ---------------------------------------------
+
+Upgrade Upgrade_WildWallHub
+	DisplayName 		= UPGRADE:Upgrade_IsengardWallHub
+	Type				= OBJECT
+	BuildTime			= WILD_CASTLE_WALLHUB_BUILDTIME
+	BuildCost			= WILD_CASTLE_WALLHUB_BUILDCOST
+	//ResearchSound			= CampSoldierUpgradeNumenorStonework
+End
+
 ;--------	CAVE  ----------------------------------------------
 
 Upgrade Upgrade_WildCaveLevel2
