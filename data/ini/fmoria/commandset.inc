@@ -6,7 +6,7 @@
 ; ------------------------------------------------------------------------------
 ; NOTE: Keep this organized!
 
-
+; ------------------------------------------------------------------------------ SEE!
 CommandSet WildPorterCommandSet
     1  = Command_Stop
 	2  = Command_PorterExtinguishFire
@@ -18,12 +18,12 @@ CommandSet WildPorterCommandSet
 	8  = Command_PorterConstructWildWolfDen //Command_ConstructAngmarDen
 	9  = Command_PorterConstructWildFissure  
 	10  = Command_PorterConstructWildTreasureTrove 
-	11 = Command_PorterConstructWildSentryTower
-	12 = Command_PorterConstructWildFortress
+	12 = Command_PorterConstructWildWallHub	
+	13 = Command_PorterConstructWildSentryTower
+	14 = Command_PorterConstructWildFortress
 End
 
-; ------------------------------------------------------------------------------
-
+; ------------------------------------------------------------------------------ SEE!
 CommandSet WildFortressCommandSet
 	InitialVisible = 6
     //Main Menu
@@ -56,7 +56,7 @@ CommandSet WildFortressCommandSet
 	26	= Command_GenericReviveSlot10	
 	27	= Command_RadialBack		 
 End									 
-; ------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------ SEE!
 CommandSet WildFortressExpansionPadCornerCommandSet //Added for SEE! 4 corner plots.
 	1 	= Command_ConstructWildBurrowsExpansion 
 	2 	= Command_ConstructWildSpiderHolesExpansion
@@ -95,7 +95,7 @@ CommandSet WildFortressCommandSetAI
 	20	= Command_GenericReviveSlot4
 	21	= Command_GenericReviveSlot5 
 End			
-; ------------------------------------------------------------------------------	
+; ------------------------------------------------------------------------------ SEE!
 CommandSet WildFortressExpansionPadSpiderHolesCommandSetAI
 	1 = Command_ConstructWildSpiderHolesExpansion // (ini/fmoria\commandbutton.inc)
 End
@@ -106,9 +106,20 @@ CommandSet WildFortressExpansionPadGiantSentryCommandSetAI
 	1 = Command_ConstructWildGiantSentryExpansion // (ini/fmoria\commandbutton.inc)
 End
 
-; ------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------ SEE!
+CommandSet WildCastleWallHubCommandSet
+	1 = Command_WildCastleWallHub_BeginWallSpan	
+	4 = Command_CancelWallSpan
+	6 = Command_Sell
+	7 = Command_StartSelfRepair
+End
 
-
+CommandSet WildWallUpgradeNodeCommandSet
+	1 = Command_WildWallUpgradeToHub 
+	2 = Command_WildWallUpgradeToOpening
+	6 = Command_Sell
+	7 = Command_StartSelfRepair 
+End
 
 
 
@@ -129,9 +140,6 @@ CommandSet WildWallUpgradeNodeCommandSetHoleAI
 	6 = Command_Sell
 	7 = Command_StartSelfRepair
 End
-
-
-
 
 CommandSet ShelobCommandSet
 	1	= Command_ToggleStance
