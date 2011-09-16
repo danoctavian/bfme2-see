@@ -4,9 +4,43 @@
 
 ; GameDefines.INI for S.E.E.... (GENERAL BALANCE DATA!)
 ; ------------------------------------------------------------------------------
-
 ;NOTE: Attacks are as such: PreAttackDelay -> Both: FiringDuration & DelayBetweenShots -> After DBS starts PreAttackDelay again.
 
+;------------------------------------------------------------------------------ SEE!
+#define SHROUD_CLEAR_STANDARD								200 //100
+#define SHROUD_CLEAR_MACHINE								250
+#define SHROUD_CLEAR_ARTILLERY								500
+#define SHROUD_CLEAR_HERO									400
+#define SHROUD_CLEAR_RANGED_HERO							500
+#define SHROUD_CLEAR_HOBBIT								225 //250
+#define SHROUD_CLEAR_BASE_DEFENSE							700 //800
+#define SHROUD_CLEAR_FLIER									750 ;900
+#define SHROUD_CLEAR_ENT									600 //700 //650
+#define SHROUD_CLEAR_GIANT									500
+#define SHROUD_CLEAR_TROLL									400
+#define SHROUD_CLEAR_TRANSPORTSHIP							400
+#define SHROUD_CLEAR_BATTLESHIP							600
+#define SHROUD_CLEAR_SKULL_TOTEM							500 //700
+
+#define VISION_STANDARD_TOMBOMB							350
+#define VISION_STANDARD_MELEE								250
+#define VISION_STANDARD_HORSE								300
+#define VISION_STANDARD_LARGE_ANIMAL						350 // firedrake
+#define VISION_STANDARD_SHORT								150 //200
+#define VISION_HERO_RANGED									400
+#define VISION_HERO_STANDARD								175 //300
+#define VISION_FLIER										  	375 ;500
+#define VISION_BASE_DEFENSE									600 //700
+#define VISION_HOBBIT										200
+#define CREEP_VISION										250
+#define	VISION_ENT											500 //600
+#define VISION_STANDARD_MELEE_HORDEMEMBER					150
+
+#define CREEP_LAIR_HEALTH					     			8000
+#define CREEP_LAIR_HEALTH_DAMAGED				  			4000
+#define CREEP_LAIR_HEALTH_REALLY_DAMAGED					2000
+#define CREEP_LAIR_HEALTH_HOLE		     					2000.0
+;------------------------------------------------------------------------------ SEE!
 //// FortressExpansion Stats!
 #define SHROUD_CLEAR_FORTRESS_EXPANSION_DIF				100
 #define VISION_FORTRESS_EXPANSION_DIF						100
@@ -47,36 +81,7 @@
 #define SENTRY_TOWER_COST				500
 #define SENTRY_TOWER_BUILDTIME				30
 
-;------------------------------------------------------------------------------ SEE!
-#define SHROUD_CLEAR_STANDARD								200 //100
-#define SHROUD_CLEAR_MACHINE								250
-#define SHROUD_CLEAR_ARTILLERY								500
-#define SHROUD_CLEAR_HERO									400
-#define SHROUD_CLEAR_RANGED_HERO							500
-#define SHROUD_CLEAR_HOBBIT								225 //250
-#define SHROUD_CLEAR_BASE_DEFENSE							700 //800
-#define SHROUD_CLEAR_FLIER									750 ;900
-#define SHROUD_CLEAR_ENT									600 //700 //650
-#define SHROUD_CLEAR_GIANT									500
-#define SHROUD_CLEAR_TROLL									400
-#define SHROUD_CLEAR_TRANSPORTSHIP							400
-#define SHROUD_CLEAR_BATTLESHIP							600
-#define SHROUD_CLEAR_SKULL_TOTEM							500 //700
 
-#define VISION_STANDARD_TOMBOMB							350
-#define VISION_STANDARD_MELEE								250
-#define VISION_STANDARD_HORSE								300
-#define VISION_STANDARD_LARGE_ANIMAL						350 // firedrake
-#define VISION_STANDARD_SHORT								150 //200
-#define VISION_HERO_RANGED									400
-#define VISION_HERO_STANDARD								175 //300
-#define VISION_FLIER										  	375 ;500
-#define VISION_BASE_DEFENSE									600 //700
-#define VISION_HOBBIT										200
-#define CREEP_VISION										250
-#define	VISION_ENT											500 //600
-#define VISION_STANDARD_MELEE_HORDEMEMBER					150
-;------------------------------------------------------------------------------ SEE!
 
 #define STANDARD_HORDE_EXIT_DELAY			10
 
