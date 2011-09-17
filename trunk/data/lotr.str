@@ -1,26 +1,28 @@
+// ####################################################
+// "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+// ####################################################
+//
+// lotr.str STRINGS for S.E.E....
+// ------------------------------------------------------------------------------
+// NOTE: Try to keep (make) this organized!
 
-// ######################################################################
-// String files for: Lord of the Rings - Battle for Middle Earth II - Special Extended Edition (S.E.E.)
-// ######################################################################
+// #include "lotr_SEE.str" //No worky... :(
 
-// #include "Includes\EvilMenFactionStrings_SEE.str" //No worky... :(
 
-// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 // RJ Cam, added 20070730
-// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 CONTROLBAR:ChangeAngle1
 "Camera 1 - Eagle View"
 End
-
 CONTROLBAR:ChangeAngle2
 "Camera 2 - Commander View"
 End
-
 CONTROLBAR:ChangeAngle3
 "Camera 3 - Unit View"
 End
-
 CONTROLBAR:ChangeAngle4
 "Camera 4 - Ground View"
 End
@@ -28,34 +30,102 @@ End
 CONTROLBAR:ToolTipChangeAngle1
 "Restore to Camera 1 - the Default view"
 END
-
 CONTROLBAR:ToolTipChangeAngle2
 "Use this higher angle for a larger overview of the battle field"
 END
-
 CONTROLBAR:ToolTipChangeAngle3
 "Use this straight angle to zoom in for your units point of view"
 END
-
 CONTROLBAR:ToolTipChangeAngle4
 "Use this angle to zoom in and view the beautiful scenery from below"
 END
 
-// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
-
-// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 // Cheat, added 20001029
-// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 CONTROLBAR:CheatFastGameplay_SEE
 "On Sûlherokhh's Wings We Fly!"
 End
-
 CONTROLBAR:ToolTipCheatFastGameplay_SEE
 "Left click to activate Fast Gameplay \n for testing purposes \n 3x Experience, 10x production Speed,  \n 10x Power Recharge for all units and structures"
 END
 
-// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+TOOLTIP:LackWildBasicTraining
+"Research at Fissure to enable this equipment \n When equipped, increases this battalion to level 2"
+END
+TOOLTIP:LackWildHeavyArmor
+"Research at Fissure to enable this equipment \n When equipped, significantly reduces the amount of damage taken"
+END
+TOOLTIP:LackWildFireArrows
+"Research at Fissure to enable this equipment \n When equipped, significantly increases the damage done by arrows"
+END
+TOOLTIP:LackWildForgedBlades
+"Research at Fissure to enable this equipment \n When equipped, increases the damage done by melee weapons"
+END
+
+TOOLTIP:LackVenomSacksTechnology
+"Research upgrade at Troll Cave to enable this equipment \n When equipped, inflicts poison to enemies causing damage over time"
+END
+
+// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+
+OBJECT:WildMineShaft
+"Mine Tunnel"
+END
+OBJECT:WildMineShaftDescription
+"Generates resources based on available terrain \n Provides access to the Goblin tunnel network \n Increases command point limit by 50"
+END
+CONTROLBAR:ConstructWildMineShaft
+"Build Mine Tunnel"
+END
+CONTROLBAR:ToolTipConstructWildMineShaft
+"Generates resources based on available terrain \n Provides access to the Goblin tunnel network \n Increases command point limit by 50"
+END
+Upgrade:WildMineShaftLevel2
+"Tunnel Level 2"
+END
+Upgrade:WildMineShaftLevel3
+"Tunnel Level 3"
+END
+
+// ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+OBJECT:WildDrum
+"Troll Drum"
+End
+OBJECT:WildTrollDrum
+"Troll Drum"
+End
+OBJECT:WildTrollDrumDescription
+"Allies near the drum gain +25% damage, \n earn experience 25% faster \n and will heal if not under attack \n \n Reduces the cost of infantry \n \n Increases command point limit by 25"
+End
+CONTROLBAR:ConstructWildDrum
+"Build Troll Drum"
+END
+OBJECT:WildDrumDescription
+"Nearby allies will heal if not under attack \n \n Allies near the drum gain +25% damage, \n and earn experience 25% faster \n \n Reduces the cost of infantry \n Increases command point limit by 25"
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6158,37 +6228,33 @@ INI:FactionObserver
 // context: Join a game not as a player but as an observer
 "Observer"
 END
-
 INI:FactionCivilian
 // context: Civilian faction name
 "Civilian"
 END
-
 INI:FactionNeutral
 // context: Neutral faction name
 "Neutral"
 END
 
-INI:FactionMen //FactionGondor
+INI:FactionMen //THIS DOESN'T WORK?
 "Gondor"
 END
-
+INI:FactionGondor //This does!?
+"Gondor"
+END
 INI:FactionElves
 "Lothlórien"
 END
-
 INI:FactionDwarves
 "Erebor"
 END
-
 INI:FactionRohan
 "Rohan"
 END
-
 INI:FactionLothlorien
 "Lothlórien"
 END
-
 INI:FactionErebor
 "Erebor"
 END
@@ -6196,23 +6262,18 @@ END
 INI:FactionMordor
 "Mordor"
 END
-
 INI:FactionIsengard
 "Isengard"
 END
-
-INI:FactionMoria
-"Moria"
-END
-
+//INI:FactionMoria
+//"Moria"
+//END
 INI:FactionWild
 "Moria"
 END
-
 INI:FactionRhun
 "Rhûn" //ITS RHUN WITH A HAT! :D Rhûn
 END
-
 INI:FactionHarad
 "Harad"
 END
@@ -6220,18 +6281,15 @@ END
 
 
 
-SIDE:Gondor
+SIDE:Men //Gondor
 "Gondor"
 END
-
 SIDE:Rohan
 "Rohan"
 END
-
 SIDE:Lothlorien
 "Lothlórien"
 END
-
 SIDE:Erebor
 "Erebor"
 END
@@ -6239,19 +6297,15 @@ END
 SIDE:Mordor
 "Mordor"
 END
-
 SIDE:Isengard
 "Isengard"
 END
-
 SIDE:Moria
 "Moria"
 END
-
 SIDE:Rhun
 "Rhûn/Harad"
 END
-
 SIDE:Harad
 "Harad"
 END
@@ -14765,13 +14819,7 @@ CONTROLBAR:ConstructMordorStatue
 "Build Mordor Hero&ic Statue"
 END
 
-CONTROLBAR:ConstructWildDrum
-"Build Troll &Drum"
-END
 
-OBJECT:WildDrumDescription
-"Nearby allies will heal if not under attack \n \n Allies near the Statue gain \n +25% Damage, \n and earn experience 25% faster \n \n Reduces the cost of Infantry \n Increases command point limit by 25"
-END
 
 CONTROLBAR:ConstructMenStatue
 "Build Gondor Hero&ic Statue"
@@ -15279,8 +15327,8 @@ END
 CONTROLBAR:ToolTipSlaughterHouse
 "Generates resources based on available terrain \n Increases command point limit by 50 \n Reduces the cost of Trolls and Mûmakil"
 END
-CONTROLBAR:ToolTipLumberMill
-"Harvests resources from nearby trees"
+CONTROLBAR:ToolTipGenericLumberMill
+"Orc Snagas harvests resources \n from nearby trees"
 END
 CONTROLBAR:ToolTipFurnace
 "Generates resources based on available terrain \n Increases command point limit by 50"
@@ -15341,64 +15389,55 @@ CONTROLBAR:ToolTipElvenFarm
 END
 
 // Wild Buildings
-CONTROLBAR:ConstructWildMineShaft
-"Build &Tunnel"
-END
 
-CONTROLBAR:ToolTipConstructWildMineShaft
-"Generates resources based on available terrain \n Provides access to the tunnel network \n Increases command point limit by 50"
-END
 
 CONTROLBAR:ConstructWildLumberMill
-"Build L&umber Mill"
+"Build Lumber Mill"
 END
-
-CONTROLBAR:ToolTipConstructWildLumberMill
+CONTROLBAR:ToolTipConstructWildLumberMill //NOT USED! Using "ToolTipGenericLumberMill"
 "Harvests resources from nearby trees \n Reduces the cost of buildings"
 END
 
 CONTROLBAR:ConstructWildGoblinCave
-"Build Goblin &Cave"
+"Build Goblin Cave"
 END
-
 CONTROLBAR:ToolTipConstructWildGoblinCave
 "Trains Goblin Warriors, Archers, \n Pikemen and Drummers" 
 END
 
 CONTROLBAR:ConstructWildGoblinFissure
-"Build Fissu&re"
+"Build Fissure"
 END
 CONTROLBAR:ToolTipConstructWildGoblinFissure
-"Trains Spiderlings, Cave Trolls \n and Mountain Giants"
+"Constructs Catapults \n Researches weapon and armor upgrades"
 END
 
 CONTROLBAR:ConstructWildSpiderPit
-"Build T&roll Cave"
+"Build Troll Cave"
 END
 CONTROLBAR:ToolTipConstructWildSpiderPit
-"Trains Cave Trolls"
+"Trains Hill Trolls and Cave Trolls \n Researches Poison upgrade"
 END
 
 CONTROLBAR:ConstructWildWolfDen
-"Build W&olf Den"
+"Build Wolf Den"
 END
 CONTROLBAR:ToolTipConstructWildWolfDen
 "Trains Goblin Wolf Riders \n and Goblin Warg Riders"
 END
 
+CONTROLBAR:ConstructWildTreasureTrove
+"Build Treasure Trove"
+END
+CONTROLBAR:ToolTipConstructWildTreasureTrove
+"Researches Banner Carrier upgrade \ and >>>TBDxxx<<<"
+END
+
 CONTROLBAR:ConstructWildFortress
-"Build Goblin &Fortress"
+"Build Goblin Fortress"
 END
 CONTROLBAR:ToolTipConstructWildFortress
 "Recruits Builders and Heroes"
-END
-
-CONTROLBAR:ConstructWildTreasureTrove
-"Build Treasure Tro&ve"
-END
-
-CONTROLBAR:ToolTipConstructWildTreasureTrove
-"Researches weapon and armor upgrades"
 END
 
 //Wild Units
@@ -15412,7 +15451,7 @@ END
 
 // Ent Buildings
 CONTROLBAR:ConstructEntMoot
-"Build Ent &Moot"
+"Build Ent Moot"
 END
 
 CONTROLBAR:ToolTipEntMoot
@@ -16222,19 +16261,21 @@ CONTROLBAR:RohanLegolasHotkey
 "&Legolas"
 END
 
-
+// ################################# GOBLIN UNITS
 CONTROLBAR:ConstructGoblinFighterHorde
-"Goblin &Warriors"
-END
-CONTROLBAR:ConstructGoblinArcherHorde
-"Goblin &Archers"
+"Goblin Warriors"
 END
 CONTROLBAR:ToolTipBuildGoblinFighterHorde
 "Strong vs. Pikemen"
 END
+
+CONTROLBAR:ConstructGoblinArcherHorde
+"Goblin Archers"
+END
 CONTROLBAR:ToolTipBuildGoblinArcherHorde
 "Strong vs. Swordsmen"
 END
+
 CONTROLBAR:ConstructGoblinCave
 "Build Goblin Cave"
 END
@@ -16242,10 +16283,10 @@ CONTROLBAR:ToolTipGoblinCave
 "Trains Goblin Warriors and Archers"
 END
 CONTROLBAR:ConstructGoblinCaveTroll
-"&Cave Troll"
+"Cave Troll"
 END
 CONTROLBAR:ToolTipBuildGoblinCaveTroll
-"Requires Level 2 Fissure \n Strong vs. Swordsmen and Structures"
+"Requires level 2 Troll cave \n Strong vs. Swordsmen and Structures"
 END
 CONTROLBAR:ConstructGoblinFissure
 "Build Fissure"
@@ -16297,62 +16338,57 @@ END
 CONTROLBAR:ToolTipToggleSpiderRiderWeapons
 "Left click to switch weapons"
 END
+
 CONTROLBAR:ConstructWildCaveLevel2Upgrade
-"&Upgrade Goblin Cave to Level 2"
+"Upgrade Goblin Cave to level 2"
 END
-
 CONTROLBAR:ToolTipBuildWildCaveLevel2Upgrade
-"Level 2: +33% Faster Build Speed \n Allows training of Goblin Pikemen \n and Goblin Drummers"
+"Level 2: +33% faster build speed \n Allows training of Goblin Pikemen \n and Goblin Drummers"
 END
-
 CONTROLBAR:ConstructWildCaveLevel3Upgrade
-"&Upgrade Goblin Cave to Level 3"
+"Upgrade Goblin Cave to level 3"
 END
-
 CONTROLBAR:ToolTipBuildWildCaveLevel3Upgrade
-"Level 3: +50% Faster Build Speed \n Allows training of The Goblin Guard of Moria \n \n Adds defensive Arrow Tower"
+"Level 3: +50% faster build speed \n Allows training of The Goblin Guard of Moria \n \n Adds defensive Arrow Tower"
 END
 
 CONTROLBAR:UpgradeWildFissureLevel2
-"&Upgrade Fissure to Level 2"
+"Upgrade Fissure to level 2"
 END
-
 CONTROLBAR:ToolTipBuildWildFissureLevel2Upgrade
-"Level 2: +33% Faster Build Speed \n Allows training of Cave Trolls"
+"Level 2: +33% faster build speed \n Allows research of Forged Blades upgrade"
 END
-
 CONTROLBAR:UpgradeWildFissureLevel3
-"&Upgrade Fissure to Level 3"
+"Upgrade Fissure to level 3"
 END
-
 CONTROLBAR:ToolTipBuildWildFissureLevel3Upgrade
-"Level 3: +50% Faster Build Speed \n Allows training of Mountain Giants"
+"Level 3: +50% faster build speed \n Allows construction of Catapult, \n and research of Heavy Armor upgrade"
 END
 
 CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
-"&Upgrade Troll Cave to Level 2"
+"Upgrade Troll Cave to level 2"
 END
 CONTROLBAR:ToolTipBuildWildSpiderPitLevel2Upgrade
-"Level 2: +33% Faster Build Speed \n Allows training of XXX"
+"Level 2: +33% faster build speed \n Allows training of Cave Trolls"
 END
 CONTROLBAR:ConstructWildSpiderPitLevel3Upgrade
-"&Upgrade Troll Cave to Level 3"
+"Upgrade Troll Cave to level 3"
 END
 CONTROLBAR:ToolTipBuildWildSpiderPitLevel3Upgrade
-"Level 3: +50% Faster Build Speed \n Allows research of the Venom Blades"
+"Level 3: +50% faster build speed \n Allows recruitment of the Cave Troll of Moria \n Allows research of Spider Venom"
 END
 
 CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
-"&Upgrade Wolf Den to Level 2"
+"Upgrade Wolf Den to level 2"
 END
 CONTROLBAR:ToolTipBuildWildWolfDenLevel2Upgrade
-"Level 2: +33% Faster Build Speed \n Allows training of Goblin Wolf Riders"
+"Level 2: +33% faster build speed \n Allows training of Goblin Wolf Riders"
 END
 CONTROLBAR:ConstructWildWolfDenLevel3Upgrade
-"&Upgrade Wolf Den to Level 3"
+"Upgrade Wolf Den to level 3"
 END
 CONTROLBAR:ToolTipBuildWildWolfDenLevel3Upgrade
-"Level 3: +50% Faster Build Speed \n Allows training of Goblin Warg Riders"
+"Level 3: +50% faster build speed \n Allows training of Goblin Warg Riders"
 END
 
 CONTROLBAR:ConstructWildTreasureTroveLevel2Upgrade
@@ -28226,7 +28262,7 @@ END
 
 
 CONTROLBAR:ConstructWildSentryTower
-"Build Sentr&y Tower"
+"Build Sentry Tower"
 END
 
 CONTROLBAR:ToolTipConstructWildSentryTower
@@ -28238,13 +28274,7 @@ END
 // Goblin Object Names ////////
 ///////////////////////////////
 
-OBJECT:WildMineShaft
-"Tunnel"
-END
 
-OBJECT:WildMineShaftDescription
-"Generates resources based on available terrain \n Provides access to the tunnel network \n Increases command point limit by 50"
-END
 
 OBJECT:WildSpiderPit
 "Troll Cave and Spider Venom Factory"
@@ -28334,13 +28364,7 @@ TOOLTIP:LackLevel2TreasureTrove
 "Requires Level 2 Treasure Trove"
 END
 
-OBJECT:WildTrollDrum
-"Troll Drum"
-End
 
-OBJECT:WildTrollDrumDescription
-"Nearby allies will heal if not under attack \n \n Allies near the Statue gain \n +25% Damage, \n and earn experience 25% faster \n \n Reduces the cost of Infantry \n Increases command point limit by 25"
-End
 
 ////////////////////
 // Elven Tooltips //
@@ -31987,7 +32011,7 @@ CONTROLBar:ToolTipGrimBeornTransformBeartoMan
 End
 
 CONTROLBAR:GoblinKingPoisonedStinger
-"Poisoned Stinge&r"
+"Poisoned Stinger"
 END
 
 CONTROLBAR:ToolTipGoblinKingPoisonedStinger
@@ -32445,11 +32469,11 @@ CONTROLBAR:PlanningModeDescription
 End
 
 CONTROLBAR:PoisonArrows
-"&Poison Arrows"
+"Poison Arrows"
 End
 
 CONTROLBAR:PurchaseIsengardWargSentry
-"Build &Warg Sentry"
+"Build Warg Sentry"
 End
 
 
@@ -32495,23 +32519,23 @@ End
 
 
 CONTROLBAR:SpecialAbilityDwarvenDemolisherDeploy
-"Deplo&y"
+"Deploy"
 End
 
 CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
-"&Poisoned Blades"
+"Poisoned Blades"
 End
 
 
 
 CONTROLBAR:SpecialAbilityOilBarrels
-"O&il Barrels"
+"Oil Barrels"
 End
 
 
 
 CONTROLBAR:SpecialAbilitySummonedDragonReposition
-"&Reposition"
+"Reposition"
 End
 
 CONTROLBAR:SpecialAbilityWildmanPillage
@@ -32731,11 +32755,11 @@ CONTROLBAR:ToolTipPoisonArrows
 End
 
 CONTROLBAR:ToolTipPurchaseIsengardWargSentry
-"Short range defensive warg"
+"Short range defensive Warg"
 End
 
 CONTROLBAR:ToolTipSharkuWargMount
-"Mount and unmount Sharku's warg"
+"Mount and unmount Sharku's personal Warg"
 End
 
 CONTROLBAR:ToolTipShelobWebbing
@@ -32747,7 +32771,7 @@ CONTROLBAR:ToolTipSpecialAbilityBatCloud
 End
 
 CONTROLBAR:ToolTipSpecialAbilityGoblinFighterPoisonedBlades
-"Poisons targeted enemies causing damage over time \n Left click to activate"
+"Poisons targeted enemies, causing damage over time \n Left click to activate"
 End
 
 CONTROLBAR:ToolTipSpecialAbilitySummonedDragonReposition
@@ -32787,7 +32811,7 @@ CONTROLBAR:ToolTipWildMountainGiantStomp
 End
 
 CONTROLBAR:ToolTipWildShelobPoisonedStinger
-"Poisons the enemy causing damage over time"
+"Poisons the enemy, causing damage over time"
 End
 
 CONTROLBAR:ToolTipWitchKingDismount
@@ -33003,11 +33027,11 @@ CONTROLBAR:WildMountainGiantStomp
 End
 
 CONTROLBAR:WildShelobPoisonedStinger
-"Poisoned Stinge&r"
+"Poisoned Stinger"
 End
 
 CONTROLBAR:WitchKingDismount
-"Dis&mount Fellbeast"
+"Dismount Fellbeast"
 End
 
 CONTROLBAR:WitchKingMount
@@ -34557,9 +34581,7 @@ OBJECT:Tree01
 "Tree"
 End
 
-OBJECT:WildDrum
-"Troll Drum"
-End
+
 
 OBJECT:TrollDrum
 "Ettenmoors Drum"
@@ -42000,25 +42022,7 @@ TOOLTIP:LackDwarvenHeavyArmor
 "Research upgrade at Forge Works to enable this equipment \n When equipped, significantly reduces the amount of damage taken"
 END
 
-TOOLTIP:LackWildBasicTraining
-"Research at Treasure Trove to enable this equipment \n When equipped, increases this battalion to Level 2"
-END
 
-TOOLTIP:LackWildHeavyArmor
-"Research at Treasure Trove to enable this equipment \n When equipped, significantly reduces the amount of damage taken"
-END
-
-TOOLTIP:LackWildFireArrows
-"Research at Treasure Trove to enable this equipment \n When equipped, significantly increases the damage done by Arrows"
-END
-
-TOOLTIP:LackWildForgedBlades
-"Research at Treasure Trove to enable this equipment \n When equipped, increases the damage done by Melee Weapons"
-END
-
-TOOLTIP:LackVenomSacksTechnology
-"Research upgrade at Troll Cave to enable this equipment \n When equipped, inflicts poison to enemies causing damage over time"
-END
 
 
 TOOLTIP:IsengardForgedBlades
@@ -42357,13 +42361,7 @@ Upgrade:WildTreasureTroveLevel3
 "Treasure Trove Level 3"
 END
 
-Upgrade:WildMineShaftLevel2
-"Tunnel Level 2"
-END
 
-Upgrade:WildMineShaftLevel3
-"Tunnel Level 3"
-END
 
 Upgrade:FortressFireArrows
 "Fire Arrows"
@@ -48861,7 +48859,7 @@ OBJECT:WildWallCliffCap
 End
 
 CONTROLBAR:Command_ConstructWildWallHub
-"Build Spiked &Fence Node"
+"Build Spiked Fence Node"
 END
 CONTROLBAR:TooltipCommand_ConstructWildWallHub
 "Allows the construction of Spiked Fences"
@@ -48910,29 +48908,28 @@ Upgrade:WildFortressFireDrake
 "Drogoth"
 END
 
+
+// #################################################################################################### POISON TECH!
 Upgrade:WildPoisonBlades
 "Blade Poison"
 END
-
 CONTROLBAR:PurchaseTechnologySpiderPoisonBlades
-"Research &Blade Poison"
+"Research Blade Poison"
 END
-
 CONTROLBAR:ToolTipPurchaseTechnologySpiderPoisonBlades
 "Allows hordes to purchase the Blade Poison upgrade \n When equipped, inflicts poison to enemies causing damage over time"
 END
-
 CONTROLBAR:PurchaseSpiderPoisonBlades
 "Purchase &Blade Poison"
 END
-
 CONTROLBAR:ToolTipPurchaseSpiderPoisonBlades
 "Upgrades this horde with Blade Poison \n Inflicts poison to enemies causing damage over time"
 END
-
 TOOLTIP:LackPoisonBladesTechnology
 "Research upgrade at Treasure Trove to enable this equipment \n When equipped, inflicts poison to enemies causing damage over time"
 END
+// ####################################################################################################
+
 
 CONTROLBAR:PurchaseWildFortressStonePavement_SEE 
 "Defiled Ground"
