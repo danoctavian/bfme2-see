@@ -32,7 +32,7 @@ PlayerTemplate FactionMen
 	SpellBookMp			= MenSpellBook
 	PurchaseScienceCommandSet	= GoodSpellStoreCommandSet
 	PurchaseScienceCommandSetMP	= MenSpellStoreCommandSet
-	DisplayName			= INI:FactionMen
+	DisplayName			= INI:FactionGondor //INI:FactionMen
 	DefaultPlayerAIType		= MenSkirmishAI
 	BeaconName			= MultiplayerBeacon
 	LightPointsUpSound		= GondorLightPointsUp

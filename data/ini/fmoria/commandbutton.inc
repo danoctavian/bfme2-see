@@ -3,11 +3,39 @@
 ; ####################################################
 
 ; CommandButton.INC for MORIA (Wild) faction...
-; -------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 ; NOTE: Keep this organized!
 
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria structures 
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
-CommandButton Command_PorterConstructWildDrum ;SEE!
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildLumberMill
+	Command				= DOZER_CONSTRUCT
+	Object				= WildLumberMill
+	TextLabel			= CONTROLBAR:ConstructWildLumberMill
+	ButtonImage			= BCLumberMill
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipGenericLumberMill
+	Radial				= Yes  
+	;InPalantir			= Yes
+END
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildMineShaft
+	Command				= DOZER_CONSTRUCT
+	Object				= WildMineShaft
+	TextLabel			= CONTROLBAR:ConstructWildMineShaft
+	ButtonImage			= BWAbandonedMineShaft
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructWildMineShaft
+	Radial				= Yes  
+	;InPalantir			= Yes
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildDrum
 	Command				= DOZER_CONSTRUCT
 	Object				= TrollDrum
 	TextLabel			= CONTROLBAR:ConstructWildDrum
@@ -15,9 +43,160 @@ CommandButton Command_PorterConstructWildDrum ;SEE!
 	ButtonBorderType		= BUILD 
 	DescriptLabel			= OBJECT:WildDrumDescription
 	Radial				= Yes  
+	;InPalantir			= Yes	
 End
 
-CommandButton  Command_PorterConstructWildWallHub ;SEE!
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildCave
+	Command				= DOZER_CONSTRUCT
+	Object				= GoblinCave
+	TextLabel			= CONTROLBAR:ConstructWildGoblinCave
+	ButtonImage			= BWCave
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructWildGoblinCave
+	Radial				= Yes  
+	;InPalantir			= Yes
+END
+CommandButton Command_PurchaseUpgradeWildCaveLevel2
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildCaveLevel2
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:ConstructWildCaveLevel2Upgrade
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildCaveLevel2Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
+CommandButton Command_PurchaseUpgradeWildCaveLevel3
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildCaveLevel3
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:ConstructWildCaveLevel3Upgrade
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildCaveLevel3Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildSpiderPit
+	Command				= DOZER_CONSTRUCT
+	Object				= WildSpiderPit
+	TextLabel			= CONTROLBAR:ConstructWildSpiderPit
+	ButtonImage			= BWSpiderPit
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructWildSpiderPit
+	Radial				= Yes  
+	;InPalantir			= Yes
+END
+CommandButton Command_PurchaseUpgradeWildSpiderPitLevel2
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildSpiderPitLevel2
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildSpiderPitLevel2Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
+CommandButton Command_PurchaseUpgradeWildSpiderPitLevel3
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildSpiderPitLevel3
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:ConstructWildSpiderPitLevel3Upgrade
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildSpiderPitLevel3Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildWolfDen
+	Command				= DOZER_CONSTRUCT
+	Object				= WolfWargPit
+	TextLabel			= CONTROLBAR:ConstructWildWolfDen
+	ButtonImage			= KUTrollDenIcon
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructWildWolfDen
+	Radial				= Yes  
+	;InPalantir			= Yes
+END
+CommandButton Command_PurchaseUpgradeWildWolfDenLevel2
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildWolfDenLevel2
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildWolfDenLevel2Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
+CommandButton Command_PurchaseUpgradeWildWolfDenLevel3
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildWolfDenLevel3
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:ConstructWildWolfDenLevel3Upgrade
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildWolfDenLevel3Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildFissure
+	Command				= DOZER_CONSTRUCT
+	Object				= GoblinFissure
+	TextLabel			= CONTROLBAR:ConstructWildGoblinFissure
+	ButtonImage			= BWFissure
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructWildGoblinFissure
+	Radial				= Yes  
+	;InPalantir			= Yes
+END
+CommandButton Command_UpgradeWildFissureLevel2
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildFissureLevel2
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:UpgradeWildFissureLevel2
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildFissureLevel2Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
+
+CommandButton Command_PurchaseUpgradeWildFissureLevel3
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildFissureLevel3
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:UpgradeWildFissureLevel3
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildFissureLevel3Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildTreasureTrove
+	Command				= DOZER_CONSTRUCT
+	Object				= WildTreasureTrove
+	TextLabel			= CONTROLBAR:ConstructWildTreasureTrove
+	ButtonImage			= BWTreasureTrove
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructWildTreasureTrove
+	Radial				= Yes
+	;InPalantir			= Yes
+END
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton  Command_PorterConstructWildWallHub
 	Command          	= DOZER_CONSTRUCT
 	Options			 	= CANCELABLE
 	Object           	= WildCastleWallHub
@@ -27,6 +206,77 @@ CommandButton  Command_PorterConstructWildWallHub ;SEE!
 	DescriptLabel    		= CONTROLBAR:TooltipCommand_ConstructWildWallHub
 	Radial           	= Yes  
 End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildSentryTower
+	Command				= DOZER_CONSTRUCT
+	Object				= WildSentryTower
+	TextLabel			= CONTROLBAR:ConstructWildSentryTower
+	ButtonImage			= BWSentryTower
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructWildSentryTower
+	Radial				= Yes
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildFortress
+	Command				= DOZER_CONSTRUCT
+	Object				= WildFortress
+	TextLabel			= CONTROLBAR:ConstructWildFortress
+	ButtonImage			= BWFortress
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructWildFortress
+	Radial				= Yes
+	;InPalantir			= Yes
+END
+
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria units 
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ConstructGoblinFighterHorde
+	Command				= UNIT_BUILD
+	Object				= GoblinFighterHorde
+	Options				= CANCELABLE
+	TextLabel			= CONTROLBAR:ConstructGoblinFighterHorde
+	ButtonImage			= BWCave_GoblinWarrior
+	ButtonBorderType		= BUILD											
+	DescriptLabel			= CONTROLBAR:ToolTipBuildGoblinFighterHorde
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ConstructGoblinArcherHorde
+	Command				= UNIT_BUILD
+	Object				= GoblinArcherHorde
+	Options				= CANCELABLE
+	TextLabel			= CONTROLBAR:ConstructGoblinArcherHorde
+	ButtonImage			= BWCave_GoblinArcher
+	ButtonBorderType		= BUILD											
+	DescriptLabel			= CONTROLBAR:ToolTipBuildGoblinArcherHorde
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 CommandButton Command_WildWallUpgradeToOpeningAI
 	Command				= OBJECT_UPGRADE 
@@ -178,31 +428,9 @@ End
 
 
 
-CommandButton Command_ConstructGoblinFighterHorde
-	Command				= UNIT_BUILD
-	Object				= GoblinFighterHorde
-	Options				= CANCELABLE
-	TextLabel			= CONTROLBAR:ConstructGoblinFighterHorde
-	ButtonImage			= BWCave_GoblinWarrior
-	ButtonBorderType		= BUILD											
-	DescriptLabel			= CONTROLBAR:ToolTipBuildGoblinFighterHorde
-	Radial				= Yes
-	InPalantir	   		= Yes
-	ShowProductionCount		= Yes
-End
 
-CommandButton Command_ConstructGoblinArcherHorde
-	Command				= UNIT_BUILD
-	Object				= GoblinArcherHorde
-	Options				= CANCELABLE
-	TextLabel			= CONTROLBAR:ConstructGoblinArcherHorde
-	ButtonImage			= BWCave_GoblinArcher
-	ButtonBorderType		= BUILD											
-	DescriptLabel			= CONTROLBAR:ToolTipBuildGoblinArcherHorde
-	Radial				= Yes
-	InPalantir	   		= Yes
-	ShowProductionCount		= Yes
-End
+
+
 
 CommandButton Command_ConstructInnGoblinArcherHorde
 	Command				= UNIT_BUILD
@@ -787,197 +1015,31 @@ End
 
 
 
-CommandButton Command_PorterConstructWildMineShaft
-	Command				= DOZER_CONSTRUCT
-	Object				= WildMineShaft
-	TextLabel			= CONTROLBAR:ConstructWildMineShaft
-	ButtonImage			= BWAbandonedMineShaft
-	ButtonBorderType	= BUILD 
-	DescriptLabel		= CONTROLBAR:ToolTipConstructWildMineShaft
-	Radial				= Yes  
-	;InPalantir			= Yes
-End
 
-CommandButton Command_PorterConstructWildLumberMill
-	Command				= DOZER_CONSTRUCT
-	Object				= WildLumberMill
-	TextLabel			= CONTROLBAR:ConstructWildLumberMill
-	ButtonImage			= BCLumberMill
-	ButtonBorderType	= BUILD 
-	DescriptLabel		= CONTROLBAR:ToolTipLumberMill
-	Radial				= Yes  
-	;InPalantir			= Yes
-END
 
-CommandButton Command_PorterConstructWildCave
-	Command				= DOZER_CONSTRUCT
-	Object				= GoblinCave
-	TextLabel			= CONTROLBAR:ConstructWildGoblinCave
-	ButtonImage			= BWCave
-	ButtonBorderType	= BUILD 
-	DescriptLabel		= CONTROLBAR:ToolTipConstructWildGoblinCave
-	Radial				= Yes  
-	;InPalantir			= Yes
-END
 
-CommandButton Command_PorterConstructWildFissure
-	Command				= DOZER_CONSTRUCT
-	Object				= GoblinFissure
-	TextLabel			= CONTROLBAR:ConstructWildGoblinFissure
-	ButtonImage			= BWFissure
-	ButtonBorderType	= BUILD 
-	DescriptLabel		= CONTROLBAR:ToolTipConstructWildGoblinFissure
-	Radial				= Yes  
-	;InPalantir			= Yes
-END
 
-CommandButton Command_PorterConstructWildSpiderPit
-	Command				= DOZER_CONSTRUCT
-	Object				= WildSpiderPit
-	TextLabel			= CONTROLBAR:ConstructWildSpiderPit
-	ButtonImage			= BWSpiderPit
-	ButtonBorderType	= BUILD 
-	DescriptLabel		= CONTROLBAR:ToolTipConstructWildSpiderPit
-	Radial				= Yes  
-	;InPalantir			= Yes
-END
 
-CommandButton Command_PorterConstructWildWolfDen
-	Command				= DOZER_CONSTRUCT
-	Object				= WolfWargPit
-	TextLabel			= CONTROLBAR:ConstructWildWolfDen
-	ButtonImage			= KUTrollDenIcon
-	ButtonBorderType		= BUILD 
-	DescriptLabel			= CONTROLBAR:ToolTipConstructWildWolfDen
-	Radial				= Yes  
-	;InPalantir			= Yes
-END
 
-CommandButton Command_PorterConstructWildFortress
-	Command				= DOZER_CONSTRUCT
-	Object				= WildFortress
-	TextLabel			= CONTROLBAR:ConstructWildFortress
-	ButtonImage			= BWFortress
-	ButtonBorderType	= BUILD 
-	DescriptLabel		= CONTROLBAR:ToolTipConstructWildFortress
-	Radial				= Yes
-	;InPalantir			= Yes
-END
 
-CommandButton Command_PorterConstructWildTreasureTrove
-	Command				= DOZER_CONSTRUCT
-	Object				= WildTreasureTrove
-	TextLabel			= CONTROLBAR:ConstructWildTreasureTrove
-	ButtonImage			= BWTreasureTrove
-	ButtonBorderType	= BUILD 
-	DescriptLabel		= CONTROLBAR:ToolTipConstructWildTreasureTrove
-	Radial				= Yes
-	;InPalantir			= Yes
-END
 
-CommandButton Command_PorterConstructWildSentryTower
-	Command				= DOZER_CONSTRUCT
-	Object				= WildSentryTower
-	TextLabel			= CONTROLBAR:ConstructWildSentryTower
-	ButtonImage			= BWSentryTower
-	ButtonBorderType	= BUILD 
-	DescriptLabel		= CONTROLBAR:ToolTipConstructWildSentryTower
-	Radial				= Yes
-End
 
-CommandButton Command_PurchaseUpgradeWildCaveLevel2
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildCaveLevel2
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:ConstructWildCaveLevel2Upgrade
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildCaveLevel2Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
 
-CommandButton Command_PurchaseUpgradeWildCaveLevel3
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildCaveLevel3
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:ConstructWildCaveLevel3Upgrade
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildCaveLevel3Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
 
-CommandButton Command_UpgradeWildFissureLevel2
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildFissureLevel2
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:UpgradeWildFissureLevel2
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildFissureLevel2Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
 
-CommandButton Command_PurchaseUpgradeWildFissureLevel3
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildFissureLevel3
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:UpgradeWildFissureLevel3
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildFissureLevel3Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
 
-CommandButton Command_PurchaseUpgradeWildSpiderPitLevel2
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildSpiderPitLevel2
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildSpiderPitLevel2Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
-CommandButton Command_PurchaseUpgradeWildSpiderPitLevel3
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildSpiderPitLevel3
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:ConstructWildSpiderPitLevel3Upgrade
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildSpiderPitLevel3Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
 
-CommandButton Command_PurchaseUpgradeWildWolfDenLevel2
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildWolfDenLevel2
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildWolfDenLevel2Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
-CommandButton Command_PurchaseUpgradeWildWolfDenLevel3
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildWolfDenLevel3
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:ConstructWildWolfDenLevel3Upgrade
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildWolfDenLevel3Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
+
+
+
+
+
+
+
+
+
+
+
 
 CommandButton Command_PurchaseUpgradeWildTreasureTroveLevel2
   Command           = OBJECT_UPGRADE
