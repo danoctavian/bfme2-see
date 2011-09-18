@@ -1,4 +1,10 @@
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
 
+; Voice.INC for S.E.E....
+; ------------------------------------------------------------------------------ 
+; NOTE: These codes are ported from Sûlherokkh's coding in Beta 4.7!
 
 ;--------------------------------- Gollum -------------------------------
 AudioEvent GollumVoiceAboutToStealRing_SEE
