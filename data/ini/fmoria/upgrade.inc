@@ -242,36 +242,44 @@ End
 
 
 //------     Wild Upgrades	--------------------------------------------------------
-Upgrade Upgrade_TechnologyWildBasicTraining
-	DisplayName       = UPGRADE:WildBasicTraining
-	Type              = PLAYER
-	BuildCost		= WILD_TECH_BASIC_TRAINING_BUILDCOST	
-	BuildTime		= WILD_TECH_BASIC_TRAINING_BUILDTIME	
-	ResearchCompleteEvaEvent	= UpgradeBannerCarrierTechnologyReady-Wild
-End
-
-Upgrade Upgrade_WildBasicTraining 
-	DisplayName     = UPGRADE:WildBasicTraining 
-	Type            = OBJECT
-	Tooltip			= UPGRADE:WildBasicTraining 
-	BuildCost		= WILD_PERSONAL_BASIC_TRAINING_BUILDCOST	
-	BuildTime		= WILD_PERSONAL_BASIC_TRAINING_BUILDTIME	
-	//ResearchSound	= UpgradeHeavyArmor
-	//UpgradeFX		= FX_PorterDeliverHeavyArmor
-	ButtonImage     = BuildingNoArt
-	//Cursor			= WeaponUpgrade
-	RequiredObjectFilter = NONE +WildTreasureTrove
-	StrategicIcon	= AptStrategicUnitUpgradeBannerCarrier
-End
 
 Upgrade Upgrade_TechnologyWildFireArrows
-	DisplayName     = UPGRADE:WildFireArrowUpgrade
-	Type            = PLAYER
-	BuildCost		= WILD_TECH_FIRE_ARROWS_BUILDCOST
-	BuildTime		= WILD_TECH_FIRE_ARROWS_BUILDTIME
+	DisplayName     	= UPGRADE:WildFireArrowUpgrade
+	Type            	= PLAYER
+	BuildCost			= WILD_TECH_FIRE_ARROWS_BUILDCOST
+	BuildTime			= WILD_TECH_FIRE_ARROWS_BUILDTIME
 	ResearchCompleteEvaEvent	= UpgradeFlameArrowsReady
-	SkirmishAIHeuristic = AI_UPGRADEHEURISTIC_IMPORTANT
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
 End
+Upgrade Upgrade_TechnologyWildForgedBlades
+	DisplayName     	= UPGRADE:WildForgedBlades
+	Type            	= PLAYER
+	BuildCost			= WILD_TECH_FORGED_BLADES_BUILDCOST
+	BuildTime			= WILD_TECH_FORGED_BLADES_BUILDTIME
+	ResearchCompleteEvaEvent	= UpgradeForgedBladesReady
+End
+Upgrade Upgrade_TechnologyWildHeavyArmor
+	DisplayName     	= UPGRADE:WildHeavyArmor
+	Type            	= PLAYER
+	BuildCost			= WILD_TECH_HEAVY_ARMOR_BUILDCOST	
+	BuildTime			= WILD_TECH_HEAVY_ARMOR_BUILDTIME		
+	ResearchCompleteEvaEvent	= UpgradeScavengedArmorReady
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Upgrade Upgrade_WildFireArrows
 	DisplayName     = UPGRADE:WildFireArrowUpgrade
@@ -285,13 +293,7 @@ Upgrade Upgrade_WildFireArrows
 	StrategicIcon	= AptStrategicUnitUpgradeArrow
 End
 
-Upgrade Upgrade_TechnologyWildForgedBlades
-	DisplayName     = UPGRADE:WildForgedBlades
-	Type            = PLAYER
-	BuildCost		= WILD_TECH_FORGED_BLADES_BUILDCOST
-	BuildTime		= WILD_TECH_FORGED_BLADES_BUILDTIME
-	ResearchCompleteEvaEvent	= UpgradeForgedBladesReady
-End
+
 
 Upgrade Upgrade_WildForgedBlades
 	DisplayName     = UPGRADE:WildForgedBlades
@@ -307,13 +309,7 @@ Upgrade Upgrade_WildForgedBlades
 	StrategicIcon	= AptStrategicUnitUpgradeBlade
 End
 
-Upgrade Upgrade_TechnologyWildHeavyArmor
-	DisplayName     = UPGRADE:WildHeavyArmor
-	Type            = PLAYER
-	BuildCost		= WILD_TECH_HEAVY_ARMOR_BUILDCOST	
-	BuildTime		= WILD_TECH_HEAVY_ARMOR_BUILDTIME		
-	ResearchCompleteEvaEvent	= UpgradeScavengedArmorReady
-End
+
 
 Upgrade Upgrade_WildHeavyArmor
 	DisplayName     = UPGRADE:WildHeavyArmor
@@ -329,23 +325,57 @@ Upgrade Upgrade_WildHeavyArmor
 	StrategicIcon	= AptStrategicUnitUpgradeArmor
 End
 
-Upgrade Upgrade_WildSpiderVenomSackScience
-	DisplayName		= Upgrade:WildVenomSacs
-	Type			= PLAYER
-	BuildCost		= GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_COST
-	BuildTime		= GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_BUILDTIME
-	ResearchCompleteEvaEvent = UpgradeVenomSacsReady
+Upgrade Upgrade_TechnologyWildBasicTraining
+	DisplayName       = UPGRADE:WildBasicTraining
+	Type              = PLAYER
+	BuildCost		= WILD_TECH_BASIC_TRAINING_BUILDCOST	
+	BuildTime		= WILD_TECH_BASIC_TRAINING_BUILDTIME	
+	ResearchCompleteEvaEvent	= UpgradeBannerCarrierTechnologyReady-Wild
+End
+Upgrade Upgrade_WildBasicTraining 
+	DisplayName     = UPGRADE:WildBasicTraining 
+	Type            = OBJECT
+	Tooltip			= UPGRADE:WildBasicTraining 
+	BuildCost		= WILD_PERSONAL_BASIC_TRAINING_BUILDCOST	
+	BuildTime		= WILD_PERSONAL_BASIC_TRAINING_BUILDTIME	
+	//ResearchSound	= UpgradeHeavyArmor
+	//UpgradeFX		= FX_PorterDeliverHeavyArmor
+	ButtonImage     = BuildingNoArt
+	//Cursor			= WeaponUpgrade
+	RequiredObjectFilter = NONE +WildTreasureTrove
+	StrategicIcon	= AptStrategicUnitUpgradeBannerCarrier
 End
 
-Upgrade Upgrade_WildSpiderVenomSacks
-	DisplayName		= Upgrade:WildVenomSacs
-	Type			= OBJECT
-	Tooltip				= TOOLTIP:WildVenomSacs
-	BuildCost			= GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_COST
-	BuildTime			= GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_BUILDTIME
-	ResearchSound			= UpgradeVenomSacks
-	RequiredObjectFilter	= NONE +WildSpiderPit	
-	StrategicIcon	= AptStrategicUnitUpgradeBlade	
+Upgrade Upgrade_WildSpiderVenomSackScience
+	DisplayName				= UPGRADE:WildPoisonBlades //Upgrade:WildVenomSacs
+	Type					= PLAYER
+	BuildCost				= GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_COST
+	BuildTime				= GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_BUILDTIME
+	ResearchCompleteEvaEvent	= UpgradeVenomSacsReady
+	SkirmishAIHeuristic			= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
+Upgrade Upgrade_WildSpiderVenomSacks
+	DisplayName				= Upgrade:WildVenomSacs
+	Type					= OBJECT
+	Tooltip					= TOOLTIP:WildVenomSacs
+	BuildCost				= GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_COST
+	BuildTime				= GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_BUILDTIME
+	ResearchSound			= UpgradeVenomSacks //SpiderRiderVoicePoison?
+	UpgradeFX				= FX_PorterDeliverSilverthornArrows //Added for SEE!	
+	RequiredObjectFilter		= NONE +WildSpiderPit	
+	StrategicIcon				= AptStrategicUnitUpgradeBlade	
+	SkirmishAIHeuristic			= AI_UPGRADEHEURISTIC_IMPORTANT	
+End
+
+
+
+
+
+
+
+
+
+
+
 
 

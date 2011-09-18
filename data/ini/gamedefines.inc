@@ -7,6 +7,31 @@
 ;NOTE: Attacks are as such: PreAttackDelay -> Both: FiringDuration & DelayBetweenShots -> After DBS starts PreAttackDelay again.
 
 ;------------------------------------------------------------------------------ SEE!
+#define ARCHER_WEAK_HITPERCENTAGE							60
+#define ARCHER_STANDARD_HITPERCENTAGE         			70
+#define ARCHER_ELITE_HITPERCENTAGE							80
+#define ARCHER_WEAK_SCATTERRADIUS            				30.0
+#define ARCHER_STANDARD_SCATTERRADIUS          			20.0
+#define ARCHER_ELITE_SCATTERRADIUS            				10.0
+
+#define ARCHER_REGULAR_FIREARROW_BURNRATEINCREASE			1
+#define ARCHER_REGULAR_FIREARROW_BURNRADIUS		    	0.5
+#define ARCHER_BOMBARD_FIREARROW_BURNRADIUS    			1.0
+#define ARCHER_BOMBARD_SCATTER_RADIUS						60
+#define ARCHER_BOMBARD_FIREARROW_BURNRATEINCREASE			5
+;------------------------------------------------------------------------------ SEE!
+#define TROOP_AFLAME_DURATION     							1000
+#define TROOP_AFLAME_DAMAGE_AMOUNT  						0
+#define TROOP_AFLAME_DAMAGE_DELAY   						500
+#define TROOP_FLAME_DAMAGE_LIMIT    						0
+#define TROOP_FLAME_DAMAGE_EXPIRATION 					1000
+;------------------------------------------------------------------------------ SEE!
+#define VETERAN_TROOP_FEAR_RESISTANCE						40%
+#define GENERIC_HERO_LEADERSHIP_FEAR_RESISTANCE			20%
+#define GENERIC_STATUE_FEAR_RESISTANCE				    	40%
+#define DOMINANT_HERO_LEADERSHIP_FEAR_RESISTANCE			40%
+#define DOMINANT_HERO_LEADERSHIP_TERROR_RESISTANCE		20%
+;------------------------------------------------------------------------------ SEE!
 #define SHROUD_CLEAR_STANDARD								200 //100
 #define SHROUD_CLEAR_MACHINE								250
 #define SHROUD_CLEAR_ARTILLERY								500
@@ -34,7 +59,7 @@
 #define VISION_HOBBIT										200
 #define CREEP_VISION										250
 #define	VISION_ENT											500 //600
-#define VISION_STANDARD_MELEE_HORDEMEMBER					150
+#define VISION_STANDARD_MELEE_HORDEMEMBER					150 ;SEE!
 
 #define CREEP_LAIR_HEALTH					     			8000
 #define CREEP_LAIR_HEALTH_DAMAGED				  			4000
@@ -46,6 +71,18 @@
 #define VISION_FORTRESS_EXPANSION_DIF						100
 #define WEAPON_RANGE_FORTRESS_EXPANSION_MULT				1.15
 #define WEAPON_RANGE_WALL_UPGRADE_MULT					1.05
+
+
+
+
+
+
+
+
+
+
+
+
 
 ; Region Bonuses
 #define DEFAULT_REGION_RESOURCE_BONUS			10
@@ -200,8 +237,7 @@
 #define INDUSTRY_TYPE_SPELL_OBJECT_FILTER		ANY +GondorFarm +DwarvenMineShaft +ElvenMallornTree +WildMineShaft +IsengardFurnace +MordorSlaughterHouse +ArnorFarm +AngmarMill ALLIES
 #define INDUSTRY_EFFECT_RADIUS				200.0
 
-#define ARCHER_BOMBARD_SCATTER_RADIUS			30
-#define ARCHER_BOMBARD_FIREARROW_BURNRATEINCREASE	20
+
 
 #define SELECTION_PRIORITY_CREBAIN 1
 #define SELECTION_PRIORITY_MORDOR_WORKER 2
@@ -1961,22 +1997,23 @@
 #define	CAVE_TROLL_HEALTH 				2000
 
 
-;-------------------HORDE RENDER LOD DATA-------------
+;------------------------HORDE RENDER LOD DATA-------------------------------
 
-#define ALLOW_MULTIPLE_MODELS_LOW			No
-#define MAX_RANDOM_TEXTURES_LOW				1
-#define MAX_RANDOM_ANIMATIONS_LOW			1
-#define MAX_ANIM_FRAME_DELTA_LOW			10
+#define ALLOW_MULTIPLE_MODELS_LOW							No
+#define MAX_RANDOM_TEXTURES_LOW							8 //1
+#define MAX_RANDOM_ANIMATIONS_LOW						4 //1
+#define MAX_ANIM_FRAME_DELTA_LOW							10
 
-#define ALLOW_MULTIPLE_MODELS_MED			No
-#define MAX_RANDOM_TEXTURES_MED				2
-#define MAX_RANDOM_ANIMATIONS_MED			4
-#define MAX_ANIM_FRAME_DELTA_MED			4
+#define ALLOW_MULTIPLE_MODELS_MED							No
+#define MAX_RANDOM_TEXTURES_MED							16 //2
+#define MAX_RANDOM_ANIMATIONS_MED						8 //4
+#define MAX_ANIM_FRAME_DELTA_MED							4 //???
 
-#define ALLOW_MULTIPLE_MODELS_HIGH			Yes
-#define MAX_RANDOM_TEXTURES_HIGH			2
-#define MAX_RANDOM_ANIMATIONS_HIGH			4
-#define MAX_ANIM_FRAME_DELTA_HIGH			4
+#define ALLOW_MULTIPLE_MODELS_HIGH							Yes
+#define MAX_RANDOM_TEXTURES_HIGH							32 //2
+#define MAX_RANDOM_ANIMATIONS_HIGH						16 //4
+#define MAX_ANIM_FRAME_DELTA_HIGH							4 //???
+
 
 ;--------------------HORDE MOVEMENT DATA---------------
 
@@ -2130,10 +2167,10 @@
 
 ;================ CRUSHING AND BEING CRUSHED ================
 
-#define SUPER_INFANTRY_CRUSH_REVENGE_DAMAGE		250
-#define ANTI_CAVALRY_INFANTRY_CRUSH_REVENGE_DAMAGE	250
-#define BASIC_INFANTRY_CRUSH_REVENGE_DAMAGE		10
-#define RANGED_INFANTRY_CRUSH_REVENGE_DAMAGE		5
+#define SUPER_INFANTRY_CRUSH_REVENGE_DAMAGE					250
+#define ANTI_CAVALRY_INFANTRY_CRUSH_REVENGE_DAMAGE			250
+#define BASIC_INFANTRY_CRUSH_REVENGE_DAMAGE					10
+#define RANGED_INFANTRY_CRUSH_REVENGE_DAMAGE					5
 				
 
 #define MUMAKIL_CRUSH_DAMAGE				400
