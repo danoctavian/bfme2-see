@@ -6239,7 +6239,7 @@ END
 INI:FactionMen //THIS DOESN'T WORK?
 "Gondor"
 END
-INI:FactionGondor //This does!?
+INI:FactionGondor //This does!? EDIT: And now this doesn't work either?
 "Gondor"
 END
 INI:FactionElves

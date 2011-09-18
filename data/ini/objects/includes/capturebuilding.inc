@@ -12,3 +12,10 @@
 		PackTime					= 1
 		DoCaptureFX					= Yes
 	End
+
+	Behavior = AISpecialPowerUpdate CaptureBuildingAI				//Added for SEE!
+		CommandButtonName = Command_CaptureBuilding
+		SpecialPowerAIType = AI_SPECIAL_POWER_CAPTURE_BUILDING
+	End
+
+	

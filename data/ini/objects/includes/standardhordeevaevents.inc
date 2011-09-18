@@ -9,7 +9,7 @@
 
 	; Control settings for EvaEventSecondDamageFarFromFirstOwner
 	EvaEventSecondDamageFarFromFirstScanRange = 600    ; What 'far' means. Note that each unit damaged blocks the second-damage callout within this range, not just the first damaged unit
-	EvaEventSecondDamageFarFromFirstTimeoutMS = 31000  ; When the first damaged event plays, the unit must wait this long before trying second. Generally should >= timeout on event
+	EvaEventSecondDamageFarFromFirstTimeoutMS = 91000 //31000  ; When the first damaged event plays, the unit must wait this long before trying second. Generally should >= timeout on event
 
    
 	; Might or might not need this, but shouldn't hurt.
