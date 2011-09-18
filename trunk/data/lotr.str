@@ -54,7 +54,7 @@ END
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
 
 TOOLTIP:LackWildBasicTraining
-"Research at Fissure to enable this equipment \n When equipped, increases this battalion to level 2"
+"Research at Trove to enable this equipment \n When equipped, increases this battalion to level 2"
 END
 TOOLTIP:LackWildHeavyArmor
 "Research at Fissure to enable this equipment \n When equipped, significantly reduces the amount of damage taken"
@@ -65,9 +65,8 @@ END
 TOOLTIP:LackWildForgedBlades
 "Research at Fissure to enable this equipment \n When equipped, increases the damage done by melee weapons"
 END
-
 TOOLTIP:LackVenomSacksTechnology
-"Research upgrade at Troll Cave to enable this equipment \n When equipped, inflicts poison to enemies causing damage over time"
+"Research at Troll Cave to enable this equipment \n When equipped, inflicts poison to enemies causing damage over time"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
@@ -16266,14 +16265,14 @@ CONTROLBAR:ConstructGoblinFighterHorde
 "Goblin Warriors"
 END
 CONTROLBAR:ToolTipBuildGoblinFighterHorde
-"Strong vs. Pikemen"
+"Recruit the wild Goblin fighters \n from the intracate caves of Moria \n \n Strong vs. Pikemen"
 END
 
 CONTROLBAR:ConstructGoblinArcherHorde
 "Goblin Archers"
 END
 CONTROLBAR:ToolTipBuildGoblinArcherHorde
-"Strong vs. Swordsmen"
+"Recruit the wild Goblin archers \n from the intracate caves of Moria \n \n Strong vs. Swordsmen"
 END
 
 CONTROLBAR:ConstructGoblinCave
@@ -28356,12 +28355,18 @@ OBJECT:WildGoblinKing
 "Azog"
 END
 
-TOOLTIP:LackLevel3TreasureTrove
-"Requires Level 3 Treasure Trove"
+TOOLTIP:LackLevel3Fissure
+"Requires level 3 Fissure"
+END
+TOOLTIP:LackLevel2Fissure
+"Requires level 2 Fissure"
 END
 
+TOOLTIP:LackLevel3TreasureTrove
+"Requires level 3 Treasure Trove"
+END
 TOOLTIP:LackLevel2TreasureTrove
-"Requires Level 2 Treasure Trove"
+"Requires level 2 Treasure Trove"
 END
 
 
@@ -41565,23 +41570,20 @@ CONTROLBAR:ToolTipPurchaseTechnologyDwarvenMithrilMail
 END
 
 CONTROLBAR:PurchaseUpgradeWildBasicTraining
-"Purchase Ba&nner Carrier"
+"Purchase Moria Banner Carrier"
 END
-
 CONTROLBAR:ToolTipPurchaseUpgradeWildBasicTraining
-"Increases this horde to Level 2 \n Can only be equipped at Level 1"
+"Increases this horde to Level 2 \n Can only be equipped at level 1"
 END
-
 CONTROLBAR:PurchaseTechnologyWildBasicTraining
-"Research Ba&nner Carriers"
+"Research Moria Banner Carriers"
 END
-
 CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining
-"Allows hordes to purchase the Banner Carrier upgrade \n Increases a horde to Level 2"
+"Allows hordes to purchase the Moria Banner Carrier upgrade \n Increases a horde to level 2"
 END
 
 CONTROLBAR:PurchaseUpgradeWildFireArrows
-"Purchase Fire Arro&ws"
+"Purchase Fire Arrows"
 END
 
 CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
@@ -41589,11 +41591,11 @@ CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
 END
 
 CONTROLBAR:PurchaseTechnologyWildFireArrows
-"Research Fire Arro&ws"
+"Research Fire Arrows"
 END
 
 CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
-"Allows hordes to purchase \n the Fire Arrows upgrade \n When equipped, significantly increases the damage done by Arrows"
+"Allows hordes to purchase \n the Fire Arrows upgrade \n When equipped, significantly increases the damage done by arrows \ n Strong vs. structures"
 END
 
 CONTROLBAR:PurchaseUpgradeWildForgedBlade
@@ -42318,35 +42320,35 @@ END
 
 
 Upgrade:WildCaveLevel2
-"Cave Level 2"
+"Cave level 2"
 END
 
 Upgrade:WildCaveLevel3
-"Cave Level 3"
+"Cave level 3"
 END
 
 Upgrade:WildFissureLevel2
-"Fissure Level 2"
+"Fissure level 2"
 END
 
 Upgrade:WildFissureLevel3
-"Fissure Level 3"
+"Fissure level 3"
 END
 
 Upgrade:WildSpiderPitLevel2
-"Troll Cave Level 2"
+"Troll Cave level 2"
 END
 
 Upgrade:WildSpiderPitLevel3
-"Troll Cave Level 3"
+"Troll Cave level 3"
 END
 
 Upgrade:WildWolfDenLevel2
-"Wolf and Warg Den Level 2"
+"Wolf and Warg Den level 2"
 END
 
 Upgrade:WildWolfDenLevel3
-"Wolf and Warg Den Level 3"
+"Wolf and Warg Den level 3"
 END
 
 Upgrade:WildVenomSacs
@@ -42354,11 +42356,11 @@ Upgrade:WildVenomSacs
 END
 
 Upgrade:WildTreasureTroveLevel2
-"Treasure Trove Level 2"
+"Treasure Trove level 2"
 END
 
 Upgrade:WildTreasureTroveLevel3
-"Treasure Trove Level 3"
+"Treasure Trove level 3"
 END
 
 
@@ -48910,7 +48912,7 @@ END
 
 
 // #################################################################################################### POISON TECH!
-Upgrade:WildPoisonBlades
+UPGRADE:WildPoisonBlades
 "Blade Poison"
 END
 CONTROLBAR:PurchaseTechnologySpiderPoisonBlades

@@ -1644,11 +1644,68 @@ Weapon GoblinFighterSword
     DelayTime     = 0
     DamageType    = SLASH
     DamageFXType  = SWORD_SLASH
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
+    FlankingBonus = 50%
+  End
+End
+;------------------------------------------------------------------------------
+Weapon GoblinFighterSwordUpgraded
+  LeechRangeWeapon      = Yes
+  AttackRange           = STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           = Yes
+  DelayBetweenShots     = GOBLIN_FIGHTER_DELAYBETWEENSHOTS            ; time between shots, msec
+  PreAttackDelay        = GOBLIN_FIGHTER_PREATTACKDELAY             ; 300 is mace swing delay time before contact with target.
+  PreAttackType         = PER_SHOT ; Do the delay each time we attack
+  FireFX                = FX_GondorSwordHit
+  FireFlankFX		= FX_Flanking
+  FiringDuration        = GOBLIN_FIGHTER_FIRINGDURATION    ; Duration of the mace swing 
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = GOBLIN_FIGHTER_FORGEDBLADES_UPGRADE	
+    Radius        = 0.0
+    DelayTime     = 0
+    DamageType    = SLASH
+    DamageFXType  = SWORD_SLASH
     DeathType     = NORMAL
     FlankingBonus = 50%
   End
 End
 
+;------------------------------------------------------------------------------
+Weapon GoblinFighterSwordPoisoned
+	LeechRangeWeapon			= Yes
+	AttackRange					 = 30.0
+	MeleeWeapon					= Yes
+	DelayBetweenShots			= GOBLIN_FIGHTER_DELAYBETWEENSHOTS
+	PreAttackDelay				= GOBLIN_FIGHTER_PREATTACKDELAY
+	PreAttackType				= PER_SHOT
+	FireFX						= FX_GondorSwordHit
+	FireFlankFX					= FX_Flanking
+	FiringDuration					= GOBLIN_FIGHTER_FIRINGDURATION
+
+	DamageNugget
+		Damage					= GOBLIN_FIGHTER_DAMAGE
+		Radius					= 0.0
+		DelayTime				= 0
+		DamageType				= SLASH
+		DamageFXType			= SWORD_SLASH
+		DeathType				= NORMAL
+		FlankingBonus				= 50%
+	End
+
+	DOTNugget
+		Damage					= GOBLIN_FIGHTER_POISON_DAMAGE
+		AcceptDamageAdd			= No
+		Radius					= 0.0
+		DelayTime				= 0
+		DamageType				= POISON
+		DamageFXType			= POISON
+		DeathType				= NORMAL
+		DamageInterval			= 1000
+		DamageDuration			= 15000					; originally 30000
+		SpecialObjectFilter			= AFFECTED_BY_POISON_OBJECTFILTER
+	End
+End
 ;------------------------------------------------------------------------------
 Weapon GoblinFighterSwordPoisonedUpgraded
 	LeechRangeWeapon			= Yes
@@ -1686,64 +1743,9 @@ Weapon GoblinFighterSwordPoisonedUpgraded
 End
 
 
-;------------------------------------------------------------------------------
-Weapon GoblinFighterSwordPoisoned
-	LeechRangeWeapon			= Yes
-	AttackRange					  = 30.0
-	MeleeWeapon					= Yes
-	DelayBetweenShots			= GOBLIN_FIGHTER_DELAYBETWEENSHOTS
-	PreAttackDelay				= GOBLIN_FIGHTER_PREATTACKDELAY
-	PreAttackType				= PER_SHOT
-	FireFX						= FX_GondorSwordHit
-	FireFlankFX					= FX_Flanking
-	FiringDuration				= GOBLIN_FIGHTER_FIRINGDURATION
 
-	DamageNugget
-		Damage					= GOBLIN_FIGHTER_DAMAGE
-		Radius					= 0.0
-		DelayTime				= 0
-		DamageType				= SLASH
-		DamageFXType			= SWORD_SLASH
-		DeathType				= NORMAL
-		FlankingBonus			= 50%
-	End
 
-	DOTNugget
-		Damage					= GOBLIN_FIGHTER_POISON_DAMAGE
-		AcceptDamageAdd			= No
-		Radius					= 0.0
-		DelayTime				= 0
-		DamageType				= POISON
-		DamageFXType			= POISON
-		DeathType				= NORMAL
-		DamageInterval			= 1000
-		DamageDuration			= 15000					; originally 30000
-		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
-	End
-End
 
-;------------------------------------------------------------------------------
-Weapon GoblinFighterSwordUpgraded
-  LeechRangeWeapon      = Yes
-  AttackRange           = STANDARD_MELEE_ATTACK_RANGE
-  MeleeWeapon           = Yes
-  DelayBetweenShots     = GOBLIN_FIGHTER_DELAYBETWEENSHOTS            ; time between shots, msec
-  PreAttackDelay        = GOBLIN_FIGHTER_PREATTACKDELAY             ; 300 is mace swing delay time before contact with target.
-  PreAttackType         = PER_SHOT ; Do the delay each time we attack
-  FireFX                = FX_GondorSwordHit
-  FireFlankFX		= FX_Flanking
-  FiringDuration        = GOBLIN_FIGHTER_FIRINGDURATION    ; Duration of the mace swing 
-
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = GOBLIN_FIGHTER_FORGEDBLADES_UPGRADE	
-    Radius        = 0.0
-    DelayTime     = 0
-    DamageType    = SLASH
-    DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
-    FlankingBonus = 50%
-  End
-End
 
 ;------------------------------------------------------------------------------
 Weapon CrebainBasicWeapon

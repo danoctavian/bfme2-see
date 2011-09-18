@@ -220,30 +220,42 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinFissureCommandSet	
 	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	3 = Command_PurchaseTechnologyWildHeavyArmor
-	4 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
-	5 = Command_UpgradeWildFissureLevel2
+	;2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	2 = Command_PurchaseTechnologyWildHeavyArmor
+	3 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
+	4 = Command_UpgradeWildFissureLevel2
 	6 = Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel2
 	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	3 = Command_PurchaseTechnologyWildHeavyArmor
-	4 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
-	5 = Command_PurchaseUpgradeWildFissureLevel3
+	;2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	2 = Command_PurchaseTechnologyWildHeavyArmor
+	3 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
+	4 = Command_PurchaseUpgradeWildFissureLevel3
 	6 = Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel3
 	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	3 = Command_PurchaseTechnologyWildHeavyArmor	
-	4 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
+	;2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	2 = Command_PurchaseTechnologyWildHeavyArmor	
+	3 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
 	6 = Command_Sell
 End
 
-
-
+; ------------------------------------------------------------------------------ SEE!
+CommandSet GoblinFighterCommandSet
+	 1 = Command_ToggleStance
+	 2 = Command_PurchaseUpgradeWildBasicTraining
+	 3 = Command_PurchaseUpgradeWildHeavyArmor
+	 ;4 = Command_PurchaseUpgradeWildForgedBlade
+	 4 = Command_PurchaseUpgradeWildSpiderVenom //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
+	12 = Command_CaptureBuilding
+	13 = Command_AttackMove
+	14 = Command_Stop
+	16 = Command_SetStanceBattle
+	17 = Command_SetStanceAggressive
+	18 = Command_SetStanceHoldGround
+End
 
 
 
@@ -352,19 +364,7 @@ CommandSet GoblinArcherHordeCommandSet
 	18  = Command_SetStanceHoldGround
 End
 
-CommandSet GoblinFighterCommandSet
-	 1 = Command_ToggleStance
-	 2 = Command_PoisonedBlades
-	 3 = Command_PurchaseUpgradeWildForgedBlade
-	 4 = Command_PurchaseUpgradeWildHeavyArmor
-	 5 = Command_PurchaseUpgradeWildBasicTraining
-	12 = Command_CaptureBuilding
-	13 = Command_AttackMove
-	14 = Command_Stop
-	16  = Command_SetStanceBattle
-	17  = Command_SetStanceAggressive
-	18  = Command_SetStanceHoldGround
-End
+
 
 CommandSet WildSpiderlingCommandSet
 	 1 = Command_ToggleStance

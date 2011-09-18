@@ -1,11 +1,12 @@
-////////////////
-// ARMOR.INC //
-//////////////
-//Moria//
-////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
 
+; Armor.INC for MORIA (Wild) faction...
+; ------------------------------------------------------------------------------ "SEE!" = The codes have been adapted/converted from the obsolete Beta 4.7 WiP...
+; NOTE: Keep this organized!
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------- SEE!
 Armor WildFortressArmor
 	Armor = DEFAULT				20% 		;this sets the level for all nonspecified damage types
 	Armor = CRUSH				5%  		;horseman damage
@@ -22,7 +23,7 @@ Armor WildFortressArmor
 	Armor = HERO_RANGED		5%			;Hero bow damage
 	Armor = LOGICAL_FIRE	 		5%
 End
-
+;------------------------------------------------------------------------------- SEE!
 Armor WildFortressExpansionArmor
 	Armor = DEFAULT				40%    //this sets the level for all nonspecified damage types
 	Armor = CRUSH				10% ;50    //horseman damage
@@ -39,7 +40,7 @@ Armor WildFortressExpansionArmor
 	Armor = LOGICAL_FIRE	 		10%
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------- SEE!
 Armor WildStructureArmor			; NOTE - This is based on StructureArmor (original value to the far right)
   Armor = DEFAULT       	 	50% //60%	; This sets the level for all nonspecified damage types!
   Armor = CRUSH         	 	10% //1%	; Horseman damage
@@ -56,6 +57,51 @@ Armor WildStructureArmor			; NOTE - This is based on StructureArmor (original va
   Armor = HERO_RANGED   	 	10%		; Hero bow damage
   Armor = LOGICAL_FIRE		  	10% //2%
 End
+
+;------------------------------------------------------------------------------- SEE!
+Armor GoblinFighterArmor
+  Armor = DEFAULT         	100%   ; 
+  Armor = SLASH           	100%   ; 
+  Armor = PIERCE           	150%   ;  
+  Armor = SPECIALIST      	40%   ; 
+  Armor = CAVALRY	  		150%   ;
+  Armor = CRUSH           	100%   ; 
+  Armor = SIEGE           	100%   ;
+  Armor = FLAME           	100%   ; 
+  Armor = MAGIC           	100%   ;
+  Armor = HERO            	200%   ;
+  Armor = HERO_RANGED     	200%   ; 
+  Armor = STRUCTURAL	  	100%	
+  FlankedPenalty = 			50%     
+End
+;------------------------------------------------------------------------------- SEE!
+Armor GoblinFighterScavengedArmor								;WildFighterScavengedArmor
+  Armor = DEFAULT         	50%   ; 
+  Armor = SLASH           	50%   ; 
+  Armor = PIERCE           	75%   ;  
+  Armor = SPECIALIST      	20%   ; 
+  Armor = CAVALRY	  		75%   ;
+  Armor = CRUSH           	50%   ; 
+  Armor = SIEGE           	50%   ;
+  Armor = FLAME           	50%   ; 
+  Armor = MAGIC           	50%   ;
+  Armor = HERO            	100%   ;
+  Armor = HERO_RANGED     	100%   ; 
+  Armor = STRUCTURAL	  	20%	
+  FlankedPenalty = 			50%      
+End
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -78,40 +124,9 @@ Armor BalrogArmor
 End
 
 ;------------------------------------------------------------------------------
-Armor GoblinFighterArmor
-  Armor = DEFAULT         	110%   ;  	originally 100%
-  Armor = SLASH           	125%   ; 	originally 100%
-  Armor = PIERCE           	 90%   ;  	originally 150%	RotWK originally 110%
-  Armor = SPECIALIST     	 50%   ; 	originally 40%
-  Armor = CAVALRY	  	200%   ;	originally 150%
-  Armor = CRUSH           	150%   ; 	originally 100%
-  Armor = SIEGE           	100%   ;
-  Armor = FLAME           	100%   ; 
-  Armor = FROST          	100%   ;
-  Armor = MAGIC           	100%   ;
-  Armor = HERO            	200%   ;
-  Armor = HERO_RANGED     	200%   ; 
-  Armor = STRUCTURAL	  	 80%   ;	originally 100%
-  FlankedPenalty 	       = 50%     
-End
+
 
 ;------------------------------------------------------------------------------
-Armor WildFighterScavengedArmor
-  Armor = DEFAULT        	 65%   ; 	originally 50%
-  Armor = SLASH          	 65%   ; 	originally 50%
-  Armor = PIERCE          	 45%   ;  	originally 75%	RotWK originally 65%
-  Armor = SPECIALIST     	 35%   ; 	originally 20%
-  Armor = CAVALRY	 	150%   ;	originally 75%
-  Armor = CRUSH          	 50%   ; 
-  Armor = SIEGE          	 50%   ;
-  Armor = FLAME          	 50%   ; 
-  Armor = FROST          	 50%   ;
-  Armor = MAGIC          	 50%   ;
-  Armor = HERO            	100%   ;
-  Armor = HERO_RANGED     	100%   ; 
-  Armor = STRUCTURAL	 	 50%   ; 	originally 20%
-  FlankedPenalty 	       = 50%      
-End
 
 Armor WildArcherScavengedArmor
   Armor = DEFAULT        	 60%   ; originally 50%

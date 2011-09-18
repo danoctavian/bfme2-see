@@ -192,7 +192,6 @@
 
 ;--------	DRUM  ---------------------------------------------- SEE!
 
-
 #define GOBLIN_DRUM_BUILDCOST					500
 #define GOBLIN_DRUM_VISION_RANGE				160
 #define GOBLIN_DRUM_SHROUD_CLEAR				200
@@ -279,7 +278,7 @@
 #define GOBLIN_SPIDERPIT_LVL2_BUILD_SPEED				1.33
 #define GOBLIN_SPIDERPIT_LVL3_BUILD_SPEED				1.50
 
-#define GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_COST				200
+#define GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_COST				200 ;SEE!
 #define GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_BUILDTIME			30
 #define GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_COST		1000
 #define GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_BUILDTIME	30
@@ -338,11 +337,38 @@
 #define SKULL_TOTEM_STEALTH_DETECT_RATE				1000	; ms
 #define SKULL_TOTEM_STEALTH_DETECT_RADIUS			400
 
+;--------	SWORDSMAN ------------------------------------------------------ SEE!
+
+#define	GOBLIN_FIGHTER_BUILDCOST							75
+#define	GOBLIN_FIGHTER_BUILDTIME							60 //120 ; weak but fast!
+#define	GOBLIN_FIGHTER_DAMAGE								30 ;25 for Hobbits as reference
+#define GOBLIN_FIGHTER_FORGEDBLADES_UPGRADE				40
+#define	GOBLIN_FIGHTER_HEALTH								225
+#define	GOBLIN_FIGHTER_HEALTH_DAMAGED						100
+
+#define	GOBLIN_FIGHTER_BOUNTY_VALUE						1
+#define GOBLIN_FIGHTER_PREATTACKDELAY 						522
+#define GOBLIN_FIGHTER_DELAYBETWEENSHOTS 					245 
+#define GOBLIN_FIGHTER_FIRINGDURATION 						245
+
+#define GOBLIN_FIGHTER_HORDE_VISION_RANGE   				175
+#define GOBLIN_FIGHTER_SHROUD_RANGE      					300
+#define GOBLIN_FIGHTER_VISION_RANGE    						250 //175
 
 
 
-;//======================WILDMEN========================
-;//=======================UNITS=========================
+
+
+
+
+
+
+
+
+
+
+
+
 
 ;------------------------SHELOB-------------
 
@@ -396,23 +422,7 @@
 
 #define	WILD_PORTER_BOUNTY_VALUE      			125
 
-;//-----------------FIGHTER-------------
 
-#define	GOBLIN_FIGHTER_BUILDCOST			80	; originally 75
-#define	GOBLIN_FIGHTER_BUILDTIME			33
-#define	GOBLIN_FIGHTER_DAMAGE				15	; 20
-#define GOBLIN_FIGHTER_FORGEDBLADES_UPGRADE		35	; 40
-#define	GOBLIN_FIGHTER_HEALTH				50	; 75
-#define	GOBLIN_FIGHTER_HEALTH_DAMAGED			20
-
-#define	GOBLIN_FIGHTER_BOUNTY_VALUE			1
-#define GOBLIN_FIGHTER_PREATTACKDELAY 			522
-#define GOBLIN_FIGHTER_DELAYBETWEENSHOTS 		245 
-#define GOBLIN_FIGHTER_FIRINGDURATION 			245
-
-#define GOBLIN_FIGHTER_HORDE_VISION_RANGE      		175
-#define GOBLIN_FIGHTER_SHROUD_RANGE            		300
-#define GOBLIN_FIGHTER_VISION_RANGE        		175
 
 ;-----------------ARCHER-------------
 
