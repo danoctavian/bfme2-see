@@ -220,25 +220,25 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinFissureCommandSet	
 	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	;2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	2 = Command_PurchaseTechnologyWildHeavyArmor
-	3 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
-	4 = Command_UpgradeWildFissureLevel2
+	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	3 = Command_PurchaseTechnologyWildHeavyArmor
+	4 = Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
+	5 = Command_UpgradeWildFissureLevel2
 	6 = Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel2
 	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	;2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	2 = Command_PurchaseTechnologyWildHeavyArmor
-	3 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
-	4 = Command_PurchaseUpgradeWildFissureLevel3
+	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	3 = Command_PurchaseTechnologyWildHeavyArmor
+	4 = Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
+	5 = Command_PurchaseUpgradeWildFissureLevel3
 	6 = Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel3
 	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	;2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	2 = Command_PurchaseTechnologyWildHeavyArmor	
-	3 = Command_ConstructAngmarTrollSling //Command_ConstructWildBabyDrakeHorde
+	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	3 = Command_PurchaseTechnologyWildHeavyArmor	
+	4 = Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
 	6 = Command_Sell
 End
 

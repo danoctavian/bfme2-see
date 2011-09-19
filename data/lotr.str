@@ -16355,13 +16355,13 @@ CONTROLBAR:UpgradeWildFissureLevel2
 "Upgrade Fissure to level 2"
 END
 CONTROLBAR:ToolTipBuildWildFissureLevel2Upgrade
-"Level 2: +33% faster build speed \n Allows research of Forged Blades upgrade"
+"Level 2: Allows research of Forged Blades upgrade"
 END
 CONTROLBAR:UpgradeWildFissureLevel3
 "Upgrade Fissure to level 3"
 END
 CONTROLBAR:ToolTipBuildWildFissureLevel3Upgrade
-"Level 3: +50% faster build speed \n Allows construction of Catapult, \n and research of Heavy Armor upgrade"
+"Level 3: Allows research of Heavy Armor upgrade \ and construction of Catapults"
 END
 
 CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
@@ -27986,7 +27986,7 @@ CONTROLBAR:ConstructDwarvenCatapult
 END
 
 CONTROLBAR:ToolTipBuildDwarvenCatapult
-"Requires Level 2 Forge Works \n Strong vs. Structures and Siege units \n Fires two shots at once"
+"Twin shot Catapult \n Requires Level 2 Forge Works \n Strong vs. Structures"
 END
 
 
@@ -41607,11 +41607,10 @@ CONTROLBAR:ToolTipPurchaseUpgradeWildForgedBlade
 END
 
 CONTROLBAR:PurchaseTechnologyWildForgedBlades
-"Research Forged B&lades"
+"Research Forged Blades"
 END
-
 CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
-"Allows hordes to purchase the Forged Blades upgrade \n Increases the damage done by Melee Weapons"
+"Allows hordes to purchase the Forged Blades upgrade \n Increases the damage done by melee weapons"
 END
 
 CONTROLBAR:PurchaseUpgradeWildHeavyArmor
@@ -41623,10 +41622,9 @@ CONTROLBAR:ToolTipPurchaseUpgradeWildHeavyArmor
 END
 
 CONTROLBAR:PurchaseTechnologyWildHeavyArmor
-"Research Sca&venged Armor"
+"Research Scavenged Armor"
 END
-
-CONTROLBAR:ToolTipPurchaseechnologyWildHeavyArmor
+CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
 "Allows hordes to purchase Scavenged Armor \n Significantly reduces the amount of damage taken"
 END
 
@@ -47840,6 +47838,30 @@ SUBTITLE:CS99_05
 "*The Elven and Dwarven races have always had little trust for each other, but now they must unite and fight a common enemy."
 END
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 CONTROLBAR:MountHorseBlackRider
 	"&Mount horse"
 END
@@ -49991,3 +50013,6046 @@ END
 UPGRADE:GenericBasicTraining
 "Banner Carrier"
 END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////// ANGMAR UNITS //////////////////////////////////////////
+
+
+
+// Angmar Units
+
+OBJECT:AngmarDarkDunedain
+"Black Numenoreans"
+END
+
+OBJECT:Angmarnecromancer
+"Sorcerer"
+END
+
+
+OBJECT:AngmarRanger
+"Dark Rangers"
+END
+
+OBJECT:AngmarMenOfDale
+"Men of Dale"
+END
+
+OBJECT:AngmarBanner
+"Banner Carrier"
+END
+
+OBJECT:HordeAngmarDarkDunedain
+"Black Numenoreans"
+END
+
+OBJECT:HordeAngmarRanger
+"Dark Rangers"
+END
+
+CONTROLBAR:AngmarWitchKingRecruit
+"Recruit the Ruler of Angmar"
+END
+CONTROLBAR:AngmarWitchKingRevive
+"Revive the fallen Hero, The Witch-king"
+END
+CONTROLBAR:AngmarWitchKingHotkey
+"&Witch-king"
+END
+
+APT:Angmar
+"Angmar"
+END
+
+
+APT:AngmarCaps
+"ANGMAR"
+END
+
+OBJECT:WitchKingDescription
+"Utterly ruthless in battle, the Witch-king's attacks damage ALL nearby units."
+END
+
+////////////////////////////////
+//	    Angmar
+////////////////////////////////
+
+
+BANNERUI:AngmarDireWolf
+// Singluar name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Dire Wolf"
+End
+
+BANNERUI:AngmarDireWolves
+// Plural name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Dire Wolves"
+End
+
+BANNERUI:AngmarSnowTroll
+// Singluar name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Snow Troll"
+End
+
+BANNERUI:AngmarSnowTrolls
+// Plural name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Snow Trolls"
+End
+
+BANNERUI:AngmarHillTroll
+// Singluar name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Hill Troll"
+End
+
+BANNERUI:AngmarHillTrolls
+// Plural name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Hill Trolls"
+End
+
+BANNERUI:AngmarNecromancer
+// Singluar name of the Angmar Guardian category displayed in the army summary for WotR
+"Sorcerer"
+End
+
+BANNERUI:AngmarNecromancers
+// Plural name of the Angmar Guardian category displayed in the army summary for WotR
+"Sorcerers"
+End
+
+BANNERUI:AngmarTrollSling
+// Singluar name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Troll Stone Thrower"
+End
+
+BANNERUI:AngmarTrollSlings
+// Plural name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Troll Stone Throwers"
+End
+
+BANNERUI:AngmarThrallMaster
+// Singluar name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Thrall Master"
+End
+
+BANNERUI:AngmarThrallMasters
+// Plural name of the Angmar Guardian category displayed in the army summary for WotR
+"Angmar Thrall Masters"
+End
+
+LWA:Angmar
+"Angmar"
+End
+
+LWA:AngmarArmy
+"Angmar Army"
+End
+
+LWA:AngmarHeroArmy
+"Angmar Hero Army"
+End
+
+LWA:AngmarGarrison
+"Angmar Garrison Army"
+End
+
+////Angmar Units////
+
+CONTROLBAR:LW_Unit_AngmarDarkDunedainHorde
+"Black Numenorean Horde"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarDarkDunedainHorde
+"Unit Type: Elite Swordsmen\nStrong vs. Pikemen\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarDarkDunedainHordePlural
+"Black Numenorean Hordes"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarDarkDunedainHorde
+"Unit Type: Elite Swordsmen\nStrong vs. Pikemen\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarDarkRangerHorde
+"Dark Ranger Horde"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarDarkRangerHorde
+"Unit Type: Elite Archers\nStrong at Range\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarDarkRangerHordePlural
+"Dark Ranger Hordes"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarDarkRangerHorde
+"Unit Type: Elite Archers\nStrong at Range\n"
+END
+
+TOOLTIP:LackLevel2HallOfKingsMen
+"Requires Level 2 Hall of the King's Men"
+END
+
+TOOLTIP:LackLevel3HallOfKingsMen
+"Requires Level 3 Hall of the King's Men"
+END
+
+CONTROLBAR:ConstructAngmarDen
+"Build Troll and Wolf &Den"
+END
+
+OBJECT:AngmarDenDescription
+"Level 2: +10% Faster Build Speed\n Level 3: +25% Faster Build Speed"
+END
+
+CONTROLBAR:ToolTipAngmarDen
+"Trains Dire Wolves, Snow and Hill Trolls"
+END
+
+CONTROLBAR:TooltipUpgradeAngmarDenLevel2
+"Allows training of Snow and Hill Trolls \n +10% Faster Build Speed"
+End
+
+CONTROLBAR:TooltipUpgradeAngmarDenLevel3
+"Allows the research of Spiked Collars \n+25% Faster Build Speed"
+End
+
+CONTROLBAR:UpgradeAngmarDenLevel2
+"&Upgrade Den to Level 2"
+End
+
+CONTROLBAR:UpgradeAngmarDenLevel3
+"&Upgrade Den to Level 3"
+End
+
+Upgrade:AngmarDenLevel2
+"Troll and Wolf Den Level 2"
+END
+
+Upgrade:AngmarDenLevel3
+"Troll and Wolf Den Level 3"
+END
+
+OBJECT:AngmarDireWolf
+"Dire Wolf"
+END
+
+OBJECT:HordeAngmarDireWolf
+"Dire Wolf Pack"
+END
+
+CONTROLBAR:LW_Unit_AngmarDireWolfHorde
+"Dire Wolf"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarDireWolfHorde
+"Unit Type: Infantry\nStrong vs. Archers and Pikemen\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarDireWolfHordePlural
+"Dire Wolves"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarDireWolfHorde
+"Unit Type: Fast Infantry\nStrong vs. Archers and Pikemen\n"
+END
+
+OBJECT:AngmarSnowTroll
+"Snow Troll"
+END
+
+OBJECT:HordeAngmarSnowTroll
+"Snow Trolls"
+END
+
+CONTROLBAR:LW_Unit_AngmarSnowTrollHorde
+"Snow Troll"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarSnowTrollHorde
+"Unit Type: Elite Cavalry\nStrong vs. Archers and Swordsmen\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarSnowTrollHordePlural
+"Snow Trolls"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarSnowTrollHorde
+"Unit Type: Elite Cavalry\nStrong vs. Archers and Swordsmen\n"
+END
+
+OBJECT:AngmarHillTroll
+"Hill Troll"
+END
+
+OBJECT:HordeAngmarHillTroll
+"Hill Trolls"
+END
+
+CONTROLBAR:LW_Unit_AngmarHillTrollHorde
+"Hill Troll"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarHillTrollHorde
+"Unit Type: Elite Pikeman\nStrong vs. Cavalry\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarHillTrollHordePlural
+"Hill Trolls"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarHillTrollHorde
+"Unit Type: Elite Pikeman\nStrong vs. Cavalry\n"
+END
+
+CONTROLBAR:ConstructHallofTwilight
+"Build &Temple of Twilight"
+END
+
+OBJECT:AngmarHallofTwilightDescription
+"Level 2: +10% Faster Build Speed\n Level 3: +25% Faster Build Speed"
+END
+
+CONTROLBAR:ToolTipAngmarHallofTwilight
+"Trains Sorcerers"
+END
+
+CONTROLBAR:TooltipUpgradeAngmarHallofTwilightLevel2
+"Allows Sorcerer Spell Research\n +10% Faster Build Speed"
+End
+
+CONTROLBAR:TooltipUpgradeAngmarHallofTwilightLevel3
+"Allows Advanced Sorcerer Spell Research\n +25% Faster Build Speed"
+End
+
+CONTROLBAR:UpgradeAngmarHallofTwilightLevel2
+"&Upgrade Temple of Twilight to Level 2"
+End
+
+CONTROLBAR:UpgradeAngmarHallofTwilightLevel3
+"&Upgrade Temple of Twilight to Level 3"
+End
+
+Upgrade:AngmarHallofTwilightLevel2
+"Temple of Twilight Level 2"
+END
+
+Upgrade:AngmarHallofTwilightLevel3
+"Temple of Twilight Level 3"
+END
+
+OBJECT:AngmarNecromancer
+"Sorcerer"
+END
+
+OBJECT:HordeAngmarNecromancer
+"Sorcerer"
+END
+
+CONTROLBAR:LW_Unit_AngmarNecromancerHorde
+"Sorcerer"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarNecromancerHorde
+"Unit Type: Support\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarNecromancerHordePlural
+"Sorcerers"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarNecromancerHorde
+"Unit Type: Support\n"
+END
+
+CONTROLBAR:ConstructAngmarForgeWorks
+"Build Dark &Iron Forge"
+END
+
+OBJECT:AngmarForgeWorksDescription
+"Level 2: +10% Faster Build Speed\n Level 3: +25% Faster Build Speed"
+END
+
+CONTROLBAR:ToolTipForgeWorks
+"Trains Troll Stone Throwers and Researches Tech Upgrades"
+END
+
+CONTROLBAR:TooltipUpgradeAngmarForgeWorksLevel2
+"Allows research of Dark Iron Blades and Ice Arrows \n +10% Faster Build Speed"
+End
+
+CONTROLBAR:TooltipUpgradeAngmarForgeWorksLevel3
+"Allows Research of Dark Iron Mail and Ice Shot \n +25% Faster Build Speed"
+End
+
+CONTROLBAR:UpgradeAngmarForgeWorksLevel2
+"&Upgrade Dark Iron Forge to Level 2"
+End
+
+CONTROLBAR:UpgradeAngmarForgeWorksLevel3
+"&Upgrade Dark Iron Forge to Level 3"
+End
+
+Upgrade:AngmarForgeWorksLevel2
+"Dark Iron Forge Level 2"
+END
+
+Upgrade:AngmarForgeWorksLevel3
+"Dark Iron Forge Level 3"
+END
+
+OBJECT:AngmarTrollSling
+"Troll Stone Thrower"
+END
+
+OBJECT:HordeAngmarTrollSling
+"Troll Stone Thrower"
+END
+
+CONTROLBAR:LW_Unit_AngmarTrollSling
+"Troll Stone Thrower"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarTrollSlingHorde
+"Unit Type: Siege\nStrong vs. Structures\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarTrollSlingPlural
+"Troll Stone Throwers"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarTrollSling
+"Unit Type: Siege\nStrong vs. Structures\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarThrallMaster
+"Thrall Master"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarThrallMaster
+"Unit Type: Versatile\n"
+END
+
+CONTROLBAR:LW_Unit_AngmarThrallMasterPlural
+"Thrall Masters"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarThrallMaster
+"Unit Type: Versatile\n"
+END
+
+
+OBJECT:AngmarMillDescription
+"Level 2: +10% Faster Build Speed\n Level 3: +25% Faster Build Speed"
+END
+
+CONTROLBAR:ToolTipMill
+"Generates Resources"
+END
+
+/////// Angmar LW Structures ///////
+
+CONTROLBAR:LW_Structure_AngmarFortress
+"Angmar Fortress"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarFortress
+"Structure Type: Fortress\nDefends territory and recruits Heroes\n"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarFortress
+"Structure Type: Fortress\nDefends territory and recruits Heroes"
+END
+
+CONTROLBAR:PurchaseUpgradeAngmarFortressBanners
+"&Flames of Darkness"
+END
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressBanners
+"Provides additional experience to nearby troops \n Reduces Hero cost by 10% \n Reduces Hero recruit time by 10% \n Reduces the cost of builders by 20%"
+END
+
+
+CONTROLBAR:LW_Structure_AngmarBarracks
+"Hall of the King's Men"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarBarracks
+"Structure Type: Barracks\nTrains Angmar units\n"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarBarracks
+"Structure Type: Barracks\nTrains Angmar units"
+END
+
+CONTROLBAR:LW_Structure_AngmarBlackSmith
+"Dark Iron Forge"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarBlackSmith
+"Structure Type: Armory\nGrants all upgrades to units\n"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarBlackSmith
+"Structure Type: Armory\nGrants all upgrades to units"
+END
+
+CONTROLBAR:LW_Structure_AngmarFarm
+"Mill"
+END
+
+CONTROLBAR:LW_ToolTipBuild_AngmarFarm
+"Structure Type: Farm\nIncreases treasury\n"
+END
+
+CONTROLBAR:LW_ToolTip_AngmarFarm
+"Structure Type: Farm\nIncreases treasury\n"
+END
+
+
+////////////////////////
+// Angmar buildings  //
+////////////////////////
+
+CONTROLBAR:ConstructAngmarStoneThrowerExpansion
+"Troll &Stone Thrower Expansion"
+END
+
+CONTROLBAR:ToolTipConstructAngmarStoneThrowerExpansion
+"Long range defensive weapon \n Benefits from the Ice Munitions upgrade"
+END
+
+CONTROLBAR:ConstructAngmarBattleTowerExpansion
+"Battle &Tower Expansion"
+END
+
+CONTROLBAR:ToolTipConstructAngmarBattleTowerExpansion
+"Construct Battle Tower Expansion"
+END
+
+CONTROLBAR:ConstructAngmarKennelExpansion
+"Dire Wolf &Kennel Expansion"
+END
+
+CONTROLBAR:ToolTipConstructAngmarKennelExpansion
+"Construct Dire Wolf Kennel Expansion"
+END
+
+CONTROLBAR:Command_ConstructAngmarWallHubExpansion
+"&Wall Hub Expansion"
+END
+
+CONTROLBAR:TooltipCommand_ConstructAngmarWallHubExpansion
+"Construct Wall Hub Expansion"
+END
+
+CONTROLBAR:PurchaseUpgradeAngmarFortressIceWalls
+"Ice &Walls"
+END
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceWalls
+"Provides additional armor to the Fortress and Walls \n Prerequisite for the Witch-king's Sanctum"
+END
+
+CONTROLBAR:PurchaseUpgradeAngmarFortressIceMunitions
+"Ice &Munitions"
+END
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceMunitions
+"Adds frost damage to all attached Towers and Stone Throwers"
+END
+
+CONTROLBAR:PurchaseUpgradeAngmarFortressSpikes
+"S&pike Moat"
+END
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressSpikes
+"Damages enemy units adjacent to the Fortress"
+END
+
+CONTROLBAR:PurchaseUpgradeAngmarFortressHouseOfLamentation
+"House of &Lamentation"
+END
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressHouseOfLamentation
+"Reduces Armor and Damage of Hostile units around the fortress."
+END
+
+CONTROLBAR:PurchaseUpgradeAngmarFortressSanctum
+"Witch-king's San&ctum"
+END
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressSanctum
+"Constructs the Witch-king's Sanctum and Winter's Wrath, which launches chunks of ice."
+END
+
+TOOLTIP:LackSanctumAngmarIceWalls
+"Requires the Angmar Ice Wall upgrade \n Constructs the Witch-king's Sanctum"
+END
+
+OBJECT:AngmarForgeWorks
+"Dark Iron Forge"
+END
+
+OBJECT:AngmarBarracks
+"Hall of the King's Men"
+END
+
+OBJECT:AngmarHallofTwilight
+"Temple of Twilight"
+END
+
+OBJECT:AngmarDen
+"Troll and Wolf Den"
+END
+
+
+OBJECT:AngmarBarracksDescription
+"Level 2: +10% Faster Build Speed\n Level 3: +25% Faster Build Speed"
+END
+
+OBJECT:AngmarHallofTwilightDescription
+"Level 2: +10% Faster Build Speed\n Level 3: +25% Faster Build Speed"
+END
+
+
+OBJECT:AngmarMill
+"Mill"
+END
+
+OBJECT:AngmarFortress
+"Fortress"
+END
+
+OBJECT:AngmarFortressDescription
+"Recruits Builders and Heroes \n Can be upgraded with improvements and expansions"
+END
+
+
+OBJECT:AngmarSentryTower
+"Battle Tower"
+END
+
+CONTROLBAR:ToolTipConstructAngmarSentryTower
+"Fires arrows at nearby enemy units \n Can be garrisoned with ranged units for increased damage output"
+END
+
+OBJECT:AngmarPorter
+"Builder"
+End
+
+OBJECT:HordeAngmarDarkRanger
+"Dark Rangers"
+End
+
+OBJECT:AngmarMorgramir
+"Morgomir"
+End
+
+OBJECT:AngmarDarkRanger
+"Dark Rangers"
+End
+
+OBJECT:AngmarWildMissle
+"Builder"
+End
+
+OBJECT:AngmarWolfRiders
+"Wolf Riders"
+End
+
+OBJECT:AngmarOrcWarrior
+"Gundabad Warrior"
+End
+
+OBJECT:HordeAngmarOrcWarriors
+"Gundabad Warriors"
+End
+
+OBJECT:HordeWildman
+"Wildmen of Dunland"
+End
+
+OBJECT:HordeWildmanAxeThrower
+"Wildmen Axe Throwers"
+End
+
+OBJECT:AngmarRhudaurSpearmen
+"Rhudaur Spearmen"
+End
+
+OBJECT:AngmarRhudaurSlingers
+"Rhudaur Axe Throwers"
+End
+
+OBJECT:AngmarBarracksDescription
+"Hall of the King's Men"
+End
+
+OBJECT:AngmarHwaldar
+"Hwaldar"
+End
+
+OBJECT:AngmarKarsh
+"Karsh"
+End
+
+OBJECT:AngmarRogash
+"Rogash, Troll of the North"
+End
+
+OBJECT:AngmarMillHouse
+"Mill"
+End
+
+OBJECT:AngmarThrallMaster
+"Thrall Master"
+End
+
+
+OBJECT:ShadeofWolf
+"Shade of the Wolf"
+End
+
+
+OBJECT:AngmarSentryTowerDescription
+"Fires Arrows at nearby enemies"
+End
+
+OBJECT:AngmarWallHub
+"Wall Hub"
+End
+
+OBJECT:ArnorWallGate
+"Gate"
+End
+
+OBJECT:AngmarSnowTrollHorde
+"Snow Trolls"
+End
+
+OBJECT:AngmarHillTrollHorde
+"Hill Trolls"
+End
+
+OBJECT:AngmarNecroAcolyte
+"Acolyte"
+End
+
+OBJECT:AngmarNecromancerBanner
+"Sorcerer"
+End
+
+OBJECT:HordeNecromancerGuardian
+"Sorcerer"
+End
+
+OBJECT:AngmarCatapultExpansion
+"Troll Stone Thrower"
+End
+
+OBJECT:AngmarCastleWallCatapult
+"Troll Stone Thrower"
+End
+
+OBJECT:AngmarCastleWallGate
+"Gate"
+End
+
+OBJECT:AngmarCastleWallGateSmall
+"Gate"
+End
+
+OBJECT:AngmarKennelExpansion
+"Dire Wolf Kennel"
+End
+
+OBJECT:AngmarCastleWallHub
+"Wall Hub"
+End
+
+OBJECT:AngmarWallPosternGateSmall
+"Postern Gate"
+End
+
+OBJECT:AngmarKennelExpansion
+"Dire Wolf Kennel Expansion"
+END
+
+OBJECT:AngmarCastleWallHubExpansion
+"Wall Hub Expansion"
+END
+
+OBJECT:AngmarBattleTowerExpansion
+"Battle Tower Expansion"
+END
+
+OBJECT:AngmarBuildingFoundation
+"Building Foundation"
+END
+
+
+
+///////////////CONTROL BAR////////////////////////////
+
+CONTROLBAR:CHILLWIND
+"Fell Wind"
+End
+
+CONTROLBAR:FROZENLAND
+"Frozen Land"
+End
+
+CONTROLBAR:BLIGHT
+"Blight"
+End
+
+CONTROLBAR:Snowbind
+"Snow Bind"
+End
+
+CONTROLBAR:ConstructAngmarPorter
+"Recruit Bui&lder"
+End
+
+CONTROLBAR:AngmarMorgramirRecruit
+"Recruit the Lieutenant of Carn Dum"
+END
+
+CONTROLBAR:AngmarMorgramirHotkey
+"&Morgomir"
+End
+
+CONTROLBAR:AngmarMorgramirRevive
+"Revive the fallen Hero, Morgomir"
+End
+
+CONTROLBAR:RogashLeap
+"&Leap"
+END
+
+CONTROLBAR:RageoftheNorth
+"&Rage of the North"
+END
+
+CONTROLBAR:DarkGlory
+"Dar&k Glory"
+END
+
+CONTROLBAR:MorgramirRuin
+"&Ruin"
+END
+
+CONTROLBAR:AngmarHwaldarRecruit
+"Recruit the Traitor of Rhudaur"
+END
+
+CONTROLBAR:AngmarHwaldarHotkey
+"Hwa&ldar"
+End
+
+CONTROLBAR:AngmarHwaldarRevive
+"Revive the fallen Hero, Hwaldar"
+End
+
+CONTROLBAR:HwaldarLeadership
+"Hillmen Leadership"
+End
+
+CONTROLBAR:HwaldarBrigandage
+"Brigandage"
+END
+
+CONTROLBAR:HwaldarSummonHillmen1
+"S&ummon Hillmen"
+END
+
+CONTROLBAR:HwaldarSummonHillmen2
+"S&ummon Hillmen Hordes"
+END
+
+CONTROLBAR:ConstructAngmarMill
+"Build &Mill"
+END
+
+CONTROLBAR:ConstructAngmarBattleTower
+"Build Battle &Tower"
+END
+
+
+CONTROLBAR:ConstructAngmarBarracks
+"Build Hall of the &King's Men"
+End
+
+CONTROLBAR:ConstructAngmarHallofTwilight
+"Build Temple of Twi&light"
+End
+
+CONTROLBAR:ConstructAngmarBarracks2Upgrade
+"&Upgrade Hall of the King's Men to Level 2"
+End
+
+CONTROLBAR:ConstructAngmarThrallMaster
+"Thrall &Master"
+End
+
+CONTROLBAR:ConstructAngmarDarkDunedainHorde
+"Blac&k Numenoreans"
+End
+
+CONTROLBAR:ConstructAngmarDarkRangerHorde
+"Dark &Rangers"
+End
+
+CONTROLBAR:ConstructAngmarBarracksLevel3Upgrade
+"&Upgrade Hall of the King's Men to Level 3"
+End
+
+CONTROLBAR:ConstructAngmarDen2Upgrade
+"&Upgrade Troll and Wolf Den to Level 2"
+End
+
+CONTROLBAR:ConstructAngmarDen3Upgrade
+"&Upgrade Troll and Wolf Den to Level 3"
+End
+
+CONTROLBAR:ConstructAngmarDireWolfHorde
+"&Dire Wolf Pack"
+End
+
+CONTROLBAR:AngmarDireWolfHowl
+"Ho&wl"
+END
+
+CONTROLBAR:ToolTipAngmarDireWolfHowl
+"Dire Wolves gain +150% Damage \n Left click to activate"
+END
+
+CONTROLBAR:ConstructAngmarSnowTrollHorde
+"Sno&w Trolls"
+End
+
+CONTROLBAR:ConstructAngmarHillTrollHorde
+"Hi&ll Trolls"
+End
+
+CONTROLBAR:ThrallMasterUpgradeOrcWarriors
+"Gundabad Wa&rriors"
+End
+
+CONTROLBAR:ThrallMasterUpgradeWolfRiders
+"&Wolf Riders"
+End
+
+CONTROLBAR:ThrallMasterUpgradeRhudaurSpearmen
+"Rhudaur S&pearmen"
+End
+
+CONTROLBAR:ThrallMasterUpgradeRhudaurSlingers
+"Rhudaur Axe &Throwers"
+End
+
+CONTROLBAR:NecromancerDeathMask
+"Death Mask"
+End
+
+CONTROLBAR:ConstructAngmarTrollSling
+"Troll Stone Slinger"
+End
+
+CONTROLBAR:IceArrowUpgrade
+"Ice Arrows"
+END
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarIceArrows
+"Upgrades this horde with Ice Arrows \n Significantly increases the damage done by Arrows"
+END
+
+CONTROLBAR:ToolTipPurchaseTowerUpgradeAngmarIceArrows
+"Upgrades this Tower with Ice Arrows \n Significantly increases the damage done by Arrows"
+END
+
+CONTROLBAR:PurchaseUpgradeAngmarIceShot
+"I&ce Shot"
+END
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarIceShot
+"Upgrades the Stone Thrower with Ice Shot \n Significantly increases the damage done."
+END
+
+CONTROLBAR:PurchaseTechnologyAngmarDarkIronBlades
+"Dark Iron B&lades"
+End
+
+CONTROLBAR:PurchaseTechnologyAngmarDarkIronMail
+"Dark Iron Hea&vy Mail"
+End
+
+CONTROLBAR:PurchaseTechnologyAngmarIceArrows
+"Ice Arro&ws"
+End
+
+CONTROLBAR:PurchaseTechnologyAngmarIceShot
+"&Ice Shot"
+End
+
+CONTROLBAR:AngmarChargeAttack
+"&Charge Attack"
+End
+
+CONTROLBAR:ToolTipSpecialAbilityAngmarChargeAttack
+"Requires Level 2 \n Order Black Numenoreans to charge the enemy \n Black Numenoreans gain +50% Damage and +50% Armor \n Causes meta impact \n Left click icon then left click on target"
+END
+
+CONTROLBAR:AngmarTrollChargeAttack
+"&Charge Attack"
+End
+
+CONTROLBAR:ToolTipSpecialAbilityAngmarTrollChargeAttack
+"Requires Level 2 \n Order Trolls to charge the enemy \n Trolls gain +50% Damage and +50% Armor \n Causes meta impact \n Left click icon then left click on target"
+END
+
+/////////////////TOOL TIPS///////////////////////////
+
+CONTROLBAR:TooltipSnowbind
+"All Structures within the area of effect cannot produce, but are immune to damage \n Left click icon then left click on target area"
+End
+
+CONTROLBAR:TooltipChillWind
+"Moves enemy units closer to the center of the area of effect \n Does minimal damage \n Left click icon then left click on target area"
+End
+
+CONTROLBAR:TooltipFrozenLand
+"Freezes an area of terrain \n All ally units gain +50% Damage and +50% Armor \n Left click icon then left click on target area \n Does not stack"
+End
+
+CONTROLBAR:TooltipBlight
+"Halves the resource production of any resource structure within the \n area of effect \n Left click icon then left click on target area"
+End
+
+CONTROLBAR:ToolTipConstructAngmarPorter
+"Constructs Buildings"
+End
+
+CONTROLBAR:ToolTipRogashLeap
+"Requires Level 4 \n Rogash jumps to a location causing \n area-effect damage \n Left click icon then left click on target area"
+END
+
+CONTROLBAR:ToolTipRageoftheNorth
+"Requires Level 8 \n Hero gains a major boost to Armor and Damage \n Left click icon to activate"
+END
+
+CONTROLBAR:ToolTipMorgomirMorgulBlade
+"Requires Level 4 \n Targeted enemy takes poison damage over \n time and becomes a wight upon death \n Left click icon then left click on target"
+END
+
+CONTROLBAR:ToolTipDarkGlory
+"Requires Level 8 \n Morgomir and nearby Black Numenorean Swordsmen, \n Dark Rangers and Thrall Masters gain a major boost to Damage and Armor \n Left click icon to activate"
+END
+
+CONTROLBAR:ToolTipMorgramirRuin
+"Requires Level 10 \n Target enemy building takes heavy damage \n Left click icon then left click on target building"
+END
+
+CONTROLBAR:ToolTipHwaldarLeadership
+"Rhudaur Axe Throwers and Spearmen near the Hero gain +20% Damage and +20% Armor \n Passive ability"
+End
+
+CONTROLBAR:ToolTipHwaldarBrigandage
+"Requires Level 3 \n Rhudaur Axe Throwers and Spearmen near the Hero steal resources whenever dealing damage to enemy units \n Passive ability"
+END
+
+CONTROLBAR:ToolTipHwaldarSummonHillmen1
+"Requires Level 5 \n Summons hordes of Hillmen to \n fight for you \n Left click icon then left click on pathable location"
+END
+
+CONTROLBAR:ToolTipHwaldarSummonHillmen2
+"Requires Level 10 \n Summons several hordes of Rhudaur Axe Throwers and Spearmen \n to fight for you \n Left click icon then left click on pathable location"
+END
+
+
+CONTROLBAR:FireWeaponAngmarFortressSanctumFrostball
+"&Fire Witch-king's Sanctum Winter's Wrath"
+END
+
+CONTROLBAR:ToolTipFireWeaponAngmarFortressSanctumFrostball
+"Launches an Iceball \n Left click on icon then left click on target area"
+END
+
+
+
+CONTROLBAR:TooltipAngmarMill
+"Increases world command point limit"
+End
+
+CONTROLBAR:ToolTipConstructAngmarMill
+"Generates resources based on available terrain \n Increases command point limit by 50"
+End
+
+CONTROLBAR:ToolTipConstructAngmarBarracks
+"Trains Thrall Masters, Black Numenoreans and Dark Rangers"
+End
+
+CONTROLBAR:ToolTipConstructAngmarHallofTwilight
+"Recruit and Upgrade Angmar Sorcerers"
+End
+
+CONTROLBAR:ToolTipConstructAngmarForgeWorks
+"Provides Siege Units and Unit Upgrades"
+End
+
+CONTROLBAR:ToolTipBuildAngmarBarracks2Upgrade
+"Allows construction of Black Numenoreans and Researches Banner Carriers \n Level 2: +10% Faster Build Speed"
+End
+
+CONTROLBAR:ToolTipBuildAngmarThrallMaster
+"Capable of summoning a variety of units to serve him"
+End
+
+CONTROLBAR:ToolTipBuildAngmarDarkDunedainHorde
+"Requires Level 2 Hall of King's Men \nStrong vs. Pikemen\n"
+End
+
+CONTROLBAR:ToolTipBuildAngmarDarkRangerHorde
+"Requires Level 3 Hall of King's Men \nStrong at Range\n"
+End
+
+CONTROLBAR:ToolTipBuildAngmarBarracksLevel3Upgrade
+"Allows construction of Dark Rangers \nAdds Arrow Tower to building \n +25% Faster build speed"
+End
+
+CONTROLBAR:ToolTipBuildAngmarDireWolfHorde
+"Strong vs. Pikemen"
+End
+
+CONTROLBAR:ToolTipBuildAngmarSnowTrollHorde
+"Requires Level 2 Troll and Wolf Den \nStrong vs. Swordsmen and Archers\n"
+End
+
+CONTROLBAR:ToolTipBuildAngmarHillTrollHorde
+"Requires Level 2 Troll and Wolf Den \nStrong vs. Cavalry"
+End
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarDarkIronMail
+"Allows hordes to purchase the Heavy Armor upgrade \n When equipped, significantly reduces the amount of damage taken"
+End
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarDarkIronBlades
+"Allows hordes to purchase the Dark Iron Blades upgrade \n When equipped, increases the damage done by Melee Weapons"
+End
+
+CONTROLBAR:ToolTipLackAngmarDarkIronMail
+"Requires Level 3 Dark Iron Forge"
+End
+
+CONTROLBAR:ToolTipLackAngmarDarkIronBlades
+"Requires Level 2 Dark Iron Forge"
+End
+
+CONTROLBAR:TooltipThrallMasterUpgradeOrcWarriors
+"Summon Gundabad Orcs to serve you \nStrong vs. Pikemen"
+End
+
+CONTROLBAR:TooltipThrallMasterUpgradeWolfRiders
+"Summon Wolf Riders to serve you \nStrong vs. Archers"
+End
+
+CONTROLBAR:TooltipThrallMasterUpgradeRhudaurSpearmen
+"Summon Rhudaur Spearmen to serve you \nStrong vs. Cavalry"
+End
+
+CONTROLBAR:TooltipThrallMasterUpgradeRhudaurSlingers
+"Summon Rhudaur Axe Throwers to serve you \nStrong at Range"
+End
+
+CONTROLBAR:TooltipNecromancerDeathMask
+"Requires Level 4 \nNearby Enemy Units suffer -25% damage. \nPassive Ability."
+End
+
+CONTROLBAR:TooltipConstuctAngmarForgeWorks
+"Build Dark Iron Forge"
+End
+
+CONTROLBAR:Tooltipbuild AngmarTrollSling
+"Troll Stone Slinger"
+End
+
+CONTROLBAR:TooltipPurchaseTechnologyAngmarDarkIronBlades
+"Research Dark Iron Blades \n When equipped, significantly increases the damage done by Melee Weapons"
+End
+
+CONTROLBAR:TooltipPurchaseTechnologyAngmarDarkIronMail
+"Research Dark Iron Mail \n When equipped, significantly reduces the amount of damage taken"
+End
+
+CONTROLBAR:TooltipPurchaseTechnologyAngmarIceArrows
+"Research Ice Arrows \n When equipped, significantly increases the damage done by Arrows"
+End
+
+CONTROLBAR:TooltipPurchaseTechnologyAngmarIceShot
+"Research Ice Shot \n When equipped, significantly increases a Stone Thrower's damage"
+End
+
+CONTROLBAR:AngmarRogashRecruit
+"Recruit the mighty Troll of the North"
+END
+
+CONTROLBAR:AngmarRogashHotkey
+"Ro&gash"
+End
+
+CONTROLBAR:AngmarRogashRevive
+"Revive the fallen Hero, Rogash"
+End
+
+CONTROLBAR:AngmarKarshRecruit
+"Recruit the Whispering Wraith of Angmar"
+END
+
+CONTROLBAR:AngmarKarshRevive
+"Revive the fallen Hero, Karsh"
+End
+
+CONTROLBAR:AngmarKarshHotkey
+"&Karsh"
+End
+
+CONTROLBAR:ConstructAngmarNecromancerHorde
+"So&rcerer"
+End
+
+CONTROLBAR:TooltipBuildAngmarNecromancerHorde
+"Battlefield Support Unit"
+End
+
+CONTROLBAR:ConstructAngmarHallofTwilight2Upgrade
+"&Upgrade Temple of Twilight to Level 2"
+End
+
+CONTROLBAR:ToolTipBuildAngmarHallofTwilightLevel2Upgrade
+"Allows Well of Souls\n +10% Faster Build Speed"
+End
+
+CONTROLBAR:ConstructAngmarHallofTwilightLevel3Upgrade
+"&Upgrade Temple of Twilight to Level 3"
+End
+
+CONTROLBAR:TooltipBuildAngmarHallofTwilightLevel3Upgrade
+"Allows Corpse Rain \n Adds a defensive arrow tower \n +25% Build Speed"
+End
+
+CONTROLBAR:PurchaseTechnologyAngmarSoulFreeze
+"Soul Freeze"
+End
+
+CONTROLBAR:PurchaseTechnologyAngmarWellOfSouls
+"Well of Souls"
+End
+
+CONTROLBAR:PurchaseTechnologyAngmarCorpseRain
+"Corpse Rain"
+End
+
+TOOLTIP:LackLevel2HallOfTwilight
+"Requires Level 2 Temple of Twilight"
+End
+
+TOOLTIP:LackLevel3HallOfTwilight
+"Requires Level 3 Temple of Twilight"
+End
+
+CONTROLBAR:ToolTipPurchaseTechnologyAngmarSoulFreeze
+"Allows Sorcerers to Specialize in the Soul Freeze power \n This makes units in the radius immobile but invulnerable for a short time."
+End
+
+CONTROLBAR:ToolTipPurchaseTechnologyAngmarWellOfSouls
+"Allows Sorcerers to Specialize in the Well of Souls power \n This sucks life force from the target to heal units around the Sorcerer."
+End
+
+CONTROLBAR:ToolTipPurchaseTechnologyAngmarCorpseRain
+"Allows Sorcerers to Specialize in the Corpse Rain power \n This calls down a barrage of corpses on the target area."
+End
+
+CONTROLBAR:ToolTipBuildAngmarBarracksLevel2Upgrade
+"Allows Black Numenoreans to be built and Researches Banner Carriers \n +10% Faster Build Speed"
+End
+
+CONTROLBAR:TooltipBuildAngmarTrollSling
+"Troll powered siege weapon \n Requires level 3 Fissure \n Strong vs. Structures"
+End
+
+CONTROLBAR:SpecialAbilityChillSoul
+"Chill Soul"
+End
+
+CONTROLBAR:TooltipSpecialAbilityChillSoul
+"All nearby enemies suffer -50% speed and take slight damage over time \n Passive ability"
+End
+
+CONTROLBAR:WhisperofDeath
+"&Whisper of Death"
+End
+
+CONTROLBAR:TooltipWhisperofDeath
+"Requires Level 8 \n Inflicts massive damage on a non-undead \n unit \n Left click icon then left click on target unit"
+End
+
+CONTROLBAR:PurchaseUpgradeAngmarDarkIronMail
+"Dark &Iron Mail"
+End
+
+TOOLTIP:PurchaseUpgradeAngmarDarkIronMail
+"Allows hordes to purchase the Heavy Armor upgrade \n When equipped, significantly reduces the amount of damage taken"
+End
+
+CONTROLBAR:PurchaseUpgradeAngmarDarkIronBlades
+"Dark Iron B&lades"
+End
+
+TOOLTIP:PurchaseUpgradeAngmarDarkIronBlades
+"Allows hordes to purchase the Dark Iron Blades upgrade \n When equipped, increases the damage done by Melee Weapons"
+End
+
+CONTROLBAR:NecroBlackIce
+"Black &Ice"
+End
+
+CONTROLBAR:TooltipNecroBlackIce
+"Target area is covered in Ice \n Enemy Units -25% speed \n Left click icon then left click on target area"
+End
+
+CONTROLBAR:NecroFellStrength
+"Fell S&trength"
+End
+
+CONTROLBAR:TooltipNecroFellStrength
+"Drains Enemy units of Strength \n +25% Damage, +25% attack speed bonus to friendly non-siege units \n Left click icon then left click on target area"
+End
+
+CONTROLBAR:NecroSoulFreeze
+"Sou&l Freeze"
+End
+
+CONTROLBAR:PurchaseUpgradeSoulFreeze
+"Sou&l Freeze"
+End
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarSoulFreeze
+"Allows Specialization in the Soul Freeze power \n This makes units in the radius immobile but invulnerable for a short time. \n The Sorcerer can specialize in only one power."
+End
+
+CONTROLBAR:ToolTipNecroSoulFreeze
+"Affected Units are frozen and cannot move, attack or receive upgrades \n Left click icon then left click on target area"
+End
+
+TOOLTIP:AngmarSoulFreeze
+"Soul Freeze"
+End
+
+CONTROLBAR:NecroWellOfSouls
+"&Well of Souls"
+End
+
+CONTROLBAR:ToolTipNecroWellOfSouls
+"Enemy Units in target area suffer medium damage over time. Affected Units transform into Lesser Wights upon death. Nearby friendly units are healed slightly. \n Left click icon then left click on target area"
+End
+
+CONTROLBAR:PurchaseUpgradeWellOfSouls
+"&Well of Souls"
+End
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarWellOfSouls
+"Allows Specialization in the Well of Souls \n power. This sucks life force from the target to heal units around the Sorcerer. \n The Sorcerer can specialize in only one power."
+End
+
+TOOLTIP:AngmarWellOfSouls
+"Well of Souls"
+End
+
+CONTROLBAR:NecroCorpseRain
+"&Corpse Rain"
+End
+
+CONTROLBAR:ToolTipNecroCorpseRain
+"Units in target area receive \n Heavy Magic Damage \n Left click icon then left click on target area"
+End
+
+CONTROLBAR:PurchaseUpgradeCorpseRain
+"&Corpse Rain"
+End
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarCorpseRain
+"Allows Specialization in the Corpse Rain power\n This calls down a barrage of corpses on the target area. \n The Sorcerer can specialize in only one power."
+End
+
+TOOLTIP:AngmarCorpseRain
+"Corpse Rain"
+End
+
+TOOLTIP:LackAngmarDarkIronMail
+"Research this upgrade at the \n Dark Iron Forge to \n enable this equipment \n When equipped, significantly reduces the amount of damage taken"
+End
+
+TOOLTIP:LackAngmarDarkIronBlades
+"Research this upgrade at the \n Dark Iron Forge to \n enable this equipment \n When equipped, increases the damage done by Melee Weapons"
+End
+
+TOOLTIP:LackAngmarIceArrows
+"Research this upgrade at the \n Dark Iron Forge to \n enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+End
+
+TOOLTIP:LackAngmarIceShot
+"Research this upgrade at the \n Dark Iron Forge to enable this equipment \n When equipped, significantly increases the Stone Thrower's damage"
+END  
+
+TOOLTIP:LackAngmarSoulFreeze
+"Research this upgrade at the \n Temple of Twilight to \n enable this power"
+End
+
+TOOLTIP:LackAngmarCorpseRain
+"Research this upgrade at the \n Temple of Twilight to \n enable this power"
+End
+
+TOOLTIP:LackAngmarWellOfSouls
+"Research this upgrade at the \n Temple of Twilight to \n enable this power"
+End
+
+CONTROLBAR:Avalanche
+"Avalanche"
+End
+
+CONTROLBAR:TooltipAvalanche
+"Summons an avalanche that will damage enemies and put out fires \n Left click icon then left click on target area"
+End
+
+CONTROLBAR:SummonWights
+"Summon Wights"
+End
+
+CONTROLBAR:TooltipSummonWights
+"Summons several Wights under your control \n Left click icon then left click on pathable location"
+End
+
+CONTROLBAR:SummonGiants
+"Summon Giants"
+End
+
+CONTROLBAR:TooltipSummonGiants
+"Summons several Giants under your control \n Left click icon then left click on pathable location"
+End
+
+CONTROLBAR:SummonOrcs
+"Summon Orcs"
+End
+
+CONTROLBAR:TooltipSummonOrcs
+"Summons several hordes of orcs under your control \n Left click icon then left click on pathable location"
+End
+
+CONTROLBAR:SummonShadeOfWolf
+"Summon Shade of Wolf"
+End
+
+CONTROLBAR:ToolTipSummonShadeOfWolf
+"Summons a spectral wolf under your control \n Left click icon then left click on pathable location"
+End
+
+TOOLTIP:AngmarDarkIronBlades
+"Dark Iron Blades"
+End
+
+TOOLTIP:AngmarDarkIronArmor
+"Dark Iron Mail"
+End
+
+TOOLTIP:AngmarIceShot
+"Ice Shot"
+End
+
+UPGRADE:AngmarWellOfSouls
+"Well of Souls"
+End
+
+UPGRADE:AngmarCorpseRain
+"Corpse Rain"
+End
+
+UPGRADE:AngmarSoulFreeze
+"Soul Freeze"
+End
+
+UPGRADE:AngmarDarkIronArmor
+"Dark Iron Mail"
+End
+
+UPGRADE:AngmarDarkIronBlades
+"Dark Iron Blades"
+End
+
+UPGRADE:AngmarBarracksLevel2
+"Hall of the King's Men Level 2"
+End
+
+UPGRADE:AngMarBarracksLevel3
+"Hall of the King's Men Level 3"
+End
+
+CONTROLBAR:PurchaseTechnologyAngmarSpikedCollars
+"Hea&vy Spiked Collars"
+End
+
+CONTROLBAR:ToolTipPurchaseTechnologyAngmarSpikedCollars
+"Allows Spiked Collars to be given to a Dire Wolf Pack"
+End
+
+TOOLTIP:LackLevel2Den
+"Requires Level 3 Troll and Wolf Den"
+End
+
+CONTROLBAR:PurchaseUpgradeAngmarSpikedCollars
+"Hea&vy Spiked Collars"
+End
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarSpikedCollars
+"Increases the Armor value of the Pack"
+End
+
+TOOLTIP:LackAngmarSpikedCollars
+"Research this upgrade at the\n Troll and Wolf Den to \n enable this upgrade \n When equipped increases this unit's defense"
+End
+
+UPGRADE:AngmarSpikedCollar
+"Spiked Collars"
+End
+
+UPGRADE:AngmarBasicTraining
+"Banner Carriers"
+End
+
+UPGRADE:AngmarIceArrowUpgrade
+"Ice Arrows"
+End
+
+
+UPGRADE:AngmarIceShot
+"Ice Shot"
+End
+
+UPGRADE:AngmarTorches
+"Flames of Darkness"
+End
+
+UPGRADE:AngmarIceMunitions
+"Ice Munitions"
+End
+
+UPGRADE:AngmarFortressSpikes
+"Spike Moat"
+End
+
+UPGRADE:AngmarFortressSanctum
+"Witch-king's Sanctum"
+End
+
+UPGRADE:AngmarFortressIceWalls
+"Ice Walls"
+End
+
+UPGRADE:FortressHouseofLamentation
+"House of Lamentation"
+End
+
+
+UPGRADE:AngmarThrallMasterOrcWarriors
+"Gundabad Orcs"
+End
+
+UPGRADE:AngmarThrallMasterWolfRiders
+"Wolf Riders"
+End
+
+UPGRADE:AngmarThrallMasterRhudaurSpearmen
+"Rhudaur Spearmen"
+End
+
+UPGRADE:AngmarThrallMasterRhudaurSlingers
+"Rhudaur Axe Throwers"
+End
+
+GUI:AIForfeitsInWOTRSkirmish
+"Your opponent has decided that things are hopeless and is considering forfeiting this region to your superior might"
+End
+
+GUI:AIForfeitsInWOTRSkirmishNow
+"Your opponent forfeits this region to your superior might"
+End
+
+OBJECT:RhudaurSpearman
+"Rhudaur Spearman"
+End
+
+CONTROLBAR:ArnorLongShotAbility
+"Longsho&t"
+End
+
+CONTROLBAR:TooltipArnorLongShotAbility 
+"The rangers bombard anywhere on the map with a volley of arrows \n Left click icon then left click on target area"
+End
+
+Tooltip:LackArnorBasicTraining
+"Research upgrade at Blacksmith to enable this equipment \n When equipped, increases this battalion to Level 2"
+End
+
+OBJECT:AngmarWildMissile
+"Rhudaur Axe Thrower"
+End
+
+OBJECT:ArnorWallHub
+"Wall Hub"
+End
+
+LW:HeroKilledTitle
+// Context: shown as the title of a message box when a hero has no immediate retreat options.
+"HERO ARMY KILLED!"
+End
+
+LW:HeroKilledText
+// Context: shown as the title of a message box when a hero has no immediate retreat options and will be killed.
+// First arg is hero name
+"Your Hero army has been defeated in battle and has no available retreat locations.\n\n%ls was killed and must be rebuilt in a fortress."
+End
+
+OBJECT:OrcChieftain
+"Orc Chieftain"
+END
+
+
+
+
+CONTROLBAR:DreadWrath
+"Dread Wrath"
+END
+
+
+CONTROLBAR:WitchkingMorgulCorruption
+"Morgu&l Corruption"
+END
+
+CONTROLBAR:ToolTipWitchkingMorgulCorruption
+"Requires Level 5 \n Targeted enemy takes poison \n damage over time, and becomes a wight if they die \n Left click icon then left click on target"
+END
+
+CONTROLBAR:WkTerribleFury
+"&Terrible Fury"
+END
+
+CONTROLBAR:TooltipWkTerribleFury
+"Requires Level 8 \n Causes fear in nearby enemies \n Left click to activate"
+END
+
+CONTROLBAR:TooltipFDBTerribleFury
+"Requires Level 7 \n Causes fear in nearby enemies \n Left click to activate"
+END
+
+
+CONTROLBAR:ToolTipWitchKingDreadWrath
+"Requires Level 2 \n Major reduction of enemy Armor and Damage \n Passive ability"
+End
+
+OBJECT:SnowTrollLairDescription
+"Allows training of Snow Trolls"
+END
+
+OBJECT:HillTrollLairDescription
+"Allows training of Hill Trolls"
+END
+
+OBJECT:AngmarCastleWallSegment
+"Angmar Wall"
+End
+
+UPGRADE:AngmarWallTower
+"Iron Tower"
+End
+
+UPGRADE:Upgrade_AngmarWallCatapult
+"Troll Stone Thrower"
+End
+
+CONTROLBAR:Command_AngmarWallUpgradeToTower
+"Purchase Battle &Tower"
+End
+
+OBJECT:LindonElvenWarrior
+"Lindon Warrior"
+End
+
+OBJECT:CarnDumMainGate
+"Citadel Gate"
+End
+
+CONTROLBAR:Command_AngmarWallUpgradeToHub
+"&Wall Hub"
+End
+
+CONTROLBAR:TooltipCommand_AngmarWallUpgradeToHub
+"Allows wall building"
+End
+
+CONTROLBAR:Command_AngmarWallUpgradeToRegularGate
+"&Gate"
+End
+
+CONTROLBAR:TooltipCommand_AngmarWallUpgradeToRegularGate
+"Creates a gate that troops can pass through"
+End
+
+CONTROLBAR:Command_AngmarWallUpgradeToPosternGate
+"&Postern Gate"
+End
+
+CONTROLBAR:TooltipCommand_AngmarWallUpgradeToTower
+"Creates an Arrow Tower"
+End
+
+CONTROLBAR:Command_AngmarWallUpgradeToCatapult
+"Troll &Stone Thrower"
+End
+CONTROLBAR:TooltipCommand_AngmarWallUpgradeToCatapult
+"Adds a Troll Stone Thrower to the wall"
+End
+
+CampaignName:Foundation
+"Foundation of Angmar"
+END
+
+CampaignName:Gundabad
+"Headman of Gundabad"
+END
+
+CampaignName:Rhudaur
+"Conquest of Rhudaur"
+END
+
+CampaignName:Amonsul
+"Amon Sul"
+END
+
+CampaignName:Darkeye
+"Dark Lord's Eye"
+END
+
+CampaignName:Barrowdown
+"Barrow-downs"
+END
+
+CampaignName:Carndum
+"Carn Dum"
+END
+
+CampaignName:Barrowwight
+"Plague Bearer"
+END
+
+CampaignName:Fornostgate
+"Fornost"
+END
+
+CampaignName:Destruction
+"Fall of Angmar"
+END
+
+
+Map:MAPANGAngmar
+"Foundation of Angmar"
+END
+
+Map:MAPANGGundabad
+"Mount Gundabad"
+END
+
+Map:MAPANGRhudaur
+"Conquest of Rhudaur"
+END
+
+Map:MAPANGAmonSul
+"Amon Sul"
+END
+
+Map:MAPANGDarkEye
+"Dark Lord's Eye"
+END
+
+Map:MAPANGBarrowDowns
+"Barrow-downs"
+END
+
+Map:MAPANGCarnDum
+"Carn Dum"
+END
+
+Map:MAPANGBarrowWights
+"Plague Bearer"
+END
+
+Map:MAPANGFornostGate
+"Fornost"
+END
+
+Map:MAPANGFornost
+"Fornost"
+END
+
+Map:MAPANGBonus
+"Fall of Angmar"
+END
+
+Map:MAPMPAmonSulFortress
+"Amon Sul Fortress"
+END
+
+OBJECT:ForBuilding
+"Civilian Building"
+END
+
+OBJECT:ForGov
+"Government Building"
+END
+
+OBJECT:ForSpire
+"Victory Monument"
+END
+
+////////////////////////////////////////////////////
+/// @jh: New strings for expansion pack GUI mods ///
+////////////////////////////////////////////////////
+
+APT:MainMenu_Test
+// Test string used only during development
+"Rise of the Witch-king"
+END
+
+APT:Expansion1Campaign
+// context: button label to start Expansion Pack Angmar campaign
+"ANGMAR CAMPAIGN"
+END
+
+APT:BonusCampaign
+// context: button label to start Expansion Pack Bonus mission
+"EPILOGUE"
+END
+
+// Good and Evil campaigns above also have a GUI identifier in addition to an APT identifier. 
+// I'll leave these commented out until it's certain they are necessary and not just legacy
+
+//GUI:Expansion1Campaign
+//"Angmar Campaign"
+//END
+//GUI:BonusCampaign
+//"Epilogue"
+//END
+
+CAMPAIGN:EXPANSION1
+// Context: Name of Angmar campaign e.g. for save file descriptions
+"Angmar Campaign"
+END
+
+CAMPAIGN:BONUS
+// Context: Name of bonus mission e.g. for save file descriptions
+"Epilogue"
+END
+
+
+ToolTip:OpeningMenu/Expansion1Button
+"Begin the story-driven Angmar Campaign"
+END
+
+ToolTip:OpeningMenu/BonusButton
+"Play the Epilogue"
+END
+
+ToolTip:OpeningMenu/BonusButtonDisabled
+"Beat the Angmar Campaign to unlock the Epilogue"
+END
+
+OBJECT:ZombieHeadPileofDOOM
+"Pile of Goblin Heads"
+END
+
+////////////////////////////////////////////////////
+//@jh and @bw New format strings for WotR changes ///
+////////////////////////////////////////////////////
+
+STRATEGICHUD:StatsTreasury
+// Context: format string to show total treasury balance in WotR stats display
+"%d"
+END
+
+STRATEGICHUD:StatsTreasuryIncome
+// Context: format string to show treasury income total (sum of all region Treasury Income Bonuses) in WotR stats display
+"+%d"
+END
+
+STRATEGICHUD:RegionTreasuryIncomeBonusTooltip
+// Context: the WotR "territory" page of the region details panel, the tooltip that appears on the Treasury Income Bonus (AKA Fertile Bonus)
+"Treasury Income Bonus"
+END
+
+TOOLTIP:DisbandUnit
+// Context: Strategic Veterancy screen, disband unit button tooltip
+"Check to disband this unit"
+END
+
+TOOLTIP:DisbandUnitSelectedTooltip
+// Context: Strategic Veterancy screen, disband unit button tooltip, when button is selected/checked
+// NOT CURRENTLY IMPLEMENTED, but should be localized in case we implement it
+"Click to keep this unit"
+END
+
+TOOLTIP:DisbandUnitDisabled
+// Context: Strategic Veterancy screen, disband unit button tooltip, when button is disabled
+"No Treasury Charge to keep this unit"
+END
+
+TOOLTIP:DisbandUnitDisabledLeader
+// Context: Strategic Veterancy screen when disband button is disabled for the army leader
+"Army leaders cannot be disbanded"
+END
+
+TOOLTIP:DisbandUnitDisabledHero
+// context: used on Strategic Veterancy screen when disband button is disabled for a hero
+"Heroes cannot be disbanded"
+END
+
+APT:TreasuryCharge
+// Context: Strategic Veterancy screen header.
+"Treasury Charge"
+END
+
+APT:VeterancyDisbandHeader
+// Context: Strategic Veterancy screen header.
+"Disband?"
+END
+
+APT:VeterancyUnitCurrentLevel
+// Context: Strategic Veterancy screen header.
+// Same as APT:UnitCurrentLevel but with word wraps forced using \n
+"Unit\nCurrent\nLevel"
+END
+
+APT:VeterancyBattleFought
+// Context: Strategic Veterancy screen header.
+// Same as APT:BattleFought but with word wraps forced using \n
+"Battles\nFought"
+END
+
+APT:TotalTreasuryCharge
+// Context: Veterancy screen: this is how much will be deducted, total, from the treasury to pay for new units
+"Total Treasury Charge"
+END
+
+APT:RemainingTreasuryBalance
+// Context: Veterancy screen: this is how much Treasury is left after TotalTreasuryCharge is deducted
+"Remaining Treasury Balance"
+END
+
+STRATEGICHUD:SupportUnitArchetypeTooltip
+// Tooltip in WOTR for Support unit type icon
+"Unit Type: Support Unit"
+END
+
+STRATEGICHUD:SiegeUnitArchetypeTooltip
+// Tooltip in WOTR for Siege unit type icon
+"Unit Type: Siege Unit"
+END
+
+
+////////////////////////////////////////////////////
+/// @jh end
+////////////////////////////////////////////////////
+
+
+//----- Mordor Additions for BFME2 Expansion --------
+
+
+CONTROLBAR:ToolTipBuildMordorHaradrimArcherHorde
+"Requires Level 3 Haradrim Palace \n Strong at Range \n Can fire Barbed Arrows"
+End
+
+CONTROLBAR:LW_Hero_Khamul
+"Khamul"
+END
+
+CONTROLBAR:LW_ToolTipBuild_Khamul
+"Unit Type: Hero Army Leader\n"
+END
+
+CONTROLBAR:LW_ToolTip_Khamul
+"Unit Type: Hero Army Leader"
+END
+
+CONTROLBAR:MordorKhamulRecruit
+//"Recruit a Fellbeast"
+"Recruit the Shadow of the East"
+END
+
+CONTROLBAR:MordorKhamulRevive
+//"Revive the fallen Fellbeast"
+"Revive Khamul"
+END
+
+CONTROLBAR:MordorKhamulHotkey
+//"&Fellbeast"
+"&Khamul"
+END
+
+OBJECT:MordorKhamul
+"Khamul"
+END
+
+OBJECT:MordorMorgomir
+"Morgomir"
+END
+
+CONTROLBAR:LW_Hero_Morgomir
+"Morgomir"
+END
+
+CONTROLBAR:LW_ToolTipBuild_Morgomir
+"Unit Type: Hero\n"
+END
+
+CONTROLBAR:LW_ToolTip_Morgomir
+"Unit Type: Hero"
+END
+
+CONTROLBAR:MordorMorgomirRecruit
+//"Recruit a Fellbeast"
+"Recruit Morgomir"
+END
+
+CONTROLBAR:MordorMorgomirRevive
+//"Revive the fallen Fellbeast"
+"Revive Morgomir"
+END
+
+CONTROLBAR:MordorMorgomirHotkey
+//"&Fellbeast"
+"Mo&rgomir"
+END
+
+OBJECT:HordeBlackRiders
+"Black Riders"
+END
+
+CONTROLBAR:BlackRiderRecruit	
+"Recruit the Blac&k Riders"
+END
+
+
+CONTROLBAR:LW_Unit_MordorBlackRiderHorde
+"The Black Riders"
+END
+
+CONTROLBAR:LW_ToolTip_MordorBlackRiderHorde
+"Requires Level 3 Siege Works \nStrong vs. All except Pikemen \nLimited to 1 Horde"
+END
+
+OBJECT:HordeMordorWarg
+"Warg Pack"
+END
+
+CONTROLBAR:LW_Unit_MordorWargHorde
+"Warg Pack"
+END
+
+CONTROLBAR:LW_ToolTip_MordorWargHorde
+"Unit Type: Cavalry\nStrong vs. Archers and Swordsmen\n"
+END
+
+CONTROLBAR:LW_Unit_MordorWargHordePlural
+"Warg Packs"
+END
+
+CONTROLBAR:LW_ToolTipBuild_MordorWargHorde
+"Unit Type: Cavalry\nStrong vs. Archers and Swordsmen\n"
+END
+
+CONTROLBAR:ConstructMordorWargHorde
+"Create a Pack of Wargs"
+End
+
+CONTROLBAR:ToolTipBuildMordorWargHorde
+"Unit Type: Cavalry\nStrong vs. Archers and Swordsmen\n"
+END
+
+CONTROLBAR:ConstructMordorBlackOrcHorde
+"Blac&k Orc Warriors"
+END
+
+OBJECT:MordorBlackOrc
+"Black Orc"
+END
+
+CONTROLBAR:ToolTipBuildMordorBlackOrcHorde
+"Requires Level 2 Orc Pit \n Strong vs. Pikemen"
+END
+
+OBJECT:HordeMordorBlackOrcs
+"Black Orc Warriors"
+END
+
+CONTROLBAR:LW_Unit_MordorBlackOrcHorde
+"Black Orc Warrior Horde"
+END
+
+CONTROLBAR:LW_ToolTip_MordorBlackOrcHorde
+"\nUnit Type: Elite Infantry\nStrong vs. Pikemen"
+END
+
+OBJECT:MordorGothmog
+"Gothmog"
+END
+
+CONTROLBAR:ToolTipBuildMordorGothmog
+"Recruit &Gothmog"
+END
+
+CONTROLBAR:MordorGothmogRecruit
+"Recruit the Lieutenant of Minas Morgul"
+END
+
+CONTROLBAR:MordorGothmogRevive
+"Revive the fallen Hero, Gothmog"
+END
+
+CONTROLBAR:MordorGothmogHotkey
+"&Gothmog"
+END
+
+CONTROLBAR:GothmogIronHand
+"Iron Hand"
+END
+
+CONTROLBAR:ToolTipGothmogIronHand
+"Requires Level 2 \n Orcs near Gothmog gain immunity to fear \n Passive Ability \n Does not stack"
+END
+
+CONTROLBAR:GothmogDayoftheOrc
+"Day of the Orc"
+END
+
+CONTROLBAR:ToolTipGothmogDayoftheOrc
+"Requires Level 6 \n Orcs near Gothmog gain \n +50% Damage, +50% Armor, \n Passive ability       Does not stack"
+END
+
+CONTROLBAR:SpecialAbilityGothmogCarnage    
+"Fur&y"
+END
+
+CONTROLBAR:ToolTipSpecialAbilityGothmogCarnage
+"Requires Level 4 \n Gothmog gains +100% Damage and +50% Armor \n Left click to activate"
+END
+
+CONTROLBAR:ConstructMordorHaradrimRiderHorde
+"Haradrim &Lancers"
+END
+
+OBJECT:HordeMordorHaradrimRider
+"Haradrim Lancers"
+END
+
+CONTROLBAR:ToolTipBuildMordorHaradrimRiderHorde
+"Requires Level 2 Haradrim Palace \nCavalry, Strong vs. Archers and Swordsmen"
+END
+
+OBJECT:MordorHaradrimLancer
+"Haradrim Lancer"
+END
+
+OBJECT:MordorHaradrimRiders
+"Haradrim Lancer"
+END
+
+TOOLTIP:LackLevel2SiegeForgedBlades
+"Requires Level 2 Siege Works"
+END
+
+TOOLTIP:LackLevel2SiegeForgedHeavyArmor
+"Requires Level 3 Siege Works"
+END
+
+TOOLTIP:LackLevel3HaradFireArrows
+"Requires Level 3 Haradrim Palace"
+END
+
+CONTROLBAR:PurchaseUpgradeMorderHeavyArmor
+"Hea&vy Armor"
+END
+
+CONTROLBAR:TooltipUpgradeMordorHaradrimPalaceLevel2
+"Allows training of Corsairs of Umbar and Haradrim Lancers\n +10% Faster Build Speed"
+End
+
+CONTROLBAR:TooltipUpgradeMordorHaradrimPalaceLevel3
+"Allows training of Haradrim Archers and Fire Arrows\nAdds defensive Arrow Tower \n +25% Faster Build Speed"
+End
+
+CONTROLBAR:FellBeastMountTooltip
+"Click the Mount/Dismount button \n then left click on pathable location."
+END
+
+
+//--------Isengard Additions for BFME2 Expansion ---------------
+
+OBJECT:IsengardTavern
+"Clan Steading"
+END
+
+OBJECT:IsengardTavernDescription
+"Level 2: +10% Faster Build Speed\n Level 3: +25% Faster Build Speed"
+END
+
+CONTROLBAR:UpgradeIsengardTavernLevel2
+"&Upgrade Clan Steading to Level 2"
+End
+
+CONTROLBAR:UpgradeIsengardTavernLevel3
+"&Upgrade Clan Steading to Level 3"
+End
+
+CONTROLBAR:TooltipUpgradeIsengardTavernLevel2
+"Allows Wildmen Axe Throwers \n +10% Faster Build Speed"
+End
+
+CONTROLBAR:TooltipUpgradeIsengardTavernLevel3
+"+25% Faster Build Speed"
+End
+
+CONTROLBAR:TooltipIsengardTavern
+"Trains Wildmen and Wildmen Axe Throwers"
+End
+
+CONTROLBAR:ConstructIsengardTavern
+"Build Cla&n Steading"
+END
+
+CONTROLBAR:ConstructIsengardBerserkerHorde
+"Uruk Dea&thbringers"
+End
+
+CONTROLBAR:ToolTipBuildIsengardBerserkerHorde
+"Hero Infantry \n Strong vs. All \n Requires Level 3 Uruk Pit \n Only 3 Units of Deathbringers are allowed at any time."
+End
+
+OBJECT:IsengardWildmanAxe
+"Wildmen Axe Thrower"
+End
+
+CONTROLBAR:ConstructIsengardWildmanAxeHorde
+"Wildmen Axe &Throwers"
+End
+
+CONTROLBAR:ToolTipBuildIsengardWildmanAxeHorde
+"Requires Level 2 Clan Steading \n Strong at Range"
+End
+
+CONTROLBAR:LW_Unit_IsengardWildmanHorde
+"Wildmen of Dunland"
+END
+
+CONTROLBAR:LW_Unit_IsengardWildmanHordePlural
+"Wildmen of Dunland Hordes"
+END
+
+CONTROLBAR:LW_Unit_IsengardWildmanAxeHorde
+"Wildmen Axe Thrower Horde"
+END
+
+CONTROLBAR:LW_Unit_IsengardWildmanAxeHordePlural
+"Wildmen Axe Thrower Hordes"
+END
+
+CONTROLBAR:LW_ToolTipBuild_IsengardWildmanAxeHorde
+"Unit Type: Basic Archer\nStrong at Range\n"
+END
+
+CONTROLBAR:LW_ToolTip_IsengardWildmanHorde
+"\nUnit Type: Basic Swordsmen\nStrong vs. Pikemen"
+END
+
+CONTROLBAR:LW_ToolTip_IsengardWildmanAxeHorde
+"\nUnit Type: Basic Archer\nStrong vs. Swordsmen"
+END
+
+CONTROLBAR:ConstructIsengardWargPack
+"Warg &Pack"
+END
+
+CONTROLBAR:ToolTipBuildIsengardWargPack
+"Strong vs. Swordsmen and Archers"
+END
+
+OBJECT:IsengardWargPack
+"Warg"
+END
+
+OBJECT:HordeIsengardWargPack
+"Warg Pack"
+END
+
+CONTROLBAR:LW_Unit_IsengardWargPackHorde
+"Warg Pack"
+END
+
+CONTROLBAR:LW_Unit_IsengardWargPackHordePlural
+"Warg Packs"
+END
+
+CONTROLBAR:LW_ToolTip_IsengardWargPackHorde
+"\nUnit Type: Basic Cavalry\nStrong vs. Swordsmen and Archers"
+END
+
+CONTROLBAR:TooltipUpgradeIsengardSiegeWorksLevel2
+"Allows the construction of Siege Ballistas \n +10% Faster Build Speed"
+End
+
+CONTROLBAR:TooltipUpgradeIsengardSiegeWorksLevel3
+"Allows the construction of the Explosive Mine \n +25% Faster Build Speed"
+End
+
+
+
+//--------Dwarven Hero Additions for Expansion-------------
+
+CONTROLBAR:ToolTipCaptDaleLeadership
+"Requires Level 6 \n Allies near the Captain gain \n +50% Damage, +50% Armor, \n and earn experience twice as fast \n \n Passive ability       Does not stack"
+END
+
+
+
+CONTROLBAR:DwarvenCaptainofDale
+"Prince Brand, the Captain of Dale"
+END
+
+CONTROLBAR:DwarvenCaptainofDaleRecruit
+"Recruit Prince Brand, the Captain of Dale"
+END
+
+CONTROLBAR:DwarvenCaptainofDaleRevive
+"Revive Prince Brand, the Captain of Dale"
+END
+
+CONTROLBAR:DwarvenCaptainofDaleHotkey
+"Prince Brand, Ca&ptain of Dale"
+END
+
+OBJECT:DwarvenCaptainofDale
+"Prince Brand, Captain of Dale"
+END
+
+CONTROLBAR:ZerkSlayer
+"Berser&kergang"
+END
+
+CONTROLBAR:ToolTipZerkSlayer
+"Requires Level 7 \n Zealots gain +150% Damage and Double Attack Speed \n Left click to activate"
+END
+
+CONTROLBAR:LW_Unit_DwarvenZerkerHorde
+"Dwarven Zealots"
+END
+
+CONTROLBAR:LW_ToolTip_DwarvenZerkerHorde
+"Unit Type: Hero Infantry\nStrong vs. All"
+END
+
+CONTROLBAR:ConstructDwarvenZerkerHorde
+"&Dwarven Zealots"
+END
+
+CONTROLBAR:ToolTipBuildDwarvenZerkerHorde
+"Strong vs. All Normal Troops \n Requires Level 3 Hall of Warriors \n Only 3 Units of Zealots are allowed at any time."
+END
+
+OBJECT:HordeDwarvenZerker
+"Dwarven Zealots"
+END
+
+//------------Elven Additions for Expansion----------------
+
+
+OBJECT:NoldorWarrior
+"Noldor Warrior"
+END
+
+OBJECT:HordeNoldorWarrior
+"Noldor Warriors"
+END
+
+CONTROLBAR:ConstructNoldorWarriorHorde
+"&Noldor Warriors"
+END
+
+CONTROLBAR:ToolTipBuildNoldorWarriorHorde
+"Strong vs. All Normal Troops \n Requires Level 3 Barracks \n Only 3 Units of Noldor Warriors are allowed at any time."
+END
+
+CONTROLBAR:LW_Unit_NoldorWarriorHorde
+"Noldor Warriors"
+END
+
+CONTROLBAR:LW_ToolTip_NoldorWarriorHorde
+"Unit Type: Hero Infantry\nStrong vs. All"
+END
+
+CONTROLBAR:NoldorWeaponSong
+"&Weapon Song"
+END
+
+CONTROLBAR:ToolTipNoldorWeaponSong
+"Requires Level 7 \n Noldor Warriors gain +50% Damage and +50% Armor \n Left click to activate"
+END
+
+OBJECT:RivendellArchers
+"Lindon Horse Archer"
+END
+
+CONTROLBAR:BuildElvenRivendellArchers
+"Train Lindon Horse A&rchers"
+END
+
+CONTROLBAR:ToolTipBuildElvenRivendellArchers
+"Strong at Range \n Requires Level 2 Green Pasture"
+END
+
+OBJECT:HordeElvenRivendellLancer
+"Rivendell Lancers"
+END
+
+CONTROLBAR:LW_ToolTip_ElvenRivendellArcherHorde
+"Fast Archers, Strong at Range"
+END
+
+OBJECT:HordeElvenRivendellArcher
+"Lindon Horse Archers"
+END
+
+
+//------------- Men of the West ------------------
+CONTROLBAR:TooltipEarnurBladeMaster
+"Requires Level 2 \n Earnur gains +100% Damage and +100% Armor \n Left click to activate"
+END
+
+CONTROLBAR:ToolTipEarnurLeadership
+"Requires Level 4 \n Allies near Earnur gain \n +50% Damage, +50% Armor, \n and earn experience twice as fast \n \n Passive ability       Does not stack"
+END
+
+
+
+OBJECT:RohanSpearmen
+"Rohan Spearman"
+END
+
+OBJECT:HordeRohanSpearmen
+"Rohan Spearmen"
+END
+
+CONTROLBAR:ConstructRohanSpearmenHorde
+"Rohan S&pearmen"
+END
+
+CONTROLBAR:ToolTipBuildRohanSpearmenHorde
+"Strong vs. Cavalry"
+END
+
+CONTROLBAR:LW_Unit_RohanSpearmenHorde
+"Rohan Spearmen"
+END
+
+CONTROLBAR:LW_ToolTip_RohanSpearmenHorde
+"Basic Pikemen \n Strong vs. Cavalry"
+END
+
+OBJECT:GondorKnightsofDol
+"Knight of Dol Amroth"
+END
+
+OBJECT:HordeGondorKnightsofDol
+"The Knights of Dol Amroth"
+END
+
+CONTROLBAR:LW_Unit_GondorKnightsofDolHorde
+"The Knights of Dol Amroth"
+END
+
+CONTROLBAR:LW_ToolTip_GondorKnightsofDolHorde
+"Unit Type: Hero Cavalry\nStrong vs. All"
+END
+
+CONTROLBAR:ConstructGondorKnightsofDolHorde
+"Knights of &Dol Amroth"
+END
+
+CONTROLBAR:ToolTipBuildGondorKnightsofDolHorde
+"Strong vs. All Normal Troops \n Requires Level 3 Stable \n Only 3 Units of Knights are allowed at any time."
+END
+
+CONTROLBAR:KnightsofDolInspiration
+"Inspiration"
+END
+
+CONTROLBAR:TooltipKnightsofDolInspiration
+"Requires Level 2 \n Mounted units near the Knights gain +50% Damage and +50% Armor \n Passive ability"
+END
+
+CONTROLBAR:KnightsofDolChargeofGlory
+"&Charge of Glory"
+END
+
+CONTROLBAR:TooltipKnightsofDolChargeofGlory
+"Requires Level 7 \n Knights of Dol Amroth gain +50% Damage and +50% Armor\n Click to Activate"
+END
+
+
+//------------- Wild Man Additions ----------------
+
+CONTROLBAR:ToolTipSpecialAbilityDrakeBroodInferno
+"Requires Level 7 \n Breathes fire over a selected area \n Left click icon then left click on target area"
+END
+
+
+
+OBJECT:WildMarauderSwords
+"Half-Troll Swordsman"
+END
+
+OBJECT:WildMarauderSwordHorde
+"Half-Troll Swordsmen"
+END
+
+CONTROLBAR:ConstructWildMarauderSwordHorde
+"Half-Troll Swor&dsmen"
+END
+
+CONTROLBAR:ToolTipBuildWildMarauderSwordHorde
+"Requires Level 2 Fissure \n Strong vs. Pikemen"
+END
+
+BANNERUI:WildMarauderSwordman
+// Singluar name of the Half-Troll Marauder category displayed in the army summary for WotR
+"Half-Troll Swordsman"
+End
+
+BANNERUI:WildMarauderSwords
+// Plural name of the Half-Troll Marauder category displayed in the army summary for WotR
+"Half-Troll Swordsmen"
+End
+
+CONTROLBAR:LW_Unit_WildMarauderSwordHorde
+"Half-Troll Swordsmen Horde"
+END
+
+CONTROLBAR:LW_Unit_WildMarauderSwordHordePlural
+"Half-Troll Swordsmen Hordes"
+END
+
+CONTROLBAR:LW_ToolTipBuild_WildMarauderSwordHorde
+"Unit Type: Elite Infantry\nStrong vs. Pikemen\n"
+END
+
+CONTROLBAR:LW_ToolTip_WildMarauderSwordHorde
+"\nUnit Type: Elite Infantry\nStrong vs. Pikemen"
+END
+
+OBJECT:WildAzog
+"Azog"
+END
+
+CONTROLBAR:WildAzogRecruit
+"Recruit the Goblin Chieftain of Moria"
+END
+
+CONTROLBAR:WildAzogRevive
+"Revive the fallen Hero, Azog"
+END
+
+CONTROLBAR:WildAzogHotKey
+"Azog of &Moria"
+END
+
+CONTROLBAR:ToolTipAzogBrigandage
+"Goblins near the Hero steal resources whenever dealing damage to enemy units \n Passive ability"
+END
+
+CONTROLBAR:AzogBrigandage
+"Plunder"
+END
+
+CONTROLBAR:ToolTipAzogCracktheWhip
+"Requires Level 6 \n Gives goblins and half-trolls experience \n Left click icon then left click on target units"
+END
+
+CONTROLBAR:ToolTipAzogFury
+"Requires Level 4 \n Azog gains an excellent boost to Armor, Damage, and Attack Speed\nLeft click to activate"
+END
+
+OBJECT:BabyFireDrake
+"Fire Drake Broodling"
+END
+
+CONTROLBAR:AzogCracktheWhip
+"Crack the &Whip"
+END
+
+CONTROLBAR:LW_Unit_WildBabyDrakeHorde
+"Fire Drake Brood"
+END
+
+CONTROLBAR:LW_ToolTip_WildBabyDrakeHorde
+"Unit Type: Hero Monsters\nStrong vs. All"
+END
+
+OBJECT:HordeWildBabyDrake
+"Fire Drake Brood"
+END
+
+CONTROLBAR:ConstructWildBabyDrakeHorde
+"Fire Drake B&rood"
+END
+
+CONTROLBAR:ToolTipWildBabyDrakeHorde
+"Strong vs. All Normal Troops except Pikemen \n Requires Fissure Level 3 \n Only 2 Drake Broods are allowed at any time."
+END
+
+//-----------War of the Ring additions--------------------
+
+CONTROLBAR:PurchaseUpgradeDwarvenSiegeHammer
+"Upgrade with S&iege Hammers"
+END
+
+
+
+
+BANNERUI:DwarvenCatapult
+// Singluar name of the Dwarven Phalanx category displayed in the army summary for WotR
+"Catapult"
+End
+
+BANNERUI:PluralDwarvenCatapult
+// Singluar name of the Dwarven Phalanx category displayed in the army summary for WotR
+"Catapults"
+End
+
+BANNERUI:AngmarDarkDunedain
+// Singluar name of the Angmar Guardian category displayed in the army summary for WotR
+"Black Numenorean"
+End
+
+BANNERUI:AngmarDarkDunedains
+// Plural name of the Angmar Guardian category displayed in the army summary for WotR
+"Black Numenoreans"
+End
+
+BANNERUI:AngmarDarkRanger
+// Singluar name of the Angmar Guardian category displayed in the army summary for WotR
+"Dark Ranger"
+End
+
+BANNERUI:AngmarDarkRangers
+// Plural name of the Angmar Guardian category displayed in the army summary for WotR
+"Dark Rangers"
+End
+
+BANNERUI:MordorCatapult
+// Singluar name of the Mordor Phalanx category displayed in the army summary for WotR
+"Catapult"
+End
+
+BANNERUI:MordorCatapultPlural
+// Singluar name of the Mordor Phalanx category displayed in the army summary for WotR
+"Catapults"
+End
+
+BANNERUI:IsengardBallista
+// Singluar name of the Isengard Phalanx category displayed in the army summary for WotR
+"Ballista"
+End
+
+BANNERUI:IsengardBallistaPlural
+// Singluar name of the Isengard Phalanx category displayed in the army summary for WotR
+"Ballistas"
+End
+
+OBJECT:DwarvenZerker
+"Zealot"
+END
+
+OBJECT:HordeDwarvenZerker
+"Dwarven Zealots"
+END
+
+BANNERUI:WildMountainGiant
+// Singluar name of the Wild Phalanx category displayed in the army summary for WotR
+"Mountain Giant"
+End
+
+BANNERUI:WildMountainGiantPlural
+// Singluar name of the Wild Phalanx category displayed in the army summary for WotR
+"Mountain Giants"
+End
+
+BANNERUI:ArnorFighter
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Soldier"
+End
+
+BANNERUI:ArnorFighters
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Soldiers"
+End
+
+CONTROLBAR:LW_Unit_ArnorFighterHorde
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Soldier Battalion"
+End
+
+CONTROLBAR:LW_UNIT_ArnorFighterHordePlural
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Soldier Battalions"
+End
+
+BANNERUI:ArnorArcher
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Arnor Archer"
+End
+
+BANNERUI:ArnorArcher
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Arnor Archers"
+End
+
+CONTROLBAR:LW_Unit_ArnorArcherHorde
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Arnor Archer Battalion"
+End
+
+CONTROLBAR:LW_UNIT_ArnorArcherHordePlural
+// Plural name of the Arnor Phalanx category displayed in the army summary for WotR
+"Arnor Archer Battalions"
+End
+
+BANNERUI:ArnorRanger
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Ranger"
+End
+
+BANNERUI:ArnorRangers
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Rangers"
+End
+
+CONTROLBAR:LW_Unit_ArnorRangerHorde
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Ranger Battalion"
+End
+
+CONTROLBAR:LW_UNIT_ArnorRangerHordePlural
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Ranger Battalions"
+End
+
+BANNERUI:ArnorKnight
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Knight"
+End
+
+BANNERUI:ArnorKnights
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Knights"
+End
+
+CONTROLBAR:LW_Unit_ArnorKnightHorde
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Knight Battalion"
+End
+
+CONTROLBAR:LW_Unit_ArnorKnightHordePlural
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Knight Battalions"
+End
+
+BANNERUI:ArnorTowerGuard
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Royal Guard"
+End
+
+BANNERUI:ArnorTowerGuards
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Royal Guards"
+End
+
+CONTROLBAR:LW_Unit_ArnorTowerGuardHorde
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Royal Guard Battalion"
+End
+
+CONTROLBAR:LW_Unit_ArnorTowerGuardHordePlural
+// Singluar name of the Arnor Phalanx category displayed in the army summary for WotR
+"Dunedain Royal Guard Battalions"
+End
+
+GUI:DisabledFaction
+// Error message for when the user chooses a disabled faction in WotR 
+"A faction was chosen that is not allowed for this scenario. Please choose a different faction."
+End
+
+OBJECT:PalantirShard
+"Palantir Shard"
+END
+
+//-----------New Create-A-Hero "No Power" Feature --------------------
+
+CONTROLBAR:SpecialAbilityNoPower
+// Description of what the "No Power" power is in the Palantir.  (Never seen?)
+"This power takes up a slot for free, and allows you to manage the cost of your Create-A-Hero"
+End
+
+CONTROLBAR:ToolTipSpecialAbilityNoPower
+// Tooltip on a "No Power" after it has been added to your Hero's list of powers
+// The tooltips for most other powers describe what they do
+"Free power to help reduce overall Hero build cost"
+End
+
+TOOLTIP:AddSpecialAbilityNoPower
+// Tooltip on the "Add No Power" button in the Create-A-Hero Powers UI
+"Fill this power slot with no increase in Hero build cost"
+End
+	
+CAH:Command_SpecialAbilityNoPowerDummy_Name
+// Entry description for "No Power" where it shows up in the Hero Powers list on both Manager and Powers screens
+"- No Power -"
+END
+
+CAH:FormatSpecialPowerCost
+// Format string for the Special Power cost appended to the end of the CAH Special Power tooltip
+"\n+%d Hero Cost"
+END
+
+GUI:CAHHeroCost
+"Build Cost"
+END
+
+APT:HeroAttributesTitle
+// context: Title for hero appearance screen, attributes subtask
+// Similar to APT:HeroAppearanceTitle, but now we are changing the page subtitle when you modify attributes
+"CUSTOMIZE ATTRIBUTES"
+END
+
+
+
+//-----------New Strings for Create-A-Hero Olog-hai class --------------------
+
+// JH found this edit added in version 115.  Not sure why this was here because this string is already defined 
+// correctly in the base game. Commenting it out instead of removing it.
+// CreateAHero:ClassDesc_ServantsOfSauron
+// "Many of the powerful Trolls of Middle-earth serve the darkness."
+// END
+
+CreateAHero:ClassName_OlogHai	
+"Olog-hai"
+END
+
+CreateAHero:ClassDesc_OlogHai 
+// (Inspired by Appendix F, p. 458)
+"Olog-hai are agile, fierce, cunning, and harder than stone. Unlike ordinary trolls, they can endure the sun."
+END
+
+// The original Troll subclass is being moved out of ServantsOfSauron
+CreateAHero:SubClassName_Troll
+//"Troll" 
+"Great Troll"
+END
+
+CreateAHero:SubClassDesc_Troll
+//"Trolls are among the strongest creatures in Middle-earth, and are fearsome foes when bent to the will of a master such as Sauron."
+// (Inspired by Book V Ch 10, p. 176)
+"Mighty and reckless, the great trolls of Gorgoroth wear bits of armor over their hideous hide, and wield crude weapons in their knotted hands."
+END
+
+////////////////////////////////////////////////////////////////////
+// Expansion 1 MpGameRules /////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+RULE:VictoryType
+"Victory Type"
+END
+
+
+/// Expansion 1 MpGameRules Values //////////////////////////////////
+
+// These are not needed because strings already exist in the base game
+
+//VALUE:Elimination	// code uses LWScenario:WOTRGameType002 instead
+//"Elimination"
+//END
+
+//VALUE:CapitalAssault	// code uses LWScenario:WOTRGameType001 instead
+//"Capital Assault"
+//END
+
+//VALUE:Conquest	// code uses LWScenario:WOTRGameType004 instead
+//"Conquest"
+//END
+
+VALUE:WorldDomA
+"World Domination - 20"
+END
+
+VALUE:WorldDomB
+"World Domination - 30"
+END
+
+VALUE:WorldDomC
+"World Domination - 40"
+END
+
+VALUE:WorldDomAll
+"World Domination - All"
+END
+
+VALUE:UseScenarioDefaults
+"Use Scenario Defaults"
+END
+
+LWScenario:WOTRObjectives007
+"Rule the lands of Middle-earth by conquering 40 territories (or entire map if less than 40 territories present)."
+END
+
+////////////////////////////////////////////////////////////////////
+// End Expansion 1 MpGameRules /////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////
+// JH Base Game String Edits /////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+// These string IDs existed in the base game and have been moved here
+// because they have been edited.
+
+APT:TributeResetButton
+// Reset button text on the in-game tribute screen
+// Changing to ALL CAPS vs. base game
+"RESET"
+END
+
+APT:TributeSendButton
+// Send button text on the in-game tribute screen
+// Changing to ALL CAPS vs. base game
+"SEND"
+END
+
+////////////////////////////////////////////////////////////////////
+// End JH Base Game String Edits /////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+STRATEGICHUD:TreasuryWarningPopUpTitle
+// Context:  Title of warning Message Box you see when you are about to close the Veterancy screen, and your units will force you into having <0 Treasury
+"Treasury Exhausted!"
+END
+
+STRATEGICHUD:TreasuryWarningPopUpMessage
+// Context:  Content of warning Message Box you see when you are about to close the Veterancy screen, and your units will force you into having <0 Treasury
+"If you continue, the new units you have built in the RTS game will exhaust your Treasury when they are added to the map. You will not be able to build any new units or buildings on the map (besides farms) until your Treasury is no longer empty.\n\nYou might want to cancel and disband some more units, if you can. (Heroes cannot be disbanded.)"
+END
+
+STRATEGICHUD:DisbandArmyMemberHelp
+"Disband the selected unit(s) immediately and refund Treasury Cost"
+END
+
+LW:UnitRefundHelpText
+// Added to the bottom of the unit help text tooltip: shows how much Treasury you will get back if you disband the unit
+"\n\nTreasury Refund if Disbanded +%d"
+End
+
+// new WOTR ring regions
+
+LW:DisplayNameAngmar
+"Angmar"
+END
+
+LW:DisplayNameAmonSul
+"Amon Sul"
+END
+
+LW:DisplayNameArthedain
+"Arthedain"
+END
+
+LW:DisplayNameBarrowDowns
+"The Barrow-downs"
+END
+
+LW:DisplayNameBelfalas
+"Belfalas"
+END
+
+LW:DisplayNameCardolan
+"Cardolan"
+END
+
+LW:DisplayNameCarrock
+"Carrock"
+END
+
+LW:DisplayNameFornost
+"Fornost"
+END
+
+LW:DisplayNameForodwaith
+"Forodwaith"
+END
+
+LW:DisplayNameLostriand
+"Lostriand"
+END
+
+LW:DisplayNameRhudaur
+"Rhudaur"
+END
+
+LW:DisplayNameNorthDowns
+"The North Downs"
+END
+
+LW:DisplayNameUmbar
+"Umbar"
+END
+
+LW:DisplayNameCarnDum
+"Carn Dum"
+END
+
+LW:DisplayNameMountGundabad
+"Mount Gundabad"
+END
+
+LW:TerritoryNorthernWaste
+"Forodwaith"
+END
+
+CONTROLBAR:LW_Hero_Rogash
+"Rogash"
+END
+
+CONTROLBAR:LW_ToolTipBuild_Rogash
+"Unit Type: Hero Army Leader\n"
+END
+
+CONTROLBAR:LW_ToolTip_Rogash
+"Unit Type: Hero Army Leader"
+END
+
+CONTROLBAR:LW_Hero_Morgramir
+"Morgomir"
+END
+
+CONTROLBAR:LW_ToolTipBuild_Morgramir
+"Unit Type: Hero Army Leader\n"
+END
+
+CONTROLBAR:LW_ToolTip_Morgramir
+"Unit Type: Hero Army Leader"
+END
+
+CONTROLBAR:LW_Hero_Hwaldar
+"Hwaldar"
+END
+
+CONTROLBAR:LW_ToolTipBuild_Hwaldar
+"Unit Type: Hero Army Leader\n"
+END
+
+CONTROLBAR:LW_ToolTip_Hwaldar
+"Unit Type: Hero Army Leader"
+END
+
+CONTROLBAR:LW_Hero_Karsh
+"Karsh"
+END
+
+CONTROLBAR:LW_ToolTipBuild_Karsh
+"Unit Type: Hero\n"
+END
+
+CONTROLBAR:LW_ToolTip_Karsh
+"Unit Type: Hero"
+END
+
+CreateAHero:SubClassName_SnowTroll
+"Snow Troll"
+END
+
+CreateAHero:SubClassDesc_SnowTroll
+"Fur-clad snow trolls dwell in the frozen wastelands of the North. They are smaller and faster than their southern cousins, and possess great cunning."
+END
+
+CreateAHero:SubClassName_HillTroll
+"Hill Troll"
+END
+
+CreateAHero:SubClassDesc_HillTroll
+"Hill trolls inhabit the frost-covered hills and fens of the North. They are a savage and headstrong people, craving battle and treasure."
+
+END
+
+OBJECT:HordeIsengardBerserker
+"Uruk Deathbringers"
+END
+
+CAH:Command_CreateAHero_TrollLeap_Level1_Name
+"Leap"
+END
+
+CAH:Command_CreateAHero_TrollLeap_Level2_Name
+"Improved Leap"
+END
+
+CONTROLBAR:ToolTipCAH_DominateTroll_Level1
+"Dominate Troll"
+END
+
+CONTROLBAR:CAH_DominateTroll_Level1
+"Dominate Troll"
+END
+
+CAH:Command_CreateAHero_SpecialAbilityDominateTroll_Level1_Name
+"Dominate Troll"
+END
+
+//------------------------------------Mission Building Lines-------------------
+
+OBJECT:MallornSunFlare
+"This Mallorn Tree controls the Sun Flare Power."
+END
+
+OBJECT:MallornCloudBreak
+"This Mallorn Tree controls the Cloud Break Power."
+END
+
+OBJECT:MallornRebuild
+"This Mallorn Tree controls the Rebuild Power."
+END
+
+OBJECT:MallornSummon
+"This Mallorn Tree controls the Summon Rangers Power."
+END
+
+OBJECT:MallornElvenWood
+"This Mallorn Tree controls the Elven Wood Power."
+END
+
+TOOLTIP:AngmarIceArrows
+"Ice Arrows"
+END
+
+
+
+
+LAN:TooFewPlayers
+// context: the map has a min limit of %d (number of players) players.
+"This map must have at least %d players."
+END
+
+OBJECT:AmonSulTower
+"Arrow Tower"
+END
+
+OBJECT:AmonSulWall
+"Wall"
+END
+
+OBJECT:AngmarCastleWallTowerSmall
+"Battle Tower"
+END
+
+OBJECT:AngmarCastleWallCatapultSmall
+"Troll Stone Thrower Tower"
+END
+
+OBJECT:AmonSulStronghold
+"Tower of Amon Sul"
+END
+//------------------------------------Online Home -------------------
+
+// Would like to replace base game strings that appear on Online Home screen
+//   APT:HomeTournamentDesc
+//   APT:HomeOpenPlayDesc
+//   APT:HomeWotrDesc
+// with the following strings that will split mode name and mode description into 2 columns.
+// 
+// These strings are all commented out for now, but should be localized in case we need them.
+
+//APT:HomeTournamentName
+//"Tournament"
+//END
+
+//APT:HomeTournamentDesc
+//"Quickly connect to a stat-tracked ladder match against other ranked Tournament competitors."
+//END
+
+//APT:HomeOpenPlayName
+//"Open Play"
+//END
+
+//APT:HomeOpenPlayDesc
+//"Browse a list of available games that permit you to take your Created Hero online and set your own customized game Rules."
+//END
+
+//APT:HomeWotrName
+//"War Of The Ring"
+//END
+
+//APT:HomeWotrDesc
+//"Begin or continue a turn-based campaign to conquer the lands of Middle-earth and fight against rival factions in realtime tactical or auto-resolved battles."
+//END
+
+//------------------------------------Online -------------------
+
+APT:Logout
+// context: button for user to press to un-login from online and go back to the main menu.  Log off?  Log out?  
+// See APT:Login for comparison
+"LOG OUT"
+END
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////  MISSION STRINGS FROM MAP.STRs  ////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//AMON SUL
+
+SCRIPT:ANGAmonSulIntroText_01
+"WITCH-KING: While this fortress stands, the lands to the west are safe from my vengeance."
+END
+
+SCRIPT:ANGAmonSulIntroText_02
+"HWALDAR: Then it will stand no longer, dread lord."
+END
+
+SCRIPT:ANGAmonSulIntroText_03
+"WITCH-KING: We must strike without mercy. The pretenders guard the walls of Amon Sul with more than sinew and steel."
+END
+
+SCRIPT:ANGAmonSulIntroText_03-1
+"ANGMAR OFFICER: Take cover! The sun itself defends these walls!"
+END
+
+//SCRIPT:ANGAmonSulIntroText_04
+//"HWALDAR: Take cover in this tower!"
+//END
+
+SCRIPT:ANGAmonSulObjectiveText_01
+"Destroy the Tower of Amon Sul."
+END
+
+SCRIPT:ANGAmonSulObjectiveText_02
+"Destroy all of the Mallorn Trees that power Amon Sul's magical attacks."
+END
+
+SCRIPT:ANGAmonSulObjectiveText_03
+"Destroy the four remaining Mallorn Trees."
+END
+
+SCRIPT:ANGAmonSulObjectiveText_04
+"Build a Mill, a Dark Iron Forge, and a Hall of the King's Men."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_01
+"The Witch-king must reach Level 10."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_02
+"Hwaldar must reach Level 6."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_03
+"Morgomir must reach Level 10."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_04
+"Destroy the northernmost Mallorn Tree, which can focus a mighty Sun Flare against our army."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_05
+"Destroy the Mallorn Tree in the northwest swamp, whose power allows the Palantir of Amon Sul to create lush Elven forests."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_06
+"Destroy the Mallorn Tree that sits in the shadow of the Tower of Amon Sul, which allows the fortress to call its Dunedain allies for aid."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_07
+"Destroy the Mallorn Tree that grows in the lower fortress, for it can part the clouds and stun our forces, leaving them helpless."
+END
+
+SCRIPT:ANGAmonSulBonusObjectiveText_08
+"Destroy the Mallorn Tree on the southwest road. Its miraculous power can restore the strength of damaged buildings."
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_01
+"ANGMAR OFFICER: We've destroyed the central tower!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_01-1
+"ANGMAR OFFICER: 'Mighty' Amon Sul is fallen!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_02
+"We've destroyed one of the Mallorn trees!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_03
+"We've destroyed all of the Mallorn Trees!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_04
+"The Witch-king has reached the apex of his power!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_05
+"Hwaldar has reached Level 6!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_05-1
+"Morgomir has reached Level 10!"
+END
+
+SCRIPT:ANGAmonSulObjectiveComplete_06
+"We have built a camp - now we must use it!"
+END
+
+
+SCRIPT:ANGAmonSulObjectiveComplete_08
+"We've destroyed the tree that burns us with the rays of the sun!"
+END
+
+
+SCRIPT:ANGAmonSulObjectiveComplete_09
+"The tree that raises Elven forests to protect the enemy is no more!"
+END
+
+
+SCRIPT:ANGAmonSulObjectiveComplete_10
+"They will call no longer for their Dunedain allies -- that tree is gone!"
+END
+
+
+SCRIPT:ANGAmonSulObjectiveComplete_11
+"The tree that parts the clouds and stuns our forces with sudden light lies in splinters!"
+END
+
+
+SCRIPT:ANGAmonSulObjectiveComplete_12
+"Ha! The tree they use to rebuild their destroyed buildings cannot rebuild itself!"
+END
+
+SCRIPT:ANGAmonSulHintText_01
+"We've breached the gate!"
+END
+
+SCRIPT:ANGAmonSulHintText_02
+"Be on guard! They strike at us with mystic forces!"
+END
+
+SCRIPT:ANGAmonSulHintText_03
+"WITCH-KING: It seems they know how to use their trinket; but they channel its might through accursed Mallorn trees."
+END
+
+SCRIPT:ANGAmonSulHintText_04
+"WITCH-KING: Splinter the trees, and its power will wane."
+END
+
+SCRIPT:ANGAmonSulHintText_05
+"We've destroyed another Mallorn tree!"
+END
+
+SCRIPT:ANGAmonSulHintText_06
+"We will need a secure encampment to lay siege to this bastion. Build a Mill, a Dark Iron Forge, and a Hall of the King's Men."
+END
+
+SCRIPT:ANGAmonSulHintText_07
+"Rangers in the swamps to the north pelt us with arrows! Kill them and their sport will cease!"
+END
+
+SCRIPT:ANGAmonSulHintText_08
+"We must use our new Builders to rebuild our forces and strike back at Amon Sul!"
+END
+
+SCRIPT:ANGAmonSulHintText_09
+"Morgomir now has the power of Ruin. With it he can reduce even the mightiest structures to dust."
+END
+
+SCRIPT:ANGAmonSulHintText_10
+"Destroy all of the Mallorn Trees that power Amon Sul's magical attacks. Look at your Objectives screen to recall where and what they are."
+END
+
+SCRIPT:ANGAmonSulCloudBreakTreeVO
+"ANGMAR OFFICER: This Mallorn Tree allows the Palantir of Amon Sul to part the clouds, stunning the minions of darkness."
+END
+
+SCRIPT:ANGAmonSulElvenWoodTreeVO
+"ANGMAR OFFICER: The Palantir of Amon Sul can channel the power of nature with this tree,\ncreating lush Elven forests to protect the forces of light."
+END
+
+SCRIPT:ANGAmonSulDunedainTreeVO
+"ANGMAR OFFICER: The fortress's defenders can use this Mallorn Tree to call to their Dunedain allies for aid."
+END
+
+SCRIPT:ANGAmonSulRebuildTreeVO
+"ANGMAR OFFICER: The Palantir of Amon Sul uses this Mallorn Tree to miraculously repair damage to buildings."
+END
+
+SCRIPT:ANGAmonSulSunflareTreeVO
+"ANGMAR OFFICER: The mightiest of the Mallorn gifts, this tree allows the Palantir of Amon Sul\nto focus the fury of the sun itself against any who dare menace the fortress."
+END
+
+SCRIPT:ANGAmonSulCloudBreakTreeTooltip
+"This Mallorn Tree grants the Cloud Break power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulElvenWoodTreeTooltip
+"This Mallorn Tree grants the Elven Wood power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulDunedainTreeTooltip
+"This Mallorn Tree grants the Summon Dunedain power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulRebuildTreeTooltip
+"This Mallorn Tree grants the Rebuild power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulSunflareTreeTooltip
+"This Mallorn Tree grants the Sun Flare power to the defenders of Amon Sul"
+END
+
+SCRIPT:ANGAmonSulSunflareIntroText
+"\nThis tree powers the fortress's Sun Flare attack."
+END
+ 
+SCRIPT:ANGAmonSulRebuildIntroText
+"\nThis tree allows the fortress to use the Rebuild power on its buildings."
+END
+ 
+SCRIPT:ANGAmonSulCloudBreakIntroText
+"\nThis tree parts the clouds and stuns our troops."
+END
+
+SCRIPT:ANGAmonSulDunedainIntroText
+"\nThis tree summons Dunedain ranger reinforcements."
+END
+
+SCRIPT:ANGAmonSulElvenWoodIntroText
+"\nThis tree raises up Elvish forests to help the fortress's defenders."
+END
+
+
+SCRIPT:ANGAmonSulSunflareTimer
+"Amon Sul Sun Flare Attack:"
+END
+
+
+//FOUNDATION OF ANGMAR
+
+SCRIPT:ANGAngmarIntroText_01
+"WITCH-KING: Here, among these dark peaks, we will build a stronghold to bring ruin to the North Kingdom."
+END
+
+SCRIPT:ANGAngmarIntroText_02
+"WITCH-KING: There is great evil in this place... especially the Black Numenoreans,\n Men whose dark loyalties and fire for dominion we must rekindle."
+END
+
+SCRIPT:ANGAngmarIntroText_03
+"WITCH-KING: What's this? A warrior Troll, who fights like a trained swordsman? He would make a useful servant indeed!"
+END
+
+SCRIPT:ANGAngmarObjectiveText_01
+"The Witch-king must survive."
+END
+
+SCRIPT:ANGAngmarObjectiveText_02
+"Morgomir must survive."
+END
+
+SCRIPT:ANGAngmarObjectiveText_03
+"Help the mysterious warrior Troll defeat his attackers."
+END
+
+SCRIPT:ANGAngmarObjectiveText_04
+"Rogash must survive."
+END
+
+SCRIPT:ANGAngmarObjectiveText_05
+"Bring Rogash to the plateau of the Snow Trolls."
+END
+
+SCRIPT:ANGAngmarObjectiveText_06
+"Slay the Black Numenoreans who stand watch on the Snow Trolls' plateau."
+END
+
+SCRIPT:ANGAngmarObjectiveText_07
+"Subjugate the Black Numenoreans in the mountains, and bring the remaining Trolls and Wolves to our banner."
+END
+
+SCRIPT:ANGAngmarObjectiveText_08
+"Find and clear three fortress sites."
+END
+
+SCRIPT:ANGAngmarObjectiveText_09
+"Prevent the Black Numenorean counterattack from destroying any of your fortresses."
+END
+
+SCRIPT:ANGAngmarNewObjectiveText_01
+"Help the mysterious warrior Troll defeat his attackers."
+END
+
+SCRIPT:ANGAngmarNewObjectiveText_02
+"Help the mysterious warrior Troll defeat his attackers - but spare the Rangers; they may prove useful."
+END
+
+SCRIPT:ANGAngmarNewObjectiveText_03
+"As we encounter new buildings, our Builders can construct more of them. Build a Den, a Mill, and a Dark Iron Forge as we discover them."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveText_04
+"Build a Den, a Mill, and a Dark Iron Forge, once you have discovered them."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveText_01
+"The Witch-king must reach Level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveText_02
+"Morgomir must reach Level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveText_03
+"Rogash must reach Level 4."
+END
+
+SCRIPT:ANGAngmarObjectiveComplete_01
+"The Black Numenoreans are coming to destroy our fortresses - if any fortresses fall, all is lost! Use your resources to upgrade the fortresses and recruit new troops to stand against the attack!"
+END
+
+SCRIPT:ANGAngmarObjectiveComplete_02
+"We have 'persuaded' all the Trolls in the valley to march with us. We can recruit them at the Den at valley's end."
+END
+
+SCRIPT:ANGAngmarObjectiveComplete_03
+"We have fended off the Black Numenorean attacks, and they now bow to our will! This is but the first victory of many!"
+END
+
+SCRIPT:ANGAngmarBonusObjectiveComplete_01
+"The Witch-king has reached Level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveComplete_02
+"Morgomir has reached Level 3."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveComplete_03
+"Rogash has reached Level 4."
+END
+
+SCRIPT:ANGAngmarBonusObjectiveComplete_04
+"We have mastered the construction of the new structures we discovered in this valley!"
+END
+
+SCRIPT:ANGAngmarVOText_01
+"WITCH-KING: Pathetic. The Dark Lord would spit on what I see before me.\nNow you will be reminded of your cause, and your arrows will fly at the heart of Arnor, whither they always should have been pointed."
+END
+
+SCRIPT:ANGAngmarVOText_02
+"WITCH-KING: Troll of the North. What brings you to this place?"
+END
+
+SCRIPT:ANGAngmarVOText_03
+"ROGASH: Come to kill iron faced Men, who live in old ruins to north, keep Trolls fighting Trolls.\nRogash bring Trolls together, take gold and meat from Men in green lands."
+END
+
+SCRIPT:ANGAngmarVOText_04
+"WITCH-KING: Your destiny is at my side, Rogash, not scrabbling for scraps. Bring your brethren to my banner,\nand there will be gold to grasp, meat to devour, and blood to stain your blades without end."
+END
+
+SCRIPT:ANGAngmarVOText_05
+"ROGASH: Fight stop NOW!\nNew master speaks."
+END
+
+SCRIPT:ANGAngmarVOText_06
+"WITCH-KING: Men goad you to battle amongst yourselves.\nBut if it is the blood of Men you thirst for, then it is the blood of Men you shall have."
+END
+
+SCRIPT:ANGAngmarVOText_07
+"ANGMAR OFFICER: Now we must build our fortresses. We must reach the three building sites, and clear them of any opposition."
+END
+
+SCRIPT:ANGAngmarVOText_08
+"WITCH-KING: This one mountain is ours now. The rest will follow. Spires of iron will guard these peaks forever!"
+END
+
+SCRIPT:ANGAngmarVOText_09
+"We have cleared a building site, and started building a Fortress!"
+END
+
+SCRIPT:ANGAngmarVOText_10
+"We have finished building one of our Fortresses!"
+END
+
+SCRIPT:ANGAngmarVOText_11
+"The Black Numenoreans have summoned a dragon to aid them!"
+END
+
+SCRIPT:ANGAngmarVOText_12
+"ROGASH: Dark King, look out! Giants nearby, with Troll slaves!"
+END
+
+SCRIPT:ANGAngmarVOText_13
+"The Black Numenoreans have come! If they destroy any of the fortresses, all is lost!"
+END
+
+SCRIPT:ANGAngmarHintText_01
+"The Black Numenoreans are still strong in these mountains - upgrade your fortresses to protect them from counterattack!"
+END
+
+SCRIPT:ANGAngmarHintText_02
+"Some Black Numenoreans have arrived in advance of the main force - finish them before their brethren arrive!"
+END
+
+SCRIPT:ANGAngmarHintText_03
+"The captive Snow Trolls here have joined us!"
+END
+
+SCRIPT:ANGAngmarHintText_04
+"It's a Black Numenorean camp! Kill them and seize the Mill!"
+END
+
+SCRIPT:ANGAngmarHintText_05
+"We've spotted some Snow Troll slaves! If we kill their guards, they may join us!"
+END
+
+SCRIPT:ANGAngmarHintText_06
+"Look! A den of Hill Trolls is under attack! It might be useful - don't let it fall!"
+END
+
+SCRIPT:ANGAngmarHintText_07
+"We've taken the Mill for ourselves! It will grind out more resources for us to use."
+END
+
+SCRIPT:ANGAngmarHintText_08
+"We've defeated these Black Numenoreans, and this Den is ours! We can use it to recruit new Trolls and Wolves!"
+END
+
+SCRIPT:ANGAngmarHintText_09
+"We've defeated these Black Numenoreans, but they were able to destroy the Den!"
+END
+
+SCRIPT:ANGAngmarHintText_10
+"These Black Numenoreans have a Dark Iron Forge. Slay them and we can seize it!"
+END
+
+SCRIPT:ANGAngmarHintText_11
+"We've taken control of this Dark Iron Forge! We can use it to build Stone Throwers and upgrade our troops with Dark Iron weapons and armor."
+END
+
+SCRIPT:ANGAngmarHintText_12
+"Now that we control a Troll Den, our Builders can build more."
+END
+
+SCRIPT:ANGAngmarHintText_13
+"Now that we control a Battle Tower, our Builders can build more."
+END
+
+SCRIPT:ANGAngmarHintText_14
+"Now that we control a Dark Iron Forge, our Builders can build more."
+END
+
+SCRIPT:ANGAngmarHintText_15
+"Now that we control a Mill, our Builders can build more."
+END
+
+SCRIPT:ANGAngmarHintText_16
+"These walls are too strong for us! We should find siege engines to bring them down."
+END
+
+SCRIPT:ANGAngmarHintText_17
+"They have a Cave Troll! But Rogash can bend his Troll brethren to his will."
+END
+
+SCRIPT:ANGAngmarEndCineText_01
+"WITCH-KING: Either your lives or your wills are forfeit. Choose now."
+END
+
+SCRIPT:ANGAngmarEndCineText_02
+"DARK RANGER: Your will is ours, dread lord, now and forever."
+END
+
+SCRIPT:ANGAngmarEndCineText_03
+"WITCH-KING: You are broken, but I will re-forge you into a blade worthy of the Iron Crown."
+END
+
+SCRIPT:ANGAngmarDebugText_12
+"Easy Difficulty"
+END
+
+SCRIPT:ANGAngmarDebugText_13
+"Medium Difficulty"
+END
+
+SCRIPT:ANGAngmarDebugText_14
+"Hard Difficulty"
+END
+
+SCRIPT:ANGAngmarDebugText_15
+//do not translate
+"NumPlayerFortresses:"
+END
+
+SCRIPT:ANGAngmarCounterattackTimer
+"Counterattack arrives in:"
+END
+
+SCRIPT:ANGAngmarPlayerLostFortress
+"The Black Numenoreans have destroyed one of our fortresses! We must flee, for all is lost!"
+END
+
+SCRIPT:ANGAngmarWKDead
+"The Witch-king has fallen in battle! Flee, for all is lost!"
+END
+
+
+//BARROW DOWNS
+
+SCRIPT:ANGBarrowDownsIntroText_01
+"ANGMAR OFFICER: Here, among the graves of Arnor's fathers, we must goad the Men of Cardolan\naway from their walls and onto the field, where we can destroy them."
+END
+
+SCRIPT:ANGBarrowDownsIntroText_02
+"ANGMAR OFFICER: The barrow of Cardolan's kings lies to the southwest. Hwaldar must stand atop it!"
+END
+
+SCRIPT:ANGBarrowDownsIntroText_021
+"ANGMAR OFFICER: We cannot bring our entire host at once, or the Prince may lose his nerve.\nMore troops will arrive during the battle to help you hold the royal barrow."
+END
+
+SCRIPT:ANGBarrowDownsIntroText_03
+"Get Hwaldar to the top of the royal barrow of Cardolan, and hold it until the Prince of Cardolan risks himself in battle."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_01
+"Get Hwaldar to the top of the royal barrow of Cardolan."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_02
+"Repel Cardolan's initial attacks."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_03
+"Defeat the Cardolani vanguard."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_04
+"Slay the Prince of Cardolan and destroy his army."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveText_05
+"Hold the royal barrow until we have goaded the Prince of Cardolan into showing himself on the Barrow-downs."
+END
+
+SCRIPT:ANGBarrowDownsBonusObjectiveText_01
+"Slay the Rangers of Arnor who stand watch on the barrows, to clear the way for your reinforcements."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveComplete_01
+"Hwaldar stands atop the royal barrow. The Men of Cardolan cannot long abide this challenge."
+END
+
+SCRIPT:ANGBarrowDownsObjectiveComplete_02
+"We have held the barrow against Cardolan's first pitiful attacks. Now they will send more forces to the slaughter, just as the Witch-king planned!"
+END
+
+SCRIPT:ANGBarrowDownsObjectiveComplete_03
+"We have held off the Cardolani vanguard! The Prince has taken up our challenge, and comes fast to the field!"
+END
+
+SCRIPT:ANGBarrowDownsObjectiveComplete_04
+"The Prince lies slain; all Cardolan now lies open to us!"
+END
+
+SCRIPT:ANGBarrowDownsBonusObjectiveComplete_01
+"We have cleared out the Rangers who guarded the barrows. They will not nip at our reinforcements' heels now."
+END
+
+SCRIPT:ANGBarrowDownsHintText_01
+"Rangers of Arnor lurk amongst the barrows, on guard against those who would plunder or desecrate their 'hallowed' ground. They will disrupt our reinforcements if we do not slay them!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_02
+"Now our forces must hold the royal barrow against all attempts to retake it."
+END
+
+SCRIPT:ANGBarrowDownsHintText_03
+"Morgomir has arrived with reinforcements to help hold the royal barrow!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_04
+"More of the Witch-king's servants have arrived, and thirst for battle."
+END
+
+SCRIPT:ANGBarrowDownsHintText_05
+"The Witch-king's plan has worked - we have goaded the Prince into attacking! Kill him and Cardolan is finished!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_06
+"WITCH-KING: I have come. Let the fools of Cardolan join their fallen fathers."
+END
+
+SCRIPT:ANGBarrowDownsHintText_07
+"If we lose the royal barrow for too long, Cardolan's pride will be satisfied and they will refuse to risk all. We cannot allow that!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_08
+"We no longer have forces on the royal barrow! We must retake it soon, or all is lost!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_09
+"We have retaken the royal barrow. Hold it against further attacks!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_10
+"We have held the barrow against Cardolan's first pitiful attacks. Now they will send more forces to the slaughter, just as the Witch-king planned!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_11
+"Morgomir has brought Sorcerers, adepts of the Iron Crown imbued with the power of the shattered Palantir of Amon Sul!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_12
+"We now have the service of Sorcerers, adepts of the Iron Crown imbued with the power of the shattered Palantir of Amon Sul!"
+END
+
+SCRIPT:ANGBarrowDownsHintText_13
+"The Sorcerers' powers can heal our own units, rain death upon our enemies, and slow their attacks with the chill of death."
+END
+
+SCRIPT:ANGBarrowDownsHintText_14
+"Hard Difficulty"
+END
+
+SCRIPT:ANGBarrowDownsHintText_15
+"Arnor outriders have waylaid our reinforcements! Clear out the Rangers so the next group can arrive!"
+END
+
+SCRIPT:ANGBarrowDownsBarrowWarning_1
+"We must retake the royal barrow, or Cardolan will not send its army into our hands!"
+END
+
+SCRIPT:ANGBarrowDownsBarrowWarning_2
+"We have but a few moments to retake the royal barrow, or Cardolan will depart and our plan will fail!"
+END
+
+SCRIPT:ANGBarrowDownsBarrowWarning_3
+"Cardolan's army has departed the Barrow-downs! The Witch-king will be most displeased!"
+END
+
+SCRIPT:ANGBarrowDownsBarrowTimer_01
+"Retake the royal barrow in"
+END
+
+//BARROW WIGHTS
+
+////////////Counters, Timers////////////
+SCRIPT:End_Mission_Timer
+"Daybreak:"
+End
+
+SCRIPT:Souls_Corrupted
+"Souls Corrupted:"
+End
+
+//////////////Objective Text//////////////////////
+SCRIPT:ANGMAR_BarrowWights_ObjectiveText_01
+"Corrupt 1000 souls before daybreak by sending your Sorcerers to taint the barrows."
+END
+
+SCRIPT:ANGMAR_BarrowWights_ObjectiveText_03_1
+"Complete the ritual before daybreak by corrupting the thousandth soul, which must be a great spirit from the royal barrow."
+END
+
+SCRIPT:ANGMAR_BarrowWights_ObjectiveText_02
+"Morgomir must survive."
+END
+
+SCRIPT:ANGMAR_BarrowWights_ObjectiveText_03
+"Kill Captain Carthaen atop the royal barrow before daybreak to complete the ritual."
+END
+
+//////////////Pop-up Text//////////////////////
+SCRIPT:ANGMAR_BarrowWights_Hint_ObjectiveText_01
+"Place your Sorcerers atop the barrows to corrupt 1000 souls."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_ObjectiveText_02
+"Morgomir must survive."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_ObjectiveText_03
+"Slay the troublesome Captain and claim his soul atop the royal barrow."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_01-1
+"Sentries have been placed throughout the barrows to alert reinforcements to our presence. Beware any runners that might try to summon assistance." 
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_01-2
+"Beware any runners that might try to summon assistance."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_Captain_2nd
+"The stealthy Captain has returned. Protect your barrows carefully."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Hint_Captain_3rd
+"Captain Carthaen will not give up. Defend your Sorcerers at all costs."
+END
+
+SCRIPT:ANGMAR_BarrowWights_HintText_12
+"Easy Difficulty"
+END
+
+SCRIPT:ANGMAR_BarrowWights_HintText_13
+"Medium Difficulty"
+END
+
+SCRIPT:ANGMAR_BarrowWights_HintText_14
+"Hard Difficulty"
+END
+
+///////////////VOs///////////////////
+SCRIPT:ANGMAR_BarrowWights_BarrowAttack1
+"Our barrow is under attack."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_01-1
+"ANGMAR OFFICER: Again we visit these ancient tombs..."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_01-2
+"ANGMAR OFFICER: ...this time to corrupt the souls of the fallen, and to turn the land against the remaining sons of Arnor."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_02-1
+"ANGMAR OFFICER: Our Sorcerers must stand atop the barrows in order to taint the graves beneath."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_02-2
+"ANGMAR OFFICER: However, time is short."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Intro_02-3
+"ANGMAR OFFICER: We will need to hold as many barrows as possible to complete the ritual before the new day's sun rises."
+END
+
+SCRIPT:ANGMAR_BarrowWights_Help_01
+"Call reinforcements!"
+END
+
+SCRIPT:ANGMAR_BarrowWights_Help_02
+"Send word - we need more men!"
+END
+
+SCRIPT:ANGMAR_BarrowWights_Help_03
+"We are hard pressed - we must have aid!"
+END
+
+SCRIPT:ANGMAR_BarrowWights_CarthaenSpawn_01
+"CAPTAIN CARTHAEN: You dishonored the souls of our fathers once atop these hallowed grounds. \n I will not suffer your foul presence again!"
+END
+
+SCRIPT:ANGMAR_BarrowWights_CarthaenFlee_01
+"CAPTAIN CARTHAEN: I must gather more forces to purge your stench from this land."
+END
+
+SCRIPT:ANGMAR_BarrowWights_CarthaenSpawn_04
+"CAPTAIN CARTHAEN: Begone filth! I will not let you taint the spirits of our kings."
+END
+
+SCRIPT:ANGMAR_BarrowWights_AngOff_CarthaenSpawn_04
+"ANGMAR OFFICER: The Captain of Arnor has proven a worthy and persistent adversary.\nForget the mouldering spirits of Arnor's pathetic kings.\nLet us reward Captain Carthaen by completing the ritual with his soul instead!"
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Carthaen_01
+"CAPTAIN CARTHAEN: I do not fear you. You can only kill me."
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_01
+"MORGOMIR: <Laughing>"
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_02
+"MORGOMIR: How perfect is this man's punishment."
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_03
+"MORGOMIR: His dedication in life will be matched only by his devotion after death."
+END
+
+SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_04
+"MORGOMIR: Let his tortured soul hunt the leaders of our enemies."
+END
+
+SCRIPT:ANGMAR_BarrowWights_YouLoseDaybreak
+"ANGMAR OFFICER: The sun rises and the ritual is incomplete. The Witch-king will require answers!"
+END
+
+
+//BONUS - DESTRUCTION OF ANGMAR
+
+SCRIPT:ANGBonusMissionIntroText_01
+"GLORFINDEL: After much bloody strife, the Witch-king has fled before us to the distant barren reaches of Angmar,\nwhere he began his quest for vengeance."
+END
+
+SCRIPT:ANGBonusMissionIntroText_02
+"GLORFINDEL: It is here that he and his servants will make their final stand."
+END
+
+SCRIPT:ANGBonusMissionIntroText_03
+"EARNUR: Together, Men and Elves will bring an end to the reign of the Iron Crown!"
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_01
+"Either Earnur or Glorfindel must survive."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_02
+"Glorfindel must survive."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_03
+"Slay Morgomir, the Lieutenant of Carn Dum, along with his retinue."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_04
+"Slay Karsh, the Whispering Wraith, and bring peace to his soul forever."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_05
+"Slay Rogash, the Troll of the North, and all who stand at his side."
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_06
+"Defeat the Witch-king of Angmar and restore peace to the West!"
+END
+
+SCRIPT:ANGBonusMissionObjectiveText_07
+"Find and defeat the Witch-king and all his minions."
+END
+
+SCRIPT:ANGBonusMissionScene1Text_01
+"MORGOMIR: You have come far enough, princeling. I will spill your life's blood upon the ice of Angmar."
+END
+
+SCRIPT:ANGBonusMissionScene1Text_02
+"The loyal hound growls! His master will be most disappointed."
+END
+
+SCRIPT:ANGBonusMissionScene1Text_03
+"We have slain the Witch-king's right hand, but this valley holds greater dangers still."
+END
+
+SCRIPT:ANGBonusMissionScene2Text_01
+"KARSH: My master bids me silence you. Come with me and die forever."
+END
+
+SCRIPT:ANGBonusMissionScene2Text_02
+"Peace, lost son of Arnor. Our steel will ease your disquiet spirit."
+END
+
+SCRIPT:ANGBonusMissionScene2Text_03
+"He suffered long, and now goes to his rest as a true Captain of Numenor.\nWe have done a great thing this day."
+END
+
+SCRIPT:ANGBonusMissionScene3Text_01
+"ROGASH: Little Man should have stayed in white city. Rogash show you strength of Trolls!"
+END
+
+SCRIPT:ANGBonusMissionScene3Text_02
+"Your strength is great, Troll of the North, but even you will not hinder us so near your master's den."
+END
+
+SCRIPT:ANGBonusMissionScene3Text_03
+"He was a most dangerous adversary. We can only hope there will never be another like him."
+END
+
+SCRIPT:ANGBonusMissionScene4Text_01
+"At last, his minions fallen, his realm in ruins, the Witch-king deigns to show himself."
+END
+
+SCRIPT:ANGBonusMissionScene4Text_02
+"WITCH-KING: The legions of Arnor's dead sing silently of my vengeance forever. Now their fate shall be yours."
+END
+
+SCRIPT:ANGBonusMissionScene4Text_03
+"The Witch-king is finally defeated! A new peace has come to the land!"
+END
+
+SCRIPT:ANGBonusMissionScene4Text_04
+"The Witch-king leaves the field! Quickly now, take down his minions!"
+END
+
+SCRIPT:ANGBonusMissionScene4Text_05
+"The Witch-king returns! Now we must defeat him once and for all time!"
+END
+
+SCRIPT:ANGBonusMissionHintText_01
+"Either Earnur or Glorfindel must survive this final ordeal."
+END
+
+SCRIPT:ANGBonusMissionHintText_02
+"Our builders have arrived; we can build a camp and recruit reinforcements for this final struggle!"
+END
+
+SCRIPT:ANGBonusMissionHintText_03
+"The legendary Elvish warriors known as the Noldor, and Gondor's elite Knights of Dol Amroth, stand with us this day."
+END
+
+SCRIPT:ANGBonusMissionHintText_04
+"These Troll attacks are focused and strong. Perhaps we can find out where they are coming from and stop them at the source."
+END
+
+SCRIPT:ANGBonusMissionHintText_13
+"Medium Difficulty"
+END
+
+SCRIPT:ANGBonusMissionHintText_14
+"Hard Difficulty"
+END
+
+//CARN DUM
+
+SCRIPT:1Test
+"Second Wave:"
+End
+
+SCRIPT:2test
+"Third Wave:"
+End
+
+SCRIPT:3test
+"Fourth Wave:"
+End
+
+SCRIPT:4test
+"Fifth Wave:"
+End
+
+SCRIPT:5test
+"Final Wave:"
+End
+
+SCRIPT:1STWAVETIMER
+"Time Remaining:"
+End
+
+SCRIPT:2STWAVETIMER
+"Time until Elves attack:"
+End
+
+SCRIPT:CARNDUM_INITIALATTACK
+"ANGMAR OFFICER: The Elves have come! Ready the defenses!"
+End
+
+SCRIPT:Elvesattackgate
+"ANGMAR OFFICER: They're attacking the front gate!"
+End
+
+SCRIPT:ElvesAttackWall
+"ANGMAR OFFICER: They're attacking the weakened wall!"
+End
+
+SCRIPT:ELVESSOON
+"ANGMAR OFFICER: They'll be here soon!"
+End
+
+SCRIPT:ELVESENTERGATE
+"ANGMAR OFFICER: They're through the gate!"
+End
+
+SCRIPT:ELVESENTERWall
+"ANGMAR OFFICER: They're through the wall!"
+End
+
+SCRIPT:ELVELENTER2NDGATE
+"ANGMAR OFFICER: They've broken through the main gate!"
+End
+
+SCRIPT:ELVESENTERCITADELGATE
+"ANGMAR OFFICER: They're attacking the citadel gate!"
+End
+
+SCRIPT:ElvesAttackingCitadel
+"ANGMAR OFFICER: The elves are attacking the citadel!"
+End
+
+SCRIPT:ELVISHATTACKDRIVENOFF
+"ELF OFFICER: Their walls are too strong! Fall back and await reinforcements!"
+End
+
+SCRIPT:SEIGEWEAPONSARRIVE
+"ELF OFFICER: Now Angmar must face the might of our siege engines!"
+End
+
+SCRIPT:CARNDUMOPEN
+"ANGMAR OFFICER: Dread lord, Soon the fortress of Carn Dum will be besieged by the army of Elves and Men."
+End
+
+SCRIPT:CARNDUMOPEN2
+"ANGMAR OFFICER: Our scouts report that Glorfindel will be here soon to lead the final assault against our fortress."
+End
+
+SCRIPT:CARNDUMOPEN3
+"ANGMAR OFFICER: And as per your orders, Rogash and his forces await in the west for your signal. \n We need only light the signal fire and he will come."
+End
+
+SCRIPT:ROGASHARRIVES
+"ANGMAR OFFICER: Rogash has returned with his army!"
+End
+
+SCRIPT:CARNDUMOBJECTIVE1
+"Survive the Elves' attack"
+End
+
+SCRIPT:CARNDUMOBJECTIVE2
+"Capture the Signal Fire to Summon Rogash"
+End
+
+SCRIPT:CARNDUMOBJECTIVE2PT2
+"Capture the Signal Fire"
+End
+
+SCRIPT:CARNDUMOBJECTIVE3
+"The Witch-king must survive"
+End
+
+SCRIPT:CARNDUM_SECONDATTACK
+"Here they come again!"
+End
+
+SCRIPT:CARNDUM_THIRDATTACK
+"More elves are on their way"
+End
+
+SCRIPT:CARNDUM_FOURTHATTACK
+"Another force has arrived!"
+End
+
+SCRIPT:GETROGASH
+"Rogash and his forces are awaiting a signal to return. If you wish to summon him, light the Signal Fire."
+End
+
+SCRIPT:ROGASHTIMER
+"Rogash arrives in:"
+End
+
+SCRIPT:RETAKEAREA
+"The elves are building in the outer areas. Retake them before they establish a true foothold."
+End
+
+SCRIPT:REBUILDAREA
+"The area has been retaken. Use these Builders to re-establish yourself."
+End
+
+SCRIPT:CDRETAKEOBJ
+"Retake the Outer area"
+End
+
+SCRIPT:CDREBUILDOBJ
+"Rebuild the lost buildings"
+End
+
+SCRIPT:GLOFINDELSPEEKS
+"Come my brothers, tear down these walls!"
+End
+
+SCRIPT:GLOFINDALSPEEKS2
+"GLORFINDEL: On to the citadel - Carn Dum falls this day!"
+End
+
+SCRIPT:GLOFINDELLEAVES
+"Fear not, I shall return!"
+End
+
+SCRIPT:GLORFINDELCLOSE
+"My lord, Glorfindel's forces are almost here!"
+End
+
+SCRIPT:GLORFINDELARRIVES
+"Glorfindel is Here!"
+End
+
+SCRIPT:CARN_DUM_LINDON_ELVES_ARRIVE
+"My Lord, The Elves of Lindon are here!"
+End
+
+SCRIPT:GLOFINDELOBJ
+"Defeat Glorfindel's attack"
+End
+
+SCRIPT:GLORFINDELOBJHINT
+"The Elves are attempting one final attack. Destroy them and Glorfindel, and the day is ours!"
+End
+
+SCRIPT:LULLHINT
+"The Elves are reforming their ranks - we have time to rebuild!"
+End
+
+SCRIPT:POSTERNHINT
+"Use your postern gates to flank the enemy attacks"
+End
+
+SCRIPT:ROGASHARRIVED
+"Rogash has arrived to help you destroy the Elves' final attack. Look for him to the south."
+End
+
+SCRIPT:ROGASHNOTREADY
+"Rogash is not in position yet. He will alert us as soon as he is ready."
+End
+
+SCRIPT:ROGASHALMOSTREADY
+"Rogash is almost in position to attack the Elves. Be patient - he will be here soon!"
+End
+
+SCRIPT:SIGNALFIRELIT
+"The Signal Fire has been lit"
+End
+
+
+
+//DARK LORD'S EYE
+
+SCRIPT:ShardRecovered
+"Palantir Shard Recovered"
+End
+
+SCRIPT:Shards_Collected
+"Shards Collected:"
+End
+
+SCRIPT:GOAL_DARKEYE_01
+"Kill King Arveleg and retrieve the Palantir"
+End
+
+SCRIPT:GOAL_DARKEYE_02
+"Establish a Base in this region"
+End
+
+SCRIPT:GOAL_DARKEYE_03
+"Investigate the area and discover the fate of the Palantir"
+End
+
+SCRIPT:GOAL_DARKEYE_04
+"Collect the 7 Palantir Shards"
+End
+
+SCRIPT:GOAL_DARKEYE_05
+"Destroy the entire Arnor outpost and retrieve any Shards they may have gathered"
+End
+
+SCRIPT:GOAL_DARKEYE_06
+"The Witch-king will be most displeased if the forces of Arnor secure 4 Shards. Do not allow this!"
+End
+
+SCRIPT:GOAL_DARKEYE_06_ANNOUNCE
+"Prevent Arnor from securing 4 shards in their outpost"
+END
+
+SCRIPT:Prince_Line01
+"KING ARVELEG: Quickly - they cannot be far behind. The Palantir must reach the safety of the outpost."
+End
+
+SCRIPT:Prince_Line02
+"ARNOR OFFICER: We will guard the road ahead to cover your retreat, sire."
+End
+
+SCRIPT:AngmarArrivalLine01
+"ANGMAR OFFICER: They must have come this way. We must catch them before they reach the fortress just beyond the downs."
+End
+
+SCRIPT:AngmarArrivalLine02
+"ANGMAR OFFICER: Their king cannot be allowed to reach the fortress alive!"
+End
+
+SCRIPT:Palintirexplodes01
+"KING ARVELEG: Foul creatures, I know what you seek - but you shall not have it!"
+End
+
+SCRIPT:Palintirexplodes02
+"KING ARVELEG: Return to your master and tell him you have failed!"
+End
+
+SCRIPT:Palintirexplodes03
+"ANGMAR OFFICER: Noooooo!"
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_01
+"King Arveleg must be stopped before he reaches the Arnor fortress."
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_02
+"You must build a Fortress, a Hall of the King's Men and a Mill in order to establish a presence in this area."
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_03
+"Investigate the area and discover the fate of the Palantir"
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_04
+"When the Palantir exploded, the pieces must have fallen in the area. We must retrieve them before the Arnorians do."
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_05
+"A Palantir shard has been found by the Arnorians. We must retrieve the other shards before they do."
+End
+
+SCRIPT:DARKEYE_OBJ_HINT_06
+"Our Builder has arrived."
+END
+
+ SCRIPT:RANGERS_ARRIVE_01
+"DARK RANGER: The pursuit force was supposed to be here. Let's set up camp and search the area."
+End
+
+SCRIPT:DARKEYE_OBJ_COMP
+"Objective Complete"
+End
+
+SCRIPT:RECOVER_SHARD_INTRO_02
+"DARK RANGER: I can feel the power in this object. We must take it to the Witch-king."
+End
+
+SCRIPT:RECOVER_SHARD_INTRO_01
+"MORGOMIR: I feel a deadness in this place."
+End
+
+SCRIPT:RECOVER_SHARD_INTRO_04
+"You are to retrieve all of the shards in the area. We cannot allow Arnor to retrieve any more."
+End
+
+SCRIPT:SHARD_COLLECT_01
+"ARNOR SOLDIER: Sir, this is where the lookouts saw one of the objects land."
+End
+
+SCRIPT:SHARD_COLLECT_02
+"ARNOR OFFICER: What is it? Gather it up and we'll take it back to the outpost."
+End
+
+SCRIPT:SHARD_COLLECT_03
+"ARNOR OFFICER: We'll dispatch more patrols to investigate the other areas after we return with the object."
+End
+
+SCRIPT:ARNORHASSHARD
+"ANGMAR OFFICER: Arnor has recovered a shard!"
+End
+
+SCRIPT:ARNORSHARDCOUNTER
+"Arnor Shard Count:"
+End
+
+SCRIPT:SHARD_RETURN_HINT
+"Send the unit carrying the shard back to the fortress to drop it off."
+End
+
+SCRIPT:SHARD_PICKED_UP_HINT
+"Return the shard to the lit area in front of your fortress."
+End
+
+SCRIPT:DARK_EYE_FAILED
+"The king is too far ahead of us! We have failed."
+End
+
+SCRIPT:DARK_EYE_POWER_1
+"MORGOMIR: We have no power here. There must be some reason."
+End
+
+SCRIPT:DARK_EYE_POWER_2
+"MORGOMIR: Our strength returns."
+End
+
+SCRIPT:DARK_EYE_POWER_3
+"MORGOMIR: Our powers become ours once again."
+End
+
+SCRIPT:DARK_EYE_POWER_4
+"MORGOMIR: Yes, one more and we shall once again be at full strength!"
+End
+
+SCRIPT:DARK_EYE_POWER_5
+"MORGOMIR: Our powers are complete once again!"
+End
+
+SCRIPT:DARK_EYE_POWER_6
+"MORGOMIR: I feel a deadness in this place."
+End
+
+SCRIPT:DARK_EYE_3_SHARDS_COLLECTED
+"They have collected a third shard. We must prevent them from claiming another!"
+End
+
+SCRIPT:DARK_EYE_DESTROY_BASE_AUDIO
+"ANGMAR OFFICER: We must destroy their base and recover the shards they have taken."
+End
+
+SCRIPT:DARK_EYE_POWERS_RETURN
+"Some of your powers have returned"
+End
+
+SCRIPT:DARK_EYE_ALL_POWERS_RETURN
+"All of your powers have returned"
+End
+
+SCRIPT:DARKEYE_OBJ_COMP_01
+"King Arveleg has been killed"
+End
+
+SCRIPT:DARKEYE_OBJ_COMP_03
+"You have recovered your powers"
+End
+
+SCRIPT:DARKEYE_OBJ_COMP_04
+"You have retrieved all of the shards but the Arnor outpost still remains"
+End
+
+SCRIPT:DARKEYE_OBJ_COMP_05
+"The Arnor outpost has been destroyed"
+End
+
+SCRIPT:DARKEYE_OBJ_COMP_06
+"We must attack the outpost to recover the shards that Arnor has seized"
+End
+
+SCRIPT:STOPARNOR
+"Prevent the shard from reaching the safety of the enemy fortress!"
+END
+
+SCRIPT:PLAYERHASSHARD
+"We've picked up one of the Palantir shards!"
+END
+
+SCRIPT:ARNOR_HAS_4_SHARDS
+"Arnor has collected four shards. All is lost!"
+End
+
+
+//FORNOST
+
+SCRIPT:FORNOST_GOAL_1
+"The Witch-king must survive"
+End
+
+SCRIPT:FORNOST_GOAL_2
+"Enter the City of Fornost"
+End
+
+SCRIPT:FORNOST_GOAL_4
+"Destroy 75% of the Fornost Civilian Buildings"
+End
+
+SCRIPT:FORNOST_GOAL_3
+"Destroy the Citadel of Fornost"
+End
+
+SCRIPT:FORNOST_GOAL_5
+"Defeat the Elven Counterattack"
+End
+
+SCRIPT:FORNOST_GOAL_6
+"Crush the Hobbit Attack"
+End
+
+SCRIPT:FORNOST_GOAL_7
+"Defeat the Fornost Army"
+End
+
+SCRIPT:FORNOST_GOAL_8
+"Destroy all of the buildings outside the walls"
+End
+
+SCRIPT:FORNOST_GOAL_9
+"Capture the Signal Fire"
+End
+
+SCRIPT:FORNOST_GOAL_10
+"Capture the Inn"
+End
+
+SCRIPT:FORNOST_GOAL_11
+"Destroy the 5 Arnor Blacksmiths"
+End
+
+SCRIPT:SEE_FORNOST_BARRICADE
+"You'll have to remove the barricade in order to get to the main gate."
+End
+
+SCRIPT:FORNOSTOUTERBUILDINGS
+"Destroy these buildings to give us some maneuvering room."
+End
+
+SCRIPT:FORNOST_INTRO_1
+"WITCH-KING: Fornost, the capital of Men and seat of Isildur's heirs. More than that, it is a symbol to Men."
+End
+
+SCRIPT:FORNOST_INTRO_2
+"WITCH-KING: It is a symbol that must be destroyed."
+End
+
+SCRIPT:FORNOST_INTRO_3
+"The Army of Fornost stands against us. It must be overcome if we are to enter the city."
+End
+
+SCRIPT:FORNOST_BATTLE_END_01
+"ARNOR OFFICER: Evil will never enter Fornost. CHARGE!"
+End
+
+SCRIPT:FORNOST_BATTLE_END_GOOD
+"ARNOR OFFICER: This will be the result of all attempts to enter our city!"
+End
+
+SCRIPT:FORNOST_BATTLE_END_EVIL
+"ARNOR OFFICER: Retreat! Back to the city! Let them face the walls if they wish to come further!"
+End
+
+SCRIPT:FORNOST_ARCHERS_DEFENSE
+"ARNOR OFFICER: We must hold the gate! Archers commence firing!"
+End
+
+SCRIPT:ELF_ATTACK_01
+"Elves, we must stop this attack!"
+End
+
+SCRIPT:FORNOST_HINT_BUILD
+"Perhaps we underestimated man's persistence. Besiege the city and tear down its gates."
+End
+
+SCRIPT:FORNOST_HINT_BUILD_EVIL
+"The army has been beaten - now only the city remains. Construct siege engines to destroy the gates of Fornost."
+End
+
+SCRIPT:HOBBIT_ATTACK
+"ARNOR OFFICER: Hobbits! Arnor needs your assistance! Attack!"
+End
+
+SCRIPT:HOBBIT_ATTACK_HINT
+"Crush the feeble Hobbit Counterattack"
+End
+
+SCRIPT:ELF_ATTACK
+"ELF OFFICER: Elves! Evil must not be allowed to triumph this day! Charge!"
+End
+
+SCRIPT:ELF_ATTACK_HINT
+"Stop the Elvish counterattack"
+End
+
+SCRIPT:ELF_CAMP_ATTACK
+"Wipe the blight from this land!"
+End
+
+SCRIPT:PRINCE_RIDES_OUT
+"ARVEDUI: Come my brothers! Ride out and vanquish this foe!"
+End
+
+SCRIPT:CAVALRY_WARNING
+"ANGMAR OFFICER: Cavalry! Guard the flanks!"
+End
+
+SCRIPT:FORNOST_BLACKSMITH_HINT
+"Those Blacksmiths are providing the enemy with upgraded armor and weapons. Destroy them to keep the enemy weaker."
+End
+
+SCRIPT:FORNOST_BLACKSMITH_DESTROYED
+"Blacksmith Destroyed"
+End
+
+SCRIPT:SEE_FORNOST_BARRICADE
+"You'll have to remove the barricade in order to get to the main gate."
+End
+
+SCRIPT:FORNOSTOUTERBUILDINGS
+"Destroy these buildings to give us some maneuvering room."
+End
+
+SCRIPT:FORNOST_OBJ_COMPLETE
+"Objective Complete"
+End
+
+SCRIPT:FORNOST_CIVBUILDING_HINT
+"Raze Fornost to the ground. Destroy the civilian buildings and collect whatever treasures they hold."
+End
+
+SCRIPT:FORGES_DESTROYED
+"All of the Forges have been destroyed."
+End
+
+SCRIPT:OUTER_BUILDINGS_CLEARED
+"The outer area has been cleared."
+End
+
+SCRIPT:FORNOST_10_BUILDINGS_LEFT
+"Destroy 10 more civilian buildings."
+End
+
+SCRIPT:FORNOST_5_BUILDINGS_LEFT
+"Destroy 5 more civilian buildings."
+End
+
+SCRIPT:FORNOST_GOAL_3_COMPLETE
+"The Citadel of Fornost has been destroyed!"
+End
+
+SCRIPT:FORNOST_GOAL_4_COMPLETE
+"The city has been razed"
+End
+
+SCRIPT:FORNOST_GOAL_5_COMPLETE
+"The filthy Hobbits have been destroyed"
+End
+
+SCRIPT:FORNOST_GOAL_6_COMPLETE
+"The Elven counterattack has met its end"
+End
+
+SCRIPT:FORNOST_GOAL_7_COMPLETE
+"The Army of Fornost lies in ruin"
+End
+
+SCRIPT:WITCHKING_ARRIVAL
+"The Witch-king has arrived"
+End
+
+
+//GUNDABAD
+
+//SCRIPT:TIMER
+//"Anti lag"
+//End
+
+//SCRIPT:HEADS_ON_ROGASH
+//"Rogash Head total:"
+//End
+
+//SCRIPT:GUNDABAD_OBJ_1
+//"Prevent the Orc Chieftains from winning by collecting 300 Goblin heads"
+//End
+
+//SCRIPT:GUNDABAD_OBJ_2
+//"Rogash Must Survive"
+//End
+
+//SCRIPT:GUNDABAD_OBJ_3
+//"Rogash must break 3 Goblin Head piles in the Orc camps"
+//End
+
+//SCRIPT:GUNDABAD_OBJ_5
+//"Dominate a Snow Troll"
+//End
+
+//SCRIPT:GUNDABAD_OBJ_6
+//"Destroy all of the Goblin Battle Towers"
+//End
+
+//SCRIPT:GUNDABAD_OBJ_7
+//"Light The Signal Fire"
+//End
+
+//SCRIPT:ORC_SPOT_ANG_1
+//"There they are! Kill!"
+//End
+
+//SCRIPT:GUN_INTRO_1
+//"ROGASH: Speak."
+//End
+
+//SCRIPT:GUN_INTRO_5
+//"DARK RANGER: The orcs are engaged in a competition to elect a new leader."
+//End
+
+//SCRIPT:GUN_INTRO_8
+//"DARK RANGER: The first chieftain to kill 250 goblins becomes the new Headman of Gundabad."
+//End
+
+//SCRIPT:GUN_INTRO_2
+//"DARK RANGER: The chieftains are spread throughout the area, killing goblins and each other."
+//End
+
+//SCRIPT:GUN_INTRO_9
+//"DARK RANGER: Some of the leaders have already been eliminated, by both treachery and goblin ambushes."
+//End
+
+//SCRIPT:GUN_INTRO_3
+//"DARK RANGER: It seems the goblins don't like being hunted for sport."
+//End
+
+//SCRIPT:GUN_INTRO_4
+//"ROGASH: Done well. Return unit, look more. I call when needed."
+//End
+
+//SCRIPT:GUN_INTRO_6
+//"DARK RANGER: I obey."
+//End
+
+//SCRIPT:GUN_INTRO_7
+//"ROGASH: Return; tell master that orcs be his soon. You stay. We kill goblins, make game ours."
+//End
+
+//SCRIPT:GUN_INTRO_10
+//"If we kill 300 goblins, none of the orcs can win."
+//End
+
+//SCRIPT:GUN_INTRO_11
+//"And as per your orders, reinforcements await your summons. You need only light the signal fire and they will come."
+//End
+
+//SCRIPT:TROLL_TO_BIG
+//"Run! There's better hunting elsewhere!"
+//End
+
+//SCRIPT:GUN_END_01
+//"(raised Voices and Arguing)"
+//End
+
+//SCRIPT:GUN_END_01
+//"ORC CHIEFTAINS: No one has enough. I have the most...No! I should lead!... Bah! You could never lead!...If not me, who then?"
+//End
+
+//SCRIPT:GUN_END_02
+//"ROGASH: Strongest Leads."
+//End
+
+//SCRIPT:GUN_END_03
+//"ORC CHIEFTAIN: Gundabad will never follow a troll!"
+//End
+
+//SCRIPT:GUN_END_04
+//"ROGASH: Not me. Dark King!"
+//End
+
+//SCRIPT:GOBLIN_TOWERS_01
+//"Those towers might have archers in them. Destroy the towers to get them out!"
+//End
+
+//SCRIPT:WARG_ATTACK_01
+//"The troll is coming this way. Don't let him kill any more goblins. Stop Him!"
+//End
+
+//SCRIPT:GOB_CAMP_2_RUN
+//"RUN! Then let the spiderlings take care of them!"
+//End
+
+//SCRIPT:SNOW_TROLLS_SEEN
+//"Those snow trolls would be welcome in our ranks. Use Rogash's Dominate Troll power to take them over."
+//End
+
+//SCRIPT:GUN_OBJECTIVE_BOX
+//"You must kill at least 300 goblins to upset the competition."
+//End
+
+//SCRIPT:GUN_RUNAWAY_GOBS
+//"What's that! Back to the camp! RUN!"
+//End
+
+//SCRIPT:ALL_TOWERS_GONE
+//"All of the Battle Towers have been destroyed."
+//End
+
+//SCRIPT:TROLL_OBJECTIVE_COMPLETE
+//"Bonus Objective: Dominate Troll Completed"
+//End
+
+//SCRIPT:GUNDABAD_ORC_AMBUSH_01
+//"Now you die, troll!"
+//End
+
+//SCRIPT:GOBLIN_AMBUSH
+//"More for the SLAUGHTER!"
+//End
+
+//SCRIPT:ORC_CHIEF_02_DEAD
+//"An orc chieftain has been removed from the competition."
+//End
+
+//SCRIPT:GOBBO_CAMP_5_SEE
+//"Here they come! Get them!"
+//End
+
+//SCRIPT:GUNDABAD_ORC_AMBUSH
+//"The intruder is here! Kill them! Kill the goblins!"
+//End
+
+//SCRIPT:2ND_WARG_AMBUSH
+//"The Intruders are here! Kill them!"
+//End
+
+//SCRIPT:KILL_THE_HEAD_PILES
+//"These must be the heads the orcs have already collected. Crush them and any others you may find."
+//End
+
+//SCRIPT:GOBLIN_Highway_AMBUSH
+//"Get them!"
+//End
+
+//SCRIPT:RANGERS_ARRIVE
+//"Commander - just south of here lies a large goblin camp, well defended by towers and troops."
+//End
+
+//SCRIPT:GUNDABAD_HEADPILES_DESTROYED
+//"All Head Piles Destroyed"
+//End
+
+//SCRIPT:GUNDABAD_SIGNALFIRE_REMINDER
+//"Light The Signal Fire to summon Reinforcements."
+//End
+
+//SCRIPT:GUNDABAD_FORCES_ARRIVE
+//"Your forces will be here soon."
+//End
+
+
+//RHUDAUR
+
+SCRIPT:ANGRhudaurIntroText_01
+"ANGMAR OFFICER: Before Hwaldar was captured, he secretly gathered supporters in the hills. \n Even now our agents walk among them."
+END
+
+SCRIPT:ANGRhudaurIntroText_02
+"ANGMAR OFFICER: There are four villages of Rhudaur Hillmen in this area. We must find them and kill all who do not join us!"
+END
+
+SCRIPT:ANGRhudaurIntroText_03
+"ANGMAR OFFICER: If we free Hwaldar from Arnor's outpost in the south before\nraising rebellion in the villages, more of the Hillmen will join us."
+END
+
+SCRIPT:ANGRhudaurIntroText_04
+"RHUDAUR HILLMAN: The Witch-king is here, and we stand with him!"
+END
+
+SCRIPT:ANGRhudaurObjectiveText_01
+"Raise rebellion amongst the Hillmen by clearing all four of their villages of warrior folk."
+END
+
+SCRIPT:ANGRhudaurObjectiveText_02
+"Free Hwaldar from Arnor's clutches."
+END
+
+SCRIPT:ANGRhudaurObjectiveText_03
+"Destroy the fortress of Arnor to the northwest."
+END
+
+SCRIPT:ANGRhudaurObjectiveText_04
+"Slay King Argeleb."
+END
+
+SCRIPT:ANGRhudaurObjectiveText_05
+"Destroy the fortress of Arnor to the southwest."
+END
+
+SCRIPT:ANGRhudaurVillageCleared_01
+"We have raised rebellion in one of the four hill villages. Three yet remain loyal to Arnor."
+END
+
+SCRIPT:ANGRhudaurVillageCleared_02
+"We have raised rebellion in two of the four hill villages. Two still remain."
+END
+
+SCRIPT:ANGRhudaurVillageCleared_03
+"We have raised rebellion in three of the four hill villages. Only one remains!"
+END
+
+SCRIPT:ANGRhudaurBonusObjectiveText_01
+"The rebellion is underway. To strengthen it, find and clear the remaining two villages of Hillman warriors loyal to Arnor."
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_01
+"We have cleared Arnor's dogs from the last village! The Hillmen of Rhudaur have risen in rebellion against Arnor!"
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_02
+"We have freed Hwaldar from his captivity."
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_03
+"We have destroyed the fortresses of Arnor here!"
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_04
+"We have slain King Argeleb!"
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_05
+"We have destroyed the northwest fortress!"
+END
+
+SCRIPT:ANGRhudaurObjectiveComplete_06
+"We have destroyed the southwest fortress!"
+END
+
+SCRIPT:ANGRhudaurBonusObjectiveComplete_01
+"By clearing all the villages, we have removed all that remains of the Hillmen loyal to Arnor!"
+END
+
+SCRIPT:ANGRhudaurHintText_01
+"The Arnor forces in the strongholds nearby have been alerted to our presence."
+END
+
+SCRIPT:ANGRhudaurHintText_02
+"More Thrall Masters have arrived. We can also build a base with our new Builders now. Prepare to fight!"
+END
+
+SCRIPT:ANGRhudaurHintText_03
+"Rhudaur has sent for aid, and our spies report the pretender King Argeleb is on the march. His army will arrive on the north road."
+END
+
+SCRIPT:ANGRhudaurHintText_04
+"The Black King is here and we stand with him!"
+END
+
+SCRIPT:ANGRhudaurHintText_05
+"There is an Arnor outpost near this village, to the south. We should investigate."
+END
+
+SCRIPT:ANGRhudaurHintText_06
+"We have cleared this village of all but Hwaldar's supporters."
+END
+
+SCRIPT:ANGRhudaurHintText_07
+"Thrall Masters can summon different types of units to swell the ranks of Angmar. But beware: if the Thrall Master is killed, the entire unit will break!"
+END
+
+SCRIPT:ANGRhudaurHintText_08
+"More Thrall Masters have arrived to do battle against Arnor. They can now summon rebel Rhudaur Hillmen!"
+END
+
+SCRIPT:ANGRhudaurHintText_09
+"Thanks to our great efforts in raising the rebellion, a large number of rebel Hillmen have come to join our ranks!"
+END
+
+SCRIPT:ANGRhudaurHintText_10
+"ANGMAR OFFICER: Now that the Hillmen have risen against Arnor, it is time for the final conquest of Rhudaur."
+END
+
+SCRIPT:ANGRhudaurHintText_11
+"King Argeleb of Arthedain has arrived to help the men of Arnor! Let the ravens feast on his flesh!"
+END
+
+SCRIPT:ANGRhudaurHintText_13
+"We have destroyed one of Arnor's fortresses!"
+END
+
+SCRIPT:ANGRhudaurHintText_14
+"Hwaldar is held captive in one of the towers in this outpost! Destroy his prison to free him!"
+END
+
+SCRIPT:ANGRhudaurHintText_15
+"ANGMAR OFFICER: We have Thrall Masters to summon hordes of rebel Hillmen to our ranks. \n Now build an outpost and raise an army to lay waste to this land!"
+END
+
+SCRIPT:ANGRhudaurHintText_16
+"ANGMAR OFFICER: The two strongholds to the west are all that remain in our way!"
+END
+
+SCRIPT:ANGRhudaurHintText_17
+"ANGMAR OFFICER: Be cautious: if we venture too close to the Arnor fortresses to the west, \nthey may become aware of us before we are ready!"
+END
+
+SCRIPT:ANGRhudaurHintText_18
+"Hwaldar Hillchief is free! Death to the Dunedain!"
+END
+
+SCRIPT:ANGRhudaurHintText_19
+"KING ARGELEB: Men of the North Kingdom! This day we shatter the upstart of Angmar \n and restore the glory of the Dunedain! To battle, and victory!"
+END
+
+SCRIPT:ANGRhudaurHintText_20
+"Evil shall never reign in Rhudaur! Death to Hwaldar and his dark master!"
+END
+
+SCRIPT:ANGRhudaurHintText_21
+"We have cleared these loyalist scum from their homes."
+END
+
+SCRIPT:ANGRhudaurHintText_22
+"This village has joined us to a man!"
+END
+
+SCRIPT:ANGRhudaurHintText_23
+"More Hillmen have come to our banner!"
+END
+
+////END OF MISSION STRINGS////
+
+
+////////////////////////////////////////////////////
+/// @jh New strings to introduce new WOTR features ///
+////////////////////////////////////////////////////
+
+// Context:  Seen by the user the first time they go to Single Player WOTR
+
+APT:NewWOTRIntroHeading
+"NEW FEATURES"
+END
+
+APT:NewWOTRIntroText
+"Welcome to the updated War of the Ring mode. The strategy game of conquest and confrontation across Middle-earth now contains the following new features:"
+END
+
+APT:NewWOTRFeature1
+"Two Historical Scenarios"
+END
+
+APT:NewWOTRFeature1Desc
+"Wage campaigns from the Lord of the Rings trilogy."
+END
+
+APT:NewWOTRFeature2
+"Persistent Units"
+END
+
+APT:NewWOTRFeature2Desc
+"Build units in an RTS battle and carry them with you across Middle-earth."
+END
+
+APT:NewWOTRFeature3
+"Revised Living World Map"
+END
+
+APT:NewWOTRFeature3Desc
+"Visit 14 new territories and battle maps."
+END
+
+APT:NewWOTRFeature4
+"Strategic Treasury"
+END
+
+APT:NewWOTRFeature4Desc
+"Accumulate Treasury from farms and fortresses to recruit units and construct buildings on the strategic map."
+END
+
+APT:NewWOTRFeature5
+"New Units"
+END
+
+APT:NewWOTRFeature5Desc
+"Include siege units, support units, and an additional army leader on the map."
+END
+
+APT:NewWOTRFeature6
+"Faster Army Movement"
+END
+
+APT:NewWOTRFeature6Desc
+"Relive the charge of Theoden! Move your hero armies up to two spaces across friendly territory."
+END
+
+APT:NewWOTRFeature7
+"Improved AI"
+END
+
+APT:NewWOTRFeature7Desc
+"Face off against smarter computer players that withdraw from unwinnable battles."
+END
+
+APT:NewWOTRFeature8
+"Flexible Scenarios"
+END
+
+APT:NewWOTRFeature8Desc
+"Play any scenario with any win condition with the new Victory Type rule."
+END
+
+APT:DoNotShowAgain
+"Don't show this screen again:"
+END
+
+APT:NewCAHIntroHeading
+"NEW FEATURES"
+END
+
+APT:NewCAHIntroText
+"Welcome to the updated Create-a-Hero mode. The tool that allows you to build a legendary hero in Middle-earth now contains the following new features:"
+END
+
+APT:NewCAHFeature1
+"New Gear"
+END
+
+APT:NewCAHFeature1Desc
+"Choose from dozens of new clothing, armor, and weapon options."
+END
+
+APT:NewCAHFeature2
+"New Troll Class"
+END
+
+APT:NewCAHFeature2Desc
+"Build the ultimate Troll hero."
+END
+
+APT:NewCAHFeature3
+"New Cost System"
+END
+
+APT:NewCAHFeature3Desc
+"Introduces a whole new layer of strategy to creating your hero. Choose a few light powers and terrorize your opponents in the early stages of the game, or pile on the biggest and strongest powers to create the ultimate game-ending hero."
+END
+
+APT:NewCAHFeature4
+"Improved Power Selection System"
+END
+
+APT:NewCAHFeature4Desc
+"The ability to skip levels gives you total control over when your hero gains their powers. Powers also grow less expensive after the first level they become available, so you can fine-tune the exact cost of building your hero."
+END
+
+APT:NewCAHFeature5
+"New Stats"
+END
+
+APT:NewCAHFeature5Desc
+"More ways to prove that you have created Middle-earth's most dominant hero."
+END
+
+
+
+////////////////////////////////////////////////////
+/// @jh end
+////////////////////////////////////////////////////
+
+
+
+
+GUI:DesyncText
+// context: Error message in multiplayer games to inform the players that the game can not continue because of discrepancies in the data between the diferent player machines 
+"The Lord of the Rings, The Rise of the Witch-king has gone out of synch with the other game participants and cannot continue. It is possible that the other players have modified their game versions. Please exit out of the game before attempting to play again."
+END
+
+ToolTip:OnlineShell/OnlineLogin/GamespyShortcut
+"Click here to visit the Gamespy The Lord of the Rings,The Rise of the Witch-king website including the official tournament ladders."
+END
+
+TOOLTIP:AngmarSpikedCollar
+"Spiked Collars"
+End
+
+Stat:Killed_Morgomir_Count_Name
+"Morgomirs Defeated"
+END
+
+Stat:KILLED_KARSH_COUNT_Name
+"Karshs Defeated"
+END
+
+Stat:Killed_Hwaldar_Count_Name
+"Hwaldars Defeated"
+END
+
+Stat:Killed_Rogash_Count_Name
+"Rogashs Defeated"
+END
+
+Stat:Killed_Gothmog_Count_Name
+"Gothmogs Defeated"
+END
+
+Stat:ANGMAR_Infantry_Killed_Name
+"Angmar Infantry Killed"
+END
+
+Stat:Killed_AZOG_Count_Name
+"Azogs Defeated"
+END
+
+Stat:Killed_CAPTDALE_Count_Name
+"Captains of Dale Defeated"
+END
+
+CONTROLBAR:LW_Unit_AngmarSnowTrollsHordePlural
+"Snow Trolls"
+END
+
+Award:Icebane_Name
+"Thrall Killer"
+END
+
+Award:Icebane_Desc
+"Hero has killed 1000 Thralls of the Witch-king"
+END
+
+CONTROLBAR:DaleSlamArrow
+"Sla&m Shot"
+END
+
+CONTROLBAR:ToolTipDaleSlamArrow
+"Requires Level 2 \nCauses damage and knockdown to enemy\nLeft click icon then left click on target unit"
+End
+
+CONTROLBAR:DaleBeastSlayerArrow
+"Beas&t Slayer Arrow"
+END
+
+CONTROLBAR:ToolTipDaleBeastSlayerArrow
+"Requires Level 7 \nCauses severe damage to monsters\nLeft click icon then left click on target"
+End
+
+CONTROLBAR:LW_Unit_AngmarHillTrollsHordePlural
+"Hill Trolls"
+END
+
+CONTROLBAR:LW_Unit_RohanSpearmenHorde
+"Rohan Spearmen Battalion"
+END
+
+CONTROLBAR:LW_Unit_RohanSpearmenHordePlural
+"Rohan Spearmen Battalions"
+END
+
+CONTROLBAR:LW_ToolTipBuild_RohanSpearmenHorde
+"Unit Type: Spearmen\nStrong vs. Cavalry\n"
+END
+
+CONTROLBAR:LW_ToolTip_RohanSpearmenHorde
+"\nUnit Type: Spearmen\nStrong vs. Cavalry"
+END
+
+BANNERUI:RohanSpearmen
+"Rohan Spearmen"
+END
+
+BANNERUI:PluralRohanSpearmen
+"Rohan Spearmen"
+END
+
+CONTROLBAR:LW_ToolTipBuild_ElvenRivendellArcherHorde
+"Unit Type: Fast archers\nStrong vs. Soldiers\n"
+END
+
+BANNERUI:ElvenRivendellArchers
+"Lindon Horse Archer Battalion"
+END
+
+BANNERUI:PluralElvenRivendellArchers
+"Lindon Horse Archer Battalions"
+END
+
+CONTROLBAR:LW_Unit_ElvenRivendellArcherHorde
+"Lindon Horse Archer Battalion"
+END
+
+CONTROLBAR:LW_Unit_ElvenRivendellArcherHordePlural
+"Lindon Horse Archer Battalions"
+END
+
+CONTROLBAR:LW_ToolTipBuild_MordorBlackOrcHorde
+"Unit Type: Elite Infantry\nStrong vs. Pikemen"
+END
+
+CONTROLBAR:LW_Unit_MordorBlackOrcHordePlural
+"Black Orc Warrior Hordes"
+END
+
+BANNERUI:MordorBlackOrc
+"Black Orc Warrior Horde"
+END
+
+BANNERUI:MordorBlackOrcs
+"Black Orc Warrior Hordes"
+END
+
+CONTROLBAR:LW_ToolTipBuild_MordorHaradrimRiderHorde
+"Unit Type: Basic Cavalry\nStrong vs. Archers\n"
+END
+
+BANNERUI:MordorHaradrimRider
+"Haradrim Lancer Horde"
+END
+
+BANNERUI:MordorHaradrimRiders
+"Haradrim Lancer Hordes"
+END
+
+CONTROLBAR:LW_Unit_MordorHaradrimRiderHorde
+"Haradrim Lancer Horde"
+END
+
+CONTROLBAR:LW_Unit_MordorHaradrimRiderHordePlural
+"Haradrim Lancer Hordes"
+END
+
+APT:HomeInstructionTitle
+"THE LORD OF THE RINGS, THE RISE OF THE WITCH-KING OFFERS THE FOLLOWING MODES FOR ONLINE PLAY"
+END
+
+APT:WelcomeMessageTitle
+"WELCOME TO THE LORD OF THE RINGS, THE RISE OF THE WITCH-KING"
+END
+
+OBJECT:IsengardFanatic
+"Uruk Deathbringer"
+END
+
+OBJECT:HordeDwarvenZerker
+"Dwarven Zealot Horde"
+END
+
+CONTROLBAR:FanaticDeathWish
+"Death&wish"
+END
+
+CONTROLBAR:ToolTipFanaticDeathWish
+"Requires Level 7 \n Deathbringers Cause 250% damage but lose 25% of their health for 20 seconds. \n Left click to activate"
+END
+
+CONTROLBAR:FanaticStoneWall
+"S&tonewall"
+END
+
+CONTROLBAR:ToolTipFanaticStoneWall
+"Requires Level 2 \n Deathbringers become highly resistant to trample and knockback, and halt charging enemy cavalry, but lose speed. \n Left click to activate"
+END
+
+UPGRADE:IsengardTavernLevel2
+"Clan Steading Level 2"
+END
+
+UPGRADE:IsengardTavernLevel3
+"Clan Steading Level 3"
+END
+
+UPGRADE:Upgrade_AngmarWallRegularGate
+"Large Gate"
+End
+
+UPGRADE:Upgrade_AngmarWallHub
+"Wall Hub"
+End
+
+UPGRADE:Upgrade_AngmarWallPosternGate
+"Postern Gate"
+End
+
+UPGRADE:Upgrade_AngmarWallTower
+"Battle Tower"
+End
+
+CONTROLBAR:IsengardMineDetonate
+"Detonate Mine"
+END
+
+CONTROLBAR:ToolTipIsengardMineDetonate
+"Causes the mine to detonate in about 20 seconds"
+End
+
+CONTROLBAR:AngmarCatapultUpgrade
+"&Replace Stone Thrower"
+END
+
+CONTROLBAR:ToolTipAngmarCatapultUpgrade
+"Rebuilds the Stone Thrower on the platform"
+END
+
+CONTROLBAR:ToolTipPurchaseTechnologyAngmarBasicTraining
+"Allows hordes to purchase the Banner Carrier upgrade \n Increases a horde to Level 2"
+END
+
+CONTROLBAR:ToolTipPurchaseUpgradeAngmarTraining
+"Increases this horde to Level 2 \n Can only be equipped at Level 1"
+End
+
+TOOLTIP:LackAngmarBasicTraining
+"Research upgrade at Hall of King's Men to enable this equipment \n When equipped, increases the horde to Level 2"
+END
+
+CONTROLBAR:ToolTipAzogBrigandage
+"Requires Level 2 \n Goblins near Azog steal resources whenever dealing damage to enemy units \n Passive ability"
+END
+
+// ##################################
+// Strings needed for the subtitles
+// ##################################
+
+SUBTITLE:BABME_01
+"The trail of blood and suffering is over -- Angmar is defeated."
+END
+
+SUBTITLE:BABME_02
+"Like so many cities of Arnor, it lies in ruin, its hopes for a final conquest of the West, gone. Middle Earth rejoiced…"
+END
+
+SUBTITLE:BABME_03
+"In his final stand, the Witch-king sat upon his black horse before us."
+END
+
+SUBTITLE:BABME_04
+"As we rode forward, he realized that all hope was lost."
+END
+
+SUBTITLE:BABME_05
+"His terrifying scream of rage sent the chill of winter down our spines, as he turned and fled into the shadows."
+END
+
+SUBTITLE:BABME_06
+"Earnur struck out to chase him down, But I then realized his power."
+END
+
+SUBTITLE:BABME_07
+"We thought him but a powerful Black Númenorean, but he is Nazgul, First of the Nine, most fell servant of the Dark Lord Sauron."
+END
+
+SUBTITLE:BABME_08
+"I put up my hand, and called out to Earnur: 'Do not pursue him! He will not return to these lands'."
+END
+
+SUBTITLE:BABME_09
+"'Far off yet is his doom, and not by the hand of man shall he fall’."
+END
+
+SUBTITLE:BABMO_01
+"After the Witch-king’s bloody, final triumph over Arnor, the kingdom of Gondor can look away no more,"
+END
+
+SUBTITLE:BABMO_02
+"lest the Iron Crown dominate all the lands of the West. Elves and Men come together to drive Evil from the north forever."
+END
+
+SUBTITLE:BABMO_03
+"Earnur of Gondor would lead the Men. The Elves call for Glorfindel, Elf-lord of Rivendell and Gondolin, to lead them."
+END
+
+SUBTITLE:BABMO_04
+"And so it is, at the will of my people, that I change  from storyteller to blade-bearer once more."
+END
+
+SUBTITLE:BABMO_05
+"I ride, Elrond at my side, under Earnur’s banner. Elves and Men together will drive evil from the North forever."
+END
+
+SUBTITLE:BABMO_06
+"We will not merely push the Witch-king back to his lair of Carn Dûm as we had foolishly done before."
+END
+
+SUBTITLE:BABMO_07
+"We intend the total destruction of Angmar; and this time, it will be so."
+END
+
+SUBTITLE:BACO_01
+"Middle-earth enjoyed a thousand years of peace after the Ring was lost and the death of Isildur"
+END
+
+SUBTITLE:BACO_010
+"…and Arthedain, the most powerful of the Northern realms,"
+END
+
+SUBTITLE:BACO_011
+"still ruled by Isildur’s heirs from the capital of Fornost."
+END
+
+SUBTITLE:BACO_012
+"It was during the reign of the eighth King of Arthedain that evil began to multiply in Angmar,"
+END
+
+SUBTITLE:BACO_013
+"a twisted, frozen land that lay North beyond the Ettenmoors, and home of the Black Númenoreans."
+END
+
+SUBTITLE:BACO_014
+"Among them a sorcerer of great power arose, known only as the Witch-king..."
+END
+
+SUBTITLE:BACO_015
+"He has taken up his Iron Crown for a single purpose:"
+END
+
+SUBTITLE:BACO_016
+"to destroy the Dúnedain and their kingdom of Arnor …"
+END
+
+SUBTITLE:BACO_02
+"but Sauron was not dead, only cast to the shadows."
+END
+
+SUBTITLE:BACO_03
+" In time, evil once more began to move…"
+END
+
+SUBTITLE:BACO_04
+"Arnor: The North Kingdom of Men, ruled by the heirs of Isildur."
+END
+
+SUBTITLE:BACO_05
+"This land of passion and promise is waylaid by men’s inability to set aside petty differences;"
+END
+
+SUBTITLE:BACO_06
+"and so it was that civil strife weakened the Dúnedain and broke the land into three realms:"
+END
+
+SUBTITLE:BACO_07
+"Rhudaur, the smallest and weakest of the Dúnedain kingships…"
+END
+
+SUBTITLE:BACO_08
+"Cardolan, guardian of the ancient Barrow Downs,"
+END
+
+SUBTITLE:BACO_09
+"where the forefathers of the Dúnedain lay entombed …"
+END
+
+SUBTITLE:BAM1E_01
+"Now all of Angmar is united under the Iron Crown. Legions of orcs fight under the command of the Thrall Masters of Angmar."
+END
+
+SUBTITLE:BAM1E_02
+"The great fortress at Carn Dum continues to rise, it will make an ideal sanctum for the Witch-king to work his fell sorcery."
+END
+
+SUBTITLE:BAM1E_03
+"The hammer is forged at last, ready to smite the heirs of Elendil and lay their kingdoms low."
+END
+
+SUBTITLE:BAM1O_01
+"Before Arnor can be invaded, the Witch-king needs a symbol to unite Angmar’s proud and willful denizens."
+END
+
+SUBTITLE:BAM1O_02
+"Legends say that here in ages past loomed a great fortress of the ancient darkness, "
+END
+
+SUBTITLE:BAM1O_03
+"its ruins dark and silent in the mountains."
+END
+
+SUBTITLE:BAM1O_04
+"Rebuilding this bastion will secure the Iron Crown’s dominion over the Black Numenoreans and the northern troll tribes..."
+END
+
+SUBTITLE:BAM30_03
+"They are led by Hwaldar, a Hillchief in secret league with Angmar."
+END
+
+SUBTITLE:BAM30_04
+"Moving to crush this resistance, Argeleb has Hwaldar seized, and moves into Rhudaur."
+END
+
+SUBTITLE:BAM30_07
+"and he will seize it with both hands."
+END
+
+SUBTITLE:BAM3E_01
+"King Argeleb is slain,"
+END
+
+SUBTITLE:BAM3E_02
+"his hope for a unified North Kingdom shattered with his pride in the ruins of Rhudaur."
+END
+
+SUBTITLE:BAM3E_03
+"Hwaldar takes his place as a leading commander serving the Iron Crown,"
+END
+
+SUBTITLE:BAM3E_04
+"while his people provide more minions for the Thrall Masters."
+END
+
+SUBTITLE:BAM3E_05
+"But despite their wounds, the Dúnedain are not without power."
+END
+
+SUBTITLE:BAM3E_06
+"The fortified Weather Hills and fortress at Amon Sûl stand as a shield protecting Fornost and the heart of Arnor…"
+END
+
+SUBTITLE:BAM3O_01
+"In the face of this gathering storm, King Argeleb of Arthedain reclaims the throne of all Arnor."
+END
+
+SUBTITLE:BAM3O_02
+"Cardolan does not oppose him, but one faction of the Hillmen of Rhudaur begin to rebel."
+END
+
+SUBTITLE:BAM3O_05
+"But Angmar, its power ready, advances into the weakest of the Dúnedain realms."
+END
+
+SUBTITLE:BAM3O_06
+"Thus one man’s lust for power has given the Witch-king an opportunity…"
+END
+
+SUBTITLE:BAM4E_01
+"Amon Sûl is laid to ruin."
+END
+
+SUBTITLE:BAM4E_02
+"With its garrison reduced, the great bastion of the north could not withstand Angmar’s rage."
+END
+
+SUBTITLE:BAM4E_03
+"But Angmar’s victory is not complete;"
+END
+
+SUBTITLE:BAM4E_04
+"Arveleg  has escaped Amon Sûl with a prize that the Witch-king covets over all others…"
+END
+
+SUBTITLE:BAM4O_01
+"The new king, Arveleg son of Argeleb, with the help of Cardolan and the Elves, has checked Angmar’s advance;"
+END
+
+SUBTITLE:BAM4O_02
+" for many years they have held a frontier along the Weather Hills."
+END
+
+SUBTITLE:BAM4O_03
+"Using the power of the Palantir of Amon Sûl, Arveleg has foiled every attack and stratagem."
+END
+
+SUBTITLE:BAM4O_04
+"The Witch-king must now undertake a daring and dangerous strategy: a direct assault on the fortress of Amon Sûl."
+END
+
+SUBTITLE:BAM4O_05
+"Diversionary attacks draw off the forces of Cardolan and the Elves, while the main army strikes the fortress."
+END
+
+SUBTITLE:BAM4O_06
+"Although not the largest bastions in Middle-Earth, Amon Sûl is host to a mighty power – the master Palantir of the North."
+END
+
+SUBTITLE:BAM5E_01
+"The shards of the Palantir still contain great power."
+END
+
+SUBTITLE:BAM5E_02
+"For many centuries the Black Númenoreans have dabbled in the dark arts."
+END
+
+SUBTITLE:BAM5E_03
+"Now these sorcerers have a focus to enhance and concentrate their power, unleashing a new terror upon Arnor."
+END
+
+SUBTITLE:BAM5O_01
+"The fall of Amon Sûl is a terrible blow to the will of the Dúnedain."
+END
+
+SUBTITLE:BAM5O_02
+"However, a brave band led by Arveleg has fled the fortress with the Palantir, heading back toward Fornost."
+END
+
+SUBTITLE:BAM5O_03
+"Angered by its escape, the Witch-king dispatches the Lieutenant of Carn Dûm with orders to retrieve the stolen orb."
+END
+
+SUBTITLE:BAM60_06
+"The Witch-king orders his proven lieutenants, Hwaldar and Rogash, to seize the most sacred ground in Arnor, the Barrow Downs."
+END
+
+SUBTITLE:BAM6E_01
+"Everywhere the armies of Angmar march, death and desolation follow."
+END
+
+SUBTITLE:BAM6E_02
+"Cardolan has fallen, and all that remains is the realm of Arthedain. Men have allowed this to happen…"
+END
+
+SUBTITLE:BAM6E_03
+"Their indecision and disunity have brought them to the brink of annihilation…"
+END
+
+SUBTITLE:BAM6O_01
+"The destruction of Amon Sûl and its palantir crippled the Army of Arthedain, but Fornost still stands."
+END
+
+SUBTITLE:BAM6O_02
+"The army and the people are prepared to defend the city to the bitter end."
+END
+
+SUBTITLE:BAM6O_03
+"But the Witch-king cannot commit his army to a siege at Fornost with an enemy free to attack his rear."
+END
+
+SUBTITLE:BAM6O_04
+"For the army of Cardolan was not at Amon Sûl, and is still in the field."
+END
+
+SUBTITLE:BAM6O_05
+"A way must be devised to make them fight on ground of the Witch-king’s choosing."
+END
+
+SUBTITLE:BAM6O_07
+"With the hallowed graves of their ancestors and kings at risk, Cardolan will be forced to battle."
+END
+
+SUBTITLE:BAM6O_08
+"On these grounds Angmar can bleed them white, clearing the path for final victory."
+END
+
+SUBTITLE:BAM7E_01
+"The Witch-king’s cunning matches his cruelty."
+END
+
+SUBTITLE:BAM7E_02
+"The well-timed arrival of his lieutenants prevented a complete annihilation of his army."
+END
+
+SUBTITLE:BAM7E_03
+"The Iron Crown has suffered a heavy blow, but Angmar has not been defeated …"
+END
+
+SUBTITLE:BAM7E_04
+"It will take time to recover its strength… Perhaps enough time for Arnor to rise anew."
+END
+
+SUBTITLE:BAM7E_05
+"But the Witch-king has no intention of allowing this to happen…"
+END
+
+SUBTITLE:BAM7O_01
+"Arnor sits at the edge of the abyss. Rhudaur is the Witch-king’s, Cardolan is reduced to scattered bands of refugees."
+END
+
+SUBTITLE:BAM7O_02
+"Only Fornost stands between Angmar and total domination of the North."
+END
+
+SUBTITLE:BAM7O_03
+"Or so it appeared. The attack on Rivendell has united the Elven strongholds."
+END
+
+SUBTITLE:BAM7O_04
+"Now, the Elves of Lindon, Rivendell and even Lórien march against Angmar."
+END
+
+SUBTITLE:BAM7O_05
+"They are intent to drive a sword into the heart of Angmar that would last an age …"
+END
+
+SUBTITLE:BAM8E_01
+"Though he fought with a valor rarely seen among men, the young Arnorian captain paid a price beyond death, and now serves the Iron Crown."
+END
+
+SUBTITLE:BAM8E_02
+"Angmar’s great plague stretched far and wide, striking at the heart of Arnor and weakening the already fragile Dúnedain defenses."
+END
+
+SUBTITLE:BAM8E_03
+"But the Witch-king will not be satisfied until Arnor lay buried in the bodies and blood of its youth."
+END
+
+SUBTITLE:BAM8O_01
+"The Dunedain of Arnor believe the Elven strike will provide them a chance to recover."
+END
+
+SUBTITLE:BAM8O_02
+"Given time, Arnor can finish what the elves had started."
+END
+
+SUBTITLE:BAM8O_03
+"But they reckon without knowledge of the depth of the Witch-king’s hatred…"
+END
+
+SUBTITLE:BAM8O_04
+"He sends his sorcerers among the barrows of the great Arnor kings."
+END
+
+SUBTITLE:BAM8O_05
+"While the desecration of this hallowed soil might break the hearts of men, the Witch-king has an even darker purpose:"
+END
+
+SUBTITLE:BAM8O_06
+"to unleash a malevolent plague across the lands of men and elves."
+END
+
+SUBTITLE:BAM9E_01
+"Angmar’s hammer fell, and down came Fornost, in ash and fire!"
+END
+
+SUBTITLE:BAM9E_02
+"Arnor never wakes from its age-long nightmare; thousands lay dead in the streets."
+END
+
+SUBTITLE:BAM9E_03
+"The Witch-king’s malice can now spread throughout these Northern Lands."
+END
+
+SUBTITLE:BAM9E_04
+"Evil had come to Arnor… and evil prevailed."
+END
+
+SUBTITLE:BAM9O_01
+"Many years have passed since the great plague devastated the North."
+END
+
+SUBTITLE:BAM9O_02
+"In great secrecy the hosts of Angmar have been reforged, and the final stroke is ready to fall upon the last bastion of Arnor’s power: Fornost."
+END
+
+SUBTITLE:BAM9O_03
+"With its beautiful spires and unyielding walls, it alone stands between the Witch-king and total victory."
+END
+
+SUBTITLE:BAM9O_04
+"But the Dunedain will not fall easily."
+END
+
+SUBTITLE:BAM9O_05
+"They have gathered all of their host and all of their allies for this battle."
+END
+
+SUBTITLE:BAM9O_06
+"The last and decisive battle for the North is about to begin...."
+END
+
+SUBTITLE:CAC10_01
+"The sharp spires of Mount Gundabad house several loosely allied tribes of orcs,"
+END
+
+SUBTITLE:CAC10_02
+"who dominate the scattered snow troll and goblin clans."
+END
+
+SUBTITLE:CAC10_03
+"In order for the Witch-king to defeat the realms of Arnor, he needs the blood and iron of Gundabad."
+END
+
+SUBTITLE:CAC11_01
+"But Angmar needs sword arms, not corpses."
+END
+
+SUBTITLE:CAC11_02
+"Therefore, he will win by guile that which force would destroy."
+END
+
+SUBTITLE:CAC12_01
+"A blade in the dark forces a gathering of the tribes to compete for the crown…"
+END
+
+SUBTITLE:CAC13_01
+"To this gathering, the Witch-king sends his most fearsome lieutenant, Rogash, Troll of the North,"
+END
+
+SUBTITLE:CAC13_02
+"to ensure that the orcs of Gundabad will heed the orders of the Iron Crown…"
+END
+
+SUBTITLE:CAC14_01
+" Through the power and savagery of Rogash, Mount Gundabad has yielded."
+END
+
+SUBTITLE:CAC14_02
+"Now, legions of orcs fight under the command of the Thrall Masters of Angmar."
+END
+
+SUBTITLE:CAC14_03
+"The hammer is forged at last, ready to smite the heirs of Elendil and lay their kingdoms low…"
+END
+
+// ##################################
+// End of strings needed for the subtitles
+// ##################################
+
+WOTR:TerritoryCommandCapExceeded
+"Territory command cap exceeded"
+END
+
+APT:buttonName
+// context: blank string to conceal bug caused by button captions not initializing fast enough during load of 3D WOTR map
+" "
+END
+
+CONTROLBAR:LW_ToolTip_MordorHaradrimRiderHorde
+"\nUnit Type: Basic Cavalry\nStrong vs. Archers"
+END
+
+BANNERUI:IsengardWildmenAxe
+// Plural name of the Isengard Wildman Axe thrower displayed in the army summary for WotR
+"Wildmen Axe Throwers"
+END
+
+Map:MAPMPAmonSulFortress/Desc
+"The fortress on the windy hill of Amon Sul was the cornerstone of Arnor's defense against Angmar."
+END
+
+Map:MAPMPTournamentRhudaur
+"Tournament Rhudaur"
+END
+
+Map:MAPMPTournamentGundabad
+"Tournament Gundabad"
+END
+
+Map:MAPMPTournamentWestmarch
+"Tournament Westmarch"
+END
+
+Map:MAPMPTournamentRhudaur/Desc
+"The rolling terrain of Rhudaur has always proved to be a ready battleground for the local hillmen and their invading enemies."
+END
+
+Map:MAPMPTournamentGundabad/Desc
+"The icy passages of Mount Gundabad have seen countless battles between the local Orc tribes and their foes."
+END
+
+Map:MAPMPTournamentWestmarch/Desc
+"A land of meadows and rises, between the Tower Hills and the Shire."
+END
+
+CONTROLBAR:GondorEarnurHotkey
+"&Earnur"
+END
+
+OBJECT:GondorEarnurRevive
+"Revive the fallen Hero, Earnur"
+END
+
+
+BANNERUI:IsengardWargPack
+// Plural name of the Isengard Wildman Axe thrower displayed in the army summary for WotR
+"Warg Pack"
+END
+
+
+
+//------- END ---------o
+
