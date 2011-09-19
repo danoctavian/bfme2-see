@@ -260,27 +260,16 @@ CommandSet GoblinFighterCommandSet
 	18 = Command_SetStanceHoldGround
 End
 
+// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
+// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
+
 CommandSet GoblinArcherCommandSet
 	 1 = Command_ToggleStance
 	 2 = Command_ArcherBombard
-	 4 = Command_PurchaseUpgradeWildBasicTraining 
-	 5 = Command_PurchaseUpgradeWildHeavyArmor
-	 6 = Command_PurchaseUpgradeWildFireArrows
-	 ;7 = Command_PurchaseUpgradePoisonArrows	 ///Wip!
-	12 = Command_CaptureBuilding
-	13 = Command_AttackMove
-	14 = Command_Stop
-	16  = Command_SetStanceBattle
-	17  = Command_SetStanceAggressive
-	18  = Command_SetStanceHoldGround
-End
-CommandSet GoblinArcherHordeCommandSet //What is this for?
-	 1 = Command_ToggleStance
-	 2 = Command_GoblinArcherPoisonArrows
-	 3 = Command_PurchaseUpgradeWildFireArrows
+	 3 = Command_PurchaseUpgradeWildBasicTraining 
 	 4 = Command_PurchaseUpgradeWildHeavyArmor
-	 5 = Command_PurchaseUpgradeWildBasicTraining
-	 6 = Command_ArcherBombard
+//	 5 = Command_PurchaseUpgradeWildFireArrows WIP!!!!
+	 6 = Command_GoblinArcherSAFireArrows //Command_PurchaseUpgradePoisonArrows	 ///Wip!
 	12 = Command_CaptureBuilding
 	13 = Command_AttackMove
 	14 = Command_Stop
@@ -288,6 +277,20 @@ CommandSet GoblinArcherHordeCommandSet //What is this for?
 	17  = Command_SetStanceAggressive
 	18  = Command_SetStanceHoldGround
 End
+//CommandSet GoblinArcherHordeCommandSet //What is this for?
+//	 1 = Command_ToggleStance
+//	 2 = Command_GoblinArcherPoisonArrows
+//	 3 = Command_PurchaseUpgradeWildFireArrows
+//	 4 = Command_PurchaseUpgradeWildHeavyArmor
+//	 5 = Command_PurchaseUpgradeWildBasicTraining
+//	 6 = Command_ArcherBombard
+//	12 = Command_CaptureBuilding
+//	13 = Command_AttackMove
+//	14 = Command_Stop
+//	16  = Command_SetStanceBattle
+//	17  = Command_SetStanceAggressive
+//	18  = Command_SetStanceHoldGround
+//End
 
 
 
