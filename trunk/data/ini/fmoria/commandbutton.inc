@@ -522,18 +522,33 @@ CommandButton Command_ConstructGoblinFissure
 	Radial				= Yes  
 End
 
+CommandButton Command_ConstructWildHillTrollHorde
+	Command				= UNIT_BUILD
+	Object				= AngmarHillTrollHorde
+	Options				= CANCELABLE ;NEED_UPGRADE
+	;NeededUpgrade		= Upgrade_WildSpiderPitLevel2
+	;NeededUpgradeAny	= Yes
+	TextLabel			= CONTROLBAR:ConstructWildHillTrollHorde
+	ButtonImage			= KUHillTrollIcon
+	ButtonBorderType    	= BUILD 
+	DescriptLabel       	= CONTROLBAR:ToolTipBuildWildHillTrollHorde
+	Radial				= Yes
+	InPalantir			= Yes
+	ShowProductionCount	= Yes    
+End
+
 CommandButton Command_ConstructGoblinTroll
 	Command				= UNIT_BUILD
 	Object				= GoblinCaveTroll
 	Options				= CANCELABLE NEED_UPGRADE
+	NeededUpgrade		= Upgrade_WildSpiderPitLevel2	
 	TextLabel			= CONTROLBAR:ConstructGoblinCaveTroll
 	ButtonImage			= BWFissure_CaveTroll
 	ButtonBorderType		= BUILD											
 	DescriptLabel			= CONTROLBAR:ToolTipBuildGoblinCaveTroll
-	NeededUpgrade			= Upgrade_WildFissureLevel2
 	Radial				= Yes
 	InPalantir	   		= Yes
-	ShowProductionCount		= Yes
+	ShowProductionCount	= Yes
 End
 
 
@@ -1010,6 +1025,20 @@ CommandButton Command_SpecialAbilityWildMountainGiantStomp
 End
 
 
+CommandButton Command_ConstructWildTrollSling
+	Command				= UNIT_BUILD
+	Options				= NEED_UPGRADE CANCELABLE	
+	Object				= AngmarTrollSling
+	NeededUpgrade		= Upgrade_WildFissureLevel3	
+	TextLabel			= CONTROLBAR:ConstructAngmarTrollSling
+	ButtonImage			= KUTrollSlingIcon
+	ButtonBorderType    	= BUILD 
+	DescriptLabel       	= CONTROLBAR:ToolTipBuildAngmarTrollSling
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure	
+End
 
 
 
@@ -1091,19 +1120,18 @@ CommandButton Command_PurchaseTechnologyWildHeavyArmor
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
 End
-CommandButton Command_ConstructWildTrollSling
-	Command				= UNIT_BUILD
-	Options				= NEED_UPGRADE CANCELABLE	
-	Object				= AngmarTrollSling
-	NeededUpgrade		= Upgrade_WildFissureLevel3	
-	TextLabel			= CONTROLBAR:ConstructAngmarTrollSling
-	ButtonImage			= KUTrollSlingIcon
-	ButtonBorderType    	= BUILD 
-	DescriptLabel       	= CONTROLBAR:ToolTipBuildAngmarTrollSling
-	Radial				= Yes
-	InPalantir	   		= Yes
-	ShowProductionCount	= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure	
+CommandButton Command_PurchaseTechnologyWildSpiderVenom //Command_PurchaseSpiderVenomSackScienceUpgrade
+	Command           	= PLAYER_UPGRADE
+	Options			  	= NEED_UPGRADE CANCELABLE	
+	Upgrade           	= Upgrade_TechnologyWildSpiderVenomSacks //Upgrade_WildSpiderVenomSackScience
+	TextLabel         	= CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
+	ButtonImage       	= BWSpiderPit_VenomSacks
+	ButtonBorderType  	= UPGRADE
+	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseTechnologyWildSpiderVenomSacks
+	NeededUpgrade	  	= Upgrade_WildSpiderPitLevel3
+	Radial            	= Yes
+	InPalantir	      	= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacks
 End
 
 
@@ -1144,7 +1172,7 @@ CommandButton Command_PurchaseUpgradeWildForgedBlade	;upgrade for units
 	InPalantir			= Yes
 	LacksPrerequisiteLabel		= TOOLTIP:LackWildForgedBlades
 End
-CommandButton Command_PurchaseUpgradeWildHeavyArmor	;upgrade for units
+CommandButton Command_PurchaseUpgradeWildHeavyArmor
 	Command				= OBJECT_UPGRADE
 	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
 	Upgrade				= Upgrade_WildHeavyArmor
@@ -1198,34 +1226,7 @@ End
 
 
 
-
-
-
-
-CommandButton Command_PoisonedBlades //NOT USED IN SEE!
-	Command				= SPECIAL_POWER
-	Options				= OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
-	SpecialPower		= SpecialAbilityGoblinFighterPoisonedBlades
-	TextLabel			= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
-	DescriptLabel			= CONTROLBAR:ToolTipSpecialAbilityGoblinFighterPoisonedBlades
-	InPalantir			= Yes
-	ButtonBorderType		= ACTION
-	ButtonImage			= BWTreasureTrove_PoisonBlades
-End
-CommandButton Command_PurchaseSpiderVenomSackScienceUpgrade
-	Command           = PLAYER_UPGRADE
-	Upgrade           = Upgrade_WildSpiderVenomSackScience
-	Options			  = CANCELABLE NEED_UPGRADE
-	TextLabel         = CONTROLBAR:PurchaseTechnologySpiderVenomSacks
-	ButtonImage       = BWSpiderPit_VenomSacks
-	ButtonBorderType  = UPGRADE
-	DescriptLabel     = CONTROLBAR:ToolTipPurchaseTechnologySpiderVenomSacks
-	NeededUpgrade	  = Upgrade_WildSpiderPitLevel3
-	Radial            = Yes
-	InPalantir	      = Yes
-	LacksPrerequisiteLabel		= TOOLTIP:LackVenomSacks
-End
-CommandButton Command_PurchaseSpiderVenomSacksUpgrade
+CommandButton Command_PurchaseSpiderVenomSacksUpgrade //OBSOLETE!
 	Command           = OBJECT_UPGRADE
 	Upgrade           = Upgrade_WildSpiderVenomSacks
 	Options			  = CANCELABLE NEED_UPGRADE	OK_FOR_MULTI_SELECT
@@ -1238,5 +1239,14 @@ CommandButton Command_PurchaseSpiderVenomSacksUpgrade
 	LacksPrerequisiteLabel		= TOOLTIP:LackVenomSacksTechnology
 End
 
-
+CommandButton Command_PoisonedBlades //NOT USED IN SEE!
+	Command				= SPECIAL_POWER
+	Options				= OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
+	SpecialPower		= SpecialAbilityGoblinFighterPoisonedBlades
+	TextLabel			= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
+	DescriptLabel			= CONTROLBAR:ToolTipSpecialAbilityGoblinFighterPoisonedBlades
+	InPalantir			= Yes
+	ButtonBorderType		= ACTION
+	ButtonImage			= BWTreasureTrove_PoisonBlades
+End
 

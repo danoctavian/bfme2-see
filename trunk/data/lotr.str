@@ -56,14 +56,14 @@ END
 TOOLTIP:LackWildBasicTraining
 "Research at Trove to enable this equipment \n When equipped, increases this battalion to level 2"
 END
-TOOLTIP:LackWildHeavyArmor
-"Research at Fissure to enable this equipment \n When equipped, significantly reduces the amount of damage taken"
-END
 TOOLTIP:LackWildFireArrows
 "Research at Fissure to enable this equipment \n When equipped, significantly increases the damage done by arrows"
 END
 TOOLTIP:LackWildForgedBlades
 "Research at Fissure to enable this equipment \n When equipped, increases the damage done by melee weapons"
+END
+TOOLTIP:LackWildHeavyArmor
+"Research at Fissure to enable this equipment \n When equipped, significantly reduces the amount of damage taken"
 END
 TOOLTIP:LackVenomSacksTechnology
 "Research at Troll Cave to enable this equipment \n When equipped, inflicts poison to enemies causing damage over time"
@@ -16281,12 +16281,22 @@ END
 CONTROLBAR:ToolTipGoblinCave
 "Trains Goblin Warriors and Archers"
 END
+
+
+CONTROLBAR:ConstructWildHillTrollHorde
+"Hill Trolls"
+End
+CONTROLBAR:ToolTipBuildWildHillTrollHorde
+"Recruit the wild Hill Trolls of Gundabad \n Strong vs. Cavalry"
+End
+
 CONTROLBAR:ConstructGoblinCaveTroll
 "Cave Troll"
 END
 CONTROLBAR:ToolTipBuildGoblinCaveTroll
-"Requires level 2 Troll cave \n Strong vs. Swordsmen and Structures"
+"Recruit the ferocious Cave Trolls of Moria \n Requires level 2 Troll Cave \n Strong vs. Units and Structures"
 END
+
 CONTROLBAR:ConstructGoblinFissure
 "Build Fissure"
 END
@@ -36073,7 +36083,7 @@ HUD:HeroEarnedAwardMessage
 END
 
 TOOLTIP:LackVenomSacks
-"Requires Level 3 Warg Pit"
+"Requires level 3 Troll Cave"
 END
 
 OBJECT:Watcher
@@ -41628,20 +41638,17 @@ CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
 "Allows hordes to purchase Scavenged Armor \n Significantly reduces the amount of damage taken"
 END
 
-CONTROLBAR:PurchaseTechnologySpiderVenomSacks
-"Research &Venom Sacs"
+CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
+"Research Venom Sacs"
 END
-
-CONTROLBAR:ToolTipPurchaseTechnologySpiderVenomSacks
-"Allows hordes to purchase the Venom Sacs upgrade \n When equipped, inflicts poison to enemies causing damage over time"
+CONTROLBAR:ToolTipPurchaseTechnologyWildSpiderVenomSacks
+"Allows Goblin hordes to purchase \n the Venom Sacs upgrade \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
 END
-
 CONTROLBAR:PurchaseSpiderVenomSacks
-"Purchase &Venom Sacs"
+"Purchase Venom Sacs"
 END
-
 CONTROLBAR:ToolTipPurchaseSpiderVenomSacks
-"Upgrades this horde with Venom Sacs \n Inflicts poison to enemies causing damage over time"
+"Upgrades this horde with Venom Sacs \n Weapons inflict poison to enemies \n causing damage over time"
 END
 
 
@@ -50957,7 +50964,7 @@ CONTROLBAR:ConstructAngmarSnowTrollHorde
 End
 
 CONTROLBAR:ConstructAngmarHillTrollHorde
-"Hi&ll Trolls"
+"Hill Trolls"
 End
 
 CONTROLBAR:ThrallMasterUpgradeOrcWarriors
