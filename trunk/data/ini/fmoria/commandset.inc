@@ -260,8 +260,34 @@ CommandSet GoblinFighterCommandSet
 	18 = Command_SetStanceHoldGround
 End
 
-
-
+CommandSet GoblinArcherCommandSet
+	 1 = Command_ToggleStance
+	 2 = Command_ArcherBombard
+	 4 = Command_PurchaseUpgradeWildBasicTraining 
+	 5 = Command_PurchaseUpgradeWildHeavyArmor
+	 6 = Command_PurchaseUpgradeWildFireArrows
+	 ;7 = Command_PurchaseUpgradePoisonArrows	 ///Wip!
+	12 = Command_CaptureBuilding
+	13 = Command_AttackMove
+	14 = Command_Stop
+	16  = Command_SetStanceBattle
+	17  = Command_SetStanceAggressive
+	18  = Command_SetStanceHoldGround
+End
+CommandSet GoblinArcherHordeCommandSet //What is this for?
+	 1 = Command_ToggleStance
+	 2 = Command_GoblinArcherPoisonArrows
+	 3 = Command_PurchaseUpgradeWildFireArrows
+	 4 = Command_PurchaseUpgradeWildHeavyArmor
+	 5 = Command_PurchaseUpgradeWildBasicTraining
+	 6 = Command_ArcherBombard
+	12 = Command_CaptureBuilding
+	13 = Command_AttackMove
+	14 = Command_Stop
+	16  = Command_SetStanceBattle
+	17  = Command_SetStanceAggressive
+	18  = Command_SetStanceHoldGround
+End
 
 
 
@@ -339,33 +365,8 @@ End
 
 
 
-CommandSet GoblinArcherCommandSet
-	 1 = Command_ToggleStance
-	 2 = Command_ArcherBombard
-	 4 = Command_PurchaseUpgradeWildFireArrows
-	 5 = Command_PurchaseUpgradeWildHeavyArmor
-	 6 = Command_PurchaseUpgradeWildBasicTraining
-	12 = Command_CaptureBuilding
-	13 = Command_AttackMove
-	14 = Command_Stop
-	16  = Command_SetStanceBattle
-	17  = Command_SetStanceAggressive
-	18  = Command_SetStanceHoldGround
-End
-CommandSet GoblinArcherHordeCommandSet
-	 1 = Command_ToggleStance
-	 2 = Command_GoblinArcherPoisonArrows
-	 3 = Command_PurchaseUpgradeWildFireArrows
-	 4 = Command_PurchaseUpgradeWildHeavyArmor
-	 5 = Command_PurchaseUpgradeWildBasicTraining
-	 6 = Command_ArcherBombard
-	12 = Command_CaptureBuilding
-	13 = Command_AttackMove
-	14 = Command_Stop
-	16  = Command_SetStanceBattle
-	17  = Command_SetStanceAggressive
-	18  = Command_SetStanceHoldGround
-End
+
+
 
 
 
