@@ -152,7 +152,10 @@ End
 CommandSet GoblinCaveCommandSet
 	1 = Command_ConstructGoblinFighterHorde
 	2 = Command_ConstructGoblinArcherHorde
-	3 = Command_PurchaseUpgradeWildCaveLevel2
+	;3 = Command_ConstructGoblinPikemanHorde
+	;4 = Command_ConstructGoblinDrummer			;Maybe scrap this one?
+	3 = Command_ConstructWildMarauderHorde		;This will require FB & HA (and thus come with it fully upgraded!)
+	4 = Command_PurchaseUpgradeWildCaveLevel2
 	6 = Command_Sell
 End
 CommandSet GoblinCaveCommandSetLevel2
@@ -160,21 +163,21 @@ CommandSet GoblinCaveCommandSetLevel2
 	2 = Command_ConstructGoblinArcherHorde
 	;3 = Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
-	5 = Command_ConstructWildMarauderHorde	
+	3 = Command_ConstructWildMarauderHorde	
+	4 = Command_PurchaseUpgradeWildCaveLevel3	
 	6 = Command_Sell	
-	7 = Command_PurchaseUpgradeWildCaveLevel3
 End
 CommandSet GoblinCaveCommandSetLevel3
 	1 = Command_ConstructGoblinFighterHorde
 	2 = Command_ConstructGoblinArcherHorde
 	;3 = Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
-	5 = Command_ConstructWildMarauderHorde	
+	3 = Command_ConstructWildMarauderHorde	
 	6 = Command_Sell
 End
 
 ; ------------------------------------------------------------------------------ SEE!
-CommandSet WildSpiderPitCommandSet
+CommandSet WildSpiderPitCommandSet 			;(Troll Cave in SEE)
 	1 = Command_ConstructWildHillTrollHorde  					//Command_ConstructWildSpiderlingHorde
 	2 = Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
 	3 = Command_PurchaseTechnologyWildSpiderVenom			//Command_PurchaseSpiderVenomSackScienceUpgrade
