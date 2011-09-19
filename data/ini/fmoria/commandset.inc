@@ -175,23 +175,23 @@ End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildSpiderPitCommandSet
-	1 = Command_ConstructAngmarHillTrollHorde  					//Command_ConstructWildSpiderlingHorde
+	1 = Command_ConstructWildHillTrollHorde  					//Command_ConstructWildSpiderlingHorde
 	2 = Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
-	3 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	3 = Command_PurchaseTechnologyWildSpiderVenom			//Command_PurchaseSpiderVenomSackScienceUpgrade
 	4 = Command_PurchaseUpgradeWildSpiderPitLevel2
 	6 = Command_Sell
 End
 CommandSet WildSpiderPitCommandSetLevel2
-	1 = Command_ConstructAngmarHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
+	1 = Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
 	2 = Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
-	3 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	3 = Command_PurchaseTechnologyWildSpiderVenom
 	4 = Command_PurchaseUpgradeWildSpiderPitLevel3
 	6 = Command_Sell
 End
 CommandSet WildSpiderPitCommandSetLevel3
-	1 = Command_ConstructAngmarHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
+	1 = Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
 	2 = Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
-	3 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	3 = Command_PurchaseTechnologyWildSpiderVenom
 	6 = Command_Sell
 End
 
@@ -673,19 +673,19 @@ End
 
 CommandSet WildSpiderPitCommandSet_ForFornost
 	1 = Command_ConstructWildSpiderRiderHorde
-	2 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	2 = Command_PurchaseTechnologyWildSpiderVenom ;Command_PurchaseSpiderVenomSackScienceUpgrade
 	3 = Command_PurchaseUpgradeWildSpiderPitLevel2
 	6 = Command_Sell
 End
 CommandSet WildSpiderPitCommandSetLevel2_ForFornost
 	1 = Command_ConstructWildSpiderRiderHorde
-	2 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	2 = Command_PurchaseTechnologyWildSpiderVenom ;Command_PurchaseSpiderVenomSackScienceUpgrade
 	3 = Command_PurchaseUpgradeWildSpiderPitLevel3
 	6 = Command_Sell
 End
 CommandSet WildSpiderPitCommandSetLevel3_ForFornost
 	1 = Command_ConstructWildSpiderRiderHorde
-	2 = Command_PurchaseSpiderVenomSackScienceUpgrade
+	2 = Command_PurchaseTechnologyWildSpiderVenom ;Command_PurchaseSpiderVenomSackScienceUpgrade
 	6 = Command_Sell
 End
 

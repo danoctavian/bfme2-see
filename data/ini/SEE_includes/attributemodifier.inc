@@ -17,6 +17,6 @@ ModifierList MordorLargeGroupBonus_SEE
   Modifier = SPEED 125%
   Duration = 0				// ***NOTE: Duration is controlled by LargeGroupBonusUpdate
   ModelCondition = WAR_CHANT ;EMOTION_CELEBRATING	// *** Added Animation, Sûlherokhh
-  FX = FX_InfiniteGenericLeadership_SEE //yayshitface
-  EndFX = FX_GenericBuffStop_SEE //whattheshitface?
+  FX = FX_InfiniteGenericLeadership_SEE 
+  EndFX = FX_GenericBuffStop_SEE
 End
