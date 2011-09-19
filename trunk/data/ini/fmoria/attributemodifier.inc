@@ -33,7 +33,6 @@ ModifierList WildCaveHitPointModLvl2
 	Modifier = HEALTH GOBLIN_CAVE_LVL2_HP_ADD	
 	Duration = 0
 End
-
 ModifierList WildCaveHitPointModLvl3
 	Category = LEVEL
 	Modifier = HEALTH GOBLIN_CAVE_LVL3_HP_ADD	
@@ -57,11 +56,10 @@ ModifierList WildFissureHitPointModLvl2
 	Modifier = HEALTH GOBLIN_FISSURE_LVL2_HP_ADD	
 	Duration = 0
 End
-
 ModifierList WildFissureHitPointModLvl3
 	Category = LEVEL
 	Modifier = HEALTH GOBLIN_FISSURE_LVL3_HP_ADD	
-	Modifier = ARMOR 50%
+	;Modifier = ARMOR 50%
 	Duration = 0
 End
 
@@ -82,7 +80,6 @@ ModifierList WildSpiderPitHitPointModLvl2
 	Modifier = HEALTH GOBLIN_SPIDERPIT_LVL2_HP_ADD	
 	Duration = 0
 End
-
 ModifierList WildSpiderPitHitPointModLvl3
 	Category = LEVEL
 	Modifier = HEALTH GOBLIN_SPIDERPIT_LVL3_HP_ADD	
@@ -106,7 +103,6 @@ ModifierList WildTreasureTroveHitPointModLvl2
 	Modifier = HEALTH GOBLIN_TREASURETROVE_LVL2_HP_ADD	
 	Duration = 0
 End
-
 ModifierList WildTreasureTroveHitPointModLvl3
 	Category = LEVEL
 	Modifier = HEALTH GOBLIN_TREASURETROVE_LVL3_HP_ADD	

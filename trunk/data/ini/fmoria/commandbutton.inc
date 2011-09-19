@@ -170,7 +170,6 @@ CommandButton Command_UpgradeWildFissureLevel2
   Radial            	= Yes
   InPalantir	   		= Yes
 End
-
 CommandButton Command_PurchaseUpgradeWildFissureLevel3
   Command           	= OBJECT_UPGRADE
   Upgrade           	= Upgrade_WildFissureLevel3
@@ -194,6 +193,28 @@ CommandButton Command_PorterConstructWildTreasureTrove
 	Radial				= Yes
 	;InPalantir			= Yes
 END
+CommandButton Command_PurchaseUpgradeWildTreasureTroveLevel2
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildTreasureTroveLevel2
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:ConstructWildTreasureTroveLevel2Upgrade
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildTreasureTroveLevel2Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
+CommandButton Command_PurchaseUpgradeWildTreasureTroveLevel3
+  Command           	= OBJECT_UPGRADE
+  Upgrade           	= Upgrade_WildTreasureTroveLevel3
+  Options				= CANCELABLE
+  TextLabel         		= CONTROLBAR:ConstructWildTreasureTroveLevel3Upgrade
+  ButtonImage       	= UCCommon_UpgradeStructureNew
+  ButtonBorderType  		= UPGRADE
+  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildTreasureTroveLevel3Upgrade
+  Radial            	= Yes
+  InPalantir	   		= Yes
+End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton  Command_PorterConstructWildWallHub
@@ -1016,121 +1037,6 @@ End
 
 
 
-CommandButton Command_PurchaseUpgradeWildTreasureTroveLevel2
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildTreasureTroveLevel2
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:ConstructWildTreasureTroveLevel2Upgrade
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildTreasureTroveLevel2Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
-
-CommandButton Command_PurchaseUpgradeWildTreasureTroveLevel3
-  Command           = OBJECT_UPGRADE
-  Upgrade           = Upgrade_WildTreasureTroveLevel3
-  Options			= CANCELABLE
-  TextLabel         = CONTROLBAR:ConstructWildTreasureTroveLevel3Upgrade
-  ButtonImage       = UCCommon_UpgradeStructureNew
-  ButtonBorderType  = UPGRADE
-  DescriptLabel     = CONTROLBAR:ToolTipBuildWildTreasureTroveLevel3Upgrade
-  Radial            = Yes
-  InPalantir	   	= Yes
-End
-
-
-
-CommandButton Command_PurchaseTechnologyWildFireArrows
-	Command				= PLAYER_UPGRADE
-	Options				= CANCELABLE //NEED_UPGRADE CANCELABLE
-	Upgrade				= Upgrade_TechnologyWildFireArrows 
-	;NeededUpgrade		= Upgrade_WildTreasureTroveLevel3 //Is now lvl1 Fissure!
-	TextLabel			= CONTROLBAR:PurchaseTechnologyWildFireArrows
-	ButtonImage			= BMOrcPit_FlamingArrows
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
-	Radial				= Yes
-	InPalantir			= Yes
-	;LacksPrerequisiteLabel	= TOOLTIP:LackLevel3TreasureTrove
-End
-CommandButton Command_PurchaseTechnologyWildForgedBlades //Not used in SEE!
-	Command				= PLAYER_UPGRADE
-	Options				= NEED_UPGRADE CANCELABLE
-	Upgrade				= Upgrade_TechnologyWildForgedBlades
-	NeededUpgrade		= Upgrade_WildTreasureTroveLevel2
-	TextLabel			= CONTROLBAR:PurchaseTechnologyWildForgedBlades
-	ButtonImage			= BWTreasureTrove_ForgedBlades
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
-	Radial				= Yes
-	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2TreasureTrove
-End
-CommandButton Command_PurchaseTechnologyWildHeavyArmor
-	Command				= PLAYER_UPGRADE
-	Options				= NEED_UPGRADE CANCELABLE
-	Upgrade				= Upgrade_TechnologyWildHeavyArmor
-	NeededUpgrade		= Upgrade_WildFissureLevel2
-	TextLabel			= CONTROLBAR:PurchaseTechnologyWildHeavyArmor
-	ButtonImage			= BWTreasureTrove_ScavengedArmor
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseechnologyWildHeavyArmor
-	Radial				= Yes
-	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure
-End
-
-
-
-
-;//Fire Arrow upgrade to be purchased by units
-CommandButton Command_PurchaseUpgradeWildFireArrows	
-	Command				= OBJECT_UPGRADE
-	Options				= OK_FOR_MULTI_SELECT CANCELABLE //NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
-	Upgrade				= Upgrade_WildFireArrows
-	NeededUpgrade		= Upgrade_TechnologyWildFireArrows
-	TextLabel			= CONTROLBAR:PurchaseUpgradeWildFireArrows
-	ButtonImage			= BMOrcPit_FlamingArrows
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
-	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackWildFireArrows
-End
-
-
-
-
-CommandButton Command_PurchaseUpgradeWildForgedBlade	;upgrade for units
-	Command				= OBJECT_UPGRADE
-	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
-	Upgrade				= Upgrade_WildForgedBlades
-	NeededUpgrade		= Upgrade_TechnologyWildForgedBlades
-	TextLabel			= CONTROLBAR:PurchaseUpgradeWildForgedBlade
-	ButtonImage			= BWTreasureTrove_ForgedBlades
-	ButtonBorderType	= UPGRADE
-	DescriptLabel		= CONTROLBAR:ToolTipPurchaseUpgradeWildForgedBlade
-	InPalantir			= Yes
-	LacksPrerequisiteLabel		= TOOLTIP:LackWildForgedBlades
-End
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1146,6 +1052,62 @@ CommandButton Command_PurchaseTechnologyWildBasicTraining
 	Radial				= Yes
 	InPalantir			= Yes
 End
+CommandButton Command_PurchaseTechnologyWildFireArrows
+	Command				= PLAYER_UPGRADE
+	Options				= CANCELABLE //NEED_UPGRADE CANCELABLE
+	Upgrade				= Upgrade_TechnologyWildFireArrows 
+	;NeededUpgrade		= Upgrade_WildTreasureTroveLevel3 //Is now lvl1 Fissure!
+	TextLabel			= CONTROLBAR:PurchaseTechnologyWildFireArrows
+	ButtonImage			= BMOrcPit_FlamingArrows
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
+	Radial				= Yes
+	InPalantir			= Yes
+	;LacksPrerequisiteLabel	= TOOLTIP:LackLevel3TreasureTrove //Is now lvl1 Fissure!
+End
+CommandButton Command_PurchaseTechnologyWildForgedBlades
+	Command				= PLAYER_UPGRADE
+	Options				= NEED_UPGRADE CANCELABLE
+	Upgrade				= Upgrade_TechnologyWildForgedBlades
+	NeededUpgrade		= Upgrade_WildFissureLevel2 //Upgrade_WildTreasureTroveLevel2
+	TextLabel			= CONTROLBAR:PurchaseTechnologyWildForgedBlades
+	ButtonImage			= BWTreasureTrove_ForgedBlades
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
+	Radial				= Yes
+	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure //LackLevel2TreasureTrove
+End
+CommandButton Command_PurchaseTechnologyWildHeavyArmor
+	Command				= PLAYER_UPGRADE
+	Options				= NEED_UPGRADE CANCELABLE
+	Upgrade				= Upgrade_TechnologyWildHeavyArmor
+	NeededUpgrade		= Upgrade_WildFissureLevel3
+	TextLabel			= CONTROLBAR:PurchaseTechnologyWildHeavyArmor
+	ButtonImage			= BWTreasureTrove_ScavengedArmor
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
+	Radial				= Yes
+	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
+End
+CommandButton Command_ConstructWildTrollSling
+	Command				= UNIT_BUILD
+	Options				= NEED_UPGRADE CANCELABLE	
+	Object				= AngmarTrollSling
+	NeededUpgrade		= Upgrade_WildFissureLevel3	
+	TextLabel			= CONTROLBAR:ConstructAngmarTrollSling
+	ButtonImage			= KUTrollSlingIcon
+	ButtonBorderType    	= BUILD 
+	DescriptLabel       	= CONTROLBAR:ToolTipBuildAngmarTrollSling
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure	
+End
+
+
+
 CommandButton Command_PurchaseUpgradeWildBasicTraining
 	Command				= OBJECT_UPGRADE
 	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
@@ -1158,7 +1120,30 @@ CommandButton Command_PurchaseUpgradeWildBasicTraining
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackWildBasicTraining
 End
-
+CommandButton Command_PurchaseUpgradeWildFireArrows	
+	Command				= OBJECT_UPGRADE
+	Options				= OK_FOR_MULTI_SELECT CANCELABLE //NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
+	Upgrade				= Upgrade_WildFireArrows
+	NeededUpgrade		= Upgrade_TechnologyWildFireArrows
+	TextLabel			= CONTROLBAR:PurchaseUpgradeWildFireArrows
+	ButtonImage			= BMOrcPit_FlamingArrows
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
+	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackWildFireArrows
+End
+CommandButton Command_PurchaseUpgradeWildForgedBlade	;upgrade for units
+	Command				= OBJECT_UPGRADE
+	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
+	Upgrade				= Upgrade_WildForgedBlades
+	NeededUpgrade		= Upgrade_TechnologyWildForgedBlades
+	TextLabel			= CONTROLBAR:PurchaseUpgradeWildForgedBlade
+	ButtonImage			= BWTreasureTrove_ForgedBlades
+	ButtonBorderType	= UPGRADE
+	DescriptLabel		= CONTROLBAR:ToolTipPurchaseUpgradeWildForgedBlade
+	InPalantir			= Yes
+	LacksPrerequisiteLabel		= TOOLTIP:LackWildForgedBlades
+End
 CommandButton Command_PurchaseUpgradeWildHeavyArmor	;upgrade for units
 	Command				= OBJECT_UPGRADE
 	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
@@ -1171,6 +1156,30 @@ CommandButton Command_PurchaseUpgradeWildHeavyArmor	;upgrade for units
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackWildHeavyArmor
 End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
