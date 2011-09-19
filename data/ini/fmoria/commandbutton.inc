@@ -1122,7 +1122,7 @@ CommandButton Command_PurchaseUpgradeWildBasicTraining
 End
 CommandButton Command_PurchaseUpgradeWildFireArrows	
 	Command				= OBJECT_UPGRADE
-	Options				= OK_FOR_MULTI_SELECT CANCELABLE //NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
+	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
 	Upgrade				= Upgrade_WildFireArrows
 	NeededUpgrade		= Upgrade_TechnologyWildFireArrows
 	TextLabel			= CONTROLBAR:PurchaseUpgradeWildFireArrows
@@ -1156,7 +1156,18 @@ CommandButton Command_PurchaseUpgradeWildHeavyArmor	;upgrade for units
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackWildHeavyArmor
 End
-
+CommandButton Command_PurchaseUpgradeWildSpiderVenom //Command_PurchaseSpiderVenomForGoblinsUpgrade
+	Command           	= OBJECT_UPGRADE
+	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
+	Upgrade           	= Upgrade_WildSpiderVenomSacks
+	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience
+	TextLabel         	= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
+	ButtonImage       	= BWTreasureTrove_PoisonBlades
+	ButtonBorderType  	= UPGRADE
+	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseSpiderVenomSacks
+	InPalantir	      	= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacksTechnology
+End
 
 
 
@@ -1226,17 +1237,6 @@ CommandButton Command_PurchaseSpiderVenomSacksUpgrade
 	InPalantir	      = Yes
 	LacksPrerequisiteLabel		= TOOLTIP:LackVenomSacksTechnology
 End
-CommandButton Command_PurchaseUpgradeWildSpiderVenom //Command_PurchaseSpiderVenomForGoblinsUpgrade
-	Command           	= OBJECT_UPGRADE
-	Upgrade           	= Upgrade_WildSpiderVenomSacks
-	Options			  	= CANCELABLE NEED_UPGRADE OK_FOR_MULTI_SELECT
-	TextLabel         	= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
-	ButtonImage       	= BWTreasureTrove_PoisonBlades
-	ButtonBorderType  	= UPGRADE
-	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseSpiderVenomSacks
-	NeededUpgrade	  	= Upgrade_WildSpiderVenomSackScience
-	InPalantir	      	= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacksTechnology
-End
+
 
 

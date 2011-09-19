@@ -274,7 +274,7 @@ Upgrade Upgrade_TechnologyWildHeavyArmor
 	ResearchCompleteEvaEvent	= UpgradeScavengedArmorReady
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
-Upgrade Upgrade_WildSpiderVenomSackScience ;change to TechnologyWildSpiderVenomSack
+Upgrade Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience ;change to TechnologyWildSpiderVenomSacks
 	DisplayName				= UPGRADE:WildPoisonBlades //Upgrade:WildVenomSacs
 	Type					= PLAYER
 	BuildCost				= GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_COST
