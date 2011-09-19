@@ -1527,6 +1527,89 @@ Weapon GoblinArcherPoisonArrowsBowWarhead
 	End
 End
 
+
+;------------------------------------------------------------------------------
+Weapon GoblinArcherBowFire_SEE       ; BALANCE Archer Weapon ;orc archer
+	AttackRange			= GOBLIN_ARCHER_RANGE   ;Horde member so it needs to be bigger than the horde weapon attack range.
+   
+  RangeBonusMinHeight	= 10
+	RangeBonus		= 1
+	RangeBonusPerFoot	= #MULTIPLY( GOBLIN_ARCHER_RANGE .01 )
+   
+  LeechRangeWeapon    = Yes
+	WeaponSpeed			= 250 ;300         ; dist/sec 
+	MinWeaponSpeed		= 100 ;121
+	MaxWeaponSpeed		= 350 ;400      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
+	FireFX				= FX_RohanArcherBowWeapon  
+	ScaleWeaponSpeed	= Yes ; Used for lob weapons, scales speed proportional to range
+	HitPercentage		= ARCHER_WEAK_HITPERCENTAGE ;100     ;When this weapon is used it will hit exactly 50% of the time.
+	ScatterRadius		= ARCHER_WEAK_SCATTERRADIUS ;20.0     ;When this weapon misses it can randomly miss by as much as this distance.
+	
+	AcceptableAimDelta	= 20	; prevent twitchy reaiming in horde on horde
+	DelayBetweenShots	= 0
+	PreAttackDelay      = GOBLIN_ARCHER_PREATTACKDELAY
+	PreAttackType       = PER_POSITION
+	PreAttackRandomAmount     = 200 
+	FiringDuration      = 0
+	
+	ClipSize			= 1
+	AutoReloadsClip		= Yes
+	AutoReloadWhenIdle	= 1	
+	ClipReloadTime		= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
+	ContinuousFireOne	= 0
+	ContinuousFireCoast	= GOBLIN_ARCHER_BOW_RELOADTIME_MAX 
+	
+	AntiAirborneVehicle	= Yes
+	AntiAirborneMonster	= Yes
+	HitPassengerPercentage	= 20%
+	CanBeDodged				= Yes ; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
+
+	ProjectileNugget    ; Fire Arrow
+		ProjectileTemplateName  = EvilFactionFireArrow
+		WarheadTemplateName      = GoblinArcherBowFireWarhead
+	End
+End
+
+Weapon GoblinArcherBowBombardFire_SEE       ; BALANCE Archer Weapon ;orc archer
+	AttackRange			= GOBLIN_ARCHER_BOMBARD_MAXRANGE 
+	MinimumAttackRange	= #SUBTRACT( GOBLIN_ARCHER_BOMBARD_MINRANGE 75 )
+  LeechRangeWeapon    = Yes
+	WeaponSpeed			= 300         ; dist/sec 
+	MinWeaponSpeed		= 121
+	MaxWeaponSpeed		= 400      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
+	FireFX				= FX_RohanArcherBowWeapon  
+	ScaleWeaponSpeed	= Yes ; Used for lob weapons, scales speed proportional to range
+	HitPercentage       = 0     ;Always scatter
+	ScatterRadius       = ARCHER_BOMBARD_SCATTER_RADIUS     ;When this weapon misses it can randomly miss by as much as this distance.
+	
+	AcceptableAimDelta	= 20	; prevent twitchy reaiming in horde on horde
+	DelayBetweenShots	= 0
+	PreAttackDelay      = GOBLIN_ARCHER_PREATTACKDELAY
+	PreAttackType       = PER_POSITION
+	PreAttackRandomAmount     = 200 
+	FiringDuration      = 0
+	
+	ClipSize			= 1
+	AutoReloadsClip		= Yes
+	AutoReloadWhenIdle	= 1	
+	ClipReloadTime		= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
+	ContinuousFireOne	= 0
+	ContinuousFireCoast	= GOBLIN_ARCHER_BOW_RELOADTIME_MAX 
+	
+	AntiAirborneVehicle	= Yes
+	AntiAirborneMonster	= Yes
+	HitPassengerPercentage	= 20%
+	CanBeDodged				= Yes ; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
+	NoVictimNeeded			= Yes
+	BombardType				= Yes
+
+	ProjectileNugget    ; Fire Arrow
+		ProjectileTemplateName  = EvilFactionFireArrowBombard
+		WarheadTemplateName      = GoblinArcherBowBombardFireWarhead
+	End
+
+End
+
 ;------------------------------------
 Weapon GoblinArcherBowFireWarhead
 	ProjectileCollidesWith		= ENEMIES

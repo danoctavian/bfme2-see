@@ -883,33 +883,33 @@ ExperienceLevel	WildLumberMillLevel3
 	LevelUpFx				= FX:WildLumberMillUpgrade
 End	
 
-;------------- Wild Cave -----------------
+;------------- Wild Cave ----------------- SEE!
 
 ExperienceLevel	WildCaveLevel1
 	TargetNames				= GoblinCave
-	RequiredExperience			= 1
-	ExperienceAward		  		= GOBLIN_CAVE_LVL1_EXP_AWARD	
+	RequiredExperience		= 1
+	ExperienceAward		  	= GOBLIN_CAVE_LVL1_EXP_AWARD	
 	Rank					= 1
-	Upgrades				= Upgrade_StructureLevel1
+	Upgrades					= Upgrade_StructureLevel1
 End
 	
 ExperienceLevel	WildCaveLevel2
 	TargetNames				= GoblinCave
-	RequiredExperience			= GOBLIN_CAVE_LVL2_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_CAVE_LVL2_EXP_AWARD
+	RequiredExperience		= GOBLIN_CAVE_LVL2_EXP_NEEDED
+	ExperienceAward		  	= GOBLIN_CAVE_LVL2_EXP_AWARD
 	Rank					= 2
 	AttributeModifiers			= WildCaveHitPointModLvl2 WildCaveBuildSpeedModLvl2
-	Upgrades				= Upgrade_StructureLevel2
+	Upgrades					= Upgrade_StructureLevel2
 	LevelUpFx				= FX:WildCaveUpgrade
 End
 	
 ExperienceLevel	WildCaveLevel3
 	TargetNames				= GoblinCave
-	RequiredExperience			= GOBLIN_CAVE_LVL3_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_CAVE_LVL3_EXP_AWARD
+	RequiredExperience		= GOBLIN_CAVE_LVL3_EXP_NEEDED
+	ExperienceAward		  	= GOBLIN_CAVE_LVL3_EXP_AWARD
 	Rank					= 3
 	AttributeModifiers			= WildCaveHitPointModLvl3 WildCaveBuildSpeedModLvl3
-	Upgrades				= Upgrade_StructureLevel3
+	Upgrades					= Upgrade_StructureLevel3
 	LevelUpFx				= FX:WildCaveUpgrade
 End	
 
