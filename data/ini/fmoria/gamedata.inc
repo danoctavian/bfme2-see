@@ -454,6 +454,12 @@
 #define GOBLIN_ARCHER_DAMAGE_FIRE_PIERCE    		25	;20
 #define GOBLIN_ARCHER_DAMAGE_FIRE_FLAME     		25	;20
 
+// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
+// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
+
+#define GOBLIN_ARCHER_DAMAGE_SAFIREARROWS_PIERCE    		25	;20
+#define GOBLIN_ARCHER_DAMAGE_SAFIREARROWS_FLAME     		25	;20
+
 ;#define GOBLIN_ARCHER_HORDE_VISION_RANGE       	200
 ;#define GOBLIN_ARCHER_SHROUD_RANGE             	200
 

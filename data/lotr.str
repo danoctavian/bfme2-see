@@ -32487,6 +32487,13 @@ CONTROLBAR:PoisonArrows
 "Poison Arrows"
 End
 
+// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
+// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
+
+CONTROLBAR:SAFireArrows
+"Flaming Arrows"
+End
+
 CONTROLBAR:PurchaseIsengardWargSentry
 "Build Warg Sentry"
 End
@@ -32767,6 +32774,13 @@ End
 
 CONTROLBAR:ToolTipPoisonArrows
 "Poison tipped arrows that cause damage over time \n Left click icon then left click on target"
+End
+
+// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
+// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
+
+CONTROLBAR:ToolTipSAFireArrows
+"Arrows put aflame that will cause significantly more damage \n Left click icon then left click on target"
 End
 
 CONTROLBAR:ToolTipPurchaseIsengardWargSentry

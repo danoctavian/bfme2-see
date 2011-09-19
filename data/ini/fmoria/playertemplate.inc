@@ -15,14 +15,14 @@ PlayerTemplate FactionWild
 	StartingBuilding			= WildFortress
 	
 	;------------- NO STARTING UNITS FOR YOU -------
-	;StartingUnit0 		= GoblinFighterHorde 
-	;StartingUnitOffset0 	= X:-60 Y:200 Z:0
+	StartingUnit0 		= GoblinArcherHorde 
+	StartingUnitOffset0 	= X:-60 Y:200 Z:0
 	
 	StartingUnit1 		= WildPorter 
 	StartingUnitOffset1 	= X:30 Y:215 Z:0
 	
-	StartingUnit0 				= WildPorter
-	StartingUnitOffset0 			= X:1 Y:120 Z:0
+	StartingUnit2 				= WildPorter
+	StartingUnitOffset2 			= X:1 Y:120 Z:0
 	StartingUnitTacticalWOTR		= WildPorter
 	StartingUnitTacticalWOTR		= WildPorter
 	IntrinsicSciences			= SCIENCE_EVIL

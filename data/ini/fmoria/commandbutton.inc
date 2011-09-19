@@ -393,15 +393,31 @@ CommandButton Command_SpecialAbilityBalrogWings
   InPalantir			  = Yes
 End
 
-CommandButton Command_GoblinArcherPoisonArrows
+//CommandButton Command_GoblinArcherPoisonArrows
+//	Command			= SPECIAL_POWER
+//	SpecialPower		= SpecialAbilityPoisonArrows
+//	Options			= NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
+//	ButtonImage		= BWTreasureTrove_PoisonArrows
+//	CursorName		= EvilAbilityObj
+//	InvalidCursorName	= GenericInvalid
+//	TextLabel		= CONTROLBAR:PoisonArrows
+//	DescriptLabel		= CONTROLBAR:ToolTipPoisonArrows
+//	InPalantir		= Yes
+//	ButtonBorderType    	= ACTION
+//End
+
+// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
+// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
+
+CommandButton Command_GoblinArcherSAFireArrows
 	Command			= SPECIAL_POWER
-	SpecialPower		= SpecialAbilityPoisonArrows
+	SpecialPower		= SpecialAbilitySAFireArrows
 	Options			= NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
-	ButtonImage		= BWTreasureTrove_PoisonArrows
+	ButtonImage		= BMOrcPit_FlamingArrows
 	CursorName		= EvilAbilityObj
 	InvalidCursorName	= GenericInvalid
-	TextLabel		= CONTROLBAR:PoisonArrows
-	DescriptLabel		= CONTROLBAR:ToolTipPoisonArrows
+	TextLabel		= CONTROLBAR:SAFireArrows
+	DescriptLabel		= CONTROLBAR:ToolTipSAFireArrows
 	InPalantir		= Yes
 	ButtonBorderType    	= ACTION
 End
