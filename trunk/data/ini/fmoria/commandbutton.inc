@@ -393,19 +393,6 @@ CommandButton Command_SpecialAbilityBalrogWings
   InPalantir			  = Yes
 End
 
-//CommandButton Command_GoblinArcherPoisonArrows
-//	Command			= SPECIAL_POWER
-//	SpecialPower		= SpecialAbilityPoisonArrows
-//	Options			= NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
-//	ButtonImage		= BWTreasureTrove_PoisonArrows
-//	CursorName		= EvilAbilityObj
-//	InvalidCursorName	= GenericInvalid
-//	TextLabel		= CONTROLBAR:PoisonArrows
-//	DescriptLabel		= CONTROLBAR:ToolTipPoisonArrows
-//	InPalantir		= Yes
-//	ButtonBorderType    	= ACTION
-//End
-
 // Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
 // Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
 
@@ -1183,13 +1170,25 @@ CommandButton Command_PurchaseUpgradeWildHeavyArmor
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackWildHeavyArmor
 End
-CommandButton Command_PurchaseUpgradeWildSpiderVenom //Command_PurchaseSpiderVenomForGoblinsUpgrade
+CommandButton Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade
 	Command           	= OBJECT_UPGRADE
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
 	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience
 	TextLabel         	= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
 	ButtonImage       	= BWTreasureTrove_PoisonBlades
+	ButtonBorderType  	= UPGRADE
+	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseSpiderVenomSacks
+	InPalantir	      	= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacksTechnology
+End
+CommandButton Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseSpiderVenomForGoblinsUpgrade
+	Command           	= OBJECT_UPGRADE
+	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
+	Upgrade           	= Upgrade_WildSpiderVenomSacks
+	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience
+	TextLabel         	= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
+	ButtonImage       	= BWTreasureTrove_PoisonArrows
 	ButtonBorderType  	= UPGRADE
 	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseSpiderVenomSacks
 	InPalantir	      	= Yes
@@ -1220,7 +1219,7 @@ CommandButton Command_PurchaseSpiderVenomSacksUpgrade //OBSOLETE! (This was used
 	LacksPrerequisiteLabel		= TOOLTIP:LackVenomSacksTechnology
 End
 
-CommandButton Command_PoisonedBlades //NOT USED IN SEE! (This was a poison ability for Archers)
+CommandButton Command_PoisonedBlades //NOT USED IN SEE!
 	Command				= SPECIAL_POWER
 	Options				= OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
 	SpecialPower		= SpecialAbilityGoblinFighterPoisonedBlades
@@ -1230,6 +1229,18 @@ CommandButton Command_PoisonedBlades //NOT USED IN SEE! (This was a poison abili
 	ButtonBorderType		= ACTION
 	ButtonImage			= BWTreasureTrove_PoisonBlades
 End
+//CommandButton Command_GoblinArcherPoisonArrows //NOT USED IN SEE!
+//	Command			= SPECIAL_POWER
+//	SpecialPower		= SpecialAbilityPoisonArrows
+//	Options			= NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
+//	ButtonImage		= BWTreasureTrove_PoisonArrows
+//	CursorName		= EvilAbilityObj
+//	InvalidCursorName	= GenericInvalid
+//	TextLabel		= CONTROLBAR:PoisonArrows
+//	DescriptLabel		= CONTROLBAR:ToolTipPoisonArrows
+//	InPalantir		= Yes
+//	ButtonBorderType    	= ACTION
+//End
 
 CommandButton Command_ConstructGoblinCave //???
 	Command				= DOZER_CONSTRUCT

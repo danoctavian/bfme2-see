@@ -251,7 +251,7 @@ CommandSet GoblinFighterCommandSet
 	 2 = Command_PurchaseUpgradeWildBasicTraining
 	 3 = Command_PurchaseUpgradeWildHeavyArmor
 	 ;4 = Command_PurchaseUpgradeWildForgedBlade
-	 4 = Command_PurchaseUpgradeWildSpiderVenom //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
+	 4 = Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
 	12 = Command_CaptureBuilding
 	13 = Command_AttackMove
 	14 = Command_Stop
@@ -266,10 +266,10 @@ End
 CommandSet GoblinArcherCommandSet
 	 1 = Command_ToggleStance
 	 2 = Command_ArcherBombard
-	 3 = Command_PurchaseUpgradeWildBasicTraining 
-	 4 = Command_PurchaseUpgradeWildHeavyArmor
-	 5 = Command_PurchaseUpgradeWildSpiderVenom //Command_PurchaseUpgradeWildFireArrows
-	 6 = Command_GoblinArcherSAFireArrows //Command_PurchaseUpgradePoisonArrows	 ///Wip!
+	 3 = Command_GoblinArcherSAFireArrows //Command_PurchaseUpgradePoisonArrows	 ///Wip! 
+	 4 = Command_PurchaseUpgradeWildBasicTraining 
+	 5 = Command_PurchaseUpgradeWildHeavyArmor
+	 6 = Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows
 	12 = Command_CaptureBuilding
 	13 = Command_AttackMove
 	14 = Command_Stop
