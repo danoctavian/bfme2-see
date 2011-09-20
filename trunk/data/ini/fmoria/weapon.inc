@@ -1361,7 +1361,7 @@ Weapon GoblinArcherBow       ; BALANCE Archer Weapon ;orc archer
 	ProjectileNugget	; Default arrow
 		ProjectileTemplateName  		= EvilFactionArrow
 		WarheadTemplateName     	= GoblinArcherBowWarhead
-		ForbiddenUpgradeNames   		= Upgrade_WildFireArrows ;was Upgrade_WildSpiderVenomSacks in b4.7?
+		ForbiddenUpgradeNames   		= Upgrade_WildSpiderVenomSacks //Upgrade_WildFireArrows ;was Upgrade_WildSpiderVenomSacks in b4.7?
 	End
 	
 	ProjectileNugget    ; Fire Arrow					;was commented (out) in b4.7?
@@ -1413,7 +1413,7 @@ Weapon GoblinArcherBowBombard       ; BALANCE Archer Weapon ;orc archer
 	ProjectileNugget	; Default arrow
 		ProjectileTemplateName  		= EvilFactionArrowBombard
 		WarheadTemplateName     	= GoblinArcherBowBombardWarhead
-		ForbiddenUpgradeNames   		= Upgrade_WildFireArrows
+		ForbiddenUpgradeNames   		= Upgrade_WildSpiderVenomSacks ;Upgrade_WildFireArrows
 	End
 	
 	ProjectileNugget    ; Fire Arrow
@@ -1507,9 +1507,47 @@ Weapon GoblinArcherPoisonArrowsBowWarhead
 		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
 	End
 End
+;------------------------------------------------------------------------------ SEE!
+Weapon GoblinArcherBowBombardPoisonWarhead
+	ProjectileCollidesWith		= ENEMIES
+	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
 
-// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
-// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
+  DamageNugget                       
+    Damage        			= GOBLIN_ARCHER_DAMAGE_POISON
+    Radius        			= 0.0	
+    DelayTime     			= 0
+    DamageType    			= POISON
+    DamageFXType  			= POISON
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+    AcceptDamageAdd 		= No
+    DamageScalar  			= 25% ALL -STRUCTURE
+  End
+  
+   DamageNugget                        ; A basic Nugget that just does damage
+		Damage        		= 1
+		Radius        		= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+		DamageType    		= POISON
+		DamageFXType  		= POISON
+		DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+		AcceptDamageAdd 	= No
+		DamageScalar  		= 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
+	End
+
+	
+ DamageNugget            ; A basic Nugget that just does damage
+    Damage		 			= GOBLIN_ARCHER_DAMAGE_POISON_PIERCE
+    Radius		 			= 0.0	; HitStoredTarget means we hurt the person we launched at.
+    DelayTime	 			= 0
+    DamageType	 			= PIERCE
+    DamageFXType 			= EVIL_ARROW_PIERCE
+    DeathType	 			= LASERED ;now always used instead of NORMAL (Sûl)
+  End
+	;FireLogicNugget
+	;	LogicType			= INCREASE_BURN_RATE
+	;	Radius				= ARCHER_BOMBARD_FIREARROW_BURNRADIUS //1.0
+	;	Damage				= ARCHER_BOMBARD_FIREARROW_BURNRATEINCREASE
+	;End
+End
 
 ;------------------------------------------------------------------------------
 Weapon GoblinArcherSAFireArrowsRangeFinder       ; BALANCE Archer Weapon ;goblin archer
@@ -1620,7 +1658,6 @@ Weapon GoblinArcherBowWarhead
     DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
   End
 End
-
 Weapon GoblinArcherBowBombardWarhead
   ProjectileCollidesWith 		= ENEMIES
   RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
@@ -1677,30 +1714,30 @@ Weapon GoblinArcherBowFire_SEE //Not used - using SA (Special Ability) instead! 
 	End
 End
 
-Weapon GoblinArcherBowBombardFire_SEE //Not used - using SA (Special Ability) instead! (Naz)
+Weapon GoblinArcherBowBombardPoison //GoblinArcherBowBombardFire_SEE
 	AttackRange			= GOBLIN_ARCHER_BOMBARD_MAXRANGE 
 	MinimumAttackRange	= #SUBTRACT( GOBLIN_ARCHER_BOMBARD_MINRANGE 75 )
-  LeechRangeWeapon    = Yes
-	WeaponSpeed			= 300         ; dist/sec 
+  LeechRangeWeapon    	= Yes
+	WeaponSpeed		= 300         ; dist/sec 
 	MinWeaponSpeed		= 121
 	MaxWeaponSpeed		= 400      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
 	FireFX				= FX_RohanArcherBowWeapon  
 	ScaleWeaponSpeed	= Yes ; Used for lob weapons, scales speed proportional to range
-	HitPercentage       = 0     ;Always scatter
-	ScatterRadius       = ARCHER_BOMBARD_SCATTER_RADIUS     ;When this weapon misses it can randomly miss by as much as this distance.
+	HitPercentage       	= 0     ;Always scatter
+	ScatterRadius       	= ARCHER_BOMBARD_SCATTER_RADIUS     ;When this weapon misses it can randomly miss by as much as this distance.
 	
 	AcceptableAimDelta	= 20	; prevent twitchy reaiming in horde on horde
 	DelayBetweenShots	= 0
-	PreAttackDelay      = GOBLIN_ARCHER_PREATTACKDELAY
-	PreAttackType       = PER_POSITION
+	PreAttackDelay      	= GOBLIN_ARCHER_PREATTACKDELAY
+	PreAttackType       	= PER_POSITION
 	PreAttackRandomAmount     = 200 
-	FiringDuration      = 0
+	FiringDuration      	= 0
 	
-	ClipSize			= 1
+	ClipSize				= 1
 	AutoReloadsClip		= Yes
 	AutoReloadWhenIdle	= 1	
 	ClipReloadTime		= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
-	ContinuousFireOne	= 0
+	ContinuousFireOne		= 0
 	ContinuousFireCoast	= GOBLIN_ARCHER_BOW_RELOADTIME_MAX 
 	
 	AntiAirborneVehicle	= Yes
@@ -1710,9 +1747,9 @@ Weapon GoblinArcherBowBombardFire_SEE //Not used - using SA (Special Ability) in
 	NoVictimNeeded			= Yes
 	BombardType				= Yes
 
-	ProjectileNugget    ; Fire Arrow
-		ProjectileTemplateName  = EvilFactionFireArrowBombard
-		WarheadTemplateName      = GoblinArcherBowBombardFireWarhead
+	ProjectileNugget    
+		ProjectileTemplateName  	= PoisonArrowProjectile //EvilFactionFireArrowBombard
+		WarheadTemplateName		= GoblinArcherBowBombardPoisonWarhead //GoblinArcherBowBombardFireWarhead		
 	End
 
 End
@@ -1752,13 +1789,13 @@ Weapon GoblinArcherBowFireWarhead
     DamageFXType 			= EVIL_ARROW_PIERCE
     DeathType	 			= LASERED ;now always used instead of NORMAL (Sûl)
   End
-;############################################################;Sûlherokhh mod start
+
 	FireLogicNugget
 		LogicType			= INCREASE_BURN_RATE
 		Radius				= ARCHER_REGULAR_FIREARROW_BURNRADIUS
 		Damage				= ARCHER_REGULAR_FIREARROW_BURNRATEINCREASE
 	End
-;############################################################;Sûlherokhh mod end  
+ 
 End
 ;------------------------------------------------------------------------------ SEE!
 Weapon GoblinArcherBowBombardFireWarhead
