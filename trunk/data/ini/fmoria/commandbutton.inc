@@ -1056,17 +1056,6 @@ End
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria technology 
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
-CommandButton Command_PurchaseTechnologyWildBasicTraining
-	Command				= PLAYER_UPGRADE
-	Options				= CANCELABLE
-	Upgrade				= Upgrade_TechnologyWildBasicTraining 
-	TextLabel			= CONTROLBAR:PurchaseTechnologyWildBasicTraining
-	ButtonImage			= BWTreasureTrove_BannerCarrier
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining
-	Radial				= Yes
-	InPalantir			= Yes
-End
 CommandButton Command_PurchaseTechnologyWildFireArrows
 	Command				= PLAYER_UPGRADE
 	Options				= CANCELABLE //NEED_UPGRADE CANCELABLE
@@ -1079,6 +1068,17 @@ CommandButton Command_PurchaseTechnologyWildFireArrows
 	Radial				= Yes
 	InPalantir			= Yes
 	;LacksPrerequisiteLabel	= TOOLTIP:LackLevel3TreasureTrove //Is now lvl1 Fissure!
+End
+CommandButton Command_PurchaseTechnologyWildBasicTraining
+	Command				= PLAYER_UPGRADE
+	Options				= CANCELABLE
+	Upgrade				= Upgrade_TechnologyWildBasicTraining 
+	TextLabel			= CONTROLBAR:PurchaseTechnologyWildBasicTraining
+	ButtonImage			= BWTreasureTrove_BannerCarrier
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining
+	Radial				= Yes
+	InPalantir			= Yes
 End
 CommandButton Command_PurchaseTechnologyWildForgedBlades
 	Command				= PLAYER_UPGRADE
@@ -1122,18 +1122,6 @@ End
 
 ; ------------------------------------------------------------------------------
 
-CommandButton Command_PurchaseUpgradeWildBasicTraining
-	Command				= OBJECT_UPGRADE
-	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
-	Upgrade				= Upgrade_WildBasicTraining 
-	NeededUpgrade		= Upgrade_TechnologyWildBasicTraining
-	TextLabel			= CONTROLBAR:PurchaseUpgradeWildBasicTraining
-	ButtonImage			= BWTreasureTrove_BannerCarrier
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseUpgradeWildBasicTraining
-	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackWildBasicTraining
-End
 CommandButton Command_PurchaseUpgradeWildFireArrows	
 	Command				= OBJECT_UPGRADE
 	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
@@ -1145,6 +1133,18 @@ CommandButton Command_PurchaseUpgradeWildFireArrows
 	DescriptLabel			= CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackWildFireArrows
+End
+CommandButton Command_PurchaseUpgradeWildBasicTraining
+	Command				= OBJECT_UPGRADE
+	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
+	Upgrade				= Upgrade_WildBasicTraining 
+	NeededUpgrade		= Upgrade_TechnologyWildBasicTraining
+	TextLabel			= CONTROLBAR:PurchaseUpgradeWildBasicTraining
+	ButtonImage			= BWTreasureTrove_BannerCarrier
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseUpgradeWildBasicTraining
+	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackWildBasicTraining
 End
 CommandButton Command_PurchaseUpgradeWildForgedBlade	;upgrade for units
 	Command				= OBJECT_UPGRADE
@@ -1170,7 +1170,7 @@ CommandButton Command_PurchaseUpgradeWildHeavyArmor
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackWildHeavyArmor
 End
-CommandButton Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade
+CommandButton Command_PurchaseUpgradeWildSpiderVenomBlades ;This is for Warriors!
 	Command           	= OBJECT_UPGRADE
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
@@ -1182,7 +1182,7 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpi
 	InPalantir	      	= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacksTechnology
 End
-CommandButton Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseSpiderVenomForGoblinsUpgrade
+CommandButton Command_PurchaseUpgradeWildSpiderVenomArrows ;This is for Archers!
 	Command           	= OBJECT_UPGRADE
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
@@ -1206,6 +1206,26 @@ End
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 CommandButton Command_PurchaseSpiderVenomSacksUpgrade //OBSOLETE! (This was used for Spider Riders)
 	Command           = OBJECT_UPGRADE
 	Upgrade           = Upgrade_WildSpiderVenomSacks
@@ -1219,16 +1239,16 @@ CommandButton Command_PurchaseSpiderVenomSacksUpgrade //OBSOLETE! (This was used
 	LacksPrerequisiteLabel		= TOOLTIP:LackVenomSacksTechnology
 End
 
-CommandButton Command_PoisonedBlades //NOT USED IN SEE!
-	Command				= SPECIAL_POWER
-	Options				= OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
-	SpecialPower		= SpecialAbilityGoblinFighterPoisonedBlades
-	TextLabel			= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
-	DescriptLabel			= CONTROLBAR:ToolTipSpecialAbilityGoblinFighterPoisonedBlades
-	InPalantir			= Yes
-	ButtonBorderType		= ACTION
-	ButtonImage			= BWTreasureTrove_PoisonBlades
-End
+//CommandButton Command_PoisonedBlades //NOT USED IN SEE!
+//	Command				= SPECIAL_POWER
+//	Options				= OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
+//	SpecialPower		= SpecialAbilityGoblinFighterPoisonedBlades
+//	TextLabel			= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
+//	DescriptLabel			= CONTROLBAR:ToolTipSpecialAbilityGoblinFighterPoisonedBlades
+//	InPalantir			= Yes
+//	ButtonBorderType		= ACTION
+//	ButtonImage			= BWTreasureTrove_PoisonBlades
+//End
 //CommandButton Command_GoblinArcherPoisonArrows //NOT USED IN SEE!
 //	Command			= SPECIAL_POWER
 //	SpecialPower		= SpecialAbilityPoisonArrows

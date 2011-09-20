@@ -363,15 +363,3 @@ Upgrade Upgrade_WildSpiderVenomSacks
 	SkirmishAIHeuristic			= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
 
-
-
-
-
-
-
-
-
-
-
-
-
