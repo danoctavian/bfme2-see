@@ -32487,7 +32487,7 @@ CONTROLBAR:PoisonArrows
 "Poison Arrows"
 End
 
-CONTROLBAR:SAFireArrows
+CONTROLBAR:GenericFireArrows
 "Flaming Arrows"
 End
 
@@ -32544,7 +32544,9 @@ End
 CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
 "Poisoned Blades"
 End
-
+CONTROLBAR:SpecialAbilityGoblinFighterPoisonedArrows
+"Poisoned Arrows"
+End
 
 
 CONTROLBAR:SpecialAbilityOilBarrels
@@ -32773,7 +32775,7 @@ CONTROLBAR:ToolTipPoisonArrows
 "Poison tipped arrows that cause damage over time \n Left click icon then left click on target"
 End
 
-CONTROLBAR:ToolTipSAFireArrows
+CONTROLBAR:ToolTipGenericFireArrows
 "Powerful single shot ability with arrows put aflame \n Causes significantly more damage \n Left click icon then left click on target"
 End
 

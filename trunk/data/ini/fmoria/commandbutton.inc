@@ -393,9 +393,6 @@ CommandButton Command_SpecialAbilityBalrogWings
   InPalantir			  = Yes
 End
 
-// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
-// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
-
 CommandButton Command_GoblinArcherSAFireArrows
 	Command			= SPECIAL_POWER
 	SpecialPower		= SpecialAbilitySAFireArrows
@@ -1187,7 +1184,7 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenomArrows ;This is for Archers!
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
 	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience
-	TextLabel         	= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
+	TextLabel         	= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedArrows
 	ButtonImage       	= BWTreasureTrove_PoisonArrows
 	ButtonBorderType  	= UPGRADE
 	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseSpiderVenomSacks

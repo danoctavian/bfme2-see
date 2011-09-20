@@ -260,13 +260,10 @@ CommandSet GoblinFighterCommandSet
 	18 = Command_SetStanceHoldGround
 End
 
-// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
-// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
-
 CommandSet GoblinArcherCommandSet
 	 1 = Command_ToggleStance
 	 2 = Command_ArcherBombard
-	 3 = Command_GoblinArcherSAFireArrows //Command_PurchaseUpgradePoisonArrows	 ///Wip! 
+	 3 = Command_GoblinArcherSAFireArrows //Command_GenericArcherFlamingArrows //Command_GoblinArcherSAFireArrows //Command_PurchaseUpgradePoisonArrows	 ///Wip! 
 	 4 = Command_PurchaseUpgradeWildBasicTraining 
 	 5 = Command_PurchaseUpgradeWildHeavyArmor
 	 6 = Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows

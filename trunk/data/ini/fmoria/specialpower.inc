@@ -28,13 +28,10 @@ SpecialPower SpecialAbilityFireWhip
 	ReloadTime		= 30000 ;5000
 End
 
-// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
-// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
-
 ;------------------------------------------------------------------------------
 SpecialPower SpecialAbilitySAFireArrows
 	Enum						= SPECIAL_WOUND_ARROW
 	ReloadTime					= 45000
-	InitiateSound				= PoisonArrows
+	InitiateSound	= PoisonArrows
 	UnitSpecificSoundToUseAsInitiateIntendToDoVoice = VoiceInitiatePoisonArrowAttack
 End
