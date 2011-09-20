@@ -32487,9 +32487,6 @@ CONTROLBAR:PoisonArrows
 "Poison Arrows"
 End
 
-// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
-// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
-
 CONTROLBAR:SAFireArrows
 "Flaming Arrows"
 End
@@ -32776,11 +32773,8 @@ CONTROLBAR:ToolTipPoisonArrows
 "Poison tipped arrows that cause damage over time \n Left click icon then left click on target"
 End
 
-// Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
-// Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
-
 CONTROLBAR:ToolTipSAFireArrows
-"Arrows put aflame that will cause significantly more damage \n Left click icon then left click on target"
+"Powerful single shot ability with arrows put aflame \n Causes significantly more damage \n Left click icon then left click on target"
 End
 
 CONTROLBAR:ToolTipPurchaseIsengardWargSentry
@@ -48971,7 +48965,7 @@ CONTROLBAR:ToolTipPurchaseSpiderPoisonBlades
 "Upgrades this horde with Blade Poison \n Inflicts poison to enemies causing damage over time"
 END
 TOOLTIP:LackPoisonBladesTechnology
-"Research upgrade at Treasure Trove to enable this equipment \n When equipped, inflicts poison to enemies causing damage over time"
+"Research upgrade at Treasure Trove to enable this equipment \n When equipped, inflicts poison \n to enemies, causing damage over time"
 END
 // ####################################################################################################
 
