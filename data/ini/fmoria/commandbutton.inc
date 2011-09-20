@@ -393,18 +393,18 @@ CommandButton Command_SpecialAbilityBalrogWings
   InPalantir			  = Yes
 End
 
-CommandButton Command_GoblinArcherSAFireArrows
-	Command			= SPECIAL_POWER
-	SpecialPower		= SpecialAbilitySAFireArrows
-	Options			= NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
-	ButtonImage		= BMOrcPit_FlamingArrows
-	CursorName		= EvilAbilityObj
-	InvalidCursorName	= GenericInvalid
-	TextLabel		= CONTROLBAR:SAFireArrows
-	DescriptLabel		= CONTROLBAR:ToolTipSAFireArrows
-	InPalantir		= Yes
-	ButtonBorderType    	= ACTION
-End
+//CommandButton Command_GoblinArcherSAFireArrows
+//	Command				= SPECIAL_POWER
+//	SpecialPower		= SpecialAbilitySAFireArrows
+//	Options				= NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
+//	ButtonImage			= BMOrcPit_FlamingArrows
+//	CursorName			= EvilAbilityObj
+//	InvalidCursorName		= GenericInvalid
+//	TextLabel			= CONTROLBAR:SAFireArrows
+//	DescriptLabel			= CONTROLBAR:ToolTipSAFireArrows
+//	InPalantir			= Yes
+//	ButtonBorderType    	= ACTION
+//End
 
 CommandButton Command_SpecialAbilityWildmanPillage
 	Command			= SPECIAL_POWER

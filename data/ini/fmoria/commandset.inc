@@ -263,7 +263,7 @@ End
 CommandSet GoblinArcherCommandSet
 	 1 = Command_ToggleStance
 	 2 = Command_ArcherBombard
-	 3 = Command_GoblinArcherSAFireArrows //Command_GenericArcherFlamingArrows //Command_GoblinArcherSAFireArrows //Command_PurchaseUpgradePoisonArrows	 ///Wip! 
+	 3 = Command_GenericArcherFlamingArrows //Command_GoblinArcherSAFireArrows //Command_PurchaseUpgradePoisonArrows	 ///Wip! 
 	 4 = Command_PurchaseUpgradeWildBasicTraining 
 	 5 = Command_PurchaseUpgradeWildHeavyArmor
 	 6 = Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows
