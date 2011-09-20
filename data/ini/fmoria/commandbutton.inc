@@ -518,25 +518,7 @@ CommandButton Command_UnpackExplicitWildLumbermill
   Radial           = Yes
 End
 
-CommandButton Command_ConstructGoblinCave
-	Command				= DOZER_CONSTRUCT
-	Object				= GoblinCave
-	TextLabel			= CONTROLBAR:ConstructGoblinCave
-	ButtonImage			= BWCave
-	ButtonBorderType		= BUILD											
-	DescriptLabel			= CONTROLBAR:ToolTipGoblinCave
-	Radial				= Yes  
-End
 
-CommandButton Command_ConstructGoblinFissure
-	Command				= DOZER_CONSTRUCT
-	Object				= GoblinFissure
-	TextLabel			= CONTROLBAR:ConstructGoblinFissure
-	ButtonImage			= BWFissure
-	ButtonBorderType		= BUILD 
-	DescriptLabel			= CONTROLBAR:ToolTipGoblinFissure
-	Radial				= Yes  
-End
 
 CommandButton Command_ConstructWildHillTrollHorde
 	Command				= UNIT_BUILD
@@ -1083,8 +1065,9 @@ End
 
 
 
-
-
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria technology 
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 CommandButton Command_PurchaseTechnologyWildBasicTraining
 	Command				= PLAYER_UPGRADE
@@ -1150,7 +1133,7 @@ CommandButton Command_PurchaseTechnologyWildSpiderVenom //Command_PurchaseSpider
 	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacks
 End
 
-
+; ------------------------------------------------------------------------------
 
 CommandButton Command_PurchaseUpgradeWildBasicTraining
 	Command				= OBJECT_UPGRADE
@@ -1213,6 +1196,7 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenom //Command_PurchaseSpiderVen
 	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacksTechnology
 End
 
+; ------------------------------------------------------------------------------
 
 
 
@@ -1223,26 +1207,7 @@ End
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-CommandButton Command_PurchaseSpiderVenomSacksUpgrade //OBSOLETE!
+CommandButton Command_PurchaseSpiderVenomSacksUpgrade //OBSOLETE! (This was used for Spider Riders)
 	Command           = OBJECT_UPGRADE
 	Upgrade           = Upgrade_WildSpiderVenomSacks
 	Options			  = CANCELABLE NEED_UPGRADE	OK_FOR_MULTI_SELECT
@@ -1255,7 +1220,7 @@ CommandButton Command_PurchaseSpiderVenomSacksUpgrade //OBSOLETE!
 	LacksPrerequisiteLabel		= TOOLTIP:LackVenomSacksTechnology
 End
 
-CommandButton Command_PoisonedBlades //NOT USED IN SEE!
+CommandButton Command_PoisonedBlades //NOT USED IN SEE! (This was a poison ability for Archers)
 	Command				= SPECIAL_POWER
 	Options				= OK_FOR_MULTI_EXECUTE OK_FOR_MULTI_SELECT
 	SpecialPower		= SpecialAbilityGoblinFighterPoisonedBlades
@@ -1264,5 +1229,24 @@ CommandButton Command_PoisonedBlades //NOT USED IN SEE!
 	InPalantir			= Yes
 	ButtonBorderType		= ACTION
 	ButtonImage			= BWTreasureTrove_PoisonBlades
+End
+
+CommandButton Command_ConstructGoblinCave //???
+	Command				= DOZER_CONSTRUCT
+	Object				= GoblinCave
+	TextLabel			= CONTROLBAR:ConstructGoblinCave
+	ButtonImage			= BWCave
+	ButtonBorderType		= BUILD											
+	DescriptLabel			= CONTROLBAR:ToolTipGoblinCave
+	Radial				= Yes  
+End
+CommandButton Command_ConstructGoblinFissure //???
+	Command				= DOZER_CONSTRUCT
+	Object				= GoblinFissure
+	TextLabel			= CONTROLBAR:ConstructGoblinFissure
+	ButtonImage			= BWFissure
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipGoblinFissure
+	Radial				= Yes  
 End
 

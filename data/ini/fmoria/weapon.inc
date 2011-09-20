@@ -1321,100 +1321,112 @@ End
 
 
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon GoblinArcherBow       ; BALANCE Archer Weapon ;orc archer
-	AttackRange			= GOBLIN_ARCHER_RANGE   ;Horde member so it needs to be bigger than the horde weapon attack range.
+	AttackRange				= GOBLIN_ARCHER_RANGE   ;Horde member so it needs to be bigger than the horde weapon attack range.
    
-   	RangeBonusMinHeight      = 30 ;	= 10
-	RangeBonus		= 1
-	RangeBonusPerFoot	= #MULTIPLY( GOBLIN_ARCHER_RANGE .003 )
+   	RangeBonusMinHeight      = 30 ;Was 10 in Beta 4.7
+	RangeBonus				= 1
+	RangeBonusPerFoot		= #MULTIPLY( GOBLIN_ARCHER_RANGE .01 ) //#MULTIPLY( GOBLIN_ARCHER_RANGE .003 )
    
    
-    LeechRangeWeapon    = Yes
+    LeechRangeWeapon    	= Yes
 	WeaponSpeed			= 300         ; dist/sec 
-	MinWeaponSpeed		= 121
-	MaxWeaponSpeed		= 400      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
-	FireFX				= FX_RohanArcherBowWeapon  
-	ScaleWeaponSpeed	= Yes ; Used for lob weapons, scales speed proportional to range
-	HitPercentage		= 100     ;When this weapon is used it will hit exactly 50% of the time.
-	ScatterRadius		= 20.0     ;When this weapon misses it can randomly miss by as much as this distance.
+	MinWeaponSpeed			= 121
+	MaxWeaponSpeed			= 400      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
+	FireFX					= FX_RohanArcherBowWeapon  
+	ScaleWeaponSpeed		= Yes ; Used for lob weapons, scales speed proportional to range
+	HitPercentage				= ARCHER_WEAK_HITPERCENTAGE //100     ;When this weapon is used it will hit exactly 50% of the time.
+	ScatterRadius				= ARCHER_WEAK_SCATTERRADIUS //20.0     ;When this weapon misses it can randomly miss by as much as this distance.
 	
-	AcceptableAimDelta	= 20	; prevent twitchy reaiming in horde on horde
-	DelayBetweenShots	= 0
-	PreAttackDelay      = GOBLIN_ARCHER_PREATTACKDELAY
-	PreAttackType       = PER_POSITION
-	PreAttackRandomAmount     = 200 
-	FiringDuration      = 0
+	AcceptableAimDelta		= 20	; prevent twitchy reaiming in horde on horde
+	DelayBetweenShots		= 0
+	PreAttackDelay      		= GOBLIN_ARCHER_PREATTACKDELAY
+	PreAttackType       		= PER_POSITION
+	PreAttackRandomAmount	= 200 
+	FiringDuration      		= 0
 	
-	ClipSize			= 1
-	AutoReloadsClip		= Yes
-	AutoReloadWhenIdle	= 1	
-	ClipReloadTime		= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
-	ContinuousFireOne	= 0
-	ContinuousFireCoast	= GOBLIN_ARCHER_BOW_RELOADTIME_MAX 
+	ClipSize					= 1
+	AutoReloadsClip			= Yes
+	AutoReloadWhenIdle		= 1	
+	ClipReloadTime			= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
+	ContinuousFireOne			= 0
+	ContinuousFireCoast		= GOBLIN_ARCHER_BOW_RELOADTIME_MAX 
 	
-	AntiAirborneVehicle	= Yes
-	AntiAirborneMonster	= Yes
+	AntiAirborneVehicle		= Yes
+	AntiAirborneMonster		= Yes
 	HitPassengerPercentage	= 20%
 	CanBeDodged				= Yes ; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
 
 	ProjectileNugget	; Default arrow
-		ProjectileTemplateName  = EvilFactionArrow
-		WarheadTemplateName     = GoblinArcherBowWarhead
-		ForbiddenUpgradeNames   = Upgrade_WildFireArrows
+		ProjectileTemplateName  		= EvilFactionArrow
+		WarheadTemplateName     	= GoblinArcherBowWarhead
+		ForbiddenUpgradeNames   		= Upgrade_WildFireArrows ;was Upgrade_WildSpiderVenomSacks in b4.7?
 	End
 	
-	ProjectileNugget    ; Fire Arrow
-		ProjectileTemplateName  = EvilFactionFireArrow
-		WarheadTemplateName      = GoblinArcherBowFireWarhead
-		RequiredUpgradeNames     = Upgrade_WildFireArrows
+	ProjectileNugget    ; Fire Arrow					;was commented (out) in b4.7?
+		ProjectileTemplateName  		= EvilFactionFireArrow
+		WarheadTemplateName      	= GoblinArcherBowFireWarhead
+		RequiredUpgradeNames     	= Upgrade_WildFireArrows
 	End
+	
+	ProjectileNugget    ; Poison Arrow				//Added for SEE!
+		ProjectileTemplateName		= PoisonArrowProjectile
+		WarheadTemplateName			= GoblinArcherPoisonArrowsBowWarhead
+		RequiredUpgradeNames     	= Upgrade_WildSpiderVenomSacks
+	End	
 End
-
+;------------------------------------------------------------------------------ SEE!
 Weapon GoblinArcherBowBombard       ; BALANCE Archer Weapon ;orc archer
-	AttackRange			= GOBLIN_ARCHER_BOMBARD_MAXRANGE 
-	MinimumAttackRange	= #SUBTRACT( GOBLIN_ARCHER_BOMBARD_MINRANGE 75 )
-    LeechRangeWeapon    = Yes
+	AttackRange				= GOBLIN_ARCHER_BOMBARD_MAXRANGE 
+	MinimumAttackRange		= #SUBTRACT( GOBLIN_ARCHER_BOMBARD_MINRANGE 75 )
+    LeechRangeWeapon    	= Yes
 	WeaponSpeed			= 300         ; dist/sec 
-	MinWeaponSpeed		= 121
-	MaxWeaponSpeed		= 400      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
-	FireFX				= FX_RohanArcherBowWeapon  
-	ScaleWeaponSpeed	= Yes ; Used for lob weapons, scales speed proportional to range
-	HitPercentage       = 0     ;Always scatter
-	ScatterRadius       = ARCHER_BOMBARD_SCATTER_RADIUS     ;When this weapon misses it can randomly miss by as much as this distance.
+	MinWeaponSpeed			= 121
+	MaxWeaponSpeed			= 400      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
+	FireFX					= FX_RohanArcherBowWeapon  
+	ScaleWeaponSpeed		= Yes ; Used for lob weapons, scales speed proportional to range
+	HitPercentage       		= 0     ;Always scatter
+	ScatterRadius       		= ARCHER_BOMBARD_SCATTER_RADIUS     ;When this weapon misses it can randomly miss by as much as this distance.
 	
-	AcceptableAimDelta	= 20	; prevent twitchy reaiming in horde on horde
-	DelayBetweenShots	= 0
-	PreAttackDelay      = GOBLIN_ARCHER_PREATTACKDELAY
-	PreAttackType       = PER_POSITION
-	PreAttackRandomAmount     = 200 
-	FiringDuration      = 0
+	AcceptableAimDelta		= 20	; prevent twitchy reaiming in horde on horde
+	DelayBetweenShots		= 0
+	PreAttackDelay      		= GOBLIN_ARCHER_PREATTACKDELAY
+	PreAttackType       		= PER_POSITION
+	PreAttackRandomAmount	= 200 
+	FiringDuration      		= 0
 	
-	ClipSize			= 1
-	AutoReloadsClip		= Yes
-	AutoReloadWhenIdle	= 1	
-	ClipReloadTime		= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
-	ContinuousFireOne	= 0
-	ContinuousFireCoast	= GOBLIN_ARCHER_BOW_RELOADTIME_MAX 
+	ClipSize					= 1
+	AutoReloadsClip			= Yes
+	AutoReloadWhenIdle		= 1	
+	ClipReloadTime			= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
+	ContinuousFireOne			= 0
+	ContinuousFireCoast		= GOBLIN_ARCHER_BOW_RELOADTIME_MAX 
 	
-	AntiAirborneVehicle	= Yes
-	AntiAirborneMonster	= Yes
+	AntiAirborneVehicle		= Yes
+	AntiAirborneMonster		= Yes
 	HitPassengerPercentage	= 20%
 	CanBeDodged				= Yes ; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
 	NoVictimNeeded			= Yes
 	BombardType				= Yes
 
 	ProjectileNugget	; Default arrow
-		ProjectileTemplateName  = EvilFactionArrowBombard
-		WarheadTemplateName     = GoblinArcherBowBombardWarhead
-		ForbiddenUpgradeNames   = Upgrade_WildFireArrows
+		ProjectileTemplateName  		= EvilFactionArrowBombard
+		WarheadTemplateName     	= GoblinArcherBowBombardWarhead
+		ForbiddenUpgradeNames   		= Upgrade_WildFireArrows
 	End
 	
 	ProjectileNugget    ; Fire Arrow
-		ProjectileTemplateName  = EvilFactionFireArrowBombard
-		WarheadTemplateName      = GoblinArcherBowBombardFireWarhead
-		RequiredUpgradeNames     = Upgrade_WildFireArrows
+		ProjectileTemplateName  		= EvilFactionFireArrowBombard
+		WarheadTemplateName      	= GoblinArcherBowBombardFireWarhead
+		RequiredUpgradeNames     	= Upgrade_WildFireArrows
 	End
+	
+	ProjectileNugget    ; Poison Arrow
+		ProjectileTemplateName		= PoisonArrowProjectileBombard_SEE
+		WarheadTemplateName			= GoblinArcherPoisonArrowsBowWarhead
+		RequiredUpgradeNames     	= Upgrade_WildSpiderVenomSacks
+	End	
 End
 
 //;------------------------------------------------------------------------------
@@ -1434,68 +1446,67 @@ End
 //	End
 //End
 //
-//;------------------------------------------------------------------------------
-//Weapon GoblinArcherPoisonArrows       ; BALANCE Archer Weapon ;goblin archer
-//	AttackRange					= GOBLIN_ARCHER_RANGE	;Horde member so it needs to be bigger than the horde weapon attack range
-//	LeechRangeWeapon			= Yes
-//	WeaponSpeed					= 300					; dist/sec
-//	MinWeaponSpeed				= 121
-//	MaxWeaponSpeed				= 400
-//	FireFX						= FX_RohanArcherBowWeapon
-//	ScaleWeaponSpeed			= Yes					; Used for lob weapons, scales speed proportional to range
-//	HitPercentage				= 100					;When this weapon is used it will hit exactly 50% of the time
-//	ScatterRadius				= 20.0					;When this weapon misses it can randomly miss by as much as this distance
-//	CanBeDodged					= Yes					; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
-//	
-//	DelayBetweenShots			= 0
-//	PreAttackDelay				= GOBLIN_ARCHER_PREATTACKDELAY
-//	PreAttackType				= PER_POSITION
-//	PreAttackRandomAmount		= 200
-//	FiringDuration				= 0
-//	
-//	ClipSize					= 1
-//	AutoReloadsClip				= Yes
-//	AutoReloadWhenIdle			= 1
-//	ClipReloadTime				= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
-//	
-//	AntiAirborneVehicle			= Yes
-//	AntiAirborneMonster			= Yes
-//	HitPassengerPercentage		= 20%
-//
-//	ProjectileNugget
-//		ProjectileTemplateName	= PoisonArrowProjectile
-//		WarheadTemplateName		= GoblinArcherPoisonArrowsBowWarhead
-//	End
-//End
-//
-//;-----------------------------------
-//Weapon GoblinArcherPoisonArrowsBowWarhead
-//	ProjectileCollidesWith	= ENEMIES
-//	RadiusDamageAffects		= ENEMIES NOT_SIMILAR
-//	HitStoredTarget			= Yes
-//	DamageNugget
-//		Damage				= GOBLIN_ARCHER_DAMAGE
-//		Radius				= 0.0
-//		DelayTime			= 0
-//		DamageType			= PIERCE
-//		DamageFXType		= EVIL_ARROW_PIERCE
-//		DeathType			= NORMAL
-//	End
-//	
-//	DOTNugget
-//  		SpecialObjectFilter = ALL -STRUCTURE
-//		AcceptDamageAdd		= No
-//		Damage				= 2
-//		Radius				= 0.0
-//		DelayTime			= 0
-//		DamageType			= POISON
-//		DamageFXType		= POISON
-//		DeathType			= NORMAL
-//		DamageInterval		= 1000	; every second ...
-//		DamageDuration		= 15000	; ... for 15 seconds
-//		SpecialObjectFilter	= AFFECTED_BY_POISON_OBJECTFILTER
-//	End
-//End
+;------------------------------------------------------------------------------ SEE!
+Weapon GoblinArcherPoisonArrows       ; BALANCE Archer Weapon ;goblin archer
+	AttackRange				= GOBLIN_ARCHER_RANGE	;Horde member so it needs to be bigger than the horde weapon attack range
+	LeechRangeWeapon		= Yes
+	WeaponSpeed			= 300					; dist/sec
+	MinWeaponSpeed			= 121
+	MaxWeaponSpeed			= 400
+	FireFX					= FX_RohanArcherBowWeapon
+	ScaleWeaponSpeed		= Yes					; Used for lob weapons, scales speed proportional to range
+	HitPercentage				= 100					;When this weapon is used it will hit exactly 50% of the time
+	ScatterRadius				= 20.0					;When this weapon misses it can randomly miss by as much as this distance
+	CanBeDodged				= Yes					; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
+	
+	DelayBetweenShots		= 0
+	PreAttackDelay			= GOBLIN_ARCHER_PREATTACKDELAY
+	PreAttackType			= PER_POSITION
+	PreAttackRandomAmount	= 200
+	FiringDuration				= 0
+	
+	ClipSize					= 1
+	AutoReloadsClip			= Yes
+	AutoReloadWhenIdle		= 1
+	ClipReloadTime			= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
+	
+	AntiAirborneVehicle		= Yes
+	AntiAirborneMonster		= Yes
+	HitPassengerPercentage	= 20%
+
+	ProjectileNugget
+		ProjectileTemplateName	= PoisonArrowProjectile
+		WarheadTemplateName		= GoblinArcherPoisonArrowsBowWarhead
+	End
+End
+;------------------------------------------------------------------------------ SEE!
+Weapon GoblinArcherPoisonArrowsBowWarhead
+	ProjectileCollidesWith		= ENEMIES
+	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	;HitStoredTarget			= Yes
+	DamageNugget
+		Damage				= GOBLIN_ARCHER_DAMAGE
+		Radius				= 0.0
+		DelayTime			= 0
+		DamageType			= PIERCE
+		DamageFXType		= EVIL_ARROW_PIERCE
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+	End
+	
+	DOTNugget
+  		SpecialObjectFilter 	= ALL -STRUCTURE
+		AcceptDamageAdd		= No
+		Damage				= GOBLIN_ARCHER_DAMAGE_POISON //2
+		Radius				= 0.0
+		DelayTime			= 0
+		DamageType			= POISON
+		DamageFXType		= POISON
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageInterval		= 1000	; every second ...
+		DamageDuration		= 15000	; ... for 15 seconds
+		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
+	End
+End
 
 // Sûl was lazy as always so the new POISON ARROWS UPGRADE for the Moria Faction is referenced as the old FIRE ARROWS UPGRADE.
 // Therefore the FIRE ARROWS ABILITY is referenced as SAFIREARROWS in the coding.
@@ -1553,73 +1564,79 @@ End
 
 ;-----------------------------------
 Weapon GoblinArcherSAFireArrowsBowWarhead
-	ProjectileCollidesWith	= ENEMIES
-	RadiusDamageAffects		= ENEMIES NOT_SIMILAR
+	ProjectileCollidesWith		= ENEMIES
+	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
 	HitStoredTarget			= Yes
   DamageNugget                       
-    Damage        = GOBLIN_ARCHER_DAMAGE_SAFIREARROWS_FLAME
-    Radius        = 0.0	
-    DelayTime     = 0
-    DamageType    = FLAME
-    DamageFXType  = EVIL_ARROW_PIERCE
-    DeathType     = BURNED
-    AcceptDamageAdd = No
-    DamageScalar  = 25% ALL -STRUCTURE
+    Damage        			= GOBLIN_ARCHER_DAMAGE_SAFIREARROWS_FLAME
+    Radius        			= 0.0	
+    DelayTime     			= 0
+    DamageType    			= FLAME
+    DamageFXType  			= EVIL_ARROW_PIERCE
+    DeathType     			= BURNED
+    AcceptDamageAdd 		= No
+    DamageScalar  			= 25% ALL -STRUCTURE
   End
   
    DamageNugget                        ; A basic Nugget that just does damage
-		Damage        = 1
-		Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-		DamageType    = FLAME
-		DamageFXType  = FLAME
-		DeathType     = BURNED
-		AcceptDamageAdd = No
-		DamageScalar  = 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
+		Damage        		= 1
+		Radius        		= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+		DamageType    		= FLAME
+		DamageFXType  		= FLAME
+		DeathType     		= BURNED
+		AcceptDamageAdd 	= No
+		DamageScalar  		= 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
 	End
 	
  DamageNugget            ; A basic Nugget that just does damage
-    Damage		 = GOBLIN_ARCHER_DAMAGE_SAFIREARROWS_PIERCE
-    Radius		 = 0.0	; HitStoredTarget means we hurt the person we launched at.
-    DelayTime	 = 0
-    DamageType	 = PIERCE
-    DamageFXType = EVIL_ARROW_PIERCE
-    DeathType	 = NORMAL
+    Damage		 			= GOBLIN_ARCHER_DAMAGE_SAFIREARROWS_PIERCE
+    Radius		 			= 0.0	; HitStoredTarget means we hurt the person we launched at.
+    DelayTime	 			= 0
+    DamageType	 			= PIERCE
+    DamageFXType 			= EVIL_ARROW_PIERCE
+    DeathType	 			= LASERED ;now always used instead of NORMAL (Sûl)
   End
+
+	FireLogicNugget
+		LogicType			= INCREASE_BURN_RATE
+		Radius				= ARCHER_REGULAR_FIREARROW_BURNRADIUS
+		Damage				= ARCHER_REGULAR_FIREARROW_BURNRATEINCREASE
+	End
+ 
 End
 
 
-
-;-----------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon GoblinArcherBowWarhead
-  ProjectileCollidesWith = ENEMIES
-  RadiusDamageAffects = ENEMIES NOT_SIMILAR 
-  HitStoredTarget = Yes	; Always hits initial target.
+  ProjectileCollidesWith 		= ENEMIES
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES 
+  ;HitStoredTarget = Yes	; Always hits initial target.
   DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = GOBLIN_ARCHER_DAMAGE
-    Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-    DelayTime     = 0
-    DamageType    = PIERCE
-    DamageFXType  = EVIL_ARROW_PIERCE
-    DeathType     = NORMAL
+    Damage        			= GOBLIN_ARCHER_DAMAGE
+    Radius        			= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+    DelayTime     			= 0
+    DamageType    			= PIERCE
+    DamageFXType  			= EVIL_ARROW_PIERCE
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
   End
 End
 
 Weapon GoblinArcherBowBombardWarhead
-  ProjectileCollidesWith = ENEMIES
-  RadiusDamageAffects = ENEMIES NOT_SIMILAR 
+  ProjectileCollidesWith 		= ENEMIES
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
   DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = GOBLIN_ARCHER_DAMAGE
-    Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-    DelayTime     = 0
-    DamageType    = PIERCE
-    DamageFXType  = EVIL_ARROW_PIERCE
-    DeathType     = NORMAL
+    Damage        			= GOBLIN_ARCHER_DAMAGE
+    Radius        			= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+    DelayTime     			= 0
+    DamageType    			= PIERCE
+    DamageFXType  			= EVIL_ARROW_PIERCE
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
   End
 End
 
 
 ;------------------------------------------------------------------------------
-Weapon GoblinArcherBowFire_SEE       ; BALANCE Archer Weapon ;orc archer
+Weapon GoblinArcherBowFire_SEE //Not used - using SA (Special Ability) instead! (Naz)
 	AttackRange			= GOBLIN_ARCHER_RANGE   ;Horde member so it needs to be bigger than the horde weapon attack range.
    
   RangeBonusMinHeight	= 10
@@ -1660,7 +1677,7 @@ Weapon GoblinArcherBowFire_SEE       ; BALANCE Archer Weapon ;orc archer
 	End
 End
 
-Weapon GoblinArcherBowBombardFire_SEE       ; BALANCE Archer Weapon ;orc archer
+Weapon GoblinArcherBowBombardFire_SEE //Not used - using SA (Special Ability) instead! (Naz)
 	AttackRange			= GOBLIN_ARCHER_BOMBARD_MAXRANGE 
 	MinimumAttackRange	= #SUBTRACT( GOBLIN_ARCHER_BOMBARD_MINRANGE 75 )
   LeechRangeWeapon    = Yes
@@ -1700,187 +1717,194 @@ Weapon GoblinArcherBowBombardFire_SEE       ; BALANCE Archer Weapon ;orc archer
 
 End
 
-;------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon GoblinArcherBowFireWarhead
 	ProjectileCollidesWith		= ENEMIES
-	RadiusDamageAffects			= ENEMIES NOT_SIMILAR 
-	HitStoredTarget				= Yes	; Always hits initial target.
+	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	;HitStoredTarget			= Yes	; Always hits initial target.
 
   DamageNugget                       
-    Damage        = GOBLIN_ARCHER_DAMAGE_FIRE_FLAME
-    Radius        = 0.0	
-    DelayTime     = 0
-    DamageType    = FLAME
-    DamageFXType  = EVIL_ARROW_PIERCE
-    DeathType     = BURNED
-    AcceptDamageAdd = No
-    DamageScalar  = 25% ALL -STRUCTURE
+    Damage        			= GOBLIN_ARCHER_DAMAGE_FIRE_FLAME
+    Radius        			= 0.0	
+    DelayTime     			= 0
+    DamageType    			= FLAME
+    DamageFXType  			= EVIL_ARROW_PIERCE
+    DeathType     			= BURNED
+    AcceptDamageAdd 		= No
+    DamageScalar  			= 25% ALL -STRUCTURE
   End
   
    DamageNugget                        ; A basic Nugget that just does damage
-		Damage        = 1
-		Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-		DamageType    = FLAME
-		DamageFXType  = FLAME
-		DeathType     = BURNED
-		AcceptDamageAdd = No
-		DamageScalar  = 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
+		Damage        		= 1
+		Radius        		= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+		DamageType    		= FLAME
+		DamageFXType  		= FLAME
+		DeathType     		= BURNED
+		AcceptDamageAdd 	= No
+		DamageScalar  		= 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
 	End
 	
  DamageNugget            ; A basic Nugget that just does damage
-    Damage		 = GOBLIN_ARCHER_DAMAGE_FIRE_PIERCE
-    Radius		 = 0.0	; HitStoredTarget means we hurt the person we launched at.
-    DelayTime	 = 0
-    DamageType	 = PIERCE
-    DamageFXType = EVIL_ARROW_PIERCE
-    DeathType	 = NORMAL
+    Damage		 			= GOBLIN_ARCHER_DAMAGE_FIRE_PIERCE
+    Radius		 			= 0.0	; HitStoredTarget means we hurt the person we launched at.
+    DelayTime	 			= 0
+    DamageType	 			= PIERCE
+    DamageFXType 			= EVIL_ARROW_PIERCE
+    DeathType	 			= LASERED ;now always used instead of NORMAL (Sûl)
   End
+;############################################################;Sûlherokhh mod start
+	FireLogicNugget
+		LogicType			= INCREASE_BURN_RATE
+		Radius				= ARCHER_REGULAR_FIREARROW_BURNRADIUS
+		Damage				= ARCHER_REGULAR_FIREARROW_BURNRATEINCREASE
+	End
+;############################################################;Sûlherokhh mod end  
 End
-
+;------------------------------------------------------------------------------ SEE!
 Weapon GoblinArcherBowBombardFireWarhead
 	ProjectileCollidesWith		= ENEMIES
-	RadiusDamageAffects			= ENEMIES NOT_SIMILAR 
+	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
 
   DamageNugget                       
-    Damage        = GOBLIN_ARCHER_DAMAGE_FIRE_FLAME
-    Radius        = 0.0	
-    DelayTime     = 0
-    DamageType    = FLAME
-    DamageFXType  = EVIL_ARROW_PIERCE
-    DeathType     = BURNED
-    AcceptDamageAdd = No
-    DamageScalar  = 25% ALL -STRUCTURE
+    Damage        			= GOBLIN_ARCHER_DAMAGE_FIRE_FLAME
+    Radius        			= 0.0	
+    DelayTime     			= 0
+    DamageType    			= FLAME
+    DamageFXType  			= EVIL_ARROW_PIERCE
+    DeathType     			= BURNED
+    AcceptDamageAdd 		= No
+    DamageScalar  			= 25% ALL -STRUCTURE
   End
   
    DamageNugget                        ; A basic Nugget that just does damage
-		Damage        = 1
-		Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-		DamageType    = FLAME
-		DamageFXType  = FLAME
-		DeathType     = BURNED
-		AcceptDamageAdd = No
-		DamageScalar  = 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
+		Damage        		= 1
+		Radius        		= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+		DamageType    		= FLAME
+		DamageFXType  		= FLAME
+		DeathType     		= BURNED
+		AcceptDamageAdd 	= No
+		DamageScalar  		= 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
 	End
 
 	
  DamageNugget            ; A basic Nugget that just does damage
-    Damage		 = GOBLIN_ARCHER_DAMAGE_FIRE_PIERCE
-    Radius		 = 0.0	; HitStoredTarget means we hurt the person we launched at.
-    DelayTime	 = 0
-    DamageType	 = PIERCE
-    DamageFXType = EVIL_ARROW_PIERCE
-    DeathType	 = NORMAL
+    Damage		 			= GOBLIN_ARCHER_DAMAGE_FIRE_PIERCE
+    Radius		 			= 0.0	; HitStoredTarget means we hurt the person we launched at.
+    DelayTime	 			= 0
+    DamageType	 			= PIERCE
+    DamageFXType 			= EVIL_ARROW_PIERCE
+    DeathType	 			= LASERED ;now always used instead of NORMAL (Sûl)
   End
 	FireLogicNugget
-		LogicType	= INCREASE_BURN_RATE
-		Radius		= 1.0
-		Damage		= ARCHER_BOMBARD_FIREARROW_BURNRATEINCREASE
+		LogicType			= INCREASE_BURN_RATE
+		Radius				= ARCHER_BOMBARD_FIREARROW_BURNRADIUS //1.0
+		Damage				= ARCHER_BOMBARD_FIREARROW_BURNRATEINCREASE
 	End
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon GoblinArcherBowMelee
-  LeechRangeWeapon      = Yes
+  LeechRangeWeapon		= Yes
   AttackRange           = STANDARD_MELEE_ATTACK_RANGE
-  MeleeWeapon           = Yes
+  MeleeWeapon			= Yes
   FireFX                = FX_RohanArcherBowWeaponFlaming;
-  DelayBetweenShots     = 1700            ; time between shots, msec
-  PreAttackDelay        = 666             ; 400 is sword swing delay time before contact with target.
-  PreAttackType         = PER_SHOT ; Do the delay each time we attack a new target
-  FiringDuration        = 1000    ; Duration of the sword swing
+  DelayBetweenShots		= 1700            ; time between shots, msec
+  PreAttackDelay        	= 666             ; 400 is sword swing delay time before contact with target.
+  PreAttackType         	= PER_SHOT ; Do the delay each time we attack a new target
+  FiringDuration        	= 1000    ; Duration of the sword swing
 
   DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = GOBLIN_ARCHER_DAMAGE_MELEE
-    Radius        = 0.0
-    DelayTime     = 0
-    DamageType    = SLASH
-    DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
+    Damage        		= GOBLIN_ARCHER_DAMAGE_MELEE
+    Radius        		= 0.0
+    DelayTime     		= 0
+    DamageType    		= SLASH
+    DamageFXType  		= SWORD_SLASH
+    DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
   End
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon GoblinFighterSword
-  LeechRangeWeapon      = Yes
+  LeechRangeWeapon		= Yes
   AttackRange           = STANDARD_MELEE_ATTACK_RANGE
-  MeleeWeapon           = Yes
-  DelayBetweenShots     = GOBLIN_FIGHTER_DELAYBETWEENSHOTS            ; time between shots, msec
-  PreAttackDelay        = GOBLIN_FIGHTER_PREATTACKDELAY             ; 300 is mace swing delay time before contact with target.
-  PreAttackType         = PER_SHOT ; Do the delay each time we attack
+  MeleeWeapon			= Yes
+  DelayBetweenShots     	= GOBLIN_FIGHTER_DELAYBETWEENSHOTS            ; time between shots, msec
+  PreAttackDelay        	= GOBLIN_FIGHTER_PREATTACKDELAY             ; 300 is mace swing delay time before contact with target.
+  PreAttackType         	= PER_SHOT ; Do the delay each time we attack
   FireFX                = FX_GondorSwordHit
-  FireFlankFX		= FX_Flanking
-  FiringDuration        = GOBLIN_FIGHTER_FIRINGDURATION    ; Duration of the mace swing 
+  FireFlankFX				= FX_Flanking
+  FiringDuration        	= GOBLIN_FIGHTER_FIRINGDURATION    ; Duration of the mace swing 
 
   DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = GOBLIN_FIGHTER_DAMAGE
-    Radius        = 0.0
-    DelayTime     = 0
-    DamageType    = SLASH
-    DamageFXType  = SWORD_SLASH
-    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
-    FlankingBonus = 50%
+    Damage        		= GOBLIN_FIGHTER_DAMAGE
+    Radius        		= 0.0
+    DelayTime     		= 0
+    DamageType    		= SLASH
+    DamageFXType  		= SWORD_SLASH
+    DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+    FlankingBonus 		= 50%
   End
 End
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon GoblinFighterSwordUpgraded
-  LeechRangeWeapon      = Yes
+  LeechRangeWeapon		= Yes
   AttackRange           = STANDARD_MELEE_ATTACK_RANGE
-  MeleeWeapon           = Yes
-  DelayBetweenShots     = GOBLIN_FIGHTER_DELAYBETWEENSHOTS            ; time between shots, msec
-  PreAttackDelay        = GOBLIN_FIGHTER_PREATTACKDELAY             ; 300 is mace swing delay time before contact with target.
-  PreAttackType         = PER_SHOT ; Do the delay each time we attack
+  MeleeWeapon			= Yes
+  DelayBetweenShots     	= GOBLIN_FIGHTER_DELAYBETWEENSHOTS            ; time between shots, msec
+  PreAttackDelay        	= GOBLIN_FIGHTER_PREATTACKDELAY             ; 300 is mace swing delay time before contact with target.
+  PreAttackType         	= PER_SHOT ; Do the delay each time we attack
   FireFX                = FX_GondorSwordHit
-  FireFlankFX		= FX_Flanking
-  FiringDuration        = GOBLIN_FIGHTER_FIRINGDURATION    ; Duration of the mace swing 
+  FireFlankFX				= FX_Flanking
+  FiringDuration        	= GOBLIN_FIGHTER_FIRINGDURATION    ; Duration of the mace swing 
 
   DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = GOBLIN_FIGHTER_FORGEDBLADES_UPGRADE	
-    Radius        = 0.0
-    DelayTime     = 0
-    DamageType    = SLASH
-    DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
-    FlankingBonus = 50%
+    Damage        		= GOBLIN_FIGHTER_FORGEDBLADES_UPGRADE	
+    Radius        		= 0.0
+    DelayTime     		= 0
+    DamageType    		= SLASH
+    DamageFXType  		= SWORD_SLASH
+    DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+    FlankingBonus 		= 50%
   End
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon GoblinFighterSwordPoisoned
-	LeechRangeWeapon			= Yes
-	AttackRange					 = 30.0
-	MeleeWeapon					= Yes
-	DelayBetweenShots			= GOBLIN_FIGHTER_DELAYBETWEENSHOTS
-	PreAttackDelay				= GOBLIN_FIGHTER_PREATTACKDELAY
-	PreAttackType				= PER_SHOT
-	FireFX						= FX_GondorSwordHit
-	FireFlankFX					= FX_Flanking
-	FiringDuration					= GOBLIN_FIGHTER_FIRINGDURATION
+	LeechRangeWeapon		= Yes
+	AttackRange				= STANDARD_MELEE_ATTACK_RANGE //30.0
+	MeleeWeapon				= Yes
+	DelayBetweenShots		= GOBLIN_FIGHTER_DELAYBETWEENSHOTS
+	PreAttackDelay			= GOBLIN_FIGHTER_PREATTACKDELAY
+	PreAttackType			= PER_SHOT
+	FireFX					= FX_GondorSwordHit
+	FireFlankFX				= FX_Flanking
+	FiringDuration				= GOBLIN_FIGHTER_FIRINGDURATION
 
 	DamageNugget
-		Damage					= GOBLIN_FIGHTER_DAMAGE
-		Radius					= 0.0
-		DelayTime				= 0
-		DamageType				= SLASH
-		DamageFXType			= SWORD_SLASH
-		DeathType				= NORMAL
-		FlankingBonus				= 50%
+		Damage				= GOBLIN_FIGHTER_DAMAGE
+		Radius				= 0.0
+		DelayTime			= 0
+		DamageType			= SLASH
+		DamageFXType		= SWORD_SLASH
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		FlankingBonus			= 50%
 	End
 
 	DOTNugget
-		Damage					= GOBLIN_FIGHTER_POISON_DAMAGE
-		AcceptDamageAdd			= No
-		Radius					= 0.0
-		DelayTime				= 0
-		DamageType				= POISON
-		DamageFXType			= POISON
-		DeathType				= NORMAL
-		DamageInterval			= 1000
-		DamageDuration			= 15000					; originally 30000
-		SpecialObjectFilter			= AFFECTED_BY_POISON_OBJECTFILTER
+		Damage				= GOBLIN_FIGHTER_POISON_DAMAGE
+		AcceptDamageAdd		= No
+		Radius				= 0.0
+		DelayTime			= 0
+		DamageType			= POISON
+		DamageFXType		= POISON
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageInterval		= 500 //1000
+		DamageDuration		= 15000					; originally 30000
+		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
 	End
 End
 ;------------------------------------------------------------------------------
-Weapon GoblinFighterSwordPoisonedUpgraded
+Weapon GoblinFighterSwordPoisonedUpgraded						//This is not used, I think? (Naz)
 	LeechRangeWeapon			= Yes
 	AttackRange					= 30.0
 	MeleeWeapon					= Yes
