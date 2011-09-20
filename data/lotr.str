@@ -66,7 +66,7 @@ TOOLTIP:LackWildHeavyArmor
 "Research Scavenged Armor at Fissure \n to enable this equipment \n \n When equipped, significantly reduces \n the amount of damage taken"
 END
 TOOLTIP:LackVenomSacksTechnology
-"Research Venom Sacs at Troll Cave \n to enable this equipment \n \n When equipped, weapons inflicts poison \n to enemies causing damage over time"
+"Research Venom Sacs at Troll Cave \n to enable this equipment \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
@@ -16384,7 +16384,7 @@ CONTROLBAR:ConstructWildSpiderPitLevel3Upgrade
 "Upgrade Troll Cave to level 3"
 END
 CONTROLBAR:ToolTipBuildWildSpiderPitLevel3Upgrade
-"Level 3: +50% faster build speed \n Allows recruitment of the Cave Troll of Moria \n Allows research of Spider Venom"
+"Level 3: +50% faster build speed \n Allows recruitment of the Cave Troll of Moria \n Allows research of Spider Venom Sacs"
 END
 
 CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
@@ -41589,77 +41589,155 @@ CONTROLBAR:ToolTipPurchaseTechnologyDwarvenMithrilMail
 "Allows battalions and Demolishers to purchase the Mithril Mail upgrade \n When equipped, significantly reduces the amount of damage taken"
 END
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------
+// ########################################
+// ########################################
+// ########################################
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseTechnologyWildFireArrows
+"Research Fire Arrows"
+END
+CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
+"Allows hordes to acquire Fire Arrows \n \n When equipped, significantly increases \n the damage done by arrows \n \n Strong vs. structures"
+END
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseTechnologyWildBasicTraining
+"Research Moria Banner Carriers"
+END
+CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining
+"Allows hordes to acquire \n the Moria Banner Carrier \n \n When equipped, increases a horde to level 2"
+END
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseTechnologyWildForgedBlades
+"Research Scavenged Weapons"
+END
+CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
+"Allows hordes to acquire Scavenged Weapons \n \n When equipped, increases the damage \n done by melee weapons"
+END
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseTechnologyWildHeavyArmor
+"Research Scavenged Armor"
+END
+CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
+"Allows hordes to acquire Scavenged Armor \n \n When equipped, significantly reduces \n the amount of damage taken"
+END
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
+"Research Venom Sacs"
+END
+CONTROLBAR:ToolTipPurchaseTechnologyWildSpiderVenomSacks
+"Allows Goblin hordes to acquire Venom Sacs \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
+END
+// ------------------------------------------------------------
+// ########################################
+// ########################################
+// ########################################
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseUpgradeWildFireArrows
+"Purchase Flaming Arrows"
+END
+CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
+"Upgrades this horde with Flaming Arrows \n Significantly increases the damage done by arrows"
+END
+// ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildBasicTraining
 "Purchase Moria Banner Carrier"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildBasicTraining
 "Increases this horde to Level 2 \n Can only be equipped at level 1"
 END
-CONTROLBAR:PurchaseTechnologyWildBasicTraining
-"Research Moria Banner Carriers"
-END
-CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining
-"Allows hordes to purchase \n the Moria Banner Carrier upgrade \n \n Increases a horde to level 2"
-END
-
-CONTROLBAR:PurchaseUpgradeWildFireArrows
-"Purchase Fire Arrows"
-END
-
-CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
-"Upgrades this horde with Fire Arrows \n Significantly increases the damage done by Arrows"
-END
-
-CONTROLBAR:PurchaseTechnologyWildFireArrows
-"Research Fire Arrows"
-END
-
-CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
-"Allows hordes to purchase \n the Fire Arrows upgrade \n \n When equipped, significantly increases the damage done by arrows \n \n Strong vs. structures"
-END
-
+// ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildForgedBlade
-"Purchase Forged B&lades"
+"Purchase Forged Blades"
 END
-
 CONTROLBAR:ToolTipPurchaseUpgradeWildForgedBlade
 "Upgrades this horde with Forged Blades \n When equipped, increases the damage done by Melee Weapons"
 END
-
-CONTROLBAR:PurchaseTechnologyWildForgedBlades
-"Research Forged Blades"
-END
-CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
-"Allows hordes to purchase the Forged Blades upgrade \n Increases the damage done by melee weapons"
-END
-
+// ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildHeavyArmor
-"Purchase Sca&venged Armor"
+"Purchase Scavenged Armor"
 END
-
 CONTROLBAR:ToolTipPurchaseUpgradeWildHeavyArmor
 "Upgrades this horde with Scavenged Armor \n When equipped, significantly reduces the amount of damage taken"
 END
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseUpgradeWildVenomBlade
+"Purchase Blade Venom"
+END
+CONTROLBAR:ToolTipPurchaseUpgradeWildVenomBlade
+"Upgrades this horde with Venom Sacs \n \n When equipped, weapons inflict poison to enemies \n causing damage over time"
+END
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseUpgradeWildVenomArrow
+"Purchase Arrow Venom"
+END
+CONTROLBAR:ToolTipPurchaseUpgradeWildVenomArrow
+"Upgrades this horde with Venom Sacs \n \n When equipped, arrows inflict poison to enemies \n causing damage over time"
+END
+// ------------------------------------------------------------
+// ########################################
+// ########################################
+// ########################################
+// ------------------------------------------------------------
 
-CONTROLBAR:PurchaseTechnologyWildHeavyArmor
-"Research Scavenged Armor"
-END
-CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
-"Allows hordes to purchase Scavenged Armor \n Significantly reduces the amount of damage taken"
-END
 
-CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
-"Research Venom Sacs"
-END
-CONTROLBAR:ToolTipPurchaseTechnologyWildSpiderVenomSacks
-"Allows Goblin hordes to purchase \n the Venom Sacs upgrade \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
-END
+
+
+
+
+
+
+
+
+
+
+// ############################# OBSOLETE (Used by Spider Riders)
 CONTROLBAR:PurchaseSpiderVenomSacks
 "Purchase Venom Sacs"
 END
 CONTROLBAR:ToolTipPurchaseSpiderVenomSacks
 "Upgrades this horde with Venom Sacs \n \n Weapons inflict poison to enemies \n causing damage over time"
 END
+// #############################
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

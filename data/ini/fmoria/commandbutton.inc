@@ -1172,10 +1172,10 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenomBlades ;This is for Warriors
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
 	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience
-	TextLabel         	= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedBlades
+	TextLabel         	= CONTROLBAR:PurchaseUpgradeWildVenomBlade
 	ButtonImage       	= BWTreasureTrove_PoisonBlades
 	ButtonBorderType  	= UPGRADE
-	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseSpiderVenomSacks
+	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseUpgradeWildVenomBlade
 	InPalantir	      	= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacksTechnology
 End
@@ -1184,10 +1184,10 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenomArrows ;This is for Archers!
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
 	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience
-	TextLabel         	= CONTROLBAR:SpecialAbilityGoblinFighterPoisonedArrows
+	TextLabel         	= CONTROLBAR:PurchaseUpgradeWildVenomArrow
 	ButtonImage       	= BWTreasureTrove_PoisonArrows
 	ButtonBorderType  	= UPGRADE
-	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseSpiderVenomSacks
+	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseUpgradeWildVenomArrow
 	InPalantir	      	= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacksTechnology
 End
