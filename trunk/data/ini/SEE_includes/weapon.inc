@@ -5,6 +5,102 @@
 ;------------------------------------------------------------------------------
 
 ;----------------------------------- ^^
+
+
+;------------------------------------------------------------------------------
+Weapon GenericArcherFlamingArrowsRangeFinder //GoblinArcherSAFireArrowsRangeFinder
+	AttackRange				= #SUBTRACT( GENERIC_ARCHER_RANGE 100 ) 
+	RangeBonusMinHeight		= 30 ;		= 10
+	RangeBonus				= 1
+	RangeBonusPerFoot		= #MULTIPLY( GENERIC_ARCHER_RANGE .003 )
+	DelayBetweenShots		= 1000
+	LeechRangeWeapon		= Yes
+	AcceptableAimDelta		= 45
+	AntiAirborneVehicle		= Yes
+	AntiAirborneMonster		= Yes
+	FinishAttackOnceStarted 	= No
+	HordeAttackNugget
+		LockWeaponSlot		= QUINARY
+	End
+End
+;------------------------------------------------------------------------------
+Weapon GenericArcherFlamingArrows //GoblinArcherSAFireArrows      
+	AttackRange				= GENERIC_ARCHER_RANGE	;Horde member so it needs to be bigger than the horde weapon attack range
+	LeechRangeWeapon		= Yes
+	WeaponSpeed			= 300					; dist/sec
+	MinWeaponSpeed			= 121
+	MaxWeaponSpeed			= 400
+	FireFX					= FX_RohanArcherBowWeapon
+	ScaleWeaponSpeed		= Yes					; Used for lob weapons, scales speed proportional to range
+	HitPercentage				= 100					;When this weapon is used it will hit exactly 50% of the time
+	ScatterRadius				= 20.0					;When this weapon misses it can randomly miss by as much as this distance
+	CanBeDodged				= Yes					; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
+	
+	DelayBetweenShots		= 0
+	PreAttackDelay			= GENERIC_ARCHER_PREATTACKDELAY
+	PreAttackType			= PER_POSITION
+	PreAttackRandomAmount	= 200
+	FiringDuration				= 0
+	
+	ClipSize					= 1
+	AutoReloadsClip			= Yes
+	AutoReloadWhenIdle		= 1
+	ClipReloadTime			= Min:ARCHER_BOW_RELOADTIME_MIN Max:ARCHER_BOW_RELOADTIME_MAX
+	
+	AntiAirborneVehicle		= Yes
+	AntiAirborneMonster		= Yes
+	HitPassengerPercentage	= 20%
+
+	ProjectileNugget
+		ProjectileTemplateName	= EvilFactionFireArrow
+		WarheadTemplateName		= GenericArcherFlamingArrowsBowWarhead //GoblinArcherSAFireArrowsBowWarhead
+	End
+End
+;-----------------------------------
+Weapon GenericArcherFlamingArrowsBowWarhead //GoblinArcherSAFireArrowsBowWarhead
+	ProjectileCollidesWith		= ENEMIES
+	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	HitStoredTarget			= Yes
+	
+  DamageNugget                       
+    Damage        			= ARCHER_DAMAGE_FLAMINGARROWS_FLAME
+    Radius        			= 0.0	
+    DelayTime     			= 0
+    DamageType    			= FLAME
+    DamageFXType  			= EVIL_ARROW_PIERCE
+    DeathType     			= BURNED
+    AcceptDamageAdd 		= No
+    DamageScalar  			= 25% ALL -STRUCTURE
+  End
+  
+   DamageNugget                        ; A basic Nugget that just does damage
+		Damage        		= 1
+		Radius        		= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+		DamageType    		= FLAME
+		DamageFXType  		= FLAME
+		DeathType     		= BURNED
+		AcceptDamageAdd 	= No
+		DamageScalar  		= 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
+	End
+	
+ DamageNugget            ; A basic Nugget that just does damage
+    Damage		 			= ARCHER_DAMAGE_FLAMINGARROWS_PIERCE
+    Radius		 			= 0.0	; HitStoredTarget means we hurt the person we launched at.
+    DelayTime	 			= 0
+    DamageType	 			= PIERCE
+    DamageFXType 			= EVIL_ARROW_PIERCE
+    DeathType	 			= LASERED ;now always used instead of NORMAL (Sûl)
+  End
+
+	FireLogicNugget
+		LogicType			= INCREASE_BURN_RATE
+		Radius				= ARCHER_REGULAR_FIREARROW_BURNRADIUS
+		Damage				= ARCHER_REGULAR_FIREARROW_BURNRATEINCREASE
+	End
+ 
+End
+
+
 Weapon HumanBodyImpactWarhead_SEE
 	ProjectileCollidesWith = ALLIES ENEMIES NEUTRAL STRUCTURES WALLS			; Remember, the projectile is a rock, who has no allies
   ; FireFX = FX_HumanBodyGroundHit_SEE ;FX_SoldierHitGround

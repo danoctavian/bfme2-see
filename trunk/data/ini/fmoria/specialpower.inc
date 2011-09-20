@@ -29,9 +29,4 @@ SpecialPower SpecialAbilityFireWhip
 End
 
 ;------------------------------------------------------------------------------
-SpecialPower SpecialAbilitySAFireArrows
-	Enum						= SPECIAL_WOUND_ARROW
-	ReloadTime					= 45000
-	InitiateSound	= PoisonArrows
-	UnitSpecificSoundToUseAsInitiateIntendToDoVoice = VoiceInitiatePoisonArrowAttack
-End
+

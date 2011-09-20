@@ -7,12 +7,21 @@
 ;NOTE: Attacks are as such: PreAttackDelay -> Both: FiringDuration & DelayBetweenShots -> After DBS starts PreAttackDelay again.
 
 ;------------------------------------------------------------------------------ SEE!
+#define	GENERIC_ARCHER_RANGE								300 //275
+#define GENERIC_ARCHER_PREATTACKDELAY 						1000
+
 #define ARCHER_WEAK_HITPERCENTAGE							60
 #define ARCHER_STANDARD_HITPERCENTAGE         			70
 #define ARCHER_ELITE_HITPERCENTAGE							80
-#define ARCHER_WEAK_SCATTERRADIUS            				30.0
+#define ARCHER_WEAK_SCATTERRADIUS            				40.0 //30.0
 #define ARCHER_STANDARD_SCATTERRADIUS          			20.0
 #define ARCHER_ELITE_SCATTERRADIUS            				10.0
+
+#define ARCHER_BOW_RELOADTIME_MIN							1500 ;1½ sec
+#define ARCHER_BOW_RELOADTIME_MAX							2000 ;2 sec
+
+#define ARCHER_DAMAGE_FLAMINGARROWS_PIERCE    			25	;20
+#define ARCHER_DAMAGE_FLAMINGARROWS_FLAME     			50 //25	;20
 
 #define ARCHER_REGULAR_FIREARROW_BURNRATEINCREASE			1
 #define ARCHER_REGULAR_FIREARROW_BURNRADIUS		    	0.5
