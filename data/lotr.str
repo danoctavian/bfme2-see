@@ -66,7 +66,7 @@ TOOLTIP:LackWildHeavyArmor
 "Research Scavenged Armor at Fissure \n to enable this equipment \n \n When equipped, significantly reduces \n the amount of damage taken"
 END
 TOOLTIP:LackVenomSacksTechnology
-"Research Venom Sacs at Troll Cave \n to enable this equipment \n \n When equipped, inflicts poison to enemies \n causing damage over time"
+"Research Venom Sacs at Troll Cave \n to enable this equipment \n \n When equipped, weapons inflicts poison to enemies \n causing damage over time"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
@@ -41662,7 +41662,7 @@ CONTROLBAR:PurchaseSpiderVenomSacks
 "Purchase Venom Sacs"
 END
 CONTROLBAR:ToolTipPurchaseSpiderVenomSacks
-"Upgrades this horde with Venom Sacs \n Weapons inflict poison to enemies \n causing damage over time"
+"Upgrades this horde with Venom Sacs \n \n Weapons inflict poison to enemies \n causing damage over time"
 END
 
 
