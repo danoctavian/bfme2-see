@@ -268,7 +268,7 @@ CommandSet GoblinArcherCommandSet
 	 2 = Command_ArcherBombard
 	 3 = Command_PurchaseUpgradeWildBasicTraining 
 	 4 = Command_PurchaseUpgradeWildHeavyArmor
-//	 5 = Command_PurchaseUpgradeWildFireArrows WIP!!!!
+	 5 = Command_PurchaseUpgradeWildSpiderVenom //Command_PurchaseUpgradeWildFireArrows
 	 6 = Command_GoblinArcherSAFireArrows //Command_PurchaseUpgradePoisonArrows	 ///Wip!
 	12 = Command_CaptureBuilding
 	13 = Command_AttackMove

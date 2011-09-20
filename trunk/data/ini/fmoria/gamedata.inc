@@ -6,9 +6,9 @@
 ; ------------------------------------------------------------------------------ "SEE!" = The codes have been adapted/converted from the obsolete Beta 4.7 WiP...
 ; NOTE: Keep this organized!
 
-#define GOBLIN_RESOURCEBUILDING_BUILDTIME					60  	// 1 minute - Resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
-#define GOBLIN_SENTRY_TOWER_BUILDTIME						90 		// 1½ minutes - Battletowers!
-#define GOBLIN_BASICBUILDING_BUILDTIME						120 	// 2 minutes - Non resource buildings! (Barracks, Stables, Armory, etc)
+#define GOBLIN_RESOURCEBUILDING_BUILDTIME					6;0  	// 1 minute - Resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
+#define GOBLIN_SENTRY_TOWER_BUILDTIME						9;0 		// 1½ minutes - Battletowers!
+#define GOBLIN_BASICBUILDING_BUILDTIME						12;0 	// 2 minutes - Non resource buildings! (Barracks, Stables, Armory, etc)
 #define GOBLIN_FORTRESS_BUILDTIME							240 	// 4 minutes - Fortress Keeps!
 
 ;--------	FORTRESS  -------------------------------------------------------- SEE!
@@ -446,6 +446,7 @@
 ;orc archers miss 50% so they get double damage
 #define	GOBLIN_ARCHER_DAMAGE				25	;20
 #define	GOBLIN_ARCHER_DAMAGE_MELEE			4
+#define	GOBLIN_ARCHER_DAMAGE_POISON		2
 
 #define	GOBLIN_ARCHER_RANGE				275
 #define	GOBLIN_ARCHER_BOMBARD_MINRANGE			150
@@ -611,22 +612,22 @@
 ;---------------WILD TECHNOLOGY AND UPGRADES--
 ;------------------------------------------------------------------------------ SEE!
 #define WILD_TECH_BASIC_TRAINING_BUILDCOST					1000 ;800
-#define WILD_TECH_BASIC_TRAINING_BUILDTIME					120
+#define WILD_TECH_BASIC_TRAINING_BUILDTIME					12;0
 #define WILD_PERSONAL_BASIC_TRAINING_BUILDCOST				200
 #define WILD_PERSONAL_BASIC_TRAINING_BUILDTIME				10
 
 #define WILD_TECH_FIRE_ARROWS_BUILDCOST					1000 ;800
-#define WILD_TECH_FIRE_ARROWS_BUILDTIME				  	120 
+#define WILD_TECH_FIRE_ARROWS_BUILDTIME				  	12;0 
 #define WILD_PERSONAL_FIRE_ARROWS_BUILDCOST				200
 #define WILD_PERSONAL_FIRE_ARROWS_BUILDTIME				10
 
 #define WILD_TECH_FORGED_BLADES_BUILDCOST					1000 ;800
-#define WILD_TECH_FORGED_BLADES_BUILDTIME					132 //To compensate for +10% build speed modifier at lvl2!
+#define WILD_TECH_FORGED_BLADES_BUILDTIME					13;2 //To compensate for +10% build speed modifier at lvl2!
 #define WILD_PERSONAL_FORGED_BLADES_BUILDCOST				200
 #define WILD_PERSONAL_FORGED_BLADES_BUILDTIME				10
 
 #define WILD_TECH_HEAVY_ARMOR_BUILDCOST					1000 ;800
-#define WILD_TECH_HEAVY_ARMOR_BUILDTIME					165 //To compensate for +25% (additive +10% +25%) build speed modifier at lvl3!
+#define WILD_TECH_HEAVY_ARMOR_BUILDTIME					16;5 //To compensate for +25% (additive +10% +25%) build speed modifier at lvl3!
 #define WILD_PERSONAL_HEAVY_ARMOR_BUILDCOST				200
 #define WILD_PERSONAL_HEAVY_ARMOR_BUILDTIME				10
 ;------------------------------------------------------------------------------

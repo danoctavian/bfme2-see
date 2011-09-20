@@ -54,19 +54,19 @@ END
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
 
 TOOLTIP:LackWildBasicTraining
-"Research at Trove to enable this equipment \n When equipped, increases this battalion to level 2"
+"Research Banner Carriers at Trove \n to enable this equipment \n \n When equipped, a Banner Carrier \n increases this battalion to level 2"
 END
 TOOLTIP:LackWildFireArrows
-"Research at Fissure to enable this equipment \n When equipped, significantly increases the damage done by arrows"
+"Research Fire Arrows at Fissure \n to enable this equipment \n \n When equipped, significantly increases \n the damage done by arrows"
 END
 TOOLTIP:LackWildForgedBlades
-"Research at Fissure to enable this equipment \n When equipped, increases the damage done by melee weapons"
+"Research Scavenged Weapons at Fissure \n to enable this equipment \n \n When equipped, increases the damage \n done by melee weapons"
 END
 TOOLTIP:LackWildHeavyArmor
-"Research at Fissure to enable this equipment \n When equipped, significantly reduces the amount of damage taken"
+"Research Scavenged Armor at Fissure \n to enable this equipment \n \n When equipped, significantly reduces \n the amount of damage taken"
 END
 TOOLTIP:LackVenomSacksTechnology
-"Research at Troll Cave to enable this equipment \n When equipped, inflicts poison to enemies causing damage over time"
+"Research Venom Sacs at Troll Cave \n to enable this equipment \n \n When equipped, inflicts poison to enemies \n causing damage over time"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
@@ -15429,7 +15429,7 @@ CONTROLBAR:ConstructWildTreasureTrove
 "Build Treasure Trove"
 END
 CONTROLBAR:ToolTipConstructWildTreasureTrove
-"Researches Banner Carrier upgrade \ and >>>TBDxxx<<<"
+"Researches Banner Carrier upgrade and \n >>> TBD <<<"
 END
 
 CONTROLBAR:ConstructWildFortress
@@ -16365,13 +16365,13 @@ CONTROLBAR:UpgradeWildFissureLevel2
 "Upgrade Fissure to level 2"
 END
 CONTROLBAR:ToolTipBuildWildFissureLevel2Upgrade
-"Level 2: Allows research of Forged Blades upgrade"
+"Allows research of Forged Blades upgrade"
 END
 CONTROLBAR:UpgradeWildFissureLevel3
 "Upgrade Fissure to level 3"
 END
 CONTROLBAR:ToolTipBuildWildFissureLevel3Upgrade
-"Level 3: Allows research of Heavy Armor upgrade \ and construction of Catapults"
+"Allows research of Heavy Armor upgrade \ and construction of Catapults"
 END
 
 CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
@@ -36135,7 +36135,7 @@ CONTROLBAR:Barrage
 END
 
 CONTROLBAR:ToolTipBarrage
-"Continuously bombard target area with a volley of projectiles"
+"Continuously bombard a target area \n with a volley of projectiles"
 END
 
 
@@ -41373,11 +41373,11 @@ CONTROLBAR:PurchaseTechnologyGondorFireArrows
 END
 
 CONTROLBAR:ToolTipPurchaseTechnologyGondorFireArrows
-"Allows battalions to purchase \n the Fire Arrows upgrade \n When equipped, significantly increases the damage done by Arrows"
+"Allows battalions to purchase \n the Fire Arrows upgrade \n When equipped, significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:ToolTipPurchaseUpgradeGondorFireArrows
-"Upgrades this battalion with Fire Arrows \n Significantly increases the damage done by Arrows"
+"Upgrades this battalion with Fire Arrows \n Significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:PurchaseTechnologyGondorForgedBlades
@@ -41474,11 +41474,11 @@ CONTROLBAR:PurchaseTechnologyIsengardFireArrows
 END
 
 CONTROLBAR:ToolTipPurchaseTechnologyIsengardFireArrows
-"Allows hordes to purchase \n the Fire Arrows upgrade \n When equipped, significantly increases the damage done by Arrows"
+"Allows hordes to purchase \n the Fire Arrows upgrade \n When equipped, significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:ToolTipPurchaseUpgradeIsengardFireArrows
-"Upgrades this horde with Fire Arrows \n Significantly increases the damage done by Arrows"
+"Upgrades this horde with Fire Arrows \n Significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:PurchaseTechnologyIsengardForgedBlades
@@ -41518,11 +41518,11 @@ CONTROLBAR:PurchaseTechnologyMordorFireArrows
 END
 
 CONTROLBAR:ToolTipPurchaseTechnologyMordorFireArrows
-"Allows hordes to purchase \n the Fire Arrows upgrade \n When equipped, significantly increases the damage done by Arrows"
+"Allows hordes to purchase \n the Fire Arrows upgrade \n When equipped, significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:ToolTipPurchaseUpgradeMordorFireArrows
-"Upgrades this horde with Fire Arrows \n Significantly increases the damage done by Arrows"
+"Upgrades this horde with Fire Arrows \n Significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:PurchaseTechnologyGondorBasicTraining
@@ -41603,7 +41603,7 @@ CONTROLBAR:PurchaseTechnologyWildBasicTraining
 "Research Moria Banner Carriers"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining
-"Allows hordes to purchase the Moria Banner Carrier upgrade \n Increases a horde to level 2"
+"Allows hordes to purchase \n the Moria Banner Carrier upgrade \n \n Increases a horde to level 2"
 END
 
 CONTROLBAR:PurchaseUpgradeWildFireArrows
@@ -41619,7 +41619,7 @@ CONTROLBAR:PurchaseTechnologyWildFireArrows
 END
 
 CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
-"Allows hordes to purchase \n the Fire Arrows upgrade \n When equipped, significantly increases the damage done by arrows \ n Strong vs. structures"
+"Allows hordes to purchase \n the Fire Arrows upgrade \n \n When equipped, significantly increases the damage done by arrows \n \n Strong vs. structures"
 END
 
 CONTROLBAR:PurchaseUpgradeWildForgedBlade
@@ -41706,7 +41706,7 @@ CONTROLBAR:PurchaseUpgradeElvenSilverthornArrows
 END
 
 CONTROLBAR:TooltipPurchaseUpgradeElvenSilverthornArrows
-"Upgrades this battalion with Silverthorn or Fire Arrows \n Significantly increases the damage done by Arrows"
+"Upgrades this battalion with Silverthorn or Fire Arrows \n Significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:PurchaseTechnologyElvenForgedBlades
@@ -41742,7 +41742,7 @@ CONTROLBAR:PurchaseTechnologyElvenSilverthornArrows
 END
 
 CONTROLBAR:ToolTipPurchaseTechnologyElvenSilverthornArrows
-"Allows battalions to purchase \n the Silverthorn and Fire Arrows upgrade \n When equipped, significantly increases the damage done by Arrows"
+"Allows battalions to purchase \n the Silverthorn and Fire Arrows upgrade \n When equipped, significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:PurchaseTechnologyMordorForgedBlades
@@ -41834,7 +41834,7 @@ CONTROLBAR:ToolTipPurchaseTechnologyIsengardTorches
 End
 
 CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFireArrows
-"Significantly increases the damage done by Arrows"
+"Significantly increases the damage done by arrows"
 End
 
 CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFlamingShot
@@ -41850,7 +41850,7 @@ CONTROLBAR:ToolTipPurchaseUpgradeElderRacesBasicTraining
 End
 
 CONTROLBAR:ToolTipPurchaseUpgradeElderRacesMagicArrows
-"Upgrades this battalion with Silverthrone Arrows \n Significantly increases the damage done by Arrows"
+"Upgrades this battalion with Silverthrone Arrows \n Significantly increases the damage done by arrows"
 End
 
 CONTROLBAR:ToolTipPurchaseUpgradeElderRacesWarBarding
@@ -41874,7 +41874,7 @@ CONTROLBAR:ToolTipPurchaseUpgradeDwarvenSiegeHammer
 END
 
 CONTROLBAR:TooltipPurchaseUpgradeElvenSilverthornArrowsBattleTower
-"Upgrade this Battle Tower with Silverthorn Arrows \n Increases damage done by Arrows"
+"Upgrade this Battle Tower with Silverthorn Arrows \n Increases damage done by arrows"
 END
 
 
@@ -41885,7 +41885,7 @@ TOOLTIP:LackGondorBasicTraining
 END
 
 TOOLTIP:LackGondorFireArrows
-"Research upgrade at Archery Range to enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+"Research upgrade at Archery Range to enable this equipment \n When equipped, significantly increases the damage done by arrows"
 END
 
 TOOLTIP:LackGondorForgedBlades
@@ -41929,7 +41929,7 @@ TOOLTIP:LackIsengardBasicTraining
 END
 
 TOOLTIP:LackIsengardFireArrows
-"Research upgrade at Armory to enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+"Research upgrade at Armory to enable this equipment \n When equipped, significantly increases the damage done by arrows"
 END
 
 TOOLTIP:LackIsengardForgedBlades
@@ -41941,11 +41941,11 @@ TOOLTIP:LackIsengardHeavyArmor
 END
 
 TOOLTIP:LackMordorFireArrow
-"Research upgrade at Tavern to enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+"Research upgrade at Tavern to enable this equipment \n When equipped, significantly increases the damage done by arrows"
 END
 
 TOOLTIP:LackHaradFireArrow
-"Research upgrade at Archery Range to enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+"Research upgrade at Archery Range to enable this equipment \n When equipped, significantly increases the damage done by arrows"
 END
 
 TOOLTIP:LackMordorBasicTraining
@@ -41988,7 +41988,7 @@ ToolTip:LackElvenForgedBlades
 END
 
 TOOLTIP:LacksTechnologyElvenSilverthornArrows
-"Research upgrade at Eregion Forge to enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+"Research upgrade at Eregion Forge to enable this equipment \n When equipped, significantly increases the damage done by arrows"
 END
 
 TOOLTIP:LackElvenHeavyArmor
@@ -42020,7 +42020,7 @@ ToolTip:LackDwarvenFlamingShot
 END
 
 ToolTip:LackDwarvenFireArrows
-"Research upgrade at Archery Range to enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+"Research upgrade at Archery Range to enable this equipment \n When equipped, significantly increases the damage done by arrows"
 END
 
 TOOLTIP:LackDwarvenMithrilMail
@@ -42134,7 +42134,7 @@ TOOLTIP:WildHeavyArmor
 END
 
 TOOLTIP:WildVenomSacs
-"Venom Blades / Arrow Tips"
+"Venomous Weapons"
 END
 
 TOOLTIP:WildBasicTraining 
@@ -42371,7 +42371,7 @@ Upgrade:WildWolfDenLevel3
 END
 
 Upgrade:WildVenomSacs
-"Venom Blades / Arrow Tips"
+"Venomous Weapons"
 END
 
 Upgrade:WildTreasureTroveLevel2
@@ -49216,10 +49216,10 @@ Upgrade:RhunBattleTowerBarbedArrows
 "Barbed Arrows"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeRhunBattleTowerBarbedArrows
-"Upgrades this Tower with Barbed Arrows \n Increases damage done by Arrows"
+"Upgrades this Tower with Barbed Arrows \n Increases damage done by arrows"
 END
 TOOLTIP:LackRhunBarbedArrow
-"Build Archery Range to enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+"Build Archery Range to enable this equipment \n When equipped, significantly increases the damage done by arrows"
 END
 
 // ------------------------ Rhun Windmill
@@ -49893,10 +49893,10 @@ Upgrade:HaradWatchTowerPoisonArrows
 "Poison Arrows"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeHaradWatchTowerPoisonArrows
-"Upgrades this Tower with Poison Arrows \n Increases damage done by Arrows"
+"Upgrades this Tower with Poison Arrows \n Increases damage done by arrows"
 END
 TOOLTIP:LackHaradPoisonArrow
-"Build Archery Range to enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+"Build Archery Range to enable this equipment \n When equipped, significantly increases the damage done by arrows"
 END
 
 // ------------------------ Khand Barracks
@@ -51010,11 +51010,11 @@ CONTROLBAR:IceArrowUpgrade
 END
 
 CONTROLBAR:ToolTipPurchaseUpgradeAngmarIceArrows
-"Upgrades this horde with Ice Arrows \n Significantly increases the damage done by Arrows"
+"Upgrades this horde with Ice Arrows \n Significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:ToolTipPurchaseTowerUpgradeAngmarIceArrows
-"Upgrades this Tower with Ice Arrows \n Significantly increases the damage done by Arrows"
+"Upgrades this Tower with Ice Arrows \n Significantly increases the damage done by arrows"
 END
 
 CONTROLBAR:PurchaseUpgradeAngmarIceShot
@@ -51231,7 +51231,7 @@ CONTROLBAR:TooltipPurchaseTechnologyAngmarDarkIronMail
 End
 
 CONTROLBAR:TooltipPurchaseTechnologyAngmarIceArrows
-"Research Ice Arrows \n When equipped, significantly increases the damage done by Arrows"
+"Research Ice Arrows \n When equipped, significantly increases the damage done by arrows"
 End
 
 CONTROLBAR:TooltipPurchaseTechnologyAngmarIceShot
@@ -51443,7 +51443,7 @@ TOOLTIP:LackAngmarDarkIronBlades
 End
 
 TOOLTIP:LackAngmarIceArrows
-"Research this upgrade at the \n Dark Iron Forge to \n enable this equipment \n When equipped, significantly increases the damage done by Arrows"
+"Research this upgrade at the \n Dark Iron Forge to \n enable this equipment \n When equipped, significantly increases the damage done by arrows"
 End
 
 TOOLTIP:LackAngmarIceShot
