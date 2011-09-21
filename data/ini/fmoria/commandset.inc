@@ -26,13 +26,13 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildFortressCommandSet
 	InitialVisible = 6
-    //Main Menu
+    //	MAIN MENU
 	1	= Command_ConstructWildPorter
 	2	= Command_SelectRevivablesWildFortress
 	3	= Command_SelectUpgradesWildFortress	
 	4	= Command_PurchaseNewFireDrake	
 	6	= Command_Sell
-    //Upgrades Menu
+    //	UPGRADES MENU
 	7	= Command_PurchaseUpgradeWildFortressBatCloud
 	8 	= Command_PurchaseUpgradeWildFortressStonePavement
 	9	= Command_PurchaseUpgradeWildFortressRazorSpines
@@ -41,7 +41,7 @@ CommandSet WildFortressCommandSet
 	12	= Command_PurchaseUpgradeWildFortressDragonNest	
 	13	= Command_SpecialAbilityBatCloud
 	14	= Command_RadialBack
-    //Hero Menu
+    //	HERO MENU
 	15	= Command_RingHeroReviveSlot		// This is for the ring hero, don't remove!
 	16	= Command_CreateAHeroReviveSlot	// Note we also need an extra slot for the Create A Hero!
 	17	= Command_GenericReviveSlot1		//Revives any hero. Use Slot1-Slot8 and keep them UNIQUE within the same commandset! 
@@ -97,27 +97,27 @@ CommandSet WildFortressCommandSetAI
 End			
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildFortressExpansionPadSpiderHolesCommandSetAI
-	1 = Command_ConstructWildSpiderHolesExpansion // (ini/fmoria\commandbutton.inc)
+	1 	= Command_ConstructWildSpiderHolesExpansion // (ini/fmoria\commandbutton.inc)
 End
 CommandSet WildFortressExpansionPadArrowDenCommandSetAI
-	1 = Command_ConstructWildArrowDenExpansion // (ini/fmoria\commandbutton.inc)
+	1 	= Command_ConstructWildArrowDenExpansion // (ini/fmoria\commandbutton.inc)
 End
 CommandSet WildFortressExpansionPadGiantSentryCommandSetAI
-	1 = Command_ConstructWildGiantSentryExpansion // (ini/fmoria\commandbutton.inc)
+	1 	= Command_ConstructWildGiantSentryExpansion // (ini/fmoria\commandbutton.inc)
 End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildCastleWallHubCommandSet
-	1 = Command_WildCastleWallHub_BeginWallSpan	
-	4 = Command_CancelWallSpan
-	6 = Command_Sell
-	7 = Command_StartSelfRepair
+	1 	= Command_WildCastleWallHub_BeginWallSpan	
+	4 	= Command_CancelWallSpan
+	6 	= Command_Sell
+	7 	= Command_StartSelfRepair
 End
 CommandSet WildWallUpgradeNodeCommandSet
-	1 = Command_WildWallUpgradeToHub 
-	2 = Command_WildWallUpgradeToOpening
-	6 = Command_Sell
-	7 = Command_StartSelfRepair 
+	1 	= Command_WildWallUpgradeToHub 
+	2 	= Command_WildWallUpgradeToOpening
+	6 	= Command_Sell
+	7 	= Command_StartSelfRepair 
 End
 
 	CommandSet WildCastleWallHubCommandSetAI_SEE
@@ -133,69 +133,69 @@ End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildLumberMillCommandSetLevel1
-  1  = Command_BuildMordorWorker
-  6  = Command_Sell
+	1  	= Command_BuildMordorWorker
+	6  	= Command_Sell
 End
 	
 ; ------------------------------------------------------------------------------ SEE!	
 CommandSet WildMineShaftCommandSet
-	1 = Command_ExitGarrison
-	2 = Command_ExitGarrison
-	3 = Command_ExitGarrison
-	4 = Command_ExitGarrison
-	5 = Command_ExitGarrison
-	6 = Command_Sell
-	12 = Command_Evacuate ; Added for SEE!	
+	1 	= Command_ExitGarrison
+	2 	= Command_ExitGarrison
+	3 	= Command_ExitGarrison
+	4 	= Command_ExitGarrison
+	5 	= Command_ExitGarrison
+	6 	= Command_Sell
+	12 	= Command_Evacuate ; Added for SEE!	
 End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinCaveCommandSet
-	1 = Command_ConstructGoblinFighterHorde
-	2 = Command_ConstructGoblinArcherHorde
+	1 	= Command_ConstructGoblinFighterHorde
+	2 	= Command_ConstructGoblinArcherHorde
 	;3 = Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer			;Maybe scrap this one?
-	3 = Command_ConstructWildMarauderHorde		;This will require FB & HA (and thus come with it fully upgraded!)
-	4 = Command_PurchaseUpgradeWildCaveLevel2
-	6 = Command_Sell
+	3 	= Command_ConstructWildMarauderHorde		;This will require FB & HA (and thus come with it fully upgraded!)
+	4 	= Command_PurchaseUpgradeWildCaveLevel2
+	6 	= Command_Sell
 End
 CommandSet GoblinCaveCommandSetLevel2
-	1 = Command_ConstructGoblinFighterHorde
-	2 = Command_ConstructGoblinArcherHorde
+	1 	= Command_ConstructGoblinFighterHorde
+	2 	= Command_ConstructGoblinArcherHorde
 	;3 = Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
-	3 = Command_ConstructWildMarauderHorde	
-	4 = Command_PurchaseUpgradeWildCaveLevel3	
-	6 = Command_Sell	
+	3 	= Command_ConstructWildMarauderHorde	
+	4 	= Command_PurchaseUpgradeWildCaveLevel3	
+	6 	= Command_Sell	
 End
 CommandSet GoblinCaveCommandSetLevel3
-	1 = Command_ConstructGoblinFighterHorde
-	2 = Command_ConstructGoblinArcherHorde
+	1 	= Command_ConstructGoblinFighterHorde
+	2 	= Command_ConstructGoblinArcherHorde
 	;3 = Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
-	3 = Command_ConstructWildMarauderHorde	
-	6 = Command_Sell
+	3 	= Command_ConstructWildMarauderHorde	
+	6 	= Command_Sell
 End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildSpiderPitCommandSet 			;(Troll Cave in SEE)
-	1 = Command_ConstructWildHillTrollHorde  					//Command_ConstructWildSpiderlingHorde
-	2 = Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
-	3 = Command_PurchaseTechnologyWildSpiderVenom			//Command_PurchaseSpiderVenomSackScienceUpgrade
-	4 = Command_PurchaseUpgradeWildSpiderPitLevel2
-	6 = Command_Sell
+	1 	= Command_ConstructWildHillTrollHorde  					//Command_ConstructWildSpiderlingHorde
+	2 	= Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
+	3 	= Command_PurchaseTechnologyWildSpiderVenom			//Command_PurchaseSpiderVenomSackScienceUpgrade
+	4 	= Command_PurchaseUpgradeWildSpiderPitLevel2
+	6 	= Command_Sell
 End
 CommandSet WildSpiderPitCommandSetLevel2
-	1 = Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
-	2 = Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
-	3 = Command_PurchaseTechnologyWildSpiderVenom
-	4 = Command_PurchaseUpgradeWildSpiderPitLevel3
-	6 = Command_Sell
+	1 	= Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
+	2 	= Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
+	3 	= Command_PurchaseTechnologyWildSpiderVenom
+	4 	= Command_PurchaseUpgradeWildSpiderPitLevel3
+	6 	= Command_Sell
 End
 CommandSet WildSpiderPitCommandSetLevel3
-	1 = Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
-	2 = Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
-	3 = Command_PurchaseTechnologyWildSpiderVenom
-	6 = Command_Sell
+	1 	= Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
+	2 	= Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
+	3 	= Command_PurchaseTechnologyWildSpiderVenom
+	6 	= Command_Sell
 End
 
 ; ------------------------------------------------------------------------------ SEE!
@@ -203,73 +203,74 @@ CommandSet WildWolfDenCommandSet
 	;1 = Command_ConstructGoblinWargPack
 	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
 	;3 = Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
-	4 = Command_PurchaseUpgradeWildWolfDenLevel2
-	6 = Command_Sell
+	4 	= Command_PurchaseUpgradeWildWolfDenLevel2
+	6 	= Command_Sell
 End
 CommandSet WildWolfDenCommandSetLevel2
 	;1 = Command_ConstructGoblinWargPack ;Command_ConstructWildSpiderlingHorde
 	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
 	;3 = Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
-	4 = Command_PurchaseUpgradeWildWolfDenLevel3
-	6 = Command_Sell
+	4 	= Command_PurchaseUpgradeWildWolfDenLevel3
+	6 	= Command_Sell
 End
 CommandSet WildWolfDenCommandSetLevel3
 	;1 = Command_ConstructGoblinWargPack ;Command_ConstructWildSpiderlingHorde
 	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
 	;3 = Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
-	6 = Command_Sell
+	6 	= Command_Sell
 End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinFissureCommandSet	
-	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	3 = Command_PurchaseTechnologyWildHeavyArmor
-	4 = Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
-	5 = Command_UpgradeWildFissureLevel2
-	6 = Command_Sell
+	1 	= Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
+	2 	= Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	3 	= Command_PurchaseTechnologyWildHeavyArmor
+	4 	= Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
+	5 	= Command_UpgradeWildFissureLevel2
+	6 	= Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel2
-	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	3 = Command_PurchaseTechnologyWildHeavyArmor
-	4 = Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
-	5 = Command_PurchaseUpgradeWildFissureLevel3
-	6 = Command_Sell
+	1 	= Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
+	2 	= Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	3 	= Command_PurchaseTechnologyWildHeavyArmor
+	4 	= Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
+	5 	= Command_PurchaseUpgradeWildFissureLevel3
+	6 	= Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel3
-	1 = Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	2 = Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	3 = Command_PurchaseTechnologyWildHeavyArmor	
-	4 = Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
-	6 = Command_Sell
+	1 	= Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
+	2 	= Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
+	3 	= Command_PurchaseTechnologyWildHeavyArmor	
+	4 	= Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
+	6 	= Command_Sell
 End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinFighterCommandSet
-	 1 = Command_ToggleStance
-	 2 = Command_PurchaseUpgradeWildBasicTraining
-	 3 = Command_PurchaseUpgradeWildHeavyArmor
-	 ;4 = Command_PurchaseUpgradeWildForgedBlade
-	 4 = Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
-	12 = Command_CaptureBuilding
-	13 = Command_AttackMove
-	14 = Command_Stop
-	16 = Command_SetStanceBattle
-	17 = Command_SetStanceAggressive
-	18 = Command_SetStanceHoldGround
+	1 	= Command_ToggleStance
+	2 	= Command_PurchaseUpgradeWildBasicTraining
+	3 	= Command_PurchaseUpgradeWildHeavyArmor
+	;4 	= Command_PurchaseUpgradeWildForgedBlade
+	4 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
+	12 	= Command_CaptureBuilding
+	13 	= Command_AttackMove
+	14 	= Command_Stop
+	16 	= Command_SetStanceBattle
+	17 	= Command_SetStanceAggressive
+	18 	= Command_SetStanceHoldGround
 End
 
+; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinArcherCommandSet
-	 1 = Command_ToggleStance
-	 2 = Command_ArcherBombard
-	 3 = Command_PurchaseUpgradeGenericArcherFlamingArrows //Command_GenericArcherFlamingArrows //Command_GoblinArcherSAFireArrows //Command_PurchaseUpgradePoisonArrows	 ///Wip! 
-	 4 = Command_PurchaseUpgradeWildBasicTraining 
-	 5 = Command_PurchaseUpgradeWildHeavyArmor
-	 6 = Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows
-	12 = Command_CaptureBuilding
-	13 = Command_AttackMove
-	14 = Command_Stop
+	1 	= Command_ToggleStance
+	2 	= Command_ArcherBombard
+	3 	= Command_PurchaseUpgradeGenericArcherFlamingArrows //Command_PurchaseUpgradePoisonArrows 
+	4 	= Command_PurchaseUpgradeWildBasicTraining 
+	5 	= Command_PurchaseUpgradeWildHeavyArmor
+	6 	= Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows
+	12 	= Command_CaptureBuilding
+	13 	= Command_AttackMove
+	14 	= Command_Stop
 	16  = Command_SetStanceBattle
 	17  = Command_SetStanceAggressive
 	18  = Command_SetStanceHoldGround
