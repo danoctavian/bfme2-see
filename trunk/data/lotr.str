@@ -10203,11 +10203,11 @@ OBJECT:GenericWargRider
 END
   
 OBJECT:GenericGoblinSwordsman
-"Goblin Swordsman"
+"Goblin Warrior"
 END
   
 OBJECT:GenericGoblinArcher
-"Goblin Archers"
+"Goblin Archer"
 END
   
 OBJECT:GenericMountainTroll
@@ -10215,11 +10215,11 @@ OBJECT:GenericMountainTroll
 END
 
 CONTROLBAR:TrollFindTree
-"Find a &Tree"
+"Find a Tree"
 END
 
 CONTROLBAR:ConstructWarg
-"&Warg"
+"Warg"
 END
 
 CONTROLBAR:ToolTipBuildWarg
@@ -10227,7 +10227,7 @@ CONTROLBAR:ToolTipBuildWarg
 END
 
 CONTROLBAR:ConstructSpider
-"Spider&ling"
+"Spiderling"
 END
 
 CONTROLBAR:ToolTipBuildSpider
@@ -10235,7 +10235,7 @@ CONTROLBAR:ToolTipBuildSpider
 END
 
 CONTROLBAR:ConstructBarrowWight
-"&Wight"
+"Wight"
 END
 
 CONTROLBAR:ToolTipBuildBarrowWight
