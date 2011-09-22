@@ -15412,10 +15412,10 @@ CONTROLBAR:ToolTipConstructWildGoblinFissure
 END
 
 CONTROLBAR:ConstructWildSpiderPit
-"Build Troll Cave"
+"Build Spider Pit"
 END
 CONTROLBAR:ToolTipConstructWildSpiderPit
-"Trains Hill Trolls and Cave Trolls \n Researches Poison upgrade"
+"Trains Hill Trolls and Cave Trolls \n Researches Venom Sacs upgrade"
 END
 
 CONTROLBAR:ConstructWildWolfDen
@@ -36107,7 +36107,7 @@ HUD:HeroEarnedAwardMessage
 END
 
 TOOLTIP:LackVenomSacks
-"Requires level 3 Troll Cave"
+"Requires level 3 Troll Cave \n and Moria Banner Carriers technology"
 END
 
 OBJECT:Watcher
@@ -41639,14 +41639,14 @@ CONTROLBAR:PurchaseTechnologyWildFireArrows
 "Research Fire Arrows"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
-"Allows hordes to acquire Fire Arrows \n \n When equipped, significantly increases \n the damage done by arrows \n \n Strong vs. structures"
+"Allows hordes to acquire Fire Arrows \n \n When equipped, significantly increases \n the damage done by arrows in \n powerful single shot attacks \n \n Strong vs. structures"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildBasicTraining
 "Research Moria Banner Carriers"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining
-"Allows hordes to acquire \n the Moria Banner Carrier \n \n When equipped, increases a horde to level 2"
+"Enables research of Venom Sacs \n and allows hordes to acquire \n the Moria Banner Carrier \n \n When equipped, increases a horde to level 2"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildForgedBlades

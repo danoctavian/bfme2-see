@@ -332,6 +332,10 @@
 #define SKULL_TOTEM_STEALTH_DETECT_RADIUS			400
 
 ; ------------------------------------------------------------------------------ SEE!
+#define	GOBLIN_BANNERCARRIER_HEALTH							400 //225
+#define	GOBLIN_BANNERCARRIER_HEALTH_DAMAGED				200 //100
+
+; ------------------------------------------------------------------------------ SEE!
 #define	GOBLIN_FIGHTER_BUILDCOST							75
 #define	GOBLIN_FIGHTER_BUILDTIME							60 //120 ; weak but fast!
 #define	GOBLIN_FIGHTER_DAMAGE								30 ;25 for Hobbits as reference
