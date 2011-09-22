@@ -1093,7 +1093,7 @@ CommandButton Command_PurchaseTechnologyWildBasicTraining
 	Radial				= Yes
 	InPalantir			= Yes
 End
-CommandButton Command_PurchaseTechnologyWildForgedBlades
+CommandButton Command_PurchaseTechnologyWildForgedBlades		//THIS IS DISABLED (FOR MORIA) IN SEE!
 	Command				= PLAYER_UPGRADE
 	Options				= NEED_UPGRADE CANCELABLE
 	Upgrade				= Upgrade_TechnologyWildForgedBlades
@@ -1127,7 +1127,7 @@ CommandButton Command_PurchaseTechnologyWildSpiderVenom //Command_PurchaseSpider
 	ButtonImage       	= BWSpiderPit_VenomSacks
 	ButtonBorderType  	= UPGRADE
 	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseTechnologyWildSpiderVenomSacks
-	NeededUpgrade	  	= Upgrade_WildSpiderPitLevel3
+	NeededUpgrade	  	= Upgrade_WildSpiderPitLevel3 Upgrade_TechnologyWildBasicTraining
 	Radial            	= Yes
 	InPalantir	      	= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacks
