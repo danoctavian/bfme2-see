@@ -16381,7 +16381,7 @@ CONTROLBAR:UpgradeWildFissureLevel3
 "Upgrade Fissure to level 3"
 END
 CONTROLBAR:ToolTipBuildWildFissureLevel3Upgrade
-"Allows research of Heavy Armor upgrade \ and construction of Catapults"
+"Allows research of Heavy Armor upgrade \n and construction of Catapults"
 END
 
 CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
