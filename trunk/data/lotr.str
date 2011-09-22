@@ -15401,7 +15401,7 @@ CONTROLBAR:ConstructWildGoblinCave
 "Build Goblin Cave"
 END
 CONTROLBAR:ToolTipConstructWildGoblinCave
-"Trains Goblin Warriors, Archers, \n Pikemen and Drummers" 
+"Trains Goblin Warriors, Archers, \n Spearmen and Drummers" 
 END
 
 CONTROLBAR:ConstructWildGoblinFissure
@@ -16265,7 +16265,7 @@ CONTROLBAR:ConstructGoblinFighterHorde
 "Goblin Warriors"
 END
 CONTROLBAR:ToolTipBuildGoblinFighterHorde
-"Recruit the wild Goblin fighters \n from the intracate caves of Moria \n \n Strong vs. Pikemen"
+"Recruit the wild Goblin warriors \n from the intracate caves of Moria \n \n Strong vs. Pikemen"
 END
 
 CONTROLBAR:ConstructGoblinArcherHorde
@@ -16275,11 +16275,18 @@ CONTROLBAR:ToolTipBuildGoblinArcherHorde
 "Recruit the wild Goblin archers \n from the intracate caves of Moria \n \n Strong vs. Swordsmen"
 END
 
+CONTROLBAR:ConstructGoblinSpearmanHorde
+"Goblin Spearmen"
+END
+CONTROLBAR:ToolTipBuildGoblinSpearmanHorde
+"Recruit the wild Goblin spearmen \n from the intracate caves of Moria \n Strong vs. Cavalry \n \n Requires level 2 Goblin Cave"
+END
+
 CONTROLBAR:ConstructGoblinCave
 "Build Goblin Cave"
 END
 CONTROLBAR:ToolTipGoblinCave
-"Trains Goblin Warriors and Archers"
+"Trains Goblin Warriors, Spearmen \n and Archers"
 END
 
 
@@ -16294,7 +16301,7 @@ CONTROLBAR:ConstructGoblinCaveTroll
 "Cave Troll"
 END
 CONTROLBAR:ToolTipBuildGoblinCaveTroll
-"Recruit the ferocious Cave Trolls of Moria \n Requires level 2 Troll Cave \n Strong vs. Units and Structures"
+"Recruit the ferocious Cave Trolls of Moria \n Strong vs. Units and Structures \n \n Requires level 2 Troll Cave"
 END
 
 CONTROLBAR:ConstructGoblinFissure
@@ -16315,6 +16322,9 @@ END
 OBJECT:GoblinFighter
 "Goblin Warriors"
 END
+OBJECT:GoblinSpearman
+"Goblin Spearmen"
+END
 OBJECT:WildPorter
 "Orc Snaga Builder"
 END
@@ -16334,7 +16344,7 @@ OBJECT:WildMarauder
 "Guardian of Moria"
 END
 OBJECT:WildMarauderHorde
-"Guardians of Moria"
+"Guardians of Gundabad"
 END
 OBJECT:DwarvenCastleWallHubExpansion
 "Wall Hub Expansion"
@@ -16352,7 +16362,7 @@ CONTROLBAR:ConstructWildCaveLevel2Upgrade
 "Upgrade Goblin Cave to level 2"
 END
 CONTROLBAR:ToolTipBuildWildCaveLevel2Upgrade
-"Level 2: +33% faster build speed \n Allows training of Goblin Pikemen \n and Goblin Drummers"
+"Level 2: +33% faster build speed \n Allows training of Goblin Spearmen \n and Goblin Drummers"
 END
 CONTROLBAR:ConstructWildCaveLevel3Upgrade
 "Upgrade Goblin Cave to level 3"
@@ -16438,11 +16448,11 @@ CONTROLBAR:ToolTipBuildWildMountainGiant
 END
 
 CONTROLBAR:ConstructWildMarauderHorde
-"Goblin &Guard of Moria"
+"Hobgoblins"
 END
 
 CONTROLBAR:ToolTipBuildWildMarauderHorde
-"Recruit up to 2 units of The Great Goblin's wild Goblin Elite \n -the Guardians of Moria \n \n Requires Level 3 Goblin Cave, Treasure Trove \n and all Infantry Upgrades \n \n Strong vs. most units"
+"Recruit up to 2 units of The Great Goblin's wild hobgoblin elite \n -the Guardians of Gundabad \n \n Requires Level 3 Goblin Cave, Treasure Trove \n and all Infantry Upgrades \n \n Strong vs. most units"
 END
 
 // MORDOR UNITS
@@ -24970,6 +24980,10 @@ END
 
 OBJECT:HordeGoblinFighters
 "Goblin Warriors"
+END
+
+OBJECT:HordeGoblinSpearmen
+"Goblin Spearmen"
 END
 
 OBJECT:HordeGoblinArcherFighterCombo
@@ -49012,15 +49026,15 @@ CONTROLBAR:ConstructGoblinPikemanHorde
 END
 
 CONTROLBAR:ToolTipBuildGoblinPikemanHorde
-"Requires Level 2 Goblin Cave \n Strong vs. Cavalry"
+"Requires level 2 Goblin Cave \n Strong vs. Cavalry"
 END
 
 TOOLTIP:LackLevel2Cave
-"Requires Level 2 Goblin Cave"
+"Requires level 2 Goblin Cave"
 END
 
 TOOLTIP:LackLevel3Cave
-"Requires Level 3 Goblin Cave"
+"Requires level 3 Goblin Cave"
 END
 
 Upgrade:WildFortressFireDrake

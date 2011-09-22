@@ -152,27 +152,27 @@ End
 CommandSet GoblinCaveCommandSet
 	1 	= Command_ConstructGoblinFighterHorde
 	2 	= Command_ConstructGoblinArcherHorde
-	;3 = Command_ConstructGoblinPikemanHorde
+	3 = Command_ConstructGoblinSpearmanHorde //Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer			;Maybe scrap this one?
-	3 	= Command_ConstructWildMarauderHorde		;This will require FB & HA (and thus come with it fully upgraded!)
-	4 	= Command_PurchaseUpgradeWildCaveLevel2
+	4 	= Command_ConstructWildMarauderHorde		;This will require FB & HA (and thus come with it fully upgraded!)
+	5 	= Command_PurchaseUpgradeWildCaveLevel2
 	6 	= Command_Sell
 End
 CommandSet GoblinCaveCommandSetLevel2
 	1 	= Command_ConstructGoblinFighterHorde
 	2 	= Command_ConstructGoblinArcherHorde
-	;3 = Command_ConstructGoblinPikemanHorde
+	3 = Command_ConstructGoblinSpearmanHorde //Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
-	3 	= Command_ConstructWildMarauderHorde	
-	4 	= Command_PurchaseUpgradeWildCaveLevel3	
+	4 	= Command_ConstructWildMarauderHorde	
+	5 	= Command_PurchaseUpgradeWildCaveLevel3	
 	6 	= Command_Sell	
 End
 CommandSet GoblinCaveCommandSetLevel3
 	1 	= Command_ConstructGoblinFighterHorde
 	2 	= Command_ConstructGoblinArcherHorde
-	;3 = Command_ConstructGoblinPikemanHorde
+	3 	= Command_ConstructGoblinSpearmanHorde //Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
-	3 	= Command_ConstructWildMarauderHorde	
+	4 	= Command_ConstructWildMarauderHorde	
 	6 	= Command_Sell
 End
 
@@ -275,20 +275,21 @@ CommandSet GoblinArcherCommandSet
 	17  = Command_SetStanceAggressive
 	18  = Command_SetStanceHoldGround
 End
-//CommandSet GoblinArcherHordeCommandSet //What is this for?
-//	 1 = Command_ToggleStance
-//	 2 = Command_GoblinArcherPoisonArrows
-//	 3 = Command_PurchaseUpgradeWildFireArrows
-//	 4 = Command_PurchaseUpgradeWildHeavyArmor
-//	 5 = Command_PurchaseUpgradeWildBasicTraining
-//	 6 = Command_ArcherBombard
-//	12 = Command_CaptureBuilding
-//	13 = Command_AttackMove
-//	14 = Command_Stop
-//	16  = Command_SetStanceBattle
-//	17  = Command_SetStanceAggressive
-//	18  = Command_SetStanceHoldGround
-//End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandSet GoblinSpearmanCommandSet
+	1 	= Command_ToggleStance
+	2 	= Command_PurchaseUpgradeWildBasicTraining
+	3 	= Command_PurchaseUpgradeWildHeavyArmor
+	;4 	= Command_PurchaseUpgradeWildForgedBlade
+	4 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
+	12 	= Command_CaptureBuilding
+	13 	= Command_AttackMove
+	14 	= Command_Stop
+	16 	= Command_SetStanceBattle
+	17 	= Command_SetStanceAggressive
+	18 	= Command_SetStanceHoldGround
+End
 
 
 
