@@ -283,6 +283,22 @@ CommandButton Command_ConstructGoblinArcherHorde
 	ShowProductionCount	= Yes
 End
 
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ConstructGoblinSpearmanHorde
+	Command				= UNIT_BUILD
+	Object				= GoblinSpearmanHorde
+	Options				= NEED_UPGRADE CANCELABLE
+	NeededUpgrade   	= Upgrade_WildCaveLevel2
+	TextLabel			= CONTROLBAR:ConstructGoblinSpearmanHorde
+	ButtonImage			= WFGoblinPikeman_Build //BWCave_GoblinWarrior
+	ButtonBorderType		= BUILD											
+	DescriptLabel			= CONTROLBAR:ToolTipBuildGoblinSpearmanHorde
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Cave	
+End
+
 
 
 
