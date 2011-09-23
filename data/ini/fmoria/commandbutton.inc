@@ -39,7 +39,7 @@ CommandButton Command_PorterConstructWildDrum
 	Command				= DOZER_CONSTRUCT
 	Object				= TrollDrum
 	TextLabel			= CONTROLBAR:ConstructWildDrum
-	ButtonImage			= BRBWildStatue //BGHeroicStatue
+	ButtonImage			= BPCEttenmoorsDrum //BGHeroicStatue
 	ButtonBorderType		= BUILD 
 	DescriptLabel			= OBJECT:WildDrumDescription
 	Radial				= Yes  
@@ -256,20 +256,6 @@ END
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 ; ------------------------------------------------------------------------------ SEE!
-CommandButton Command_ConstructGoblinFighterHorde
-	Command				= UNIT_BUILD
-	Object				= GoblinFighterHorde
-	Options				= CANCELABLE
-	TextLabel			= CONTROLBAR:ConstructGoblinFighterHorde
-	ButtonImage			= BWCave_GoblinWarrior
-	ButtonBorderType		= BUILD											
-	DescriptLabel			= CONTROLBAR:ToolTipBuildGoblinFighterHorde
-	Radial				= Yes
-	InPalantir	   		= Yes
-	ShowProductionCount	= Yes
-End
-
-; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructGoblinArcherHorde
 	Command				= UNIT_BUILD
 	Object				= GoblinArcherHorde
@@ -284,11 +270,26 @@ CommandButton Command_ConstructGoblinArcherHorde
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ConstructGoblinFighterHorde
+	Command				= UNIT_BUILD
+	Object				= GoblinFighterHorde
+	Options				= NEED_UPGRADE CANCELABLE
+	NeededUpgrade   	= Upgrade_TechnologyWildForgedBlades	
+	TextLabel			= CONTROLBAR:ConstructGoblinFighterHorde
+	ButtonImage			= BWCave_GoblinWarrior
+	ButtonBorderType		= BUILD											
+	DescriptLabel			= CONTROLBAR:ToolTipBuildGoblinFighterHorde
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes
+End
+
+; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructGoblinSpearmanHorde
 	Command				= UNIT_BUILD
 	Object				= GoblinSpearmanHorde
 	Options				= NEED_UPGRADE CANCELABLE
-	NeededUpgrade   	= Upgrade_WildCaveLevel2
+	NeededUpgrade   	= Upgrade_WildCaveLevel2 Upgrade_TechnologyWildForgedBlades
 	TextLabel			= CONTROLBAR:ConstructGoblinSpearmanHorde
 	ButtonImage			= WFGoblinPikeman_Build //BWCave_GoblinWarrior
 	ButtonBorderType		= BUILD											
@@ -299,7 +300,21 @@ CommandButton Command_ConstructGoblinSpearmanHorde
 	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Cave	
 End
 
-
+CommandButton Command_ConstructWildMarauderHorde
+	Command				= UNIT_BUILD
+	Object				= WildMarauderHorde
+	Options				= CANCELABLE NEED_UPGRADE
+	NeededUpgrade   	= Upgrade_WildCaveLevel3 Upgrade_TechnologyWildForgedBlades Upgrade_TechnologyWildHeavyArmor //Upgrade_TechnologyWildSpiderVenomSacks  
+	TextLabel			= CONTROLBAR:ConstructWildMarauderHorde
+	ButtonImage			= BWFissure_Marauder
+	ButtonBorderType		= BUILD  	
+	DescriptLabel			= CONTROLBAR:ToolTipBuildWildMarauderHorde
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes
+	; LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Cave ;; new, mod by Sûlherokhh	
+	LacksPrerequisiteLabel		= TOOLTIP:LackLevelWildTreasureTrove_SEE  ;;
+End
 
 
 
@@ -438,12 +453,13 @@ End
 CommandButton Command_WildMarauderPorcupineFormation
 	Command			= HORDE_TOGGLE_FORMATION	;;Tower Guard
 	Options			= TOGGLE_IMAGE_ON_FORMATION OK_FOR_MULTI_SELECT
-	ButtonImage             = UCCommon_PorcupineFormation UCCommon_PorcupineFormationOff
-	ButtonBorderType        = ACTION 
-	TextLabel               = CONTROLBAR:TogglePorcupineFormation	CONTROLBAR:ToggleLineFormation
-	DescriptLabel           = CONTROLBAR:ToolTipToggleTowerGuardLineToPorcupineFormation	CONTROLBAR:ToolTipToggleTowerGuardPorcupineToLineFormation
+	ButtonImage     = UCCommon_PorcupineFormation UCCommon_PorcupineFormationOff
+	ButtonBorderType = ACTION 
+	TextLabel        = CONTROLBAR:TogglePorcupineFormation	CONTROLBAR:ToggleLineFormation
+	DescriptLabel     = CONTROLBAR:ToolTipToggleTowerGuardLineToPorcupineFormation	CONTROLBAR:ToolTipToggleTowerGuardPorcupineToLineFormation
 	InPalantir		= Yes
 	DoubleClick		= Yes
+	PresetRange		= 25
 	UnitSpecificSound	= MarauderVoicePorcupine MarauderVoiceDisengage
 End
 
@@ -930,18 +946,7 @@ End
 
 
 
-CommandButton Command_ConstructWildMarauderHorde
-	Command			= UNIT_BUILD
-	Object			= WildMarauderHorde
-	Options			= CANCELABLE
-	TextLabel		= CONTROLBAR:ConstructWildMarauderHorde
-	ButtonImage		= BWFissure_Marauder
-	ButtonBorderType	= BUILD											
-	DescriptLabel		= CONTROLBAR:ToolTipBuildWildMarauderHorde
-	Radial			= Yes
-	InPalantir	   	= Yes
-	ShowProductionCount	= Yes
-End
+
 
 CommandButton Command_ConstructWildMarauderSwordHorde					; Faction enhancement for BFME2 Expansion
 	Command			= UNIT_BUILD
@@ -1069,20 +1074,7 @@ End
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria technology 
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
-CommandButton Command_PurchaseTechnologyWildFireArrows
-	Command				= PLAYER_UPGRADE
-	Options				= CANCELABLE //NEED_UPGRADE CANCELABLE
-	Upgrade				= Upgrade_TechnologyWildFireArrows 
-	;NeededUpgrade		= Upgrade_WildTreasureTroveLevel3 //Is now lvl1 Fissure!
-	TextLabel			= CONTROLBAR:PurchaseTechnologyWildFireArrows
-	ButtonImage			= BMOrcPit_FlamingArrows
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
-	Radial				= Yes
-	InPalantir			= Yes
-	;LacksPrerequisiteLabel	= TOOLTIP:LackLevel3TreasureTrove //Is now lvl1 Fissure!
-End
-CommandButton Command_PurchaseTechnologyWildBasicTraining
+CommandButton Command_PurchaseTechnologyWildBasicTraining		//"MORIA BANNER CARRIER"
 	Command				= PLAYER_UPGRADE
 	Options				= CANCELABLE
 	Upgrade				= Upgrade_TechnologyWildBasicTraining 
@@ -1093,33 +1085,44 @@ CommandButton Command_PurchaseTechnologyWildBasicTraining
 	Radial				= Yes
 	InPalantir			= Yes
 End
-CommandButton Command_PurchaseTechnologyWildForgedBlades		//THIS IS DISABLED (FOR MORIA) IN SEE!
+CommandButton Command_PurchaseTechnologyWildForgedBlades		//"SCAVENGED WEAPONS"
 	Command				= PLAYER_UPGRADE
-	Options				= NEED_UPGRADE CANCELABLE
+	Options				= CANCELABLE
 	Upgrade				= Upgrade_TechnologyWildForgedBlades
-	NeededUpgrade		= Upgrade_WildFissureLevel2 //Upgrade_WildTreasureTroveLevel2
 	TextLabel			= CONTROLBAR:PurchaseTechnologyWildForgedBlades
 	ButtonImage			= BWTreasureTrove_ForgedBlades
 	ButtonBorderType		= UPGRADE
 	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
 	Radial				= Yes
 	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure //LackLevel2TreasureTrove
 End
-CommandButton Command_PurchaseTechnologyWildHeavyArmor
+CommandButton Command_PurchaseTechnologyWildHeavyArmor		//"SCAVENGED ARMOR"
 	Command				= PLAYER_UPGRADE
 	Options				= NEED_UPGRADE CANCELABLE
 	Upgrade				= Upgrade_TechnologyWildHeavyArmor
-	NeededUpgrade		= Upgrade_WildFissureLevel3
+	NeededUpgrade		= Upgrade_WildFissureLevel2
 	TextLabel			= CONTROLBAR:PurchaseTechnologyWildHeavyArmor
 	ButtonImage			= BWTreasureTrove_ScavengedArmor
 	ButtonBorderType		= UPGRADE
 	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
 	Radial				= Yes
 	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure
+End
+CommandButton Command_PurchaseTechnologyWildFireArrows		//"FLAMING ARROWS" (New generic ability!)
+	Command				= PLAYER_UPGRADE
+	Options				= NEED_UPGRADE CANCELABLE
+	Upgrade				= Upgrade_TechnologyWildFireArrows 
+	NeededUpgrade		= Upgrade_WildFissureLevel3
+	TextLabel			= CONTROLBAR:PurchaseTechnologyWildFireArrows
+	ButtonImage			= BMOrcPit_FlamingArrows
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
+	Radial				= Yes
+	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
 End
-CommandButton Command_PurchaseTechnologyWildSpiderVenom //Command_PurchaseSpiderVenomSackScienceUpgrade
+CommandButton Command_PurchaseTechnologyWildSpiderVenom 		//"VENOM SACS"
 	Command           	= PLAYER_UPGRADE
 	Options			  	= NEED_UPGRADE CANCELABLE	
 	Upgrade           	= Upgrade_TechnologyWildSpiderVenomSacks //Upgrade_WildSpiderVenomSackScience
@@ -1187,7 +1190,7 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenomBlades ;This is for Warriors
 	Command           	= OBJECT_UPGRADE
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
-	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience
+	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks Upgrade_WildBasicTraining //WildSpiderVenomSackScience
 	TextLabel         	= CONTROLBAR:PurchaseUpgradeWildVenomBlade
 	ButtonImage       	= BWTreasureTrove_PoisonBlades
 	ButtonBorderType  	= UPGRADE
@@ -1199,7 +1202,7 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenomArrows ;This is for Archers!
 	Command           	= OBJECT_UPGRADE
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
-	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience
+	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks Upgrade_WildBasicTraining //WildSpiderVenomSackScience
 	TextLabel         	= CONTROLBAR:PurchaseUpgradeWildVenomArrow
 	ButtonImage       	= BWTreasureTrove_PoisonArrows
 	ButtonBorderType  	= UPGRADE

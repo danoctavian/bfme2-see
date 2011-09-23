@@ -221,18 +221,10 @@ Upgrade Upgrade_TechnologyWildBasicTraining
 	ResearchCompleteEvaEvent	= UpgradeBannerCarrierTechnologyReady-Wild
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
-Upgrade Upgrade_TechnologyWildFireArrows
-	DisplayName     	= UPGRADE:WildFireArrowUpgrade
-	Type            	= PLAYER
-	BuildCost			= WILD_TECH_FIRE_ARROWS_BUILDCOST
-	BuildTime			= WILD_TECH_FIRE_ARROWS_BUILDTIME
-	ResearchCompleteEvaEvent	= UpgradeFlameArrowsReady
-	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
-End
 Upgrade Upgrade_TechnologyWildForgedBlades
 	DisplayName     	= UPGRADE:WildForgedBlades
 	Type            	= PLAYER
-	BuildCost			= WILD_TECH_FORGED_BLADES_BUILDCOST
+	BuildCost			= WILD_TECH_FORGED_BLADES_BUILDCOST		//FREE!
 	BuildTime			= WILD_TECH_FORGED_BLADES_BUILDTIME
 	ResearchCompleteEvaEvent	= UpgradeForgedBladesReady
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
@@ -240,10 +232,18 @@ End
 Upgrade Upgrade_TechnologyWildHeavyArmor
 	DisplayName     	= UPGRADE:WildHeavyArmor
 	Type            	= PLAYER
-	BuildCost			= WILD_TECH_HEAVY_ARMOR_BUILDCOST	
+	BuildCost			= WILD_TECH_HEAVY_ARMOR_BUILDCOST			//FREE!
 	BuildTime			= WILD_TECH_HEAVY_ARMOR_BUILDTIME		
 	ResearchCompleteEvaEvent	= UpgradeScavengedArmorReady
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
+End
+Upgrade Upgrade_TechnologyWildFireArrows
+	DisplayName     	= UPGRADE:WildFireArrowUpgrade
+	Type            	= PLAYER
+	BuildCost			= WILD_TECH_FIRE_ARROWS_BUILDCOST
+	BuildTime			= WILD_TECH_FIRE_ARROWS_BUILDTIME
+	ResearchCompleteEvaEvent	= UpgradeFlameArrowsReady
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
 End
 Upgrade Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience ;change to TechnologyWildSpiderVenomSacks
 	DisplayName			= UPGRADE:WildPoisonBlades //Upgrade:WildVenomSacs

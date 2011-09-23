@@ -91,7 +91,38 @@ Armor GoblinFighterScavengedArmor								;WildFighterScavengedArmor
   FlankedPenalty = 			50%      
 End
 
-
+;------------------------------------------------------------------------------
+Armor WildMarauderArmor
+  Armor = DEFAULT         	100%   ; 100%
+  Armor = SLASH           	200%   ;
+  Armor = PIERCE          	125%   ;  50%
+  Armor = SPECIALIST      	100%   ;
+  Armor = CAVALRY	   		20%
+  Armor = CRUSH            	10%   ;  50%
+  Armor = SIEGE           	100%   ;
+  Armor = FLAME           	100%   ;  30%
+  Armor = MAGIC           	100%   ;
+  Armor = HERO            	200%   ;
+  Armor = HERO_RANGED     	200%   ;
+  Armor = STRUCTURAL	  	100%	
+  FlankedPenalty 	 = 			75%      
+End
+;------------------------------------------------------------------------------
+Armor WildMarauderHeavyArmor
+  Armor = DEFAULT        	50% ;40%
+  Armor = SLASH          	100% ;
+  Armor = PIERCE         	65% ; 20%
+  Armor = SPECIALIST       	50% 
+  Armor = CAVALRY	     	10% ;
+  Armor = CRUSH          	5%  ;40%
+  Armor = SIEGE           	50% ;100%
+  Armor = FLAME          	50%  ; 0%
+  Armor = MAGIC          	50% ;100%
+  Armor = HERO           	100% ; 50%
+  Armor = HERO_RANGED    	100% ; 50%  
+  Armor = STRUCTURAL	  	20%	
+  FlankedPenalty 	 = 			75%     
+End
 
 
 
@@ -146,41 +177,7 @@ Armor WildArcherScavengedArmor
 End
 
 
-;------------------------------------------------------------------------------
-Armor WildMarauderArmor
-  Armor = DEFAULT         	 90%   ; 100%	originally 100%
-  Armor = SLASH           	140%   ; 	originally 200%
-  Armor = PIERCE          	 80%   ;  50%	originally 125%	RotWK originally 100%
-  Armor = SPECIALIST      	100%   ;	originally 100%
-  Armor = CAVALRY	  	 25%   ;	originally 20%
-  Armor = CRUSH           	 60%   ;  50%
-  Armor = SIEGE           	100%   ;
-  Armor = FLAME           	100%   ;  30%
-  Armor = FROST          	100%   ;
-  Armor = MAGIC           	100%   ;
-  Armor = HERO            	200%   ;
-  Armor = HERO_RANGED     	200%   ;
-  Armor = STRUCTURAL	  	 75%   ;	originally 100%	
-  FlankedPenalty 	       = 75%         
-End
 
-;------------------------------------------------------------------------------
-Armor WildMarauderHeavyArmor
-  Armor = DEFAULT            	 50% 	;  40%	originally 50%
-  Armor = SLASH               	 90% 	;	originally 100%
-  Armor = PIERCE            	 40% 	;  20%	originally 65%	RotWK originally 60%
-  Armor = SPECIALIST         	 60% 	;	originally 50%
-  Armor = CAVALRY	     	 25% 	;	originally 10%
-  Armor = CRUSH             	 30%  	;  40%
-  Armor = SIEGE              	 50% 	; 100%
-  Armor = FLAME              	 50%  	;   0%
-  Armor = FROST          	100%   ;
-  Armor = MAGIC              	 50% 	; 100%
-  Armor = HERO                	100% 	;  50%
-  Armor = HERO_RANGED         	100% 	;  50%  
-  Armor = STRUCTURAL	 	 20%	;	originally 20%
-  FlankedPenalty 	       = 75%     
-End
 
 ;------------------------------------------------------------------------------
 Armor MarauderSwordArmor

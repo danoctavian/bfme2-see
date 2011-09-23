@@ -56,9 +56,6 @@ END
 TOOLTIP:LackWildBasicTraining
 "Research Banner Carriers at Trove \n to enable this equipment \n \n When equipped, a Banner Carrier \n increases this battalion to level 2"
 END
-TOOLTIP:LackWildFireArrows
-"Research Fire Arrows at Fissure \n to enable this equipment \n \n When equipped, significantly increases \n the damage done by arrows"
-END
 TOOLTIP:LackWildForgedBlades
 "Research Scavenged Weapons at Fissure \n to enable this equipment \n \n When equipped, increases the damage \n done by melee weapons"
 END
@@ -66,7 +63,10 @@ TOOLTIP:LackWildHeavyArmor
 "Research Scavenged Armor at Fissure \n to enable this equipment \n \n When equipped, significantly reduces \n the amount of damage taken"
 END
 TOOLTIP:LackVenomSacksTechnology
-"Research Venom Sacs at Troll Cave \n to enable this equipment \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
+"Research Venom Sacs at Troll Cave \n and purchase Banner Carrier \n to enable this equipment \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
+END
+TOOLTIP:LackWildFireArrows
+"Research Fire Arrows at Fissure \n to enable this ability \n \n When equipped, significantly increases \n the damage done by arrows"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
@@ -76,37 +76,38 @@ OBJECT:WildMineShaft
 "Mine Tunnel"
 END
 OBJECT:WildMineShaftDescription
-"Generates resources based on available terrain \n Provides access to the Goblin tunnel network \n Increases command point limit by 50"
+"Generates resources based on available terrain \n Provides access to the Goblin tunnel network \n \n Increases command point limit by 50"
 END
 CONTROLBAR:ConstructWildMineShaft
 "Build Mine Tunnel"
 END
 CONTROLBAR:ToolTipConstructWildMineShaft
-"Generates resources based on available terrain \n Provides access to the Goblin tunnel network \n Increases command point limit by 50"
+"Generates resources based on available terrain \n Provides access to the Goblin tunnel network \n \n Increases command point limit by 50"
 END
 Upgrade:WildMineShaftLevel2
-"Tunnel Level 2"
+"Tunnel level 2"
 END
 Upgrade:WildMineShaftLevel3
-"Tunnel Level 3"
+"Tunnel level 3"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
 
-OBJECT:WildDrum
-"Troll Drum"
-End
-OBJECT:WildTrollDrum
-"Troll Drum"
-End
-OBJECT:WildTrollDrumDescription
-"Allies near the drum gain +25% damage, \n earn experience 25% faster \n and will heal if not under attack \n \n Reduces the cost of infantry \n \n Increases command point limit by 25"
-End
+
+//OBJECT:WildTrollDrum
+//"Troll Drum"
+//End
+//OBJECT:WildTrollDrumDescription
+//"Allies near the drum gain +25% damage, \n earn experience 25% faster \n and will heal if not under attack \n \n Reduces the cost of infantry \n \n Increases command point limit by 25"
+//End
 CONTROLBAR:ConstructWildDrum
 "Build Troll Drum"
 END
+OBJECT:WildDrum
+"Troll Drum"
+End
 OBJECT:WildDrumDescription
-"Nearby allies will heal if not under attack \n \n Allies near the drum gain +25% damage, \n and earn experience 25% faster \n \n Reduces the cost of infantry \n Increases command point limit by 25"
+"Allies near the drum gain +25% damage, \n earn experience 25% faster, \n and will heal if not under attack \n \n Reduces the cost of infantry \n \n Increases command point limit by 25"
 END
 
 
@@ -15412,7 +15413,7 @@ CONTROLBAR:ToolTipConstructWildGoblinFissure
 END
 
 CONTROLBAR:ConstructWildSpiderPit
-"Build Spider Pit"
+"Build Troll Cave"
 END
 CONTROLBAR:ToolTipConstructWildSpiderPit
 "Trains Hill Trolls and Cave Trolls \n Researches Venom Sacs upgrade"
@@ -15441,9 +15442,8 @@ END
 
 //Wild Units
 CONTROLBAR:ConstructWildPorter
-"Bui&lder"
+"Builder"
 END
-
 CONTROLBAR:ToolTipConstructWildPorter
 "Send forth a Builder \n Builds Moria structures"
 END
@@ -16261,13 +16261,6 @@ CONTROLBAR:RohanLegolasHotkey
 END
 
 // ################################# GOBLIN UNITS
-CONTROLBAR:ConstructGoblinFighterHorde
-"Goblin Warriors"
-END
-CONTROLBAR:ToolTipBuildGoblinFighterHorde
-"Recruit the wild Goblin warriors \n from the intracate caves of Moria \n \n Strong vs. Pikemen"
-END
-
 CONTROLBAR:ConstructGoblinArcherHorde
 "Goblin Archers"
 END
@@ -16275,11 +16268,25 @@ CONTROLBAR:ToolTipBuildGoblinArcherHorde
 "Recruit the wild Goblin archers \n from the intracate caves of Moria \n \n Strong vs. Swordsmen"
 END
 
+CONTROLBAR:ConstructGoblinFighterHorde
+"Goblin Warriors"
+END
+CONTROLBAR:ToolTipBuildGoblinFighterHorde
+"Recruit the wild Goblin warriors \n from the intracate caves of Moria \n \n Requires Scavenged Weapons upgrade \n \n Strong vs. Pikemen"
+END
+
 CONTROLBAR:ConstructGoblinSpearmanHorde
 "Goblin Spearmen"
 END
 CONTROLBAR:ToolTipBuildGoblinSpearmanHorde
-"Recruit the wild Goblin spearmen \n from the intracate caves of Moria \n Strong vs. Cavalry \n \n Requires level 2 Goblin Cave"
+"Recruit the wild Goblin spearmen \n from the intracate caves of Moria \n \n Requires level 2 Goblin Cave \n and Scavenged Weapons upgrade \n \n Strong vs. Cavalry"
+END
+
+CONTROLBAR:ConstructWildMarauderHorde
+"Hobgoblins"
+END
+CONTROLBAR:ToolTipBuildWildMarauderHorde
+"Recruit up to 2 units of The Great Goblin's wild hobgoblin elite \n -the Guardians of Gundabad \n \n Requires level 3 Goblin Cave, Fissure \n Scavenged Weapons- and Armor upgrades \n \n Strong vs. most units, incl heroes"
 END
 
 CONTROLBAR:ConstructGoblinCave
@@ -16314,7 +16321,7 @@ OBJECT:GoblinFissure
 "Fissure"
 END
 OBJECT:GoblinFissureDescription
-"Level 2: +33% Faster Build Speed \n Level 3: +50% Faster Build Speed"
+"Researches Moria Technology upgrades"
 END
 OBJECT:GoblinArcher
 "Goblin Archers"
@@ -16341,10 +16348,10 @@ OBJECT:WildSpiderRiderHorde
 "Goblin Spider Rider"
 END   
 OBJECT:WildMarauder
-"Guardian of Moria"
+"Guardians of Moria"
 END
 OBJECT:WildMarauderHorde
-"Guardians of Gundabad"
+"Guardian of Moria"
 END
 OBJECT:DwarvenCastleWallHubExpansion
 "Wall Hub Expansion"
@@ -16362,39 +16369,39 @@ CONTROLBAR:ConstructWildCaveLevel2Upgrade
 "Upgrade Goblin Cave to level 2"
 END
 CONTROLBAR:ToolTipBuildWildCaveLevel2Upgrade
-"Level 2: +33% faster build speed \n Allows training of Goblin Spearmen \n and Goblin Drummers"
+"Level 2: +33% faster build speed \n \n Allows training of Goblin Spearmen \n and Goblin Drummers"
 END
 CONTROLBAR:ConstructWildCaveLevel3Upgrade
 "Upgrade Goblin Cave to level 3"
 END
 CONTROLBAR:ToolTipBuildWildCaveLevel3Upgrade
-"Level 3: +50% faster build speed \n Allows training of The Goblin Guard of Moria \n \n Adds defensive Arrow Tower"
+"Level 3: +50% faster build speed \n \n Allows training of \n The Goblin Guard of Gundabad \n \n Adds defensive Arrow Tower"
 END
 
 CONTROLBAR:UpgradeWildFissureLevel2
 "Upgrade Fissure to level 2"
 END
 CONTROLBAR:ToolTipBuildWildFissureLevel2Upgrade
-"Allows research of Forged Blades upgrade"
+"Allows research of Scavenged Armor upgrade"
 END
 CONTROLBAR:UpgradeWildFissureLevel3
 "Upgrade Fissure to level 3"
 END
 CONTROLBAR:ToolTipBuildWildFissureLevel3Upgrade
-"Allows research of Heavy Armor upgrade \n and construction of Catapults"
+"Allows research of Flaming Arrows upgrade \n and construction of Catapults"
 END
 
 CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
 "Upgrade Troll Cave to level 2"
 END
 CONTROLBAR:ToolTipBuildWildSpiderPitLevel2Upgrade
-"Level 2: +33% faster build speed \n Allows training of Cave Trolls"
+"Level 2: +33% faster build speed \n \n Allows training of Cave Trolls"
 END
 CONTROLBAR:ConstructWildSpiderPitLevel3Upgrade
 "Upgrade Troll Cave to level 3"
 END
 CONTROLBAR:ToolTipBuildWildSpiderPitLevel3Upgrade
-"Level 3: +50% faster build speed \n Allows recruitment of the Cave Troll of Moria \n Allows research of Spider Venom Sacs"
+"Level 3: +50% faster build speed \n \n Allows recruitment of the Cave Troll of Moria \n Allows research of Spider Venom Sacs"
 END
 
 CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
@@ -16447,13 +16454,7 @@ CONTROLBAR:ToolTipBuildWildMountainGiant
 "Requires Level 3 Fissure \n Strong vs Units and Structures"
 END
 
-CONTROLBAR:ConstructWildMarauderHorde
-"Hobgoblins"
-END
 
-CONTROLBAR:ToolTipBuildWildMarauderHorde
-"Recruit up to 2 units of The Great Goblin's wild hobgoblin elite \n -the Guardians of Gundabad \n \n Requires Level 3 Goblin Cave, Treasure Trove \n and all Infantry Upgrades \n \n Strong vs. most units"
-END
 
 // MORDOR UNITS
 
@@ -24503,7 +24504,7 @@ OBJECT:IsengardArmoryDescription
 END
 
 OBJECT:GoblinCaveDescription
-"Level 2: +33% Faster Build Speed\n Level 3: +50% Faster Build Speed"
+"Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
 END
 
 APT:BirthDateTitle
@@ -27379,19 +27380,19 @@ CONTROLBAR:ToolTipCaptureBuilding
 END
 
 CONTROLBAR:SelectUpgradesMenFortress
-"Fortress &Upgrades"
+"Fortress Upgrades"
 END
 
 CONTROLBAR:ToolTipCommandSelectUpgradesMenFortress
-"Purchase upgrades and additional defenses \n for the Fortress"
+"Purchase upgrades and \n additional defenses for the Fortress"
 END
 
 CONTROLBAR:SelectRevivablesMenFortress
-"He&roes"
+"Heroes"
 END
 
 CONTROLBAR:ToolTipCommandSelectRevivablesMenFortress
-"Recruit and revive heroes"
+"Recruit and revive Heroes"
 END
 
 CONTROLBAR:ConstructMenTrebuchetExpansion
@@ -27657,19 +27658,19 @@ END
 ///////////////////////////////
 
 CONTROLBAR:SelectUpgradesDwarvenFortress
-"Fortress &Upgrades"
+"Fortress Upgrades"
 END
 
 CONTROLBAR:ToolTipCommandSelectUpgradesDwarvenFortress
-"Purchase upgrades and additional defenses \n for the Fortress"
+"Purchase upgrades and \n additional defenses for the Fortress"
 END
 
 CONTROLBAR:SelectRevivablesDwarvenFortress
-"He&roes"
+"Heroes"
 END
 
 CONTROLBAR:ToolTipCommandSelectRevivablesDwarvenFortress
-"Recruit and revive heroes"
+"Recruit and revive Heroes"
 END
 
 CONTROLBAR:ConstructDwarvenCatapultExpansion
@@ -28149,23 +28150,23 @@ CONTROLBAR:ConstructWildGiantSentryExpansion
 END
 
 CONTROLBAR:ToolTipConstructWildGiantSentryExpansion
-"A Giant that hurls rocks at enemy units"
+"A captivated Stone Giant that \n hurls large rocks at enemy units"
 END
 
 CONTROLBAR:SelectUpgradesWildFortress
-"Fortress &Upgrades"
+"Fortress Upgrades"
 END
 
 CONTROLBAR:ToolTipCommandSelectUpgradesWildFortress
-"Purchase upgrades and additional defenses \n for the Fortress"
+"Purchase upgrades and \n additional defenses for the Fortress"
 END
 
 CONTROLBAR:SelectRevivablesGoblinFortress
-"He&roes"
+"Heroes"
 END
 
 CONTROLBAR:ToolTipCommandSelectRevivablesWildFortress
-"Recruit and revive heroes"
+"Recruit and revive Moria's Heroes"
 END
 
 CONTROLBAR:WildGoblinKingHotkey
@@ -28187,7 +28188,7 @@ END
 ///////////////////////////////DRAGONS
 
 CONTROLBAR:PurchaseUpgradeWildFortressDragonNest
-"&Dragon's Nest Monument"
+"Dragon's Nest Monument"
 END
 
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressDragonNest
@@ -28195,15 +28196,15 @@ CONTROLBAR:ToolTipPurchaseUpgradeWildFortressDragonNest
 END
 
 CONTROLBAR:PurchaseWildFireDrake
-"&Drogoth, the Dragon Lord"
+"Drogoth, the Dragon Lord"
 END
 
 CONTROLBAR:ToolTipPurchaseWildFireDrake
-"Summons Drogoth the Dragon Lord \n under your control \n Mega strong vs. Eagles"
+"Summons Drogoth - the Dragon Lord, \n under your control \n Super strong vs. Eagles"
 END
 
 CONTROLBAR:WildDrogothHotkey
-"&Drogoth, the Dragon Lord"
+"Drogoth, the Dragon Lord"
 END
 
 CONTROLBAR:WildDrogothRecruit
@@ -28289,7 +28290,7 @@ CONTROLBAR:ConstructWildSentryTower
 END
 
 CONTROLBAR:ToolTipConstructWildSentryTower
-"Defensive Arrow Tower \n Can be garrisoned with archers to increase damage output"
+"Defensive Arrow Tower \n \n Can be garrisoned with archers \n to increase damage output"
 END
 
 
@@ -28304,7 +28305,7 @@ OBJECT:WildSpiderPit
 END
 
 OBJECT:WildSpiderPitDescription
-"Level 2: +33% Faster Build Speed \n Level 3: +50% Faster Build Speed"
+"Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
 END
 
 OBJECT:WildWolfDen
@@ -28312,7 +28313,7 @@ OBJECT:WildWolfDen
 END
 
 OBJECT:WildWolfDenDescription
-"Level 2: +33% Faster Build Speed \n Level 3: +50% Faster Build Speed"
+"Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
 END
 
 OBJECT:WildSentryTower
@@ -28328,7 +28329,7 @@ OBJECT:WildTreasureTrove
 END
 
 OBJECT:WildTreasureTroveDescription
-"Researches Moria unit upgrades"
+"Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
 END
 
 OBJECT:WildFortress
@@ -28348,11 +28349,11 @@ OBJECT:WildBuildingFoundation
 END
 
 OBJECT:WildArrowDenExpansion
-"Arrow Den Expansion"
+"Archer Tower expansion"
 END
 
 OBJECT:WildGiantSentryExpansion
-"Giant Sentry Expansion"
+"Giant Sentry expansion"
 END
 
 OBJECT:GoblinCaveTroll
@@ -28368,7 +28369,7 @@ OBJECT:WildFireDrake
 END
 
 OBJECT:WildSpiderHolesExpansion
-"Spider Holes Expansion"
+"Spider Den expansion"
 END
 
 OBJECT:Drogoth
@@ -28454,19 +28455,19 @@ CONTROLBAR:ToolTipConstructElvenFloodgateExpansion
 END
 
 CONTROLBAR:SelectRevivablesElvenFortress
-"He&roes"
+"Heroes"
 END
 
 CONTROLBAR:ToolTipCommandSelectRevivablesElvenFortress
-"Recruit and revive heroes"
+"Recruit and revive Heroes"
 END
 
 CONTROLBAR:SelectUpgradesElvenFortress
-"Fortress &Upgrades"
+"Fortress Upgrades"
 END
 
 CONTROLBAR:ToolTipCommandSelectUpgradesElvenFortress
-"Purchase upgrades and additional defenses \n for the Fortress"
+"Purchase upgrades and \n additional defenses for the Fortress"
 END
 
 ///////////////////////////////EAGLES
@@ -31350,49 +31351,43 @@ END
 /////////////////////
 
 CONTROLBAR:PurchaseUpgradeWildFortressBatCloud
-"Bat &Cloud"
+"Bat Cloud"
 END
-
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressBatCloud
-"The Fortress gains a vision bonus and can detect stealthed units"
+"The Fortress gains a vision bonus \n and can detect stealthed units"
 END
 
 CONTROLBAR:PurchaseUpgradeWildFortressFireArrows
-"&Fire Arrows"
+"Fire Arrows"
 END
-
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressFireArrows
-"Equips your Arrow Dens with Fire Arrows"
+"Equips your Fortress Towers with Fire Arrows \n Increases damage done by arrows"
 END
 
 CONTROLBAR:PurchaseUpgradeWildFortressWebCocoon
-"&Web Cocoon"
+"Web Cocoon"
 END
-
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoon
 "Increases Fortress armor with 50% \n Pre-requisite to Dragon's Nest"
 END
 
 CONTROLBAR:PurchaseUpgradeWildFortressRazorSpines
-"&Razor Spines"
+"Razor Spines"
 END
-
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressRazorSpines
 "Damages enemy units adjacent to the Fortress"
 END
 
 CONTROLBAR:PurchaseUpgradeSentryTowerFireArrows
-"Fire Arro&ws"
+"Fire Arrows"
 END
-
 CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerFireArrows
-"Upgrades this Tower with Fire Arrows \n Increases damage done by Arrows"
+"Equips this Tower with Fire Arrows \n Increases damage done by arrows"
 END
 
 CONTROLBAR:ConstructWildBurrowsExpansion
-"Bu&rrows Expansion"
+"Burrows expansion"
 END
-
 CONTROLBAR:ToolTipConstructWildBurrowsExpansion
 "Connects this Fortress to the tunnel network"
 END
@@ -31539,19 +31534,19 @@ CONTROLBAR:ToolTipCommand_ConstructMordorCastleWallHub
 END
 
 CONTROLBAR:SelectUpgradesIsengardFortress
-"&Upgrade Fortress"
+"Fortress Upgrades"
 END
 
 CONTROLBAR:ToolTipCommandSelectUpgradesIsengardFortress
-"Purchase upgrades and additional defenses \n for the Fortress"
+"Purchase upgrades and \n additional defenses for the Fortress"
 END
 
 CONTROLBAR:SelectRevivablesIsengardFortress
-"He&roes"
+"Heroes"
 END
 
 CONTROLBAR:ToolTipCommandSelectRevivablesIsengardFortress
-"Recruit and Revive Heroes"
+"Recruit and revive Heroes"
 END
 
 
@@ -31560,19 +31555,19 @@ END
 ////////////////////////////////
 
 CONTROLBAR:SelectUpgradesMordorFortress
-"&Upgrade Fortress"
+"Fortress Upgrades"
 END
 
 CONTROLBAR:ToolTipCommandSelectUpgradesMordorFortress
-"Purchase upgrades and additional defenses \n for the Fortress"
+"Purchase upgrades and \n additional defenses for the Fortress"
 END
 
 CONTROLBAR:SelectRevivablesMordorFortress
-"He&roes"
+"Heroes"
 END
 
 CONTROLBAR:ToolTipCommandSelectRevivablesMordorFortress
-"Recruit and Revive heroes"
+"Recruit and revive Heroes"
 END
 
 CONTROLBAR:ConstructMordorWallCatapultExpansion
@@ -41636,10 +41631,10 @@ END
 // ########################################
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildFireArrows
-"Research Fire Arrows"
+"Research Flaming Arrows"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
-"Allows hordes to acquire Fire Arrows \n \n When equipped, significantly increases \n the damage done by arrows in \n powerful single shot attacks \n \n Strong vs. structures"
+"Allows hordes to acquire Flaming Arrows \n \n When equipped, significantly increases \n the damage done by arrows in \n powerful single shot attacks \n \n Strong vs. structures"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildBasicTraining
@@ -41653,7 +41648,8 @@ CONTROLBAR:PurchaseTechnologyWildForgedBlades
 "Research Scavenged Weapons"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
-"Allows hordes to acquire Scavenged Weapons \n \n When equipped, increases the damage \n done by melee weapons"
+// original //"Allows hordes to acquire Scavenged Weapons \n \n When equipped, increases the damage \n done by melee weapons"
+"Allows hordes to acquire Scavenged Weapons \n thus enabling training of \n Goblin Warriors and Spearmen"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildHeavyArmor
@@ -41675,17 +41671,17 @@ END
 // ########################################
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildFireArrows
-"Purchase Flaming Arrows"
+"Flaming Arrows"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
-"Upgrades this horde with Flaming Arrows \n Significantly increases the damage done by arrows"
+"Significantly increases the damage done \n by arrows, in powerful single shot attacks \n \n Left click icon then left click on target"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildBasicTraining
 "Purchase Moria Banner Carrier"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildBasicTraining
-"Increases this horde to Level 2 \n Can only be equipped at level 1"
+"Increases this horde to level 2 \n (Can only be equipped at level 1) \n \n Pre-requisite to Venom Sacs"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildForgedBlade
@@ -41706,14 +41702,14 @@ CONTROLBAR:PurchaseUpgradeWildVenomBlade
 "Purchase Blade Venom"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildVenomBlade
-"Upgrades this horde with Venom Sacs \n \n When equipped, weapons inflict poison to enemies \n causing damage over time"
+"Upgrades this horde's Banner Carrier \n with Venom Sacs \n \n When equipped, weapons inflict poison \n to enemies, causing damage over time"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildVenomArrow
 "Purchase Arrow Venom"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildVenomArrow
-"Upgrades this horde with Venom Sacs \n \n When equipped, arrows inflict poison to enemies \n causing damage over time"
+"Upgrades this horde's Banner Carrier \n with Venom Sacs \n \n When equipped, arrows inflict poison \n to enemies, causing damage over time"
 END
 // ------------------------------------------------------------
 // ########################################
@@ -46373,7 +46369,7 @@ GUI:StuckAsObserverInStrategicRTSGameMessage
 END
 
 TOOLTIP:LackDragonNestWebCocoon
-"Requires the Web Cocoon upgrade \n Allows summoning of Drogoth, \n -the armored Dragon Lord of the Withered Heath"
+"Allows summoning of Drogoth, \n -the armored Dragon Lord \n of the Withered Heath \n \n Requires Web Cocoon upgrade"
 END
 
 TOOLTIP:LackEagleNestEncasingVines
@@ -49044,7 +49040,7 @@ END
 
 // #################################################################################################### POISON TECH!
 UPGRADE:WildPoisonBlades
-"Blade Poison"
+"Venom Sacs"
 END
 CONTROLBAR:PurchaseTechnologySpiderPoisonBlades
 "Research Blade Poison"
@@ -49068,10 +49064,10 @@ CONTROLBAR:PurchaseWildFortressStonePavement_SEE
 "Defiled Ground"
 END
 CONTROLBAR:ToolTipPurchaseWildFortressStonePavement_SEE 
-"Structures built on Defiled Ground gain \n +10% Armor +5% Production Speed \n Pre-requisite to Web Cocoon"
+"Structures built on Defiled Ground gain \n +10% Armor +5% Production Speed \n \n Pre-requisite to Web Cocoon"
 END
 TOOLTIP:LackWildFortressStonePavement_SEE
-"Requires Defiled Ground Upgrade"
+"Increases Fortress armor with 50% \n \n Requires Defiled Ground upgrade"
 END
 Upgrade:FortressWildStonePavement_SEE
 "Defiled Ground"
@@ -49138,7 +49134,7 @@ GUI:PleaseSelectBuddy
 END
 
 CONTROLBAR:Requirements
-"Forge or Armory is missing!"
+"Armory, Smith, Forge or Fissure is missing!"
 End
 
 CONTROLBAR:LumberMillWorkersBuilt_SEE

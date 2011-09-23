@@ -154,8 +154,8 @@ End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinCaveCommandSet
-	1 	= Command_ConstructGoblinFighterHorde
-	2 	= Command_ConstructGoblinArcherHorde
+	1 	= Command_ConstructGoblinArcherHorde 
+	2 	= Command_ConstructGoblinFighterHorde
 	3 = Command_ConstructGoblinSpearmanHorde //Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer			;Maybe scrap this one?
 	4 	= Command_ConstructWildMarauderHorde		;This will require FB & HA (and thus come with it fully upgraded!)
@@ -163,8 +163,8 @@ CommandSet GoblinCaveCommandSet
 	6 	= Command_Sell
 End
 CommandSet GoblinCaveCommandSetLevel2
-	1 	= Command_ConstructGoblinFighterHorde
-	2 	= Command_ConstructGoblinArcherHorde
+	1 	= Command_ConstructGoblinArcherHorde 
+	2 	= Command_ConstructGoblinFighterHorde
 	3 = Command_ConstructGoblinSpearmanHorde //Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
 	4 	= Command_ConstructWildMarauderHorde	
@@ -172,8 +172,8 @@ CommandSet GoblinCaveCommandSetLevel2
 	6 	= Command_Sell	
 End
 CommandSet GoblinCaveCommandSetLevel3
-	1 	= Command_ConstructGoblinFighterHorde
-	2 	= Command_ConstructGoblinArcherHorde
+	1 	= Command_ConstructGoblinArcherHorde
+	2 	= Command_ConstructGoblinFighterHorde 
 	3 	= Command_ConstructGoblinSpearmanHorde //Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
 	4 	= Command_ConstructWildMarauderHorde	
@@ -226,26 +226,26 @@ End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinFissureCommandSet	
-	1 	= Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	2 	= Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	3 	= Command_PurchaseTechnologyWildHeavyArmor
-	4 	= Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
+	1 	= Command_PurchaseTechnologyWildForgedBlades
+	2 	= Command_PurchaseTechnologyWildHeavyArmor
+	3 	= Command_PurchaseTechnologyWildFireArrows
+	4 	= Command_ConstructWildTrollSling
 	5 	= Command_UpgradeWildFissureLevel2
 	6 	= Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel2
-	1 	= Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	2 	= Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	3 	= Command_PurchaseTechnologyWildHeavyArmor
-	4 	= Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
+	1 	= Command_PurchaseTechnologyWildForgedBlades
+	2 	= Command_PurchaseTechnologyWildHeavyArmor
+	3 	= Command_PurchaseTechnologyWildFireArrows
+	4 	= Command_ConstructWildTrollSling
 	5 	= Command_PurchaseUpgradeWildFissureLevel3
 	6 	= Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel3
-	1 	= Command_PurchaseTechnologyWildFireArrows //Command_ConstructGoblinTroll
-	2 	= Command_PurchaseTechnologyWildForgedBlades //Command_ConstructWildMountainGiant
-	3 	= Command_PurchaseTechnologyWildHeavyArmor	
-	4 	= Command_ConstructWildTrollSling //Command_ConstructWildBabyDrakeHorde
+	1 	= Command_PurchaseTechnologyWildForgedBlades
+	2 	= Command_PurchaseTechnologyWildHeavyArmor
+	3 	= Command_PurchaseTechnologyWildFireArrows 	
+	4 	= Command_ConstructWildTrollSling
 	6 	= Command_Sell
 End
 
@@ -294,6 +294,36 @@ CommandSet GoblinSpearmanCommandSet
 	17 	= Command_SetStanceAggressive
 	18 	= Command_SetStanceHoldGround
 End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandSet WildMarauderCommandSet
+	1  	= Command_ToggleStance
+	2  	= Command_WildMarauderPorcupineFormation
+	3	= Command_PurchaseUpgradeWildBasicTraining
+	4 	= Command_PurchaseUpgradeWildForgedBlade	
+	5 	= Command_PurchaseUpgradeWildHeavyArmor
+	6 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseUpgradeWildBasicTraining
+	12 	= Command_CaptureBuilding
+	13 	= Command_AttackMove
+	14 	= Command_Stop
+	16	= Command_SetStanceBattle
+	17	= Command_SetStanceAggressive
+	18	= Command_SetStanceHoldGround
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -467,14 +497,7 @@ CommandSet WildMountainGiantRockCommandSetStopBombard
 	18  	= Command_SetStanceHoldGround
 End
 
-CommandSet WildMarauderCommandSet
-	1  	= Command_ToggleStance
-	13 	= Command_AttackMove
-	14 	= Command_Stop
-	16  	= Command_SetStanceBattle
-	17  	= Command_SetStanceAggressive
-	18  	= Command_SetStanceHoldGround
-End
+
 
 CommandSet WildMarauderSwordsCommandSet				; Added for Faction Enhancement BFME2 Expansion
 	1  	= Command_ToggleStance

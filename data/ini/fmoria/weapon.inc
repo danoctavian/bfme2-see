@@ -1286,39 +1286,87 @@ Weapon MountainGiantDeath  ; BALANCE Ent Death toppling over units
   End
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon WildMarauderPike     ; BALANCE Wild Marauder Weapon
-  LeechRangeWeapon      = Yes
-  AttackRange           = 35
-  MeleeWeapon           = Yes	; Sorry, stand off doesn't work.  This is just a melee weapon.
-  DelayBetweenShots     = WILD_MARAUDER_STAB_DELAYBETWEENSHOTS				; time between shots, msec
-  PreAttackDelay        = WILD_MARAUDER_STAB_PREATTACKDELAY				
-  PreAttackType         = PER_SHOT			; Do the delay each time we attack
-  FireFX                = FX_GondorSwordHit
-  FireFlankFX		= FX_Flanking
-  FiringDuration        = WILD_MARAUDER_STAB_FIRINGDURATION				
+  LeechRangeWeapon      	= Yes
+  AttackRange           	= 35
+  MeleeWeapon           	= Yes	; Sorry, stand off doesn't work.  This is just a melee weapon.
+  DelayBetweenShots     		= WILD_MARAUDER_STAB_DELAYBETWEENSHOTS				; time between shots, msec
+  PreAttackDelay        		= WILD_MARAUDER_STAB_PREATTACKDELAY				
+  PreAttackType         		= PER_SHOT			; Do the delay each time we attack
+  FireFX                	= FX_GondorSwordHit
+  FireFlankFX					= FX_Flanking
+  FiringDuration        		= WILD_MARAUDER_STAB_FIRINGDURATION				
   
 	DamageNugget								; A basic Nugget that just does damage
 		Damage				= WILD_MARAUDER_STAB_DAMAGE
 		DamageType			= SPECIALIST
-		DamageFXType			= SWORD_SLASH
-		DeathType			= NORMAL
+		DamageFXType		= SWORD_SLASH
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
 		;LostLeadershipUselessAgainst	= CAVALRY ; Useless when under the CloudBreak spell against Cavalry type units
+		DamageScalar  		= 300% NONE +HERO			//Added for SEE!	
 		ForbiddenUpgradeNames		= Upgrade_WildForgedBlades
-		FlankingBonus = 50%
+		FlankingBonus 		= 50%
 	End
 
 	DamageNugget								; A basic Nugget that just does damage
 		Damage				= WILD_MARAUDER_DAMAGE_UPGRADE
 		DamageType			= SPECIALIST
-		DamageFXType			= SWORD_SLASH
-		DeathType			= NORMAL
+		DamageFXType		= SWORD_SLASH
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
 		;LostLeadershipUselessAgainst	= CAVALRY ; Useless when under the CloudBreak spell against Cavalry type units
 		RequiredUpgradeNames		= Upgrade_WildForgedBlades
-		FlankingBonus = 50%
+		FlankingBonus 		= 50%
 	End
 End
 
+;------------------------------------------------------------------------------ SEE!
+Weapon WildMarauderPikePoisoned     ; BALANCE Wild Marauder Weapon
+  LeechRangeWeapon      	= Yes
+  AttackRange           	= 35
+  MeleeWeapon           	= Yes	; Sorry, stand off doesn't work.  This is just a melee weapon.
+  DelayBetweenShots     		= WILD_MARAUDER_STAB_DELAYBETWEENSHOTS				; time between shots, msec
+  PreAttackDelay        		= WILD_MARAUDER_STAB_PREATTACKDELAY				
+  PreAttackType         		= PER_SHOT			; Do the delay each time we attack
+  FireFX                	= FX_GondorSwordHit
+  FireFlankFX					= FX_Flanking
+  FiringDuration        		= WILD_MARAUDER_STAB_FIRINGDURATION				
+  
+	DamageNugget								; A basic Nugget that just does damage
+		Damage				= WILD_MARAUDER_STAB_DAMAGE
+		DamageType			= SPECIALIST
+		DamageFXType		= SWORD_SLASH
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		;LostLeadershipUselessAgainst	= CAVALRY ; Useless when under the CloudBreak spell against Cavalry type units
+		DamageScalar  		= 300% NONE +HERO			//Added for SEE!
+		ForbiddenUpgradeNames		= Upgrade_WildForgedBlades
+		FlankingBonus 		= 50%
+	End
+
+	DamageNugget								; A basic Nugget that just does damage
+		Damage				= WILD_MARAUDER_DAMAGE_UPGRADE
+		DamageType			= SPECIALIST
+		DamageFXType		= SWORD_SLASH
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		;LostLeadershipUselessAgainst	= CAVALRY ; Useless when under the CloudBreak spell against Cavalry type units
+		DamageScalar  		= 300% NONE +HERO			//Added for SEE!
+		RequiredUpgradeNames		= Upgrade_WildForgedBlades
+		FlankingBonus 		= 50%
+	End
+  
+	DOTNugget
+		Damage				= GOBLIN_FIGHTER_POISON_DAMAGE
+		AcceptDamageAdd		= No
+		Radius				= 0.0
+		DelayTime			= 0
+		DamageType			= POISON
+		DamageFXType		= POISON
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageInterval		= 500
+		DamageDuration		= 30000
+		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
+	End
+End
 
 
 ;------------------------------------------------------------------------------ SEE!
