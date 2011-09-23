@@ -140,14 +140,14 @@ Upgrade Upgrade_WildFissureLevel2
 	BuildCost			= GOBLIN_FISSURE_LEVEL2_UPGRADE_COST
 	BuildTime			= GOBLIN_FISSURE_LEVEL2_UPGRADE_BUILDTIME
 	DisplayName			= Upgrade:WildFissureLevel2
-	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT //AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 Upgrade Upgrade_WildFissureLevel3
 	Type				= OBJECT
 	BuildCost			= GOBLIN_FISSURE_LEVEL3_UPGRADE_COST
 	BuildTime			= GOBLIN_FISSURE_LEVEL3_UPGRADE_BUILDTIME
 	DisplayName			= Upgrade:WildFissureLevel3
-	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT //AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
 ; ------------------------------------------------------------------------------ SEE!

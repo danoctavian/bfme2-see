@@ -1086,8 +1086,8 @@ CommandButton Command_PurchaseTechnologyWildBasicTraining		//"MORIA BANNER CARRI
 	InPalantir			= Yes
 End
 CommandButton Command_PurchaseTechnologyWildForgedBlades		//"SCAVENGED WEAPONS"
-	Command				= PLAYER_UPGRADE
-	Options				= CANCELABLE
+	Command				= PLAYER_UPGRADE 
+	Options				= CANCELABLE 
 	Upgrade				= Upgrade_TechnologyWildForgedBlades
 	TextLabel			= CONTROLBAR:PurchaseTechnologyWildForgedBlades
 	ButtonImage			= BWTreasureTrove_ForgedBlades
@@ -1097,8 +1097,8 @@ CommandButton Command_PurchaseTechnologyWildForgedBlades		//"SCAVENGED WEAPONS"
 	InPalantir			= Yes
 End
 CommandButton Command_PurchaseTechnologyWildHeavyArmor		//"SCAVENGED ARMOR"
-	Command				= PLAYER_UPGRADE
-	Options				= NEED_UPGRADE CANCELABLE
+	Command				= PLAYER_UPGRADE 
+	Options				= NEED_UPGRADE CANCELABLE 
 	Upgrade				= Upgrade_TechnologyWildHeavyArmor
 	NeededUpgrade		= Upgrade_WildFissureLevel2
 	TextLabel			= CONTROLBAR:PurchaseTechnologyWildHeavyArmor
@@ -1108,19 +1108,6 @@ CommandButton Command_PurchaseTechnologyWildHeavyArmor		//"SCAVENGED ARMOR"
 	Radial				= Yes
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure
-End
-CommandButton Command_PurchaseTechnologyWildFireArrows		//"FLAMING ARROWS" (New generic ability!)
-	Command				= PLAYER_UPGRADE
-	Options				= NEED_UPGRADE CANCELABLE
-	Upgrade				= Upgrade_TechnologyWildFireArrows 
-	NeededUpgrade		= Upgrade_WildFissureLevel3
-	TextLabel			= CONTROLBAR:PurchaseTechnologyWildFireArrows
-	ButtonImage			= BMOrcPit_FlamingArrows
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
-	Radial				= Yes
-	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
 End
 CommandButton Command_PurchaseTechnologyWildSpiderVenom 		//"VENOM SACS"
 	Command           	= PLAYER_UPGRADE
@@ -1135,21 +1122,22 @@ CommandButton Command_PurchaseTechnologyWildSpiderVenom 		//"VENOM SACS"
 	InPalantir	      	= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacks
 End
+CommandButton Command_PurchaseTechnologyWildFireArrows		//"FLAMING ARROWS" (New generic ability!)
+	Command				= PLAYER_UPGRADE
+	Options				= NEED_UPGRADE CANCELABLE
+	Upgrade				= Upgrade_TechnologyWildFireArrows 
+	NeededUpgrade		= Upgrade_WildFissureLevel3
+	TextLabel			= CONTROLBAR:PurchaseTechnologyWildFireArrows
+	ButtonImage			= BMOrcPit_FlamingArrows
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
+	Radial				= Yes
+	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
+End
 
 ; ------------------------------------------------------------------------------
 
-CommandButton Command_PurchaseUpgradeWildFireArrows	
-	Command				= OBJECT_UPGRADE
-	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
-	Upgrade				= Upgrade_WildFireArrows
-	NeededUpgrade		= Upgrade_TechnologyWildFireArrows
-	TextLabel			= CONTROLBAR:PurchaseUpgradeWildFireArrows
-	ButtonImage			= BMOrcPit_FlamingArrows
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
-	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackWildFireArrows
-End
 CommandButton Command_PurchaseUpgradeWildBasicTraining
 	Command				= OBJECT_UPGRADE
 	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
@@ -1162,17 +1150,17 @@ CommandButton Command_PurchaseUpgradeWildBasicTraining
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackWildBasicTraining
 End
-CommandButton Command_PurchaseUpgradeWildForgedBlade	;upgrade for units
+CommandButton Command_PurchaseUpgradeWildForgedBlade	//Pre-req for Goblin Warriors & Spearmen
 	Command				= OBJECT_UPGRADE
 	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
 	Upgrade				= Upgrade_WildForgedBlades
 	NeededUpgrade		= Upgrade_TechnologyWildForgedBlades
 	TextLabel			= CONTROLBAR:PurchaseUpgradeWildForgedBlade
 	ButtonImage			= BWTreasureTrove_ForgedBlades
-	ButtonBorderType	= UPGRADE
-	DescriptLabel		= CONTROLBAR:ToolTipPurchaseUpgradeWildForgedBlade
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseUpgradeWildForgedBlade
 	InPalantir			= Yes
-	LacksPrerequisiteLabel		= TOOLTIP:LackWildForgedBlades
+	LacksPrerequisiteLabel	= TOOLTIP:LackWildForgedBlades
 End
 CommandButton Command_PurchaseUpgradeWildHeavyArmor
 	Command				= OBJECT_UPGRADE
@@ -1209,6 +1197,18 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenomArrows ;This is for Archers!
 	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseUpgradeWildVenomArrow
 	InPalantir	      	= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacksTechnology
+End
+CommandButton Command_PurchaseUpgradeWildFireArrows	
+	Command				= OBJECT_UPGRADE
+	Options				= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE
+	Upgrade				= Upgrade_WildFireArrows
+	NeededUpgrade		= Upgrade_TechnologyWildFireArrows
+	TextLabel			= CONTROLBAR:PurchaseUpgradeWildFireArrows
+	ButtonImage			= BMOrcPit_FlamingArrows
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
+	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackWildFireArrows
 End
 
 ; ------------------------------------------------------------------------------

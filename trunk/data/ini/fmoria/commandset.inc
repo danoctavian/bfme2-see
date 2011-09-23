@@ -250,21 +250,6 @@ CommandSet GoblinFissureCommandSetLevel3
 End
 
 ; ------------------------------------------------------------------------------ SEE!
-CommandSet GoblinFighterCommandSet
-	1 	= Command_ToggleStance
-	2 	= Command_PurchaseUpgradeWildBasicTraining
-	3 	= Command_PurchaseUpgradeWildHeavyArmor
-	;4 	= Command_PurchaseUpgradeWildForgedBlade
-	4 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
-	12 	= Command_CaptureBuilding
-	13 	= Command_AttackMove
-	14 	= Command_Stop
-	16 	= Command_SetStanceBattle
-	17 	= Command_SetStanceAggressive
-	18 	= Command_SetStanceHoldGround
-End
-
-; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinArcherCommandSet
 	1 	= Command_ToggleStance
 	2 	= Command_ArcherBombard
@@ -281,12 +266,27 @@ CommandSet GoblinArcherCommandSet
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandSet GoblinFighterCommandSet
+	1 	= Command_ToggleStance
+	2 	= Command_PurchaseUpgradeWildForgedBlade 
+	3 	= Command_PurchaseUpgradeWildBasicTraining
+	4 	= Command_PurchaseUpgradeWildHeavyArmor
+	5 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
+	12 	= Command_CaptureBuilding
+	13 	= Command_AttackMove
+	14 	= Command_Stop
+	16 	= Command_SetStanceBattle
+	17 	= Command_SetStanceAggressive
+	18 	= Command_SetStanceHoldGround
+End
+
+; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinSpearmanCommandSet
 	1 	= Command_ToggleStance
-	2 	= Command_PurchaseUpgradeWildBasicTraining
-	3 	= Command_PurchaseUpgradeWildHeavyArmor
-	;4 	= Command_PurchaseUpgradeWildForgedBlade
-	4 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
+	2 	= Command_PurchaseUpgradeWildForgedBlade 
+	3 	= Command_PurchaseUpgradeWildBasicTraining
+	4 	= Command_PurchaseUpgradeWildHeavyArmor
+	5 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
 	12 	= Command_CaptureBuilding
 	13 	= Command_AttackMove
 	14 	= Command_Stop
