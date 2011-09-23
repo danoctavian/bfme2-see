@@ -41649,14 +41649,14 @@ CONTROLBAR:PurchaseTechnologyWildForgedBlades
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
 // original //"Allows hordes to acquire Scavenged Weapons \n \n When equipped, increases the damage \n done by melee weapons"
-"Allows hordes to acquire Scavenged Weapons \n thus enabling training of \n Goblin Warriors and Spearmen"
+"Cost: FREE! \n Allows hordes to acquire Scavenged Weapons \n thus enabling training of \n Goblin Warriors and Spearmen"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildHeavyArmor
 "Research Scavenged Armor"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
-"Allows hordes to acquire Scavenged Armor \n \n When equipped, significantly reduces \n the amount of damage taken"
+"Cost: FREE! \n Allows hordes to acquire Scavenged Armor \n \n When equipped, significantly reduces \n the amount of damage taken"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
@@ -41685,10 +41685,10 @@ CONTROLBAR:ToolTipPurchaseUpgradeWildBasicTraining
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildForgedBlade
-"Purchase Forged Blades"
+"Purchase Scavenged Weapons"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildForgedBlade
-"Upgrades this horde with Forged Blades \n When equipped, increases the damage done by Melee Weapons"
+"Upgrades this horde with Scavenged Weapons \n When equipped, increases the damage done by Melee Weapons"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildHeavyArmor
