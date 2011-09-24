@@ -28303,15 +28303,13 @@ END
 OBJECT:WildSpiderPit
 "Troll Cave and Spider Venom Factory"
 END
-
 OBJECT:WildSpiderPitDescription
 "Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
 END
 
 OBJECT:WildWolfDen
-"Wolf and Warg Pit"
+"Wolf Den"
 END
-
 OBJECT:WildWolfDenDescription
 "Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
 END
@@ -28319,7 +28317,6 @@ END
 OBJECT:WildSentryTower
 "Sentry Tower"
 END
-
 OBJECT:WildSentryTowerDescription
 "Defensive tower \n Will fire at enemy units \n Can be garrisoned with archers for increased damage output"
 END
@@ -28327,7 +28324,6 @@ END
 OBJECT:WildTreasureTrove
 "Treasure Trove"
 END
-
 OBJECT:WildTreasureTroveDescription
 "Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
 END
@@ -28335,25 +28331,26 @@ END
 OBJECT:WildFortress
 "Fortress"
 END
-
 OBJECT:WildFortressDescription
 "Recruits Builders and Heroes"
 END
-
-OBJECT:WildShelob
-"Shelob"
-END
-
 OBJECT:WildBuildingFoundation
 "Fortress Expansion Plot"
 END
-
+OBJECT:WildSpiderHolesExpansion
+"Spider Den expansion"
+END
 OBJECT:WildArrowDenExpansion
 "Archer Tower expansion"
 END
-
 OBJECT:WildGiantSentryExpansion
 "Giant Sentry expansion"
+END
+
+
+
+OBJECT:WildShelob
+"Shelob"
 END
 
 OBJECT:GoblinCaveTroll
@@ -28368,9 +28365,7 @@ OBJECT:WildFireDrake
 "Fire Drake"
 END
 
-OBJECT:WildSpiderHolesExpansion
-"Spider Den expansion"
-END
+
 
 OBJECT:Drogoth
 "Drogoth, the Dragon Lord"
@@ -41649,7 +41644,7 @@ CONTROLBAR:PurchaseTechnologyWildForgedBlades
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
 // original //"Allows hordes to acquire Scavenged Weapons \n \n When equipped, increases the damage \n done by melee weapons"
-"Cost: FREE! \n Allows hordes to acquire Scavenged Weapons \n thus enabling training of \n Goblin Warriors and Spearmen"
+"Cost: FREE! \n \n Allows hordes to acquire Scavenged Weapons \n thus enabling training of Goblin Warriors \n (Swordsmen, Spearmen, Wolf- and Warg Riders)"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildHeavyArmor
@@ -42447,11 +42442,11 @@ Upgrade:WildSpiderPitLevel3
 END
 
 Upgrade:WildWolfDenLevel2
-"Wolf and Warg Den level 2"
+"Wolf Den level 2"
 END
 
 Upgrade:WildWolfDenLevel3
-"Wolf and Warg Den level 3"
+"Wolf Den level 3"
 END
 
 Upgrade:WildVenomSacs
@@ -48170,7 +48165,7 @@ CONTROLBAR:ConstructGoblinWargRiderHorde
 "Goblin Warg Riders"
 END
 CONTROLBAR:ToolTipBuildGoblinWargRiderHorde
-"Recruit up to 4 units of The Great Goblin's \n savage Warg Riders of the Misty Mountains \n \n Requires level 3 Wolf Den \n \n Strong vs. Cavalry and Archers"
+"Recruit up to 4 units of The Great Goblin's \n savage Warg Riders of the Misty Mountains \n \n Requires level 3 Wolf Den \n and Scavenged Weapons upgrade \n \n Strong vs. Cavalry and Archers"
 END
 
 // ---
