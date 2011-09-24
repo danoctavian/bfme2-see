@@ -1707,6 +1707,46 @@ function OnMoriaGoblinsBowCreated(self)
   end
 end
 
+--// いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
+
+	function OnGoblinWargBannerCreated(self)
+	--They will be randomly, and they have some of possibilities...
+	ObjectHideSubObjectPermanently( self, "ARM", true )
+	ObjectHideSubObjectPermanently( self, "SHOULDER", true )
+	ObjectHideSubObjectPermanently( self, "PIKE", true )
+	
+	ObjectHideSubObjectPermanently( self, "HEAD01", true )
+	ObjectHideSubObjectPermanently( self, "HEAD02", true )
+	ObjectHideSubObjectPermanently( self, "HEAD03", true )
+	
+    local arm	=    GetRandomNumber()
+    local shoulder	=    GetRandomNumber()
+    local banner	=    GetRandomNumber()
+    local head    =    GetRandomNumber()
+	
+        if head <= 0.33 then
+            ObjectHideSubObjectPermanently( self, "HEAD01", false )
+        elseif head <= 0.66 then
+            ObjectHideSubObjectPermanently( self, "HEAD02", false )
+        else
+            ObjectHideSubObjectPermanently( self, "HEAD03", false )
+        end
+		
+	    if arm <= 0.5 then --50% shot at getting the arm armour.. adjust as you please, but it is a banner carrier
+            ObjectHideSubObjectPermanently( self, "ARM", false )
+        end
+
+	    if shoulder <= 0.5 then --50% shot at getting the shoulder armour
+            ObjectHideSubObjectPermanently( self, "SHOULDER", false )
+        end
+		
+	    if banner <= 0.8 then --80% at getting spear-like top on the banner
+            ObjectHideSubObjectPermanently( self, "PIKE", false )
+        end
+end
+
+--// いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
+
 function OnCreepSpiderLairCreated_SEE(self)
 	ObjectHideSubObjectPermanently( self, "Cocoon02", false )
 	ObjectHideSubObjectPermanently( self, "B_Cocoon02", false )

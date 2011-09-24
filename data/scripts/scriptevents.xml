@@ -616,6 +616,15 @@
 		<!-- This contains events specific to the IsengardFighter. Kris -->
         <EventHandler EventName="OnCreated"				ScriptFunctionName="OnIsengardFighterCreated" DebugSingleStep="false"/>
     </EventList>
+	
+	<EventList Name="GoblinWargBannerFunctions" Inherit="BaseScriptFunctions">
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnGoblinWargBannerCreated" DebugSingleStep="false"/>
+    </EventList>	
+	
+    <EventList Name="MoriaWargRiderFunctions" Inherit="MordorFighterFunctions">
+		<!-- This contains events specific to the IsengardFighter. Kris -->
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMoriaGoblinsSwordCreated" DebugSingleStep="false"/>
+    </EventList>	
 
     <EventList Name="GothmogFunctions"  Inherit="BaseScriptFunctions">
       <!-- This contains events specific to the IsengardFighter. Kris -->
@@ -637,10 +646,7 @@
         <EventHandler EventName="BeAfraidOfGateDamaged" ScriptFunctionName="GondorFighterBecomeAfraidOfGateDamaged"		DebugSingleStep="false"/>
     </EventList>
 
-    <EventList Name="MoriaWargRiderFunctions" Inherit="MordorFighterFunctions">
-		<!-- This contains events specific to the IsengardFighter. Kris -->
-        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMoriaGoblinsSwordCreated" DebugSingleStep="false"/>
-    </EventList>
+
 
     <EventList Name="IsengardArcherFunctions" Inherit="MordorFighterFunctions">
 		<!-- This contains events specific to the IsengardArhcer. Kris -->

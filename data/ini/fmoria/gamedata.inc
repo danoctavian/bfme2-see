@@ -418,6 +418,10 @@
 #define	WILD_MARAUDER_BOUNTY_VALUE						3
 
 ; ------------------------------------------------------------------------------ SEE!
+#define	GOBLIN_WARGRIDER_BANNERCARRIER_HEALTH				1000 //1800
+#define	GOBLIN_WARGRIDER_BANNERCARRIER_HEALTH_DAMAGED		500 //900
+
+; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_WARGRIDER_BUILDCOST							500 //Isen has 600
 #define GOBLIN_WARGRIDER_BUILDTIME							9;0 //160 
 #define	GOBLIN_WARGRIDER_VISION_RANGE 						250 //175
@@ -438,6 +442,7 @@
 #define GOBLIN_WARGRIDER_WARG_FIRINGDURATION 				300 //400 
 #define GOBLIN_WARGRIDER_WARG_DAMAGE						140 //120 //Isen has 150 
 #define	GOBLIN_WARGRIDER_BOUNTY_VALUE						10 //Isen has 12
+#define	GOBLIN_WARGRIDER_BANNER_BOUNTY_VALUE				12
 
 #define GOBLIN_WARGPACK_BUILDCOST							200 //Isen has 600
 #define GOBLIN_WARGPACK_BUILDTIME							120 
