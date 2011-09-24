@@ -300,6 +300,7 @@ CommandButton Command_ConstructGoblinSpearmanHorde
 	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Cave	
 End
 
+; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructWildMarauderHorde
 	Command				= UNIT_BUILD
 	Object				= WildMarauderHorde
@@ -316,7 +317,20 @@ CommandButton Command_ConstructWildMarauderHorde
 	LacksPrerequisiteLabel		= TOOLTIP:LackLevelWildTreasureTrove_SEE  ;;
 End
 
-
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ConstructGoblinWargRiderHorde
+	Command				= UNIT_BUILD
+	Object				= GoblinWargRiderHorde
+	Options				= CANCELABLE NEED_UPGRADE
+	TextLabel			= CONTROLBAR:ConstructGoblinWargRiderHorde
+	ButtonImage			= BIWargPit_Riders //BWSpiderPit_SpiderRider <<< Will make new button! /Naz
+	ButtonBorderType    	= BUILD 
+	DescriptLabel       	= CONTROLBAR:ToolTipBuildGoblinWargRiderHorde
+	NeededUpgrade		= Upgrade_WildWolfDenLevel3
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes      
+End
 
 
 

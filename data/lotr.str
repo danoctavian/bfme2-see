@@ -48163,17 +48163,14 @@ END
 OBJECT:GoblinWargRider
 "Goblin Warg Rider"
 END
-
 OBJECT:GoblinWargRiderHorde
 "Goblin Warg Riders"
 END
-
 CONTROLBAR:ConstructGoblinWargRiderHorde
-"Goblin &Warg Riders"
+"Goblin Warg Riders"
 END
-
 CONTROLBAR:ToolTipBuildGoblinWargRiderHorde
-"Recruit up to 4 units of The Great Goblin's fierce Warg Riders \n \n Requires Level 3 Warg Pit \n Strong vs. Cavalry and Archers"
+"Recruit up to 4 units of The Great Goblin's \n savage Warg Riders of the Misty Mountains \n \n Requires level 3 Wolf Den \n \n Strong vs. Cavalry and Archers"
 END
 
 // ---
@@ -48181,17 +48178,14 @@ END
 OBJECT:GoblinWolfRider
 "Goblin Wolf Rider"
 END
-
 OBJECT:GoblinWolfRiderHorde
 "Goblin Wolf Riders"
 END
-
 CONTROLBAR:ConstructGoblinWolfRiderHorde
 "Goblin Wolf Riders"
 END
-
 CONTROLBAR:ToolTipBuildGoblinWolfRiderHorde
-"Recruit the wild Goblin Wolf Riders \n \n Requires Level 2 Warg Pit \n Strong vs. Archers"
+"Recruit the fierce Goblin Wolf Riders \n \n Requires level 2 Wolf Den \n \n Strong vs. Archers"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい

@@ -2202,3 +2202,66 @@ Weapon GoblinKingBlade     ; BALANCE Orc Warrior Weapon ;Orc Fighter
     DeathType     = NORMAL
   End
 End
+
+;----------------------------
+Weapon WargRiderWeapon_Goblin
+  LeechRangeWeapon			= Yes
+	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           	= Yes
+  PreAttackType         		= PER_SHOT ; Do the delay each time we attack a new target
+  PreAttackDelay				= GOBLIN_WARGRIDER_PREATTACKDELAY
+  DelayBetweenShots     		= GOBLIN_WARGRIDER_DELAYBETWEENSHOTS            ; time between shots, msec
+  FiringDuration				= GOBLIN_WARGRIDER_FIRINGDURATION
+  FireFX                	= FX_GondorSwordHit
+  ;AimDirection			= 270		; In order to aim at something, we aim this far off (to the right would be aiming at -90 degrees)
+  
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        			= GOBLIN_WARGRIDER_DAMAGE
+    Radius        			= 0.0
+    DelayTime     			= 0
+    DamageType    			= CAVALRY
+    DamageFXType  			= SWORD_SLASH
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+  End  
+End
+;----------------------------
+Weapon WargRiderWeapon_GoblinUpgraded
+  LeechRangeWeapon			= Yes
+	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           	= Yes
+  PreAttackType         		= PER_SHOT ; Do the delay each time we attack a new target
+  PreAttackDelay				= GOBLIN_WARGRIDER_PREATTACKDELAY
+  DelayBetweenShots     		= GOBLIN_WARGRIDER_DELAYBETWEENSHOTS            ; time between shots, msec
+  FiringDuration				= GOBLIN_WARGRIDER_FIRINGDURATION
+  RequireFollowThru			= Yes
+  IsAimingWeapon        		= Yes
+  AcceptableAimDelta    		= 10 
+  
+  ClipSize 					= 1
+  AutoReloadsClip 			= Yes
+  ClipReloadTime 				= GOBLIN_WARGRIDER_FIRINGDURATION
+  FireFX                	= FX_GondorSwordHit
+  // AimDirection				= 270		; In order to aim at something, we aim this far off (to the right would be aiming at -90 degrees)
+  
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        			= GOBLIN_WARGRIDER_DAMAGE ;M_GOBLIN_WARGRIDER_DAMAGE_UPGRADE
+    Radius        			= 0.0
+    DelayTime     			= 0
+    DamageType    			= CAVALRY
+    DamageFXType  			= SWORD_SLASH
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+  End
+  
+	DOTNugget
+		Damage				= GOBLIN_FIGHTER_POISON_DAMAGE
+		AcceptDamageAdd		= No
+		Radius				= 0.0
+		DelayTime			= 0
+		DamageType			= POISON
+		DamageFXType		= POISON
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageInterval		= 500
+		DamageDuration		= 30000
+		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
+	End
+End

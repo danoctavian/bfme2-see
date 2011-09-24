@@ -973,6 +973,37 @@ ExperienceLevel	WildSpiderPitLevel3
 	LevelUpFx				= FX:WildSpiderPitUpgrade
 End	
 
+;------------- Wild WolfDen -----------------
+
+ExperienceLevel	WildWolfDenLevel1
+	TargetNames				= WolfWargPit
+	RequiredExperience			= 1
+	ExperienceAward		  		= GOBLIN_WOLFDEN_LVL1_EXP_AWARD	
+	Rank					= 1
+	Upgrades				= Upgrade_StructureLevel1
+End
+	
+ExperienceLevel	WildWolfDenLevel2
+	TargetNames				= WolfWargPit
+	RequiredExperience			= GOBLIN_WOLFDEN_LVL2_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_WOLFDEN_LVL2_EXP_AWARD
+	Rank					= 2
+	AttributeModifiers			= WildFissureHitPointModLvl2 WildFissureBuildSpeedModLvl2
+	Upgrades				= Upgrade_StructureLevel2
+	LevelUpFx				= FX:IsengardWargPitUpgrade
+End
+	
+ExperienceLevel	WildWolfDenLevel3
+	TargetNames				= WolfWargPit
+	RequiredExperience			= GOBLIN_WOLFDEN_LVL3_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_WOLFDEN_LVL3_EXP_AWARD
+	Rank					= 3
+	AttributeModifiers			= WildFissureHitPointModLvl3 WildFissureBuildSpeedModLvl3
+	Upgrades				= Upgrade_StructureLevel3
+	LevelUpFx				= FX:IsengardWargPitUpgrade
+End	
+
+
 ;------------- Wild TreasureTrove -----------------
 
 ExperienceLevel	WildTreasureTroveLevel1

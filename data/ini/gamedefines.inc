@@ -2071,8 +2071,8 @@
 #define NORMAL_ISENGARD_CAVALRY_HORDE_SPEED		80
 #define NORMAL_ISENGARD_CAVALRY_MEMBER_SPEED		90	; A little faster so when the formation wheels the unit can catch up.
 
-#define NORMAL_ISENGARD_CAVALRY_FAST_HORDE_SPEED	110
-#define NORMAL_ISENGARD_CAVALRY_FAST_MEMBER_SPEED	120	; A little faster so when the formation wheels the unit can catch up.
+#define NORMAL_ISENGARD_CAVALRY_FAST_HORDE_SPEED		140 //110
+#define NORMAL_ISENGARD_CAVALRY_FAST_MEMBER_SPEED	150 //120	; A little faster so when the formation wheels the unit can catch up.
 
 	
 
