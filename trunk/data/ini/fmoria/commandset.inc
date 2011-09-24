@@ -206,21 +206,21 @@ End
 CommandSet WildWolfDenCommandSet
 	;1 = Command_ConstructGoblinWargPack
 	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
-	;3 = Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
+	3 	= Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
 	4 	= Command_PurchaseUpgradeWildWolfDenLevel2
 	6 	= Command_Sell
 End
 CommandSet WildWolfDenCommandSetLevel2
 	;1 = Command_ConstructGoblinWargPack ;Command_ConstructWildSpiderlingHorde
 	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
-	;3 = Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
+	3 	= Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
 	4 	= Command_PurchaseUpgradeWildWolfDenLevel3
 	6 	= Command_Sell
 End
 CommandSet WildWolfDenCommandSetLevel3
 	;1 = Command_ConstructGoblinWargPack ;Command_ConstructWildSpiderlingHorde
 	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
-	;3 = Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
+	3 	= Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
 	6 	= Command_Sell
 End
 
@@ -248,6 +248,10 @@ CommandSet GoblinFissureCommandSetLevel3
 	4 	= Command_ConstructWildTrollSling
 	6 	= Command_Sell
 End
+
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria units
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinArcherCommandSet
@@ -311,7 +315,21 @@ CommandSet WildMarauderCommandSet
 	18	= Command_SetStanceHoldGround
 End
 
-
+; ------------------------------------------------------------------------------ SEE!
+CommandSet GoblinWargRiderCommandSet
+	1	= Command_ToggleStance
+	2	= Command_SpecialAbilityWargHowl
+	3 	= Command_PurchaseUpgradeWildForgedBlade 	
+	4 	= Command_PurchaseUpgradeWildBasicTraining	
+	5 	= Command_PurchaseUpgradeWildHeavyArmor	
+	6 	= Command_PurchaseUpgradeWildSpiderVenomBlades
+	12 	= Command_CaptureBuilding	
+	13 	= Command_AttackMove	
+	14	= Command_Stop	
+	16 	= Command_SetStanceBattle
+	17 	= Command_SetStanceAggressive
+	18 	= Command_SetStanceHoldGround	
+End
 
 
 
