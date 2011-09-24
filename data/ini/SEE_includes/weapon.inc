@@ -8,7 +8,7 @@
 
 
 ;------------------------------------------------------------------------------
-Weapon GenericArcherFlamingArrowsRangeFinder //GoblinArcherSAFireArrowsRangeFinder
+Weapon GenericArcherFlamingArrowsRangeFinder
 	AttackRange				= #SUBTRACT( GENERIC_ARCHER_RANGE 100 ) 
 	RangeBonusMinHeight		= 30 ;		= 10
 	RangeBonus				= 1
@@ -24,7 +24,7 @@ Weapon GenericArcherFlamingArrowsRangeFinder //GoblinArcherSAFireArrowsRangeFind
 	End
 End
 ;------------------------------------------------------------------------------
-Weapon GenericArcherFlamingArrows //GoblinArcherSAFireArrows      
+Weapon GenericArcherFlamingArrows      
 	AttackRange				= GENERIC_ARCHER_RANGE	;Horde member so it needs to be bigger than the horde weapon attack range
 	LeechRangeWeapon		= Yes
 	WeaponSpeed			= 300					; dist/sec
@@ -57,7 +57,7 @@ Weapon GenericArcherFlamingArrows //GoblinArcherSAFireArrows
 	End
 End
 ;-----------------------------------
-Weapon GenericArcherFlamingArrowsBowWarhead //GoblinArcherSAFireArrowsBowWarhead
+Weapon GenericArcherFlamingArrowsBowWarhead
 	ProjectileCollidesWith		= ENEMIES
 	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
 	HitStoredTarget			= Yes
