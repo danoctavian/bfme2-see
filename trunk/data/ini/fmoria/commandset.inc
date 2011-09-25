@@ -272,7 +272,7 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinFighterCommandSet
 	1 	= Command_ToggleStance
-	2 	= Command_PurchaseUpgradeWildForgedBlade 
+	2 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
 	3 	= Command_PurchaseUpgradeWildBasicTraining
 	4 	= Command_PurchaseUpgradeWildHeavyArmor
 	5 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
@@ -287,7 +287,7 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinSpearmanCommandSet
 	1 	= Command_ToggleStance
-	2 	= Command_PurchaseUpgradeWildForgedBlade 
+	2 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
 	3 	= Command_PurchaseUpgradeWildBasicTraining
 	4 	= Command_PurchaseUpgradeWildHeavyArmor
 	5 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
@@ -304,7 +304,7 @@ CommandSet WildMarauderCommandSet
 	1  	= Command_ToggleStance
 	2  	= Command_WildMarauderPorcupineFormation
 	3	= Command_PurchaseUpgradeWildBasicTraining
-	4 	= Command_PurchaseUpgradeWildForgedBlade	
+	4 	= Command_PurchaseUpgradeWildForgedBlade				; Pre-req!
 	5 	= Command_PurchaseUpgradeWildHeavyArmor
 	6 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseUpgradeWildBasicTraining
 	12 	= Command_CaptureBuilding
@@ -319,10 +319,10 @@ End
 CommandSet GoblinWargRiderCommandSet
 	1	= Command_ToggleStance
 	2	= Command_SpecialAbilityWargHowl
-	3 	= Command_PurchaseUpgradeWildForgedBlade 	
+	3 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
 	4 	= Command_PurchaseUpgradeWildBasicTraining	
 	5 	= Command_PurchaseUpgradeWildHeavyArmor	
-	6 	= Command_PurchaseUpgradeWildSpiderVenomBlades
+	;6 	= Command_PurchaseUpgradeWildSpiderVenomBlades		; Not all units needs to exploit this power!
 	12 	= Command_CaptureBuilding	
 	13 	= Command_AttackMove	
 	14	= Command_Stop	
