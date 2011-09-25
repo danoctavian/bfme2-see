@@ -1,0 +1,288 @@
+
+; ####################################################
+Object WildMarauderHorde
+; ####################################################
+
+	ButtonImage		= WOR_Marauder
+	SelectPortrait	= UPWild_HalfTrollMarauders
+
+	Draw = W3DScriptedModelDraw ModuleTag_W3DModelDraw
+	    DependencySharedModelFlags = USER_8 EMOTION_ALERT EMOTION_MORALE_HIGH EMOTION_MORALE_LOW EMOTION_AFRAID EMOTION_COWER SELECTED EMOTION_TERROR EMOTION_LOOK_TO_SKY
+		DefaultModelConditionState
+			Model = None ;InvisHrdeTmp
+		End
+		ModelConditionState = HORDE_EMPTY
+			Model = None
+		End		
+		ModelConditionState = WORLD_BUILDER
+			Model = HordeMarkIUPik
+		End
+	End
+	
+	Side				= Wild
+	EditorSorting		= UNIT
+	EmotionRange			= 240
+	DisplayName			= OBJECT:WildMarauderHorde
+	DisplayNameStrategic 	= CONTROLBAR:LW_Unit_WildMarauderHorde
+	DescriptionStrategic 	= CONTROLBAR:LW_ToolTip_WildMarauderHorde
+	
+	MaxSimultaneousOfType		= 2 //Balance issue!		
+  
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+	Prerequisites
+		Object = GoblinFissure //or WildTreasureTrove perhaps?
+	End
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+  
+	WeaponSet
+		Conditions	= None 
+		Weapon		= PRIMARY    TowerGuardHordeRangefinder
+	End
+
+	BuildCost		= WILD_MARAUDER_BUILDCOST			
+	BuildTime		= WILD_MARAUDER_BUILDTIME			
+
+	ShroudClearingRange = WILD_MARAUDER_SHROUD_RANGE       
+	VisionRange = WILD_MARAUDER_HORDE_VISION_RANGE
+	
+	VisionSide = 50%
+	VisionRear = 25%
+	
+   MaxVisionBonusPercent = 300%
+   VisionBonusTestRadius = 200
+   VisionBonusPercentPerFoot = 1.0%
+	
+		
+	CrushableLevel	= 0 	;//What am I?:        0 = for infantry, 1 = for trees, 2 = general vehicles
+	CrusherLevel	= 0 	;//What can I crush?: 0 = small animals, 1 = infantry, 2 = trees, 3 = vehicles 
+	CommandPoints	= 24
+		
+	CommandSet  = WildMarauderCommandSet //WildMarauderHordeCommandSet
+		
+	FormationWidth = 2 ;// Width it occupies in formations. Current choices are 1 or 2.
+	FormationDepth = 2 ;// Depth it occupies in formations. Current choices are 1 or 2.
+	
+	TransportSlotCount	= TRANSPORTSLOTCOUNT_LARGE_HORDE
+	KindOf				= SELECTABLE CAN_ATTACK ATTACK_NEEDS_LINE_OF_SIGHT INFANTRY HORDE MELEE_HORDE  ARMY_SUMMARY URUK PIKE LARGE_RECTANGLE_PATHFIND;//UNATTACKABLE 
+	#include "..\..\..\includes\StandardHordeEvaEvents.inc"
+	
+	ThreatLevel = WILD_MAURADER_HORDE_THREAT
+	ThreatBreakdown WildMauraderHorde_DetailedThreat
+		AIKindOf = PIKEMAN
+	End
+	
+	Body = ImmortalBody ModuleTag_ImmortalBody
+		MaxHealth = 1
+	End
+
+	Behavior = StancesBehavior ModuleTag_StancesBehavior
+        StanceTemplate = PikeHorde
+    End
+
+	Behavior = HordeAIUpdate ModuleTag_HordeAIUpdate
+		AutoAcquireEnemiesWhenIdle	= Yes ATTACK_BUILDINGS
+		MoodAttackCheckRate			= 500
+		AILuaEventsList				= InfantryFunctions
+		MaxCowerTime				= 5000
+		MinCowerTime				= 3000
+		AttackPriority				= AttackPriority_Spearman
+	End
+
+	Behavior = HordeContain ModuleTag_HordeContain
+		FrontAngle = 270
+		FlankedDelay = 2000
+		ObjectStatusOfContained = 
+		InitialPayload			= WildMarauder 8
+		PassengerFilter			= NONE +INFANTRY
+		Slots					= 8
+		ShowPips				= No
+
+		ThisFormationIsTheMainFormation = Yes	;//Used to determine which armorset to use (and anything else we want!)
+		
+		MeleeBehavior = Amoeba
+		End
+
+		; Banner Carrier info		
+		BannerCarriersAllowed	= WildBannerMarauder								; types of units that are allowed as banner carriers
+		BannerCarrierPosition	= UnitType:WildMarauder	Pos:X:60.0 Y:6.5	; (DEFAULT) position of banner carrier for fighter horde		
+		
+		RankInfo		= RankNumber:1 UnitType:WildMarauder Position:X:30 Y:-25	Position:X:30 Y:0	Position:X:30 Y:25	Position:X:30 Y:50					;Position:X:25 Y:-50
+		RankInfo		= RankNumber:2 UnitType:WildMarauder Position:X:0 Y:-5	Leader 1 0	Position:X:0 Y:20 Leader 1 1	Position:X:0 Y:45 Leader 1 2	Position:X:0 Y:-30 Leader 1 3		;Position:X:0 Y:-30 Leader 1 4
+
+		RanksToReleaseWhenAttacking = 1 2
+		
+		UseSlowHordeMovement = Yes
+		MeleeAttackLeashDistance = 1 ;// How far the hordes can move from the center of the horde when melee attacking.
+
+    BackUpMinDelayTime		 = 1	//The minimum amount of	time to	delay before backing up
+    BackUpMaxDelayTime		 = 3000	//The maximum amount of	time to	delay before backing up
+    BackUpMinDistance		 = 1	//The minimum number of	cells to backup
+    BackUpMaxDistance		 = 3	//The maximum number of	cells to backup
+    BackupPercentage		 = 80%	//The amount of	chance that	a unit will	back up.	
+    AlternateFormation = WildMarauderHordePorcupine
+	End
+	
+;//	Behavior = SpecialEnemySenseUpdate ModuleTag_EnemySenseUpdate
+;//		SpecialEnemyFilter = NONE +CAVALRY +INFANTRY
+;//		ScanRange = 300
+;//		ScanInterval = 2000
+;//	End
+
+	Behavior = PhysicsBehavior ModuleTag_PhysicsBehavior
+		GravityMult = 1.0
+	End
+	
+ 	Behavior = EmotionTrackerUpdate	Module_EmotionTracker
+		TauntAndPointDistance		=	INFANTRY_TAUNT_POINT_RADIUS		; max distance to taunted/pointed objet
+		TauntAndPointUpdateDelay	=	1000	; how often scan (milliseconds)
+		TauntAndPointExcluded		=	NONE
+		AfraidOf					=	EMOTION_AFRAIDOF_OBJECTFILTER
+		AlwaysAfraidOf			=	EMOTION_ALWAYS_AFRAIDOF_OBJECTFILTER
+		PointAt					=	EMOTION_POINTAT_OBJECTFILTER
+		HeroScanDistance			=	150
+		FearScanDistance			=	INFANTRY_FEAR_SCAN_RADIUS
+
+		AddEmotion	=	Terror_Base
+		AddEmotion	=	Doom_Base
+		//	AddEmotion	=   BraceForBeingCrushed_Base		// Pikemen don't fear getting crushed
+		AddEmotion	=	UncontrollableFear_Base_Evil
+		AddEmotion	=	FearIdle_Base
+		AddEmotion	=	FearBusy_Base
+		AddEmotion	=	Point_Base
+
+		AddEmotion	=	Taunt_Base	
+		AddEmotion	=	CheerIdle_Base
+		AddEmotion	=	CheerBusy_Base
+		AddEmotion	=	HeroCheerIdle_Base
+		AddEmotion	=	HeroCheerBusy_Base
+		AddEmotion	=	Alert_Base
+	End	
+
+  Behavior = CommandButtonHuntUpdate ModuleTag_CommandButtonHuntUpdate
+  End
+	#include "..\..\..\includes\CaptureBuilding.inc"
+	
+	LocomotorSet
+		Locomotor     = NormalMeleeHordeLocomotor
+		Condition     = SET_NORMAL
+		Speed         = NORMAL_WILD_PIKEMEN_HORDE_SPEED
+	End
+
+	Behavior = ProductionUpdate ProductionUpdateModuleTag
+		GiveNoXP = Yes
+	End
+
+	Behavior = LevelUpUpgrade ModuleTag_CreateLevelUpUpgrade
+		TriggeredBy		= Upgrade_WildBasicTraining
+		LevelsToGain		= 1
+		LevelCap			= 2
+	End
+	
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+	Behavior = GrantUpgradeCreate ModuleTag_ForgedBlades
+		UpgradeToGrant		= Upgrade_WildForgedBlades
+		GiveOnBuildComplete 	= Yes 								// The ExemptStatus UnderConstruction hack doesn't work on foundation buildings.
+	End		
+	Behavior = GrantUpgradeCreate ModuleTag_HeavyArmor
+		UpgradeToGrant		= Upgrade_WildHeavyArmor
+		GiveOnBuildComplete 	= Yes 								// The ExemptStatus UnderConstruction hack doesn't work on foundation buildings.
+	End
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤  
+	Behavior = StatusBitsUpgrade ModuleTag_ProductionLegality2
+		TriggeredBy = Upgrade_WildForgedBlades
+	End
+	Behavior = StatusBitsUpgrade ModuleTag_ProductionLegality3
+		TriggeredBy = Upgrade_WildHeavyArmor
+	End
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+	
+	Behavior = PickupStuffUpdate ModuleTag_PickupStuffUpdate
+		SkirmishAIOnly = Yes
+		StuffToPickUp = NONE +CRATE
+		ScanRange = 200
+		ScanIntervalSeconds = 0.5
+	End
+	
+	;///////////////////
+	; AISpecialPowers
+	;///////////////////
+	
+  #include "..\..\..\..\SEE_includes\Battlestance_SEE.inc"
+
+	Behavior = AISpecialPowerUpdate WildMarauderPorcupineFormationAI //GondorFighterHordeHoldGround
+		CommandButtonName = Command_WildMarauderPorcupineFormation //Command_SetStanceHoldGround
+		SpecialPowerAIType = AI_SPECIAL_POWER_CHARGE //AI_SPECIAL_POWER_STANCEHOLDGROUND
+    SpecialPowerRange = 25
+    SpecialPowerRadius = 50
+	End
+
+	
+	Geometry			= BOX
+	GeometryMajorRadius = 25 ;30.4
+	GeometryMinorRadius = 50 ;30.4
+	GeometryHeight		= 8.0
+	GeometryIsSmall		= No
+	
+	
+	// *** AUTO RESOLVE DATA *** 
+	AutoResolveUnitType = AutoResolveUnit_Pikemen
+	AutoResolveCombatChain = AutoResolve_PikemenCombatChain
+	
+	AutoResolveBody = AutoResolve_WildMarauderHordeBody
+
+	AutoResolveArmor
+		RequiredUpgrades = Upgrade_WildHeavyArmor
+		Armor = AutoResolve_WildMarauderHeavyArmor
+	End
+
+	AutoResolveArmor
+		ExcludedUpgrades = Upgrade_WildHeavyArmor
+		Armor = AutoResolve_WildMarauderArmor
+	End
+
+	AutoResolveWeapon
+		RequiredUpgrades = Upgrade_WildForgedBlades
+		Weapon = AutoResolve_WildMarauderUpgradedWeapon
+	End
+
+	AutoResolveWeapon
+		ExcludedUpgrades = Upgrade_WildForgedBlades
+		Weapon = AutoResolve_WildMarauderWeapon
+	End
+	
+	WorldMapArmoryUpgradesAllowed = Upgrade_WildBasicTraining Upgrade_WildForgedBlades Upgrade_WildHeavyArmor
+End
+
+ChildObject WildMarauderHordePorcupine WildMarauderHorde
+
+	// Note - for alternate formations, all info outside of the Contain Behavior module is ignored.
+	// Any modifications need to be done via the Attribute Modifiers in the contain module. 
+	Behavior = HordeContain ModuleTag_HordeContain
+		FrontAngle = 360	//	Can't be flanked
+		FlankedDelay = 2000
+		ObjectStatusOfContained = 
+		InitialPayload					= WildMarauder 8
+		Slots							= 8
+		PassengerFilter					= NONE +INFANTRY
+		ShowPips						= No
+		ThisFormationIsTheMainFormation = No	//Used to determine which armorset to use (and anything else we want!)
+		RandomOffset					= X:2 Y:1
+		RanksToReleaseWhenAttacking		= 0
+		RanksToJustFreeWhenAttacking   = 0
+		AttributeModifiers				= WildMarauderHordePorcupine
+		IsPorcupineFormation			= Yes
+		MinimumHordeSize				= 4
+
+		AlternateFormation				= WildMarauderHorde
+		VisionRearOverride				= 100%
+		VisionSideOverride				= 100%
+		NotComboFormation				= Yes // this formation is not suitable for combo, so it will switch out of this when combo-ing
+
+		// Banner Carrier info		
+		BannerCarriersAllowed			= WildBannerMarauder						// types of units that are allowed as banner carriers
+		BannerCarrierPosition			= UnitType:WildMarauder	Pos:X:0.0 Y:0.0		// (DEFAULT) position of banner carrier
+		
+		RankInfo	= RankNumber:1 UnitType:WildMarauder Position:X:30 Y:0	Position:X:-30 Y:0		Position:X:0 Y:30	Position:X:0 Y:-30	Position:X:21.21 Y:21.21	Position:X:-21.21 Y:-21.21	Position:X:-21.21 Y:21.21	Position:X:21.21 Y:-21.21
+	End
+End
+

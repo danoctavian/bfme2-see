@@ -41644,7 +41644,7 @@ CONTROLBAR:PurchaseTechnologyWildForgedBlades
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
 // original //"Allows hordes to acquire Scavenged Weapons \n \n When equipped, increases the damage \n done by melee weapons"
-"Cost: FREE! \n \n Allows hordes to acquire Scavenged Weapons \n thus enabling training of Goblin Warriors \n (Swordsmen, Spearmen, Wolf- and Warg Riders)"
+"Cost: FREE! \n Allows hordes to acquire Scavenged Weapons \n \n Enables training of Goblin Warriors, \n Spearmen, Wolf- and Warg Riders"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildHeavyArmor
