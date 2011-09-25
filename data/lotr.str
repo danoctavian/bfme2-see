@@ -16408,26 +16408,26 @@ CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
 "Upgrade Wolf Den to level 2"
 END
 CONTROLBAR:ToolTipBuildWildWolfDenLevel2Upgrade
-"Level 2: +33% faster build speed \n Allows training of Goblin Wolf Riders"
+"Level 2: +33% faster build speed \n \n Allows training of Goblin Wolf Riders"
 END
 CONTROLBAR:ConstructWildWolfDenLevel3Upgrade
 "Upgrade Wolf Den to level 3"
 END
 CONTROLBAR:ToolTipBuildWildWolfDenLevel3Upgrade
-"Level 3: +50% faster build speed \n Allows training of Goblin Warg Riders"
+"Level 3: +50% faster build speed \n \n Allows training of Goblin Warg Riders"
 END
 
 CONTROLBAR:ConstructWildTreasureTroveLevel2Upgrade
-"&Upgrade Treasure Trove to Level 2"
+"Upgrade Treasure Trove to level 2"
 END
 CONTROLBAR:ToolTipBuildWildTreasureTroveLevel2Upgrade
-"Level 2: Allows research of the Venom Blades \n Arrow Tips and Scavenged Armor upgrade"
+"Level 2: Allows xxx \n and xxx"
 END
 CONTROLBAR:ConstructWildTreasureTroveLevel3Upgrade
-"&Upgrade Treasure Trove to Level 3"
+"Upgrade Treasure Trove to level 3"
 END
 CONTROLBAR:ToolTipBuildWildTreasureTroveLevel3Upgrade
-"Level 3: Allows research of the Fire Arrows upgrade"
+"Level 3: Allows xxx"
 END
 
 CONTROLBAR:ConstructWildSpiderlingHorde
@@ -48163,7 +48163,7 @@ CONTROLBAR:ConstructGoblinWargRiderHorde
 "Goblin Warg Riders"
 END
 CONTROLBAR:ToolTipBuildGoblinWargRiderHorde
-"Recruit up to 4 units of The Great Goblin's \n savage Warg Riders of the Misty Mountains \n \n Requires level 3 Wolf Den \n and Scavenged Weapons upgrade \n \n Strong vs. Cavalry and Archers"
+"Recruit up to 2 units of The Great Goblin's \n savage Warg Riders of the Misty Mountains \n \n Requires level 3 Wolf Den \n and Scavenged Weapons upgrade \n \n Strong vs. Cavalry and Archers"
 END
 
 // ---
@@ -48178,7 +48178,7 @@ CONTROLBAR:ConstructGoblinWolfRiderHorde
 "Goblin Wolf Riders"
 END
 CONTROLBAR:ToolTipBuildGoblinWolfRiderHorde
-"Recruit the fierce Goblin Wolf Riders \n \n Requires level 2 Wolf Den \n and Scavenged Weapons upgrade \n \n Strong vs. Archers"
+"Recruit up to 6 hordes of the fierce \n Goblin Wolf Riders \n \n Requires level 2 Wolf Den \n and Scavenged Weapons upgrade \n \n Strong vs. Archers"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい

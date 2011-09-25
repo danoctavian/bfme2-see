@@ -322,7 +322,7 @@ CommandSet GoblinWargRiderCommandSet
 	3 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
 	4 	= Command_PurchaseUpgradeWildBasicTraining	
 	5 	= Command_PurchaseUpgradeWildHeavyArmor	
-	;6 	= Command_PurchaseUpgradeWildSpiderVenomBlades		; Not all units needs to exploit this power!
+	;6 	= Command_PurchaseUpgradeWildSpiderVenomBlades		; Has no BC glow! But not all units needs to exploit this power anyways!
 	12 	= Command_CaptureBuilding	
 	13 	= Command_AttackMove	
 	14	= Command_Stop	
@@ -338,7 +338,7 @@ CommandSet GoblinWolfRiderCommandSet
 	3 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
 	4 	= Command_PurchaseUpgradeWildBasicTraining	
 	5 	= Command_PurchaseUpgradeWildHeavyArmor	
-	6 	= Command_PurchaseUpgradeWildSpiderVenomBlades		; Not all units needs to exploit this power!
+	;6 	= Command_PurchaseUpgradeWildSpiderVenomBlades		; Has no BC glow! But not all units needs to exploit this power anyways!
 	12 	= Command_CaptureBuilding	
 	13 	= Command_AttackMove	
 	14	= Command_Stop	
