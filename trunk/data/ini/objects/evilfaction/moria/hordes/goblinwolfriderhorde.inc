@@ -129,7 +129,7 @@ Object GoblinWolfRiderHorde
 		ObjectStatusOfContained = 
 		InitialPayload = GoblinWolfRider  10
 		Slots = 10
-		PassengerFilter = NONE +CAVALRY +GoblinWargRiderBanner
+		PassengerFilter = NONE +CAVALRY +GoblinWolfRiderBanner
 		ShowPips = No
 		RandomOffset = X:2 y:3
 		
@@ -139,8 +139,8 @@ Object GoblinWolfRiderHorde
 		ThisFormationIsTheMainFormation = Yes	;Used to determine which armorset to use (and anything else we want!)
 
 		; Banner Carrier info		
-		BannerCarriersAllowed	= GoblinWargRiderBanner										; types of units that are allowed as banner carriers
-		BannerCarrierPosition	= UnitType:GoblinWargRider	Pos:X:60.0 Y:0.0		; (DEFAULT) position of banner carrier for archer horde
+		BannerCarriersAllowed	= GoblinWolfRiderBanner										; types of units that are allowed as banner carriers
+		BannerCarrierPosition	= UnitType:GoblinWolfRider	Pos:X:60.0 Y:0.0		; (DEFAULT) position of banner carrier for archer horde
 		
 		; RankInfo = RankNumber:1 UnitType:GoblinWargRider Position:X:0 Y:0		Position:X:40 Y:20		Position:X:40 Y:-20		Position:X:40 Y:40		Position:X:40 Y:-40 
 		; RankInfo = RankNumber:2 UnitType:GoblinWargRider Position:X:-30 Y:0 Leader 1 0	Position:X:10 Y:15 Leader 1 1	Position:X:10 Y:-15 Leader 1 2	Position:X:10 Y:30 Leader 1 3	Position:X:10 Y:-30 Leader 1 4
@@ -149,7 +149,7 @@ Object GoblinWolfRiderHorde
     RankInfo = RankNumber:3 UnitType:GoblinWolfRider Position:X:-30 Y:-25 Position:X:-30 Y:0 Position:X:-30 Y:25
 		
 		RanksToReleaseWhenAttacking = 1 2 3
-		MeleeAttackLeashDistance = 6 //1; How far the hordes can move from the center of the horde when melee attacking.				
+		MeleeAttackLeashDistance = 10 //1; How far the hordes can move from the center of the horde when melee attacking.				
     BackUpMinDelayTime        = 1        ; The minimum amount of time to delay before backing up
     BackUpMaxDelayTime        = 3000        ; The maximum amount of time to delay before backing up
     BackUpMinDistance        = 1            ; The minimum number of cells to backup

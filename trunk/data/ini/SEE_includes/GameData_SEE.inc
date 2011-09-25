@@ -2059,20 +2059,7 @@
 #define NORMAL_GOOD_THRANDUIL_SPEED			50
 
 
-#define NORMAL_ISENGARD_INFANTRY_HORDE_SPEED		50
-#define NORMAL_ISENGARD_INFANTRY_MEMBER_SPEED		55	; A little faster so when the formation wheels the unit can catch up.
 
-#define NORMAL_ISENGARD_PIKEMEN_HORDE_SPEED		50
-#define NORMAL_ISENGARD_PIKEMEN_MEMBER_SPEED		55	; A little faster so when the formation wheels the unit can catch up.
-
-#define NORMAL_ISENGARD_FAST_HORDE_SPEED		65
-#define NORMAL_ISENGARD_FAST_MEMBER_SPEED		75	; A little faster so when the formation wheels the unit can catch up.
-
-#define NORMAL_ISENGARD_CAVALRY_HORDE_SPEED		80
-#define NORMAL_ISENGARD_CAVALRY_MEMBER_SPEED		90	; A little faster so when the formation wheels the unit can catch up.
-
-#define NORMAL_ISENGARD_CAVALRY_FAST_HORDE_SPEED		140 //110
-#define NORMAL_ISENGARD_CAVALRY_FAST_MEMBER_SPEED	150 //120	; A little faster so when the formation wheels the unit can catch up.
 
 	
 
@@ -2092,20 +2079,36 @@
 #define NORMAL_MORDOR_CAVALRY_FAST_MEMBER_SPEED		130	; A little faster so when the formation wheels the unit can catch up.
 
 
-#define NORMAL_WILD_INFANTRY_HORDE_SPEED		50
-#define NORMAL_WILD_INFANTRY_MEMBER_SPEED		55	; A little faster so when the formation wheels the unit can catch up.
+#define NORMAL_ISENGARD_INFANTRY_HORDE_SPEED		50
+#define NORMAL_ISENGARD_INFANTRY_MEMBER_SPEED		55	; A little faster so when the formation wheels the unit can catch up.
 
-#define NORMAL_WILD_PIKEMEN_HORDE_SPEED			63
-#define NORMAL_WILD_PIKEMEN_MEMBER_SPEED		67	; A little faster so when the formation wheels the unit can catch up.
+#define NORMAL_ISENGARD_PIKEMEN_HORDE_SPEED		50
+#define NORMAL_ISENGARD_PIKEMEN_MEMBER_SPEED		55	; A little faster so when the formation wheels the unit can catch up.
 
-#define NORMAL_WILD_FAST_HORDE_SPEED			65
-#define NORMAL_WILD_FAST_MEMBER_SPEED			70	; A little faster so when the formation wheels the unit can catch up.
+#define NORMAL_ISENGARD_FAST_HORDE_SPEED		65
+#define NORMAL_ISENGARD_FAST_MEMBER_SPEED		75	; A little faster so when the formation wheels the unit can catch up.
 
-#define NORMAL_WILD_CAVALRY_HORDE_SPEED			90
-#define NORMAL_WILD_CAVALRY_MEMBER_SPEED		100	; A little faster so when the formation wheels the unit can catch up.
+#define NORMAL_ISENGARD_CAVALRY_HORDE_SPEED		80
+#define NORMAL_ISENGARD_CAVALRY_MEMBER_SPEED		90	; A little faster so when the formation wheels the unit can catch up.
 
-#define NORMAL_WILD_CAVALRY_FAST_HORDE_SPEED		120
-#define NORMAL_WILD_CAVALRY_FAST_MEMBER_SPEED		130	; A little faster so when the formation wheels the unit can catch up.
+#define NORMAL_ISENGARD_CAVALRY_FAST_HORDE_SPEED		140 //110
+#define NORMAL_ISENGARD_CAVALRY_FAST_MEMBER_SPEED	150 //120	; A little faster so when the formation wheels the unit can catch up.
+
+
+#define NORMAL_WILD_INFANTRY_HORDE_SPEED				50
+#define NORMAL_WILD_INFANTRY_MEMBER_SPEED				55	; A little faster so when the formation wheels the unit can catch up.
+
+#define NORMAL_WILD_PIKEMEN_HORDE_SPEED				63
+#define NORMAL_WILD_PIKEMEN_MEMBER_SPEED				67	; A little faster so when the formation wheels the unit can catch up.
+
+#define NORMAL_WILD_FAST_HORDE_SPEED					65
+#define NORMAL_WILD_FAST_MEMBER_SPEED					70	; A little faster so when the formation wheels the unit can catch up.
+
+#define NORMAL_WILD_CAVALRY_HORDE_SPEED				90
+#define NORMAL_WILD_CAVALRY_MEMBER_SPEED				100	; A little faster so when the formation wheels the unit can catch up.
+
+#define NORMAL_WILD_CAVALRY_FAST_HORDE_SPEED			150 //120
+#define NORMAL_WILD_CAVALRY_FAST_MEMBER_SPEED		160 //130	; A little faster so when the formation wheels the unit can catch up.
 
 
 #define NORMAL_ELVEN_INFANTRY_HORDE_SPEED		50

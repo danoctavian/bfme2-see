@@ -461,7 +461,9 @@
 
 
 
-
+; ------------------------------------------------------------------------------ SEE!
+#define	GOBLIN_WOLFRIDER_BANNERCARRIER_HEALTH				700 //1000 //1800
+#define	GOBLIN_WOLFRIDER_BANNERCARRIER_HEALTH_DAMAGED		350 //500 //900
 
 ;-------------------- GOBLIN WOLFRIDER ---------------------
 #define GOBLIN_WOLFRIDER_BUILDCOST						350 //400
