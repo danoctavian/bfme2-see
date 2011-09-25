@@ -1,13 +1,13 @@
 
 ; ####################################################
-Object GoblinWargRiderHorde
+Object GoblinWolfRiderHorde
 ; ####################################################
 
-	ButtonImage		= BIWargPit_Riders
-	SelectPortrait	= UPIsenguard_WargRiders
+	ButtonImage 			= WOR_WolfRider
+	SelectPortrait         	= KUWolfRiderPortrait
 
 	Draw = W3DScriptedModelDraw ModuleTag_W3DModelDraw
-    DependencySharedModelFlags = USER_8 EMOTION_ALERT EMOTION_MORALE_HIGH EMOTION_MORALE_LOW EMOTION_AFRAID EMOTION_COWER SELECTED EMOTION_TERROR EMOTION_LOOK_TO_SKY
+	DependencySharedModelFlags = USER_8 EMOTION_ALERT EMOTION_MORALE_HIGH EMOTION_MORALE_LOW EMOTION_AFRAID EMOTION_COWER SELECTED EMOTION_TERROR EMOTION_LOOK_TO_SKY
 		
 		DefaultModelConditionState
 			Model = None ;InvisHrdeTmp5x1
@@ -23,11 +23,10 @@ Object GoblinWargRiderHorde
 	Side = Wild //Isengard
 	EditorSorting = UNIT
 	EmotionRange = 240
-	DisplayName = OBJECT:GoblinWargRiderHorde //OBJECT:HordeIsengardWargRiders
+	DisplayName = OBJECT:GoblinWolfRiderHorde
 	DisplayNameStrategic = CONTROLBAR:LW_Unit_IsengardWargRiderHorde
 	DescriptionStrategic = CONTROLBAR:LW_ToolTip_IsengardWargRiderHorde
-	
-	MaxSimultaneousOfType		= 4 //Balance issue!
+	MaxSimultaneousOfType		= 6 //Balance issue!	
 	
 	WeaponSet
 		Conditions = None 
@@ -41,11 +40,11 @@ Object GoblinWargRiderHorde
 	; are always passed through to members
 
 
-	BuildCost = GOBLIN_WARGRIDER_BUILDCOST			
-	BuildTime = GOBLIN_WARGRIDER_BUILDTIME			
-	VisionRange = GOBLIN_WARGRIDER_HORDE_VISION_RANGE
+	BuildCost = GOBLIN_WOLFRIDER_BUILDCOST			
+	BuildTime = GOBLIN_WOLFRIDER_BUILDTIME			
+	VisionRange = GOBLIN_WOLFRIDER_HORDE_VISION_RANGE
 	
-	ShroudClearingRange = GOBLIN_WARGRIDER_SHROUD_RANGE       
+	ShroudClearingRange = GOBLIN_WOLFRIDER_SHROUD_RANGE       
 	
 	VisionSide = 50%
 	VisionRear = 25%
@@ -55,9 +54,9 @@ Object GoblinWargRiderHorde
 	; VisionBonusPercentPerFoot = 1.0%
 	
 	 		
-	CommandPoints = 30
+	CommandPoints = 10
 	
-	CommandSet = GoblinWargRiderCommandSet ;WargRiderHordeCommandSet
+	CommandSet = GoblinWolfRiderCommandSet ;WildWolfRiderHordeCommandSet_SEE ;WargRiderHordeCommandSet
 		  
 	FormationWidth = 2 ; Width it occupies in formations. Current choices are 1 or 2.
 	FormationDepth = 2 ; Depth it occupies in formations. Current choices are 1 or 2.
@@ -68,6 +67,7 @@ Object GoblinWargRiderHorde
 	CrushDecelerationPercent = 50% ; Lose 20 percent of max velocity when crushing.
 	CrushKnockback = 40  ; how hard we knock back crushed units.
 	CrushZFactor = 1.0  ; How much we knock upwards.
+		
 		
 	
 	TransportSlotCount = TRANSPORTSLOTCOUNT_LARGE_HORDE
@@ -89,11 +89,11 @@ Object GoblinWargRiderHorde
   End
 
 	Behavior = HordeAIUpdate ModuleTag_HordeAIUpdate
-		AutoAcquireEnemiesWhenIdle 	= Yes ;ATTACK_BUILDINGS
-		MoodAttackCheckRate       	= 500
+		AutoAcquireEnemiesWhenIdle = Yes ;ATTACK_BUILDINGS
+		MoodAttackCheckRate        = 500
 		AILuaEventsList				= CavalryFunctions
-		MaxCowerTime				= 5000
-		MinCowerTime				= 3000
+		MaxCowerTime				=	5000
+		MinCowerTime				=	3000
 		AttackPriority				= AttackPriority_Cavalry
 	End
 
@@ -127,7 +127,7 @@ Object GoblinWargRiderHorde
 	FrontAngle = 270
 		FlankedDelay = 2000
 		ObjectStatusOfContained = 
-		InitialPayload = GoblinWargRider  10
+		InitialPayload = GoblinWolfRider  10
 		Slots = 10
 		PassengerFilter = NONE +CAVALRY +GoblinWargRiderBanner
 		ShowPips = No
@@ -144,12 +144,12 @@ Object GoblinWargRiderHorde
 		
 		; RankInfo = RankNumber:1 UnitType:GoblinWargRider Position:X:0 Y:0		Position:X:40 Y:20		Position:X:40 Y:-20		Position:X:40 Y:40		Position:X:40 Y:-40 
 		; RankInfo = RankNumber:2 UnitType:GoblinWargRider Position:X:-30 Y:0 Leader 1 0	Position:X:10 Y:15 Leader 1 1	Position:X:10 Y:-15 Leader 1 2	Position:X:10 Y:30 Leader 1 3	Position:X:10 Y:-30 Leader 1 4
-    RankInfo = RankNumber:1 UnitType:GoblinWargRider Position:X:30 Y:-25 Position:X:30 Y:0 Position:X:30 Y:25
-    RankInfo = RankNumber:2 UnitType:GoblinWargRider Position:X:0 Y:-40 Position:X:8 Y:-10 Position:X:-8 Y:10 Position:X:0 Y:40 
-    RankInfo = RankNumber:3 UnitType:GoblinWargRider Position:X:-30 Y:-25 Position:X:-30 Y:0 Position:X:-30 Y:25
+    RankInfo = RankNumber:1 UnitType:GoblinWolfRider Position:X:30 Y:-25 Position:X:30 Y:0 Position:X:30 Y:25
+    RankInfo = RankNumber:2 UnitType:GoblinWolfRider Position:X:0 Y:-40 Position:X:8 Y:-10 Position:X:-8 Y:10 Position:X:0 Y:40 
+    RankInfo = RankNumber:3 UnitType:GoblinWolfRider Position:X:-30 Y:-25 Position:X:-30 Y:0 Position:X:-30 Y:25
 		
 		RanksToReleaseWhenAttacking = 1 2 3
-		MeleeAttackLeashDistance = 3 //2 //1; How far the hordes can move from the center of the horde when melee attacking.				
+		MeleeAttackLeashDistance = 6 //1; How far the hordes can move from the center of the horde when melee attacking.				
     BackUpMinDelayTime        = 1        ; The minimum amount of time to delay before backing up
     BackUpMaxDelayTime        = 3000        ; The maximum amount of time to delay before backing up
     BackUpMinDistance        = 1            ; The minimum number of cells to backup
@@ -168,7 +168,7 @@ Object GoblinWargRiderHorde
 
 	Behavior = LargeGroupBonusUpdate ModuleTag_LargeGroupBonus
 		UpdateRate			= 1000
-		HordeMemberFilter	= NONE +GoblinArcher +GoblinFighter +GoblinSpearman +GoblinWolfRider  +GoblinWargRider
+		HordeMemberFilter	= NONE +GoblinArcher +GoblinFighter +GoblinSpearman +GoblinWolfRider  +GoblinWargRider 
 		Count				= 100
 		Radius				= 160.0
 		RubOffRadius		= 160.0
@@ -177,14 +177,14 @@ Object GoblinWargRiderHorde
 	End
 
 	Behavior = UnpauseSpecialPowerUpgrade ModuleTag_HowlUnpause
-		SpecialPowerTemplate		= SpecialAbilityWargHowl
+		SpecialPowerTemplate		= SpecialAbilityWolfHowl
 		TriggeredBy					= Upgrade_ObjectLevel2
 	End
 	Behavior = SpecialPowerModule ModuleTag_HowlUpdate   
-		SpecialPowerTemplate      	= SpecialAbilityWargHowl
+		SpecialPowerTemplate      	= SpecialAbilityWolfHowl
 		StartsPaused					= Yes
 		UpdateModuleStartsAttack  	= No
-		AttributeModifier 				= IsengardWargHowl 	
+		AttributeModifier 				= WildWolfHowl //IsengardWargHowl 	
 		; AttributeModifierRange = 200
 		AttributeModifierAffectsSelf 	= Yes
 		; AttributeModifierAffects = ANY +CAVALRY 
@@ -192,7 +192,7 @@ Object GoblinWargRiderHorde
 	End
 	
 	Behavior = AutoAbilityBehavior ModuleTag_AutoAbilityHowl
-		SpecialAbility 				= SpecialAbilityWargHowl
+		SpecialAbility 				= SpecialAbilityWolfHowl
 		MaxScanRange				= 30
 		Query						= 1 ALL ENEMIES -STRUCTURE
 	End
@@ -200,7 +200,7 @@ Object GoblinWargRiderHorde
 	LocomotorSet
 		Locomotor     = WargCavalryHordeLocomotor ;NormalCavalryHordeLocomotor
 		Condition     = SET_NORMAL
-		Speed         = NORMAL_ISENGARD_CAVALRY_FAST_HORDE_SPEED //NORMAL_ISENGARD_CAVALRY_HORDE_SPEED
+		Speed         = NORMAL_WILD_CAVALRY_FAST_HORDE_SPEED ;M_NORMAL_ISENGARD_CAVALRY_HORDE_SPEED
 	End
 
 	Behavior = ProductionUpdate ProductionUpdateModuleTag
@@ -250,7 +250,7 @@ Object GoblinWargRiderHorde
 	#include "..\..\..\..\SEE_includes\Battlestance_SEE.inc"
 	
 	Behavior = AISpecialPowerUpdate WargRiderHowlAI
-		CommandButtonName = Command_SpecialAbilityWargHowl
+		CommandButtonName = Command_SpecialAbilityWolfHowl
 		SpecialPowerAIType = AI_SPECIAL_POWER_BASIC_SELF_BUFF ;AI_SPELLBOOK_ASSIST_BATTLE_DEBUFF
     ; SpecialPowerRange  = 30
     SpecialPowerRadius  = 100 ;30

@@ -318,6 +318,21 @@ CommandButton Command_ConstructWildMarauderHorde
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ConstructGoblinWolfRiderHorde
+	Command				= UNIT_BUILD
+	Object				= GoblinWolfRiderHorde
+	Options				= CANCELABLE NEED_UPGRADE
+	NeededUpgrade		= Upgrade_WildWolfDenLevel2 Upgrade_TechnologyWildForgedBlades	
+	TextLabel			= CONTROLBAR:ConstructGoblinWolfRiderHorde
+	ButtonImage			= WOR_WolfRider //BWSpiderPit_SpiderRider <<< Will make new button! /Naz
+	ButtonBorderType    	= BUILD 
+	DescriptLabel       	= CONTROLBAR:ToolTipBuildGoblinWolfRiderHorde
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes      
+End
+
+; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructGoblinWargRiderHorde
 	Command				= UNIT_BUILD
 	Object				= GoblinWargRiderHorde

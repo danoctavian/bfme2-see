@@ -205,22 +205,22 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildWolfDenCommandSet
 	;1 = Command_ConstructGoblinWargPack
-	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
-	3 	= Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
+	2 	= Command_ConstructGoblinWolfRiderHorde
+	3 	= Command_ConstructGoblinWargRiderHorde
 	4 	= Command_PurchaseUpgradeWildWolfDenLevel2
 	6 	= Command_Sell
 End
 CommandSet WildWolfDenCommandSetLevel2
-	;1 = Command_ConstructGoblinWargPack ;Command_ConstructWildSpiderlingHorde
-	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
-	3 	= Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
+	;1 = Command_ConstructGoblinWargPack
+	2 	= Command_ConstructGoblinWolfRiderHorde
+	3 	= Command_ConstructGoblinWargRiderHorde
 	4 	= Command_PurchaseUpgradeWildWolfDenLevel3
 	6 	= Command_Sell
 End
 CommandSet WildWolfDenCommandSetLevel3
-	;1 = Command_ConstructGoblinWargPack ;Command_ConstructWildSpiderlingHorde
-	;2 = Command_ConstructGoblinWolfRiderHorde //Added for SEE!
-	3 	= Command_ConstructGoblinWargRiderHorde //WildSpiderRiderHorde is REMOVED! ;) Use as very limited Lair unit instead... /Naz
+	;1 = Command_ConstructGoblinWargPack
+	2 	= Command_ConstructGoblinWolfRiderHorde
+	3 	= Command_ConstructGoblinWargRiderHorde
 	6 	= Command_Sell
 End
 
@@ -305,7 +305,7 @@ CommandSet WildMarauderCommandSet
 	2  	= Command_WildMarauderPorcupineFormation
 	3	= Command_PurchaseUpgradeWildBasicTraining
 	4 	= Command_PurchaseUpgradeWildForgedBlade				; Pre-req!
-	5 	= Command_PurchaseUpgradeWildHeavyArmor
+	5 	= Command_PurchaseUpgradeWildHeavyArmor				; Pre-req!
 	6 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseUpgradeWildBasicTraining
 	12 	= Command_CaptureBuilding
 	13 	= Command_AttackMove
@@ -331,7 +331,21 @@ CommandSet GoblinWargRiderCommandSet
 	18 	= Command_SetStanceHoldGround	
 End
 
-
+; ------------------------------------------------------------------------------ SEE!
+CommandSet GoblinWolfRiderCommandSet
+	1	= Command_ToggleStance
+	2	= Command_SpecialAbilityWolfHowl
+	3 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
+	4 	= Command_PurchaseUpgradeWildBasicTraining	
+	5 	= Command_PurchaseUpgradeWildHeavyArmor	
+	6 	= Command_PurchaseUpgradeWildSpiderVenomBlades		; Not all units needs to exploit this power!
+	12 	= Command_CaptureBuilding	
+	13 	= Command_AttackMove	
+	14	= Command_Stop	
+	16 	= Command_SetStanceBattle
+	17 	= Command_SetStanceAggressive
+	18 	= Command_SetStanceHoldGround	
+End
 
 
 
