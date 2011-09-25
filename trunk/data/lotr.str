@@ -17212,19 +17212,17 @@ CONTROLBAR:ToolTipNarsilAttack
 END
 
 CONTROLBAR:WargRiderHowl
-"Ho&wl"
+"Howl"
 END
-
 CONTROLBAR:TooltipWargRiderHowl
-"Requires Level 2 \n Wargs gain +100% Damage \n Left click to activate"
+"Requires level 2 \n Wargs gain +100% damage \n Left click to activate"
 END
 
 CONTROLBAR:WolfRiderHowl
-"Ho&wl"
+"Howl"
 END
-
 CONTROLBAR:TooltipWolfRiderHowl
-"Requires Level 2 \n Wolves gain +50% Damage \n Left click to activate"
+"Requires level 2 \n Wolves gain +50% damage \n Left click to activate"
 END
 
 CONTROLBAR:ToggleGateOpenClose
@@ -48180,7 +48178,7 @@ CONTROLBAR:ConstructGoblinWolfRiderHorde
 "Goblin Wolf Riders"
 END
 CONTROLBAR:ToolTipBuildGoblinWolfRiderHorde
-"Recruit the fierce Goblin Wolf Riders \n \n Requires level 2 Wolf Den \n \n Strong vs. Archers"
+"Recruit the fierce Goblin Wolf Riders \n \n Requires level 2 Wolf Den \n and Scavenged Weapons upgrade \n \n Strong vs. Archers"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
