@@ -1,10 +1,12 @@
-/////////////////
-// WEAPON.INC //
-///////////////
-//Moria//
-////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
 
-;------------------------------------------------------------------------------
+; Weapon.INC for MORIA (Wild) faction...
+; ------------------------------------------------------------------------------
+; NOTE: Keep this organized!
+
+; ------------------------------------------------------------------------------
 Weapon BalrogCrush  ; Used when the Balrog crush an enemy.
   LeechRangeWeapon      = Yes
   AttackRange           = 9999999.0
@@ -24,7 +26,7 @@ Weapon BalrogCrush  ; Used when the Balrog crush an enemy.
   End
 End
 
-;------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 Weapon BalrogDeathCrush  ; Used when the Balrog crush enemies when it dies.
 	LeechRangeWeapon      = Yes
 	AttackRange           = 9999.0
@@ -51,7 +53,7 @@ Weapon BalrogDeathCrush  ; Used when the Balrog crush enemies when it dies.
 	End
 End
 
-;------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 Weapon MordorBalrogSwordSwipe     ; BALANCE Balrog Weapon
   LeechRangeWeapon      = Yes
   RadiusDamageAffects = ENEMIES NEUTRALS NOT_SIMILAR ALLIES
@@ -103,7 +105,7 @@ Weapon MordorBalrogSwordSwipe     ; BALANCE Balrog Weapon
   End
 End
 
-;------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 Weapon MordorBalrogSwordChop     ; BALANCE Balrog Weapon
   LeechRangeWeapon		= Yes		
   RadiusDamageAffects 	= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
@@ -143,7 +145,7 @@ Weapon MordorBalrogSwordChop     ; BALANCE Balrog Weapon
 	End
 End
 
-;------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 Weapon MordorBalrogWhip     ; BALANCE Orc Warrior Weapon
 	LeechRangeWeapon	= Yes
 	RadiusDamageAffects 	= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
@@ -202,7 +204,7 @@ Weapon MordorBalrogWhip     ; BALANCE Orc Warrior Weapon
 	End
 End
 
-;------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 Weapon MordorBalrogBreath
   IdleAfterFiringDelay = 0
   AttackRange = 60.0
@@ -262,7 +264,7 @@ Weapon MordorBalrogBreath
 End
 
 
-;------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 Weapon MordorBalrogLeap 
   IdleAfterFiringDelay	= 0
   AttackRange           = 840.0
@@ -284,7 +286,7 @@ Weapon MordorBalrogLeap
   End
 End
 
-;-----------------------------------
+;----------------------------------- ^^
 Weapon MordorBalrogLeapWarhead
   ProjectileCollidesWith = ENEMIES
   RadiusDamageAffects = ENEMIES NEUTRALS NOT_SIMILAR ALLIES
@@ -312,7 +314,7 @@ Weapon MordorBalrogLeapWarhead
   End
 End
 
-;------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 Weapon MordorBalrogHeroEffect     ; BALANCE Orc Warrior Weapon
   LeechRangeWeapon      = No
   AttackRange           = 20.0
@@ -2203,7 +2205,15 @@ Weapon GoblinKingBlade     ; BALANCE Orc Warrior Weapon ;Orc Fighter
   End
 End
 
-;----------------------------
+
+
+
+
+
+
+
+
+; ------------------------------------------------------------------------------
 Weapon WargRiderWeapon_Goblin
   LeechRangeWeapon			= Yes
 	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
@@ -2224,7 +2234,7 @@ Weapon WargRiderWeapon_Goblin
     DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
   End  
 End
-;----------------------------
+; ------------------------------------------------------------------------------
 Weapon WargRiderWeapon_GoblinUpgraded
   LeechRangeWeapon			= Yes
 	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
@@ -2265,3 +2275,516 @@ Weapon WargRiderWeapon_GoblinUpgraded
 		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
 	End
 End
+
+; ------------------------------------------------------------------------------
+; This is the normal punch, not the AOE, rock, siege or tree
+Weapon MoriaCaveTrollPunch  									;Used by both MOUNTAIN TROLL and CAVE TROLL /Naz
+  LeechRangeWeapon			= Yes
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+  AttackRange           	= STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           	= Yes
+  DelayBetweenShots     		= MORDOR_TROLL_PUNCH_DELAYBETWEENSHOTS
+  FiringDuration        		= MORDOR_TROLL_PUNCH_FIRINGDURATION
+  PreAttackDelay        		= MORDOR_TROLL_PUNCH_PREATTACKDELAY
+  PreAttackType         		= PER_SHOT ; Do the delay each time we attack a new target
+  PreAttackFX          		= FX_TrollTreeSwing
+  FireFX               		= FX_TrollPunchGeneric
+  DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+  AcceptableAimDelta			= 15.0 
+
+  DamageNugget                        ; A basic Nugget that just does damage
+	DamageMaxHeightAboveTerrain = 10
+    Damage        			= CAVE_TROLL_PUNCH_DAMAGE
+    Radius        			= 50.0
+    DamageArc      			= 45
+    DamageType    			= SIEGE
+    DamageFXType  			= CLUBBING
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+	DamageScalar  			= 25% ALL ALLIES
+  	DamageScalar				= 150% NONE +STRUCTURE //Added for SEE!
+  	DamageScalar				= 200% NONE +HERO	//Added for SEE!
+  	//DamageScalar  			= 200% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+	ForbiddenUpgradeNames	= Upgrade_StructureLevel1
+  End
+  
+  DamageNugget                        ; A basic Nugget that just does damage
+	DamageMaxHeightAboveTerrain = 10
+    Damage        			= MORDOR_TROLL_PUNCH_DAMAGE
+    Radius        			= 50.0
+    DamageArc      			= 45
+    DamageType    			= SIEGE
+    DamageFXType  			= CLUBBING
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+	DamageScalar  			= 25% ALL ALLIES
+  	DamageScalar				= 150% NONE +STRUCTURE //Added for SEE!
+  	DamageScalar				= 200% NONE +HERO	//Added for SEE!
+  	//DamageScalar  			= 200% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+	RequiredUpgradeNames		= Upgrade_StructureLevel1
+  End
+  
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+    ShockWaveAmount   		= 40.0 ;20.0
+    ShockWaveRadius   		= 40.0
+    ShockWaveTaperOff 		= 1.0
+    ShockWaveArc      		= 45
+    ShockWaveZMult    		= 1.20
+	HeroResist				= .75
+  End
+End
+
+; ------------------------------------------------------------------------------
+; This is the building attack bash, not the AOE, rock, siege or tree
+Weapon MoriaCaveTrollBash  									;Used by both MOUNTAIN TROLL and CAVE TROLL /Naz
+	LeechRangeWeapon	  	= Yes
+	AttackRange           	= STANDARD_MELEE_ATTACK_RANGE
+	RadiusDamageAffects	  	= ENEMIES 
+	MeleeWeapon           	= Yes
+	FireFX                	= FX_TrollBash
+	DelayBetweenShots     	= MORDOR_TROLL_SHOULDER_DELAYBETWEENSHOTS            ; time between shots, msec
+	FiringDuration        		= MORDOR_TROLL_SHOULDER_FIRINGDURATION
+	PreAttackDelay        	= MORDOR_TROLL_SHOULDER_PREATTACKDELAY
+	PreAttackType         	= PER_SHOT
+	PreAttackFX           	= FX_TrollTreeSwing
+	AcceptableAimDelta	  	= 35.0 
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 10
+		Damage        		= CAVE_TROLL_SHOULDER_DAMAGE
+		Radius        		= 0.0
+		DelayTime     		= 0
+		DamageType    		= SIEGE
+		DamageFXType  		= CLUBBING
+		DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar  		= 25% ALL ALLIES
+		DamageScalar			= 150% NONE +STRUCTURE //Added for SEE!
+		DamageScalar			= 200% NONE +HERO	//Added for SEE!
+		//DamageScalar  		= 200% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+		ForbiddenUpgradeNames	= Upgrade_StructureLevel1
+	End
+  
+	DamageNugget                        ; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 10
+		Damage        		= MORDOR_TROLL_SHOULDER_DAMAGE
+		Radius        		= 0.0
+		DelayTime     		= 0
+		DamageType    		= SIEGE
+		DamageFXType  		= CLUBBING
+		DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar			= 150% NONE +STRUCTURE //Added for SEE!
+		DamageScalar			= 200% NONE +HERO	//Added for SEE!
+		//DamageScalar  		= 200% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+		RequiredUpgradeNames	= Upgrade_StructureLevel1
+	End
+End
+
+; ------------------------------------------------------------------------------
+Weapon MoriaCaveTrollRampage // AN ABSOLUTE PAIN TO TIME CORRECTLY!!! This will have to do though... 1st, 2nd and 3rd blow is good, 4th is... ok /Naz
+  AttackRange 				= 160.0
+  FireFX           			= FX_RampageDust
+  RadiusDamageAffects 		= ALLIES ENEMIES NEUTRALS SAME_HEIGHT_ONLY
+  PreAttackDelay				= 1000 ///500					; The first hit is in frame 30 @30fps (Naz)
+  PreAttackType         		= PER_SHOT
+  DelayBetweenShots 			= 1000 ///700 //800 //1000		; Hit 2, 3 & 4 is at frame 60, 90 & 120 @30fps (Naz)
+  ClipSize 					= 4 //5 //6                      			; There are 4 hits in total in animation _RPGC (Naz)
+  ClipReloadTime 				= 999                 			; Should be maximum 1 sec I guess since there are 30 frames between each hit? ^^ (Naz)
+
+  ; Sequential order of the target positions to follow this list. THIS is where you TIME the 4 attacks of the ramapage! /Naz
+  IgnoreLinearFirstTarget 		= No ;Yes
+  LinearTarget 				= X: 0.0   Y: 0.0	T:5
+  LinearTarget 				= X: 25.0  Y: 15.0	T:4 //X: 20.0  Y: 10.0	T:4
+  LinearTarget 				= X: 0.0   Y: 30.0	T:2 ;4 //X: 0.0   Y: 20.0	T:5
+  LinearTarget 				= X:-25.0  Y: -15.0	T:4 ///0 ;1 ;3 //X:-20.0  Y: 0.0	T:5
+  ;LinearTarget = X: 0.0   Y:-30.0	T:0 //X: 0.0   Y:-20.0	T:0
+  ;LinearTarget = X: 0.0   Y: 0.0	T:5
+
+  DamageNugget                        ; A basic Nugget that just does damage
+	;DamageMaxHeightAboveTerrain = 10
+    Damage        			= CAVE_TROLL_RAMPAGE_DAMAGE //100
+    Radius        			= 30.0 //20.0
+    DamageType            	= CRUSH
+    DeathType             	= LASERED ;now always used instead of NORMAL (Sûl)
+  	DamageScalar				= 300% NONE +STRUCTURE +HERO	//Added for SEE! ;We want to HURT heroes! (Naz)	
+  	//DamageScalar  			= 400% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!		
+	;DelayTime				= 500
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+  	HeroResist				= .90 //.75 
+    ShockWaveAmount   		= 50.0
+    ShockWaveRadius   		= 20.0 //30.0
+    ShockWaveTaperOff 		= 1.0
+	;DelayTime				= 500
+  End
+End
+
+; ------------------------------------------------------------------------------
+Weapon MoriaCaveTrollTreeRampage
+  AttackRange 				= 160.0
+  FireFX           			= FX_RampageDust
+  RadiusDamageAffects 		= ALLIES ENEMIES NEUTRALS SAME_HEIGHT_ONLY
+  PreAttackDelay				= 1000 ///500
+  PreAttackType         		= PER_SHOT  
+  DelayBetweenShots 			= 1000 //800 //1000                 ; time between shots, msec
+  ClipSize 					= 4 //6                            ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime 				= 1000                      ; how long to reload a Clip, msec
+
+  ; Sequential order of the target positions to follow this list
+  IgnoreLinearFirstTarget 		= No ;Yes
+  LinearTarget 				= X: 0.0   Y: 0.0	T:5 			;
+  LinearTarget 				= X: 25.0  Y: 15.0	T:4 			; 20 10 4 ;punch
+  LinearTarget 				= X: 0.0   Y: 45.0	T:2 //5 			;0 30 5 ;tree
+  LinearTarget 				= X:-25.0  Y: -15.0	T:0 //5 			;-20 0 5 ;punch
+  ;LinearTarget = X: 0.0   Y:-45.0	T:0 			;0 -30 0;tree
+  ;LinearTarget = X: 0.0   Y: 0.0	T:5 			;clearout
+  
+  DamageNugget                        ; A basic Nugget that just does damage
+	DamageMaxHeightAboveTerrain = 10
+    Damage        			= CAVE_TROLL_TREE_RAMPAGE_DAMAGE //M_TROLL_RAMPAGE_DAMAGE //100
+    Radius        			= 40.0
+    DamageType				= CRUSH
+    DeathType       		= LASERED ;now always used instead of NORMAL (Sûl)
+  	DamageScalar				= 300% NONE +STRUCTURE +HERO	//Added for SEE!	
+  	//DamageScalar  			= 400% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!		
+	; DelayTime				= 1000
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+	;HeroResist				= .90 //.75 ;We want heroes to go flying as as well! /Naz
+    ShockWaveAmount   		= 60.0 //50.0
+    ShockWaveRadius   		= 40.0
+    ShockWaveTaperOff 		= 1.0
+	; DelayTime				= 1000
+  End
+End
+
+; ------------------------------------------------------------------------------
+; This is the attack with a tree in hand
+
+Weapon MoriaCaveTrollClubSwing
+	LeechRangeWeapon		= Yes
+	RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	MeleeWeapon				= Yes
+	AttackRange				= 20									; this was tuned with the Damage and shock wave nugget so it looks good with club
+	FireFX					= FX_TrollClubHit
+	DelayBetweenShots		= MORDOR_TROLL_TREE_DELAYBETWEENSHOTS	; time between shots, msec
+	FiringDuration				= MORDOR_TROLL_TREE_FIRINGDURATION
+	PreAttackDelay			= MORDOR_TROLL_TREE_PREATTACKDELAY
+	PreAttackType			= PER_SHOT								; Do the delay each time we attack a new target
+	PreAttackFX				= FX_TrollTreeSwing ;Just sound FX!
+	DamageDealtAtSelfPosition	= Yes									; A melee based AoE.  Arc radiates from me, not them
+	AcceptableAimDelta		= 35.0 
+
+	DamageNugget									; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 10
+		Damage				= CAVE_TROLL_TREE_DAMAGE  ; kill gondor troops in 1 hit
+		Radius				= 60.0						; matches impact nugget so it throws them back and hurts them
+		DamageArc			= 90
+		DamageType			= SIEGE
+		DamageFXType		= CLUBBING
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar  		= 25% ALL ALLIES
+		DamageScalar			= 150% NONE +STRUCTURE //Added for SEE!
+		DamageScalar			= 200% NONE +HERO	//Added for SEE!
+		//DamageScalar  		= 250% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+		ForbiddenUpgradeNames	= Upgrade_StructureLevel1
+  End
+
+	DamageNugget									; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 10
+		Damage				= MORDOR_TROLL_TREE_DAMAGE  ; kill gondor troops in 1 hit
+		Radius				= 60.0						; matches impact nugget so it throws them back and hurts them
+		DamageArc			= 90
+		DamageType			= SIEGE
+		DamageFXType		= CLUBBING
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar 		= 25% ALL ALLIES
+		DamageScalar			= 150% NONE +STRUCTURE //Added for SEE!
+		DamageScalar			= 200% NONE +HERO	//Added for SEE!
+		//DamageScalar  		= 250% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+		RequiredUpgradeNames	= Upgrade_StructureLevel1
+  End
+
+	MetaImpactNugget								; A Nugget that throws things back with force
+		ShockWaveAmount   	= 60.0 ;40.0
+		ShockWaveRadius   	= 60.0
+		ShockWaveTaperOff 	= 0.75
+		ShockWaveArc      	= 90
+		ShockWaveZMult    	= 1.20
+		HeroResist			= .75
+	End
+End
+
+; ------------------------------------------------------------------------------
+Weapon MoriaCaveTrollClubChop
+	LeechRangeWeapon		= Yes
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	MeleeWeapon				= Yes
+	AttackRange				= 50									; this was tuned with the Damage and shock wave nugget so it looks good with club
+	FireFX					= FX_TrollClubHit
+	DelayBetweenShots		= MORDOR_ATTACKTROLL_TREECHOP_DELAYBETWEENSHOTS	; time between shots, msec
+	FiringDuration				= MORDOR_ATTACKTROLL_TREECHOP_FIRINGDURATION
+	PreAttackDelay			= MORDOR_ATTACKTROLL_TREECHOP_PREATTACKDELAY
+	PreAttackType			= PER_SHOT								; Do the delay each time we attack a new target
+	PreAttackFX				= FX_TrollTreeSwing
+	; DamageDealtAtSelfPosition	= Yes									; A melee based AoE.  Arc radiates from me, not them
+	AcceptableAimDelta		= 35.0 
+
+	DamageNugget									; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 20
+		Damage				= CAVE_TROLL_TREE_DAMAGE  ; kill gondor troops in 1 hit
+		Radius				= 0.0 ;60.0						; matches impact nugget so it throws them back and hurts them
+		DamageArc			= 0.0 ;30
+		DamageType			= SIEGE
+		DamageFXType		= CLUBBING
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar			= 200% NONE +STRUCTURE //Added for SEE!
+		//DamageScalar  		= 250% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+		ForbiddenUpgradeNames	= Upgrade_StructureLevel1
+  End
+
+	DamageNugget									; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 20
+		Damage				= MORDOR_TROLL_TREE_DAMAGE  ; kill gondor troops in 1 hit
+		Radius				= 0.0 ;60.0						; matches impact nugget so it throws them back and hurts them
+		DamageArc			= 0.0 ;30
+		DamageType			= SIEGE
+		DamageFXType		= CLUBBING
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar			= 200% NONE +STRUCTURE //Added for SEE!
+		//DamageScalar  		= 250% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+		RequiredUpgradeNames	= Upgrade_StructureLevel1
+  End
+
+	MetaImpactNugget								; A Nugget that throws things back with force
+		ShockWaveAmount   	= 60.0 ;40.0
+		ShockWaveRadius   	= 0.0
+		ShockWaveTaperOff 	= 0.75
+		ShockWaveArc      	= 0
+		ShockWaveZMult    	= 1.20
+		HeroResist			= .75
+	End
+End
+
+; ------------------------------------------------------------------------------
+; This is the weapon for a troll picking up a nearby goblin and throwing him. 
+Weapon MoriaCaveTrollGoblinThrow
+	;IdleAfterFiringDelay		= 2000							; Do NOT idle after throwing or Bombard will break
+	HoldDuringReload			= Yes
+	AttackRange				= MORDOR_TROLL_ROCK_MINRANGE
+	WeaponSpeed			= 200.0							; dist/sec (huge value == effectively instant)
+	FireFX					= FX_EntThrowSmallRock
+	PreAttackDelay			= 1400
+	FiringDuration				= 2000
+	PreAttackType			= PER_SHOT						; Do the delay each time we attack a new target
+	DelayBetweenShots		= 6100
+	HitPercentage				= 0								; never auto hits, always hits ground
+	ScatterRadius				= 4.0							; When this weapon misses it can randomly miss by as much as this distance.
+	IsAimingWeapon			= Yes							; Shooter will use his AimWeaponBehavior to get extra model condition flags
+	NoVictimNeeded			= Yes							; Need no target
+	LeechRangeWeapon		= Yes
+
+	AutoReloadWhenIdle		= 1500							; should be a bit less than IdleAfterFiringDelay
+	ClipSize 					= 1
+	AutoReloadsClip 			= No
+	ClipReloadTime 			= 2100
+	
+	ProjectileFilterInContainer 	= NONE +INFANTRY				; Throw out contained infantry
+
+	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
+		WarheadTemplateName		= MoriaCaveTrollGoblinThrowWarhead
+	End
+End
+
+;----------------------------------- ^^
+Weapon MoriaCaveTrollGoblinThrowWarhead
+	ProjectileCollidesWith 		= ALLIES ENEMIES NEUTRAL STRUCTURES WALLS			; Remember, the projectile is a rock, who has no allies
+	FireFX 					= FX_RockDetonation ;Just sound!
+	DamageNugget															; A basic Nugget that just does damage
+		Damage				= CAVE_TROLL_GOBLIN_DAMAGE
+		Radius				= 15.0
+		DamageType			= SLASH ;SIEGE
+		DamageFXType		= SMALL_ROCK
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+	End
+	MetaImpactNugget															; A Nugget that throws things back with force
+		HeroResist			= .50
+		ShockWaveAmount	= 30.0 ;50.0
+		ShockWaveRadius		= 18.0
+		ShockWaveTaperOff	= 0.5
+		ShockWaveZMult		= 0.60
+	End
+End
+
+; ------------------------------------------------------------------------------
+Weapon MoriaCaveTrollRockThrow_SEE
+	;IdleAfterFiringDelay		= 2000							; Do NOT idle after throwing or Bombard will break
+	HoldDuringReload			= Yes
+	AttackRange				= MORDOR_TROLL_ROCK_MINRANGE
+
+	RangeBonusMinHeight		= 10
+	RangeBonus				= 1
+	RangeBonusPerFoot		= #MULTIPLY( MORDOR_TROLL_ROCK_MINRANGE .025 )
+	
+	WeaponSpeed			= 200.0							; dist/sec (huge value == effectively instant)
+	FireFX					= FX_EntThrowSmallRock			; just sound FX!
+	PreAttackDelay			= 1400
+	FiringDuration				= 2000
+	PreAttackType			= PER_SHOT						; Do the delay each time we attack a new target
+	DelayBetweenShots		= 6100
+	HitPercentage				= 0								; never auto hits, always hits ground
+	ScatterRadius				= 4.0							; When this weapon misses it can randomly miss by as much as this distance.
+
+	IsAimingWeapon			= Yes							; Shooter will use his AimWeaponBehavior to get extra model condition flags
+	NoVictimNeeded			= Yes							; Need no target
+	LeechRangeWeapon		= Yes
+
+	HoldAfterFiringDelay		= 2100
+	AutoReloadWhenIdle		= 1500							; should be a bit less than IdleAfterFiringDelay
+	; ClipSize 				= 1
+	AutoReloadsClip 			= NO ;Yes
+	ClipReloadTime 			= 2100
+
+	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
+		ProjectileTemplateName	= RockBigTroll
+		WarheadTemplateName		= MoriaCaveTrollRockThrowWarhead
+		ForbiddenUpgradeNames	= Upgrade_StructureLevel1
+	End
+  
+	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
+		ProjectileTemplateName	= RockBigTroll
+		WarheadTemplateName		= MoriaMountainTrollRockThrowWarhead
+		RequiredUpgradeNames		= Upgrade_StructureLevel1
+	End
+End
+
+; ------------------------------------------------------------------------------
+Weapon MoriaCaveTrollRockThrowLongRange_SEE
+	;IdleAfterFiringDelay		= 2000							; Do NOT idle after throwing or Bombard will break
+	HoldDuringReload			= Yes
+	AttackRange				= MORDOR_TROLL_ROCK_RANGE
+	MinimumAttackRange		= MORDOR_TROLL_ROCK_MINRANGE
+	
+	RangeBonusMinHeight		= 10
+	RangeBonus				= 1
+	RangeBonusPerFoot		= #MULTIPLY( MORDOR_TROLL_ROCK_RANGE .020 )
+	
+	WeaponSpeed			= 200.0							; dist/sec (huge value == effectively instant)
+	FireFX					= FX_EntThrowSmallRock
+	PreAttackDelay			= 1400
+	FiringDuration				= 2000
+	PreAttackType			= PER_SHOT						; Do the delay each time we attack a new target
+	DelayBetweenShots		= 6100
+	HitPercentage				= 0								; never auto hits, always hits ground
+	; ScatterRadius				= 15.0							; When this weapon misses it can randomly miss by as much as this distance.
+	ClipSize 					= 6 ; ;
+	AutoReloadsClip 			= Yes
+	ClipReloadTime          	= 6100; how long to reload a Clip, msec
+	ScatterRadius				= 0.0							; When this weapon misses it can randomly miss by as much as this distance.
+  	; // Instead of a purely random scatter distance, this will divide a clip evenly and randomly at these spots
+  	ScatterTargetScalar 		= 1.0 ; replaces the ScatterRadius, above, for scaling this table, below
+  	ScatterTarget           	= X: 22 Y: 7
+  	ScatterTarget           	= X: 10 Y:-16
+  	ScatterTarget           	= X:-13 Y: 18
+  	ScatterTarget           	= X: 0.000 Y: 0.000 
+  	ScatterTarget           	= X:-8 Y: 10
+  	ScatterTarget           	= X: 10 Y: 8
+	ScatterIndependently		= Yes		;Each projectile fired at once from this weapon should scatter independently of each other.
+	IsAimingWeapon			= Yes							; Shooter will use his AimWeaponBehavior to get extra model condition flags
+	NoVictimNeeded			= Yes							; Need no target
+	LeechRangeWeapon		= Yes
+
+	HoldAfterFiringDelay		= 2100
+	AutoReloadWhenIdle		= 1500							; should be a bit less than IdleAfterFiringDelay
+	; ClipSize 					= 1
+	AutoReloadsClip 			= NO ;Yes
+	ClipReloadTime 			= 2100
+
+	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
+		ProjectileTemplateName	= RockBigTrollBombard_SEE ; (Scaled 5% like trolls)
+		WarheadTemplateName		= MoriaCaveTrollRockThrowWarhead
+		ForbiddenUpgradeNames	= Upgrade_StructureLevel1
+	End
+  
+	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
+		ProjectileTemplateName	= RockBigTrollBombard_SEE ; (Scaled 5% like trolls)
+		WarheadTemplateName		= MoriaMountainTrollRockThrowWarhead
+		RequiredUpgradeNames		= Upgrade_StructureLevel1
+	End
+  
+	ProjectileNugget													; This nugget is to create a revealing object, so fire
+		AlwaysAttackHereOffset	= X:0 Y:0 Z:0							; it directly on top of us, and just use an empty warhead
+		UseAlwaysAttackOffset		= Yes									; so we don't assert.
+		ProjectileTemplateName  	= ShroudRevealer_Bombard
+		WarheadTemplateName		= ShipRevealBombardWarhead_Dummy
+	End
+End
+
+;----------------------------------- ^^
+Weapon MoriaCaveTrollRockThrowWarhead
+	ProjectileCollidesWith 			= ALLIES ENEMIES NEUTRAL STRUCTURES WALLS			; Remember, the projectile is a rock, who has no allies
+  
+  DamageNugget															; A basic Nugget that just does damage
+		Damage					= CAVE_TROLL_ROCK_DAMAGE
+		Radius					= 12.0
+		DamageType				= SIEGE
+		DamageFXType			= SMALL_ROCK
+		DeathType				= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar  			= 25% ALL ALLIES
+		DamageScalar				= 200% NONE +STRUCTURE +HERO	//Added for SEE!	
+		//DamageScalar  			= 225% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+		DamageScalar  			= 500% NONE +SHIP //Added for SEE!	
+  End
+  
+	MetaImpactNugget															; A Nugget that throws things back with force
+		HeroResist				= .50
+		ShockWaveAmount		= 60.0 ;50.0
+		ShockWaveRadius			= 15.0
+		ShockWaveTaperOff		= 0.5
+		ShockWaveZMult			= 1.20
+	End
+  
+End
+
+;----------------------------------- ^^
+Weapon MoriaMountainTrollRockThrowWarhead
+	ProjectileCollidesWith 		= ALLIES ENEMIES NEUTRAL STRUCTURES WALLS			; Remember, the projectile is a rock, who has no allies
+  
+  DamageNugget															; A basic Nugget that just does damage
+		Damage				= MORDOR_TROLL_ROCK_DAMAGE
+		Radius				= 12.0
+		DamageType			= SIEGE
+		DamageFXType		= SMALL_ROCK
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar  		= 25% ALL ALLIES
+		DamageScalar			= 200% NONE +STRUCTURE +HERO	//Added for SEE!	
+		//DamageScalar  		= 225% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!	
+		DamageScalar  		= 500% NONE +SHIP //Added for SEE!	
+  End
+  
+	MetaImpactNugget															; A Nugget that throws things back with force
+		HeroResist			= .50
+		ShockWaveAmount	= 60.0 ;50.0
+		ShockWaveRadius		= 15.0
+		ShockWaveTaperOff	= 0.5
+		ShockWaveZMult		= 1.20
+	End
+End
+
+; ------------------------------------------------------------------------------
+Weapon MoriaCaveTrollCrush  					; Used when the rohirrim crush an enemy.
+  LeechRangeWeapon      	= Yes
+  AttackRange           	= 9999999.0
+  MeleeWeapon           	= No
+  DelayBetweenShots     		= 0            			; time between shots, msec
+  PreAttackDelay        		= 0 				;PreAttackDelay+FiringDuration = UseWeaponTiming = Yes duration
+  PreAttackType         		= PER_SHOT 
+  FiringDuration        		= 0
+  FireFX					= FX_GenericCrushImpactSound
+
+  DamageNugget                  			; A basic Nugget that just does damage
+    Damage        			= TROLL_CRUSH_DAMAGE			; A whole lot of damage.
+    Radius        			= 0.0
+    DelayTime     			= 0
+    DamageType    			= CRUSH
+    DeathType     			= CRUSHED
+  End
+End
+

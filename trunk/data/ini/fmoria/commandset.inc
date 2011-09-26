@@ -183,21 +183,21 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildSpiderPitCommandSet 			;(Troll Cave in SEE)
 	1 	= Command_ConstructWildHillTrollHorde  					//Command_ConstructWildSpiderlingHorde
-	2 	= Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
+	2 	= Command_ConstructWildCaveTroll 							//Command_ConstructWildSpiderRiderHorde
 	3 	= Command_PurchaseTechnologyWildSpiderVenom			//Command_PurchaseSpiderVenomSackScienceUpgrade
 	4 	= Command_PurchaseUpgradeWildSpiderPitLevel2
 	6 	= Command_Sell
 End
 CommandSet WildSpiderPitCommandSetLevel2
 	1 	= Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
-	2 	= Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
+	2 	= Command_ConstructWildCaveTroll 							//Command_ConstructWildSpiderRiderHorde
 	3 	= Command_PurchaseTechnologyWildSpiderVenom
 	4 	= Command_PurchaseUpgradeWildSpiderPitLevel3
 	6 	= Command_Sell
 End
 CommandSet WildSpiderPitCommandSetLevel3
 	1 	= Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
-	2 	= Command_ConstructGoblinTroll 							//Command_ConstructWildSpiderRiderHorde
+	2 	= Command_ConstructWildCaveTroll 							//Command_ConstructWildSpiderRiderHorde
 	3 	= Command_PurchaseTechnologyWildSpiderVenom
 	6 	= Command_Sell
 End
@@ -346,6 +346,35 @@ CommandSet GoblinWolfRiderCommandSet
 	17 	= Command_SetStanceAggressive
 	18 	= Command_SetStanceHoldGround	
 End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandSet CaveTrollCommandSet
+	1	= Command_ToggleStance
+	2  	= Command_ToggleMountainTrollRockThrow
+	3	= Command_SpecialAbilityTrollFindTree 
+	4	= Command_SpecialAbilityTrollFindGoblinToThrow
+	6	= Command_SpecialAbilityTrollHitDrum
+	13	= Command_AttackMove
+	14	= Command_Stop
+	15	= Command_SpecialAbilityTrollGrabTree			; For context-sensitive tree grab
+	16  = Command_SetStanceBattle
+	17  = Command_SetStanceAggressive
+	18  = Command_SetStanceHoldGround
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -956,18 +985,7 @@ CommandSet CommandSetInnWildFaction
 End
 
 
-CommandSet CaveTrollCommandSet
-	1	= Command_ToggleStance
-	2  	= Command_ToggleMountainTrollRockThrow
-	3	= Command_SpecialAbilityTrollFindTree 
-	4	= Command_SpecialAbilityTrollFindGoblinToThrow
-	13	= Command_AttackMove
-	14	= Command_Stop
-	16	= Command_SpecialAbilityTrollGrabTree			; For context-sensitive tree grab
-	17  	= Command_SetStanceBattle
-	18  	= Command_SetStanceAggressive
-	19  	= Command_SetStanceHoldGround
-End
+
 
 CommandSet CaveTrollRockCommandSet
 	1	= Command_ToggleStance
