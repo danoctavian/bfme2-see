@@ -107,7 +107,7 @@ OBJECT:WildDrum
 "Troll Drum"
 End
 OBJECT:WildDrumDescription
-"Allies near the drum gain +25% damage, \n earn experience 25% faster, \n and will heal if not under attack \n \n Reduces the cost of infantry \n \n Increases command point limit by 25"
+"Allies near the drum gain +25% damage, \n earn experience 25% faster and \n will heal if not under attack \n \n Reduces the cost of infantry \n \n Increases command point limit by 25"
 END
 
 
@@ -8635,15 +8635,15 @@ CONTROLBAR:GrabPassenger
 END
 
 CONTROLBAR:EntFindRock
-"Find a &Rock"
+"Find a rock"
 END
 
 CONTROLBAR:TrollFindRock
-"Find a &Rock"
+"Find a rock"
 END
 
 CONTROLBAR:TrollFindTastyOrc
-"F&ind an Orc to Eat"
+"Find an Orc to eat"
 END
 
 CONTROLBAR:TrollFindOrcToHold
@@ -8651,19 +8651,19 @@ CONTROLBAR:TrollFindOrcToHold
 END
 
 CONTROLBAR:TrollHitDrum
-"Hit Troll Drum"
+"Hit the Troll Drum"
 END
 
 CONTROLBAR:GrabBuildingChunk
-"Grab &Building Chunk"
+"Grab chunk of building"
 END
 
 CONTROLBAR:GrabAndEatPassenger
-"Eat Unit"
+"Eat unit"
 END
 
 CONTROLBAR:SpecialAbilityIgnite
-"&Ignite"
+"Ignite"
 END
 
 CONTROLBAR:SpecialAbilityFlamingSword
@@ -16900,7 +16900,7 @@ END
 
 // ENT UNITS
 CONTROLBAR:ConstructEnt
-"E&nt"
+"Ent"
 END
 CONTROLBAR:ConstructEntFir
 "Fir Ent"
@@ -16924,14 +16924,14 @@ CONTROLBAR:ToolTipBuildEntBirch
 "Build Fir Birch"
 END
 CONTROLBAR:KickAndPunch
-"&Close Range Attack"
+"Close Range Attack"
 END
 CONTROLBAR:ToolTipKickAndPunch
 "Switch to melee combat"
 END
 
 CONTROLBAR:ThrowRocks
-"Throw Ro&cks"
+"Throw Rocks"
 END
 
 CONTROLBAR:ToolTipThrowRocks
@@ -35958,6 +35958,10 @@ END
 
 CONTROLBAR:ToolTipTrollfindgoblintothrow
 "Find a Goblin to pick up and throw at the enemy"
+END
+
+CONTROLBAR:ToolTipTrollFindDrumToHit
+"Find a drum to hit, \n and raise battle morale of Goblins"
 END
 
 OBJECT:NaturesWrath

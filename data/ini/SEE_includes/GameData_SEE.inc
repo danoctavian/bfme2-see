@@ -108,14 +108,28 @@
 
 #define ENSHROUDING_MIST_EFFECT_RADIUS			150
 
-#define BURNINGDEATH_WANDERSPEED_INFANTRY		50
-#define BURNINGDEATH_DURATION_INFANTRY			5000
 
-#define BURNINGDEATH_WANDERSPEED_CAVALRY		90 //75
-#define BURNINGDEATH_DURATION_CAVALRY			2500
 
-#define BURNINGDEATH_WANDERSPEED_ENT			75
-#define BURNINGDEATH_DURATION_ENT			2500
+
+
+
+;------------------------------------------------------------------------------ SEE!
+#define BURNINGDEATH_WANDERSPEED_INFANTRY					50
+#define BURNINGDEATH_DURATION_INFANTRY						8000 //5000 //5 seconds!
+
+#define BURNINGDEATH_WANDERSPEED_CAVALRY					75
+#define BURNINGDEATH_DURATION_CAVALRY						10000 //7000 //2500 //2,5 seconds!
+
+#define BURNINGDEATH_WANDERSPEED_MUMAK					70
+#define BURNINGDEATH_DURATION_MUMAK						15000 //12000 //6000 it's a cool effect!
+
+#define BURNINGDEATH_WANDERSPEED_ENT						90
+#define BURNINGDEATH_DURATION_ENT							20000 //15000 //6000 it's a cool effect, and the Ents are reeeally burning now, in SEE!... ;)
+
+
+
+
+
 
 ;------------------------GENERIC UNITS/STRUCTURES---------- 
 
@@ -191,14 +205,18 @@
 #define HOBBIT_KINDOF					PRELOAD SELECTABLE CAN_CAST_REFLECTIONS INFANTRY PATH_THROUGH_EACH_OTHER SCORE THROWN_OBJECT HERO HOBBIT ATTACK_NEEDS_LINE_OF_SIGHT HEAVY_MELEE_HITTER
 
 
-#define HERO_HEAL_AMOUNT				30
-#define NAZGUL_HEAL_AMOUNT				60
-#define MONSTER_HEAL_AMOUNT				40
-#define HERO_HEAL_DELAY					15000
+;Healing amounts ------------------------------------------------------------ SEE!
+#define NAZGUL_HEAL_AMOUNT								80 //75
+#define HERO_HEAL_AMOUNT									75 //60
+#define MONSTER_HEAL_AMOUNT								60 //50 //40
+#define BFME2SEE_HEAL_AMOUNT_LOW							50 //40
+#define BFME2SEE_HEAL_AMOUNT_HIGH							100 //80 // Mumakil
+#define BFME2SEE_HEAL_DELAY								15000
+#define HERO_HEAL_DELAY									15000
+#define MONSTER_HEAL_DELAY									15000
 
-#define MONSTER_HEAL_DELAY				15000
-
-#define HERO_DODGE_PERCENT				50
+#define HERO_DODGE_PERCENT								50
+; ------------------------------------------------------------------------------
 
 #define CASTLE_WALL_REBUILD_TIME			180.0
 #define CASTLE_WALL_REBUILD_COST			2000.0
@@ -2001,9 +2019,7 @@
 #define LESSER_WIGHT_REINFORCEMENT_LIFETIME		30000
 
 
-;-----------------------Cave Troll-------------------------
 
-#define	CAVE_TROLL_HEALTH 				2000
 
 
 ;------------------------HORDE RENDER LOD DATA-------------------------------
@@ -2191,7 +2207,7 @@
 #define KNIGHT_CRUSH_DAMAGE				80
 #define SPIDER_CRUSH_DAMAGE				10
 #define WARG_CRUSH_DAMAGE				60
-#define TROLL_CRUSH_DAMAGE				10 
+#define TROLL_CRUSH_DAMAGE										10 			;SEE! 
 #define ROHIRRIM_CRUSH_DAMAGE				160
 #define SPIDERRIDER_CRUSH_DAMAGE			160
 #define RIVENDELLLANCER_CRUSH_DAMAGE			100

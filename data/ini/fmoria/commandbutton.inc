@@ -350,6 +350,78 @@ End
 
 
 
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ToggleMountainTrollRockThrow
+	Command				= TOGGLE_WEAPONSET
+	Options				= TOGGLE_IMAGE_ON_WEAPONSET OK_FOR_MULTI_SELECT
+	FlagsUsedForToggle	= WEAPONSET_TOGGLE_1
+	TextLabel			= CONTROLBAR:ThrowRocks CONTROLBAR:KickAndPunch
+	ButtonImage			= UCCommon_TrollThrowRock UCCommon_TrollMelee
+	ButtonBorderType		= ACTION
+	DescriptLabel			= CONTROLBAR:ToolTipThrowRocks CONTROLBAR:ToolTipKickAndPunch
+	InPalantir			= Yes
+	UnitSpecificSound		= TrollVoxFindRock TrollVoxFindRock
+End
+CommandButton Command_SpecialAbilityTrollFindTree
+	Command				= WAKE_AUTO_PICKUP 
+	TextLabel			= CONTROLBAR:TrollFindTree
+	ButtonImage			= UCTroll_GetTree
+	ButtonBorderType		= SYSTEM 
+	DescriptLabel			= CONTROLBAR:ToolTipTrollFindTree
+	Options				= OK_FOR_MULTI_SELECT OPTION_TWO ; Option flag lines up with number in AutoPickup module to differentiate multiples
+	InPalantir			= Yes
+	UnitSpecificSound		= TrollVoxFindTree
+	DisableOnModelCondition = WEAPONSET_TOGGLE_1
+End
+CommandButton Command_SpecialAbilityTrollFindGoblinToThrow
+  Command               = WAKE_AUTO_PICKUP 
+  TextLabel              = CONTROLBAR:TrollFindGoblinToThrow
+  ButtonImage           = UCTroll_GetOrc
+  ButtonBorderType		= SYSTEM 
+  DescriptLabel           = CONTROLBAR:ToolTipTrollFindGoblinToThrow
+  Options				=  OK_FOR_MULTI_SELECT OPTION_THREE ; Option flag lines up with number in AutoPickup module to differentiate multiples
+  InPalantir			= Yes
+  DisableOnModelCondition 	= WEAPONSET_TOGGLE_1
+End
+CommandButton Command_SpecialAbilityTrollHitDrum
+  Command               = SPECIAL_POWER
+  SpecialPower          = SpecialAbilityCaveTrollHitDrum
+  Options               = NEED_TARGET_ALLY_OBJECT
+  TextLabel              = CONTROLBAR:TrollHitDrum
+  CursorName			= EvilAbilityObj
+  InvalidCursorName		= GenericInvalid
+  ButtonImage           = UCDrummerTroll_Leadership
+  ButtonBorderType		= ACTION
+  DescriptLabel           = CONTROLBAR:ToolTipTrollFindDrumToHit
+  InPalantir			= Yes
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -452,6 +524,8 @@ CommandButton Command_SpecialAbilityBalrogWings
 	AutoAbility			= Yes
   InPalantir			  = Yes
 End
+
+
 
 //CommandButton Command_GoblinArcherSAFireArrows
 //	Command				= SPECIAL_POWER
@@ -580,7 +654,7 @@ CommandButton Command_ConstructWildHillTrollHorde
 	ShowProductionCount	= Yes    
 End
 
-CommandButton Command_ConstructGoblinTroll
+CommandButton Command_ConstructWildCaveTroll //Command_ConstructGoblinTroll
 	Command				= UNIT_BUILD
 	Object				= GoblinCaveTroll
 	Options				= CANCELABLE NEED_UPGRADE

@@ -28,5 +28,10 @@ SpecialPower SpecialAbilityFireWhip
 	ReloadTime		= 30000 ;5000
 End
 
+; -----------------------------------------------------------------------------
+SpecialPower SpecialAbilityCaveTrollHitDrum
+	Enum			= SPECIAL_AT_VISIBLE_OBJECT
+	ReloadTime		= 60000
+	ObjectFilter	= ANY +TrollDrum ALLIES
+End
 ;------------------------------------------------------------------------------
-

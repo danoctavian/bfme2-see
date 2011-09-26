@@ -1,13 +1,5 @@
 
-
-
-;------------------------------------------------------------------------------
-;------------------------------------------------------------------------------
-
-;----------------------------------- ^^
-
-
-;------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------
 Weapon GenericArcherFlamingArrowsRangeFinder
 	AttackRange				= #SUBTRACT( GENERIC_ARCHER_RANGE 100 ) 
 	RangeBonusMinHeight		= 30 ;		= 10
@@ -100,20 +92,20 @@ Weapon GenericArcherFlamingArrowsBowWarhead
  
 End
 
-
+; ------------------------------------------------------------------------------
 Weapon HumanBodyImpactWarhead_SEE
-	ProjectileCollidesWith = ALLIES ENEMIES NEUTRAL STRUCTURES WALLS			; Remember, the projectile is a rock, who has no allies
-   FireFX = FX_HumanBodyGroundHit_SEE ;FX_SoldierHitGround
-  DamageNugget															; A basic Nugget that just does damage
-		Damage			= 100
-		Radius			= 5.0
-		DamageType		= CRUSH
-		DamageFXType	= SMALL_ROCK
-		DeathType		= NORMAL
+	ProjectileCollidesWith 		= ALLIES ENEMIES NEUTRAL STRUCTURES WALLS			; Remember, the projectile is a rock, who has no allies
+	FireFX = FX_HumanBodyGroundHit_SEE ;FX_SoldierHitGround
+	DamageNugget															; A basic Nugget that just does damage
+		Damage				= 100
+		Radius				= 5.0
+		DamageType			= CRUSH
+		DamageFXType		= SMALL_ROCK
+		DeathType			= NORMAL
 	End
 	MetaImpactNugget															; A Nugget that throws things back with force
 		; HeroResist			= .75
-		ShockWaveAmount		= 15.0
+		ShockWaveAmount	= 15.0
 		ShockWaveRadius		= 8.0
 		ShockWaveTaperOff	= 0.5
 		ShockWaveZMult		= 0.5
@@ -123,17 +115,49 @@ Weapon HorseBodyImpactWarhead_SEE
 	ProjectileCollidesWith = ALLIES ENEMIES NEUTRAL STRUCTURES WALLS			; Remember, the projectile is a rock, who has no allies
    FireFX = FX_HorseBodyGroundHit_SEE ;FX_RockDetonation ;FX_SoldierHitGround
   DamageNugget															; A basic Nugget that just does damage
-		Damage			= 300
-		Radius			= 8.0
-		DamageType		= CRUSH
-		DamageFXType	= SMALL_ROCK
-		DeathType		= NORMAL
+		Damage				= 300
+		Radius				= 8.0
+		DamageType			= CRUSH
+		DamageFXType		= SMALL_ROCK
+		DeathType			= NORMAL
 	End
 	MetaImpactNugget															; A Nugget that throws things back with force
 		; HeroResist			= .75
-		ShockWaveAmount		= 25.0
+		ShockWaveAmount	= 25.0
 		ShockWaveRadius		= 10.0
 		ShockWaveTaperOff	= 0.5
 		ShockWaveZMult		= 0.5
 	End
 End
+
+; ------------------------------------------------------------------------------
+Weapon MordorCaveTrollHitDrum
+   LeechRangeWeapon			= Yes
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+  AttackRange           	= STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           	= Yes
+  DelayBetweenShots     		= MORDOR_TROLL_PUNCH_DELAYBETWEENSHOTS
+  FiringDuration        		= MORDOR_TROLL_PUNCH_FIRINGDURATION
+  PreAttackDelay        		= MORDOR_TROLL_PUNCH_PREATTACKDELAY
+  PreAttackType         		= PER_SHOT ; Do the delay each time we attack a new target
+  PreAttackFX          		= FX_TrollTreeSwing
+  FireFX               		= FX_TrollPunchGeneric
+  DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+  AcceptableAimDelta			= 15.0 
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        		= 1
+		Radius        		= 0.0
+		DelayTime     		= 0
+		DamageType    		= SIEGE
+		DamageFXType  		= CLUBBING
+		DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+	End
+	
+  AttributeModifierNugget
+    AttributeModifier 			= SpellBookWarChant
+    DamageFXType 			= EVIL_ARROW_PIERCE 
+    SpecialObjectFilter 		= GENERIC_BUFF_RECIPIENT_OBJECT_FILTER
+  End
+End
+
