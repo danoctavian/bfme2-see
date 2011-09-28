@@ -14,6 +14,9 @@
 // RJ Cam, added 20070730
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
 
+CONTROLBAR:ChangeAngle0
+"Camera 0 - Air View"
+End
 CONTROLBAR:ChangeAngle1
 "Camera 1 - Eagle View"
 End
@@ -27,17 +30,20 @@ CONTROLBAR:ChangeAngle4
 "Camera 4 - Ground View"
 End
 
+CONTROLBAR:ToolTipChangeAngle0
+"Use this angle for a complete overview from above"
+END
 CONTROLBAR:ToolTipChangeAngle1
-"Restore to Camera 1 - the Default view"
+"Restore to Camera 1 \n - the Default view"
 END
 CONTROLBAR:ToolTipChangeAngle2
-"Use this higher angle for a larger overview of the battle field"
+"Use this high angle for \n a larger overview of the battle field"
 END
 CONTROLBAR:ToolTipChangeAngle3
-"Use this straight angle to zoom in for your units point of view"
+"Use this straight angle to zoom in \ for your units point of view"
 END
 CONTROLBAR:ToolTipChangeAngle4
-"Use this angle to zoom in and view the beautiful scenery from below"
+"Use this angle to zoom in \n and view the beautiful scenery from below"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい

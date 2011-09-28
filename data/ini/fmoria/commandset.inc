@@ -877,21 +877,27 @@ End
 
 
 CommandSet WildSpellBookCommandSet
-	1 = Command_SpellBookTaint
-	2 = Command_SpellBookWarChant
-	3 = Command_SpellBookCaveBats
+	1 = Command_SpellBookAirView  
+	2 = Command_SpellBookGroundView 			
+	3 = Command_SpellBookUnitView			
+	4 = Command_SpellBookCommanderView 	
+	5 = Command_SpellBookGeneralView 	
+	
+	6 = Command_SpellBookTaint
+	7 = Command_SpellBookWarChant
+	8 = Command_SpellBookCaveBats
 
-	4 = Command_SpellBookUntamedAllegiance
-	5 = Command_SpellBookScavenger
-	6 = Command_SpellBookWildMenAllies
-	7 = Command_SpellBookSpiderlingAllies
+	9 = Command_SpellBookUntamedAllegiance
+	10 = Command_SpellBookScavenger
+	11 = Command_SpellBookWildMenAllies
+	12 = Command_SpellBookSpiderlingAllies
 	
-	8 = Command_SpellBookDarkness
-	9 = Command_SpellBookAwakenWyrm
-	10 = Command_SpellBookWatcherAlly
+	13 = Command_SpellBookDarkness
+	14 = Command_SpellBookAwakenWyrm
+	15 = Command_SpellBookWatcherAlly
 	
-	11 = Command_SpellBookBalrogAlly
-	12 = Command_SpellBookDragonAlly
+	16 = Command_SpellBookBalrogAlly
+	17 = Command_SpellBookDragonAlly
 End
 
 CommandSet WildSpellStoreCommandSet
