@@ -877,11 +877,11 @@ End
 
 
 CommandSet WildSpellBookCommandSet
-	1 = Command_SpellBookAirView  
-	2 = Command_SpellBookGroundView 			
-	3 = Command_SpellBookUnitView			
-	4 = Command_SpellBookCommanderView 	
-	5 = Command_SpellBookGeneralView 	
+	1 = Command_SpellBookGroundView
+	2 = Command_SpellBookUnitView					 			
+	3 = Command_SpellBookCommanderView									
+	4 = Command_SpellBookGeneralView							 	
+	5 = Command_SpellBookAerialView 	 	
 	
 	6 = Command_SpellBookTaint
 	7 = Command_SpellBookWarChant

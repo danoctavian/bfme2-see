@@ -15,10 +15,10 @@
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
 
 CONTROLBAR:ChangeAngle0
-"Camera 0 - Air View"
+"Camera 0 - Aerial View"
 End
 CONTROLBAR:ChangeAngle1
-"Camera 1 - Eagle View"
+"Camera 1 - General View"
 End
 CONTROLBAR:ChangeAngle2
 "Camera 2 - Commander View"
@@ -31,7 +31,7 @@ CONTROLBAR:ChangeAngle4
 End
 
 CONTROLBAR:ToolTipChangeAngle0
-"Use this angle for a complete overview from above"
+"Use this angle for \n a complete overview from above"
 END
 CONTROLBAR:ToolTipChangeAngle1
 "Restore to Camera 1 \n - the Default view"
@@ -40,7 +40,7 @@ CONTROLBAR:ToolTipChangeAngle2
 "Use this high angle for \n a larger overview of the battle field"
 END
 CONTROLBAR:ToolTipChangeAngle3
-"Use this straight angle to zoom in \ for your units point of view"
+"Use this straight angle to zoom in \n to your units point of view"
 END
 CONTROLBAR:ToolTipChangeAngle4
 "Use this angle to zoom in \n and view the beautiful scenery from below"
