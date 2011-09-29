@@ -217,6 +217,17 @@ CommandButton Command_PurchaseUpgradeWildTreasureTroveLevel3
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_PorterConstructWildWargSentry
+	Command				= DOZER_CONSTRUCT
+	Object				= WildWargSentry
+	TextLabel			= CONTROLBAR:ConstructIsengardWargSentry
+	ButtonImage			= BIWargSentry
+	ButtonBorderType		= BUILD 
+	DescriptLabel			= CONTROLBAR:ToolTipConstructIsengardWargSentry
+	Radial				= Yes  
+End
+
+; ------------------------------------------------------------------------------ SEE!
 CommandButton  Command_PorterConstructWildWallHub
 	Command          	= DOZER_CONSTRUCT
 	Options			 	= CANCELABLE

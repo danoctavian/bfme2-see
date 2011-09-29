@@ -22,6 +22,7 @@ CommandSet WildPorterCommandSet
 	8  	= Command_PorterConstructWildWolfDen 					;Command_ConstructAngmarDen
 	9  	= Command_PorterConstructWildFissure  
 	10 	= Command_PorterConstructWildTreasureTrove 
+	11 	= Command_PorterConstructWildWargSentry
 	12 	= Command_PorterConstructWildWallHub	
 	13 	= Command_PorterConstructWildSentryTower
 	14 	= Command_PorterConstructWildFortress
