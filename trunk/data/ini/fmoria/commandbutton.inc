@@ -358,7 +358,20 @@ CommandButton Command_ConstructGoblinWargRiderHorde
 	ShowProductionCount	= Yes      
 End
 
-
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ConstructWildMountainGiant
+	Command				= UNIT_BUILD
+	Object				= WildMountainGiant
+	Options				= CANCELABLE ;NEED_UPGRADE
+	TextLabel			= CONTROLBAR:ConstructWildMountainGiant
+	ButtonImage			= BWFissure_Giant
+	ButtonBorderType		= BUILD											
+	DescriptLabel			= CONTROLBAR:ToolTipBuildWildMountainGiant
+	;NeededUpgrade		= Upgrade_WildFissureLevel3
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes
+End
 
 
 ; ------------------------------------------------------------------------------ SEE!
@@ -1076,19 +1089,7 @@ CommandButton Command_ConstructWildMarauderSwordHorde					; Faction enhancement 
 	ShowProductionCount	= Yes
 End
 
-CommandButton Command_ConstructWildMountainGiant
-	Command			= UNIT_BUILD
-	Object			= WildMountainGiant
-	Options			= CANCELABLE NEED_UPGRADE
-	TextLabel		= CONTROLBAR:ConstructWildMountainGiant
-	ButtonImage		= BWFissure_Giant
-	ButtonBorderType	= BUILD											
-	DescriptLabel		= CONTROLBAR:ToolTipBuildWildMountainGiant
-	NeededUpgrade		= Upgrade_WildFissureLevel3
-	Radial			= Yes
-	InPalantir	   	= Yes
-	ShowProductionCount	= Yes
-End
+
 
 CommandButton Command_ToggleSpiderRiderWeapon
 	Command			= TOGGLE_WEAPONSET
