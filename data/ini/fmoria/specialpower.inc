@@ -35,3 +35,18 @@ SpecialPower SpecialAbilityCaveTrollHitDrum
 	ObjectFilter	= ANY +TrollDrum ALLIES
 End
 ;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------
+SpecialPower SpecialAbilityWildMountainGiantGrab
+	Enum						   = SPECIAL_AT_VISIBLE_OBJECT
+	ReloadTime					   = 2000
+	ObjectFilter = ANY -BIG_MONSTER -MordorSauron -MordorSauron_RingHero -ElvenGaladriel -ElvenGaladriel_RingHero +INFANTRY +HERO
+End
+;------------------------------------------------------------------------------
+SpecialPower SpecialAbilityWildMountainGiantFlingPassenger
+	Enum				= SPECIAL_GENERAL_TARGETLESS
+End
+;------------------------------------------------------------------------------
+SpecialPower SpecialAbilityWildMountainGiantStomp
+	Enum						   = SPECIAL_WORD_OF_POWER
+	ReloadTime					   = 60000
+End
