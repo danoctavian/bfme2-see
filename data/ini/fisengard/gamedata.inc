@@ -813,9 +813,9 @@
 #define	LURTZ_BOW_STUN_RANGE				350
 #define LURTZ_BOW_STUN_DAMAGE				200 ;400
 
-#define CRIPPLE_STRIKE_OBJECT_FILTER			NONE +HERO -MordorBalrog -GondorGwaihir -GondorGwaihir_Summoned -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch_Summoned -TomBombadil -TomBombadil_Summoned
+; #define CRIPPLE_STRIKE_OBJECT_FILTER			NONE +HERO -MordorBalrog -GondorGwaihir -GondorGwaihir_Summoned -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch_Summoned -TomBombadil -TomBombadil_Summoned
 #define CRIPPLE_STRIKE_OBJECT_FILTER_MELEE		NONE +HERO -MordorBalrog -GondorGwaihir -GondorGwaihir_Summoned -MordorFellBeast -MordorFellBeastInterface -MordorWitchKingOnFellBeast -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch_Summoned -TomBombadil -TomBombadil_Summoned -Drogoth -ElvenFortressEagle -AngmarWitchking_Mounted -BlackRiderMountedInterface -MorgomirFellBeast -KhamulFellBeast
-#define MORGULBLADE_OBJECT_FILTER			ANY +HERO +INFANTRY +CAVALRY -MONSTER -MACHINE -STRUCTURE -MordorBalrog -GondorGwaihir -GondorGwaihir_Summoned -MordorFellBeast -MordorWitchKingOnFellBeast -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch_Summoned -TomBombadil -TomBombadil_Summoned -Drogoth -ElvenFortressEagle ENEMIES
+; #define MORGULBLADE_OBJECT_FILTER			ANY +HERO +INFANTRY +CAVALRY -MONSTER -MACHINE -STRUCTURE -MordorBalrog -GondorGwaihir -GondorGwaihir_Summoned -MordorFellBeast -MordorWitchKingOnFellBeast -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch_Summoned -TomBombadil -TomBombadil_Summoned -Drogoth -ElvenFortressEagle ENEMIES
 #define GLOINSLAM_OBJECT_FILTER				ANY +HERO +INFANTRY +CAVALRY +STRUCTURE -TomBombadil -TomBombadil_Summoned -Drogoth -ElvenFortressEagle -AngmarWitchking_Mounted -BlackRiderMountedInterface -MorgomirFellBeast -KhamulFellBeast -MordorFellBeast -MordorFellBeastInterface -MordorWitchKingOnFellBeast -MordorBalrog
 
 #define LURTZ_CRIPPLE_RANGE_ABILTY_START		320

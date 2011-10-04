@@ -34,7 +34,7 @@ SpecialPower SpecialAbilityCaveTrollHitDrum
 	ReloadTime		= 60000
 	ObjectFilter	= ANY +TrollDrum ALLIES
 End
-;------------------------------------------------------------------------------
+
 ;------------------------------------------------------------------------------
 SpecialPower SpecialAbilityWildMountainGiantGrab
 	Enum						   = SPECIAL_AT_VISIBLE_OBJECT
@@ -50,3 +50,31 @@ SpecialPower SpecialAbilityWildMountainGiantStomp
 	Enum						   = SPECIAL_WORD_OF_POWER
 	ReloadTime					   = 60000
 End
+
+; -----------------------------------------------------------------------------
+SpecialPower SpecialAbilityWildShelobPoisonedStinger
+	Enum			= SPECIAL_AT_VISIBLE_OBJECT
+	ReloadTime		= 60000
+	ObjectFilter	= AFFECTED_BY_POISON_OBJECTFILTER 			; Removed -MordorFellBeast -MordorFellBeastInterface -AngmarWitchking_Mounted -BlackRiderMountedInterface 
+End
+; -----------------------------------------------------------------------------
+SpecialPower SpecialAbilityWildShelobTunnel
+	Enum			= SPECIAL_BALROG_WINGS
+	ReloadTime		= 90000
+	InitiateSound		= ShelobTunnelUp
+End
+;------------------------------------------------------------------------------
+SpecialPower ShelobSpiderlingAllies_SEE
+  Enum 				= SPECIAL_SPAWN_ORCS
+  ReloadTime 		= 180000	 ; in milliseconds
+  ; InitiateSound = SpellSummonSpiderlingsMS
+  ; InitiateAtLocationSound = SpellSummonSpiderlingsMS
+  ; RadiusCursorRadius = 65.0
+End
+;------------------------------------------------------------------------------
+SpecialPower SpecialAbilityShelobWebbing
+	Enum			= SPECIAL_AT_VISIBLE_OBJECT
+	ReloadTime		= 10000
+	InitiateSound		= LegolasHawkStrikeArrowShoot		;this plays when he fires, not when he targets
+End
+

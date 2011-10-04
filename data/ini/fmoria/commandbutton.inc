@@ -373,7 +373,6 @@ CommandButton Command_ConstructWildMountainGiant
 	ShowProductionCount	= Yes
 End
 
-
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ToggleMountainTrollRockThrow
 	Command				= TOGGLE_WEAPONSET
@@ -420,15 +419,81 @@ CommandButton Command_SpecialAbilityTrollHitDrum
   InPalantir			= Yes
 End
 
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_WildShelobInstillTerror
+  Command               = SPECIAL_POWER 
+  SpecialPower          = SpecialAbilityScreech
+  TextLabel              = CONTROLBAR:WildShelobInstillTerror
+  ButtonImage           = HSShelobInstillTerror
+  ButtonBorderType		= ACTION 
+  DescriptLabel           = CONTROLBAR:TooltipWildShelobInstillTerror
+  InPalantir			= Yes
+  AutoAbility			  	= Yes
+  PresetRange			= 150
+End
 
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ShelobSpiderlingAllies_SEE
+  Command 				= SPECIAL_POWER
+  SpecialPower 			= ShelobSpiderlingAllies_SEE
+  ButtonImage 			= SBEvil_SummonSpiderlings
+  ; Options = NEED_TARGET_POS
+  TextLabel 				= CONTROLBAR:SummonSpiderlingAllies
+  ButtonBorderType 		= ACTION
+  DescriptLabel 			= CONTROLBAR:TooltipSummonSpiderlingAllies
+  ; RadiusCursorType = SpiderlingsRadiusCursor
+  ; CursorName = AttackObj
+  ; InvalidCursorName  = GenericInvalid
+  InPalantir			= Yes
+  AutoAbility 			= Yes
+  PresetRange 			= 150
+End
 
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_WildShelobPoisonedStinger
+  Command               = SPECIAL_POWER
+  SpecialPower          = SpecialAbilityWildShelobPoisonedStinger
+  Options               = NEED_TARGET_ENEMY_OBJECT
+  TextLabel              = CONTROLBAR:WildShelobPoisonedStinger
+  CursorName			= EvilAbilityObj
+  InvalidCursorName		= GenericInvalid
+  ButtonImage           = HSShelobPoisonedStinger
+  ButtonBorderType		= ACTION
+  DescriptLabel           = CONTROLBAR:ToolTipWildShelobPoisonedStinger
+  ;UnitSpecificSound       = LurtzVoiceModeCripplingStrike
+  InPalantir			= Yes
+  AutoAbility			  	= Yes
+End
 
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_WildShelobTunnel
+	Command				= SPECIAL_POWER 
+	SpecialPower		= SpecialAbilityWildShelobTunnel
+	Options				= NEED_TARGET_POS CONTEXTMODE_COMMAND
+	TextLabel			= CONTROLBAR:SpecialAbilityWildShelobTunnel
+	ButtonImage			= HSShelobTunnel
+	ButtonBorderType		= ACTION 
+	CursorName			= EvilAbilityObj  
+	InvalidCursorName		= GenericInvalid
+	DescriptLabel			= CONTROLBAR:ToolTipSpecialAbilityWildShelobTunnel
+;	UnitSpecificSound		= 
+	InPalantir			= Yes
+End
 
-
-
-
-
-
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_SpecialAbilityWildShelobWebbing_SEE
+  Command 				= SPECIAL_POWER 
+  SpecialPower 			= SpecialAbilityShelobWebbing
+  Options 				= NEED_TARGET_ENEMY_OBJECT ; NEED_TARGET_NEUTRAL_OBJECT CONTEXTMODE_COMMAND
+  TextLabel 				= CONTROLBAR:ShelobWebbing
+  ButtonImage 			= HSShelobPoisonedStinger
+  CursorName 			= EvilAbilityObj
+  InvalidCursorName 		= GenericInvalid
+  ButtonBorderType 		= ACTION 
+  DescriptLabel 			= CONTROLBAR:ToolTipShelobWebbing
+  InPalantir 			= Yes
+  AutoAbility 			= Yes
+End
 
 
 
@@ -725,46 +790,11 @@ CommandButton Command_SpecialAbilityShelobWebbing
   DisableOnModelCondition = WEAPONLOCK_SECONDARY					; disable if currently using swords
 End
 
-CommandButton Command_WildShelobInstillTerror
-  Command                 = SPECIAL_POWER 
-  SpecialPower            = SpecialAbilityScreech
-  TextLabel               = CONTROLBAR:WildShelobInstillTerror
-  ButtonImage             = HSShelobInstillTerror
-  ButtonBorderType        = ACTION 
-  DescriptLabel           = CONTROLBAR:TooltipWildShelobInstillTerror
-  InPalantir			  = Yes
-  AutoAbility			  = Yes
-  PresetRange			  = 150
-End
 
-CommandButton Command_WildShelobPoisonedStinger
-  Command                 = SPECIAL_POWER
-  SpecialPower            = SpecialAbilityWildShelobPoisonedStinger
-  Options                 = NEED_TARGET_ENEMY_OBJECT
-  TextLabel               = CONTROLBAR:WildShelobPoisonedStinger
-  CursorName              = EvilAbilityObj
-  InvalidCursorName       = GenericInvalid
-  ButtonImage             = HSShelobPoisonedStinger
-  ButtonBorderType        = ACTION
-  DescriptLabel           = CONTROLBAR:ToolTipWildShelobPoisonedStinger
-  ;UnitSpecificSound       = LurtzVoiceModeCripplingStrike
-  InPalantir			  = Yes
-  AutoAbility			  = Yes
-End
 
-CommandButton Command_WildShelobTunnel
-	Command					= SPECIAL_POWER 
-	SpecialPower			= SpecialAbilityWildShelobTunnel
-	Options					= NEED_TARGET_POS CONTEXTMODE_COMMAND
-	TextLabel				= CONTROLBAR:SpecialAbilityWildShelobTunnel
-	ButtonImage				= HSShelobTunnel
-	ButtonBorderType		= ACTION 
-	CursorName				= EvilAbilityObj  
-	InvalidCursorName		= GenericInvalid
-	DescriptLabel			= CONTROLBAR:ToolTipSpecialAbilityWildShelobTunnel
-;	UnitSpecificSound		= 
-	InPalantir				= Yes
-End
+
+
+
 
 
 

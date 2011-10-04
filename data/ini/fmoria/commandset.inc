@@ -364,7 +364,20 @@ CommandSet CaveTrollCommandSet
 	18  = Command_SetStanceHoldGround
 End
 
-
+; ------------------------------------------------------------------------------ SEE!
+CommandSet WildShelobCommandSet
+  1 = Command_ToggleStance
+  2 = Command_WildShelobInstillTerror
+  3 = Command_ShelobSpiderlingAllies_SEE
+  4 = Command_WildShelobPoisonedStinger
+  5 = Command_WildShelobTunnel
+  6 = Command_SpecialAbilityWildShelobWebbing_SEE
+  13 = Command_AttackMove
+  14 = Command_Stop
+  16 = Command_SetStanceBattle
+  17 = Command_SetStanceAggressive
+  18 = Command_SetStanceHoldGround
+End
 
 
 
@@ -407,17 +420,7 @@ CommandSet ShelobCommandSet
 	18  	= Command_SetStanceHoldGround
 End
 
-CommandSet WildShelobCommandSet
-	1	= Command_ToggleStance
-	2	= Command_WildShelobInstillTerror
-	3	= Command_WildShelobPoisonedStinger
-	4	= Command_WildShelobTunnel
-	13	= Command_AttackMove
-	14	= Command_Stop
-	16  	= Command_SetStanceBattle
-	17  	= Command_SetStanceAggressive
-	18  	= Command_SetStanceHoldGround
-End
+
 
 CommandSet AzogCommandSet				; Added for Faction Enhancement BFME2 Expansion
 	1	= Command_ToggleStance
