@@ -32525,6 +32525,7 @@ CONTROLBAR:SharkuWargMount
 "Mount \n Dismount"
 End
 
+
 CONTROLBAR:ShelobWebbing
 "Webbing"
 End
@@ -36398,7 +36399,7 @@ CONTROLBAR:IsengardWulfRevive
 END
 
 CONTROLBAR:ShelobRecruit
-"Recruit the Giant Spider \n from the pass of Cirith Ungol"
+"Recruit the offspring of Ungoliant \ - The Giant Spider from \n the pass of Cirith Ungol"
 END
 
 CONTROLBAR:ShelobRevive
