@@ -15,6 +15,12 @@ Upgrade Upgrade_ObjectUnderAIControl //_SEE  ;only available for the AI
   Type = OBJECT
 End
 
+Upgrade Upgrade_ReallyDamaged_SEE
+  Type = OBJECT
+  BuildTime = 0.0
+  BuildCost = 0
+End 
+
 Upgrade Upgrade_FortressHasBeenEntered_SEE
   Type = OBJECT
   BuildTime = 0.0

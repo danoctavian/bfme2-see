@@ -124,7 +124,20 @@ Armor WildMarauderHeavyArmor
   FlankedPenalty 	 = 			75%     
 End
 
-
+;------------------------------------------------------------------------------
+Armor ShelobArmor
+  Armor = DEFAULT		25%		;this sets the level for all nonspecified damage types
+  Armor = SLASH			25%		;soldier damage
+  Armor = URUK			40%  
+  Armor = PIERCE			25%		;archer damage
+  Armor = SPECIALIST 	50%  
+  Armor = HERO         	75% //50%    	;hero damage
+  Armor = HERO_RANGED  50%          	;Hero bow damage
+  Armor = STRUCTURAL   150%
+  Armor = FLAME		   	200%  
+  Armor = FROST			100%
+  Armor = SIEGE			150%     ;siege damage  
+End
 
 
 

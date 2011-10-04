@@ -6,6 +6,25 @@
 ; ------------------------------------------------------------------------------
 ;NOTE: Attacks are as such: PreAttackDelay -> Both: FiringDuration & DelayBetweenShots -> After DBS starts PreAttackDelay again.
 
+
+;------------------------- New SEE Hero stats!
+#define HERO_HOBBITHERO_INITIAL_BUILDTIME					20		// 20 secs - All hobbit heroes; Frodo, Sam, Merry & Pippin!
+#define HERO_INITIAL_BUILDTIME								30 		// 30 secs - All fortress heroes except ring heroes!
+#define HERO_RESPAWN_TIME									180000	// 3 minutes - All fortress heroes time to get revived from death!
+#define HERO_RESPAWN_TIME_LONG							240000	// 4 minutes - Gandalf the White time to get revived from death!
+#define HERO_SUPER_HERO_BUILDTIME							300		// 5 minutes - Def is 6 minutes (360 secs) - Ring Hero build time (no respawn times obviously)!
+
+;------------------------- New SEE Hero resurrection stats!
+#define HERO_RESPAWN_COST_MIN								500		// Minimal heroes like Hobbit Heroes!
+#define HERO_RESPAWN_COST_LO								1000	// Normal heroes like Arwen, Eowyn & GoblinKing, etc!
+#define HERO_RESPAWN_COST_MED								2000   // Bigger heroes like Aragorn, Legolas, Gimli, etc!
+#define HERO_RESPAWN_COST_HI								3000	// Major heroes like WitchKing, Saruman, Gandalf, Giant Eagles, etc!
+#define HERO_RESPAWN_COST_VHI								5000	// Gandalf the White!
+
+
+;; Shelob (Assistance from Mordor) (LS: Spiderlings)
+#define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER			ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
+
 ;------------------------------------------------------------------------------ SEE!
 #define	GENERIC_ARCHER_RANGE								300 //275
 #define GENERIC_ARCHER_PREATTACKDELAY 						1000
@@ -177,6 +196,12 @@
 #define GORKIL_POISON_DAMAGE				100
 #define POISONED_STINGER_DURATION			15000
 
+#define CRIPPLE_STRIKE_OBJECT_FILTER				ANY +MONSTER +HERO //-MordorBalrog -GondorGwaihir -GondorGwaihirHero -GondorGwaihir_Summoned -IsengardFellBeast -MordorFellBeast -MordorWitchKingOnFellBeast -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch_Summoned -TomBombadil -TomBombadil_Summoned -Drogoth -ElvenFortressEagle -MordorNazgulOnFellBeast_SEE -MordorSauron_RingHero -MordorSauron -ElvenGaladriel_RingHero
+#define CRIPPLE_STRIKE_FEAR_OBJECT_FILTER				ANY +MONSTER -BIG_MONSTER //-MordorBalrog -GondorGwaihir -GondorGwaihirHero -GondorGwaihir_Summoned -IsengardFellBeast -MordorFellBeast -MordorWitchKingOnFellBeast -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch_Summoned -TomBombadil -TomBombadil_Summoned -Drogoth -ElvenFortressEagle -MordorNazgulOnFellBeast_SEE -MordorSauron_RingHero -MordorSauron -ElvenGaladriel_RingHero
+#define CRIPPLE_STRIKE_PIN_OBJECT_FILTER				ANY +HERO -MONSTER -BIG_MONSTER //-MordorBalrog -GondorGwaihir -GondorGwaihirHero -GondorGwaihir_Summoned -IsengardFellBeast -MordorFellBeast -MordorWitchKingOnFellBeast -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch_Summoned -TomBombadil -TomBombadil_Summoned -Drogoth -ElvenFortressEagle -MordorNazgulOnFellBeast_SEE -MordorSauron_RingHero -MordorSauron -ElvenGaladriel_RingHero
+#define MORGULBLADE_OBJECT_FILTER				ANY +HERO +INFANTRY +CAVALRY -MONSTER -MACHINE -STRUCTURE //-MordorBalrog -GondorGwaihir -GondorGwaihirHero -GondorGwaihir_Summoned -IsengardFellBeast -MordorFellBeast -MordorWitchKingOnFellBeast -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch_Summoned -TomBombadil -TomBombadil_Summoned -Drogoth -ElvenFortressEagle -MordorNazgulOnFellBeast_SEE -MordorSauron_RingHero -MordorSauron -ElvenGaladriel_RingHero ENEMIES
+
+
 #define POSTERNGATE_ALLOWABLE_OBJECTFILTER		ANY +INFANTRY +CAVALRY +WildFireDrake_Summoned +WildFortressFireDrake +BarrowWight +BarrowWight_Slaved +GoblinCaveTroll +MordorWitchKing +AngmarWitchking +IsengardSharku +MordorSauron_RingHero -MONSTER -MACHINE -ARMY_OF_DEAD
 
 #define FORTRESS_RING_STEALER_OBJECTFILTER		NONE ENEMIES +NeutralGollum_RingStealer
@@ -224,7 +249,7 @@
 #define STEALTH_FRIENDLY_OPACITY_MIN			100.0%
 #define STEALTH_FRIENDLY_OPACITY_MAX			100.0%
 
-#define CAMOUFLAGE_RADIUS				100.0
+#define CAMOUFLAGE_RADIUS									100.0
 #define ELVEN_MIST_CAMOUFLAGE_DETECTION_RANGE		100.0
 #define ELVEN_MIST_OBJECT_FILTER			ANY +HORDE +HERO +DOZER +RohanEntFir_Summoned +RohanEntBirch_Summoned +RohanEntFir +RohanEntBirch +RohanEntAsh +MordorMountainTroll +MordorDrummerTroll +MordorAttackTroll +WildMountainGiant +GoblinCaveTroll +CaveTroll_Slaved +MordorCaveTroll_Summoned +MordorAttackTroll_Summoned +WildMountainGiant_Summoned -Drogoth -GondorGwaihir_Summoned -GondorGwaihir -MordorFellBeast -MordorWitchKingOnFellBeast -ElvenFortressEagle -SpellBookDragonStrikeDragon -KhamulFellBeast -MorgomirFellBeast ALLIES
 
@@ -281,7 +306,7 @@
 
 #define MONUMENT_FORTRESS_GATE_BUILDCOST		1500
 
-#define STANDARD_MELEE_ATTACK_RANGE			11.5		// This should be used by most melee units in the game...
+#define STANDARD_MELEE_ATTACK_RANGE			7.5 ;11.5		// This should be used by most melee units in the game...
 
 //-----------------------Generic Experience Values-----------------
 

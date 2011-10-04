@@ -389,47 +389,178 @@ Weapon WildGoblinKingPoisonedStinger
 	End
 End
 
-;------------------------------------------------------------------------------
+;//------------------------------------------------------------------------------
+Weapon ShelobCrush ;// Used when the BattleWagon crushes an enemy.
+  LeechRangeWeapon      = Yes
+  AttackRange           = 9999999.0
+  MeleeWeapon           = No
+  DelayBetweenShots     = 0         ;//time between shots, msec
+  PreAttackDelay        = 0			;//PreAttackDelay+FiringDuration = UseWeaponTiming = Yes duration
+  PreAttackType         = PER_SHOT 
+  FiringDuration        = 0 
+  FireFX				= FX_GenericCrushImpactSound
+
+  DamageNugget                        ;// A basic Nugget that just does damage
+    Damage        = SHELOB_CRUSH_DAMAGE				;// A whole lot of damage.
+    Radius        = 0.0
+    DelayTime     = 0
+    DamageType    = CRUSH
+    DeathType     = CRUSHED
+    FlankingBonus = 300%
+  End
+End
+
+;------------------------------------------------------------------------------ SEE!
+Weapon ShelobMandibles     ; BALANCE Shelob Weapon 
+  LeechRangeWeapon      	= Yes
+	AttackRange				= #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 )
+  ; AttackRange           = 25.0
+  MeleeWeapon           	= Yes
+  DelayBetweenShots     		= 1666           ; time between shots, msec
+  PreAttackDelay        		= 900            ; 300 is mace swing delay time before contact with target.
+  PreAttackType         		= PER_SHOT ; Do the delay each time we attack
+  FireFX                	= FX_GondorSwordHit	; OK!
+  FiringDuration        		= 766    ; Duration of the mace swing 
+  RequireFollowThru			= Yes
+  
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        			= WILD_SHELOB_STINGER_DAMAGE
+    Radius        			= 15
+    DelayTime     			= 0
+    DamageType    			= HERO
+    DamageFXType  			= SWORD_SLASH
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+    DamageArc	  			= ISENGARD_BERSERKER_ARC	; OK!
+  End
+;	MetaImpactNugget                    ; A Nugget that throws things back with force
+;		HeroResist			= .75
+;		ShockWaveAmount   = 30.0
+;		ShockWaveRadius   = 30.0
+;		ShockWaveTaperOff = 0.75
+;	End  
+End
+
+;------------------------------------------------------------------------------ SEE!
 Weapon WildShelobPoisonedStinger
-  LeechRangeWeapon = Yes
-  AttackRange			= 30.0
-  MeleeWeapon			= Yes
-  FireFX				= FX_ShelobPoisonStingerStrike		;FX_GondorSwordHit
-  DelayBetweenShots         = WILD_SHELOB_STINGER_DELAYBETWEENSHOTS
-  PreAttackDelay            = WILD_SHELOB_STINGER_PREATTACKDELAY   ; 1467 is the prep time for archer.
-  PreAttackType             = PER_SHOT ; Do the delay each time we attack a new target
-  FiringDuration            = WILD_SHELOB_STINGER_FIRINGDURATION    ; Duration of the archer firing shot is 500ms.
+  LeechRangeWeapon 			= Yes
+  AttackRange				= #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 )
+  ; AttackRange				= 30.0
+  MeleeWeapon				= Yes
+  FireFX					= FX_ShelobPoisonStingerStrike		;FX_GondorSwordHit
+  DelayBetweenShots			= WILD_SHELOB_STINGER_DELAYBETWEENSHOTS
+  PreAttackDelay            	= WILD_SHELOB_STINGER_PREATTACKDELAY   ; 1467 is the prep time for archer.
+  PreAttackType             	= PER_SHOT ; Do the delay each time we attack a new target
+  FiringDuration            	= WILD_SHELOB_STINGER_FIRINGDURATION    ; Duration of the archer firing shot is 500ms.
+  RequireFollowThru			= Yes
 
 ;	DamageNugget                        ; A basic Nugget that just does damage
-;		Damage        = WILD_SHELOB_STINGER_DAMAGE
+;		Damage        = M_WILD_SHELOB_STINGER_DAMAGE
 ;		Radius        = 0.0
 ;		DelayTime     = 0
 ;		DamageType    = SLASH
 ;		DamageFXType  = SWORD_SLASH
-;		DeathType     = NORMAL
+;		DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
 ;	End
 
 	DOTNugget                        ; A basic Nugget that just does damage
-		Damage        = SHELOB_POISON_DAMAGE
-		AcceptDamageAdd = No
-		Radius        = 0.0
-		DelayTime     = 0
-		DamageType    = POISON
-		DamageFXType  = POISON
-		DeathType     = NORMAL
-		DamageInterval = 1000
-		DamageDuration = 30000
-		SpecialObjectFilter = AFFECTED_BY_POISON_OBJECTFILTER
-	End
-
-	ParalyzeNugget
-		Radius				= 0.0
-		Duration			= POISONED_STINGER_DURATION
-		SpecialObjectFilter	= CRIPPLE_STRIKE_OBJECT_FILTER_MELEE
-		ParalyzeFX			= FX_PoisonedStunEffect
+		Damage        		= SHELOB_POISON_DAMAGE
+		AcceptDamageAdd 	= No
+		Radius        		= 0.0
+		DelayTime     		= 0
+		DamageType    		= POISON
+		DamageFXType  		= POISON
+		DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageInterval 		= 1000
+		DamageDuration 		= 30000
+		SpecialObjectFilter 	= AFFECTED_BY_POISON_OBJECTFILTER
 	End
 End
 
+;------------------------------------------------------------------------------ SEE!
+Weapon ShelobWebbing ;taken from Legolas' bow - needs designer love
+  AttackRange 				= 250				
+  WeaponSpeed 				= 180         ; dist/sec 
+  MinWeaponSpeed 			= 120
+  MaxWeaponSpeed 			= 240      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
+  FireFX = FX_ShelobPoisonStingerStrike ; OK!
+  ScaleWeaponSpeed 			= Yes ; Used for lob weapons, scales speed proportional to range
+  HitPercentage 				= 100     ;When this weapon is used it will hit exactly 100% of the time.
+  ScatterRadius 				= 5.0     ;When this weapon misses it can randomly miss by as much as this distance.
+
+  AcceptableAimDelta 			= 20	; prevent twitchy reaiming in horde on horde
+  ; DelayBetweenShots = M_LEGOLAS_DELAYBETWEENSHOTS 	; time between shots, msec
+  ; PreAttackDelay = 250 ; 1467 is the prep time for archer.
+  ; PreAttackType = PER_POSITION ; Do the delay each time we attack a new target
+  ; FiringDuration = 500 ; Duration of the archer firing shot is 500ms.
+  ; ClipSize = 1
+  ; AutoReloadsClip = Yes
+  ; AutoReloadWhenIdle = 1	
+  ; ClipReloadTime = Min:M_LEGOLAS_RELOADTIME_MIN Max:M_LEGOLAS_RELOADTIME_MAX
+  ; ContinuousFireOne = 0
+  ; ContinuousFireCoast = M_LEGOLAS_RELOADTIME_MAX
+  ; AntiAirborneVehicle  Yes
+  ; AntiAirborneMonster = Yes
+  DelayBetweenShots 			= WILD_SHELOB_STINGER_DELAYBETWEENSHOTS
+  PreAttackDelay 				= 100 ;M_WILD_SHELOB_STINGER_PREATTACKDELAY   ; 1467 is the prep time for archer.
+  PreAttackType 				= PER_SHOT ; Do the delay each time we attack a new target
+  FiringDuration 				= 500 ;M_WILD_SHELOB_STINGER_FIRINGDURATION    ; Duration of the archer firing shot is 500ms.
+  RequireFollowThru 			= Yes
+  
+  ProjectileNugget                    ; Shelob's Web throw
+    ProjectileTemplateName 	= ShelobWebbingProjectile ; OK!
+    WarheadTemplateName 	= ShelobWebbingWarhead
+  End
+End
+
+;----------------------------------- ^^
+Weapon ShelobWebbingWarhead
+  ProjectileCollidesWith 		= ALLIES ENEMIES NEUTRAL ;STRUCTURES WALLS 
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR
+  HitStoredTarget 			= Yes	; Always hits initial target.
+  DamageNugget ; A basic Nugget that just does damage
+    Damage 					= 1
+    Radius 					= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+    DelayTime 				= 0
+    DamageType 				= PIERCE
+    DamageFXType 			= EVIL_ARROW_PIERCE
+    DeathType 				= LASERED ;now always used instead of NORMAL (Sûl)
+  End
+  ; MetaImpactNugget ; A Nugget that throws things back with force
+    ; ShockWaveAmount = 99.0
+    ; ShockWaveRadius = 0.1
+    ; ShockWaveTaperOff = 1.0
+    ; ShockWaveZMult = 0.005
+  ; End
+  ; WeaponOCLNugget  ;places object at location of attacker
+    ; WeaponOCLName = OCL_ShelobWebActivator
+  ; End
+  AttributeModifierNugget
+    AttributeModifier 			= ShelobWebbingModifier //ShelobWebbing_SEE
+    DamageFXType 			= EVIL_ARROW_PIERCE 
+    SpecialObjectFilter 		= CRIPPLE_STRIKE_PIN_OBJECT_FILTER ;ANY +HERO M_NOT_FLYING_UNITS -MordorBalrog -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch -RohanEntBirch_Summoned -RohanEntAsh -RohanEntAsh_Summoned -RohanEntOak -RohanEntOak_Summoned -TomBombadil -TomBombadil_Summoned -MONSTER 
+  End
+  ; ParalyzeNugget
+    ; Radius= 0.0
+    ; Duration = M_POISONED_STINGER_DURATION
+    ; SpecialObjectFilter	= M_CRIPPLE_STRIKE_PIN_OBJECT_FILTER
+    ; ParalyzeFX = FX_PoisonedStunEffect
+  ; End   	
+End
+
+Weapon ShelobWebbing_Immobilize_SEE
+  DamageNugget ; A basic Nugget that just does damage
+    Damage = 1
+    Radius = 1
+    DelayTime = 0
+    DamageType = PIERCE
+    DeathType = LASERED ;now always used instead of NORMAL (Sûl)
+  End
+  AttributeModifierNugget
+    AttributeModifier = ShelobWebbingModifier //ShelobWebbing_SEE
+    DamageFXType = EVIL_ARROW_PIERCE 
+    SpecialObjectFilter = ANY +HERO NOT_FLYING_UNITS //-MordorBalrog -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch -RohanEntBirch_Summoned -RohanEntAsh -RohanEntAsh_Summoned -RohanEntOak -RohanEntOak_Summoned -TomBombadil -TomBombadil_Summoned -MONSTER 
+  End
+End
 
 ;------------------------------------------------------------------------------
 Weapon WildFortressBatCloudWeapon
