@@ -367,10 +367,10 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildShelobCommandSet
   1 = Command_ToggleStance
-  2 = Command_WildShelobInstillTerror
-  3 = Command_ShelobSpiderlingAllies_SEE
+  2 = Command_WildShelobTunnel 
+  3 = Command_WildShelobInstillTerror 
   4 = Command_WildShelobPoisonedStinger
-  5 = Command_WildShelobTunnel
+  5 = Command_ShelobSpiderlingAllies_SEE
   6 = Command_SpecialAbilityWildShelobWebbing_SEE
   13 = Command_AttackMove
   14 = Command_Stop

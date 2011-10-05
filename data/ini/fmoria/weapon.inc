@@ -537,7 +537,7 @@ Weapon ShelobWebbingWarhead
   AttributeModifierNugget
     AttributeModifier 			= ShelobWebbingModifier //ShelobWebbing_SEE
     DamageFXType 			= EVIL_ARROW_PIERCE 
-    SpecialObjectFilter 		= CRIPPLE_STRIKE_PIN_OBJECT_FILTER ;ANY +HERO M_NOT_FLYING_UNITS -MordorBalrog -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch -RohanEntBirch_Summoned -RohanEntAsh -RohanEntAsh_Summoned -RohanEntOak -RohanEntOak_Summoned -TomBombadil -TomBombadil_Summoned -MONSTER 
+    SpecialObjectFilter 		= SHELOB_WEBBING_OBJECT_FILTER ;ANY +HERO M_NOT_FLYING_UNITS -MordorBalrog -RohanTreeBerd -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch -RohanEntBirch_Summoned -RohanEntAsh -RohanEntAsh_Summoned -RohanEntOak -RohanEntOak_Summoned -TomBombadil -TomBombadil_Summoned -MONSTER 
   End
   ; ParalyzeNugget
     ; Radius= 0.0
