@@ -486,7 +486,7 @@ CommandButton Command_SpecialAbilityWildShelobWebbing_SEE
   SpecialPower 			= SpecialAbilityShelobWebbing
   Options 				= NEED_TARGET_ENEMY_OBJECT ; NEED_TARGET_NEUTRAL_OBJECT CONTEXTMODE_COMMAND
   TextLabel 				= CONTROLBAR:ShelobWebbing
-  ButtonImage 			= HSShelobPoisonedStinger
+  ButtonImage 			= HIShelob //HSShelobPoisonedStinger
   CursorName 			= EvilAbilityObj
   InvalidCursorName 		= GenericInvalid
   ButtonBorderType 		= ACTION 
