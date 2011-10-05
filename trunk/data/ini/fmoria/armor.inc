@@ -284,20 +284,20 @@ End
 
 ;------------------------------------------------------------------------------
 Armor WildSpiderlingArmor
-  Armor = DEFAULT         	110%   	; 100%	originally 100%
-  Armor = SLASH           	100%   	; 100%	originally 50%
-  Armor = PIERCE           	 65%   	; 100%	originally 100%		RotWK originally 75%
-  Armor = SPECIALIST      	200%   	; 200%	originally 200%
-  Armor = CRUSH          	  1%   	; 100%
-  Armor = SIEGE           	100%   	;
-  Armor = FLAME           	100%   	;  50%
-  Armor = FROST          	100%   ;
-  Armor = MAGIC           	100%   	;
-  Armor = HERO            	200%   	; 100%
-  Armor = HERO_RANGED     	200%   	; 200%
-  Armor = CAVALRY	  	150% 	; 	Originally 100%
-  Armor = STRUCTURAL	  	110%	;	originally 100%
-  FlankedPenalty 	       = 50%     
+  Armor = DEFAULT         100%   ; 100%
+  Armor = SLASH            50%   ; 100%
+  Armor = PIERCE           100%   ; 100%
+  Armor = SPECIALIST      200%   ; 200%
+  Armor = CRUSH           1%   ; 100%
+  Armor = SIEGE           100%   ;
+  Armor = FLAME           100%   ;  50%
+  Armor = FROST				100%
+  Armor = MAGIC           100%   ;
+  Armor = HERO            200%   ; 100%
+  Armor = HERO_RANGED     200%   ; 200%
+  Armor = CAVALRY	  100% 
+  Armor = STRUCTURAL	  100%	
+  FlankedPenalty 	 = 50%      
 End
 
 

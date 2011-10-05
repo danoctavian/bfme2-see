@@ -654,88 +654,84 @@ Weapon SummonedSpiderlingMandibles				; BALANCE Wild Spiderling Weapon
   End
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon WildSpiderlingMandibles				; BALANCE Wild Spiderling Weapon 
-  LeechRangeWeapon      = Yes
-  AttackRange           = 25.0
-  MeleeWeapon           = Yes
-  DelayBetweenShots     = 1666				; time between shots, msec
-  PreAttackDelay        = 900				; 300 is mace swing delay time before contact with target.
-  PreAttackType         = PER_SHOT 			; Do the delay each time we attack
-  FireFX                = FX_SpiderStabHit
-  FiringDuration        = 766				; Duration of the mace swing 
-  RequireFollowThru		= Yes
+  LeechRangeWeapon      	= Yes
+	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           	= Yes
+  DelayBetweenShots     		= 1666				; time between shots, msec
+  PreAttackDelay        		= 900				; 300 is mace swing delay time before contact with target.
+  PreAttackType         		= PER_SHOT 			; Do the delay each time we attack
+  FireFX                	= FX_SpiderStabHit
+  FiringDuration        		= 766				; Duration of the mace swing 
+  RequireFollowThru			= Yes
   
   DamageNugget						; A basic Nugget that just does damage
-    Damage        = WILD_SPIDERLING_DAMAGE
-    Radius        = 0.0
-    DelayTime     = 0
-    DamageType    = CAVALRY
+    Damage        			= WILD_SPIDERLING_DAMAGE
+    Radius        			= 0.0
+    DelayTime     			= 0
+    DamageType    			= CAVALRY
    ; DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
-    FlankingBonus = 50%
-    DamageScalar  = 50% NONE +STRUCTURE		; Balance: Spiderlings are fast and versatile against units so must not be so good against structures
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+    FlankingBonus 			= 50%
   End
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon WildSpiderlingVenomMandibles				; BALANCE Wild Spiderling Weapon 
-  LeechRangeWeapon      = Yes
-  AttackRange           = 25.0
-  MeleeWeapon           = Yes
-  DelayBetweenShots     = 1666				; time between shots, msec
-  PreAttackDelay        = 900				; 300 is mace swing delay time before contact with target.
-  PreAttackType         = PER_SHOT 			; Do the delay each time we attack
-  FireFX                = FX_SpiderStabHit
-  FiringDuration        = 766				; Duration of the mace swing 
-  RequireFollowThru		= Yes
+  LeechRangeWeapon      	= Yes
+  AttackRange				= STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           	= Yes
+  DelayBetweenShots     		= 1666				; time between shots, msec
+  PreAttackDelay        		= 900				; 300 is mace swing delay time before contact with target.
+  PreAttackType         		= PER_SHOT 			; Do the delay each time we attack
+  FireFX                	= FX_SpiderStabHit
+  FiringDuration        		= 766				; Duration of the mace swing 
+  RequireFollowThru			= Yes
   
-DOTNugget                        ; A basic Nugget that just does damage
-	Damage        = 4
-	AcceptDamageAdd = No
-	Radius        = 0.0
-	DelayTime     = 0
-	DamageType    = POISON
-	DamageFXType  = POISON
-	DeathType     = NORMAL
-	DamageInterval = 1000
-	DamageDuration = 30000
-	SpecialObjectFilter = AFFECTED_BY_POISON_OBJECTFILTER 
-End
+  DOTNugget                        ; A basic Nugget that just does damage
+	Damage        			= SPIDERLING_POISON_DAMAGE
+	AcceptDamageAdd 		= No
+	Radius        			= 0.0
+	DelayTime     			= 0
+	DamageType    			= POISON
+	DamageFXType  			= POISON
+	DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+	DamageInterval 			= 1000
+	DamageDuration 			= 60000
+	SpecialObjectFilter 		= AFFECTED_BY_POISON_OBJECTFILTER 
+  End
 
-  
   DamageNugget						; A basic Nugget that just does damage
-    Damage        =  WILD_SPIDERLING_DAMAGE
-    Radius        = 0.0
-    DelayTime     = 0
-    DamageType    = CAVALRY
-    DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
-    FlankingBonus = 50%
-    DamageScalar  = 50% NONE +STRUCTURE		; Balance: Spiderlings are fast and versatile against units so must not be so good against structures
+    Damage        			= WILD_SPIDERLING_DAMAGE
+    Radius        			= 0.0
+    DelayTime     			= 0
+    DamageType    			= CAVALRY
+    DamageFXType  			= SWORD_SLASH
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
   End
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Weapon WildSpiderHolesSpiderlingMandibles				; BALANCE Wild Spiderling Weapon 
-  LeechRangeWeapon      = Yes
-  AttackRange           = 25.0
-  MeleeWeapon           = Yes
-  DelayBetweenShots     = 1666				; time between shots, msec
-  PreAttackDelay        = 900				; 300 is mace swing delay time before contact with target.
-  PreAttackType         = PER_SHOT 			; Do the delay each time we attack
-  FireFX                = FX_SpiderStabHit
-  FiringDuration        = 766				; Duration of the mace swing 
-  RequireFollowThru		= Yes
+  LeechRangeWeapon      	= Yes
+	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           	= Yes
+  DelayBetweenShots   		= 1666				; time between shots, msec
+  PreAttackDelay       		= 900				; 300 is mace swing delay time before contact with target.
+  PreAttackType        		= PER_SHOT 			; Do the delay each time we attack
+  FireFX              	  	= FX_SpiderStabHit
+  FiringDuration       		= 766				; Duration of the mace swing 
+  RequireFollowThru			= Yes
   
   DamageNugget						; A basic Nugget that just does damage
-    Damage        = WILD_SPIDERLING_SLAVED_DAMAGE
-    Radius        = 0.0
-    DelayTime     = 0
-    DamageType    = CAVALRY
+    Damage       			= WILD_SPIDERLING_SLAVED_DAMAGE
+    Radius     			   	= 0.0
+    DelayTime    			= 0
+    DamageType  			= CAVALRY
    ; DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
-    FlankingBonus = 50%
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+    FlankingBonus 			= 50%
   End
 End
 

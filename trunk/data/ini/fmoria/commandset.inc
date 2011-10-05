@@ -476,22 +476,17 @@ CommandSet WildSpiderlingCommandSet
 	 1 = Command_ToggleStance
 	13 = Command_AttackMove
 	14 = Command_Stop
-	16  = Command_SetStanceBattle
-	17  = Command_SetStanceAggressive
-	18  = Command_SetStanceHoldGround
 End
-
 CommandSet WildSpiderlingHordeCommandSet
 	 1 = Command_ToggleStance
-	 2 = Command_PurchaseSpiderVenomSacksUpgrade
-	 3 = Command_PurchaseUpgradeWildBasicTraining
+	 ;2 = Command_PurchaseSpiderVenomSacksUpgrade
+	 ; 3 = Command_PurchaseUpgradeWildBasicTraining //Remove and use skin as Random instead...
 	13 = Command_AttackMove
 	14 = Command_Stop
 	16  = Command_SetStanceBattle
 	17  = Command_SetStanceAggressive
 	18  = Command_SetStanceHoldGround
 End
-
 CommandSet WildSpiderlingCommandSet_Summoned
 	1 = Command_ToggleStance
 	13 = Command_AttackMove

@@ -491,9 +491,7 @@
 #define WILD_SHELOB_HEALTH_DAMAGED						11000
 #define WILD_SHELOB_HEALTH_RECOVERY_TIME					10000
 #define	WILD_SHELOB_VISION_RANGE 							175
-
 #define WILD_SHELOB_TUNNEL_DISTANCE						9999999 ; this large so she can teleport to all points on screen
-
 #define	WILD_SHELOB_BOUNTY_VALUE  							500
 
 #define WILD_SHELOB_STINGER_PREATTACKDELAY 				600
@@ -523,6 +521,29 @@
 #define	WILD_SHELOB_LVL9_EXP_NEEDED 						700 ;1600 
 #define	WILD_SHELOB_LVL10_EXP_NEEDED 						800 ;2000
 
+; ------------------------------------------------------------------------------ SEE! (Only summons by Shelob)
+#define WILD_SPIDERLING_BUILD_COST							300
+#define WILD_SPIDERLING_BUILD_TIME							120
+#define WILD_SPIDERLING_VISION_RANGE						250 //175
+#define WILD_SPIDERLING_HORDE_VISION_RANGE					175
+#define WILD_SPIDERLING_SHROUD_RANGE						300
+#define WILD_SPIDERLING_DAMAGE								75
+#define WILD_SPIDERLING_HEALTH								900
+#define WILD_SPIDERLING_HEALTH_DAMAGED						450
+#define WILD_SPIDERLING_BOUNTY_VALUE						10
+
+; ------------------------------------------------------------------------------ SEE!
+#define WILD_SPIDERLING_SLAVED_VISION_RANGE					175
+#define WILD_SPIDERLING_SLAVED_SHROUD_RANGE				175
+#define WILD_SPIDERLING_SLAVED_DAMAGE						200
+#define WILD_SPIDERLING_SLAVED_HEALTH						900
+#define WILD_SPIDERLING_SLAVED_HEALTH_DAMAGED				450
+#define WILD_SPIDERLING_SLAVED_BOUNTY_VALUE				5
+
+
+
+
+
 
 
 
@@ -544,21 +565,7 @@
 
 
 
-//------------------------Spiderling-----------
 
-#define WILD_SPIDERLING_DAMAGE				75
-
-#define WILD_SPIDERLING_HEALTH				200	;300
-#define WILD_SPIDERLING_HEALTH_DAMAGED			100	;150
-
-#define WILD_SPIDERLING_BOUNTY_VALUE			6	; originally 10
-
-#define WILD_SPIDERLING_BUILD_COST			250	; originally 300
-#define WILD_SPIDERLING_BUILD_TIME			30
-
-#define WILD_SPIDERLING_VISION_RANGE			175
-#define WILD_SPIDERLING_HORDE_VISION_RANGE		175
-#define WILD_SPIDERLING_SHROUD_RANGE			300
 
 ;------------ Summoned Spiderlings ------------
 
@@ -569,14 +576,7 @@
 
 //--------------Spider Holes Spiderling--------
 
-#define WILD_SPIDERLING_SLAVED_VISION_RANGE		175
-#define WILD_SPIDERLING_SLAVED_SHROUD_RANGE		175
 
-#define WILD_SPIDERLING_SLAVED_DAMAGE			100
-#define WILD_SPIDERLING_SLAVED_HEALTH			300
-#define WILD_SPIDERLING_SLAVED_HEALTH_DAMAGED		50
-
-#define WILD_SPIDERLING_SLAVED_BOUNTY_VALUE		5
 
 ;------------------------Spider Rider-----------
 
