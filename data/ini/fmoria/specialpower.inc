@@ -71,10 +71,4 @@ SpecialPower ShelobSpiderlingAllies_SEE
   ; InitiateAtLocationSound = SpellSummonSpiderlingsMS
   ; RadiusCursorRadius = 65.0
 End
-;------------------------------------------------------------------------------
-SpecialPower SpecialAbilityShelobWebbing
-	Enum			= SPECIAL_AT_VISIBLE_OBJECT
-	ReloadTime		= 10000
-	InitiateSound		= LegolasHawkStrikeArrowShoot		;this plays when he fires, not when he targets
-End
 

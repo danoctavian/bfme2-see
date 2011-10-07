@@ -32526,11 +32526,6 @@ CONTROLBAR:SharkuWargMount
 End
 
 
-CONTROLBAR:ShelobWebbing
-"Webbing"
-End
-
-
 
 CONTROLBAR:SpecialAbilityBatCloud
 "Bat &Cloud"
@@ -32794,10 +32789,6 @@ End
 
 CONTROLBAR:ToolTipSharkuWargMount
 "Mount and unmount Sharku's personal Warg"
-End
-
-CONTROLBAR:ToolTipShelobWebbing
-"Cripples enemy heroes in spider webs"
 End
 
 CONTROLBAR:ToolTipSpecialAbilityBatCloud
