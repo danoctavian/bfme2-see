@@ -356,12 +356,22 @@ CommandSet CaveTrollCommandSet
 	3	= Command_SpecialAbilityTrollFindTree 
 	4	= Command_SpecialAbilityTrollFindGoblinToThrow
 	6	= Command_SpecialAbilityTrollHitDrum
-	13	= Command_AttackMove
-	14	= Command_Stop
-	15	= Command_SpecialAbilityTrollGrabTree			; For context-sensitive tree grab
-	16  = Command_SetStanceBattle
-	17  = Command_SetStanceAggressive
-	18  = Command_SetStanceHoldGround
+	13		= Command_AttackMove
+	14		= Command_Stop
+	15		= Command_SpecialAbilityTrollGrabTree			; For context-sensitive tree grab
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandSet WildHillTrollCommandSet
+	1  	= Command_ToggleStance
+	13 		= Command_AttackMove
+	14 		= Command_Stop
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
 End
 
 ; ------------------------------------------------------------------------------ SEE!

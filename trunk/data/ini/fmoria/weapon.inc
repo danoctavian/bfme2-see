@@ -2317,6 +2317,56 @@ Weapon WargRiderWeapon_GoblinUpgraded
 	End
 End
 
+;------------------------------------------------------------------------------
+Weapon WildHillTrollHammer     ; BALANCE Wild Marauder Weapon
+  LeechRangeWeapon      	= Yes
+  AttackRange           	= STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           	= Yes	; Sorry, stand off doesn't work.  This is just a melee weapon.
+  DelayBetweenShots    		= ANGMAR_HILLTROLL_DELAYBETWEENSHOTS				; time between shots, msec
+  PreAttackDelay        		= ANGMAR_HILLTROLL_PREATTACKDELAY				
+  PreAttackType         		= PER_SHOT			; Do the delay each time we attack
+  FireFX                	= FX_TrollPunchGeneric //FX_GondorSwordHit
+  FireFlankFX					= FX_Flanking
+  FiringDuration        		= ANGMAR_HILLTROLL_FIRINGDURATION				
+  
+	DamageNugget								; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 10
+		Damage				= ANGMAR_HILLTROLL_HAMMER_DAMAGE
+		DamageType			= SIEGE //SPECIALIST
+		DamageFXType		= CLUBBING //SWORD_SLASH
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+	DamageScalar  			= 25% ALL ALLIES
+  	DamageScalar				= 150% NONE +STRUCTURE //Added for SEE!
+  	DamageScalar				= 200% NONE +HERO	//Added for SEE!		
+		;LostLeadershipUselessAgainst	= CAVALRY ; Useless when under the CloudBreak spell against Cavalry type units
+		;ForbiddenUpgradeNames		= Upgrade_StructureLevel1
+		FlankingBonus = 50%
+	End
+
+	DamageNugget								; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 10
+		Damage				= ANGMAR_HILLTROLL_HAMMER_DAMAGE_UPGRADE
+		DamageType			= SIEGE //SPECIALIST
+		DamageFXType		= CLUBBING //SWORD_SLASH
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+	DamageScalar  			= 25% ALL ALLIES
+  	DamageScalar				= 150% NONE +STRUCTURE //Added for SEE!
+  	DamageScalar				= 200% NONE +HERO	//Added for SEE!		
+		;LostLeadershipUselessAgainst	= CAVALRY ; Useless when under the CloudBreak spell against Cavalry type units
+		;RequiredUpgradeNames		= Upgrade_StructureLevel1
+		FlankingBonus = 50%
+	End
+	
+	MetaImpactNugget                    ; A Nugget that throws things back with force
+		ShockWaveAmount   		= 20.0
+		ShockWaveRadius   		= 20.0
+		ShockWaveTaperOff 		= 1.0
+		ShockWaveArc      		= 20 //45
+		ShockWaveZMult    		= 1.20
+		HeroResist				= .75
+	End	
+End
+
 ; ------------------------------------------------------------------------------
 ; This is the normal punch, not the AOE, rock, siege or tree
 Weapon MoriaCaveTrollPunch  									;Used by both MOUNTAIN TROLL and CAVE TROLL /Naz
@@ -2509,7 +2559,7 @@ Weapon MoriaCaveTrollClubSwing
 	FiringDuration				= MORDOR_TROLL_TREE_FIRINGDURATION
 	PreAttackDelay			= MORDOR_TROLL_TREE_PREATTACKDELAY
 	PreAttackType			= PER_SHOT								; Do the delay each time we attack a new target
-	PreAttackFX				= FX_TrollTreeSwing ;Just sound FX!
+	PreAttackFX				= FX_TrollTreeSwing 						;Just sound FX!
 	DamageDealtAtSelfPosition	= Yes									; A melee based AoE.  Arc radiates from me, not them
 	AcceptableAimDelta		= 35.0 
 
