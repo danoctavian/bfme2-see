@@ -354,20 +354,20 @@ Armor WildSpiderRiderHeavyArmor
   FlankedPenalty 	       = 50%     
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ SEE!
 Armor MountainGiantArmor
-  Armor = DEFAULT      		 25%    ; for all nonspecified damage types 	originally 25%
-  Armor = CRUSH        		  1%    ; horseman damage			
-  Armor = SLASH         	100%    ; 1%	 ;soldier damage		originally 100%
-  Armor = PIERCE       		 50%    ; archer damage				originally 50%
-  Armor = SPECIALIST    	200%   	; 200%					originally 200%
-  Armor = FLAME         	300%    ; fire damage
-  Armor = FROST          	100%   ;
-  Armor = SIEGE         	100%    ; siege damage
-  Armor = STRUCTURAL   		 25%    ; Structural damage (Ent rocks)		originally 25%
-  Armor = CHOP          	100%    ; axe damage
-  Armor = HERO          	200%    ; hero damage
-  Armor = HERO_RANGED   	200%    ; Hero bow damage
-  Armor = CAVALRY 		 75%	; Horse damage				originally 75%
-  Armor = MAGIC         	100%    ; hero damage
+  Armor = DEFAULT      		 	20%    ; for all nonspecified damage types 	originally 25%
+  Armor = CRUSH        		  	10%    ; horseman damage			
+  Armor = SLASH         		10%    ; 1%	 ;soldier damage		originally 100%
+  Armor = PIERCE       		 	10%    ; archer damage				originally 50%
+  Armor = SPECIALIST    			75%   	; 200%					originally 200%
+  Armor = FLAME         		80%    ; fire damage
+  Armor = FROST          		100%   ;
+  Armor = SIEGE         		100%    ; siege damage
+  Armor = STRUCTURAL   			 10%    ; Structural damage (Ent rocks)		originally 25%
+  Armor = CHOP          		30%    ; axe damage
+  Armor = HERO          		100%    ; hero damage
+  Armor = HERO_RANGED   		100%    ; Hero bow damage
+  Armor = CAVALRY 				 75%	; Horse damage				originally 75%
+  Armor = MAGIC         		100%    ; hero damage
 End

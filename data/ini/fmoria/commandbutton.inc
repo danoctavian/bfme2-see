@@ -730,7 +730,7 @@ End
 
 CommandButton Command_ConstructWildHillTrollHorde
 	Command				= UNIT_BUILD
-	Object				= AngmarHillTrollHorde
+	Object				= WildHillTroll
 	Options				= CANCELABLE ;NEED_UPGRADE
 	;NeededUpgrade		= Upgrade_WildSpiderPitLevel2
 	;NeededUpgradeAny	= Yes
