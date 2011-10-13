@@ -11,7 +11,7 @@ Upgrade Upgrade_Fast_Gameplay_SEE
   Type = OBJECT
 End
 
-Upgrade Upgrade_ObjectUnderAIControl //_SEE  ;only available for the AI
+Upgrade Upgrade_ObjectUnderAIControl_SEE  ;only available for the AI
   Type = OBJECT
 End
 
