@@ -11,7 +11,7 @@
 		Behavior = ObjectCreationUpgrade ModuleTag_IamAI  ;ModuleTag_RealFireArrows
 		TriggeredBy	= Upgrade_EasyAISinglePlayer Upgrade_EasyAIMultiPlayer Upgrade_MediumAISinglePlayer Upgrade_MediumAIMultiPlayer Upgrade_HardAISinglePlayer Upgrade_HardAIMultiPlayer Upgrade_BrutalAISinglePlayer Upgrade_BrutalAIMultiPlayer			
 		Delay			= 500
-		GrantUpgrade	= Upgrade_ObjectUnderAIControl
+		GrantUpgrade	= Upgrade_ObjectUnderAIControl_SEE
 		End	
 	End
 	

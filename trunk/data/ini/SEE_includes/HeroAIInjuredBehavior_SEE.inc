@@ -14,7 +14,7 @@
 	End
 
 	Behavior = ObjectCreationUpgrade MaketheHomingCall
-		TriggeredBy = Upgrade_ReallyDamaged_SEE Upgrade_ObjectUnderAIControl //_SEE
+		TriggeredBy = Upgrade_ReallyDamaged_SEE Upgrade_ObjectUnderAIControl_SEE
 		RequiresAllTriggers	= Yes
 		Delay = 10.0
 		ThingToSpawn = HeroHomingBeacon_SEE ; OK!

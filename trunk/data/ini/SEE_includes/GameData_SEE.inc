@@ -33,8 +33,8 @@
 #define ARCHER_STANDARD_HITPERCENTAGE         			70
 #define ARCHER_ELITE_HITPERCENTAGE							80
 #define ARCHER_WEAK_SCATTERRADIUS            				40.0 //30.0
-#define ARCHER_STANDARD_SCATTERRADIUS          			20.0
-#define ARCHER_ELITE_SCATTERRADIUS            				10.0
+#define ARCHER_STANDARD_SCATTERRADIUS          			30.0 //20.0
+#define ARCHER_ELITE_SCATTERRADIUS            				20.0 //10.0
 
 #define ARCHER_BOW_RELOADTIME_MIN							1500 ;1½ sec
 #define ARCHER_BOW_RELOADTIME_MAX							2000 ;2 sec
@@ -42,8 +42,9 @@
 #define ARCHER_DAMAGE_FLAMINGARROWS_PIERCE    			25	;20
 #define ARCHER_DAMAGE_FLAMINGARROWS_FLAME     			50 //25	;20
 
-#define ARCHER_REGULAR_FIREARROW_BURNRATEINCREASE			1
-#define ARCHER_REGULAR_FIREARROW_BURNRADIUS		    	0.5
+#define ARCHER_REGULAR_FIREARROW_BURNRATEINCREASE			10 //1
+#define ARCHER_REGULAR_FIREARROW_BURNRADIUS		    	1 //0.5
+
 #define ARCHER_BOMBARD_FIREARROW_BURNRADIUS    			1.0
 #define ARCHER_BOMBARD_SCATTER_RADIUS						60
 #define ARCHER_BOMBARD_FIREARROW_BURNRATEINCREASE			5
@@ -254,12 +255,14 @@
 #define ELVEN_MIST_CAMOUFLAGE_DETECTION_RANGE		100.0
 #define ELVEN_MIST_OBJECT_FILTER			ANY +HORDE +HERO +DOZER +RohanEntFir_Summoned +RohanEntBirch_Summoned +RohanEntFir +RohanEntBirch +RohanEntAsh +MordorMountainTroll +MordorDrummerTroll +MordorAttackTroll +WildMountainGiant +GoblinCaveTroll +CaveTroll_Slaved +MordorCaveTroll_Summoned +MordorAttackTroll_Summoned +WildMountainGiant_Summoned -Drogoth -GondorGwaihir_Summoned -GondorGwaihir -MordorFellBeast -MordorWitchKingOnFellBeast -ElvenFortressEagle -SpellBookDragonStrikeDragon -KhamulFellBeast -MorgomirFellBeast ALLIES
 
+; ------------------------------------------------------------------- SEE!
 #define CAMOUFLAGE_DETECTION_DISTANCE_SHORT		0.5
-#define CAMOUFLAGE_DETECTION_DISTANCE_SHORTISH		0.8
+#define CAMOUFLAGE_DETECTION_DISTANCE_SHORTISH	0.8
 #define CAMOUFLAGE_DETECTION_DISTANCE_DEFAULT		1.0		// everything has this by default.
 #define CAMOUFLAGE_DETECTION_DISTANCE_SHEDIUM		1.5		// not quite short and not quite medium so shedium.
 #define CAMOUFLAGE_DETECTION_DISTANCE_MEDIUM		2.0		
 #define CAMOUFLAGE_DETECTION_DISTANCE_LONG		3.0
+; -------------------------------------------------------------------
 
 #define GENERIC_KEEP_MONEY_TIME 			6000
 #define GENERIC_KEEP_MONEY_AMOUNT			30 ;25
@@ -2505,17 +2508,17 @@
 #define MEN_TREBUCHETEXPANSION_FIRE_DECAY		5
 #define MEN_TREBUCHETEXPANSION_FIRE_RESISTANCE		10
 
-;------------------TRANSPORT SLOTS---------------------
+;------------------TRANSPORT SLOTS--------------------- SEE!
 
 #define TRANSPORTSLOTCOUNT_NOT_TRANSPORTABLE		0
-#define TRANSPORTSLOTCOUNT_HERO				1
-#define TRANSPORTSLOTCOUNT_DOZER			1
-#define TRANSPORTSLOTCOUNT_SIEGE			1
-#define TRANSPORTSLOTCOUNT_UNIT				1
-#define TRANSPORTSLOTCOUNT_MONSTER			1
+#define TRANSPORTSLOTCOUNT_HERO					1
+#define TRANSPORTSLOTCOUNT_DOZER					1
+#define TRANSPORTSLOTCOUNT_SIEGE					1
+#define TRANSPORTSLOTCOUNT_UNIT					1
+#define TRANSPORTSLOTCOUNT_MONSTER				1
 #define TRANSPORTSLOTCOUNT_SMALL_HORDE			1
 #define TRANSPORTSLOTCOUNT_LARGE_HORDE			1
-#define TRANSPORTSLOTCOUNT_MACHINE			1
+#define TRANSPORTSLOTCOUNT_MACHINE				1
 
 
 ;//-----------------------------TECH BUILDINGS----------------------------------

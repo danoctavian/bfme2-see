@@ -20,3 +20,11 @@ ModifierList MordorLargeGroupBonus_SEE
   FX = FX_InfiniteGenericLeadership_SEE 
   EndFX = FX_GenericBuffStop_SEE
 End
+
+;---------- For AI flyers -----------------
+ModifierList GiantBirdVisionBonusAI_SEE
+  Category = STRUCTURE
+  Modifier = VISION 100%		// Additive. 
+  Duration = 0
+End
+
