@@ -359,7 +359,7 @@ Armor MountainGiantArmor
   Armor = DEFAULT      		 	20%    ; for all nonspecified damage types 	originally 25%
   Armor = CRUSH        		  	10%    ; horseman damage			
   Armor = SLASH         		10%    ; 1%	 ;soldier damage		originally 100%
-  Armor = PIERCE       		 	10%    ; archer damage				originally 50%
+  Armor = PIERCE       		 	50%    ; archer damage				originally 50%
   Armor = SPECIALIST    			75%   	; 200%					originally 200%
   Armor = FLAME         		80%    ; fire damage
   Armor = FROST          		100%   ;
