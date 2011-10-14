@@ -285,7 +285,7 @@ END
 
 ;----------------DROGOTH-------------------------------------------------------------------------------
 ExperienceLevel	DrogothLevel1
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= 1	
 	ExperienceAward				= DROGOTH_LVL1_EXP_AWARD
 	Rank						= 1
@@ -301,7 +301,7 @@ ExperienceLevel	DrogothLevel1
 End
 
 ExperienceLevel	DrogothLevel2
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL2_EXP_NEEDED 
 	ExperienceAward				= DROGOTH_LVL2_EXP_AWARD
 	AttributeModifiers			= HeroLevelUpDamage1
@@ -319,7 +319,7 @@ ExperienceLevel	DrogothLevel2
 END
 
 ExperienceLevel	DrogothLevel3
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL3_EXP_NEEDED 
 	ExperienceAward				= DROGOTH_LVL3_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage2
@@ -338,7 +338,7 @@ ExperienceLevel	DrogothLevel3
 END	
 
 ExperienceLevel	DrogothLevel4
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL4_EXP_NEEDED 
 	ExperienceAward				= DROGOTH_LVL4_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage3
@@ -356,7 +356,7 @@ ExperienceLevel	DrogothLevel4
 END	
 
 ExperienceLevel	DrogothLevel5
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL5_EXP_NEEDED 
 	ExperienceAward				= DROGOTH_LVL5_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage4
@@ -374,7 +374,7 @@ ExperienceLevel	DrogothLevel5
 END	
 
 ExperienceLevel	DrogothLevel6
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL6_EXP_NEEDED 
 	ExperienceAward				= DROGOTH_LVL6_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage5
@@ -393,7 +393,7 @@ ExperienceLevel	DrogothLevel6
 END	
 
 ExperienceLevel	DrogothLevel7
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL7_EXP_NEEDED 
 	ExperienceAward				=	DROGOTH_LVL7_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage6
@@ -411,7 +411,7 @@ ExperienceLevel	DrogothLevel7
 END	
 
 ExperienceLevel	DrogothLevel8
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL8_EXP_NEEDED 
 	ExperienceAward				= DROGOTH_LVL8_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage7
@@ -430,7 +430,7 @@ ExperienceLevel	DrogothLevel8
 END	
 
 ExperienceLevel	DrogothLevel9
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL9_EXP_NEEDED 
 	ExperienceAward				= DROGOTH_LVL9_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage8
@@ -448,7 +448,7 @@ ExperienceLevel	DrogothLevel9
 END	
 
 ExperienceLevel	DrogothLevel10
-	TargetNames					= Drogoth
+	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL10_EXP_NEEDED 
 	ExperienceAward				= DROGOTH_LVL10_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage9
