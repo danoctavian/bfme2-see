@@ -350,6 +350,41 @@ CommandSet GoblinWolfRiderCommandSet
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandSet WildMountainGiantCommandSet
+	1	= Command_ToggleStance
+	2	= Command_SpecialAbilityWildMountainGiantStomp	
+	3	= Command_ToggleMountainGiantRockThrow
+	13		= Command_AttackMove
+	14		= Command_Stop
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
+End
+CommandSet WildMountainGiantRockCommandSet
+	1	= Command_ToggleStance
+	2	= Command_SpecialAbilityWildMountainGiantStomp	
+	3	= Command_ToggleMountainGiantRockThrow
+	4	= Command_BombardEvil
+	13		= Command_AttackMove
+	14		= Command_Stop
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
+End
+CommandSet WildMountainGiantRockCommandSetStopBombard
+	1	= Command_ToggleStance
+	2	= Command_SpecialAbilityWildMountainGiantStomp	
+	3	= Command_ToggleMountainGiantRockThrow
+	4	= Command_StopBombard
+	13		= Command_AttackMove
+	14		= Command_Stop
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
+End
+
+
+; ------------------------------------------------------------------------------ SEE!
 CommandSet CaveTrollCommandSet
 	1	= Command_ToggleStance
 	2  	= Command_ToggleMountainTrollRockThrow
@@ -531,41 +566,6 @@ CommandSet WildSpiderRiderHordeCommandSet
 	16  = Command_SetStanceBattle
 	17  = Command_SetStanceAggressive
 	18  = Command_SetStanceHoldGround
-End
-
-CommandSet WildMountainGiantCommandSet
-	1	= Command_ToggleStance
-	2	= Command_SpecialAbilityWildMountainGiantStomp	
-	3	= Command_ToggleMountainGiantRockThrow
-	13	= Command_AttackMove
-	14	= Command_Stop
-	16  	= Command_SetStanceBattle
-	17  	= Command_SetStanceAggressive
-	18  	= Command_SetStanceHoldGround
-End
-
-CommandSet WildMountainGiantRockCommandSet
-	1	= Command_ToggleStance
-	2	= Command_SpecialAbilityWildMountainGiantStomp	
-	3	= Command_ToggleMountainGiantRockThrow
-	4	= Command_BombardEvil
-	13	= Command_AttackMove
-	14	= Command_Stop
-	16  	= Command_SetStanceBattle
-	17  	= Command_SetStanceAggressive
-	18  	= Command_SetStanceHoldGround
-End
-
-CommandSet WildMountainGiantRockCommandSetStopBombard
-	1	= Command_ToggleStance
-	2	= Command_SpecialAbilityWildMountainGiantStomp	
-	3	= Command_ToggleMountainGiantRockThrow
-	4	= Command_StopBombard
-	13	= Command_AttackMove
-	14	= Command_Stop
-	16  	= Command_SetStanceBattle
-	17  	= Command_SetStanceAggressive
-	18  	= Command_SetStanceHoldGround
 End
 
 

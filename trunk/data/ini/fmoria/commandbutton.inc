@@ -420,6 +420,33 @@ CommandButton Command_SpecialAbilityTrollHitDrum
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_SpecialAbilityWildMountainGiantStomp
+  Command               = SPECIAL_POWER 
+  SpecialPower          = SpecialAbilityWildMountainGiantStomp
+  Options               = OK_FOR_MULTI_SELECT OK_FOR_MULTI_EXECUTE
+  TextLabel              = CONTROLBAR:WildMountainGiantStomp
+  ButtonImage           = UCGiant_Stomp
+  ButtonBorderType		= ACTION 
+  DescriptLabel           = CONTROLBAR:ToolTipWildMountainGiantStomp
+  AutoAbility			  	= Yes
+  PresetRange			= #MULTIPLY( WILD_MOUNTAIN_GIANT_STOMP_RADIUS 0.5 )
+  InPalantir			= Yes
+  DisableOnModelCondition 	= WEAPONSET_TOGGLE_1
+  UnitSpecificSound		= MountainGiantVoxStomp
+End
+CommandButton Command_ToggleMountainGiantRockThrow
+  Command				= TOGGLE_WEAPONSET
+  Options				= TOGGLE_IMAGE_ON_WEAPONSET OK_FOR_MULTI_SELECT
+  FlagsUsedForToggle		= WEAPONSET_TOGGLE_1
+  TextLabel				= CONTROLBAR:ThrowRocks CONTROLBAR:KickAndPunch
+  ButtonImage			= UCCommon_GiantThrowRock UCCommon_GiantMelee
+  ButtonBorderType		= ACTION 
+  DescriptLabel			= CONTROLBAR:ToolTipThrowRocks CONTROLBAR:ToolTipKickAndPunch
+  InPalantir			= Yes
+  UnitSpecificSound		= EntVoxToggleRockThrow EntVoxToggleRockThrow
+End
+
+; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_WildShelobInstillTerror
   Command               = SPECIAL_POWER 
   SpecialPower          = SpecialAbilityScreech
@@ -1145,32 +1172,9 @@ CommandButton Command_ToggleCorsairWeapon
 	UnitSpecificSound	= CorsairVoiceWeaponSwitchFirebombs CorsairVoiceWeaponSwitchSwords
 End
 
-CommandButton Command_ToggleMountainGiantRockThrow
-	Command			= TOGGLE_WEAPONSET
-	Options			= TOGGLE_IMAGE_ON_WEAPONSET OK_FOR_MULTI_SELECT
-	FlagsUsedForToggle	= WEAPONSET_TOGGLE_1
-	TextLabel		= CONTROLBAR:ThrowRocks CONTROLBAR:KickAndPunch
-	ButtonImage		= UCCommon_GiantThrowRock UCCommon_GiantMelee
-	ButtonBorderType	= ACTION 
-	DescriptLabel		= CONTROLBAR:ToolTipThrowRocks CONTROLBAR:ToolTipKickAndPunch
-	InPalantir		= Yes
-	UnitSpecificSound	= EntVoxToggleRockThrow EntVoxToggleRockThrow
-End
 
-CommandButton Command_SpecialAbilityWildMountainGiantStomp
-  Command                 = SPECIAL_POWER 
-  SpecialPower            = SpecialAbilityWildMountainGiantStomp
-  Options                 = OK_FOR_MULTI_SELECT OK_FOR_MULTI_EXECUTE
-  TextLabel               = CONTROLBAR:WildMountainGiantStomp
-  ButtonImage             = UCGiant_Stomp
-  ButtonBorderType        = ACTION 
-  DescriptLabel           = CONTROLBAR:ToolTipWildMountainGiantStomp
-  AutoAbility			  = Yes
-  PresetRange			  = #MULTIPLY( WILD_MOUNTAIN_GIANT_STOMP_RADIUS 0.5 )
-  InPalantir			  = Yes
-  DisableOnModelCondition = WEAPONSET_TOGGLE_1
-  UnitSpecificSound       = MountainGiantVoxStomp
-End
+
+
 
 
 CommandButton Command_ConstructWildTrollSling
