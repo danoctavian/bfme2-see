@@ -2514,6 +2514,15 @@ Weapon GiantBuildingTeardown
 		DamageFXType  		= CLUBBING
 		DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
 	End
+	
+	MetaImpactNugget                    ; A Nugget that throws things back with force
+		;HeroResist			= .75
+		ShockWaveArc      	= 60 //180
+		ShockWaveAmount   	= 35.0
+		ShockWaveRadius   	= WILD_MOUNTAIN_GIANT_STOMP_RADIUS
+		ShockWaveTaperOff 	= 1.0
+		ShockWaveSpeed	  	= 700.0 
+	End	
 End
 
 ; ------------------------------------------------------------------------------ SEE!

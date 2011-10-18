@@ -472,7 +472,7 @@
 ; ------------------------------------------------------------------------------ SEE!
 #define WILD_MOUNTAIN_GIANT_BUILDCOST						2000
 #define WILD_MOUNTAIN_GIANT_BOUNTYVALUE					250	
-#define WILD_MOUNTAIN_GIANT_BUILDTIME						120 ;240
+#define WILD_MOUNTAIN_GIANT_BUILDTIME						12;0 ;240
 #define WILD_MOUNTAIN_GIANT_HEALTH							11000 //9000
 #define WILD_MOUNTAIN_GIANT_HEALTH_DAMAGED				3000
 #define WILD_MOUNTAIN_GIANT_VISION_RADIUS					400
