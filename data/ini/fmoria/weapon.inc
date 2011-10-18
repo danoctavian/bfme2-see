@@ -410,11 +410,10 @@ Weapon ShelobCrush ;// Used when the BattleWagon crushes an enemy.
   End
 End
 
-;------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ SEE!
 Weapon ShelobMandibles     ; BALANCE Shelob Weapon 
   LeechRangeWeapon      	= Yes
-	AttackRange				= #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 )
-  ; AttackRange           = 25.0
+  AttackRange				= #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 ) //25
   MeleeWeapon           	= Yes
   DelayBetweenShots     		= 1666           ; time between shots, msec
   PreAttackDelay        		= 900            ; 300 is mace swing delay time before contact with target.
@@ -568,7 +567,7 @@ Weapon SummonedSpiderlingMandibles				; BALANCE Wild Spiderling Weapon
   End
 End
 
-;------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ SEE!
 Weapon WildSpiderlingMandibles				; BALANCE Wild Spiderling Weapon 
   LeechRangeWeapon      	= Yes
 	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
@@ -591,7 +590,7 @@ Weapon WildSpiderlingMandibles				; BALANCE Wild Spiderling Weapon
   End
 End
 
-;------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ SEE!
 Weapon WildSpiderlingVenomMandibles				; BALANCE Wild Spiderling Weapon 
   LeechRangeWeapon      	= Yes
   AttackRange				= STANDARD_MELEE_ATTACK_RANGE
@@ -626,7 +625,7 @@ Weapon WildSpiderlingVenomMandibles				; BALANCE Wild Spiderling Weapon
   End
 End
 
-;------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ SEE!
 Weapon WildSpiderHolesSpiderlingMandibles				; BALANCE Wild Spiderling Weapon 
   LeechRangeWeapon      	= Yes
 	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
@@ -649,162 +648,31 @@ Weapon WildSpiderHolesSpiderlingMandibles				; BALANCE Wild Spiderling Weapon
   End
 End
 
-;------------------------------------------------------------------------------
-Weapon WildSpiderRiderBow     ; BALANCE Wild Spider Rider bow Weapon
-	AttackRange         	= WILD_SPIDERRIDER_RANGE
-	
-	RangeBonusMinHeight      = 30 ;	= 10
-	RangeBonus		= 1
-	RangeBonusPerFoot	= #MULTIPLY( WILD_SPIDERRIDER_RANGE .003 )  
-	
-	WeaponSpeed         	= 321         ; dist/sec 
-	MinWeaponSpeed      	= 241
-	MaxWeaponSpeed      	= 481      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
-	FireFX              	= FX_RohanArcherBowWeapon
-	ScaleWeaponSpeed    	= Yes		;Used for lob weapons, scales speed proportional to range
-	HitPercentage       	= 100		;When this weapon is used it will hit exactly 50% of the time.
-	ScatterRadius       	= 16.0		;When this weapon misses it can randomly miss by as much as this distance.
-	  
-	AcceptableAimDelta		= 20		; prevent twitchy reaiming in horde on horde
-	
-	DelayBetweenShots   	= 0
-	
-	PreAttackDelay      	= WILD_SPIDERRIDER_BOW_PREATTACKDELAY 
-	PreAttackType			= PER_SHOT
-	;PreAttackRandomAmount	= 200   
-	FiringDuration			= 0
-	RequireFollowThru		= Yes
-	  
-	;AutoReloadWhenIdle		= 1	
-	
-	ClipSize				= 1
-	AutoReloadsClip			= Yes
-	ClipReloadTime			= Min:WILD_SPIDERRIDER_BOW_RELOADTIME_MIN Max:WILD_SPIDERRIDER_BOW_RELOADTIME_MAX
-	
-	;ContinuousFireOne		= 0
-	;ContinuousFireCoast		= WILD_SPIDERRIDER_BOW_RELOADTIME_MAX
-	  
-	AntiAirborneVehicle		= Yes
-	AntiAirborneMonster		= Yes
-	HitPassengerPercentage	= 20%
-	CanBeDodged				= Yes ; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
-
-	ProjectileNugget                    ; Default arrow
-	    ProjectileTemplateName    = EvilFactionArrow
-	    WarheadTemplateName       = WildSpiderRiderBowWarhead
-	    ForbiddenUpgradeNames     = Upgrade_WildFireArrows
-	End	
-  		
-	ProjectileNugget    ; Fire Arrow
-		ProjectileTemplateName  = EvilFactionFireArrow
-		WarheadTemplateName      = WildSpiderRiderBowFireWarhead
-		RequiredUpgradeNames     = Upgrade_WildFireArrows
-	End
-End
-
-;----------------------------
-Weapon WildSpiderRiderBowWarhead
-  ProjectileCollidesWith	= ENEMIES NEUTRAL STRUCTURES WALLS ;ALLIES (4/23/04 removed friendly fire)
-  RadiusDamageAffects		= ENEMIES NEUTRALS ALLIES NOT_SIMILAR
-  HitStoredTarget			= Yes	; Always hits initial target.
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = WILD_SPIDERRIDER_BOW_DAMAGE
-    Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-    DelayTime     = 0
-    DamageType    = PIERCE
-    DamageFXType  = EVIL_ARROW_PIERCE
-    DeathType     = NORMAL
-    DamageScalar  = 50% NONE +GondorTowerShieldGuard +RohanSpearmen +ElvenMithlondSentry +DwarvenPhalanx +ArnorTowerShieldGuard
-    DamageScalar  = 50% NONE +AngmarRhudaurSpearman +WildMarauder +IsengardPikeman +AngmarHillTroll +MordorEasterling
-  End
-End
 
 
-;----------------------------
-Weapon WildSpiderRiderBowFireWarhead
-	ProjectileCollidesWith	= ENEMIES NEUTRAL STRUCTURES WALLS 
-	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ;ALLIES
-	HitStoredTarget			= Yes	; Always hits initial target.
 
-	DamageNugget                        
-		Damage        = WILD_SPIDERRIDER_FIRE_UPGRADE_DAMAGE_FLAME
-		Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-		DelayTime     = 0
-		DamageType    = FLAME
-		DamageFXType  = EVIL_ARROW_PIERCE
-		DeathType     = BURNED
-		AcceptDamageAdd = No
-		DamageScalar  = 25% ALL -STRUCTURE
-	End
 
-	DamageNugget        ; A basic Nugget that just does damage
-		Damage        	= 1
-		Radius        	= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-		DamageType    	= FLAME
-		DamageFXType  	= FLAME
-		DeathType     	= BURNED
-		AcceptDamageAdd = No
-		DamageScalar	= 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
-	End
-	
-	DamageNugget                        ; A basic Nugget that just does damage
-		Damage        = WILD_SPIDERRIDER_FIRE_UPGRADE_DAMAGE
-		Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-		DelayTime     = 0
-		DamageType    = PIERCE
-		DamageFXType  = EVIL_ARROW_PIERCE
-		DeathType     = NORMAL
-	    	DamageScalar  = 50% NONE +GondorTowerShieldGuard +RohanSpearmen +ElvenMithlondSentry +DwarvenPhalanx +ArnorTowerShieldGuard
-	    	DamageScalar  = 50% NONE +AngmarRhudaurSpearman +WildMarauder +IsengardPikeman +AngmarHillTroll +MordorEasterling
-	End
-End
 
-;------------------------------------------------------------------------------
-Weapon WildSpiderRiderSword
-	LeechRangeWeapon		= Yes
-	AttackRange				= 30.0
-	MeleeWeapon				= Yes
-	DelayBetweenShots		= WILD_SPIDERRIDER_SWORD_DELAYBETWEENSHOTS ; time between shots, msec
-	PreAttackDelay			= WILD_SPIDERRIDER_SWORD_PREATTACKDELAY ; 300 is mace swing delay time before contact with target.
-	PreAttackType			= PER_SHOT ; Do the delay each time we attack
-	FireFX					= FX_GondorSwordHit
-	FireFlankFX				= FX_Flanking
-	FiringDuration			= WILD_SPIDERRIDER_SWORD_FIRINGDURATION ; Duration of the mace swing 
 
-	DamageNugget
-		Damage					= WILD_SPIDERRIDER_MELEE_DAMAGE
-		Radius					= 0.0
-		DelayTime				= 0
-		DamageType				= CAVALRY
-		DeathType				= NORMAL
-		FlankingBonus				= 50%
-		ForbiddenUpgradeNames			= Upgrade_WildForgedBlades
-	End
 
-	DamageNugget                       
-		Damage					= WILD_SPIDERRIDER_MELEE_DAMAGE_UPGRADE
-		Radius					= 0.0
-		DelayTime				= 0
-		DamageType				= CAVALRY
-		DamageFXType				= SWORD_SLASH
-		DeathType				= NORMAL
-		RequiredUpgradeNames			= Upgrade_WildForgedBlades
-		FlankingBonus 				= 50%
-	End
 
-	DOTNugget
-		Damage				= 4
-		AcceptDamageAdd			= No
-		Radius				= 0.0
-		DelayTime			= 0
-		DamageType			= POISON
-		DamageFXType			= POISON
-		DeathType			= NORMAL
-		DamageInterval			= 1000
-		DamageDuration			= 10000
-		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER 
-	End
-End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //------------------------------------------------------------------------------
 //Fake weapon so that the expansion will pick targets that the slaved giant can attack
@@ -853,480 +721,6 @@ Weapon WildMountainGiantSentryRockThrow  ; BALANCE Mountaint Giant Weapon Rock
 		ProjectileTemplateName  = ShroudRevealer_Bombard
 		WarheadTemplateName     = ShipRevealBombardWarhead_Dummy
 	End
-End
-
-;------------------------------------------------------------------------------
-; This is the attack with rock in hand
-; Mountain Giant
-;Weapon WildMountainGiantRockThrow  ; BALANCE Mountaint Giant Weapon Rock
-;	IdleAfterFiringDelay		= 2000 ;Yes if I want to throw rock, then wait until the followthrough is complete, then go idle.
-;	AttackRange					= WILD_MOUNTAIN_GIANT_ROCK_RANGE
-;	
-;	RangeBonusMinHeight      = 30 ;	= 10
-;	RangeBonus		= 1
-;	RangeBonusPerFoot	= #MULTIPLY( WILD_MOUNTAIN_GIANT_ROCK_RANGE .003 )
-;	
-;	WeaponSpeed					= 200.0        ; dist/sec (huge value == effectively instant)
-;	ProjectileFilterInContainer	= ANY +ROCK +INFANTRY; We don't make the projectile, it is in our Contain module.
-;	FireFX						= FX_EntThrowSmallRock
-;	PreAttackDelay				= 1400
-;	PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
-;	HitPercentage				= 0 ; never auto hits, always hits ground
-;	ScatterRadius				= 4.0     ;When this weapon misses it can randomly miss by as much as this distance.
-;	FiringDuration				= 2000
-;	DelayBetweenShots			= 1000
-;	IsAimingWeapon				= Yes	; Shooter will use his AimWeaponBehavior to get extra model condition flags
-;	NoVictimNeeded				= Yes ; Need no target
-;	LeechRangeWeapon			= Yes
-;
-;	ProjectileNugget                    	; A Nugget that creates an Object and sends it to the target with a Warhead
-;		WarheadTemplateName 		= WildMountainGiantRockThrowWarhead
-;	End
-;End
-
-;----------------------------------------------------------------------------------------------------------------
-;
-;	This is the toggle weapon for giants. They will reload, throw, reload straight away, and constantly hold a rock.
-;
-Weapon GiantRockThrow
-	;IdleAfterFiringDelay		= 2000							; Do NOT idle after throwing or Bombard will break
-	HoldDuringReload			= Yes							
-	AttackRange					= WILD_MOUNTAIN_GIANT_ROCK_RANGE
-	MinimumAttackRange			= WILD_MOUNTAIN_GIANT_ROCK_MINRANGE
-	
-	RangeBonusMinHeight      = 30 ;	= 10
-	RangeBonus		= 1
-	RangeBonusPerFoot	= #MULTIPLY( WILD_MOUNTAIN_GIANT_ROCK_RANGE .003 )
-	
-	WeaponSpeed					= 200.0							; dist/sec (huge value == effectively instant)
-	FireFX						= FX_EntThrowSmallRock
-	PreAttackDelay				= 1200
-	FiringDuration				= 2000
-	PreAttackType				= PER_SHOT						; Do the delay each time we attack a new target
-	DelayBetweenShots			= 6000
-	HitPercentage				= 70								; never auto hits, always hits ground
-	ScatterRadius				= 50.0							; When this weapon misses it can randomly miss by as much as this distance.
-	IsAimingWeapon				= Yes							; Shooter will use his AimWeaponBehavior to get extra model condition flags
-	NoVictimNeeded				= Yes							; Need no target
-	LeechRangeWeapon			= Yes
-
-	HoldAfterFiringDelay		= 4200
-	AutoReloadWhenIdle			= 1800							; should be a bit less than IdleAfterFiringDelay or HoldAfterFiringDelay
-	//ClipSize 					= 1
-	AutoReloadsClip 			= NO
-	ClipReloadTime 				= 2000
-
-	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
-		ProjectileTemplateName	= RockBigGiant
-		WarheadTemplateName		= WildMountainGiantRockThrowWarhead
-	End
-	
-	ProjectileNugget													; This nugget is to create a revealing object, so fire
-		AlwaysAttackHereOffset	= X:0 Y:0 Z:0							; it directly on top of us, and just use an empty warhead
-		UseAlwaysAttackOffset	= Yes									; so we don't assert.
-		ProjectileTemplateName  = ShroudRevealer_Bombard
-		WarheadTemplateName     = ShipRevealBombardWarhead_Dummy
-	End
-End
-
-;----------------------------
-Weapon GiantRockThrowCloseRange
-	;IdleAfterFiringDelay		= 2000							; Do NOT idle after throwing or Bombard will break
-	HoldDuringReload			= Yes							
-	AttackRange					= WILD_MOUNTAIN_GIANT_ROCK_MINRANGE
-	
-	RangeBonusMinHeight      = 30 ;	= 10
-	RangeBonus		= 1
-	RangeBonusPerFoot	= #MULTIPLY( WILD_MOUNTAIN_GIANT_ROCK_RANGE .003 )
-	
-	WeaponSpeed					= 200.0							; dist/sec (huge value == effectively instant)
-	FireFX						= FX_EntThrowSmallRock
-	PreAttackDelay				= 1200
-	FiringDuration				= 2000
-	PreAttackType				= PER_SHOT						; Do the delay each time we attack a new target
-	DelayBetweenShots			= 6000
-	HitPercentage				= 70								; never auto hits, always hits ground
-	ScatterRadius				= 30.0							; When this weapon misses it can randomly miss by as much as this distance.
-	IsAimingWeapon				= Yes							; Shooter will use his AimWeaponBehavior to get extra model condition flags
-	NoVictimNeeded				= Yes							; Need no target
-	LeechRangeWeapon			= Yes
-
-	HoldAfterFiringDelay		= 4200
-	AutoReloadWhenIdle			= 1800							; should be a bit less than IdleAfterFiringDelay or HoldAfterFiringDelay
-	//ClipSize 					= 1
-	AutoReloadsClip 			= NO
-	ClipReloadTime 				= 2000
-
-	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
-		ProjectileTemplateName	= RockBigGiant
-		WarheadTemplateName		= WildMountainGiantRockThrowWarhead
-	End
-	
-	ProjectileNugget													; This nugget is to create a revealing object, so fire
-		AlwaysAttackHereOffset	= X:0 Y:0 Z:0							; it directly on top of us, and just use an empty warhead
-		UseAlwaysAttackOffset	= Yes									; so we don't assert.
-		ProjectileTemplateName  = ShroudRevealer_Bombard
-		WarheadTemplateName     = ShipRevealBombardWarhead_Dummy
-	End
-End
-
-;----------------------------
-Weapon WildMountainGiantRockMeleeAttack							// Smash straight down with the rock when too close to throw it
-  LeechRangeWeapon = Yes
-  AttackRange				= 30.0
-  MeleeWeapon				= Yes
-  DelayBetweenShots			= 3600            ; time between shots, msec
-  FiringDuration			= 2000            
-  PreAttackDelay			= 1400			  
-  PreAttackType				= PER_SHOT
-  FireFX					= FX_TreeBeardPunch
-  RadiusDamageAffects		= ENEMIES NEUTRALS
-  ;DamageDealtAtSelfPosition = Yes ; A melee based AoE.  Arc radiates from me, not them
-
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = WILD_MOUNTAIN_GIANT_ROCK_MELEE_DAMAGE
-    Radius        = WILD_MOUNTAIN_GIANT_ROCK_MELEE_RADIUS
-    DelayTime     = 0
-    DamageType    = SIEGE
-    DamageFXType  = CLUBBING
-    DeathType     = NORMAL
-    DamageArc	  = 180
-  End
-  MetaImpactNugget                    ; A Nugget that throws things back with force
-    ShockWaveAmount   = 60.0
-    ShockWaveRadius   = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
-    ShockWaveTaperOff = 1.0
-    ShockWaveArc      = 40
-;    ShockWaveZMult   = 0.75
-;    HeroResist		  = 0.90		; 90% resistance to heroes
-  End
-End
-
-;----------------------------------------------------------------------------------------------------------------
-; This is the building attack and is also used against monsters
-Weapon GiantBuildingTeardown
-	RadiusDamageAffects		= ENEMIES NEUTRALS
-	CanFireWhileMoving		= No
-	LeechRangeWeapon		= Yes				;Just like the troll, this needs to go with Melee to let me hurt round buildings.
-	AttackRange				= 20.0
-	AntiStructure			= Yes				; Ram ONLY affects structures -- buildings, walls, gates
-	AntiGround				= Yes				; Can attack monsters too
-	MeleeWeapon				= Yes
-	AcceptableAimDelta		= 20				; Can't ram sideways (but give a little slack)
-	FireFX					= FX_TreeBeardBash
-	DelayBetweenShots		= 3900				; time between shots, msec
-	FiringDuration			= 1900				; min 1900 for anim
-	PreAttackDelay			= 1100
-	PreAttackType			= PER_SHOT			; Do the delay each time we attack a new target
-
-	DamageNugget                        ; A basic Nugget that just does damage
-		SpecialObjectFilter	= ANY +STRUCTURE +BLOCKING_GATE
-		Damage        = WILD_MOUNTAIN_GIANT_BUILDINGATTACK_DAMAGE
-		Radius        = 0.0
-		DelayTime     = 0
-		DamageType    = SIEGE
-		DamageFXType  = CLUBBING
-		DeathType     = NORMAL
-	End
-
-	DamageNugget                        ; A basic Nugget that just does damage
-		SpecialObjectFilter = ANY +MONSTER
-		Damage        = WILD_MOUNTAIN_GIANT_ANTIMONSTER_DAMAGE
-		Radius        = 0.0
-		DelayTime     = 0
-		DamageType    = SIEGE
-		DamageFXType  = CLUBBING
-		DeathType     = NORMAL
-	End
-End
-
-;----------------------------
-Weapon WildMountainGiantRockThrowWarhead
-  ;FireFX= FX_ImpactEntRock
-  ProjectileCollidesWith = ENEMIES NEUTRAL STRUCTURES WALLS ; Remember, the projectile is a rock, who has no allies
-  RadiusDamageAffects	= ENEMIES ALLIES NEUTRALS 
-  
-  
-  	 DamageNugget                        ; A basic Nugget that just does damage
-		Damage        = WILD_MOUNTAIN_GIANT_ROCK_DAMAGE  ; Hella damage.  structures are on a different order of magnitude for hitpoints, and we want to be sure to outscore the fire damage so we can knock bits off.
-		DamageTaperOff = 50
-		Radius        = 100.0
-		DelayTime     = 0
-		DamageType    = SIEGE
-		DamageFXType  = BIG_ROCK
-		DeathType     = EXPLODED
-	    	DamageScalar  = 0% ALL ALLIES			; No damage to allies
-	    	DamageScalar  = 25% ANY ENEMIES +INFANTRY
-	    	DamageScalar  = 25% ANY ENEMIES +CAVALRY 
-	    	DamageScalar  = 125% ANY ENEMIES +STRUCTURE
-	End
-  
-  
-  MetaImpactNugget                    ; A Nugget that throws things back with force
-;	HeroResist			= .75
-    ShockWaveAmount		= 25.0
-    ShockWaveRadius		= 20.0
-    ShockWaveTaperOff	= 0.75
-;   ShockWaveZMult		= 1.20
-  End
-End
-
-;----------------------------
-Weapon WildMountainGiantRockThrowWarhead_Structural
-  ;FireFX= FX_ImpactEntRock
-  ProjectileCollidesWith = ENEMIES NEUTRAL STRUCTURES WALLS ; Remember, the projectile is a rock, who has no allies
-  RadiusDamageAffects	= ENEMIES ALLIES NEUTRALS 
-  
-  
-  	 DamageNugget                        ; A basic Nugget that just does damage
-		Damage        = WILD_MOUNTAIN_GIANT_ROCK_DAMAGE  ; Hella damage.  structures are on a different order of magnitude for hitpoints, and we want to be sure to outscore the fire damage so we can knock bits off.
-		DamageTaperOff = 50
-		Radius        = 100.0
-		DelayTime     = 0
-		DamageType    = SIEGE
-		DamageFXType  = BIG_ROCK
-		DeathType     = EXPLODED
-	    	DamageScalar  = 0% ALL ALLIES			; No damage to allies
-	    	DamageScalar  = 25% ANY ENEMIES +INFANTRY
-	    	DamageScalar  = 25% ANY ENEMIES +CAVALRY 
-	    	DamageScalar  = 125% ANY ENEMIES +STRUCTURE
-	End
-  
-  
-  MetaImpactNugget                    ; A Nugget that throws things back with force
-;	HeroResist			= .75
-    ShockWaveAmount		= 25.0
-    ShockWaveRadius		= 20.0
-    ShockWaveTaperOff	= 0.75
-;   ShockWaveZMult		= 1.20
-  End
-End
-
-;------------------------------------------------------------------------------
-; This is the normal punch, not the AOE, rock, siege or tree
-Weapon WildMountainGiantPunch1				; ATKA - Left arm swat
-  LeechRangeWeapon = Yes
-  AttackRange				= 30.0
-  MeleeWeapon				= Yes
-  ;HoldAfterFiringDelay		= 1400			; don't let the unit AI do anything else until animation finishes
-  DelayBetweenShots			= 1400			; slightly less than FiringDuration
-  FiringDuration			= 1600			; remaining 48 frames of 90
-  PreAttackDelay			= 1400			; anim frame 42/90
-  PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
-  FireFX					= FX_TreeBeardPunch
-  RadiusDamageAffects		= ENEMIES NEUTRALS
-  DamageDealtAtSelfPosition = Yes ; A melee based AoE.  Arc radiates from me, not them
-  LockWhenUsing				= Yes
-
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = WILD_MOUNTAIN_GIANT_PUNCH_DAMAGE
-    Radius        = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
-    DelayTime     = 0
-    DamageType    = SIEGE
-    DamageFXType  = CLUBBING
-    DeathType     = NORMAL
-    DamageArc	  = 40
-  End
-  MetaImpactNugget                    ; A Nugget that throws things back with force
-    ShockWaveAmount   = 60.0
-    ShockWaveRadius   = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
-    ShockWaveTaperOff = 1.0
-    ShockWaveArc      = 40
-;    ShockWaveZMult   = 0.75
-;    HeroResist		  = 0.90		; 90% resistance to heroes
-  End
-End
-
-Weapon WildMountainGiantPunch2				; ATKB - Right backhand
-  LeechRangeWeapon = Yes
-  AttackRange				= 30.0
-  MeleeWeapon				= Yes
-  ;HoldAfterFiringDelay		= 1400			; don't let the unit AI do anything else until animation finishes
-  DelayBetweenShots			= 1400			; slightly less than FiringDuration
-  FiringDuration			= 1600			; remaining 47 frames of 81 (rounded to nearest logic frame)
-  PreAttackDelay			= 1200			; anim frame 34/81 (rounded to nearest logic frame)
-  PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
-  FireFX					= FX_TreeBeardPunch
-  RadiusDamageAffects		= ENEMIES NEUTRALS
-  DamageDealtAtSelfPosition = Yes ; A melee based AoE.  Arc radiates from me, not them
-  LockWhenUsing				= Yes
-
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = WILD_MOUNTAIN_GIANT_PUNCH_DAMAGE
-    Radius        = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
-    DelayTime     = 0
-    DamageType    = SIEGE
-    DamageFXType  = CLUBBING
-    DeathType     = NORMAL
-    DamageArc	  = 40
-  End
-  MetaImpactNugget                    ; A Nugget that throws things back with force
-    ShockWaveAmount   = 60.0
-    ShockWaveRadius   = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
-    ShockWaveTaperOff = 1.0
-    ShockWaveArc      = 40
-;    ShockWaveZMult   = 0.75
-;    HeroResist		  = 0.90		; 90% resistance to heroes
-  End
-End
-
-Weapon WildMountainGiantPunch3				; ATKD - Right football kick
-  LeechRangeWeapon = Yes
-  AttackRange				= 30.0
-  MeleeWeapon				= Yes
-  ;HoldAfterFiringDelay		= 1200			; don't let the unit AI do anything else until animation finishes
-  DelayBetweenShots			= 1400
-  FiringDuration			= 1400			; remaining 43 frames of 71 (rounded to nearest logic frame)
-  PreAttackDelay			= 1000			; anim frame 28/71 (rounded to nearest logic frame)
-  PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
-  FireFX					= FX_TreeBeardPunch
-  RadiusDamageAffects		= ENEMIES NEUTRALS
-  DamageDealtAtSelfPosition = Yes ; A melee based AoE.  Arc radiates from me, not them
-  LockWhenUsing				= Yes
-
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = WILD_MOUNTAIN_GIANT_PUNCH_DAMAGE
-    Radius        = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
-    DelayTime     = 0
-    DamageType    = SIEGE
-    DamageFXType  = CLUBBING
-    DeathType     = NORMAL
-    DamageArc	  = 40
-  End
-  MetaImpactNugget                    ; A Nugget that throws things back with force
-    ShockWaveAmount   = 60.0
-    ShockWaveRadius   = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
-    ShockWaveTaperOff = 1.0
-    ShockWaveArc      = 40
-;    ShockWaveZMult   = 0.75
-;    HeroResist		  = 0.90		; 90% resistance to heroes
-  End
-End
-
-Weapon WildMountainGiantMovingPunch				; ATRA - Right backhand while moving
-  LeechRangeWeapon = Yes
-  AttackRange				= 30.0
-  MeleeWeapon				= Yes
-  ;HoldAfterFiringDelay		= 1200			; don't let the unit AI do anything else until animation finishes
-  DelayBetweenShots			= 1400
-  FiringDuration			= 600			; remaining 20 frames of 44 (rounded to nearest logic frame)
-  PreAttackDelay			= 800			; anim frame 22/44 (rounded to nearest logic frame)
-  PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
-  FireFX					= FX_TreeBeardPunch
-  RadiusDamageAffects		= ENEMIES NEUTRALS
-  DamageDealtAtSelfPosition = Yes ; A melee based AoE.  Arc radiates from me, not them
-  LockWhenUsing				= Yes
-
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = WILD_MOUNTAIN_GIANT_PUNCH_DAMAGE
-    Radius        = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
-    DelayTime     = 0
-    DamageType    = SIEGE
-    DamageFXType  = CLUBBING
-    DeathType     = NORMAL
-    DamageArc	  = 40
-  End
-  MetaImpactNugget                    ; A Nugget that throws things back with force
-    ShockWaveAmount   = 60.0
-    ShockWaveRadius   = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
-    ShockWaveTaperOff = 1.0
-    ShockWaveArc      = 40
-;    ShockWaveZMult   = 0.75
-;    HeroResist		  = 0.90		; 90% resistance to heroes
-  End
-End
-
-;----------------------------
-Weapon WildMountainGiantRockFromThinAir  ; BALANCE TreeBeard Weapon Rock
-	AttackRange					= WILD_MOUNTAIN_GIANT_ROCK_DAMAGE
-	WeaponSpeed					= 200.0        ; dist/sec (huge value == effectively instant)
-	FireFX						= FX_TrollTreeSwing
-	PreAttackDelay				= 6200
-	FiringDuration				= 1800
-	DelayBetweenShots			= 4000
-	PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
-	HitPercentage				= 0 ; never auto hits, always hits ground
-	ScatterRadius				= 4.0     ;When this weapon misses it can randomly miss by as much as this distance.
-	IsAimingWeapon				= Yes	; Shooter will use his AimWeaponBehavior to get extra model condition flags
-	NoVictimNeeded				= Yes ; Need no target
-	LeechRangeWeapon			= Yes
-
-	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
-		ProjectileTemplateName		= RockBigTreeberd
-		WarheadTemplateName			= WildMountainGiantRockFromThinAirWarhead
-	End
-End
-
-;----------------------------
-Weapon WildMountainGiantRockFromThinAirWarhead
-  ;FireFX= FX_ImpactEntRock
-  ProjectileCollidesWith	= ENEMIES NEUTRAL STRUCTURES WALLS 
-  RadiusDamageAffects		= ENEMIES NEUTRALS
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = WILD_MOUNTAIN_GIANT_ROCK_DAMAGE
-    Radius        = 10.0
-    DelayTime     = 0
-    DamageType    = SIEGE
-    DamageFXType  = SMALL_ROCK
-    DeathType     = NORMAL
-  End
-  MetaImpactNugget                    ; A Nugget that throws things back with force
-;	HeroResist			= .75
-    ShockWaveAmount		= 50.0
-    ShockWaveRadius		= 30.0
-    ShockWaveTaperOff	= 0.75
-;   ShockWaveZMult		= 1.20
-  End
-End
-
-;------------------------------------------------------------------------------
-Weapon WildMountainGiantStomp ; Special ability
-	IdleAfterFiringDelay = 0
-	AttackRange = WILD_MOUNTAIN_GIANT_STOMP_RADIUS
-	MinimumAttackRange = 0.8
-	WeaponSpeed = 401         ; dist/sec 
-	MinWeaponSpeed = 241
-	MaxWeaponSpeed = 601      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
-	ScaleWeaponSpeed = Yes ; Used for lob weapons, scales speed proportional to range
-	RadiusDamageAffects = ENEMIES NOT_SIMILAR
-	DelayBetweenShots = 5000               ; time between shots, msec
-	PreAttackDelay        = 2600
-	PreAttackType         = PER_ATTACK ; Do the delay each time we attack a new target
-	PreAttackFX           = FX_GandalfPreAttackBlast
-	FireFX                = FX_GiantStomp
-	FiringDuration      = 1400
-	DamageNugget                        ; A basic Nugget that just does damage
-		Damage			= WILD_MOUNTAIN_GIANT_STOMP_DAMAGE
-		Radius			= WILD_MOUNTAIN_GIANT_STOMP_RADIUS
-		DamageType		= FORCE
-		DeathType		= NORMAL
-		DamageSpeed		= 700.0 ; must match the ShockWaveSpeed below
-	End
-	MetaImpactNugget                    ; A Nugget that throws things back with force
-;		HeroResist			= .75
-		ShockWaveAmount   = 35.0
-		ShockWaveRadius   = WILD_MOUNTAIN_GIANT_STOMP_RADIUS
-		ShockWaveTaperOff = 1.0
-		ShockWaveSpeed	  = 700.0 
-	End
-End
-
-;------------------------------------------------------------------------------
-Weapon MountainGiantDeath  ; BALANCE Ent Death toppling over units
-  RadiusDamageAffects = ALLIES ENEMIES NEUTRALS
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = WILD_MOUNTAIN_GIANT_DEATH_DAMAGE
-    Radius        = WILD_MOUNTAIN_GIANT_DEATH_RADIUS
-    DelayTime     = 0
-    DamageType    = CRUSH
-    DeathType     = NORMAL
-  End
-  MetaImpactNugget                    ; A Nugget that throws things back with force
-;	HeroResist			= .75
-    ShockWaveAmount		= 40.0
-    ShockWaveRadius		= 40.0
-    ShockWaveTaperOff	= 1.0
-  End
 End
 
 ;------------------------------------------------------------------------------ SEE!
@@ -1972,6 +1366,22 @@ Weapon GoblinFighterSwordPoisonedUpgraded						//This is not used, I think? (Naz
 		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
 	End
 End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2876,6 +2286,707 @@ Weapon MoriaCaveTrollCrush  					; Used when the rohirrim crush an enemy.
     DelayTime     			= 0
     DamageType    			= CRUSH
     DeathType     			= CRUSHED
+  End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+Weapon WildMountainGiantStomp 			; Special ability
+	IdleAfterFiringDelay 		= 0
+	AttackRange 			= 25.0 		; only half of M_WILD_MOUNTAIN_GIANT_STOMP_RADIUS
+	MinimumAttackRange 		= 0.8
+	WeaponSpeed 			= 401       ; dist/sec 
+	MinWeaponSpeed 			= 241
+	MaxWeaponSpeed 		= 601      	; dist/sec Upper limit on scaling, when attacking past nominal "max" range
+	ScaleWeaponSpeed 		= Yes 		; Used for lob weapons, scales speed proportional to range
+	RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	DelayBetweenShots 		= 5000               ; time between shots, msec
+	PreAttackDelay        	= 2600
+	PreAttackType         	= PER_ATTACK ; Do the delay each time we attack a new target
+	PreAttackFX           	= FX_GandalfPreAttackBlast
+	FireFX                	= FX_GiantStomp
+	FiringDuration      		= 1400
+	DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+	LockWhenUsing			= Yes
+  
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage				= WILD_MOUNTAIN_GIANT_STOMP_DAMAGE
+		Radius				= WILD_MOUNTAIN_GIANT_STOMP_RADIUS
+		DamageType			= FORCE
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageSpeed			= 700.0 ; must match the ShockWaveSpeed below
+		DamageScalar  		= 25% ALL ALLIES
+		DamageScalar  		= 250% NONE +HERO	//Added for SEE!
+		DamageArc      		= 180
+	End
+	
+	MetaImpactNugget                    ; A Nugget that throws things back with force
+		;HeroResist			= .75
+		ShockWaveArc      	= 180
+		ShockWaveAmount   	= 35.0
+		ShockWaveRadius   	= WILD_MOUNTAIN_GIANT_STOMP_RADIUS
+		ShockWaveTaperOff 	= 1.0
+		ShockWaveSpeed	  	= 700.0 
+	End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+; This is the normal punch, not the AOE, rock, siege or tree
+Weapon WildMountainGiantPunch1				; ATKA - Left arm swat
+  LeechRangeWeapon 			= Yes
+  AttackRange				= 20.0 ;30.0
+  MeleeWeapon				= Yes
+  ;HoldAfterFiringDelay			= 1400			; don't let the unit AI do anything else until animation finishes
+  DelayBetweenShots			= 1400			; slightly less than FiringDuration
+  FiringDuration				= 1600			; remaining 48 frames of 90
+  PreAttackDelay				= 1400			; anim frame 42/90
+  PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
+  FireFX					= FX_TreeBeardPunch
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+  DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+  LockWhenUsing				= Yes
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        			= WILD_MOUNTAIN_GIANT_PUNCH_DAMAGE
+    Radius        			= WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
+    DelayTime     			= 0
+    DamageType    			= SIEGE
+    DamageFXType  			= CLUBBING
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+    DamageArc	  			= 40
+	DamageScalar  			= 25% ALL ALLIES
+  	DamageScalar  			= 200% NONE +HERO	//Added for SEE!	
+    DamageScalar				= 250% NONE +RohanTreeBerd //+RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+    ShockWaveAmount   		= 60.0
+    ShockWaveRadius   		= WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
+    ShockWaveTaperOff 		= 1.0
+    ShockWaveArc      		= 40
+;    ShockWaveZMult   = 0.75
+;    HeroResist		  = 0.90		; 90% resistance to heroes
+  End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+Weapon WildMountainGiantPunch2				; ATKB - Right backhand
+  LeechRangeWeapon 			= Yes
+  AttackRange				= 20.0 ;30.0
+  MeleeWeapon				= Yes
+  ;HoldAfterFiringDelay			= 1400			; don't let the unit AI do anything else until animation finishes
+  DelayBetweenShots			= 1400			; slightly less than FiringDuration
+  FiringDuration				= 1600			; remaining 47 frames of 81 (rounded to nearest logic frame)
+  PreAttackDelay				= 1200			; anim frame 34/81 (rounded to nearest logic frame)
+  PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
+  FireFX					= FX_TreeBeardPunch
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+  DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+  LockWhenUsing				= Yes
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        			= WILD_MOUNTAIN_GIANT_PUNCH_DAMAGE
+    Radius        			= WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
+    DelayTime     			= 0
+    DamageType    			= SIEGE
+    DamageFXType  			= CLUBBING
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+    DamageArc	  			= 40
+	DamageScalar  			= 25% ALL ALLIES
+  	DamageScalar  			= 200% NONE +HERO	//Added for SEE!	
+  	DamageScalar				= 250% NONE +RohanTreeBerd //+RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+    ShockWaveAmount   		= 60.0
+    ShockWaveRadius   		= WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
+    ShockWaveTaperOff 		= 1.0
+    ShockWaveArc      		= 40
+;    ShockWaveZMult   			= 0.75
+;    HeroResist		  		= 0.90		; 90% resistance to heroes
+  End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+Weapon WildMountainGiantPunch3				; ATKD - Right football kick
+  LeechRangeWeapon 			= Yes
+  AttackRange				= 20.0 ;30.0
+  MeleeWeapon				= Yes
+  ;HoldAfterFiringDelay			= 1200			; don't let the unit AI do anything else until animation finishes
+  DelayBetweenShots			= 1400
+  FiringDuration				= 1400			; remaining 43 frames of 71 (rounded to nearest logic frame)
+  PreAttackDelay				= 1000			; anim frame 28/71 (rounded to nearest logic frame)
+  PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
+  FireFX					= FX_TreeBeardPunch
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+  DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+  LockWhenUsing				= Yes
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        			= WILD_MOUNTAIN_GIANT_PUNCH_DAMAGE
+    Radius        			= WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
+    DelayTime     			= 0
+    DamageType    			= SIEGE
+    DamageFXType  			= CLUBBING
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+    DamageArc	  			= 40
+	DamageScalar  			= 25% ALL ALLIES
+  	DamageScalar  			= 250% NONE +HERO	//Added for SEE!	
+  	DamageScalar				= 300% NONE +RohanTreeBerd //+RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+    ShockWaveAmount   		= 60.0
+    ShockWaveRadius   		= WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
+    ShockWaveTaperOff 		= 1.0
+    ShockWaveArc      		= 40
+;    ShockWaveZMult   			= 0.75
+;    HeroResist		  		= 0.90		; 90% resistance to heroes
+  End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+Weapon WildMountainGiantMovingPunch				; ATRA - Right backhand while moving
+  LeechRangeWeapon 			= Yes
+  AttackRange				= 20.0 ;30.0
+  MeleeWeapon				= Yes
+  ;HoldAfterFiringDelay			= 1200			; don't let the unit AI do anything else until animation finishes
+  DelayBetweenShots			= 1400
+  FiringDuration				= 600			; remaining 20 frames of 44 (rounded to nearest logic frame)
+  PreAttackDelay				= 800			; anim frame 22/44 (rounded to nearest logic frame)
+  PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
+  FireFX					= FX_TreeBeardPunch
+  RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+  DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+  LockWhenUsing				= Yes
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        			= WILD_MOUNTAIN_GIANT_PUNCH_DAMAGE
+    Radius        			= WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
+    DelayTime     			= 0
+    DamageType    			= SIEGE
+    DamageFXType  			= CLUBBING
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+    DamageArc	  			= 40
+	DamageScalar  			= 25% ALL ALLIES
+  	DamageScalar  			= 150% NONE +HERO	//Added for SEE!	
+  	DamageScalar				= 200% NONE +RohanTreeBerd //+RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+    ShockWaveAmount   		= 60.0
+    ShockWaveRadius   		= WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
+    ShockWaveTaperOff 		= 1.0
+    ShockWaveArc      		= 40
+;    ShockWaveZMult   			= 0.75
+;    HeroResist		  		= 0.90		; 90% resistance to heroes
+  End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+; This is the building attack and is also used against monsters
+Weapon GiantBuildingTeardown
+	RadiusDamageAffects		= ENEMIES NEUTRALS
+	CanFireWhileMoving		= No
+	LeechRangeWeapon		= Yes				;Just like the troll, this needs to go with Melee to let me hurt round buildings.
+	AttackRange				= 20.0
+	AntiStructure				= Yes				; Ram ONLY affects structures -- buildings, walls, gates
+	AntiGround				= Yes				; Can attack monsters too
+	MeleeWeapon				= Yes
+	AcceptableAimDelta		= 20				; Can't ram sideways (but give a little slack)
+	FireFX					= FX_TreeBeardBash
+	DelayBetweenShots		= 3900				; time between shots, msec
+	FiringDuration				= 1900				; min 1900 for anim
+	PreAttackDelay			= 1100
+	PreAttackType			= PER_SHOT			; Do the delay each time we attack a new target
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		SpecialObjectFilter		= ANY +STRUCTURE +BLOCKING_GATE
+		Damage        		= WILD_MOUNTAIN_GIANT_BUILDINGATTACK_DAMAGE
+		Radius        		= 0.0
+		DelayTime     		= 0
+		DamageType    		= SIEGE
+		DamageFXType  		= CLUBBING
+		DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+	End
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		SpecialObjectFilter 	= ANY +MONSTER
+		Damage        		= WILD_MOUNTAIN_GIANT_ANTIMONSTER_DAMAGE
+		Radius        		= 0.0
+		DelayTime     		= 0
+		DamageType    		= SIEGE
+		DamageFXType  		= CLUBBING
+		DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+	End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+; This is the toggle weapon for giants. They will reload, throw, reload straight away, and constantly hold a rock.
+Weapon GiantRockThrow		// Used by ALL MountainGiants as RockThrow! /Naz
+	HoldDuringReload			= Yes							
+	AttackRange				= WILD_MOUNTAIN_GIANT_ROCK_RANGE
+	MinimumAttackRange		= WILD_MOUNTAIN_GIANT_ROCK_MINRANGE
+	RangeBonusMinHeight		= 10
+	RangeBonus				= 1
+	RangeBonusPerFoot		= #MULTIPLY( WILD_MOUNTAIN_GIANT_ROCK_RANGE .025 )
+	
+	WeaponSpeed			= 200.0							; dist/sec (huge value == effectively instant)
+	FireFX					= FX_EntThrowSmallRock
+	PreAttackDelay			= 1200
+	FiringDuration				= 2000
+	PreAttackType			= PER_SHOT						; Do the delay each time we attack a new target
+	DelayBetweenShots		= 6000
+	ClipSize 					= 6 ; ;
+	AutoReloadsClip 			= Yes
+	ClipReloadTime          	= 6000; how long to reload a Clip, msec
+	; HitPercentage			= 0								; never auto hits, always hits ground
+	; ScatterRadius			= 4.0							; When this weapon misses it can randomly miss by as much as this distance.
+	HitPercentage				= 0     ;Make sure that scatter radius is called so that multiple projectiles will land separately.
+	ScatterRadius				= 0.0     ;When this weapon misses it can randomly miss by as much as this distance.
+  	; ; Instead of a purely random scatter distance, this will divide a clip evenly and randomly at these spots
+  	ScatterTargetScalar 		= 1.0 ; replaces the ScatterRadius, above, for scaling this table, below
+  	ScatterTarget           	= X: 43 Y: 14
+  	ScatterTarget           	= X: 20 Y:-32
+  	ScatterTarget           	= X:-25 Y: 36
+  	ScatterTarget           	= X: 0.000 Y: 0.000 
+  	ScatterTarget           	= X:-16 Y: 19
+  	ScatterTarget           	= X: 19 Y: 16
+	ScatterIndependently		= Yes		;Each projectile fired at once from this weapon should scatter independently of each other.
+	IsAimingWeapon			= Yes							; Shooter will use his AimWeaponBehavior to get extra model condition flags
+	NoVictimNeeded			= Yes							; Need no target
+	LeechRangeWeapon		= Yes
+
+	HoldAfterFiringDelay		= 4200
+	AutoReloadWhenIdle		= 1800							; should be a bit less than IdleAfterFiringDelay or HoldAfterFiringDelay
+	//ClipSize 				= 1
+	AutoReloadsClip 			= NO
+	ClipReloadTime 			= 2000
+
+	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
+		ProjectileTemplateName	= RockBigGiant
+		WarheadTemplateName		= WildMountainGiantRockThrowWarhead
+	End
+	
+	ProjectileNugget													; This nugget is to create a revealing object, so fire
+		AlwaysAttackHereOffset	= X:0 Y:0 Z:0							; it directly on top of us, and just use an empty warhead
+		UseAlwaysAttackOffset		= Yes									; so we don't assert.
+		ProjectileTemplateName  	= ShroudRevealer_Bombard
+		WarheadTemplateName		= ShipRevealBombardWarhead_Dummy
+	End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+Weapon GiantRockThrowCloseRange
+	;IdleAfterFiringDelay			= 2000							; Do NOT idle after throwing or Bombard will break
+	HoldDuringReload				= Yes							
+	AttackRange					= WILD_MOUNTAIN_GIANT_ROCK_MINRANGE
+	RangeBonusMinHeight			= 10
+	RangeBonus					= 1
+	RangeBonusPerFoot			= #MULTIPLY( WILD_MOUNTAIN_GIANT_ROCK_MINRANGE .025 )
+	
+	WeaponSpeed				= 200.0							; dist/sec (huge value == effectively instant)
+	FireFX						= FX_EntThrowSmallRock
+	PreAttackDelay				= 1200
+	FiringDuration					= 2000
+	PreAttackType				= PER_SHOT						; Do the delay each time we attack a new target
+	DelayBetweenShots			= 6000
+	HitPercentage					= 0								; never auto hits, always hits ground
+	ScatterRadius					= 4.0							; When this weapon misses it can randomly miss by as much as this distance.
+
+	IsAimingWeapon				= Yes							; Shooter will use his AimWeaponBehavior to get extra model condition flags
+	NoVictimNeeded				= Yes							; Need no target
+	LeechRangeWeapon			= Yes
+	HoldAfterFiringDelay			= 4200
+	AutoReloadWhenIdle			= 1800							; should be a bit less than IdleAfterFiringDelay or HoldAfterFiringDelay
+	//ClipSize 					= 1
+	AutoReloadsClip 				= NO
+	ClipReloadTime 				= 2000
+
+	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
+		ProjectileTemplateName	= RockBigGiant
+		WarheadTemplateName		= WildMountainGiantRockThrowWarhead
+	End
+End
+
+;---------------------------- ^^
+Weapon WildMountainGiantRockThrowWarhead
+  ;FireFX= FX_ImpactEntRock
+  ProjectileCollidesWith 			= ENEMIES NEUTRAL STRUCTURES WALLS ALLIES ;Remember, the projectile is a rock, who has no allies
+  RadiusDamageAffects 			= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+    
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        				= WILD_MOUNTAIN_GIANT_ROCK_DAMAGE
+    Radius         				= 30.0
+    DelayTime     				= 0
+    DamageType    				= SIEGE
+    DamageFXType  				= SMALL_ROCK
+    DeathType     				= LASERED ;now always used instead of NORMAL (Sûl)
+	DamageScalar  	= 25% ALL ALLIES
+  	DamageScalar		= 200% NONE +RohanTreeBerd //+RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!
+  	DamageScalar		= 200% NONE +STRUCTURE	//Added for SEE!
+  	DamageScalar  	= 300% NONE +HERO	//Added for SEE!	
+  	DamageScalar  	= 500% NONE +SHIP	//Added for SEE!
+  End
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        				= WILD_MOUNTAIN_GIANT_ROCK_DAMAGE  ; Hella damage.  structures are on a different order of magnitude for hitpoints, and we want to be sure to outscore the fire damage so we can knock bits off.
+    DamageTaperOff 				= 50
+    Radius        				= 100.0
+    DelayTime     				= 0
+    DamageType    				= SIEGE
+    DamageFXType  				= BIG_ROCK
+    DeathType     				= EXPLODED
+	DamageScalar  	= 0% ALL ENEMIES -WALL_UPGRADE -WALL_HUB -WALL_SEGMENT -DEFENSIVE_WALL	-FS_BASE_DEFENSE		; No damage to allied structures.
+	DamageScalar 	= 0% ALL ALLIES
+	DamageScalar  	= 120% ANY ENEMIES +FS_BASE_DEFENSE ; ;
+    ; DamageScalar  	= 500% NONE +SHIP			//Added for SEE!
+  End
+
+  MetaImpactNugget   			; A Nugget that throws things back with force
+    ; HeroResist					= .75
+    ShockWaveAmount			= 25.0
+    ShockWaveRadius				= 30.0
+    ShockWaveTaperOff			= 0.75
+    ; ShockWaveZMult				= 1.20
+  End
+End
+
+;------------------------------------------------------------------------------ SEE!
+Weapon MountainGiantDeath  ; BALANCE Ent Death toppling over units
+  RadiusDamageAffects 	= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+  
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        		= WILD_MOUNTAIN_GIANT_DEATH_DAMAGE
+    Radius        		= WILD_MOUNTAIN_GIANT_DEATH_RADIUS
+    DelayTime     		= 0
+    DamageType    		= CRUSH // Ents have FORCE?
+    DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
+	DamageScalar  		= 200% NONE +HERO	//Added for SEE!
+  End
+  
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+;	HeroResist			= .75
+    ShockWaveAmount	= 40.0
+    ShockWaveRadius		= 40.0
+    ShockWaveTaperOff	= 1.0
+  End
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;------------------------------------------------------------------------------
+Weapon WildSpiderRiderBow     ; BALANCE Wild Spider Rider bow Weapon
+	AttackRange         	= WILD_SPIDERRIDER_RANGE
+	
+	RangeBonusMinHeight      = 30 ;	= 10
+	RangeBonus		= 1
+	RangeBonusPerFoot	= #MULTIPLY( WILD_SPIDERRIDER_RANGE .003 )  
+	
+	WeaponSpeed         	= 321         ; dist/sec 
+	MinWeaponSpeed      	= 241
+	MaxWeaponSpeed      	= 481      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
+	FireFX              	= FX_RohanArcherBowWeapon
+	ScaleWeaponSpeed    	= Yes		;Used for lob weapons, scales speed proportional to range
+	HitPercentage       	= 100		;When this weapon is used it will hit exactly 50% of the time.
+	ScatterRadius       	= 16.0		;When this weapon misses it can randomly miss by as much as this distance.
+	  
+	AcceptableAimDelta		= 20		; prevent twitchy reaiming in horde on horde
+	
+	DelayBetweenShots   	= 0
+	
+	PreAttackDelay      	= WILD_SPIDERRIDER_BOW_PREATTACKDELAY 
+	PreAttackType			= PER_SHOT
+	;PreAttackRandomAmount	= 200   
+	FiringDuration			= 0
+	RequireFollowThru		= Yes
+	  
+	;AutoReloadWhenIdle		= 1	
+	
+	ClipSize				= 1
+	AutoReloadsClip			= Yes
+	ClipReloadTime			= Min:WILD_SPIDERRIDER_BOW_RELOADTIME_MIN Max:WILD_SPIDERRIDER_BOW_RELOADTIME_MAX
+	
+	;ContinuousFireOne		= 0
+	;ContinuousFireCoast		= WILD_SPIDERRIDER_BOW_RELOADTIME_MAX
+	  
+	AntiAirborneVehicle		= Yes
+	AntiAirborneMonster		= Yes
+	HitPassengerPercentage	= 20%
+	CanBeDodged				= Yes ; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
+
+	ProjectileNugget                    ; Default arrow
+	    ProjectileTemplateName    = EvilFactionArrow
+	    WarheadTemplateName       = WildSpiderRiderBowWarhead
+	    ForbiddenUpgradeNames     = Upgrade_WildFireArrows
+	End	
+  		
+	ProjectileNugget    ; Fire Arrow
+		ProjectileTemplateName  = EvilFactionFireArrow
+		WarheadTemplateName      = WildSpiderRiderBowFireWarhead
+		RequiredUpgradeNames     = Upgrade_WildFireArrows
+	End
+End
+
+;----------------------------
+Weapon WildSpiderRiderBowWarhead
+  ProjectileCollidesWith	= ENEMIES NEUTRAL STRUCTURES WALLS ;ALLIES (4/23/04 removed friendly fire)
+  RadiusDamageAffects		= ENEMIES NEUTRALS ALLIES NOT_SIMILAR
+  HitStoredTarget			= Yes	; Always hits initial target.
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = WILD_SPIDERRIDER_BOW_DAMAGE
+    Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+    DelayTime     = 0
+    DamageType    = PIERCE
+    DamageFXType  = EVIL_ARROW_PIERCE
+    DeathType     = NORMAL
+    DamageScalar  = 50% NONE +GondorTowerShieldGuard +RohanSpearmen +ElvenMithlondSentry +DwarvenPhalanx +ArnorTowerShieldGuard
+    DamageScalar  = 50% NONE +AngmarRhudaurSpearman +WildMarauder +IsengardPikeman +AngmarHillTroll +MordorEasterling
+  End
+End
+
+
+;----------------------------
+Weapon WildSpiderRiderBowFireWarhead
+	ProjectileCollidesWith	= ENEMIES NEUTRAL STRUCTURES WALLS 
+	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ;ALLIES
+	HitStoredTarget			= Yes	; Always hits initial target.
+
+	DamageNugget                        
+		Damage        = WILD_SPIDERRIDER_FIRE_UPGRADE_DAMAGE_FLAME
+		Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+		DelayTime     = 0
+		DamageType    = FLAME
+		DamageFXType  = EVIL_ARROW_PIERCE
+		DeathType     = BURNED
+		AcceptDamageAdd = No
+		DamageScalar  = 25% ALL -STRUCTURE
+	End
+
+	DamageNugget        ; A basic Nugget that just does damage
+		Damage        	= 1
+		Radius        	= 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+		DamageType    	= FLAME
+		DamageFXType  	= FLAME
+		DeathType     	= BURNED
+		AcceptDamageAdd = No
+		DamageScalar	= 50000% NONE +MINE ; Make sure we one shot kill mines, without risking wasting some poor hero with a torch
+	End
+	
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        = WILD_SPIDERRIDER_FIRE_UPGRADE_DAMAGE
+		Radius        = 0.0	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+		DelayTime     = 0
+		DamageType    = PIERCE
+		DamageFXType  = EVIL_ARROW_PIERCE
+		DeathType     = NORMAL
+	    	DamageScalar  = 50% NONE +GondorTowerShieldGuard +RohanSpearmen +ElvenMithlondSentry +DwarvenPhalanx +ArnorTowerShieldGuard
+	    	DamageScalar  = 50% NONE +AngmarRhudaurSpearman +WildMarauder +IsengardPikeman +AngmarHillTroll +MordorEasterling
+	End
+End
+
+;------------------------------------------------------------------------------
+Weapon WildSpiderRiderSword
+	LeechRangeWeapon		= Yes
+	AttackRange				= 30.0
+	MeleeWeapon				= Yes
+	DelayBetweenShots		= WILD_SPIDERRIDER_SWORD_DELAYBETWEENSHOTS ; time between shots, msec
+	PreAttackDelay			= WILD_SPIDERRIDER_SWORD_PREATTACKDELAY ; 300 is mace swing delay time before contact with target.
+	PreAttackType			= PER_SHOT ; Do the delay each time we attack
+	FireFX					= FX_GondorSwordHit
+	FireFlankFX				= FX_Flanking
+	FiringDuration			= WILD_SPIDERRIDER_SWORD_FIRINGDURATION ; Duration of the mace swing 
+
+	DamageNugget
+		Damage					= WILD_SPIDERRIDER_MELEE_DAMAGE
+		Radius					= 0.0
+		DelayTime				= 0
+		DamageType				= CAVALRY
+		DeathType				= NORMAL
+		FlankingBonus				= 50%
+		ForbiddenUpgradeNames			= Upgrade_WildForgedBlades
+	End
+
+	DamageNugget                       
+		Damage					= WILD_SPIDERRIDER_MELEE_DAMAGE_UPGRADE
+		Radius					= 0.0
+		DelayTime				= 0
+		DamageType				= CAVALRY
+		DamageFXType				= SWORD_SLASH
+		DeathType				= NORMAL
+		RequiredUpgradeNames			= Upgrade_WildForgedBlades
+		FlankingBonus 				= 50%
+	End
+
+	DOTNugget
+		Damage				= 4
+		AcceptDamageAdd			= No
+		Radius				= 0.0
+		DelayTime			= 0
+		DamageType			= POISON
+		DamageFXType			= POISON
+		DeathType			= NORMAL
+		DamageInterval			= 1000
+		DamageDuration			= 10000
+		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER 
+	End
+End
+
+
+;------------------------------------------------------------------------------
+; This is the attack with rock in hand
+; Mountain Giant
+;Weapon WildMountainGiantRockThrow  ; BALANCE Mountaint Giant Weapon Rock
+;	IdleAfterFiringDelay		= 2000 ;Yes if I want to throw rock, then wait until the followthrough is complete, then go idle.
+;	AttackRange					= WILD_MOUNTAIN_GIANT_ROCK_RANGE
+;	
+;	RangeBonusMinHeight      = 30 ;	= 10
+;	RangeBonus		= 1
+;	RangeBonusPerFoot	= #MULTIPLY( WILD_MOUNTAIN_GIANT_ROCK_RANGE .003 )
+;	
+;	WeaponSpeed					= 200.0        ; dist/sec (huge value == effectively instant)
+;	ProjectileFilterInContainer	= ANY +ROCK +INFANTRY; We don't make the projectile, it is in our Contain module.
+;	FireFX						= FX_EntThrowSmallRock
+;	PreAttackDelay				= 1400
+;	PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
+;	HitPercentage				= 0 ; never auto hits, always hits ground
+;	ScatterRadius				= 4.0     ;When this weapon misses it can randomly miss by as much as this distance.
+;	FiringDuration				= 2000
+;	DelayBetweenShots			= 1000
+;	IsAimingWeapon				= Yes	; Shooter will use his AimWeaponBehavior to get extra model condition flags
+;	NoVictimNeeded				= Yes ; Need no target
+;	LeechRangeWeapon			= Yes
+;
+;	ProjectileNugget                    	; A Nugget that creates an Object and sends it to the target with a Warhead
+;		WarheadTemplateName 		= WildMountainGiantRockThrowWarhead
+;	End
+;End
+
+
+;----------------------------
+Weapon WildMountainGiantRockMeleeAttack							// Smash straight down with the rock when too close to throw it
+  LeechRangeWeapon = Yes
+  AttackRange				= 30.0
+  MeleeWeapon				= Yes
+  DelayBetweenShots			= 3600            ; time between shots, msec
+  FiringDuration			= 2000            
+  PreAttackDelay			= 1400			  
+  PreAttackType				= PER_SHOT
+  FireFX					= FX_TreeBeardPunch
+  RadiusDamageAffects		= ENEMIES NEUTRALS
+  ;DamageDealtAtSelfPosition = Yes ; A melee based AoE.  Arc radiates from me, not them
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = WILD_MOUNTAIN_GIANT_ROCK_MELEE_DAMAGE
+    Radius        = WILD_MOUNTAIN_GIANT_ROCK_MELEE_RADIUS
+    DelayTime     = 0
+    DamageType    = SIEGE
+    DamageFXType  = CLUBBING
+    DeathType     = NORMAL
+    DamageArc	  = 180
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+    ShockWaveAmount   = 60.0
+    ShockWaveRadius   = WILD_MOUNTAIN_GIANT_PUNCH_RADIUS
+    ShockWaveTaperOff = 1.0
+    ShockWaveArc      = 40
+;    ShockWaveZMult   = 0.75
+;    HeroResist		  = 0.90		; 90% resistance to heroes
+  End
+End
+
+
+
+;----------------------------
+Weapon WildMountainGiantRockThrowWarhead_Structural
+  ;FireFX= FX_ImpactEntRock
+  ProjectileCollidesWith = ENEMIES NEUTRAL STRUCTURES WALLS ; Remember, the projectile is a rock, who has no allies
+  RadiusDamageAffects	= ENEMIES ALLIES NEUTRALS 
+  
+  
+  	 DamageNugget                        ; A basic Nugget that just does damage
+		Damage        = WILD_MOUNTAIN_GIANT_ROCK_DAMAGE  ; Hella damage.  structures are on a different order of magnitude for hitpoints, and we want to be sure to outscore the fire damage so we can knock bits off.
+		DamageTaperOff = 50
+		Radius        = 100.0
+		DelayTime     = 0
+		DamageType    = SIEGE
+		DamageFXType  = BIG_ROCK
+		DeathType     = EXPLODED
+	    	DamageScalar  = 0% ALL ALLIES			; No damage to allies
+	    	DamageScalar  = 25% ANY ENEMIES +INFANTRY
+	    	DamageScalar  = 25% ANY ENEMIES +CAVALRY 
+	    	DamageScalar  = 125% ANY ENEMIES +STRUCTURE
+	End
+  
+  
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+;	HeroResist			= .75
+    ShockWaveAmount		= 25.0
+    ShockWaveRadius		= 20.0
+    ShockWaveTaperOff	= 0.75
+;   ShockWaveZMult		= 1.20
+  End
+End
+
+
+;---------------------------- NOT USED IN SEE!?
+Weapon WildMountainGiantRockFromThinAir  ; BALANCE TreeBeard Weapon Rock
+	AttackRange					= WILD_MOUNTAIN_GIANT_ROCK_DAMAGE
+	WeaponSpeed					= 200.0        ; dist/sec (huge value == effectively instant)
+	FireFX						= FX_TrollTreeSwing
+	PreAttackDelay				= 6200
+	FiringDuration				= 1800
+	DelayBetweenShots			= 4000
+	PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
+	HitPercentage				= 0 ; never auto hits, always hits ground
+	ScatterRadius				= 4.0     ;When this weapon misses it can randomly miss by as much as this distance.
+	IsAimingWeapon				= Yes	; Shooter will use his AimWeaponBehavior to get extra model condition flags
+	NoVictimNeeded				= Yes ; Need no target
+	LeechRangeWeapon			= Yes
+
+	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
+		ProjectileTemplateName		= RockBigTreeberd
+		WarheadTemplateName			= WildMountainGiantRockFromThinAirWarhead
+	End
+End
+
+;----------------------------
+Weapon WildMountainGiantRockFromThinAirWarhead
+  ;FireFX= FX_ImpactEntRock
+  ProjectileCollidesWith	= ENEMIES NEUTRAL STRUCTURES WALLS 
+  RadiusDamageAffects		= ENEMIES NEUTRALS
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = WILD_MOUNTAIN_GIANT_ROCK_DAMAGE
+    Radius        = 10.0
+    DelayTime     = 0
+    DamageType    = SIEGE
+    DamageFXType  = SMALL_ROCK
+    DeathType     = NORMAL
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+;	HeroResist			= .75
+    ShockWaveAmount		= 50.0
+    ShockWaveRadius		= 30.0
+    ShockWaveTaperOff	= 0.75
+;   ShockWaveZMult		= 1.20
   End
 End
 
