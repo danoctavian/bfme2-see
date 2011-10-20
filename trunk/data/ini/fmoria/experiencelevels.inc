@@ -92,7 +92,7 @@ END
 ;--------------- WILD HEROES --------------------------	
 ;----------- GORKIL THE GOBLIN KING ------------------	
 ExperienceLevel	WildGoblinKingLevel1
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= 1	
 	ExperienceAward				= WILD_GOBLIN_KING_LVL1_EXP_AWARD
 	Rank						= 1
@@ -108,7 +108,7 @@ ExperienceLevel	WildGoblinKingLevel1
 End	
 
 ExperienceLevel	WildGoblinKingLevel2
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= WILD_GOBLIN_KING_LVL2_EXP_NEEDED 
 	ExperienceAward				= WILD_GOBLIN_KING_LVL2_EXP_AWARD
 	AttributeModifiers			= HeroLevelUpDamage1
@@ -128,7 +128,7 @@ ExperienceLevel	WildGoblinKingLevel2
 END	
 
 ExperienceLevel	WildGoblinKingLevel3
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= WILD_GOBLIN_KING_LVL3_EXP_NEEDED 
 	ExperienceAward				= WILD_GOBLIN_KING_LVL3_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage2
@@ -148,7 +148,7 @@ ExperienceLevel	WildGoblinKingLevel3
 END	
 
 ExperienceLevel	WildGoblinKingLevel4
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= WILD_GOBLIN_KING_LVL4_EXP_NEEDED 
 	ExperienceAward				= WILD_GOBLIN_KING_LVL4_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage3
@@ -169,7 +169,7 @@ ExperienceLevel	WildGoblinKingLevel4
 END	
 
 ExperienceLevel	WildGoblinKingLevel5
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= WILD_GOBLIN_KING_LVL5_EXP_NEEDED 
 	ExperienceAward				= WILD_GOBLIN_KING_LVL5_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage4
@@ -187,7 +187,7 @@ ExperienceLevel	WildGoblinKingLevel5
 END	
 
 ExperienceLevel	WildGoblinKingLevel6
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= WILD_GOBLIN_KING_LVL6_EXP_NEEDED 
 	ExperienceAward				= WILD_GOBLIN_KING_LVL6_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage5
@@ -208,7 +208,7 @@ ExperienceLevel	WildGoblinKingLevel6
 END	
 
 ExperienceLevel	WildGoblinKingLevel7
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= WILD_GOBLIN_KING_LVL7_EXP_NEEDED 
 	ExperienceAward				=	WILD_GOBLIN_KING_LVL7_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage6
@@ -226,7 +226,7 @@ ExperienceLevel	WildGoblinKingLevel7
 END	
 
 ExperienceLevel	WildGoblinKingLevel8
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= WILD_GOBLIN_KING_LVL8_EXP_NEEDED 
 	ExperienceAward				= WILD_GOBLIN_KING_LVL8_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage7
@@ -245,7 +245,7 @@ ExperienceLevel	WildGoblinKingLevel8
 END	
 
 ExperienceLevel	WildGoblinKingLevel9
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= WILD_GOBLIN_KING_LVL9_EXP_NEEDED 
 	ExperienceAward				= WILD_GOBLIN_KING_LVL9_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage8
@@ -263,7 +263,7 @@ ExperienceLevel	WildGoblinKingLevel9
 END	
 
 ExperienceLevel	WildGoblinKingLevel10
-	TargetNames					= WildGoblinKing
+	TargetNames					= WildGoblinKing GreatGoblin
 	RequiredExperience			= WILD_GOBLIN_KING_LVL10_EXP_NEEDED 
 	ExperienceAward				= WILD_GOBLIN_KING_LVL10_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage9

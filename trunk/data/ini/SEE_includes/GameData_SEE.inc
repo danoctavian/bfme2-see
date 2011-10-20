@@ -24,6 +24,15 @@
 
 ;; Shelob (Assistance from Mordor) (LS: Spiderlings)
 #define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER			ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
+;; Great Goblin (LS: All Moria units)
+#define WILD_GREATGOBLIN_BUFF_RECIPIENT_OBJECT_FILTER	ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved +WildMarauder +WildBannerMarauder +WildMarauderHorde +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling +GoblinArcherHorde +GoblinArcherHordeInn +GoblinArcher +GoblinArcherHorde_FromDefectedLair +WargSentry  +GoblinWargRider +GoblinWargRiderHorde +GoblinWolfRider +GoblinWolfRiderHorde +GoblinSpiderRider +GoblinSpiderRiderHorde +WildBannerSpiderRider +WildMountainGiant +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair ALLIES
+
+
+
+
+
+
+#define STANDARD_MELEE_ATTACK_RANGE						7.5 ;11.5		// This should be used by most melee units in the game...
 
 ;------------------------------------------------------------------------------ SEE!
 #define	GENERIC_ARCHER_RANGE								300 //275
@@ -310,7 +319,7 @@
 
 #define MONUMENT_FORTRESS_GATE_BUILDCOST		1500
 
-#define STANDARD_MELEE_ATTACK_RANGE			7.5 ;11.5		// This should be used by most melee units in the game...
+
 
 //-----------------------Generic Experience Values-----------------
 

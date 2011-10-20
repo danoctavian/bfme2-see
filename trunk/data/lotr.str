@@ -50052,17 +50052,17 @@ END
 
 //This is where we need more powers for Bolg... (Using GB's now...)
 
-////GRAT//// (Great Goblin)
-OBJECT:WilGrat
+// Great Goblin
+OBJECT:GreatGoblin
 "The Great Goblin"
 End
-CONTROLBAR:WildGratRecruit
+CONTROLBAR:GreatGoblinRecruit
 "Recruit the Goblin Leader \n of the Misty Mountains"
 END
-CONTROLBAR:WildGratRevive
+CONTROLBAR:GreatGoblinRevive
 "Revive the fallen Hero, The Great Goblin"
 END
-CONTROLBAR:WildGratHotkey
+CONTROLBAR:GreatGoblinHotkey
 "Great Goblin"
 END
 CONTROLBAR:GratLeadership

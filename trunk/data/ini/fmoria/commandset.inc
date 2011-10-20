@@ -424,7 +424,19 @@ CommandSet WildShelobCommandSet
   18 = Command_SetStanceHoldGround
 End
 
-
+; ------------------------------------------------------------------------------ SEE!
+CommandSet GreatGoblinCommandSet
+	1	= Command_ToggleStance   
+	2	= Command_SpecialAbilityGreatGoblinLeadership
+	;3	= Command_SpecialAbilityInService
+	;4	= Command_SpecialPowerPoisonMist
+	12		= Command_CaptureBuilding
+	13		= Command_AttackMove
+	14		= Command_Stop
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
+End
 
 
 
