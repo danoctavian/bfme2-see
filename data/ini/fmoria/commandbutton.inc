@@ -522,7 +522,18 @@ CommandButton Command_SpecialAbilityWildShelobWebbing_SEE
   AutoAbility 			= Yes
 End
 
-
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_SpecialAbilityGreatGoblinLeadership
+  Command               = SPECIAL_POWER
+  SpecialPower          = SpecialAbilityFakeLeadership
+  Options				= NONPRESSABLE
+  TextLabel              = CONTROLBAR:GratLeadership
+  ButtonImage           = BWTreasureTrove_ScavengedArmor
+  RadiusCursorType		= TrainingRadiusCursor
+  ButtonBorderType		= ACTION
+  DescriptLabel           = CONTROLBAR:ToolTipGratLeadership
+  InPalantir		  	= Yes
+End
 
 
 

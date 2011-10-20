@@ -520,6 +520,9 @@
 #define CAVE_TROLL_RAMPAGE_DAMAGE							400 //300 //250
 #define CAVE_TROLL_TREE_RAMPAGE_DAMAGE					500 //350 //250
 
+; ------------------------------------------------------------------------------ SEE!
+#define	GREAT_GOBLIN_CLUB_DAMAGE							275
+
 ;--------------------------SHELOB------------------------------------------- SEE!
 #define WILD_SHELOB_BUILDCOST								2500
 #define WILD_SHELOB_HEALTH									25000

@@ -42,12 +42,12 @@ PlayerTemplate FactionWild
 	// NOTE: It is very important that the create-a-hero be the first buildable hero, to ensure that the create-a-hero and the ring hero are always 
 	// attached to the first two buttons in the command set.
 
-	BuildableHeroesMP				= CreateAHero GoblinCaveTrollHero WildGoblinKing WildAzog WildShelob //Drogoth - is now nest creature! 
+	BuildableHeroesMP				= CreateAHero GoblinCaveTrollHero GreatGoblin WildGoblinKing WildAzog WildShelob //Drogoth - is now nest creature! 
 	BuildableRingHeroesMP			= MordorSauron_RingHero
 	SpellStoreCurrentPowerLabel 	= APT:SpellStoreCurrentRingPower
 	SpellStoreMaximumPowerLabel 	= APT:SpellStoreMaximumRingPower
 	ResourceModifierObjectFilter 	= RESOURCE_MODIFIER_OBJECT_FILTER
-	ResourceModifierValues			= 100 100 100 100 90 85 80 75 71 68 66
+	ResourceModifierValues			= 100 100 100 100 90 80 70 60 50 40 30 //100 100 100 100 90 85 80 75 71 68 66
 	MultiSelectionPortrait			= UPGoblinArmy
 	LoadScreenMusic				= Shell2MusicForLoadScreen
 End

@@ -1727,6 +1727,41 @@ Weapon WargRiderWeapon_GoblinUpgraded
 	End
 End
 
+; ------------------------------------------------------------------------------ SEE!
+Weapon GreatGoblinClub
+	LeechRangeWeapon		= Yes
+	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
+	RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR
+	MeleeWeapon				= Yes
+	DelayBetweenShots		= LURTZ_DELAYBETWEENSHOTS  					; time between shots, msec
+	PreAttackDelay			= 500 ;WITCHKING_SWORD_PREATTACKDELAY  		; 300 is mace swing delay time before contact with target.
+	PreAttackType			= PER_SHOT 										; Do the delay each time we attack
+	FireFX					= FX_GondorSwordHit
+	FiringDuration				= 1000 ;WITCHKING_FIRINGDURATION  				; Duration of the mace swing 
+	;ClipSize					= 1  											; Commented out, don't see why we need clips for the mace. - 7/9/04
+	;AutoReloadsClip			= Yes
+	;ClipReloadTime			= 5000
+
+	DamageNugget                        									; A basic Nugget that just does damage
+		Damage        		= GREAT_GOBLIN_CLUB_DAMAGE			
+		Radius				= 20.0
+		;DamageArc			= 40
+		DelayTime			= 0
+		DamageType			= HERO
+		DamageFXType		= CLUBBING
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+	End
+	MetaImpactNugget                    ; A Nugget that throws things back with force
+;		HeroResist			= .75
+		ShockWaveAmount	= 25 //35
+		ShockWaveRadius		= 20
+		ShockWaveArc		= 80 ; ;40				; Should generally be equal to damage arc
+		ShockWaveTaperOff	= 1.0
+		ShockWaveSpeed		= 0.0
+		ShockWaveZMult		= 1.6
+	End
+End
+
 ;------------------------------------------------------------------------------
 Weapon WildHillTrollHammer     ; BALANCE Wild Marauder Weapon
   LeechRangeWeapon      	= Yes
