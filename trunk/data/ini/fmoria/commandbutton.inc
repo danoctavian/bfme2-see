@@ -527,15 +527,41 @@ CommandButton Command_SpecialAbilityGreatGoblinLeadership
   Command               = SPECIAL_POWER
   SpecialPower          = SpecialAbilityFakeLeadership
   Options				= NONPRESSABLE
-  TextLabel              = CONTROLBAR:GratLeadership
+  TextLabel              = CONTROLBAR:GreatGoblinLeadership
   ButtonImage           = BWTreasureTrove_ScavengedArmor
   RadiusCursorType		= TrainingRadiusCursor
   ButtonBorderType		= ACTION
-  DescriptLabel           = CONTROLBAR:ToolTipGratLeadership
+  DescriptLabel           = CONTROLBAR:ToolTipGreatGoblinLeadership
   InPalantir		  	= Yes
 End
 
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_SpecialAbilityInServiceOfGreatGoblin
+  Command               = SPECIAL_POWER
+  SpecialPower          = SpecialAbilityDominateEnemy
+  Options               = NEED_TARGET_POS CONTEXTMODE_COMMAND
+  TextLabel              = CONTROLBAR:InService
+  ButtonImage           = HSGreatGoblin
+  RadiusCursorType		= DwarvenRichesRadiusCursor
+  ButtonBorderType		= ACTION
+  DescriptLabel           = CONTROLBAR:ToolTipInService
+  InPalantir			= Yes
+End
 
+
+CommandButton Command_SpecialPowerPoisonMist
+	Command				= SPECIAL_POWER
+    SpecialPower		= SpecialPowerPoisonMist
+    ButtonImage			= HSPoisonMist
+	Options				= NEED_TARGET_POS
+	TextLabel			= CONTROLBAR:PoisonMist
+	ButtonBorderType	= ACTION 
+	DescriptLabel		= CONTROLBAR:TooltipPoisonMist
+	RadiusCursorType    = EnshroudingMistRadiusCursor
+	InPalantir		= Yes
+	CursorName			= AttackObj
+    InvalidCursorName	= GenericInvalid
+End
 
 
 

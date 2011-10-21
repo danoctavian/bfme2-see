@@ -73,13 +73,13 @@ End
 ;------------------------------------------------------------------------------
 
 SpecialPower SpecialPowerPoisonMist
-	Enum				= SPECIAL_SPELL_BOOK_ENSHROUDING_MIST
-	ReloadTime			= 240000 ; ; SPELL_RECHARGE_TIME_TIER_2
-	Flags				= WATER_OK RESPECT_RECHARGE_TIME_DISCOUNT
-	RadiusCursorRadius    = 150 ;;SPELL_SUNFLARE_EFFECT_RADIUS
-	InitiateAtLocationSound = SpellEnshroudingMist
-	ForbiddenObjectFilter	= NO_SUMMON_NEAR_OBJECT_FILTER
-	ForbiddenObjectRange	= 100
-	MaxCastRange		= 150
+	Enum					= SPECIAL_SPELL_BOOK_ENSHROUDING_MIST
+	ReloadTime				= 240000 ; ; SPELL_RECHARGE_TIME_TIER_2
+	Flags					= WATER_OK RESPECT_RECHARGE_TIME_DISCOUNT
+	RadiusCursorRadius    	= 150 ;;SPELL_SUNFLARE_EFFECT_RADIUS
+	InitiateAtLocationSound 	= SpellEnshroudingMist
+	ForbiddenObjectFilter		= NO_SUMMON_NEAR_OBJECT_FILTER
+	ForbiddenObjectRange		= 100
+	MaxCastRange			= 150
 End
 

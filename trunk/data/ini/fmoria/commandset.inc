@@ -428,7 +428,7 @@ End
 CommandSet GreatGoblinCommandSet
 	1	= Command_ToggleStance   
 	2	= Command_SpecialAbilityGreatGoblinLeadership
-	;3	= Command_SpecialAbilityInService
+	3	= Command_SpecialAbilityInServiceOfGreatGoblin
 	;4	= Command_SpecialPowerPoisonMist
 	12		= Command_CaptureBuilding
 	13		= Command_AttackMove

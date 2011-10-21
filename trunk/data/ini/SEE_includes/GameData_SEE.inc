@@ -26,13 +26,15 @@
 #define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER			ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
 ;; Great Goblin (LS: All Moria units)
 #define WILD_GREATGOBLIN_BUFF_RECIPIENT_OBJECT_FILTER	ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved +WildMarauder +WildBannerMarauder +WildMarauderHorde +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling +GoblinArcherHorde +GoblinArcherHordeInn +GoblinArcher +GoblinArcherHorde_FromDefectedLair +WargSentry  +GoblinWargRider +GoblinWargRiderHorde +GoblinWolfRider +GoblinWolfRiderHorde +GoblinSpiderRider +GoblinSpiderRiderHorde +WildBannerSpiderRider +WildMountainGiant +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair ALLIES
-
+;; Azog (changed from EA's "Goblin King") (LS: Guard of Moria)
+#define WILD_GOBLINKING_BUFF_RECIPIENT_OBJECT_FILTER	ANY +WildBannerMarauder +WildMarauder +WildMarauderHorde ALLIES
 
 
 
 
 
 #define STANDARD_MELEE_ATTACK_RANGE						7.5 ;11.5		// This should be used by most melee units in the game...
+#define HERO_DODGE_PERCENT									50
 
 ;------------------------------------------------------------------------------ SEE!
 #define	GENERIC_ARCHER_RANGE								300 //275
@@ -251,7 +253,7 @@
 #define HERO_HEAL_DELAY									15000
 #define MONSTER_HEAL_DELAY									15000
 
-#define HERO_DODGE_PERCENT								50
+
 ; ------------------------------------------------------------------------------
 
 #define CASTLE_WALL_REBUILD_TIME			180.0
@@ -293,7 +295,7 @@
 #define SHOCKWAVE_RESISTANCE_WEAK							10 //20
 #define SHOCKWAVE_RESISTANCE_STANDARD					25 //40
 #define SHOCKWAVE_RESISTANCE_FORMIDABLE					50 //60
-#define SHOCKWAVE_RESISTANCE_STRONG						66 //75 ; not 80. WoP and WKsword use 75 and should be able to do KB to all heroes. Excepting Gandalf with a ShieldBubble.
+#define SHOCKWAVE_RESISTANCE_STRONG						66 //75 ; not 80. WoP and WK's sword use 75 and should be able to do KB to all heroes. Excepting Gandalf with a ShieldBubble.
 #define SHOCKWAVE_RESISTANCE_IMMUNE						99
 #define SHOCKWAVE_RESISTANCE_ALWAYS						9999 ; always resist meta-impact
 
@@ -2335,7 +2337,7 @@
 #define FIRE_DRAKE_THREAT_LEVEL 					250 	//200	; originally 100
 #define MORDOR_DRUMMERTROLL_THREAT_LEVEL 			200		//100
 
-
+#define GREAT_GOBLIN_THREAT_LEVEL 					400
 #define GOBLIN_KING_THREAT_LEVEL 		400	; originally 100
 #define AZOG_THREAT_LEVEL			300
 #define MOUTH_OF_SAURON_THREAT_LEVEL 		200	; originally 100

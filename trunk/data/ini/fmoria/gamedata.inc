@@ -521,6 +521,8 @@
 #define CAVE_TROLL_TREE_RAMPAGE_DAMAGE					500 //350 //250
 
 ; ------------------------------------------------------------------------------ SEE!
+#define	GREAT_GOBLIN_BUILDCOST								2000
+#define GREAT_GOBLIN_HEALTH								3000
 #define	GREAT_GOBLIN_CLUB_DAMAGE							275
 
 ;--------------------------SHELOB------------------------------------------- SEE!

@@ -28170,7 +28170,7 @@ CONTROLBAR:SelectRevivablesGoblinFortress
 END
 
 CONTROLBAR:ToolTipCommandSelectRevivablesWildFortress
-"Recruit and revive Moria's Heroes"
+"Recruit and revive Moria's heroes"
 END
 
 CONTROLBAR:WildGoblinKingHotkey
@@ -33036,11 +33036,11 @@ CONTROLBAR:UpgradeMordorTrollCageLevel3
 End
 
 CONTROLBAR:WildDrogothRevive
-"Revive the fallen Hero, Drogoth"
+"Revive the fallen hero, Drogoth"
 End
 
 CONTROLBAR:WildGoblinKingRevive
-"Revive the fallen Hero, Azog"
+"Revive the fallen hero, Azog"
 End
 
 CONTROLBAR:WildMountainGiantGrab
@@ -33048,7 +33048,7 @@ CONTROLBAR:WildMountainGiantGrab
 End
 
 CONTROLBAR:WildMountainGiantStomp
-"S&tomp"
+"Stomp"
 End
 
 CONTROLBAR:WildShelobPoisonedStinger
@@ -50065,11 +50065,11 @@ END
 CONTROLBAR:GreatGoblinHotkey
 "Great Goblin"
 END
-CONTROLBAR:GratLeadership
-"Goblin Leader"
+CONTROLBAR:GreatGoblinLeadership
+"Goblin Leadership"
 END
-CONTROLBAR:ToolTipGratLeadership
-"Allies near The Great Goblin gain \n +100% Damage"
+CONTROLBAR:ToolTipGreatGoblinLeadership
+"Allies near The Great Goblin gain \n various fighting bonuses"
 END
 CONTROLBAR:InService
 "In Service of the Great Goblin"

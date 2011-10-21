@@ -1745,17 +1745,18 @@ Weapon GreatGoblinClub
 	DamageNugget                        									; A basic Nugget that just does damage
 		Damage        		= GREAT_GOBLIN_CLUB_DAMAGE			
 		Radius				= 20.0
-		;DamageArc			= 40
+		;DamageArc			= 45 //40 ;Don't use this! Disables damage on enemies? (Naz)
 		DelayTime			= 0
 		DamageType			= HERO
 		DamageFXType		= CLUBBING
 		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
 	End
-	MetaImpactNugget                    ; A Nugget that throws things back with force
+	
+	MetaImpactNugget                   										; A Nugget that throws things back with force
 ;		HeroResist			= .75
-		ShockWaveAmount	= 25 //35
+		ShockWaveAmount	= 20 //25 //35
 		ShockWaveRadius		= 20
-		ShockWaveArc		= 80 ; ;40				; Should generally be equal to damage arc
+		ShockWaveArc		= 45 //80 ; ;40				; Should generally be equal to damage arc
 		ShockWaveTaperOff	= 1.0
 		ShockWaveSpeed		= 0.0
 		ShockWaveZMult		= 1.6
