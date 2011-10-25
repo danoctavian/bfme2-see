@@ -138,3 +138,44 @@ ModifierList BalrogIgniteState
 	Modifier = DAMAGE_MULT 200%		// Multiplicitive.  Damage multiplied by this, will compound in multiple bonuses
 	Duration = 30000
 End
+
+;-------------------------------------------------------------------
+; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
+;-------------------------------------------------------------------
+
+; Tier 1
+ModifierList SpellBookMoriaDeepDrums
+	Category = BUFF
+	Modifier = DAMAGE_MULT 150%			// Damage increased 50%
+	Modifier = ARMOR 50%			// More armor by 50%
+	Duration = 60000			// 1 min worth of modifiers
+	ModelCondition = WAR_CHANT 
+	FX		= FX_GenericBuffPersistent60
+	ReplaceInCategoryIfLongest	= Yes
+End
+
+; Tier 2
+ModifierList SpellBookMoriaScurry
+	Category = SPELL
+	Modifier = SPEED 110%		// speed increased 10%
+	Duration = 0					// Duration is forever when set to 0
+	;ModelCondition = USER_9 -LEADS TO CRASHES! WE NEED TO FIND SOMETHING ELSE!
+End
+
+; Tier 3
+ModifierList SpellBookMoriaDarkness
+	Category = SPELL
+	Modifier = DAMAGE_MULT 125%	
+	Modifier = ARMOR 50%
+	Modifier = EXPERIENCE 175%
+	Duration = 0
+	FX		 = FX_InfiniteGenericLeadershipLvl1
+	FX2		 = FX_InfiniteGenericLeadershipLvl2
+	FX3		 = FX_InfiniteGenericLeadershipLvl3
+	
+	EndFX	 = FX_StopGenericLeadershipLvl1
+	EndFX2	 = FX_StopGenericLeadershipLvl2
+	EndFX3	 = FX_StopGenericLeadershipLvl3
+	
+	MultiLevelFX = Yes
+End

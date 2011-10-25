@@ -6,6 +6,11 @@
 ; ------------------------------------------------------------------------------
 ;NOTE: Attacks are as such: PreAttackDelay -> Both: FiringDuration & DelayBetweenShots -> After DBS starts PreAttackDelay again.
 
+#define ENTIRE_MAP			99999.0 //Entire map
+
+#define RESOURCE_STRUCTURE_ENM_SPELL_OBJECT_FILTER		ANY +GondorFarm +DwarvenMineShaft +ElvenMallornTree +WildMineShaft +IsengardFurnace +MordorSlaughterHouse +ArnorFarm +AngmarMill ENEMIES
+#define RESOURCE_STRUCTURE_ALY_SPELL_OBJECT_FILTER		ANY +GondorFarm +DwarvenMineShaft +ElvenMallornTree +WildMineShaft +IsengardFurnace +MordorSlaughterHouse +ArnorFarm +AngmarMill ALLIES
+#define RESOURCE_STRUCTURE_BTH_SPELL_OBJECT_FILTER		ANY +GondorFarm +DwarvenMineShaft +ElvenMallornTree +WildMineShaft +IsengardFurnace +MordorSlaughterHouse +ArnorFarm +AngmarMill ALLIES ENEMIES
 
 ;------------------------- New SEE Hero stats!
 #define HERO_HOBBITHERO_INITIAL_BUILDTIME					20		// 20 secs - All hobbit heroes; Frodo, Sam, Merry & Pippin!

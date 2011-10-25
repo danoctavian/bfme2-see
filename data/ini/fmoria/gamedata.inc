@@ -504,6 +504,8 @@
 #define WILD_MOUNTAIN_GIANT_DEATH_RADIUS					45
 #define WILD_MOUNTAIN_GIANT_DEATH_DAMAGE					325 //300
 
+#define WILD_MOUNTAIN_GIANT_LIFETIME								60000 //NEEDS TUNING!
+
 ; ------------------------------------------------------------------------------ SEE!
 #define CAVE_TROLL_BUILDCOST								1000
 #define CAVE_TROLL_BUILDTIME								9;0
@@ -560,6 +562,8 @@
 #define	WILD_SHELOB_LVL8_EXP_NEEDED 						600 ;1400 
 #define	WILD_SHELOB_LVL9_EXP_NEEDED 						700 ;1600 
 #define	WILD_SHELOB_LVL10_EXP_NEEDED 						800 ;2000
+
+#define WILD_SHELOB_LIFETIME								120000 //NEEDS TUNING!
 
 ; ------------------------------------------------------------------------------ SEE! (Only summons by Shelob)
 #define WILD_SPIDERLING_BUILD_COST							300
@@ -931,4 +935,9 @@
 #define WILD_GIANTSENTRYEXPANSION_FIRE_RESISTANCE	10
 
 
+;-------------------------------------------------------------------
+; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
+;-------------------------------------------------------------------
+
+; NONE YET!
 

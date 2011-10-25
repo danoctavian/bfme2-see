@@ -328,3 +328,14 @@ End
 Upgrade Upgrade_GoblinKingCallFromTheDeep
 	Type			= OBJECT
 End
+
+;-------------------------------------------------------------------
+; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
+;-------------------------------------------------------------------
+
+; Tier 2
+Upgrade Upgrade_MoriaScurry
+  DisplayName       = CONTROLBAR:MoriaScurry
+  Type              = PLAYER
+  PersistsInCampaign = Yes
+End
