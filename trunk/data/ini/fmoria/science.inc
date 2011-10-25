@@ -84,7 +84,7 @@ End
 
 ; Tier 4
 Science SCIENCE_MoriaStoneGiants ;Stone Giants
-  PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaCallTheHorde OR SCIENCE_WILD SCIENCE_MoriaScurry
+  PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaShelob OR SCIENCE_WILD SCIENCE_MoriaDarkness
   SciencePurchasePointCost = EVIL_RANK_4_COST
   SciencePurchasePointCostMP = 1 ;25
   IsGrantable = Yes
@@ -92,7 +92,7 @@ End
 
 ;WIP!
 Science SCIENCE_MoriaAbyss ;Abyss
-  PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaScurry OR SCIENCE_WILD SCIENCE_MoriaUntamedAllegiance
+  PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaDarkness OR SCIENCE_WILD SCIENCE_MoriaWatcher
   SciencePurchasePointCost = EVIL_RANK_4_COST
   SciencePurchasePointCostMP = 1  ;25
   IsGrantable = Yes

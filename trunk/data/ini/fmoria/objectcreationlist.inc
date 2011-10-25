@@ -57,6 +57,16 @@ End
 
 ; Tier 4
 ; ---------------------------------------------------------------------------------------
+ObjectCreationList OCL_MoriaStoneGiantsEgg
+	CreateObject
+		ObjectNames			= MoriaStoneGiantsEgg
+		Count				= 1
+		FadeIn					= No
+		ClearRemovables		= Yes
+	End
+End
+
+; ---------------------------------------------------------------------------------------
 ; Create A bunch of Stone Giants out of thin air. 
 ObjectCreationList OCL_MoriaStoneGiants
 	CreateObject

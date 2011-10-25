@@ -138,3 +138,36 @@ FXList FX_ShelobDigDesummon
 	Name = ShelobTunnelDown
   End
 End
+
+;------------------------------------------------------
+//FXList FX_MoriaSpellbookStoneGiantsSummon
+//  ParticleSystem
+//    Name = SummonStoneGiantsSmoke2
+//    Offset = X:0.0 Y:0.0 Z:15.0
+//  End
+//  
+//  Sound
+//	Name = SarumanLightningMS
+//  End
+//  
+//  Sound
+//	Name = SpellEnshroudingMist
+//  End
+//End
+
+;------------------------------------------------------
+FXList FX_MoriaSpellbookStoneGiantsSummon
+  ParticleSystem
+    Name = SummonStoneGiantsSmoke
+    Offset = X:0.0 Y:0.0 Z:15.0
+  End
+End
+
+;------------------------------------------------------
+FXList FX_MoriaSpellbookStoneGiantsDeSummon
+  ParticleSystem
+    Name = DeSummonStoneGiantsSmoke
+    Offset = X:0.0 Y:0.0 Z:15.0
+  End
+End
+
