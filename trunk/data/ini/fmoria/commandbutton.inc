@@ -1483,3 +1483,192 @@ CommandButton Command_ConstructGoblinFissure //???
 	Radial				= Yes  
 End
 
+;-------------------------------------------------------------------
+; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
+;-------------------------------------------------------------------
+
+; Tier 1
+CommandButton Command_SpellBookMoriaDeepDrums
+	Command			= SPELL_BOOK
+    SpecialPower		= SpellBookMoriaDeepDrums
+	Options			= NEED_TARGET_POS
+	TextLabel		= CONTROLBAR:MoriaSpellbookDeepDrums
+	ButtonBorderType	= ACTION 
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookDeepDrums
+    ButtonImage			= ZZButtonImage
+	RadiusCursorType    	= WarChantRadiusCursor
+End
+
+CommandButton Command_PurchaseSpellMoriaDeepDrums
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE
+    ButtonImage			= ZZButtonImage
+    Science				= SCIENCE_MoriaDeepDrums
+    TextLabel			= CONTROLBAR:MoriaSpellbookDeepDrums
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookDeepDrums
+End
+
+CommandButton Command_SpellBookMoriaCaveBats
+	Command				= SPELL_BOOK
+    SpecialPower		= SpellBookMoriaCaveBats
+    ButtonImage			= SBEvil_CaveBats
+	Options				= NEED_TARGET_POS 
+	TextLabel			= CONTROLBAR:MoriaSpellbookCaveBats
+	ButtonBorderType	= ACTION 
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookCaveBats
+	RadiusCursorType    = CaveBatsRadiusCursor
+End
+
+CommandButton Command_PurchaseSpellMoriaCaveBats
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE
+    ButtonImage			= SBEvil_CaveBats
+    Science				= SCIENCE_MoriaCaveBats
+    TextLabel			= CONTROLBAR:MoriaSpellbookCaveBats
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookCaveBats
+End
+
+; Tier 2
+CommandButton Command_SpellBookMoriaCalltheHorde
+	Command				= SPELL_BOOK
+	TextLabel			= CONTROLBAR:MoriaSpellbookCallTheHorde
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookCallTheHorde   
+	SpecialPower		= SpellBookMoriaCallTheHorde
+	ButtonImage			= ZZButtonImage
+End
+
+CommandButton Command_PurchaseSpellMoriaCalltheHorde
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE 
+    ButtonImage			= ZZButtonImage 
+    Science				= SCIENCE_MoriaCallTheHorde
+    TextLabel			= CONTROLBAR:MoriaSpellbookCallTheHorde
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookCallTheHorde
+End
+
+CommandButton Command_SpellBookMoriaScurry
+	Command = SPELL_BOOK
+	Options				= NONPRESSABLE
+	TextLabel			= CONTROLBAR:MoriaSpellbookScurry
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookScurry  
+	SpecialPower		= SpellBookMoriaScurry
+    ButtonImage			= ZZButtonImage 
+End
+
+CommandButton Command_PurchaseSpellMoriaScurry
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE 
+    ButtonImage			= ZZButtonImage
+    Science				= SCIENCE_MoriaScurry
+    TextLabel			= CONTROLBAR:MoriaSpellbookScurry
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookScurry
+	
+	;; Trigger this command button when the purchase science is activated
+	CommandTrigger		= Command_SpellBookMoriaScurry
+End
+
+CommandButton Command_SpellBookMoriaUntamedAllegiance
+	Command				= SPELL_BOOK
+	SpecialPower		= SpellBookMoriaUntamedAllegiance
+	Options				= NEED_TARGET_POS 
+	TextLabel			= CONTROLBAR:MoriaSpellbookUntamedAllegiance
+	ButtonImage			= HSSharkuTameBeast
+	ButtonBorderType	= ACTION
+	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookUntamedAllegiance
+	RadiusCursorType	= UntamedAllegianceRadiusCursor
+End
+
+CommandButton Command_PurchaseSpellMoriaUntamedAllegiance
+	ButtonImage			= HSSharkuTameBeast
+	ButtonBorderType	= ACTION
+	DescriptLabel		= CONTROLBA
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE
+    ButtonImage			= HSSharkuTameBeast
+    Science				= SCIENCE_MoriaUntamedAllegiance
+    TextLabel			= CONTROLBAR:MoriaSpellbookUntamedAllegiance
+	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookUntamedAllegiance
+End
+
+CommandButton Command_SpellBookMoriaShelob
+	Command				= SPELL_BOOK
+	SpecialPower		= SpellBookMoriaShelob
+	Options				= NEED_TARGET_POS 
+	TextLabel			= CONTROLBAR:MoriaSpellbookShelob
+	ButtonImage			= HIShelob
+	ButtonBorderType	= ACTION
+	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookShelob
+	RadiusCursorType	= SpiderlingsRadiusCursor
+    CursorName          = AttackObj
+    InvalidCursorName   = GenericInvalid  
+End
+
+CommandButton Command_PurchaseSpellMoriaShelob
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE 
+    ButtonImage			= HIShelob
+	Science				= SCIENCE_MoriaShelob
+    TextLabel			= CONTROLBAR:MoriaSpellbookShelob
+	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookShelob
+End
+
+CommandButton Command_SpellBookMoriaDarkness
+	Command			= SPELL_BOOK
+    SpecialPower		= SpellBookMoriaDarkness
+    ButtonImage			= SBEvil_Darkness
+	TextLabel		= CONTROLBAR:MoriaSpellbookDarkness
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookDarkness
+End
+
+CommandButton Command_PurchaseSpellMoriaDarkness
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE 
+    ButtonImage			= SBEvil_Darkness 
+    Science				= SCIENCE_MoriaDarkness
+    TextLabel			= CONTROLBAR:MoriaSpellbookDarkness
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookDarkness
+End
+
+CommandButton Command_SpellBookMoriaWatcher
+	Command				= SPELL_BOOK
+	SpecialPower		= SpellBookMoriaWatcher
+	Options				= NEED_TARGET_POS 
+	TextLabel			= CONTROLBAR:MoriaSpellbookWatcher
+	ButtonImage			= SBEvil_SummonWatcher
+	ButtonBorderType	= ACTION
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookWatcher
+	RadiusCursorType	= SummonWatcherRadiusCursor
+    CursorName          = AttackObj
+    InvalidCursorName   = GenericInvalid  
+End
+
+CommandButton Command_PurchaseSpellMoriaWatcher
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE 
+    ButtonImage			= SBEvil_SummonWatcher ;Needs replacement
+	Science				= SCIENCE_MoriaWatcher
+    TextLabel			= CONTROLBAR:MoriaSpellbookWatcher
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookWatcher
+End
+
+CommandButton Command_SpellBookMoriaStoneGiants
+	Command			= SPELL_BOOK
+	SpecialPower		= SpellBookMoriaStoneGiants
+	Options			= NEED_TARGET_POS 
+	TextLabel		= CONTROLBAR:MoriaSpellbookStoneGiants
+	ButtonImage		= KUSummonGiantIcon
+	ButtonBorderType	= ACTION
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookStoneGiants
+	RadiusCursorType	= SummonGiantsRadiusCursor
+    CursorName          = AttackObj
+    InvalidCursorName   = GenericInvalid  
+End
+
+CommandButton Command_PurchaseSpellMoriaStoneGiants
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE 
+    ButtonImage			= KUSummonGiantIcon 
+    Science				= SCIENCE_MoriaStoneGiants
+    TextLabel			= CONTROLBAR:MoriaSpellbookStoneGiants
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookStoneGiants
+End

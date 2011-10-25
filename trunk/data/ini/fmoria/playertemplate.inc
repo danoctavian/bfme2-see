@@ -18,7 +18,7 @@ PlayerTemplate FactionWild
 	;StartingUnit0 		= GoblinArcherHorde 
 	;StartingUnitOffset0 	= X:-60 Y:200 Z:0
 	
-	StartingUnit1 		= WildPorter 
+	StartingUnit1 		= WildGoblinKing ;WildPorter 
 	StartingUnitOffset1 	= X:30 Y:215 Z:0
 	
 	StartingUnit0 			= WildPorter
@@ -31,7 +31,7 @@ PlayerTemplate FactionWild
 	SpellBook				= EvilSpellBook
 	SpellBookMp				= WildSpellBook
 	PurchaseScienceCommandSet	= EvilSpellStoreCommandSet
-	PurchaseScienceCommandSetMP	= WildSpellStoreCommandSet
+	PurchaseScienceCommandSetMP	= WildSpellStoreCommandSet_SEE
 	DisplayName				= INI:FactionWild
 	BeaconName				= MultiplayerBeacon
 	LightPointsUpSound		= IsengardLightPointsUp

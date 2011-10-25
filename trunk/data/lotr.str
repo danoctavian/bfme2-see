@@ -56150,7 +56150,117 @@ BANNERUI:IsengardWargPack
 "Warg Pack"
 END
 
+//-------------------------------------------------------------------
+// SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
+//-------------------------------------------------------------------
 
+// Tier 1
+
+CONTROLBAR:MoriaSpellbookDeepDrums
+"Drums of the Deep"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookDeepDrums
+"Targeted allies gain +50% damage and +50% armor"
+END
+
+CONTROLBAR:MoriaSpellbookPlunder
+"Plunder"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookPlunder
+"Enemy target resource structures lose income to your faction"
+END
+
+CONTROLBAR:MoriaSpellbookCaveBats
+"Cave Bats"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookCaveBats
+"Reveals the shroud and detects stealthed units. Reduces enemy armor and damage with -25%"
+END
+	
+// Tier 2	
+
+CONTROLBAR:MoriaSpellbookCallTheHorde
+"Call the Horde"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookCallTheHorde
+"Increased Goblin production speed"
+END
+
+CONTROLBAR:MoriaSpellbookScurry
+"Scurry"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookScurry
+"All goblins permanently gain +10% speed \n Passive power"
+END
+
+CONTROLBAR:MoriaScurry
+"Scurry"
+End
+
+CONTROLBAR:MoriaSpellbookUntamedAllegiance
+"Untamed Allegiance"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookUntamedAllegiance
+"Caster gains control of the targeted lair and associated creatures"
+END
+
+CONTROLBAR:MoriaSpellbookDeteriorate
+"Deteriorate"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookDeteriorate
+"Targeted enemy structure slowly falls into decay \n until either the structure has been destroyed \n or a repair spell has been cast on it"
+END
+
+// Tier 3
+
+CONTROLBAR:MoriaSpellbookShelob
+"Shelob"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookShelob
+"Summons the giant spider queen, \n Shelob - guardian of the Pass of Cirith Ungol,  \n under the caster's control"
+END
+
+CONTROLBAR:MoriaSpellbookDarkness
+"Darkness"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookDarkness
+"Temporarily covers the entire map in darkness. All ally units gain +25% damage, +50% armor and earn experience 75% faster"
+END
+
+CONTROLBAR:MoriaSpellbookWatcher
+"Watcher in the Water"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookWatcher
+"Summons the giant water creature from the gates of Moria, \n killing anyone who comes close"
+END
+
+// Tier 4
+
+CONTROLBAR:MoriaSpellbookStoneGiants
+"Stone Giants"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookStoneGiants
+"Summons a group of the extremely powerful Stone Giants of the Misty Mountains under the caster's control"
+END
+
+CONTROLBAR:MoriaSpellbookAbyss
+"Abyss"
+End
+
+CONTROLBAR:ToolTipMoriaSpellbookAbyss
+"Opens a giant crack leading deeping inside the earth, \n instantly killing all who stand above it"
+END
 
 //------- END ---------o
 
