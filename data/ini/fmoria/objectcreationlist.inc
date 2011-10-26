@@ -70,10 +70,10 @@ End
 ; Create A bunch of Stone Giants out of thin air. 
 ObjectCreationList OCL_MoriaStoneGiants
 	CreateObject
-		ObjectNames = WildMountainGiant_Summoned
+		ObjectNames = WildMountainGiant
 		Count = 5
 		FadeIn = Yes
-		FadeTime = 2000
+		FadeTime = 10000 //2000
 		IgnoreCommandPointLimit = Yes
 		Disposition = SPAWN_AROUND
 		DispositionAngle = 72 ;90	;SpawnAround uses this as the arc between guys
