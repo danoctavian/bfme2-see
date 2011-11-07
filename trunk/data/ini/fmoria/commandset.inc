@@ -438,7 +438,50 @@ CommandSet GreatGoblinCommandSet
 	18  	= Command_SetStanceHoldGround
 End
 
+; ------------------------------------------------------------------------------ SEE!
+CommandSet WildGoblinKingCommandSet
+	1	= Command_ToggleStance
+	2	= Command_GoblinKingSkullTotem
+	3	= Command_GoblinKingMountScorpion
+	4	= Command_GoblinKingFakeLeadershipButton
+	5	= Command_GoblinKingPoisonedStinger
+	6	= Command_GoblinKingCallFromTheDeep
+	12 	= Command_CaptureBuilding
+	13	= Command_AttackMove
+	14	= Command_Stop
+	16  = Command_SetStanceBattle
+	17  = Command_SetStanceAggressive
+	18  = Command_SetStanceHoldGround
+End
+CommandSet MountedWildGoblinKingCommandSet				; Mounted version.
+	1	= Command_ToggleStance
+	2	= Command_GoblinKingMountedSkullTotem
+	3	= Command_GoblinKingMountScorpion
+	4	= Command_GoblinKingFakeLeadershipButton
+	5	= Command_GoblinKingPoisonedStinger
+	6	= Command_GoblinKingCallFromTheDeep
+	12 	= Command_CaptureBuilding
+	13	= Command_AttackMove
+	14	= Command_Stop
+	16  = Command_SetStanceBattle
+	17  = Command_SetStanceAggressive
+	18  = Command_SetStanceHoldGround
+End
 
+; ------------------------------------------------------------------------------ SEE!
+CommandSet WildBolgCommandSet
+  1 = Command_ToggleStance
+  2 = Command_BolgFakeLeadershipButton
+//  3 = 
+//  4 = 
+//  5 = 
+//  6 = 
+  13 	= Command_AttackMove
+  14 	= Command_Stop
+  16 	= Command_SetStanceBattle
+  17 	= Command_SetStanceAggressive
+  18 	= Command_SetStanceHoldGround
+End
 
 
 
@@ -976,35 +1019,6 @@ CommandSet WildBabyDrakeHordeCommandSet
 End
 
 
-CommandSet WildGoblinKingCommandSet
-	1	= Command_ToggleStance
-	2	= Command_GoblinKingSkullTotem
-	3	= Command_GoblinKingMountScorpion
-	4	= Command_GoblinKingFakeLeadershipButton
-	5	= Command_GoblinKingPoisonedStinger
-	6	= Command_GoblinKingCallFromTheDeep
-	12 	= Command_CaptureBuilding
-	13	= Command_AttackMove
-	14	= Command_Stop
-	16  = Command_SetStanceBattle
-	17  = Command_SetStanceAggressive
-	18  = Command_SetStanceHoldGround
-End
-
-CommandSet MountedWildGoblinKingCommandSet				; Mounted version.
-	1	= Command_ToggleStance
-	2	= Command_GoblinKingMountedSkullTotem
-	3	= Command_GoblinKingMountScorpion
-	4	= Command_GoblinKingFakeLeadershipButton
-	5	= Command_GoblinKingPoisonedStinger
-	6	= Command_GoblinKingCallFromTheDeep
-	12 	= Command_CaptureBuilding
-	13	= Command_AttackMove
-	14	= Command_Stop
-	16  = Command_SetStanceBattle
-	17  = Command_SetStanceAggressive
-	18  = Command_SetStanceHoldGround
-End
 
 
 CommandSet CommandSetInnWildFaction

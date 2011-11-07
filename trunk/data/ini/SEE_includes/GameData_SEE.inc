@@ -28,11 +28,13 @@
 
 
 ;; Shelob (Assistance from Mordor) (LS: Spiderlings)
-#define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER			ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
+#define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER		ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
 ;; Great Goblin (LS: All Moria units)
 #define WILD_GREATGOBLIN_BUFF_RECIPIENT_OBJECT_FILTER	ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved +WildMarauder +WildBannerMarauder +WildMarauderHorde +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling +GoblinArcherHorde +GoblinArcherHordeInn +GoblinArcher +GoblinArcherHorde_FromDefectedLair +WargSentry  +GoblinWargRider +GoblinWargRiderHorde +GoblinWolfRider +GoblinWolfRiderHorde +GoblinSpiderRider +GoblinSpiderRiderHorde +WildBannerSpiderRider +WildMountainGiant +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair ALLIES
 ;; Azog (changed from EA's "Goblin King") (LS: Guard of Moria)
 #define WILD_GOBLINKING_BUFF_RECIPIENT_OBJECT_FILTER	ANY +WildBannerMarauder +WildMarauder +WildMarauderHorde ALLIES
+;; Bolg (LS: Goblin Swordsmen, Pikemen & Arches)
+#define WILD_BOLG_BUFF_RECIPIENT_OBJECT_FILTER			ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved ALLIES
 
 
 
