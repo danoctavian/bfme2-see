@@ -563,7 +563,17 @@ CommandButton Command_SpecialPowerPoisonMist
     InvalidCursorName	= GenericInvalid
 End
 
-
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_BolgFakeLeadershipButton
+  Command               = SPECIAL_POWER
+  SpecialPower          = SpecialAbilityFakeLeadership
+  Options				= NONPRESSABLE
+  TextLabel             	= CONTROLBAR:BolgLeadership
+  ButtonImage           = HIGoblinKing
+  ButtonBorderType      	= ACTION
+  DescriptLabel         	= CONTROLBAR:ToolTipBolgLeadership
+  InPalantir            = Yes
+End
 
 
 

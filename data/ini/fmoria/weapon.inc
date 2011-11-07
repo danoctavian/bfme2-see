@@ -1635,36 +1635,33 @@ Weapon BabyDrakeInferno		; BALANCE
 End
 
 
-;----------------------------
-Weapon GoblinKingBlade     ; BALANCE Orc Warrior Weapon ;Orc Fighter
-  LeechRangeWeapon      = Yes
-  AttackRange           = 20.0
-  MeleeWeapon           = Yes
-  DelayBetweenShots     = WILD_GOBLIN_KING_DELAYBETWEENSHOTS            ; time between shots, msec
-  PreAttackDelay        = WILD_GOBLIN_KING_PREATTACKDELAY             ; 300 is mace swing delay time before contact with target.
-  PreAttackType         = PER_SHOT ; Do the delay each time we attack
+; ------------------------------------------------------------------------------ SEE!
+Weapon GoblinKingBlade 
+  LeechRangeWeapon     	= Yes
+  AttackRange			= STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon          	= Yes
+  DelayBetweenShots     	= WILD_GOBLIN_KING_DELAYBETWEENSHOTS            ; time between shots, msec
+  PreAttackDelay        	= WILD_GOBLIN_KING_PREATTACKDELAY             ; 300 is mace swing delay time before contact with target.
+  PreAttackType         	= PER_SHOT ; Do the delay each time we attack
   FireFX                = FX_GondorSwordHit
-  FiringDuration        = WILD_GOBLIN_KING_FIRINGDURATION    ; Duration of the mace swing 
+  FiringDuration        	= WILD_GOBLIN_KING_FIRINGDURATION    ; Duration of the mace swing 
+  IsAimingWeapon        	= Yes
+  AcceptableAimDelta    	= 45 
+  AimDirection			= 360		; In order to aim at something, we aim this far off (to the right would be aiming at -90 degrees)
 
   DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = WILD_GOBLIN_KING_DAMAGE
-    Radius        = 0.0
-    DelayTime     = 0
-    DamageType    = HERO
-    DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
+    Damage        		= WILD_GOBLIN_KING_DAMAGE
+    Radius        		= 0.0
+    DelayTime     		= 0
+    DamageType    		= HERO
+    DamageFXType  		= SWORD_SLASH
+    DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
   End
 End
 
 
 
-
-
-
-
-
-
-; ------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------ SEE!
 Weapon WargRiderWeapon_Goblin
   LeechRangeWeapon			= Yes
 	AttackRange				= STANDARD_MELEE_ATTACK_RANGE

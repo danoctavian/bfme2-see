@@ -18,7 +18,7 @@ PlayerTemplate FactionWild
 	;StartingUnit0 		= GoblinArcherHorde 
 	;StartingUnitOffset0 	= X:-60 Y:200 Z:0
 	
-	StartingUnit1 		= WildGoblinKing ;WildPorter 
+	StartingUnit1 		= WildPorter 
 	StartingUnitOffset1 	= X:30 Y:215 Z:0
 	
 	StartingUnit0 			= WildPorter
@@ -42,7 +42,7 @@ PlayerTemplate FactionWild
 	// NOTE: It is very important that the create-a-hero be the first buildable hero, to ensure that the create-a-hero and the ring hero are always 
 	// attached to the first two buttons in the command set.
 
-	BuildableHeroesMP				= CreateAHero GoblinCaveTrollHero GreatGoblin WildGoblinKing WildAzog WildShelob //Drogoth - is now nest creature! 
+	BuildableHeroesMP				= CreateAHero WildBolg WildGoblinKing GreatGoblin GoblinCaveTrollHero //WildShelob - is now Spell Book summon //Drogoth - is now nest creature! 
 	BuildableRingHeroesMP			= MordorSauron_RingHero
 	SpellStoreCurrentPowerLabel 	= APT:SpellStoreCurrentRingPower
 	SpellStoreMaximumPowerLabel 	= APT:SpellStoreMaximumRingPower
