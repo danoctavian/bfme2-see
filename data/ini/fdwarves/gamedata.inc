@@ -553,6 +553,17 @@
 #define DWARVEN_MINE_MONEY_AMOUNT				25
 #define DWARVEN_MINE_MONEY_RANGE				300
 
+;------------------------ Mithril Mine
+#define DWARVEN_GEMMINE_BUILDCOST						2000
+#define	DWARVEN_GEMMINE_BOUNTY_VALUE					250 //75
+
+#define DWARVEN_GEMMINE_HEALTH							10000
+
+#define DWARVEN_GEMMINE_MONEY_TIME 					60000 	//Each miniute we make money
+#define DWARVEN_GEMMINE_MONEY_AMOUNT					500 	//A lot of money!!!
+#define DWARVEN_GEMMINE_MONEY_RANGE					250 	//And we take up space!
+; Uses regular Mine for upgrades in production...
+
 ;------------------------FORGE WORKS -------------
 
 #define DWARVEN_FORGEWORKS_BUILDCOST				500		; 1200

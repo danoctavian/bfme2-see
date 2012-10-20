@@ -2403,14 +2403,16 @@
 
 	;-------STRUCTURES--------
 
+#define BARRACKS_THREAT_LEVEL			150	
+	
 #define FACTORY_THREAT_LEVEL			150
-#define WALL_THREAT_LEVEL			0
-#define TOWER_THREAT_LEVEL			350
+#define WALL_THREAT_LEVEL				0
+#define TOWER_THREAT_LEVEL				350
 #define WALL_CATAPULT_THREAT_LEVEL		300
 #define FORTRESS_THREAT_LEVEL			500
 #define RESOURCE_THREAT_LEVEL			100
-#define PROP_THREAT_LEVEL			0
-#define LAIR_THREAT_LEVEL			200
+#define PROP_THREAT_LEVEL				0
+#define LAIR_THREAT_LEVEL				200
 
 
 ;======================= SPELL DATA =========================

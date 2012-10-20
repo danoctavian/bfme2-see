@@ -230,7 +230,7 @@ CommandSet GoblinFissureCommandSet
 	1 	= Command_PurchaseTechnologyWildForgedBlades
 	2 	= Command_PurchaseTechnologyWildHeavyArmor
 	3 	= Command_PurchaseTechnologyWildFireArrows
-	4 	= Command_ConstructWildMountainGiant ;Command_ConstructWildTrollSling
+	4 	= Command_ConstructWildTrollSling
 	5 	= Command_UpgradeWildFissureLevel2
 	6 	= Command_Sell
 End
@@ -238,7 +238,7 @@ CommandSet GoblinFissureCommandSetLevel2
 	1 	= Command_PurchaseTechnologyWildForgedBlades
 	2 	= Command_PurchaseTechnologyWildHeavyArmor
 	3 	= Command_PurchaseTechnologyWildFireArrows
-	4 	= Command_ConstructWildMountainGiant ;Command_ConstructWildTrollSling
+	4 	= Command_ConstructWildTrollSling
 	5 	= Command_PurchaseUpgradeWildFissureLevel3
 	6 	= Command_Sell
 End
@@ -247,7 +247,7 @@ CommandSet GoblinFissureCommandSetLevel3
 	2 	= Command_PurchaseTechnologyWildHeavyArmor
 	3 	= Command_PurchaseTechnologyWildFireArrows 	
 	4 	= Command_ConstructWildTrollSling
-	5	= Command_ConstructWildMountainGiant					//TEMP for testing! Will be summon only!
+	;5	= Command_ConstructWildMountainGiant					//TEMP for testing! Will be summon only!
 	6 	= Command_Sell
 End
 
