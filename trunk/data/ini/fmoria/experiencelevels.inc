@@ -1064,3 +1064,22 @@ ExperienceLevel	WildMineShaftLevel3
 	AttributeModifiers			= WildMineShaftProductionBonus2 WildMineShaftArmorBonus1 WildMineShaftHealthBonus2
 End
 
+///////////////////////////////////////
+ExperienceLevel	CaveTrollHeroLevel10
+	TargetNames				= GoblinCaveTrollHero
+	RequiredExperience			= 0 
+	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
+	AttributeModifiers			= HeroLevelUpDamage9
+	Rank					= 10
+	LevelUpFx				= FX:GandalfLevelUp1FX
+	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	SelectionDecal
+		Texture				= decal_hero_evil
+		Style				= SHADOW_ALPHA_DECAL
+		OpacityMin			= 50%	
+		OpacityMax			= 100%
+		MinRadius			= 40
+		MaxRadius			= 200
+		MaxSelectedUnits		= 40
+	End
+End
