@@ -202,9 +202,9 @@
 
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_CAVE_BUILDCOST								300
-#define GOBLIN_CAVE_LEVEL2_UPGRADE_COST					500 ;150
+#define GOBLIN_CAVE_LEVEL2_UPGRADE_COST					800 ;150
 #define GOBLIN_CAVE_LEVEL2_UPGRADE_BUILDTIME				60
-#define GOBLIN_CAVE_LEVEL3_UPGRADE_COST					1000 ;300
+#define GOBLIN_CAVE_LEVEL3_UPGRADE_COST					800 ;300
 #define GOBLIN_CAVE_LEVEL3_UPGRADE_BUILDTIME				80
 #define	GOBLIN_CAVE_SHROUD_CLEAR							160
 #define	GOBLIN_CAVE_VISION_RANGE							160
@@ -213,8 +213,8 @@
 #define GOBLIN_CAVE_HEALTH_REALLY_DAMAGED					5000
 #define GOBLIN_CAVE_HEALTH_HOLE       						5000.0
 #define	GOBLIN_CAVE_BOUNTY_VALUE							100
-#define GOBLIN_CAVE_LVL2_EXP_NEEDED						500 ;2400
-#define GOBLIN_CAVE_LVL3_EXP_NEEDED 						1500
+#define GOBLIN_CAVE_LVL2_EXP_NEEDED						800 ;2400
+#define GOBLIN_CAVE_LVL3_EXP_NEEDED 						1600
 #define	GOBLIN_CAVE_LVL1_EXP_AWARD 						50
 #define	GOBLIN_CAVE_LVL2_EXP_AWARD 						60
 #define	GOBLIN_CAVE_LVL3_EXP_AWARD 						70
@@ -336,7 +336,7 @@
 #define	GOBLIN_BANNERCARRIER_HEALTH_DAMAGED				200 //100
 
 ; ------------------------------------------------------------------------------ SEE!
-#define	GOBLIN_FIGHTER_BUILDCOST							75
+#define	GOBLIN_FIGHTER_BUILDCOST							100 //75
 #define	GOBLIN_FIGHTER_BUILDTIME							60 //120 ; weak but fast!
 #define	GOBLIN_FIGHTER_DAMAGE								30 ;25 for Hobbits as reference
 #define GOBLIN_FIGHTER_FORGEDBLADES_UPGRADE				40
@@ -353,7 +353,7 @@
 #define GOBLIN_FIGHTER_VISION_RANGE    						250 //175
 
 ; ------------------------------------------------------------------------------ SEE!
-#define	GOBLIN_ARCHER_BUILDCOST							150 ;250	; originaly 200
+#define	GOBLIN_ARCHER_BUILDCOST							100 //150 ;250	; originaly 200
 #define	GOBLIN_ARCHER_BUILDTIME								60 ;30
 
 #define	GOBLIN_ARCHER_HEALTH								200 ;100	;80
@@ -380,7 +380,7 @@
 #define GOBLIN_ARCHER_DAMAGE_POISON_PIERCE    				50 //25	;20
 
 ; ------------------------------------------------------------------------------ SEE!
-#define	GOBLIN_SPEARMAN_BUILDCOST							120 //75
+#define	GOBLIN_SPEARMAN_BUILDCOST							100//120 //75
 #define	GOBLIN_SPEARMAN_BUILDTIME							60
 #define	GOBLIN_SPEARMAN_DAMAGE							50 //30
 #define GOBLIN_SPEARMAN_FORGEDBLADES_UPGRADE				60 //40
