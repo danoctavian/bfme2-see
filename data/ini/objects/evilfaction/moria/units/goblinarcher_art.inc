@@ -75,7 +75,6 @@ AnimationState = CLIMBING
 	BeginScript;script to set transition from moving
 		Prev = CurDrawablePrevAnimationState()
 		if Prev == "STATE_Running"  then CurDrawableSetTransitionAnimState("Trans_RunningToClimbing") return end
-		;if Prev == "STATE_Rappelling"  then CurDrawableSetTransitionAnimState("Trans_RappellingToClimbing") return end
 	EndScript
 End
 
@@ -85,13 +84,6 @@ TransitionState = Trans_RunningToClimbing
 		AnimationMode = ONCE
 	End
 End
-
-;TransitionState = Trans_RappellingToClimbing
-;	Animation = Transition
-;		AnimationName = MUGobArch_WALG no anim
-;		AnimationMode = ONCE_BACKWARDS
-;	End
-;End
 
 AnimationState = RAPPELLING
 	StateName = STATE_Rappelling
@@ -103,7 +95,6 @@ AnimationState = RAPPELLING
 	BeginScript;script to set transition from moving
 		Prev = CurDrawablePrevAnimationState()
 		if Prev == "STATE_Running"  then CurDrawableSetTransitionAnimState("Trans_RunningToRappelling") return end
-		;if Prev == "STATE_Climbing"  then CurDrawableSetTransitionAnimState("Trans_ClimbingToRappelling") return end
 	EndScript
 End
 
@@ -113,13 +104,6 @@ TransitionState = Trans_RunningToRappelling
 		AnimationMode = ONCE
 	End
 End
-
-;TransitionState = Trans_ClimbingToRappelling
-;	Animation = Transition
-;		AnimationName = MUGobArch_WALG no anim
-;		AnimationMode = ONCE
-;	End
-;End
 
 ; ------------------------------------------------------------------------------
 
