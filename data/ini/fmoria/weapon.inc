@@ -1573,53 +1573,36 @@ End
 
 ; ------------------------------------------------------------------------------ SEE!
 Weapon WargRiderWeapon_Goblin
-  LeechRangeWeapon			= Yes
+	LeechRangeWeapon			= Yes
 	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
-  MeleeWeapon           	= Yes
-  PreAttackType         		= PER_SHOT ; Do the delay each time we attack a new target
-  PreAttackDelay				= GOBLIN_WARGRIDER_PREATTACKDELAY
-  DelayBetweenShots     		= GOBLIN_WARGRIDER_DELAYBETWEENSHOTS            ; time between shots, msec
-  FiringDuration				= GOBLIN_WARGRIDER_FIRINGDURATION
-  FireFX                	= FX_GondorSwordHit
-  ;AimDirection			= 270		; In order to aim at something, we aim this far off (to the right would be aiming at -90 degrees)
-  
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        			= GOBLIN_WARGRIDER_DAMAGE
-    Radius        			= 0.0
-    DelayTime     			= 0
-    DamageType    			= CAVALRY
-    DamageFXType  			= SWORD_SLASH
-    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
-  End  
-End
-; ------------------------------------------------------------------------------
-Weapon WargRiderWeapon_GoblinUpgraded
-  LeechRangeWeapon			= Yes
-	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
-  MeleeWeapon           	= Yes
-  PreAttackType         		= PER_SHOT ; Do the delay each time we attack a new target
-  PreAttackDelay				= GOBLIN_WARGRIDER_PREATTACKDELAY
-  DelayBetweenShots     		= GOBLIN_WARGRIDER_DELAYBETWEENSHOTS            ; time between shots, msec
-  FiringDuration				= GOBLIN_WARGRIDER_FIRINGDURATION
-  RequireFollowThru			= Yes
-  IsAimingWeapon        		= Yes
-  AcceptableAimDelta    		= 10 
-  
-  ClipSize 					= 1
-  AutoReloadsClip 			= Yes
-  ClipReloadTime 				= GOBLIN_WARGRIDER_FIRINGDURATION
-  FireFX                	= FX_GondorSwordHit
-  // AimDirection				= 270		; In order to aim at something, we aim this far off (to the right would be aiming at -90 degrees)
-  
-  DamageNugget                        ; A basic Nugget that just does damage
-    Damage        			= GOBLIN_WARGRIDER_DAMAGE ;M_GOBLIN_WARGRIDER_DAMAGE_UPGRADE
-    Radius        			= 0.0
-    DelayTime     			= 0
-    DamageType    			= CAVALRY
-    DamageFXType  			= SWORD_SLASH
-    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
-  End
-  
+	MeleeWeapon           	= Yes
+	PreAttackType         		= PER_SHOT ; Do the delay each time we attack a new target
+	PreAttackDelay				= GOBLIN_WARGRIDER_PREATTACKDELAY
+	DelayBetweenShots     		= GOBLIN_WARGRIDER_DELAYBETWEENSHOTS            ; time between shots, msec
+	FiringDuration				= GOBLIN_WARGRIDER_FIRINGDURATION
+	FireFX                	= FX_GondorSwordHit
+	;AimDirection			= 270		; In order to aim at something, we aim this far off (to the right would be aiming at -90 degrees)
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        			= GOBLIN_WARGRIDER_DAMAGE
+		Radius        			= 0.0
+		DelayTime     			= 0
+		DamageType    			= CAVALRY
+		DamageFXType  			= SWORD_SLASH
+		DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+		ForbiddenUpgradeNames	= Upgrade_WildSpiderVenomSacks
+	End
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        			= GOBLIN_WARGRIDER_DAMAGE_UPGRADE
+		Radius        			= 0.0
+		DelayTime     			= 0
+		DamageType    			= CAVALRY
+		DamageFXType  			= SWORD_SLASH
+		DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+		RequiredUpgradeNames		= Upgrade_WildSpiderVenomSacks
+	End
+
 	DOTNugget
 		Damage				= GOBLIN_FIGHTER_POISON_DAMAGE
 		AcceptDamageAdd		= No
@@ -1631,6 +1614,54 @@ Weapon WargRiderWeapon_GoblinUpgraded
 		DamageInterval		= 500
 		DamageDuration		= 30000
 		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
+		RequiredUpgradeNames		= Upgrade_WildSpiderVenomSacks
+	End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+Weapon WolfRiderWeapon_Goblin
+	LeechRangeWeapon			= Yes
+	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
+	MeleeWeapon           	= Yes
+	PreAttackType         		= PER_SHOT ; Do the delay each time we attack a new target
+	PreAttackDelay				= GOBLIN_WOLFRIDER_PREATTACKDELAY
+	DelayBetweenShots     		= GOBLIN_WOLFRIDER_DELAYBETWEENSHOTS            ; time between shots, msec
+	FiringDuration				= GOBLIN_WOLFRIDER_FIRINGDURATION
+	FireFX                	= FX_GondorSwordHit
+	;AimDirection			= 270		; In order to aim at something, we aim this far off (to the right would be aiming at -90 degrees)
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        			= GOBLIN_WOLFRIDER_DAMAGE
+		Radius        			= 0.0
+		DelayTime     			= 0
+		DamageType    			= CAVALRY
+		DamageFXType  			= SWORD_SLASH
+		DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+		ForbiddenUpgradeNames	= Upgrade_WildSpiderVenomSacks
+	End
+
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        			= GOBLIN_WOLFRIDER_DAMAGE_UPGRADE
+		Radius        			= 0.0
+		DelayTime     			= 0
+		DamageType    			= CAVALRY
+		DamageFXType  			= SWORD_SLASH
+		DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+		RequiredUpgradeNames		= Upgrade_WildSpiderVenomSacks
+	End
+
+	DOTNugget
+		Damage				= GOBLIN_FIGHTER_POISON_DAMAGE
+		AcceptDamageAdd		= No
+		Radius				= 0.0
+		DelayTime			= 0
+		DamageType			= POISON
+		DamageFXType		= POISON
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageInterval		= 500
+		DamageDuration		= 30000
+		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
+		RequiredUpgradeNames		= Upgrade_WildSpiderVenomSacks
 	End
 End
 
@@ -2939,6 +2970,31 @@ Weapon WildMountainGiantRockFromThinAirWarhead
     ShockWaveRadius		= 30.0
     ShockWaveTaperOff	= 0.75
 ;   ShockWaveZMult		= 1.20
+  End
+End
+
+
+;------------------------------------------------------------------------------
+Weapon GoblinWolfWeapon
+  LeechRangeWeapon = Yes
+  AttackRange           = STANDARD_MELEE_ATTACK_RANGE
+  MeleeWeapon           = Yes
+  PreAttackDelay		= WILD_GOLBINWOLF_SWORD_PREATTACKDELAY
+  DelayBetweenShots     = WILD_GOLBINWOLF_SWORD_DELAYBETWEENSHOTS            ; time between shots, msec
+  FiringDuration		= WILD_GOLBINWOLF_SWORD_FIRINGDURATION
+  FireFX                = FX_WargRiderlessAttack
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = WILD_GOLBINWOLF_SWORD
+    Radius        = 0.0
+    DelayTime     = 0
+    DamageType    = SLASH
+	//thefuck?
+//    DamageScalar  = 300% NONE +GondorTowerShieldGuard +GondorTowerShieldGuardHorde +RohanSpearmen +RohanSpearmenHorde +ElvenMithlondSentry +ElvenMithlondSentryHorde +DwarvenPhalanx +DwarvenPhalanxHorde  
+ //   DamageScalar  = 300% NONE +MordorEasterling +MordorEasterlingHorde +IsengardPikeman +IsengardPikemanHorde +AngmarHillTrollHorde +AngmarHillTroll +AngmarRhudaurSpearmen +AngmarRhudaurSpearman 
+    DamageFXType  = SWORD_SLASH
+    DeathType     = NORMAL
+    DamageScalar  = 10% ANY +STRUCTURE
   End
 End
 

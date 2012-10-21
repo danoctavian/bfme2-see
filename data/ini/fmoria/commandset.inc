@@ -205,21 +205,21 @@ End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildWolfDenCommandSet
-	;1 = Command_ConstructGoblinWargPack
+	1   = Command_ConstructGoblinWolfHorde
 	2 	= Command_ConstructGoblinWolfRiderHorde
 	3 	= Command_ConstructGoblinWargRiderHorde
 	4 	= Command_PurchaseUpgradeWildWolfDenLevel2
 	6 	= Command_Sell
 End
 CommandSet WildWolfDenCommandSetLevel2
-	;1 = Command_ConstructGoblinWargPack
+	1   = Command_ConstructGoblinWolfHorde
 	2 	= Command_ConstructGoblinWolfRiderHorde
 	3 	= Command_ConstructGoblinWargRiderHorde
 	4 	= Command_PurchaseUpgradeWildWolfDenLevel3
 	6 	= Command_Sell
 End
 CommandSet WildWolfDenCommandSetLevel3
-	;1 = Command_ConstructGoblinWargPack
+	1   = Command_ConstructGoblinWolfHorde
 	2 	= Command_ConstructGoblinWolfRiderHorde
 	3 	= Command_ConstructGoblinWargRiderHorde
 	6 	= Command_Sell
@@ -261,8 +261,8 @@ CommandSet GoblinArcherCommandSet
 	2 	= Command_ArcherBombard
 	3 	= Command_PurchaseUpgradeWildBasicTraining 
 	4 	= Command_PurchaseUpgradeWildHeavyArmor
-	5 	= Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows
-	6 	= Command_PurchaseUpgradeGenericArcherFlamingArrows //Command_PurchaseUpgradePoisonArrows 
+	5 	= Command_PurchaseUpgradeWildSpiderVenomArrows
+	6 	= Command_PurchaseUpgradeGenericArcherFlamingArrows 
 	12 	= Command_CaptureBuilding
 	13 	= Command_AttackMove
 	14 	= Command_Stop
@@ -276,7 +276,7 @@ CommandSet GoblinArcherFlamingArrowsCommandSet
 	2 	= Command_ArcherBombard
 	3 	= Command_PurchaseUpgradeWildBasicTraining 
 	4 	= Command_PurchaseUpgradeWildHeavyArmor
-	5 	= Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows
+	5 	= Command_PurchaseUpgradeWildSpiderVenomArrows
 	6 	= Command_GenericArcherFlamingArrows
 	12 	= Command_CaptureBuilding
 	13 	= Command_AttackMove
@@ -499,7 +499,14 @@ CommandSet WildBolgCommandSet
 End
 
 
-
+CommandSet WildGoblinWolfHordeCommandSet	
+	1	= Command_ToggleStance	
+	13 	= Command_AttackMove
+	14 	= Command_Stop
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
+End
 
 
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="LotRBFME2RCSEEMod">
+</Property><Property Name="Solution File" Value="E:\BFME2 Modding\BFMEII SEE\launcher\LotRBFME2RCMod\LotRBFME2RCSEEMod.sln">
+</Property><Property Name="Date" Value="Sunday, October 21, 2012">
+</Property><Property Name="Time" Value="20:52 PM">
+</Property></Properties><Event ErrorLevel="0" Project="LotRBFME2RCSEEMod" Source="LotRBFME2RCMod\LotRBFME2RCSEEMod.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LotRBFME2RCSEEMod" Source="LotRBFME2RCMod\LotRBFME2RCSEEMod.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SEEVCProj" Source="..\..\SEEVCProj.vcproj" Description="Converting project file 'E:\BFME2 Modding\BFMEII SEE\SEEVCProj.vcproj'.">
+</Event><Event ErrorLevel="1" Project="SEEVCProj" Source="..\..\SEEVCProj.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="SEEVCProj" Source="..\..\SEEVCProj.vcproj" Description="Done converting to new project file 'E:\BFME2 Modding\BFMEII SEE\SEEVCProj.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="SEEVCProj" Source="..\..\SEEVCProj.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LotRBFME2RCSEEMod.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="LotRBFME2RCSEEMod.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LotRBFME2RCSEEMod" Source="LotRBFME2RCMod\LotRBFME2RCSEEMod.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
