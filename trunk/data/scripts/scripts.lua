@@ -684,6 +684,7 @@ end
 
 function OnWildGoblinArcherCreated(self)
 	ObjectHideSubObjectPermanently( self, "FIREAROWTIP", true )
+	OnMoriaGoblinsSwordCreated(self)
 end
 
 function OnGarrisonableCreated(self)
@@ -1596,6 +1597,12 @@ function OnMoriaGoblinsSpearCreated(self)
   ObjectHideSubObjectPermanently( self, "SHOULDER", true )
   ObjectHideSubObjectPermanently( self, "FEET", true )
 
+	--haxor, we dont wanna rebind or whatever the model...	
+	ObjectHideSubObjectPermanently( self, "MRA", true )
+	ObjectHideSubObjectPermanently( self, "DLEIHS", true )
+	ObjectHideSubObjectPermanently( self, "REDLUOHS", true )
+	ObjectHideSubObjectPermanently( self, "TEEF", true )
+	
   -- define the locals as random numbers
   local sword = GetRandomNumber()
   local staff = GetRandomNumber()
@@ -1668,6 +1675,13 @@ function OnMoriaGoblinsBowCreated(self)
   ObjectHideSubObjectPermanently( self, "SHOULDER", true )
   ObjectHideSubObjectPermanently( self, "FEET", true )
 
+  
+	--haxor, we dont wanna rebind or whatever the model...	
+	ObjectHideSubObjectPermanently( self, "MRA", true )
+	ObjectHideSubObjectPermanently( self, "DLEIHS", true )
+	ObjectHideSubObjectPermanently( self, "REDLUOHS", true )
+	ObjectHideSubObjectPermanently( self, "TEEF", true )
+  
   -- define the locals as random numbers
   local bow = GetRandomNumber()
   local helmet = GetRandomNumber()

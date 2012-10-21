@@ -598,7 +598,7 @@
 		<!-- This contains events specific to the GoblinArcherFunctions. Kris -->
         <EventHandler EventName="BeAfraidOfPhial"			ScriptFunctionName="MordorFighterBecomeAfraidOfPhial"			DebugSingleStep="false"/>
         <EventHandler EventName="BeUncontrollablyAfraid"	ScriptFunctionName="MordorFighterBecomeUncontrollablyAfraid"	 DebugSingleStep="false"/>
-        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnWildGoblinArcherCreated" DebugSingleStep="false"/>        
+        <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMoriaGoblinsBowCreated" DebugSingleStep="false"/>        
     </EventList>
  
     <EventList Name="IsengardFighterFunctions" Inherit="MordorFighterFunctions">
