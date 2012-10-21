@@ -1296,7 +1296,7 @@ CommandButton Command_PurchaseTechnologyWildHeavyArmor		//"SCAVENGED ARMOR"
 	Command				= PLAYER_UPGRADE 
 	Options				= NEED_UPGRADE CANCELABLE 
 	Upgrade				= Upgrade_TechnologyWildHeavyArmor
-	NeededUpgrade		= Upgrade_WildFissureLevel2
+	NeededUpgrade		= Upgrade_StructureLevel2
 	TextLabel			= CONTROLBAR:PurchaseTechnologyWildHeavyArmor
 	ButtonImage			= BWTreasureTrove_ScavengedArmor
 	ButtonBorderType		= UPGRADE
@@ -1313,7 +1313,7 @@ CommandButton Command_PurchaseTechnologyWildSpiderVenom 		//"VENOM SACS"
 	ButtonImage       	= BWSpiderPit_VenomSacks
 	ButtonBorderType  	= UPGRADE
 	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseTechnologyWildSpiderVenomSacks
-	NeededUpgrade	  	= Upgrade_WildSpiderPitLevel3 Upgrade_TechnologyWildBasicTraining
+	NeededUpgrade	  	= Upgrade_StructureLevel3 Upgrade_TechnologyWildBasicTraining
 	Radial            	= Yes
 	InPalantir	      	= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacks
@@ -1322,7 +1322,7 @@ CommandButton Command_PurchaseTechnologyWildFireArrows		//"FLAMING ARROWS" (New 
 	Command				= PLAYER_UPGRADE
 	Options				= NEED_UPGRADE CANCELABLE
 	Upgrade				= Upgrade_TechnologyWildFireArrows 
-	NeededUpgrade		= Upgrade_WildFissureLevel3
+	NeededUpgrade		= Upgrade_StructureLevel3
 	TextLabel			= CONTROLBAR:PurchaseTechnologyWildFireArrows
 	ButtonImage			= BMOrcPit_FlamingArrows
 	ButtonBorderType		= UPGRADE
@@ -1386,7 +1386,7 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenomArrows ;This is for Archers!
 	Command           	= OBJECT_UPGRADE
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
-	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks Upgrade_WildBasicTraining //WildSpiderVenomSackScience
+	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks  Upgrade_ObjectLevel2//WildSpiderVenomSackScience
 	TextLabel         	= CONTROLBAR:PurchaseUpgradeWildVenomArrow
 	ButtonImage       	= BWTreasureTrove_PoisonArrows
 	ButtonBorderType  	= UPGRADE

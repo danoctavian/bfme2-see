@@ -849,11 +849,11 @@ Weapon GoblinArcherBow       ; BALANCE Archer Weapon ;orc archer
 		ForbiddenUpgradeNames   		= Upgrade_WildSpiderVenomSacks //Upgrade_WildFireArrows ;was Upgrade_WildSpiderVenomSacks in b4.7?
 	End
 	
-	ProjectileNugget    ; Fire Arrow					;was commented (out) in b4.7?
-		ProjectileTemplateName  		= EvilFactionFireArrow
-		WarheadTemplateName      	= GoblinArcherBowFireWarhead
-		RequiredUpgradeNames     	= Upgrade_WildFireArrows
-	End
+//	ProjectileNugget    ; Fire Arrow					;was commented (out) in b4.7?
+//		ProjectileTemplateName  		= EvilFactionFireArrow
+//		WarheadTemplateName      	= GoblinArcherBowFireWarhead
+//		RequiredUpgradeNames     	= Upgrade_WildFireArrows
+//	End
 	
 	ProjectileNugget    ; Poison Arrow				//Added for SEE!
 		ProjectileTemplateName		= PoisonArrowProjectile
@@ -901,69 +901,19 @@ Weapon GoblinArcherBowBombard       ; BALANCE Archer Weapon ;orc archer
 		ForbiddenUpgradeNames   		= Upgrade_WildSpiderVenomSacks ;Upgrade_WildFireArrows
 	End
 	
-	ProjectileNugget    ; Fire Arrow
-		ProjectileTemplateName  		= EvilFactionFireArrowBombard
-		WarheadTemplateName      	= GoblinArcherBowBombardFireWarhead
-		RequiredUpgradeNames     	= Upgrade_WildFireArrows
-	End
+//	ProjectileNugget    ; Fire Arrow
+//		ProjectileTemplateName  		= EvilFactionFireArrowBombard
+//		WarheadTemplateName      	= GoblinArcherBowBombardFireWarhead
+//		RequiredUpgradeNames     	= Upgrade_WildFireArrows
+//	End
 	
 	ProjectileNugget    ; Poison Arrow
-		ProjectileTemplateName		= PoisonArrowProjectileBombard_SEE
-		WarheadTemplateName			= GoblinArcherPoisonArrowsBowWarhead
+		ProjectileTemplateName		= PoisonArrowProjectileBombard_SEE //PoisonArrowProjectile ?
+		WarheadTemplateName			= GoblinArcherBowBombardPoisonWarhead //GoblinArcherPoisonArrowsBowWarhead
 		RequiredUpgradeNames     	= Upgrade_WildSpiderVenomSacks
 	End	
 End
 
-//;------------------------------------------------------------------------------
-//Weapon GoblinArcherPoisonArrowsRangeFinder       ; BALANCE Archer Weapon ;goblin archer
-//	AttackRange				= #SUBTRACT( GOBLIN_ARCHER_RANGE 100 ) 
-//	RangeBonusMinHeight      = 30 ;		= 10
-//	RangeBonus				= 1
-//	RangeBonusPerFoot		= #MULTIPLY( GOBLIN_ARCHER_RANGE .003 )
-//	DelayBetweenShots		= 1000
-//	LeechRangeWeapon		= Yes
-//	AcceptableAimDelta		= 45
-//	AntiAirborneVehicle		= Yes
-//	AntiAirborneMonster		= Yes
-//	FinishAttackOnceStarted = No
-//	HordeAttackNugget
-//		LockWeaponSlot		= QUINARY
-//	End
-//End
-//
-;------------------------------------------------------------------------------ SEE!
-Weapon GoblinArcherPoisonArrows       ; BALANCE Archer Weapon ;goblin archer
-	AttackRange				= GOBLIN_ARCHER_RANGE	;Horde member so it needs to be bigger than the horde weapon attack range
-	LeechRangeWeapon		= Yes
-	WeaponSpeed			= 300					; dist/sec
-	MinWeaponSpeed			= 121
-	MaxWeaponSpeed			= 400
-	FireFX					= FX_RohanArcherBowWeapon
-	ScaleWeaponSpeed		= Yes					; Used for lob weapons, scales speed proportional to range
-	HitPercentage				= 100					;When this weapon is used it will hit exactly 50% of the time
-	ScatterRadius				= 20.0					;When this weapon misses it can randomly miss by as much as this distance
-	CanBeDodged				= Yes					; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
-	
-	DelayBetweenShots		= 0
-	PreAttackDelay			= GOBLIN_ARCHER_PREATTACKDELAY
-	PreAttackType			= PER_POSITION
-	PreAttackRandomAmount	= 200
-	FiringDuration				= 0
-	
-	ClipSize					= 1
-	AutoReloadsClip			= Yes
-	AutoReloadWhenIdle		= 1
-	ClipReloadTime			= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
-	
-	AntiAirborneVehicle		= Yes
-	AntiAirborneMonster		= Yes
-	HitPassengerPercentage	= 20%
-
-	ProjectileNugget
-		ProjectileTemplateName	= PoisonArrowProjectile
-		WarheadTemplateName		= GoblinArcherPoisonArrowsBowWarhead
-	End
-End
 ;------------------------------------------------------------------------------ SEE!
 Weapon GoblinArcherPoisonArrowsBowWarhead
 	ProjectileCollidesWith		= ENEMIES
@@ -1103,46 +1053,6 @@ Weapon GoblinArcherBowFire_SEE //Not used - using SA (Special Ability) instead! 
 		ProjectileTemplateName  = EvilFactionFireArrow
 		WarheadTemplateName      = GoblinArcherBowFireWarhead
 	End
-End
-
-Weapon GoblinArcherBowBombardPoison //GoblinArcherBowBombardFire_SEE
-	AttackRange			= GOBLIN_ARCHER_BOMBARD_MAXRANGE 
-	MinimumAttackRange	= #SUBTRACT( GOBLIN_ARCHER_BOMBARD_MINRANGE 75 )
-  LeechRangeWeapon    	= Yes
-	WeaponSpeed		= 300         ; dist/sec 
-	MinWeaponSpeed		= 121
-	MaxWeaponSpeed		= 400      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
-	FireFX				= FX_RohanArcherBowWeapon  
-	ScaleWeaponSpeed	= Yes ; Used for lob weapons, scales speed proportional to range
-	HitPercentage       	= 0     ;Always scatter
-	ScatterRadius       	= ARCHER_BOMBARD_SCATTER_RADIUS     ;When this weapon misses it can randomly miss by as much as this distance.
-	
-	AcceptableAimDelta	= 20	; prevent twitchy reaiming in horde on horde
-	DelayBetweenShots	= 0
-	PreAttackDelay      	= GOBLIN_ARCHER_PREATTACKDELAY
-	PreAttackType       	= PER_POSITION
-	PreAttackRandomAmount     = 200 
-	FiringDuration      	= 0
-	
-	ClipSize				= 1
-	AutoReloadsClip		= Yes
-	AutoReloadWhenIdle	= 1	
-	ClipReloadTime		= Min:GOBLIN_ARCHER_BOW_RELOADTIME_MIN Max:GOBLIN_ARCHER_BOW_RELOADTIME_MAX
-	ContinuousFireOne		= 0
-	ContinuousFireCoast	= GOBLIN_ARCHER_BOW_RELOADTIME_MAX 
-	
-	AntiAirborneVehicle	= Yes
-	AntiAirborneMonster	= Yes
-	HitPassengerPercentage	= 20%
-	CanBeDodged				= Yes ; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
-	NoVictimNeeded			= Yes
-	BombardType				= Yes
-
-	ProjectileNugget    
-		ProjectileTemplateName  	= PoisonArrowProjectile //EvilFactionFireArrowBombard
-		WarheadTemplateName		= GoblinArcherBowBombardPoisonWarhead //GoblinArcherBowBombardFireWarhead		
-	End
-
 End
 
 ;------------------------------------------------------------------------------ SEE!

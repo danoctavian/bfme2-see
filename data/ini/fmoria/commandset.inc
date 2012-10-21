@@ -259,10 +259,25 @@ End
 CommandSet GoblinArcherCommandSet
 	1 	= Command_ToggleStance
 	2 	= Command_ArcherBombard
-	3 	= Command_PurchaseUpgradeGenericArcherFlamingArrows //Command_PurchaseUpgradePoisonArrows 
-	4 	= Command_PurchaseUpgradeWildBasicTraining 
-	5 	= Command_PurchaseUpgradeWildHeavyArmor
-	6 	= Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows
+	3 	= Command_PurchaseUpgradeWildBasicTraining 
+	4 	= Command_PurchaseUpgradeWildHeavyArmor
+	5 	= Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows
+	6 	= Command_PurchaseUpgradeGenericArcherFlamingArrows //Command_PurchaseUpgradePoisonArrows 
+	12 	= Command_CaptureBuilding
+	13 	= Command_AttackMove
+	14 	= Command_Stop
+	16  = Command_SetStanceBattle
+	17  = Command_SetStanceAggressive
+	18  = Command_SetStanceHoldGround
+End
+
+CommandSet GoblinArcherFlamingArrowsCommandSet
+	1 	= Command_ToggleStance
+	2 	= Command_ArcherBombard
+	3 	= Command_PurchaseUpgradeWildBasicTraining 
+	4 	= Command_PurchaseUpgradeWildHeavyArmor
+	5 	= Command_PurchaseUpgradeWildSpiderVenomArrows //Command_PurchaseUpgradeWildFireArrows
+	6 	= Command_GenericArcherFlamingArrows
 	12 	= Command_CaptureBuilding
 	13 	= Command_AttackMove
 	14 	= Command_Stop
