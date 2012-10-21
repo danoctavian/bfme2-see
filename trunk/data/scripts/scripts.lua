@@ -1501,40 +1501,46 @@ function OnMoriaGoblinsSwordCreated(self)
 	ObjectHideSubObjectPermanently( self, "Forged_Blade", true )
 	ObjectHideSubObjectPermanently( self, "Glow", true )
 
-  ObjectHideSubObjectPermanently( self, "WEAPON01", true )
-  ObjectHideSubObjectPermanently( self, "WEAPON02", true )
-  ObjectHideSubObjectPermanently( self, "WEAPON03", true )
-  ObjectHideSubObjectPermanently( self, "WEAPON04", true )
-  ObjectHideSubObjectPermanently( self, "WEAPON05", true )
+	ObjectHideSubObjectPermanently( self, "WEAPON01", true )
+	ObjectHideSubObjectPermanently( self, "WEAPON02", true )
+	ObjectHideSubObjectPermanently( self, "WEAPON03", true )
+	ObjectHideSubObjectPermanently( self, "WEAPON04", true )
+	ObjectHideSubObjectPermanently( self, "WEAPON05", true )
 
-  ObjectHideSubObjectPermanently( self, "HEAD01", true )
-  ObjectHideSubObjectPermanently( self, "HEAD02", true )
-  ObjectHideSubObjectPermanently( self, "HEAD03", true )
+	ObjectHideSubObjectPermanently( self, "HEAD01", true )
+	ObjectHideSubObjectPermanently( self, "HEAD02", true )
+	ObjectHideSubObjectPermanently( self, "HEAD03", true )
 
-  ObjectHideSubObjectPermanently( self, "ARM", true )
-  ObjectHideSubObjectPermanently( self, "SHIELD", true )
-  ObjectHideSubObjectPermanently( self, "SHOULDER", true )
-  ObjectHideSubObjectPermanently( self, "FEET", true )
+	ObjectHideSubObjectPermanently( self, "ARM", true )
+	ObjectHideSubObjectPermanently( self, "SHIELD", true )
+	ObjectHideSubObjectPermanently( self, "SHOULDER", true )
+	ObjectHideSubObjectPermanently( self, "FEET", true )
 
-  -- define the locals as random numbers
-  local sword = GetRandomNumber()
-  local helmet = GetRandomNumber()
-  local shield = GetRandomNumber()
-  local feet = GetRandomNumber()
-  local shoulder = GetRandomNumber()
+	--haxor, we dont wanna rebind or whatever the model...	
+	ObjectHideSubObjectPermanently( self, "MRA", true )
+	ObjectHideSubObjectPermanently( self, "DLEIHS", true )
+	ObjectHideSubObjectPermanently( self, "REDLUOHS", true )
+	ObjectHideSubObjectPermanently( self, "TEEF", true )
 
-  -- set the bow; note: we need one of them, so there's no "empty" possibility
-  if sword <= 0.2 then
+	-- define the locals as random numbers
+	local sword = GetRandomNumber()
+	local helmet = GetRandomNumber()
+	local shield = GetRandomNumber()
+	local feet = GetRandomNumber()
+	local shoulder = GetRandomNumber()
+
+	-- set the bow; note: we need one of them, so there's no "empty" possibility
+	if sword <= 0.2 then
       ObjectHideSubObjectPermanently( self, "WEAPON01", false )
-    elseif sword <= 0.4 then
+	elseif sword <= 0.4 then
       ObjectHideSubObjectPermanently( self, "WEAPON02", false )
-    elseif sword <= 0.6 then
+	elseif sword <= 0.6 then
       ObjectHideSubObjectPermanently( self, "WEAPON03", false )
-    elseif sword <= 0.8 then
+	elseif sword <= 0.8 then
       ObjectHideSubObjectPermanently( self, "WEAPON04", false )
-    else
+	else
       ObjectHideSubObjectPermanently( self, "WEAPON05", false )
-  end
+	end
 
   -- set the bow; note: we need one of them, so there's no "empty" possibility
   if helmet <= 0.33 then

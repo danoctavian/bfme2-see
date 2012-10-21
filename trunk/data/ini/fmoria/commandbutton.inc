@@ -1374,7 +1374,7 @@ CommandButton Command_PurchaseUpgradeWildSpiderVenomBlades ;This is for Warriors
 	Command           	= OBJECT_UPGRADE
 	Options			  	= NEED_UPGRADE OK_FOR_MULTI_SELECT CANCELABLE	
 	Upgrade           	= Upgrade_WildSpiderVenomSacks
-	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks Upgrade_WildBasicTraining //WildSpiderVenomSackScience
+	NeededUpgrade	  	= Upgrade_TechnologyWildSpiderVenomSacks Upgrade_ObjectLevel2//WildSpiderVenomSackScience
 	TextLabel         	= CONTROLBAR:PurchaseUpgradeWildVenomBlade
 	ButtonImage       	= BWTreasureTrove_PoisonBlades
 	ButtonBorderType  	= UPGRADE

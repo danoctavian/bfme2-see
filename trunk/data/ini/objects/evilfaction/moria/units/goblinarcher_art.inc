@@ -3,38 +3,15 @@
 WadingParticleSys = WaterRipplesTrail  //Used when the unit is wading in shallow water. Make sure ALL units (inc monsters, machines, etc) has this! (Naz)
 
 DefaultModelConditionState
-	Model = MUBowGob_SKN ;MUGobArch_SKN
+	Model = MUBowGob_NHA //MUBowGob_SKN ;MUGobArch_SKN
 	Skeleton = MUGobArch_SKL
 	WeaponLaunchBone = PRIMARY ARRROW
 	WeaponLaunchBone = TERTIARY ARRROW
 	WeaponLaunchBone = QUINARY ARRROW
-End
-
-ModelConditionState = WEAPONSET_PLAYER_UPGRADE
-	Model = MUBowGob_SKN
-	Skeleton = MUGobArch_SKL
-	;ParticleSysBone = FireArowTip arrowFire FollowBone:Yes
-	//ParticleSysBone = FireArowTip GoblinPoisonArrow FollowBone:Yes
-	ParticleSysBone		= ARRROW GoblinPoisonArrow FollowBone:Yes
-End
-
-ModelConditionState = PREATTACK_E
-	Model = MUBowGob_SKN ;MUGobArch_SKN
-	Skeleton = MUGobArch_SKL
-	;ParticleSysBone = FireArowTip arrowFire FollowBone:Yes
-	//ParticleSysBone = FireArowTip GoblinPoisonArrow FollowBone:Yes
-End
-
-ModelConditionState = USER_2
-	Model               = MUBowGob_SKN ;MUGobArch_SKN
-	Skeleton			= MUGobArch_SKL
-	;ParticleSysBone		= ARRROW GoblinPoisonArrow FollowBone:Yes //(Green glow FX)
-	;ParticleSysBone		= FIREAROWTIP GoblinFighterPoison2 FollowBone:Yes //Added for SEE! (green sparkles FX)
-	ParticleSysBone = FireArowTip arrowFire FollowBone:Yes 
 End
 
 ModelConditionState 	= USER_9
-	Model = MUBowGob_SKN ;MUGobArch_SKN
+	Model = MUBowGob_NHA //MUBowGob_SKN ;MUGobArch_SKN
 	Skeleton = MUGobArch_SKL
 	WeaponLaunchBone = PRIMARY ARRROW
 	WeaponLaunchBone = TERTIARY ARRROW
@@ -42,22 +19,21 @@ ModelConditionState 	= USER_9
 	ParticleSysBone     = NONE MoriaSpellbookScurry
 End
 
-ModelConditionState 	= USER_9 WEAPONSET_PLAYER_UPGRADE
+//CREATE_A_HERO_00
+ModelConditionState 	= CREATE_A_HERO_00
 	Model = MUBowGob_SKN
 	Skeleton = MUGobArch_SKL
-	ParticleSysBone     = NONE MoriaSpellbookScurry
+	WeaponLaunchBone = PRIMARY ARRROW
+	WeaponLaunchBone = TERTIARY ARRROW
+	WeaponLaunchBone = QUINARY ARRROW
 End
 
-ModelConditionState 	= USER_9 PREATTACK_E
+ModelConditionState 	= CREATE_A_HERO_00 USER_9
 	Model = MUBowGob_SKN
 	Skeleton = MUGobArch_SKL
-	ParticleSysBone     = NONE MoriaSpellbookScurry
-End
-
-ModelConditionState 	= USER_9 USER_2
-	Model = MUBowGob_SKN
-	Skeleton = MUGobArch_SKL
-	ParticleSysBone = FireArowTip arrowFire FollowBone:Yes 
+	WeaponLaunchBone = PRIMARY ARRROW
+	WeaponLaunchBone = TERTIARY ARRROW
+	WeaponLaunchBone = QUINARY ARRROW
 	ParticleSysBone     = NONE MoriaSpellbookScurry
 End
 
