@@ -15,5 +15,6 @@
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
     <ReferencePath>
     </ReferencePath>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>
