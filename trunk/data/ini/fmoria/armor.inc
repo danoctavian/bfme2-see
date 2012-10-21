@@ -371,3 +371,22 @@ Armor MountainGiantArmor
   Armor = CAVALRY 				 75%	; Horse damage				originally 75%
   Armor = MAGIC         		100%    ; hero damage
 End
+
+
+;------------------------------------------------------------------------------
+Armor GoblinWolfArmor
+  Armor = DEFAULT            	100%   
+  Armor = SLASH              	100%   
+  Armor = PIERCE             	 80% 	; originally 150%
+  Armor = SPECIALIST         	 40% 
+  Armor = CRUSH              	 50% 
+  Armor = SIEGE              	100%
+  Armor = FLAME              	100%
+  Armor = FROST          	100%   ;
+  Armor = MAGIC              	100% 
+  Armor = HERO               	200%
+  Armor = CAVALRY	     	100%
+  Armor = HERO_RANGED        	200%
+  Armor = STRUCTURAL	     	100%	
+  FlankedPenalty 	       = 50%
+End

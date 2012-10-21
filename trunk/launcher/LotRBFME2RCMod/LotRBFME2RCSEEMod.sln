@@ -1,11 +1,22 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotRBFME2RCSEEMod", "LotRBFME2RCMod\LotRBFME2RCSEEMod.csproj", "{E98938A0-DA7C-4FE3-B6A2-4FFE9D6C9DF6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SEEVCProj", "..\..\SEEVCProj.vcproj", "{7EE0AF8E-1D78-40A4-ADD4-FF329FFC0A25}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SEEVCProj", "..\..\SEEVCProj.vcxproj", "{7EE0AF8E-1D78-40A4-ADD4-FF329FFC0A25}"
 EndProject
-Project("{8BC9CEB9-8B4A-11D0-8D11-00A0C91BC942}") = "SEE.exe", "..\..\SEE.exe", "{25E1F337-15DA-43E1-8984-C1267E3ED53C}"
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "SEE", "..\..\SEE.exe", "{25E1F337-15DA-43E1-8984-C1267E3ED53C}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = E:\BFME2 Modding\BFMEII SEE\SEE.exe
+		RemoteMachine = RESERVE-LAPTOP
+		StartingDirectory = E:\BFME2 Modding\BFMEII SEE
+		Arguments = -win -scriptDebugLite
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

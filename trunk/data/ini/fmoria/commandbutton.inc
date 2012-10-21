@@ -358,6 +358,20 @@ CommandButton Command_ConstructGoblinWargRiderHorde
 	ShowProductionCount	= Yes      
 End
 
+;--------------------------------------------------------------------------------- really?
+CommandButton Command_ConstructGoblinWolfHorde
+	Command			= UNIT_BUILD
+	Object			= GoblinWolfHorde
+	Options			= CANCELABLE
+	TextLabel		= CONTROLBAR:ConstructGoblinWolfHorde
+	ButtonImage		= KUDireWolvesIcon
+	ButtonBorderType    	= BUILD 
+	DescriptLabel       	= CONTROLBAR:ToolTipBuildGoblinWolfHorde
+	Radial			= Yes
+	InPalantir		= Yes
+	ShowProductionCount	= Yes    
+End
+
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructWildMountainGiant
 	Command				= UNIT_BUILD
