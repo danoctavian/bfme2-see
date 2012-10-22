@@ -99,6 +99,19 @@ SpecialPower SpellBookMoriaDeepDrums
 End
 
 ;------------------------------------------------------------------------------
+SpecialPower SpellBookMoriaPlunder
+	Enum			= SPECIAL_SPELL_BOOK_ARMY_OF_THE_DEAD
+	RequiredSciences		= SCIENCE_MoriaPlunder
+	ReloadTime      	= SPELL_RECHARGE_TIME_TIER_1 ; in milliseconds
+	;InitiateAtLocationSound = ArmyDeadEnterMono		;ArmyDeadEnterStereo	- Up to naz!
+	RadiusCursorRadius	= 100.0 //200.0  
+	ViewObjectDuration	= 5000
+	ViewObjectRange		= 150
+	Flags					= NEEDS_OBJECT_FILTER RESPECT_RECHARGE_TIME_DISCOUNT
+	ObjectFilter			= SPELLBOOK_MORIA_PLUNDER_OBJECT_FILTER
+End
+	
+;------------------------------------------------------------------------------
 SpecialPower SpellBookMoriaCaveBats
 	Enum			= SPECIAL_SPELL_BOOK_CAVE_BATS
 	Flags			= WATER_OK RESPECT_RECHARGE_TIME_DISCOUNT

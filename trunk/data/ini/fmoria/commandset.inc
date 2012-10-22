@@ -1094,7 +1094,7 @@ CommandSet WildSpellBookCommandSet_SEE
 	5 = Command_SpellBookAerialView 	 	
 	
 	6 = Command_SpellBookMoriaDeepDrums
-//	7 = 
+	7 = Command_SpellBookMoriaPlunder
 	8 = Command_SpellBookMoriaCaveBats
 
 	9 = Command_SpellBookMoriaCalltheHorde
@@ -1112,7 +1112,7 @@ End
 
 CommandSet WildSpellStoreCommandSet_SEE
 	1 = Command_PurchaseSpellMoriaDeepDrums
-//	2 = 
+	2 = Command_PurchaseSpellMoriaPlunder
 	3 = Command_PurchaseSpellMoriaCaveBats
 
 	4 = Command_PurchaseSpellMoriaCalltheHorde

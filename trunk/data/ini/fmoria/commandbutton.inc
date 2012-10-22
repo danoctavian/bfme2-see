@@ -1532,6 +1532,28 @@ CommandButton Command_PurchaseSpellMoriaDeepDrums
 	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookDeepDrums
 End
 
+CommandButton Command_SpellBookMoriaPlunder
+	Command = SPELL_BOOK
+    SpecialPower		= SpellBookMoriaPlunder
+    ButtonImage			= UCCommon_Pillage
+    Options				= NEED_TARGET_POS
+	TextLabel			= CONTROLBAR:MoriaSpellbookPlunder
+	ButtonBorderType	= ACTION
+	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookPlunder
+	RadiusCursorType	= FireBreathRadiusCursor ; - Again, for Naz to decide.
+	CursorName			= AttackObj
+	InvalidCursorName	= GenericInvalid  
+End
+
+CommandButton Command_PurchaseSpellMoriaPlunder
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE 
+    ButtonImage			= UCCommon_Pillage
+    Science				= SCIENCE_MoriaPlunder
+    TextLabel			= CONTROLBAR:MoriaSpellbookPlunder
+	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookPlunder
+End
+
 CommandButton Command_SpellBookMoriaCaveBats
 	Command				= SPELL_BOOK
     SpecialPower		= SpellBookMoriaCaveBats
