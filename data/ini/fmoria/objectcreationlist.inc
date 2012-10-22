@@ -19,6 +19,14 @@
 
 ; Tier 1
 ; ---------------------------------------------------------------------------------------
+ObjectCreationList OCL_SpellBookMoriaPlunder
+	CreateObject
+		ObjectNames				= SpellBookMoriaPlunder
+		Count					= 1
+	End
+End
+
+; ---------------------------------------------------------------------------------------
 ObjectCreationList OCL_SpellBookMoriaCaveBats
 	CreateObject
 		ObjectNames			= WildCaveBats

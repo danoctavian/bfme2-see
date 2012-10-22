@@ -962,5 +962,10 @@
 ; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
 ;-------------------------------------------------------------------
 
-; NONE YET!
+#define SPELLBOOK_MORIA_PLUNDER_OBJECT_FILTER							ANY +GondorFarm +DwarvenMineShaft +ElvenMallornTree +WildMineShaft +IsengardFurnace +MordorSlaughterHouse +ArnorFarm +AngmarMill ENEMIES
 
+#define MORIA_PLUNDER_MONEY_TIME 			6000
+#define MORIA_PLUNDER_MONEY_AMOUNT			15
+
+#define	MORIA_PLUNDER_SHROUD_CLEAR							300
+#define	MORIA_PLUNDER_VISION_RANGE							160

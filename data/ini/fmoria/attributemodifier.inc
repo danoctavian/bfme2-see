@@ -154,6 +154,15 @@ ModifierList SpellBookMoriaDeepDrums
 	ReplaceInCategoryIfLongest	= Yes
 End
 
+ModifierList SpellbookMoriaPlunder
+	Category						= SPELL
+	Modifier = PRODUCTION 25%		// Production increased x1/4
+	Duration						= 3000
+	ReplaceInCategoryIfLongest		= No
+	IgnoreIfAnticategoryActive		= No
+	ModelCondition = DAMAGED ; Up to naz what fx's etc.
+End
+
 ; Tier 2
 ModifierList SpellBookMoriaScurry
 	Category = SPELL
