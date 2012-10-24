@@ -4,22 +4,22 @@
 
 ; GameDefines.INI for S.E.E.... (GENERAL BALANCE DATA!)
 ; ------------------------------------------------------------------------------
-;NOTE: Attacks are as such: PreAttackDelay -> Both: FiringDuration & DelayBetweenShots -> After DBS starts PreAttackDelay again.
+;NOTE: Attacks are as such: PreAttackDelay (PD) -> Both: FiringDuration (FD) & DelayBetweenShots (DBS) -> After DBS starts PAD again.
 
-#define ENTIRE_MAP			99999.0 //Entire map
+#define ENTIRE_MAP 99999.0 ;Entire map
 
 #define RESOURCE_STRUCTURE_ENM_SPELL_OBJECT_FILTER		ANY +GondorFarm +DwarvenMineShaft +ElvenMallornTree +WildMineShaft +IsengardFurnace +MordorSlaughterHouse +ArnorFarm +AngmarMill ENEMIES
 #define RESOURCE_STRUCTURE_ALY_SPELL_OBJECT_FILTER		ANY +GondorFarm +DwarvenMineShaft +ElvenMallornTree +WildMineShaft +IsengardFurnace +MordorSlaughterHouse +ArnorFarm +AngmarMill ALLIES
 #define RESOURCE_STRUCTURE_BTH_SPELL_OBJECT_FILTER		ANY +GondorFarm +DwarvenMineShaft +ElvenMallornTree +WildMineShaft +IsengardFurnace +MordorSlaughterHouse +ArnorFarm +AngmarMill ALLIES ENEMIES
 
-;------------------------- New SEE Hero stats!
+; HERO SUMMON & REVIVE
+;------------------------------------------------------------------------------ SEE!
 #define HERO_HOBBITHERO_INITIAL_BUILDTIME					20		// 20 secs - All hobbit heroes; Frodo, Sam, Merry & Pippin!
 #define HERO_INITIAL_BUILDTIME								30 		// 30 secs - All fortress heroes except ring heroes!
 #define HERO_RESPAWN_TIME									180000	// 3 minutes - All fortress heroes time to get revived from death!
-#define HERO_RESPAWN_TIME_LONG							240000	// 4 minutes - Gandalf the White time to get revived from death!
-#define HERO_SUPER_HERO_BUILDTIME							300		// 5 minutes - Def is 6 minutes (360 secs) - Ring Hero build time (no respawn times obviously)!
-
-;------------------------- New SEE Hero resurrection stats!
+#define HERO_RESPAWN_TIME_LONG							240000	// 4 minutes - Gandalf the White's time to get revived from death!
+#define HERO_SUPER_HERO_BUILDTIME							300		// 5 minutes - Ring Hero build time (no respawn times obviously)! Def is 6 minutes (360 secs)
+;--------  New SEE Hero resurrection stats!
 #define HERO_RESPAWN_COST_MIN								500		// Minimal heroes like Hobbit Heroes!
 #define HERO_RESPAWN_COST_LO								1000	// Normal heroes like Arwen, Eowyn & GoblinKing, etc!
 #define HERO_RESPAWN_COST_MED								2000   // Bigger heroes like Aragorn, Legolas, Gimli, etc!
@@ -27,32 +27,40 @@
 #define HERO_RESPAWN_COST_VHI								5000	// Gandalf the White!
 
 
-;; Shelob (Assistance from Mordor) (LS: Spiderlings)
-#define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER		ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
-;; Great Goblin (LS: All Moria units)
-#define WILD_GREATGOBLIN_BUFF_RECIPIENT_OBJECT_FILTER	ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved +WildMarauder +WildBannerMarauder +WildMarauderHorde +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling +GoblinArcherHorde +GoblinArcherHordeInn +GoblinArcher +GoblinArcherHorde_FromDefectedLair +WargSentry  +GoblinWargRider +GoblinWargRiderHorde +GoblinWolfRider +GoblinWolfRiderHorde +GoblinSpiderRider +GoblinSpiderRiderHorde +WildBannerSpiderRider +WildMountainGiant +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair ALLIES
-;; Azog (changed from EA's "Goblin King") (LS: Guard of Moria)
-#define WILD_GOBLINKING_BUFF_RECIPIENT_OBJECT_FILTER	ANY +WildBannerMarauder +WildMarauder +WildMarauderHorde ALLIES
-;; Bolg (LS: Goblin Swordsmen, Pikemen & Arches)
-#define WILD_BOLG_BUFF_RECIPIENT_OBJECT_FILTER			ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved ALLIES
+
+; LEADERSHIP FOR MORIA
+;------------------------------------------------------------------------------ SEE!
+; Shelob (LS: Spiderlings)
+#define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER			ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
+; Great Goblin (LS: All Moria units)
+#define WILD_GREATGOBLIN_BUFF_RECIPIENT_OBJECT_FILTER		ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved +WildMarauder +WildBannerMarauder +WildMarauderHorde +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling +GoblinArcherHorde +GoblinArcherHordeInn +GoblinArcher +GoblinArcherHorde_FromDefectedLair +WargSentry  +GoblinWargRider +GoblinWargRiderHorde +GoblinWolfRider +GoblinWolfRiderHorde +GoblinSpiderRider +GoblinSpiderRiderHorde +WildBannerSpiderRider +WildMountainGiant +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair ALLIES
+; Azog (changed from EA's "Goblin King") (LS: Guard of Moria)
+#define WILD_GOBLINKING_BUFF_RECIPIENT_OBJECT_FILTER		ANY +WildBannerMarauder +WildMarauder +WildMarauderHorde ALLIES
+; Bolg (LS: Goblin Swordsmen, Pikemen & Arches)
+#define WILD_BOLG_BUFF_RECIPIENT_OBJECT_FILTER				ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved ALLIES
 
 
 
-
-
+; ATTACK RANGE & DODGE
+;------------------------------------------------------------------------------ SEE!
 #define STANDARD_MELEE_ATTACK_RANGE						7.5 ;11.5		// This should be used by most melee units in the game...
 #define HERO_DODGE_PERCENT									50
 
-;------------------------------------------------------------------------------ SEE!
-#define	GENERIC_ARCHER_RANGE								300 //275
-#define GENERIC_ARCHER_PREATTACKDELAY 						1000
 
-#define ARCHER_WEAK_HITPERCENTAGE							60
-#define ARCHER_STANDARD_HITPERCENTAGE         			70
-#define ARCHER_ELITE_HITPERCENTAGE							80
-#define ARCHER_WEAK_SCATTERRADIUS            				40.0 //30.0
-#define ARCHER_STANDARD_SCATTERRADIUS          			30.0 //20.0
-#define ARCHER_ELITE_SCATTERRADIUS            				20.0 //10.0
+
+; ARCHER RANGE & ACCURACY
+;------------------------------------------------------------------------------ SEE!
+#define GENERIC_ARCHER_PREATTACKDELAY 						1000
+#define	GENERIC_ARCHER_RANGE								300 //275
+#define	GENERIC_ARCHER_ELITE_RANGE							400
+
+#define ARCHER_WEAK_HITPERCENTAGE							50 //60
+#define ARCHER_STANDARD_HITPERCENTAGE         			60 //70
+#define ARCHER_ELITE_HITPERCENTAGE							75 //80
+
+#define ARCHER_WEAK_SCATTERRADIUS            				50.0 //40.0 //30.0
+#define ARCHER_STANDARD_SCATTERRADIUS          			40.0 //30.0 //20.0
+#define ARCHER_ELITE_SCATTERRADIUS            				25.0 //20.0 //10.0
 
 #define ARCHER_BOW_RELOADTIME_MIN							1500 ;1½ sec
 #define ARCHER_BOW_RELOADTIME_MAX							2000 ;2 sec
@@ -61,7 +69,7 @@
 #define ARCHER_DAMAGE_FLAMINGARROWS_FLAME     			50 //25	;20
 
 #define ARCHER_REGULAR_FIREARROW_BURNRATEINCREASE			10 //1
-#define ARCHER_REGULAR_FIREARROW_BURNRADIUS		    	1 //0.5
+#define ARCHER_REGULAR_FIREARROW_BURNRADIUS		    	1.0 //0.5
 
 #define ARCHER_BOMBARD_FIREARROW_BURNRADIUS    			1.0
 #define ARCHER_BOMBARD_SCATTER_RADIUS						60
