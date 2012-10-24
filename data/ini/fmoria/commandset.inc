@@ -1100,14 +1100,14 @@ CommandSet WildSpellBookCommandSet_SEE
 	9 = Command_SpellBookMoriaCalltheHorde
 	10 = Command_SpellBookMoriaScurry
 	11 = Command_SpellBookMoriaUntamedAllegiance
-//	12 = 
+	12 = Command_SpellBookMoriaDeteriorate
 	
 	13 = Command_SpellBookMoriaShelob
 	14 = Command_SpellBookMoriaDarkness
 	15 = Command_SpellBookMoriaWatcher
 	
 	16 = Command_SpellBookMoriaStoneGiants
-//	17 =
+	17 = Command_SpellBookScavenger
 End
 
 CommandSet WildSpellStoreCommandSet_SEE
@@ -1118,7 +1118,7 @@ CommandSet WildSpellStoreCommandSet_SEE
 	4 = Command_PurchaseSpellMoriaCalltheHorde
 	5 = Command_PurchaseSpellMoriaScurry
 	6 = Command_PurchaseSpellMoriaUntamedAllegiance
-//	7 = 
+	7 =	Command_PurchaseSpellMoriaDeteriorate
 	
 	8 = Command_PurchaseSpellMoriaShelob
 	9 = Command_PurchaseSpellMoriaDarkness

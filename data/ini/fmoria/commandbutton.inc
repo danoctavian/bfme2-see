@@ -1636,6 +1636,28 @@ CommandButton Command_PurchaseSpellMoriaUntamedAllegiance
 	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookUntamedAllegiance
 End
 
+CommandButton Command_SpellBookMoriaDeteriorate
+	Command = SPELL_BOOK
+    SpecialPower		= SpellBookMoriaDeteriorate
+    ButtonImage			= ZZButtonImage 
+    Options				= NEED_TARGET_POS
+	TextLabel			= CONTROLBAR:MoriaSpellbookDeteriorate
+	ButtonBorderType	= ACTION
+	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookDeteriorate
+	RadiusCursorType	= FireBreathRadiusCursor ; - Again, for Naz to decide.
+	CursorName			= AttackObj
+	InvalidCursorName	= GenericInvalid  
+End
+
+CommandButton Command_PurchaseSpellMoriaDeteriorate
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE 
+    ButtonImage			= ZZButtonImage
+    Science				= SCIENCE_MoriaDeteriorate
+    TextLabel			= CONTROLBAR:MoriaSpellbookDeteriorate
+	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookDeteriorate
+End
+
 CommandButton Command_SpellBookMoriaShelob
 	Command				= SPELL_BOOK
 	SpecialPower		= SpellBookMoriaShelob
