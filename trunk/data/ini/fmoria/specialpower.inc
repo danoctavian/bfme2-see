@@ -151,6 +151,18 @@ SpecialPower SpellBookMoriaUntamedAllegiance
 	ObjectFilter			= CREEP_OBJECTFILTER
 End
 
+;------------------------------------------------------------------------------
+SpecialPower SpellBookMoriaDeteriorate
+	Enum						= SPECIAL_SPELL_BOOK_EAGLE_ALLIES
+	ReloadTime					= SPELL_RECHARGE_TIME_TIER_2   ; in milliseconds
+	RadiusCursorRadius			= 100.0   ; Match the radius in FXList SummonBalrogStart
+	RequiredSciences				= SCIENCE_MoriaDeteriorate
+	ViewObjectDuration = 5000
+	ViewObjectRange = 100
+	Flags					= NEEDS_OBJECT_FILTER RESPECT_RECHARGE_TIME_DISCOUNT
+	ObjectFilter			= SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER
+End
+
 ; Tier 3
 ;------------------------------------------------------------------------------
 SpecialPower SpellBookMoriaShelob

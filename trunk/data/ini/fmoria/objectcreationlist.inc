@@ -36,6 +36,16 @@ ObjectCreationList OCL_SpellBookMoriaCaveBats
 	End
 End
 
+; Tier 2
+
+; ---------------------------------------------------------------------------------------
+ObjectCreationList OCL_SpellBookMoriaDeteriorate
+	CreateObject
+		ObjectNames				= SpellBookMoriaDeteriorate
+		Count					= 1
+	End
+End
+
 ; Tier 3
 ; ---------------------------------------------------------------------------------------
 ObjectCreationList OCL_SpellBookMoriaShelobEgg

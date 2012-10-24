@@ -52,7 +52,6 @@ Science SCIENCE_MoriaUntamedAllegiance ;Untamed Allegiance
   IsGrantable = Yes
 End
 
-;WIP!
 Science SCIENCE_MoriaDeteriorate ;Deteriorate
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaCaveBats
   SciencePurchasePointCost = EVIL_RANK_2_COST
