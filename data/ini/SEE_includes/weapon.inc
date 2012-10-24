@@ -1,7 +1,7 @@
 
 ; ------------------------------------------------------------------------------
 Weapon GenericArcherFlamingArrowsRangeFinder
-	AttackRange				= #SUBTRACT( GENERIC_ARCHER_RANGE 100 ) 
+	AttackRange				= #SUBTRACT( GENERIC_ARCHER_RANGE 50 ) //100
 	RangeBonusMinHeight		= 30 ;		= 10
 	RangeBonus				= 1
 	RangeBonusPerFoot		= #MULTIPLY( GENERIC_ARCHER_RANGE .003 )
@@ -50,13 +50,13 @@ Weapon GenericArcherFlamingArrows
 End
 ;-----------------------------------
 Weapon GenericArcherFlamingArrowsBowWarhead
-	ProjectileCollidesWith		= ENEMIES
+	ProjectileCollidesWith		= ENEMIES ALLIES ;(ALLIES temp added for testing the SEE Burning Death FX)
 	RadiusDamageAffects		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
 	HitStoredTarget			= Yes
 	
   DamageNugget                       
     Damage        			= ARCHER_DAMAGE_FLAMINGARROWS_FLAME
-    Radius        			= 0.0	
+    Radius        			= 1.0 //0.0	
     DelayTime     			= 0
     DamageType    			= FLAME
     DamageFXType  			= EVIL_ARROW_PIERCE
