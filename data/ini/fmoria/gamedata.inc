@@ -6,10 +6,10 @@
 ; ------------------------------------------------------------------------------ "SEE!" = The codes have been adapted/converted from the obsolete Beta 4.7 WiP...
 ; NOTE: Keep this organized!
 
-#define GOBLIN_RESOURCEBUILDING_BUILDTIME					6;0  	// 1 minute - Resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
-#define GOBLIN_SENTRY_TOWER_BUILDTIME						9;0 		// 1½ minutes - Battletowers!
-#define GOBLIN_BASICBUILDING_BUILDTIME						12;0 	// 2 minutes - Non resource buildings! (Barracks, Stables, Armory, etc)
-#define GOBLIN_FORTRESS_BUILDTIME							240 	// 4 minutes - Fortress Keeps!
+#define GOBLIN_RESOURCEBUILDING_BUILDTIME					30 ;60  	// 1 minute - Resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
+#define GOBLIN_SENTRY_TOWER_BUILDTIME						60 ;90 		// 1½ minutes - Battletowers!
+#define GOBLIN_BASICBUILDING_BUILDTIME						90 ;120 	// 2 minutes - Non resource buildings! (Barracks, Stables, Armory, etc)
+#define GOBLIN_FORTRESS_BUILDTIME							180 ;240 	// 4 minutes - Fortress Keeps!
 
 ; ------------------------------------------------------------------------------ SEE!
 #define WILD_FORTRESS_BUILDCOST							25000 //40000
@@ -27,7 +27,7 @@
 
 // Fortress Floor Improvement
 #define WILD_STONEWORK_PAVEMENT_BUILDCOST				2000
-#define WILD_STONEWORK_PAVEMENT_BUILDTIME					6;0
+#define WILD_STONEWORK_PAVEMENT_BUILDTIME					60
 
 //Razor Spines
 #define WILD_FORTRESS_RAZORSPINES_BUILDCOST				3000
@@ -41,7 +41,7 @@
 
 //Web Cocoon
 #define WILD_FORTRESS_WEBCOCOON_BUILDCOST				4;000 ;8000
-#define WILD_FORTRESS_WEBCOCOON_BUILDTIME					6;0
+#define WILD_FORTRESS_WEBCOCOON_BUILDTIME					60
 #define WILD_FORTRESS_WEBCOCOON_KEEP_HEALTH_BONUS   		0 ; Nerfing the Fortress Armor Upgrade -GB
 #define WILD_FORTRESS_WEBCOCOON_KEEP_ARMOR_BONUS		50%
 #define WILD_FORTRESS_WEBCOCOON_EXPANSION_HEALTH_BONUS	0 ; Nerfing the Fortress Armor Upgrade -GB
@@ -49,7 +49,7 @@
 
 //Dragon's Nest
 #define WILD_DRAGONNEST_BUILDCOST							5;000 ;10000 //5000 - Drogoth is REALLY powerful!
-#define WILD_DRAGONNEST_BUILDTIME							6;0 
+#define WILD_DRAGONNEST_BUILDTIME							60 
 #define WILD_FORTRESS_FIREDRAKE_BUILDCOST					0 ;5000 //Drogoth - nest is 10000 already!
 #define WILD_FORTRESS_FIREDRAKE_BUILDTIME					60 //same as "initial"
 #define WILD_FORTRESS_FIREDRAKE_HEALTH						18000 //Not used for Drogoth, see Drogoth!		
@@ -227,9 +227,9 @@
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_FISSURE_BUILDCOST							700
 #define GOBLIN_FISSURE_LEVEL2_UPGRADE_COST					600
-#define GOBLIN_FISSURE_LEVEL2_UPGRADE_BUILDTIME				6;0
+#define GOBLIN_FISSURE_LEVEL2_UPGRADE_BUILDTIME				60
 #define GOBLIN_FISSURE_LEVEL3_UPGRADE_COST					2000
-#define GOBLIN_FISSURE_LEVEL3_UPGRADE_BUILDTIME				8;0
+#define GOBLIN_FISSURE_LEVEL3_UPGRADE_BUILDTIME				80
 #define	GOBLIN_FISSURE_SHROUD_CLEAR						160
 #define	GOBLIN_FISSURE_VISION_RANGE							160
 #define GOBLIN_FISSURE_HEALTH								20000
@@ -251,9 +251,9 @@
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_SPIDERPIT_BUILDCOST							500
 #define GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_COST				600
-#define GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_BUILDTIME 			6;0
+#define GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_BUILDTIME 			60
 #define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_COST				1500
-#define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_BUILDTIME			8;0
+#define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_BUILDTIME			80
 #define	GOBLIN_SPIDERPIT_SHROUD_CLEAR						160
 #define	GOBLIN_SPIDERPIT_VISION_RANGE						160
 #define GOBLIN_SPIDERPIT_HEALTH								20000
@@ -280,9 +280,9 @@
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_WOLFDEN_BUILDCOST							500
 #define GOBLIN_WOLFDEN_LEVEL2_UPGRADE_COST				600
-#define GOBLIN_WOLFDEN_LEVEL2_UPGRADE_BUILDTIME 			6;0
+#define GOBLIN_WOLFDEN_LEVEL2_UPGRADE_BUILDTIME 			60
 #define GOBLIN_WOLFDEN_LEVEL3_UPGRADE_COST				1500
-#define GOBLIN_WOLFDEN_LEVEL3_UPGRADE_BUILDTIME			8;0
+#define GOBLIN_WOLFDEN_LEVEL3_UPGRADE_BUILDTIME			80
 #define	GOBLIN_WOLFDEN_SHROUD_CLEAR						160
 #define	GOBLIN_WOLFDEN_VISION_RANGE						160
 #define GOBLIN_WOLFDEN_HEALTH								20000
@@ -422,7 +422,7 @@
 
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_WARGRIDER_BUILDCOST							500 //Isen has 600
-#define GOBLIN_WARGRIDER_BUILDTIME							9;0 //160 
+#define GOBLIN_WARGRIDER_BUILDTIME							90 //160 
 #define	GOBLIN_WARGRIDER_VISION_RANGE 						250 //175
 #define	GOBLIN_WARGRIDER_SHROUD_RANGE 					350 //400
 #define	GOBLIN_WARGRIDER_HORDE_VISION_RANGE 				175
@@ -455,7 +455,7 @@
 
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_WOLFRIDER_BUILDCOST							350 //400
-#define GOBLIN_WOLFRIDER_BUILDTIME							6;0 //120 //30
+#define GOBLIN_WOLFRIDER_BUILDTIME							60 //120 //30
 #define	GOBLIN_WOLFRIDER_VISION_RANGE 						200
 #define	GOBLIN_WOLFRIDER_SHROUD_RANGE 						300
 #define	GOBLIN_WOLFRIDER_HORDE_VISION_RANGE 				175
@@ -508,7 +508,7 @@
 
 ; ------------------------------------------------------------------------------ SEE!
 #define CAVE_TROLL_BUILDCOST								1000
-#define CAVE_TROLL_BUILDTIME								9;0
+#define CAVE_TROLL_BUILDTIME								90
 #define	CAVE_TROLL_HEALTH 									6000
 #define CAVE_TROLL_HEALTH_DAMAGED							3000 //2250
 #define CAVE_TROLL_HEALTH_RAMPAGE_DAMAGED					600 //750
@@ -739,7 +739,7 @@
 ;---------------WILD TECHNOLOGY AND UPGRADES--
 ;------------------------------------------------------------------------------ SEE!
 #define WILD_TECH_BASIC_TRAINING_BUILDCOST					1000 ;800
-#define WILD_TECH_BASIC_TRAINING_BUILDTIME					12;0
+#define WILD_TECH_BASIC_TRAINING_BUILDTIME					120
 #define WILD_PERSONAL_BASIC_TRAINING_BUILDCOST				200
 #define WILD_PERSONAL_BASIC_TRAINING_BUILDTIME				10
 
@@ -754,7 +754,7 @@
 #define WILD_PERSONAL_HEAVY_ARMOR_BUILDTIME				10
 
 #define WILD_TECH_FIRE_ARROWS_BUILDCOST					1000 ;800
-#define WILD_TECH_FIRE_ARROWS_BUILDTIME				  	16;5 //To compensate for +25% (additive +10% +25%) build speed modifier at lvl3!
+#define WILD_TECH_FIRE_ARROWS_BUILDTIME				  	165 //To compensate for +25% (additive +10% +25%) build speed modifier at lvl3!
 #define WILD_PERSONAL_FIRE_ARROWS_BUILDCOST				200
 #define WILD_PERSONAL_FIRE_ARROWS_BUILDTIME				10
 ;------------------------------------------------------------------------------
