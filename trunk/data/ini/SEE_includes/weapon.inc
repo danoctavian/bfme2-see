@@ -1,7 +1,7 @@
 
 ; ------------------------------------------------------------------------------
 Weapon GenericArcherFlamingArrowsRangeFinder
-	AttackRange				= #SUBTRACT( GENERIC_ARCHER_RANGE 50 ) //100
+	AttackRange				= #SUBTRACT( GENERIC_ARCHER_RANGE 25 ) //100
 	RangeBonusMinHeight		= 30 ;		= 10
 	RangeBonus				= 1
 	RangeBonusPerFoot		= #MULTIPLY( GENERIC_ARCHER_RANGE .003 )
@@ -134,7 +134,7 @@ End
 Weapon MordorCaveTrollHitDrum
    LeechRangeWeapon			= Yes
   RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
-  AttackRange           	= STANDARD_MELEE_ATTACK_RANGE
+  AttackRange           	= CAVETROLL_DRUMHIT_RANGE //STANDARD_MELEE_ATTACK_RANGE
   MeleeWeapon           	= Yes
   DelayBetweenShots     		= MORDOR_TROLL_PUNCH_DELAYBETWEENSHOTS
   FiringDuration        		= MORDOR_TROLL_PUNCH_FIRINGDURATION
@@ -143,7 +143,7 @@ Weapon MordorCaveTrollHitDrum
   PreAttackFX          		= FX_TrollTreeSwing
   FireFX               		= FX_TrollPunchGeneric
   DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
-  AcceptableAimDelta			= 15.0 
+  AcceptableAimDelta			= 7.5 //15.0 
 
 	DamageNugget                        ; A basic Nugget that just does damage
 		Damage        		= 1

@@ -44,6 +44,7 @@
 ; ATTACK RANGE & DODGE
 ;------------------------------------------------------------------------------ SEE!
 #define STANDARD_MELEE_ATTACK_RANGE						7.5 ;11.5		// This should be used by most melee units in the game...
+#define CAVETROLL_DRUMHIT_RANGE							3
 #define HERO_DODGE_PERCENT									50
 
 
