@@ -1,1 +1,9 @@
 Profile,Unit,total
+computeAerialPath.v,탎ec, 15397
+computeAerialPath.setup.v,탎ec,  1086
+computeAerialPath.setup.c,calls,   260
+computeAerialPath.collision.v,탎ec,  4264
+computeAerialPath.collision.c,calls,   260
+computeAerialPath.calc terminal points.v,탎ec,  5489
+computeAerialPath.calc terminal points.c,calls,   260
+computeAerialPath.c,calls,   260
