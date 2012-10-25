@@ -3004,16 +3004,17 @@ End
 
 ;------------------------------------------------------------------------------
 Weapon SpellBookMoriaDeteriorate
-	AttackRange			= MORIA_DETERIORATE_RANGE	
+	AttackRange			= 0 //MORIA_DETERIORATE_RANGE	
 	DelayBetweenShots	= 0          ; time between shots, msec	
 	FiringDuration      = 0
 	CanFireWhileMoving	= Yes
 	HitPercentage		= 100
 	HitStoredTarget		= Yes			; Always hits initial target.
 	DamageNugget                        ; A basic Nugget that just does damage
-		Damage			= MORIA_DETERIORATE_DAMAGE		
+		Damage			= 10		
 		DamageType		= SIEGE
 		DamageFXType	= SWORD_SLASH
+		Radius			= MORIA_DETERIORATE_RANGE
 		DeathType		= LASERED ;now always used instead of NORMAL (Sûl)
 		DamageSpeed		= 1400.0
 	End
