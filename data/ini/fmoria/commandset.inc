@@ -289,8 +289,8 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinFighterCommandSet
 	1 	= Command_ToggleStance
-	2 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
-	3 	= Command_PurchaseUpgradeWildBasicTraining
+	2 	= Command_PurchaseUpgradeWildBasicTraining
+	3 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
 	4 	= Command_PurchaseUpgradeWildHeavyArmor
 	5 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
 	12 	= Command_CaptureBuilding
@@ -304,8 +304,8 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinSpearmanCommandSet
 	1 	= Command_ToggleStance
-	2 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
-	3 	= Command_PurchaseUpgradeWildBasicTraining
+	2 	= Command_PurchaseUpgradeWildBasicTraining
+	3 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
 	4 	= Command_PurchaseUpgradeWildHeavyArmor
 	5 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseSpiderVenomForGoblinsUpgrade //Command_PoisonedBlades
 	12 	= Command_CaptureBuilding
@@ -333,11 +333,11 @@ CommandSet WildMarauderCommandSet
 End
 
 ; ------------------------------------------------------------------------------ SEE!
-CommandSet GoblinWargRiderCommandSet
+CommandSet GoblinWolfRiderCommandSet
 	1	= Command_ToggleStance
-	2	= Command_SpecialAbilityWargHowl
-	3 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
-	4 	= Command_PurchaseUpgradeWildBasicTraining	
+	2	= Command_SpecialAbilityWolfHowl
+	3 	= Command_PurchaseUpgradeWildBasicTraining	
+	4 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
 	5 	= Command_PurchaseUpgradeWildHeavyArmor	
 	;6 	= Command_PurchaseUpgradeWildSpiderVenomBlades		; Has no BC glow! But not all units needs to exploit this power anyways!
 	12 	= Command_CaptureBuilding	
@@ -349,11 +349,11 @@ CommandSet GoblinWargRiderCommandSet
 End
 
 ; ------------------------------------------------------------------------------ SEE!
-CommandSet GoblinWolfRiderCommandSet
+CommandSet GoblinWargRiderCommandSet
 	1	= Command_ToggleStance
-	2	= Command_SpecialAbilityWolfHowl
-	3 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
-	4 	= Command_PurchaseUpgradeWildBasicTraining	
+	2	= Command_SpecialAbilityWargHowl
+	3 	= Command_PurchaseUpgradeWildBasicTraining	 
+	4 	= Command_PurchaseUpgradeWildForgedBlade 				; Pre-req!
 	5 	= Command_PurchaseUpgradeWildHeavyArmor	
 	;6 	= Command_PurchaseUpgradeWildSpiderVenomBlades		; Has no BC glow! But not all units needs to exploit this power anyways!
 	12 	= Command_CaptureBuilding	
@@ -362,6 +362,31 @@ CommandSet GoblinWolfRiderCommandSet
 	16 	= Command_SetStanceBattle
 	17 	= Command_SetStanceAggressive
 	18 	= Command_SetStanceHoldGround	
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandSet WildHillTrollCommandSet
+	1  	= Command_ToggleStance
+	13 		= Command_AttackMove
+	14 		= Command_Stop
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandSet CaveTrollCommandSet
+	1	= Command_ToggleStance
+	2  	= Command_ToggleMountainTrollRockThrow
+	3	= Command_SpecialAbilityTrollFindTree 
+	4	= Command_SpecialAbilityTrollFindGoblinToThrow
+	6	= Command_SpecialAbilityTrollHitDrum
+	13		= Command_AttackMove
+	14		= Command_Stop
+	15		= Command_SpecialAbilityTrollGrabTree			; For context-sensitive tree grab
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
 End
 
 ; ------------------------------------------------------------------------------ SEE!
@@ -393,32 +418,6 @@ CommandSet WildMountainGiantRockCommandSetStopBombard
 	4	= Command_StopBombard
 	13		= Command_AttackMove
 	14		= Command_Stop
-	16  	= Command_SetStanceBattle
-	17  	= Command_SetStanceAggressive
-	18  	= Command_SetStanceHoldGround
-End
-
-
-; ------------------------------------------------------------------------------ SEE!
-CommandSet CaveTrollCommandSet
-	1	= Command_ToggleStance
-	2  	= Command_ToggleMountainTrollRockThrow
-	3	= Command_SpecialAbilityTrollFindTree 
-	4	= Command_SpecialAbilityTrollFindGoblinToThrow
-	6	= Command_SpecialAbilityTrollHitDrum
-	13		= Command_AttackMove
-	14		= Command_Stop
-	15		= Command_SpecialAbilityTrollGrabTree			; For context-sensitive tree grab
-	16  	= Command_SetStanceBattle
-	17  	= Command_SetStanceAggressive
-	18  	= Command_SetStanceHoldGround
-End
-
-; ------------------------------------------------------------------------------ SEE!
-CommandSet WildHillTrollCommandSet
-	1  	= Command_ToggleStance
-	13 		= Command_AttackMove
-	14 		= Command_Stop
 	16  	= Command_SetStanceBattle
 	17  	= Command_SetStanceAggressive
 	18  	= Command_SetStanceHoldGround
