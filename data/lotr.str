@@ -32791,6 +32791,10 @@ CONTROLBAR:ToolTipSharkuWargMount
 "Mount and unmount Sharku's personal Warg"
 End
 
+CONTROLBAR:ToolTipShelobWebbing
+"Cripples enemy heroes in spider webs"
+End
+
 CONTROLBAR:ToolTipSpecialAbilityBatCloud
 "Deals small amounts of damage and detects stealth"
 End

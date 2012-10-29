@@ -430,7 +430,7 @@ CommandSet WildShelobCommandSet
   3 = Command_WildShelobInstillTerror 
   4 = Command_WildShelobPoisonedStinger
   5 = Command_ShelobSpiderlingAllies_SEE
-//  6 = 
+  6 = Command_SpecialAbilityWildShelobWebbing_SEE
   13 = Command_AttackMove
   14 = Command_Stop
   16 = Command_SetStanceBattle
