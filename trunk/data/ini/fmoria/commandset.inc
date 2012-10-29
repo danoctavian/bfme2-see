@@ -35,7 +35,7 @@ CommandSet WildFortressCommandSet
 	1	= Command_ConstructWildPorter
 	2	= Command_SelectRevivablesWildFortress
 	3	= Command_SelectUpgradesWildFortress	
-	4	= Command_PurchaseNewFireDrake	
+	4	= Command_PurchaseBalrogAlly //Command_PurchaseNewFireDrake	
 	6	= Command_Sell
     //	UPGRADES MENU
 	7	= Command_PurchaseUpgradeWildFortressBatCloud
