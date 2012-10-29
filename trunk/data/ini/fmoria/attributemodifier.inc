@@ -127,7 +127,7 @@ ModifierList ShelobWebbingModifier
   Modifier 	= SPEED 0%  // multiplier - 0% means max speed is 0. jba	
   Duration 	= 60000	//WARNING if you change this you must change the system life of the FX below (FXList.ini)
   ClearModelCondition = MOVING MOUNTED WEAPONSET_TOGGLE_1 USER_1 USER_2 USER_3 USER_4 USER_5 USER_6 USER_7 USER_8 USER_9 WEAPONSET_HERO_MODE DISGUISED // Make him stop moving... NOW! All the modelconditions listed there are so the hero becomes webbed for sure.
-//  FX = FX_ShelobWebbingHit_SEE
+  FX = FX_ShelobWebbingHit_SEE
   ModelCondition = STONED // Set the model condition for the troll texture swap here.
 End
 
