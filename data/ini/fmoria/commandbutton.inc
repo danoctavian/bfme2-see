@@ -962,7 +962,7 @@ CommandButton Command_PurchaseNewFireDrake
   PurchasedLabel		  = TOOLTIP:AlreadySummonedCreature
 End
 CommandButton Command_PurchaseBalrogAlly
-	Command				= OBJECT_UPGRADE
+	Command				= OBJECT_UPGRADE SPELL_BOOK   
 	Upgrade             = Upgrade_HasDragonNestFireDrake 	
 	SpecialPower		= SpellBookBalrogAlly
 	Options				= CANCELABLE NEED_UPGRADE NEED_TARGET_POS
@@ -970,11 +970,13 @@ CommandButton Command_PurchaseBalrogAlly
 	ButtonImage			= SBEvil_BalrogAlly
 	ButtonBorderType		= UPGRADE
 	Radial				= Yes	
+	InPalantir	   		= Yes	
 	TextLabel			= CONTROLBAR:SummonBalrog	
 	DescriptLabel			= CONTROLBAR:TooltipSummonBalrog
-	;RadiusCursorType		= SummonBalrogRadiusCursor
-	LacksPrerequisiteLabel  = TOOLTIP:LackDragonNest
-    CursorName          = AttackObj
+	LacksPrerequisiteLabel	= TOOLTIP:LackDragonNest
+	PurchasedLabel		= TOOLTIP:AlreadySummonedCreature	
+	RadiusCursorType		= SummonBalrogRadiusCursor	
+    CursorName			= AttackObj
     InvalidCursorName   	= GenericInvalid  
 End
 
