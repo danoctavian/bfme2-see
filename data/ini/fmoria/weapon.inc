@@ -376,13 +376,12 @@ Weapon ShelobWebbing_SEE ;taken from Legolas' bow - needs designer love
   FiringDuration = 500 ;M_WILD_SHELOB_STINGER_FIRINGDURATION    ; Duration of the archer firing shot is 500ms.
   RequireFollowThru = Yes
   
-  ProjectileNugget                    ; Shelob's Web throw
-    ProjectileTemplateName = ShelobWebbingProjectile 
+  ProjectileNugget                    				; Shelob's Web throw
+    ProjectileTemplateName = ShelobWebbingProjectile 	;in EvilFactionSubObjects.INI
     WarheadTemplateName = ShelobWebbingWarhead_SEE
   End
 End
-
-;-----------------------------------
+;----------------------------------- ^^
 Weapon ShelobWebbingWarhead_SEE
   ProjectileCollidesWith = ALLIES ENEMIES NEUTRAL ;STRUCTURES WALLS 
   RadiusDamageAffects = ENEMIES NEUTRALS NOT_SIMILAR
@@ -401,9 +400,9 @@ Weapon ShelobWebbingWarhead_SEE
     ; ShockWaveTaperOff = 1.0
     ; ShockWaveZMult = 0.005
   ; End
-  ; WeaponOCLNugget  ;places object at location of attacker
-    ; WeaponOCLName = OCL_ShelobWebActivator
-  ; End
+   WeaponOCLNugget  ;places object at location of attacker
+     WeaponOCLName = OCL_ShelobWebActivator
+   End
   AttributeModifierNugget
     AttributeModifier = ShelobWebbingModifier //Was "ShelobWebbing_SEE"? That's the Weapon??? /Naz
     DamageFXType = EVIL_ARROW_PIERCE 
@@ -426,7 +425,7 @@ Weapon ShelobWebbing_Immobilize_SEE
     DeathType = LASERED ;now always used instead of NORMAL (Sûl)
   End
   AttributeModifierNugget
-    AttributeModifier = ShelobWebbing_SEE
+    AttributeModifier = ShelobWebbingModifier //Was "ShelobWebbing_SEE"? That's the Weapon??? /Naz
     DamageFXType = EVIL_ARROW_PIERCE 
     SpecialObjectFilter = ANY +HERO NOT_FLYING_UNITS -MordorBalrog -RohanTreeBerd // -RohanEntFir -RohanEntFir_Summoned -RohanEntBirch -RohanEntBirch_Summoned -RohanEntAsh -RohanEntAsh_Summoned -RohanEntOak -RohanEntOak_Summoned -TomBombadil -TomBombadil_Summoned -MONSTER 
   End

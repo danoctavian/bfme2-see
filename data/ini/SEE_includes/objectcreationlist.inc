@@ -733,6 +733,15 @@ ObjectCreationList OCL_SpawnCheatProvider_SEE
 End
 
 ; ---------------------------------------------------------------------------------------
+ObjectCreationList OCL_AntiSarumanRingHero
+	CreateObject
+		ObjectNames			= IsengardSaruman_AntiRingHero
+		Count				= 1
+		SpreadFormation		= No
+		IgnoreAllObjects	= Yes
+	End
+End
+; ---------------------------------------------------------------------------------------
 ObjectCreationList OCL_ShelobWebActivator
   CreateObject
     ObjectNames = ShelobSpiderWebs1 ;ShelobWebActivator2
@@ -743,14 +752,4 @@ ObjectCreationList OCL_ShelobWebActivator
     Disposition = LIKE_EXISTING
     ; DispositionIntensity  = 7
   End
-End
-
-; ---------------------------------------------------------------------------------------
-ObjectCreationList OCL_AntiSarumanRingHero
-	CreateObject
-		ObjectNames			= IsengardSaruman_AntiRingHero
-		Count				= 1
-		SpreadFormation		= No
-		IgnoreAllObjects	= Yes
-	End
 End

@@ -121,7 +121,7 @@ ModifierList WildTreasureTroveBuildSpeedModLvl3
 End
 
 //---------- For Shelob Web Attack -----------------
-ModifierList ShelobWebbingModifier
+ModifierList ShelobWebbingModifier //Was named ShelobWebbing_SEE (same as weapon) which might have been cause of instability in Beta 4.7!
   Category 	= WEAPON
   ; Modifier = ARMOR 99% // Trying to get to close to invulnerable
   Modifier 	= SPEED 0%  // multiplier - 0% means max speed is 0. jba	

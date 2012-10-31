@@ -962,10 +962,10 @@ CommandButton Command_PurchaseNewFireDrake
   PurchasedLabel		  = TOOLTIP:AlreadySummonedCreature
 End
 CommandButton Command_PurchaseBalrogAlly
-	Command				= OBJECT_UPGRADE SPELL_BOOK   
+	Command				= SPELL_BOOK OBJECT_UPGRADE    
 	Upgrade             = Upgrade_HasDragonNestFireDrake 	
 	SpecialPower		= SpellBookBalrogAlly
-	Options				= CANCELABLE NEED_UPGRADE NEED_TARGET_POS
+	Options				= CANCELABLE NEED_UPGRADE NEED_TARGET_POS 
 	NeededUpgrade		= Upgrade_WildFortressDragonNest	
 	ButtonImage			= SBEvil_BalrogAlly
 	ButtonBorderType		= UPGRADE
