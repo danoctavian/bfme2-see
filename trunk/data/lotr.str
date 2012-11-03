@@ -72,7 +72,7 @@ TOOLTIP:LackVenomSacksTechnology
 "Research Venom Sacs at Troll Cave \n and purchase Banner Carrier \n to enable this equipment \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
 END
 TOOLTIP:LackWildFireArrows
-"Research Fire Arrows at Fissure \n to enable this ability \n \n When equipped, significantly increases \n the damage done by arrows"
+"Research Flaming Arrows at Fissure \n to enable this ability \n \n When equipped, hordes can fire \n powerful single shot attacks \n with flaming arrows"
 END
 
 // 中中中中中中中中中中中中中中中中中中中中中中中中中中中中中
@@ -32248,6 +32248,10 @@ CONTROLBAR:BlackArrows
 "Blac&k Arrows"
 End
 
+CONTROLBAR:GenericFlamingArrows
+"Flaming Arrows"
+End
+
 CONTROLBAR:BlackRiderMount
 "Command this Nazg�l on a horse"
 End
@@ -32610,7 +32614,11 @@ CONTROLBAR:ToolTipBattleWagonUpgradeMenOfDale
 End
 
 CONTROLBAR:ToolTipBlackArrows
-"Causes fear to targeted enemy \n Adds triple damage \n Left click icon then left click on target"
+"Causes fear to targeted enemy \n Adds triple damage \n Left click icon, then left click on target"
+End
+
+CONTROLBAR:ToolTipGenericFlamingArrows
+"Inflicts fire damage to targeted \n enemy/structure \n \n Adds triple damage \n Strong vs. Monsters and Structures \n \n Left click icon, then left click on target!"
 End
 
 CONTROLBAR:ToolTipBlackRiderMount
@@ -41670,10 +41678,10 @@ END
 // ########################################
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildFireArrows
-"Flaming Arrows"
+"Purchase Flaming Arrows"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
-"Significantly increases the damage done \n by arrows, in powerful single shot attacks \n \n Left click icon then left click on target"
+"Upgrades this horde with Flaming Arrows \n When equipped, significantly increases \n the damage done by arrows, \n in powerful single shot attacks"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildBasicTraining
