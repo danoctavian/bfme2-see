@@ -42,7 +42,7 @@ PlayerTemplate FactionWild
 	// NOTE: It is very important that the create-a-hero be the first buildable hero, to ensure that the create-a-hero and the ring hero are always 
 	// attached to the first two buttons in the command set.
 
-	BuildableHeroesMP				= CreateAHero WildBolg WildGoblinKing GreatGoblin GoblinCaveTrollHero //WildShelob - is now Spell Book summon //Drogoth - is now nest creature! 
+	BuildableHeroesMP				= CreateAHero WildGolfimbul WildBolg WildGoblinKing GreatGoblin GoblinCaveTrollHero //WildShelob - is now Spell Book summon & Balrog - is the new monument creature! 
 	BuildableRingHeroesMP			= MordorSauron_RingHero
 	SpellStoreCurrentPowerLabel 	= APT:SpellStoreCurrentRingPower
 	SpellStoreMaximumPowerLabel 	= APT:SpellStoreMaximumRingPower
