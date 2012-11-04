@@ -961,23 +961,35 @@ CommandButton Command_PurchaseNewFireDrake
   LacksPrerequisiteLabel  = TOOLTIP:LackDragonNest
   PurchasedLabel		  = TOOLTIP:AlreadySummonedCreature
 End
-CommandButton Command_PurchaseBalrogAlly
-	Command				= SPELL_BOOK OBJECT_UPGRADE    
-	Upgrade             = Upgrade_HasDragonNestFireDrake 	
-	SpecialPower		= SpellBookBalrogAlly
-	Options				= CANCELABLE NEED_UPGRADE NEED_TARGET_POS 
-	NeededUpgrade		= Upgrade_WildFortressDragonNest	
+
+CommandButton Command_PurchaseBalrogAllyFake
+	Command           = OBJECT_UPGRADE
+	Options				= NEED_UPGRADE
+	NeededUpgrade		= Upgrade_WildFortressDragonNest
+	TextLabel			= CONTROLBAR:SummonBalrog
 	ButtonImage			= SBEvil_BalrogAlly
-	ButtonBorderType		= UPGRADE
-	Radial				= Yes	
-	InPalantir	   		= Yes	
-	TextLabel			= CONTROLBAR:SummonBalrog	
-	DescriptLabel			= CONTROLBAR:TooltipSummonBalrog
-	LacksPrerequisiteLabel	= TOOLTIP:LackDragonNest
-	PurchasedLabel		= TOOLTIP:AlreadySummonedCreature	
-	RadiusCursorType		= SummonBalrogRadiusCursor	
-    CursorName			= AttackObj
-    InvalidCursorName   	= GenericInvalid  
+	ButtonBorderType	= ACTION
+	Radial				  = Yes
+	InPalantir	   		  = Yes
+	DescriptLabel		= CONTROLBAR:TooltipSummonBalrog
+	RadiusCursorType	= SummonBalrogRadiusCursor
+    CursorName          = AttackObj
+    InvalidCursorName   = GenericInvalid  
+End
+
+CommandButton Command_PurchaseBalrogAlly
+	Command				= SPELL_BOOK
+	SpecialPower		= SpellBookBalrogAllyFort
+	Options				= NEED_TARGET_POS
+	TextLabel			= CONTROLBAR:SummonBalrog
+	ButtonImage			= SBEvil_BalrogAlly
+	ButtonBorderType	= ACTION
+	Radial				  = Yes
+	InPalantir	   		  = Yes
+	DescriptLabel		= CONTROLBAR:TooltipSummonBalrog
+	RadiusCursorType	= SummonBalrogRadiusCursor
+    CursorName          = AttackObj
+    InvalidCursorName   = GenericInvalid  
 End
 
 ;//Wild Fortress Improvements

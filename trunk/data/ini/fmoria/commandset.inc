@@ -35,6 +35,39 @@ CommandSet WildFortressCommandSet
 	1	= Command_ConstructWildPorter
 	2	= Command_SelectRevivablesWildFortress
 	3	= Command_SelectUpgradesWildFortress	
+	4	= Command_PurchaseBalrogAllyFake ///Trolololol :D	
+	6	= Command_Sell
+    //	UPGRADES MENU
+	7	= Command_PurchaseUpgradeWildFortressBatCloud
+	8 	= Command_PurchaseUpgradeWildFortressStonePavement
+	9	= Command_PurchaseUpgradeWildFortressRazorSpines
+	10	= Command_PurchaseUpgradeWildFortressFireArrows
+	11	= Command_PurchaseUpgradeWildFortressWebCocoon
+	12	= Command_PurchaseUpgradeWildFortressDragonNest	
+	13	= Command_SpecialAbilityBatCloud
+	14	= Command_RadialBack
+    //	HERO MENU
+	15	= Command_RingHeroReviveSlot		// This is for the ring hero, don't remove!
+	16	= Command_CreateAHeroReviveSlot	// Note we also need an extra slot for the Create A Hero!
+	17	= Command_GenericReviveSlot1		//Revives any hero. Use Slot1-Slot8 and keep them UNIQUE within the same commandset! 
+	18	= Command_GenericReviveSlot2	;Golfimbul
+	19	= Command_GenericReviveSlot3	;Bolg
+	20	= Command_GenericReviveSlot4	;Azog
+	21	= Command_GenericReviveSlot5	;The Great Goblin
+	22	= Command_GenericReviveSlot6	;Shelob
+	23	= Command_GenericReviveSlot7	;Cave Troll of Moria
+	24	= Command_GenericReviveSlot8	;
+	25	= Command_GenericReviveSlot9	;
+	26	= Command_GenericReviveSlot10	
+	27	= Command_RadialBack		 
+End							
+
+CommandSet WildFortressCommandUpgwadedFworDweBwalrogSet
+	InitialVisible = 6
+    //	MAIN MENU
+	1	= Command_ConstructWildPorter
+	2	= Command_SelectRevivablesWildFortress
+	3	= Command_SelectUpgradesWildFortress	
 	4	= Command_PurchaseBalrogAlly //Command_PurchaseNewFireDrake	
 	6	= Command_Sell
     //	UPGRADES MENU
@@ -60,7 +93,8 @@ CommandSet WildFortressCommandSet
 	25	= Command_GenericReviveSlot9	;
 	26	= Command_GenericReviveSlot10	
 	27	= Command_RadialBack		 
-End									 
+End
+		 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildFortressExpansionPadCornerCommandSet //Added for SEE! 4 corner plots.
 	1 	= Command_ConstructWildBurrowsExpansion 
