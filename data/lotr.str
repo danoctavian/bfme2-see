@@ -32799,8 +32799,11 @@ CONTROLBAR:ToolTipSharkuWargMount
 "Mount and unmount Sharku's personal Warg"
 End
 
+CONTROLBAR:ShelobWebbing
+"Hero Webbing"
+End
 CONTROLBAR:ToolTipShelobWebbing
-"Cripples enemy heroes in spider webs"
+"Cripples enemy heroes, \n cocconed in spider webs"
 End
 
 CONTROLBAR:ToolTipSpecialAbilityBatCloud
