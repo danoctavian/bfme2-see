@@ -348,7 +348,7 @@ End
 
 ;----------------
 Weapon ShelobWebbing_SEE ;taken from Legolas' bow - needs designer love
-  AttackRange = 250				
+  AttackRange = STANDARD_MELEE_ATTACK_RANGE //250				
   WeaponSpeed = 180         ; dist/sec 
   MinWeaponSpeed = 120
   MaxWeaponSpeed = 240      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
@@ -384,7 +384,7 @@ End
 ;----------------------------------- ^^
 Weapon ShelobWebbingWarhead_SEE
   ProjectileCollidesWith = ALLIES ENEMIES NEUTRAL ;STRUCTURES WALLS 
-  RadiusDamageAffects = ENEMIES NEUTRALS NOT_SIMILAR
+  RadiusDamageAffects = ENEMIES NEUTRALS NOT_SIMILAR ALLIES
   HitStoredTarget = Yes	; Always hits initial target.
   DamageNugget ; A basic Nugget that just does damage
     Damage = 1
@@ -455,7 +455,7 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 Weapon ShelobMandibles     ; BALANCE Shelob Weapon 
   LeechRangeWeapon      	= Yes
-  AttackRange				= #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 ) //25
+  AttackRange				= STANDARD_MELEE_ATTACK_RANGE //#MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 ) //25
   MeleeWeapon           	= Yes
   DelayBetweenShots     		= 1666           ; time between shots, msec
   PreAttackDelay        		= 900            ; 300 is mace swing delay time before contact with target.
