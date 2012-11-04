@@ -225,3 +225,21 @@ SpecialPower SpellBookMoriaStoneGiants
 	ForbiddenObjectFilter		= NO_SUMMON_NEAR_OBJECT_FILTER
 	ForbiddenObjectRange		= 110.0 ;90.0
 End
+
+
+
+
+
+/////////////////////////////////////
+
+SpecialPower SpellBookBalrogAllyFort
+	Enum						= SPECIAL_SPELL_BOOK_BALROG_ALLY
+	ReloadTime					= SPELL_RECHARGE_TIME_TIER_4   ; in milliseconds
+	RadiusCursorRadius			= 75.0 ; Match the radius in FXList SummonBalrogStart
+	//RequiredSciences				= SCIENCE_BalrogAlly
+	ViewObjectDuration = 5000
+	ViewObjectRange = 100
+	Flags					= NO_FORBIDDEN_OBJECTS RESPECT_RECHARGE_TIME_DISCOUNT
+	ForbiddenObjectFilter	= NO_SUMMON_NEAR_OBJECT_FILTER
+	ForbiddenObjectRange	= 75.0
+End
