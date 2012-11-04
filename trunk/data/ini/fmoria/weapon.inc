@@ -348,7 +348,7 @@ End
 
 ;----------------
 Weapon ShelobWebbing_SEE ;taken from Legolas' bow - needs designer love
-  AttackRange = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 ) //250				
+  AttackRange = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 1 ) //250				
   WeaponSpeed = 180         ; dist/sec 
   MinWeaponSpeed = 120
   MaxWeaponSpeed = 240      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range

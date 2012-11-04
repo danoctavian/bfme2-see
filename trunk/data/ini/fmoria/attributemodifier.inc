@@ -123,7 +123,7 @@ End
 //---------- For Shelob Web Attack -----------------
 ModifierList ShelobWebbingModifier //Was named ShelobWebbing_SEE (same as weapon) which might have been cause of instability in Beta 4.7!
   Category 	= WEAPON
-  ; Modifier = ARMOR 99% // Trying to get to close to invulnerable
+  Modifier = ARMOR 0%
   Modifier 	= SPEED 0%  // multiplier - 0% means max speed is 0. jba	
   Duration 	= 60000	//WARNING if you change this you must change the system life of the FX below (FXList.ini)
   ClearModelCondition = MOVING MOUNTED WEAPONSET_TOGGLE_1 USER_1 USER_2 USER_3 USER_4 USER_5 USER_6 USER_7 USER_8 USER_9 WEAPONSET_HERO_MODE DISGUISED // Make him stop moving... NOW! All the modelconditions listed there are so the hero becomes webbed for sure.
