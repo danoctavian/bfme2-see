@@ -741,10 +741,10 @@ ObjectCreationList OCL_AntiSarumanRingHero
 		IgnoreAllObjects	= Yes
 	End
 End
-; ---------------------------------------------------------------------------------------
+; --------------------------------------------------------------------------------------- //None of the 3 variations seem to differ in game? /Naz
 ObjectCreationList OCL_ShelobWebActivator
   CreateObject
-    ObjectNames = ShelobSpiderWebs1 ;ShelobWebActivator2
+    ObjectNames = ShelobWebActivator2 //ShelobSpiderWebs1 ;ShelobWebActivator2
     Offset = X:0.0 Y:0.0 Z:1.0
     Count = 1
     FadeIn = Yes

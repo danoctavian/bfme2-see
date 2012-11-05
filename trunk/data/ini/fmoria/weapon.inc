@@ -349,9 +349,9 @@ End
 ;----------------
 Weapon ShelobWebbing_SEE ;taken from Legolas' bow - needs designer love
   AttackRange = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 ) //250				
-  WeaponSpeed = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 5.0 ) //180         ; dist/sec 
-  MinWeaponSpeed = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 4.8 )//120
-  MaxWeaponSpeed = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 5.1 )//240      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
+  WeaponSpeed = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 10.0 ) //180         ; 5.0 
+  MinWeaponSpeed = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 9.9 )//120
+  MaxWeaponSpeed = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 10.1 )//240      ; dist/sec Upper limit on scaling, when attacking past nominal "max" range
   FireFX = FX_ShelobPoisonStingerStrike
   ScaleWeaponSpeed = Yes ; Used for lob weapons, scales speed proportional to range
   HitPercentage = 100     ;When this weapon is used it will hit exactly 100% of the time.
