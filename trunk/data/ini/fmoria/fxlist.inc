@@ -139,6 +139,47 @@ FXList FX_ShelobDigDesummon
   End
 End
 
+
+
+
+
+
+
+; ----------------------------------------------
+FXList FX_ShelobWebbingSmoke
+  ParticleSystem
+    Name = ShelobWebbingSmoke
+    Offset = X:0.0 Y:0.0 Z:-4.0
+  End
+  ParticleSystem
+    Name = ShelobWebbingWebObject
+    Offset = X:0.0 Y:0.0 Z:0.0
+  End
+  Sound
+    ; Name = ImpactLegolasHawkStrike
+  End
+End
+
+; ----------------------------------------------
+FXList FX_ShelobWebbingHit_SEE
+  DynamicDecal	; A decal that belongs to nobody, but updates internally to fade and tint and such
+    DecalName = SCCSpiderlingSummon2
+    Size = 75 ; Match radius in SpellBookSummonBalrog (this is square length, and there is radius, so this should be double that one)
+    Color = R:255 G:255 B:255
+    OpacityStart = 0
+    OpacityFadeTimeOne	= 1000
+    OpacityPeak = 255
+    OpacityPeakTime = 60000
+    OpacityFadeTimeTwo = 55000 ;7000
+    OpacityEnd = 0
+    StartingDelay = 0
+    Lifetime = 120000 //60000
+  End
+End
+
+
+
+
 ;------------------------------------------------------
 FXList FX_MoriaSpellbookStoneGiantsSummon
   ParticleSystem
