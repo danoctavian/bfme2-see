@@ -563,7 +563,7 @@
 #define	WILD_SHELOB_LVL9_EXP_NEEDED 						700 ;1600 
 #define	WILD_SHELOB_LVL10_EXP_NEEDED 						800 ;2000
 
-#define WILD_SHELOB_LIFETIME								120000 //NEEDS TUNING!
+#define WILD_SHELOB_LIFETIME								180000 //3 mins!
 
 ; ------------------------------------------------------------------------------ SEE! (Only summons by Shelob)
 #define WILD_SPIDERLING_BUILD_COST							300
