@@ -90,199 +90,6 @@ END
 
 
 ;--------------- WILD HEROES --------------------------	
-;----------- GORKIL THE GOBLIN KING ------------------	
-ExperienceLevel	WildGoblinKingLevel1
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= 1	
-	ExperienceAward				= WILD_GOBLIN_KING_LVL1_EXP_AWARD
-	Rank						= 1
-	SelectionDecal
-		Texture					= decal_hero_evil	
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits			= 40
-	End	
-End	
-
-ExperienceLevel	WildGoblinKingLevel2
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= WILD_GOBLIN_KING_LVL2_EXP_NEEDED 
-	ExperienceAward				= WILD_GOBLIN_KING_LVL2_EXP_AWARD
-	AttributeModifiers			= HeroLevelUpDamage1
-	Rank						= 2
-	LevelUpFx					= FX:GandalfLevelUp1FX
-
-	Upgrades					= Upgrade_ObjectLevel2
-	SelectionDecal
-		Texture					= decal_hero_evil	
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildGoblinKingLevel3
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= WILD_GOBLIN_KING_LVL3_EXP_NEEDED 
-	ExperienceAward				= WILD_GOBLIN_KING_LVL3_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage2
-	Rank						= 3
-	LevelUpFx					= FX:GandalfLevelUp1FX
-
-	Upgrades					= Upgrade_ObjectLevel3	
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildGoblinKingLevel4
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= WILD_GOBLIN_KING_LVL4_EXP_NEEDED 
-	ExperienceAward				= WILD_GOBLIN_KING_LVL4_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage3
-	Rank						= 4
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	
-	Upgrades					= Upgrade_ObjectLevel4
-
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildGoblinKingLevel5
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= WILD_GOBLIN_KING_LVL5_EXP_NEEDED 
-	ExperienceAward				= WILD_GOBLIN_KING_LVL5_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage4
-	Rank						= 5
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildGoblinKingLevel6
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= WILD_GOBLIN_KING_LVL6_EXP_NEEDED 
-	ExperienceAward				= WILD_GOBLIN_KING_LVL6_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage5
-	Rank						= 6
-	LevelUpFx					=	FX:GandalfLevelUp1FX
-	
-	Upgrades					= Upgrade_ObjectLevel6
-	
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				=	50%	
-		OpacityMax				=	100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildGoblinKingLevel7
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= WILD_GOBLIN_KING_LVL7_EXP_NEEDED 
-	ExperienceAward				=	WILD_GOBLIN_KING_LVL7_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage6
-	Rank						= 7
-	LevelUpFx					=	FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildGoblinKingLevel8
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= WILD_GOBLIN_KING_LVL8_EXP_NEEDED 
-	ExperienceAward				= WILD_GOBLIN_KING_LVL8_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage7
-	Rank						= 8
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-
-END	
-
-ExperienceLevel	WildGoblinKingLevel9
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= WILD_GOBLIN_KING_LVL9_EXP_NEEDED 
-	ExperienceAward				= WILD_GOBLIN_KING_LVL9_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage8
-	Rank						= 9
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildGoblinKingLevel10
-	TargetNames					= WildGoblinKing GreatGoblin
-	RequiredExperience			= WILD_GOBLIN_KING_LVL10_EXP_NEEDED 
-	ExperienceAward				= WILD_GOBLIN_KING_LVL10_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage9
-	Rank						= 10
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	
-	Upgrades					= Upgrade_ObjectLevel10
-	
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END
-
 ;----------------DROGOTH-------------------------------------------------------------------------------
 ExperienceLevel	DrogothLevel1
 	TargetNames					= Drogoth WildFortressDragon
@@ -468,177 +275,14 @@ End
 
 
 ;----------------WILD SHELOB-------------------------------------------------------------------------------
-ExperienceLevel	WildShelobLevel1
-	TargetNames					= WildShelob
-	RequiredExperience			= 1	
-	ExperienceAward				= WILD_SHELOB_LVL1_EXP_AWARD
-	Rank						= 1
-	SelectionDecal
-		Texture					= decal_hero_evil	
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits			= 40
-	End	
-End
-
-ExperienceLevel	WildShelobLevel2
-	TargetNames					= WildShelob
-	RequiredExperience			= WILD_SHELOB_LVL2_EXP_NEEDED 
-	ExperienceAward				= WILD_SHELOB_LVL2_EXP_AWARD
-	AttributeModifiers			= HeroLevelUpDamage1
-	Rank						= 2
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END
-
-ExperienceLevel	WildShelobLevel3
-	TargetNames					= WildShelob
-	RequiredExperience			= WILD_SHELOB_LVL3_EXP_NEEDED 
-	ExperienceAward				= WILD_SHELOB_LVL3_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage2
-	Rank						= 3
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	Upgrades					= Upgrade_ObjectLevel3
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildShelobLevel4
-	TargetNames					= WildShelob
-	RequiredExperience			= WILD_SHELOB_LVL4_EXP_NEEDED 
-	ExperienceAward				= WILD_SHELOB_LVL4_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage3
-	Rank						= 4
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildShelobLevel5
-	TargetNames					= WildShelob
-	RequiredExperience			= WILD_SHELOB_LVL5_EXP_NEEDED 
-	ExperienceAward				= WILD_SHELOB_LVL5_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage4
-	Rank						= 5
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildShelobLevel6
-	TargetNames					= WildShelob
-	RequiredExperience			= WILD_SHELOB_LVL6_EXP_NEEDED 
-	ExperienceAward				= WILD_SHELOB_LVL6_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage5
-	Rank						= 6
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	Upgrades					= Upgrade_ObjectLevel6
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				=	50%	
-		OpacityMax				=	100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildShelobLevel7
-	TargetNames					= WildShelob
-	RequiredExperience			= WILD_SHELOB_LVL7_EXP_NEEDED 
-	ExperienceAward				=	WILD_SHELOB_LVL7_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage6
-	Rank						= 7
-	LevelUpFx					=	FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
-ExperienceLevel	WildShelobLevel8
-	TargetNames					= WildShelob
-	RequiredExperience			= WILD_SHELOB_LVL8_EXP_NEEDED 
-	ExperienceAward				= WILD_SHELOB_LVL8_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage7
-	Rank						= 8
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-
-END	
-
-ExperienceLevel	WildShelobLevel9
-	TargetNames					= WildShelob
-	RequiredExperience			= WILD_SHELOB_LVL9_EXP_NEEDED 
-	ExperienceAward				= WILD_SHELOB_LVL9_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage8
-	Rank						= 9
-	LevelUpFx					= FX:GandalfLevelUp1FX
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End	
-END	
-
 ExperienceLevel	WildShelobLevel10
 	TargetNames					= WildShelob
-	RequiredExperience			= WILD_SHELOB_LVL10_EXP_NEEDED 
+	RequiredExperience			= 1 
 	ExperienceAward				= WILD_SHELOB_LVL10_EXP_AWARD	
 	AttributeModifiers			= HeroLevelUpDamage9
 	Rank						= 10
 	LevelUpFx					= FX:GandalfLevelUp1FX
-	Upgrades					= Upgrade_ObjectLevel10
+	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
 	SelectionDecal
 		Texture					= decal_hero_evil
 		Style					= SHADOW_ALPHA_DECAL
@@ -651,10 +295,10 @@ ExperienceLevel	WildShelobLevel10
 End
 
 
-;---------------------- AZOG ---------------------------
-ExperienceLevel	AzogLevel10
-	TargetNames				= WildAzog
-	RequiredExperience			= AZOG_LVL10_EXP_NEEDED 
+;---------------------- HEROES ---------------------------
+ExperienceLevel	WildHeroesGBKLevel10
+	TargetNames				= WildGoblinKing GreatGoblin
+	RequiredExperience			= 1
 	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
 	Rank					= 10
 	LevelUpFx				= FX:GandalfLevelUp1FX
@@ -670,9 +314,77 @@ ExperienceLevel	AzogLevel10
 	End
 End
 
+ExperienceLevel	WildAzogLevel10
+	TargetNames				= WildAzog
+	RequiredExperience			= 1
+	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
+	Rank					= 10
+	LevelUpFx				= FX:GandalfLevelUp1FX
+	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	SelectionDecal
+		Texture				= decal_hero_evil
+		Style				= SHADOW_ALPHA_DECAL
+		OpacityMin			= 50%	
+		OpacityMax			= 100%
+		MinRadius			= 40
+		MaxRadius			= 200
+		MaxSelectedUnits		= 40
+	End
+End
 
+ExperienceLevel	WildBolgLevel10
+	TargetNames				= WildBolg
+	RequiredExperience			= 1
+	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
+	Rank					= 10
+	LevelUpFx				= FX:GandalfLevelUp1FX
+	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	SelectionDecal
+		Texture				= decal_hero_evil
+		Style				= SHADOW_ALPHA_DECAL
+		OpacityMin			= 50%	
+		OpacityMax			= 100%
+		MinRadius			= 40
+		MaxRadius			= 200
+		MaxSelectedUnits		= 40
+	End
+End
 
+ExperienceLevel	GoblinCaveTrollHeroLevel10
+	TargetNames				= GoblinCaveTrollHero
+	RequiredExperience			= 1
+	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
+	Rank					= 10
+	LevelUpFx				= FX:GandalfLevelUp1FX
+	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	SelectionDecal
+		Texture				= decal_hero_evil
+		Style				= SHADOW_ALPHA_DECAL
+		OpacityMin			= 50%	
+		OpacityMax			= 100%
+		MinRadius			= 40
+		MaxRadius			= 200
+		MaxSelectedUnits		= 40
+	End
+End
 
+ExperienceLevel	WildGolfimbulLevel10
+	TargetNames				= WildGolfimbul
+	RequiredExperience			= 1
+	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
+	Rank					= 10
+	LevelUpFx				= FX:GandalfLevelUp1FX
+	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	SelectionDecal
+		Texture				= decal_hero_evil
+		Style				= SHADOW_ALPHA_DECAL
+		OpacityMin			= 50%	
+		OpacityMax			= 100%
+		MinRadius			= 40
+		MaxRadius			= 200
+		MaxSelectedUnits		= 40
+	End
+End
 
 ;-------------------- Wild Buildings ------------------------------
 
@@ -897,24 +609,4 @@ ExperienceLevel	WildMineShaftLevel3
 	LevelUpFx				= FX:WildMineShaftUpgrade
 	Upgrades				= Upgrade_StructureLevel3
 	AttributeModifiers			= WildMineShaftProductionBonus2 WildMineShaftArmorBonus1 WildMineShaftHealthBonus2
-End
-
-///////////////////////////////////////
-ExperienceLevel	CaveTrollHeroLevel10
-	TargetNames				= GoblinCaveTrollHero
-	RequiredExperience			= 0 
-	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage9
-	Rank					= 10
-	LevelUpFx				= FX:GandalfLevelUp1FX
-	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
-	SelectionDecal
-		Texture				= decal_hero_evil
-		Style				= SHADOW_ALPHA_DECAL
-		OpacityMin			= 50%	
-		OpacityMax			= 100%
-		MinRadius			= 40
-		MaxRadius			= 200
-		MaxSelectedUnits		= 40
-	End
 End
