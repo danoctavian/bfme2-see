@@ -359,7 +359,7 @@ Weapon ShelobWebbing_SEE ;taken from Legolas' bow - needs designer love
 
   AcceptableAimDelta = 20	; prevent twitchy reaiming in horde on horde
   ; DelayBetweenShots = M_LEGOLAS_DELAYBETWEENSHOTS 	; time between shots, msec
-  ; PreAttackDelay = 250 ; 1467 is the prep time for archer.
+ ;  PreAttackDelay = 1000 ; 1467 is the prep time for archer.
   ; PreAttackType = PER_POSITION ; Do the delay each time we attack a new target
   ; FiringDuration = 500 ; Duration of the archer firing shot is 500ms.
   ; ClipSize = 1
@@ -371,7 +371,7 @@ Weapon ShelobWebbing_SEE ;taken from Legolas' bow - needs designer love
   ; AntiAirborneVehicle  Yes
   ; AntiAirborneMonster = Yes
   DelayBetweenShots = WILD_SHELOB_STINGER_DELAYBETWEENSHOTS
-  PreAttackDelay = 100 ;M_WILD_SHELOB_STINGER_PREATTACKDELAY   ; 1467 is the prep time for archer.
+  PreAttackDelay = 1 ;M_WILD_SHELOB_STINGER_PREATTACKDELAY   ; 1467 is the prep time for archer.
   PreAttackType = PER_SHOT ; Do the delay each time we attack a new target
   FiringDuration = 500 ;M_WILD_SHELOB_STINGER_FIRINGDURATION    ; Duration of the archer firing shot is 500ms.
   RequireFollowThru = Yes
