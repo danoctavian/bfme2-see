@@ -1669,23 +1669,14 @@ End
 CommandButton Command_SpellBookMoriaDeteriorate
 	Command = SPELL_BOOK
     SpecialPower		= SpellBookMoriaDeteriorate
- //   ButtonImage			= ZZButtonImage
- //   Options				= NEED_TARGET_POS
-//	TextLabel			= CONTROLBAR:MoriaSpellbookDeteriorate
-//	ButtonBorderType	= ACTION
-//	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookDeteriorate
-//	RadiusCursorType	= FireBreathRadiusCursor ; - Again, for Naz to decide.
-//	CursorName			= AttackObj
-//	InvalidCursorName	= GenericInvalid
-
-  Options			= NEED_TARGET_ENEMY_OBJECT // NEED_TARGET_NEUTRAL_OBJECT CONTEXTMODE_COMMAND
-  TextLabel			= CONTROLBAR:CAH_AttachSpy_Level1
-  ButtonImage		= HSSpy
-  CursorName		= Bombard
-  ButtonBorderType	= ACTION 
-  DescriptLabel		= CONTROLBAR:ToolTipCAH_AttachSpy_Level1
-  InvalidCursorName	= GenericInvalid
-  //UnitSpecificSound	= EomerVoiceModeThrow
+    ButtonImage			= ZZButtonImage
+   Options				= NEED_TARGET_POS
+	TextLabel			= CONTROLBAR:MoriaSpellbookDeteriorate
+	ButtonBorderType	= ACTION
+	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookDeteriorate
+	RadiusCursorType	= FireBreathRadiusCursor ; - Again, for Naz to decide.
+	CursorName			= AttackObj
+	InvalidCursorName	= GenericInvalid
 End
 
 CommandButton Command_PurchaseSpellMoriaDeteriorate
