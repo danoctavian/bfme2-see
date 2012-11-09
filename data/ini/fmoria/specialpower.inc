@@ -156,24 +156,24 @@ End
 
 ;------------------------------------------------------------------------------
 SpecialPower SpellBookMoriaDeteriorate
-//	Enum						= SPECIAL_SPELL_BOOK_EAGLE_ALLIES
-//	ReloadTime					= SPELL_RECHARGE_TIME_TIER_2   ; in milliseconds
-//	RadiusCursorRadius			= 100.0   ; Match the radius in FXList SummonBalrogStart
+	Enum						= SPECIAL_SPELL_BOOK_EAGLE_ALLIES
+	ReloadTime					= SPELL_RECHARGE_TIME_TIER_2   ; in milliseconds
+	RadiusCursorRadius			= 100.0   ; Match the radius in FXList SummonBalrogStart
+	RequiredSciences				= SCIENCE_MoriaDeteriorate
+	ViewObjectDuration = 5000
+	ViewObjectRange = 100
+	Flags					= NEEDS_OBJECT_FILTER RESPECT_RECHARGE_TIME_DISCOUNT
+	ObjectFilter			= SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER
+End
+//
+//	Enum		= SPECIAL_WOUND_ARROW
+//	ReloadTime	= SPELL_RECHARGE_TIME_TIER_2
+//	//PublicTimer	= No
+//	ObjectFilter = CREATE_A_HERO_SPY_OBJECT_FILTER
 //	RequiredSciences				= SCIENCE_MoriaDeteriorate
-//	ViewObjectDuration = 5000
-//	ViewObjectRange = 100
 //	Flags					= NEEDS_OBJECT_FILTER RESPECT_RECHARGE_TIME_DISCOUNT
 //	ObjectFilter			= SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER
 //End
-//
-	Enum		= SPECIAL_WOUND_ARROW
-	ReloadTime	= SPELL_RECHARGE_TIME_TIER_2
-	//PublicTimer	= No
-	ObjectFilter = CREATE_A_HERO_SPY_OBJECT_FILTER
-	RequiredSciences				= SCIENCE_MoriaDeteriorate
-//	Flags					= NEEDS_OBJECT_FILTER RESPECT_RECHARGE_TIME_DISCOUNT
-//	ObjectFilter			= SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER
-End
 
 ; Tier 3
 ;------------------------------------------------------------------------------
