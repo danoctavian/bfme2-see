@@ -8,12 +8,12 @@
 
 ; ------------------------------------------------------------------------------ SEE!
 ExperienceLevel	WildTrollDrum1	//Based on Gondor's hero statue!
-	TargetNames					=	TrollDrum
-	RequiredExperience			=	1
-	Rank						=	1
-	AttributeModifiers				=	BasicLevelUpProduction1
-	Upgrades						=	Upgrade_StructureLevel1
-	ExperienceAward				=	25
+	TargetNames						=	TrollDrum
+	RequiredExperience				=	1
+	Rank							=	1
+	AttributeModifiers					=	BasicLevelUpProduction1
+	Upgrades							=	Upgrade_StructureLevel1
+	ExperienceAward					=	25
 	SelectionDecal
 		Texture						=	decal_hero_evil
 		Style						=	SHADOW_ALPHA_DECAL
@@ -29,13 +29,13 @@ End
 ;------------ Wild ---------------
 ExperienceLevel	WildGenericLevel1	
 	TargetNames						=	Wild  
-	RequiredExperience					=	1
-	ExperienceAward						=	0
-	ExperienceAwardOwnGuysDie				=	0
+	RequiredExperience				=	1
+	ExperienceAward					=	0
+	ExperienceAwardOwnGuysDie		=	0
 	Rank							=	1
 	SelectionDecal
 		Texture						=	decal_I_level1
-		Texture2					=	decal_evil_CO
+		Texture2						=	decal_evil_CO
 		Style						=	SHADOW_MERGE_DECAL
 		OpacityMin					=	80%
 		OpacityMax					=	100%
@@ -51,17 +51,17 @@ ExperienceLevel	FireDrakeLevel10
 	TargetNames				  		=	WildFireDrake FireDrake_Slaved WildFireDrake_Summoned
 	RequiredExperience		  		=	1
 	ExperienceAward					=	30
-	AttributeModifiers				=	EvilMonsterBonusRank10
+	AttributeModifiers					=	EvilMonsterBonusRank10
 	Rank							=	10
 	SelectionDecal
 		Texture						=	decal_I_level1
-		Texture2					=	decal_evil_CO ;decal_hero_evil ;
+		Texture2						=	decal_evil_CO ;decal_hero_evil ;
 		Style						=	SHADOW_MERGE_DECAL
 		OpacityMin					=	80%
 		OpacityMax					=	100%
 		MinRadius			  		=	70
 		MaxRadius					=	200
-		MaxSelectedUnits	  		=	40
+		MaxSelectedUnits	  			=	40
 	End	
 END
 
@@ -69,28 +69,22 @@ ExperienceLevel	FortressFireDrakeLevel5
 	TargetNames				  		=	WildFortressFireDrake
 	RequiredExperience		  		=	1
 	ExperienceAward					=	30
-	AttributeModifiers				=	EvilMonsterBonusRank5
+	AttributeModifiers					=	EvilMonsterBonusRank5
 	Rank							=	5
 	SelectionDecal
 		Texture						=	decal_I_level1
-		Texture2					=	decal_evil_CO ;decal_hero_evil ;
+		Texture2						=	decal_evil_CO ;decal_hero_evil ;
 		Style						=	SHADOW_MERGE_DECAL
 		OpacityMin					=	80%
 		OpacityMax					=	100%
 		MinRadius			  		=	70
 		MaxRadius					=	200
-		MaxSelectedUnits	  		=	40
+		MaxSelectedUnits	  			=	40
 	End	
 END
 
-
-
-
-
-
-
-;--------------- WILD HEROES --------------------------	
-;----------------DROGOTH-------------------------------------------------------------------------------
+; --------------- WILD HEROES	
+; ------------------------------------------------------------------------------ DROGOTH
 ExperienceLevel	DrogothLevel1
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= 1	
@@ -106,7 +100,6 @@ ExperienceLevel	DrogothLevel1
 		MaxSelectedUnits			= 40
 	End	
 End
-
 ExperienceLevel	DrogothLevel2
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL2_EXP_NEEDED 
@@ -124,7 +117,6 @@ ExperienceLevel	DrogothLevel2
 		MaxSelectedUnits		= 40
 	End	
 END
-
 ExperienceLevel	DrogothLevel3
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL3_EXP_NEEDED 
@@ -143,7 +135,6 @@ ExperienceLevel	DrogothLevel3
 		MaxSelectedUnits		= 40
 	End	
 END	
-
 ExperienceLevel	DrogothLevel4
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL4_EXP_NEEDED 
@@ -161,7 +152,6 @@ ExperienceLevel	DrogothLevel4
 		MaxSelectedUnits		= 40
 	End	
 END	
-
 ExperienceLevel	DrogothLevel5
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL5_EXP_NEEDED 
@@ -179,7 +169,6 @@ ExperienceLevel	DrogothLevel5
 		MaxSelectedUnits		= 40
 	End	
 END	
-
 ExperienceLevel	DrogothLevel6
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL6_EXP_NEEDED 
@@ -198,7 +187,6 @@ ExperienceLevel	DrogothLevel6
 		MaxSelectedUnits		= 40
 	End	
 END	
-
 ExperienceLevel	DrogothLevel7
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL7_EXP_NEEDED 
@@ -216,7 +204,6 @@ ExperienceLevel	DrogothLevel7
 		MaxSelectedUnits		= 40
 	End	
 END	
-
 ExperienceLevel	DrogothLevel8
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL8_EXP_NEEDED 
@@ -235,7 +222,6 @@ ExperienceLevel	DrogothLevel8
 	End	
 
 END	
-
 ExperienceLevel	DrogothLevel9
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL9_EXP_NEEDED 
@@ -254,55 +240,35 @@ ExperienceLevel	DrogothLevel9
 	End	
 END	
 
+; ------------------------------------------------------------------------------ DROGOTH, will be moved to Rhûn faction as Fortress Monument Creature!
 ExperienceLevel	DrogothLevel10
 	TargetNames					= Drogoth WildFortressDragon
 	RequiredExperience			= DROGOTH_LVL10_EXP_NEEDED 
 	ExperienceAward				= DROGOTH_LVL10_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage9
+	AttributeModifiers				= HeroLevelUpDamage9
 	Rank						= 10
 	LevelUpFx					= FX:GandalfLevelUp1FX
-	Upgrades					= Upgrade_ObjectLevel10
+	Upgrades						= Upgrade_ObjectLevel10
 	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
+		Texture				= decal_hero_evil
+		Style				= SHADOW_ALPHA_DECAL
+		OpacityMin			= 50%	
+		OpacityMax			= 100%
+		MinRadius			= 40
+		MaxRadius			= 200
 		MaxSelectedUnits		= 40
 	End
 End
 
-
-;----------------WILD SHELOB-------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------ SHELOB
 ExperienceLevel	WildShelobLevel10
 	TargetNames					= WildShelob
 	RequiredExperience			= 1 
 	ExperienceAward				= WILD_SHELOB_LVL10_EXP_AWARD	
-	AttributeModifiers			= HeroLevelUpDamage9
+	AttributeModifiers				= HeroLevelUpDamage9
 	Rank						= 10
 	LevelUpFx					= FX:GandalfLevelUp1FX
-	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
-	SelectionDecal
-		Texture					= decal_hero_evil
-		Style					= SHADOW_ALPHA_DECAL
-		OpacityMin				= 50%	
-		OpacityMax				= 100%
-		MinRadius				= 40
-		MaxRadius				= 200
-		MaxSelectedUnits		= 40
-	End
-End
-
-
-;---------------------- HEROES ---------------------------
-ExperienceLevel	WildHeroesGBKLevel10
-	TargetNames				= WildGoblinKing GreatGoblin
-	RequiredExperience			= 1
-	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
-	Rank					= 10
-	LevelUpFx				= FX:GandalfLevelUp1FX
-	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	Upgrades = Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
 	SelectionDecal
 		Texture				= decal_hero_evil
 		Style				= SHADOW_ALPHA_DECAL
@@ -314,49 +280,14 @@ ExperienceLevel	WildHeroesGBKLevel10
 	End
 End
 
-ExperienceLevel	WildAzogLevel10
-	TargetNames				= WildAzog
-	RequiredExperience			= 1
-	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
-	Rank					= 10
-	LevelUpFx				= FX:GandalfLevelUp1FX
-	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
-	SelectionDecal
-		Texture				= decal_hero_evil
-		Style				= SHADOW_ALPHA_DECAL
-		OpacityMin			= 50%	
-		OpacityMax			= 100%
-		MinRadius			= 40
-		MaxRadius			= 200
-		MaxSelectedUnits		= 40
-	End
-End
-
-ExperienceLevel	WildBolgLevel10
-	TargetNames				= WildBolg
-	RequiredExperience			= 1
-	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
-	Rank					= 10
-	LevelUpFx				= FX:GandalfLevelUp1FX
-	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
-	SelectionDecal
-		Texture				= decal_hero_evil
-		Style				= SHADOW_ALPHA_DECAL
-		OpacityMin			= 50%	
-		OpacityMax			= 100%
-		MinRadius			= 40
-		MaxRadius			= 200
-		MaxSelectedUnits		= 40
-	End
-End
-
+; ------------------------------------------------------------------------------ CAVE TROLL OF MORIA
 ExperienceLevel	GoblinCaveTrollHeroLevel10
-	TargetNames				= GoblinCaveTrollHero
+	TargetNames					= GoblinCaveTrollHero
 	RequiredExperience			= 1
 	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
-	Rank					= 10
-	LevelUpFx				= FX:GandalfLevelUp1FX
-	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	Rank						= 10
+	LevelUpFx					= FX:GandalfLevelUp1FX
+	Upgrades = Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
 	SelectionDecal
 		Texture				= decal_hero_evil
 		Style				= SHADOW_ALPHA_DECAL
@@ -368,13 +299,71 @@ ExperienceLevel	GoblinCaveTrollHeroLevel10
 	End
 End
 
+; ------------------------------------------------------------------------------ GREAT GOBLIN
+ExperienceLevel	WildGreatGoblinLevel10 //WildHeroesGBKLevel10
+	TargetNames					= WildGoblinKing GreatGoblin
+	RequiredExperience			= 1
+	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
+	Rank						= 10
+	LevelUpFx					= FX:GandalfLevelUp1FX
+	Upgrades = Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	SelectionDecal
+		Texture				= decal_hero_evil
+		Style				= SHADOW_ALPHA_DECAL
+		OpacityMin			= 50%	
+		OpacityMax			= 100%
+		MinRadius			= 40
+		MaxRadius			= 200
+		MaxSelectedUnits		= 40
+	End
+End
+
+; ------------------------------------------------------------------------------ AZOG
+ExperienceLevel	WildAzogLevel10 //WildHeroesGBKLevel10
+	TargetNames					= WildGoblinKing
+	RequiredExperience			= 1
+	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
+	Rank						= 10
+	LevelUpFx					= FX:GandalfLevelUp1FX
+	Upgrades = Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	SelectionDecal
+		Texture				= decal_hero_evil
+		Style				= SHADOW_ALPHA_DECAL
+		OpacityMin			= 50%	
+		OpacityMax			= 100%
+		MinRadius			= 40
+		MaxRadius			= 200
+		MaxSelectedUnits		= 40
+	End
+End
+
+; ------------------------------------------------------------------------------ BOLG
+ExperienceLevel	WildBolgLevel10
+	TargetNames					= WildBolg
+	RequiredExperience			= 1
+	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
+	Rank						= 10
+	LevelUpFx					= FX:GandalfLevelUp1FX
+	Upgrades = Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	SelectionDecal
+		Texture				= decal_hero_evil
+		Style				= SHADOW_ALPHA_DECAL
+		OpacityMin			= 50%	
+		OpacityMax			= 100%
+		MinRadius			= 40
+		MaxRadius			= 200
+		MaxSelectedUnits		= 40
+	End
+End
+
+; ------------------------------------------------------------------------------ GOLFIMBUL
 ExperienceLevel	WildGolfimbulLevel10
-	TargetNames				= WildGolfimbul
+	TargetNames					= WildGolfimbul
 	RequiredExperience			= 1
 	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
-	Rank					= 10
-	LevelUpFx				= FX:GandalfLevelUp1FX
-	Upgrades				= Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
+	Rank						= 10
+	LevelUpFx					= FX:GandalfLevelUp1FX
+	Upgrades = Upgrade_ObjectLevel10 Upgrade_ObjectLevel9 Upgrade_ObjectLevel8 Upgrade_ObjectLevel7 Upgrade_ObjectLevel6 Upgrade_ObjectLevel5 Upgrade_ObjectLevel4 Upgrade_ObjectLevel3 Upgrade_ObjectLevel2 Upgrade_ObjectLevel1
 	SelectionDecal
 		Texture				= decal_hero_evil
 		Style				= SHADOW_ALPHA_DECAL
@@ -386,13 +375,12 @@ ExperienceLevel	WildGolfimbulLevel10
 	End
 End
 
-;-------------------- Wild Buildings ------------------------------
-
-;-------------WildFortress---------------------
+; --------------- WILD BUILDINGS
+; ------------------------------------------------------------------------------ FORTRESS
 ExperienceLevel	DwarvenFortressLevel1
 	TargetNames				= WildFortressCitadel
-	RequiredExperience			= 1
-	ExperienceAward		  		= 150
+	RequiredExperience		= 1
+	ExperienceAward		  	= 150
 	Rank					= 1
 	Upgrades				= Upgrade_StructureLevel1
 End
