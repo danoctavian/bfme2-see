@@ -1140,7 +1140,7 @@ CommandSet WildSpellBookCommandSet_SEE
 	15 = Command_SpellBookMoriaWatcher
 	
 	16 = Command_SpellBookMoriaStoneGiants
-	17 = Command_SpellBookScavenger
+	17 = Command_SpellBookEarthquake
 End
 
 CommandSet WildSpellStoreCommandSet_SEE
@@ -1158,6 +1158,6 @@ CommandSet WildSpellStoreCommandSet_SEE
 	10 = Command_PurchaseSpellMoriaWatcher
 	
 	11 = Command_PurchaseSpellMoriaStoneGiants
-//	12 =
+	12 = Command_PurchaseSpellEarthquake
 End
 
