@@ -96,3 +96,11 @@ Science SCIENCE_MoriaAbyss ;Abyss
   SciencePurchasePointCostMP = 1  ;25
   IsGrantable = Yes
 End
+
+
+Science SCIENCE_Earthquake
+  PrerequisiteSciences = SCIENCE_GOOD SCIENCE_CloudBreak OR SCIENCE_GOOD SCIENCE_Undermine OR SCIENCE_MEN SCIENCE_RohanAllies OR SCIENCE_MEN SCIENCE_CloudBreak OR SCIENCE_ROHAN SCIENCE_RohanAllies OR SCIENCE_ROHAN SCIENCE_CloudBreak OR SCIENCE_DWARVES SCIENCE_Undermine OR SCIENCE_DWARVES SCIENCE_Bombard OR SCIENCE_ARNOR SCIENCE_CloudBreak OR SCIENCE_ARNOR SCIENCE_Bombard OR SCIENCE_WILD SCIENCE_MoriaDarkness OR SCIENCE_WILD SCIENCE_MoriaWatcher
+  SciencePurchasePointCost = 1 ;GOOD_RANK_4_COST
+  SciencePurchasePointCostMP = 1 ;25
+  IsGrantable = Yes
+End
