@@ -2712,19 +2712,19 @@ Weapon WildMountainGiantRockThrowWarhead
 End
 
 ;------------------------------------------------------------------------------ SEE!
-Weapon MountainGiantDeath  ; BALANCE Ent Death toppling over units
+Weapon MountainGiantDeath
   RadiusDamageAffects 	= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
   
-  DamageNugget                        ; A basic Nugget that just does damage
+  DamageNugget          ; A basic Nugget that just does damage
     Damage        		= WILD_MOUNTAIN_GIANT_DEATH_DAMAGE
     Radius        		= WILD_MOUNTAIN_GIANT_DEATH_RADIUS
     DelayTime     		= 0
     DamageType    		= CRUSH // Ents have FORCE?
     DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
-	DamageScalar  		= 200% NONE +HERO	//Added for SEE!
+	DamageScalar  		= 300% NONE +HERO	//Added for SEE!
   End
   
-  MetaImpactNugget                    ; A Nugget that throws things back with force
+  MetaImpactNugget      ; A Nugget that throws things back with force
 ;	HeroResist			= .75
     ShockWaveAmount	= 40.0
     ShockWaveRadius		= 40.0

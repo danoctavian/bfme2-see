@@ -95,7 +95,7 @@ End
 /////
 //GAINTS///
 
-FXParticleSystem GiantSplatDust //from TreebeardSplatDust
+FXParticleSystem GiantSplatDust ;from TreebeardSplatDust
   System
     Priority = ALWAYS_RENDER
     Shader = ALPHA
@@ -104,8 +104,8 @@ FXParticleSystem GiantSplatDust //from TreebeardSplatDust
     SystemLifetime = 6 //3
     Size = 10 25
     BurstCount = 25 35
-    InitialDelay = 0 0 //108 108 //8 8
-	IsGroundAligned = Yes	
+    InitialDelay = 0 0 //8 8
+	;IsGroundAligned = Yes	
   End
   Color = DefaultColor
     Color1 = R:123 G:111 B:87 1
