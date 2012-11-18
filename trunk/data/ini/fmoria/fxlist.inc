@@ -197,4 +197,16 @@ FXList FX_MoriaSpellbookStoneGiantsSummon
 End
 
 
+FXList FX_WildMountaingiantSplatDust
+  ParticleSystem
+    Name = GiantSplatDust
+    Offset = X:0.0 Y:0.0 Z:-18.0
+  End
+End
 
+FXList FX_WildMountaingiantSplatDustAtBAT_SPINE1
+	FXListAtBonePos
+		FX = FX_WildMountaingiantSplatDust
+		BoneName = BAT_SPINE1
+	End
+End
