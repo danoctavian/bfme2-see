@@ -200,7 +200,7 @@ End
 FXList FX_WildMountaingiantSplatDust
   ParticleSystem
     Name = GiantSplatDust
-    Offset = X:0.0 Y:0.0 Z:-18.0
+    Offset = X:0.0 Y:0.0 Z:0.0 //-18.0
   End
 End
 

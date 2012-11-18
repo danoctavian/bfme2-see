@@ -41,8 +41,8 @@ AudioEvent CampGoblinUpgradeFlameArrows					;pickups2
   SubmixSlider = voice
 End
 
-AudioEvent CampGoblinUpgradeForgedBlades				;pickups2
-  Sounds = GCGoUpg_forgeda GCGoUpg_forgedb
+AudioEvent CampGoblinUpgradeForgedBlades					;pickups2
+  Sounds = GCGoUpg_forgeda //GCGoUpg_forgedb				; "GCGoUpg_forgeda" is NEW audio, mixed by NJM for SCAVENGED WEAPONS upgrade tech.
   Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
   MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
   Type = world player voice
