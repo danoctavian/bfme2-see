@@ -365,12 +365,24 @@ Weapon CaveTrollHeroSmashWeapon
 	DamageNugget      
 		Damage				= CAVETROLLHERO_SMASH_WEAPON_DAMAGE
 		Radius				= CAVETROLLHERO_SMASH_WEAPON_RADIUS
-		DamageType			= FORCE //MAGIC
+		DamageType			= SIEGE //FORCE //MAGIC
 		DamageFXType		= CLUBBING //MAGIC
 		DeathType			= LASERED ;now always used instead of NORMAL (Sûl) //EXPLODED
 		DamageSpeed			= 700.0 ; must match the ShockWaveSpeed below
-    DamageScalar  			= 25% ALL ALLIES
-	DamageScalar  			= 250% NONE +HERO	//Added for SEE!
+		DamageScalar  		= 25% ALL ALLIES
+		DamageScalar  		= 250% NONE +HERO	//Added for SEE!
+		DamageArc      		= 180	
+	End
+	
+	DamageNugget      
+		Damage				= CAVETROLLHERO_SMASH_WEAPON_OUTER_DAMAGE
+		Radius				= CAVETROLLHERO_SMASH_WEAPON_OUTER_RADIUS
+		DamageType			= SIEGE //FORCE //MAGIC
+		DamageFXType		= CLUBBING //MAGIC
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl) //EXPLODED
+		DamageSpeed			= 700.0 ; must match the ShockWaveSpeed below
+		DamageScalar  		= 25% ALL ALLIES
+		DamageScalar  		= 250% NONE +HERO	//Added for SEE!
 		DamageArc      		= 180	
 	End
 	

@@ -36,7 +36,7 @@ End
 SpecialPower SpecialAbilityCaveTrollHeroSmash
 	Enum			= SPECIAL_WORD_OF_POWER //SPECIAL_GENERAL_TARGETLESS
 	ReloadTime		= 120;000
-	RadiusCursorRadius = GLOIN_SMASH_WEAPON_RADIUS
+	//RadiusCursorRadius = GLOIN_SMASH_WEAPON_RADIUS
 End
 
 ;------------------------------------------------------------------------------

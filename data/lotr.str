@@ -50047,7 +50047,7 @@ CONTROLBAR:CaveTrollHeroSmash
 "Smash Earth"
 END
 CONTROLBAR:ToolTipCaveTrollHeroSmash
-"Causes a small earthquake around the Cave Troll's location \n Left click icon then left click on target"
+"Causes a small earthquake \n around the Cave Troll's location \n \n Strong vs heroes!"
 END
 
 OBJECT:WildGolfimbul
