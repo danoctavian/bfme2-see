@@ -7,49 +7,7 @@
 ; NOTE: Keep this organized!
 
 
-FXParticleSystem TrollClubSmashDust ; Based on the generic "BuildingContructDust"
-  System
-    Priority = HIGH_OR_ABOVE //LOW_OR_ABOVE
-    Shader = ALPHA
-    ParticleName = EXsmokeplume.tga
-    Lifetime = 75 75 				
-    SystemLifetime = 75
-    SortLevel = 1
-    Size = 25 25
-    BurstCount = 1 1
-  End
-  Color = DefaultColor
-    Color1 = R:162 G:151 B:136 0
-  End
-  Alpha = DefaultAlpha
-    Alpha2 = 0.15 0.35 15
-    Alpha3 = 0 0 75
-  End
-  Update = DefaultUpdate
-    SizeRate = 10 15
-    SizeRateDamping = 0.8 0.85
-    AngleZ = -1 1
-    AngularDamping = 1 1
-    AngularDampingXY = 1 1
-  End
-  Physics = DefaultPhysics
-    VelocityDamping = 0.85 0.95
-    DriftVelocity = X:0 Y:0 Z:0.5
-  End
-  EmissionVelocity = OrthoEmissionVelocity
-    X = 0 0.5
-    Y = 0 0.5
-    Z = 0 0.5
-  End
-  EmissionVolume = CylinderEmissionVolume //BoxEmissionVolume
-    ;IsHollow = Yes
-    ;HalfSize = X:25 Y:50 Z:5  
-    Radius = 100
-    Offset = X:0 Y:0 Z:5
-  End
-  Draw = DefaultDraw
-  End
-End
+
 
 ;-------------------------------------------------------------------
 ; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!

@@ -395,14 +395,16 @@ End
 CommandButton Command_SpecialAbilityCaveTrollHeroSmash
   Command               = SPECIAL_POWER 
   SpecialPower          = SpecialAbilityCaveTrollHeroSmash
-  Options				= NEED_TARGET_POS
+  Options				= OK_FOR_MULTI_SELECT OK_FOR_MULTI_EXECUTE //NEED_TARGET_POS
   TextLabel              = CONTROLBAR:CaveTrollHeroSmash
   ButtonImage           = SBGood_Earthquake
-  RadiusCursorType		= EarthquakeRadiusCursor
-  CursorName		    = Bombard
-  InvalidCursorName		= GenericInvalid
-  ButtonBorderType		= ACTION 
-  DescriptLabel			= CONTROLBAR:ToolTipCaveTrollHeroSmash
+  ButtonBorderType		= ACTION  
+  DescriptLabel			= CONTROLBAR:ToolTipCaveTrollHeroSmash  
+  AutoAbility			  	= Yes  
+  PresetRange			= #MULTIPLY( CAVETROLLHERO_SMASH_WEAPON_RADIUS 0.5 )  
+  ;RadiusCursorType		= EarthquakeRadiusCursor
+  ;CursorName		    = Bombard
+  ;InvalidCursorName		= GenericInvalid
   InPalantir			= Yes
 End
 
