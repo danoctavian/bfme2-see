@@ -409,6 +409,18 @@ CommandSet WildHillTrollCommandSet
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandSet CaveTrollHeroCommandSet	; This is Cave Troll of Moria HERO
+	1	= Command_ToggleStance
+	2  	= Command_DominateTroll
+	3	= Command_SpecialAbilityCaveTrollHeroSmash 
+	13		= Command_AttackMove
+	14		= Command_Stop
+	16  	= Command_SetStanceBattle
+	17  	= Command_SetStanceAggressive
+	18  	= Command_SetStanceHoldGround
+End
+
+; ------------------------------------------------------------------------------ SEE!
 CommandSet CaveTrollCommandSet
 	1	= Command_ToggleStance
 	2  	= Command_ToggleMountainTrollRockThrow

@@ -50023,7 +50023,32 @@ END
 
 
 
-////------WILD FACTION------////
+// #################################################### MORIA HEROES
+
+OBJECT:CaveTrollHero
+"Cave Troll of Moria"
+End
+CONTROLBAR:CaveTrollHeroRecruit
+"Recruit the Cave Troll of Moria"
+END
+CONTROLBAR:CaveTrollHeroRevive
+"Revive the fallen Hero: \n Cave Troll of Moria"
+END
+CONTROLBAR:CaveTrollHeroHotkey
+"Cave Troll of Moria"
+END
+CONTROLBAR:CaveTrollHeroLeadership
+"Cave Troll Leadership"
+END
+CONTROLBAR:ToolTipCaveTrollHeroLeadership
+"Cave Trolls nearby gain \n various fighting bonuses"
+END
+CONTROLBAR:CaveTrollHeroSmash
+"Smash Earth"
+END
+CONTROLBAR:ToolTipCaveTrollHeroSmash
+"Causes a small earthquake around the Cave Troll's location \n Left click icon then left click on target"
+END
 
 OBJECT:WildGolfimbul
 "Golfimbul"
@@ -50037,7 +50062,6 @@ END
 CONTROLBAR:WildGolfimbulHotkey
 "&Golfimbul"
 END
-
 CONTROLBAR:GolfimbulLeadership
 "Leadership"
 END

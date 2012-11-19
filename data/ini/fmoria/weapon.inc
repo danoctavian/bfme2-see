@@ -346,7 +346,47 @@ Weapon MordorBalrogHeroEffect
   End
 End
 
-;----------------
+; ----------------------------------------------------------------------------- CAVE TROLL
+
+Weapon CaveTrollHeroSmashWeapon
+	IdleAfterFiringDelay 		= 0
+	AttackRange 			= 25.0 		; only half of CAVETROLLHERO_SMASH_WEAPON_RADIUS
+	MinimumAttackRange 		= 0.8	
+	RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	DelayBetweenShots 		= 5000             						; time between shots, msec
+	PreAttackDelay			= 1900 //2600							; Frame 57 at 1,9 sec
+	PreAttackType			= PER_ATTACK 							; Do the delay each time we attack a new target
+	;PreAttackFX				= FX_GloinShatterPre
+	FireFX					= FX_TrollShatterHammer
+	FiringDuration      		= 1400
+	DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+	LockWhenUsing			= Yes	
+	
+	DamageNugget      
+		Damage				= CAVETROLLHERO_SMASH_WEAPON_DAMAGE
+		Radius				= CAVETROLLHERO_SMASH_WEAPON_RADIUS
+		DamageType			= FORCE //MAGIC
+		DamageFXType		= CLUBBING //MAGIC
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl) //EXPLODED
+		DamageSpeed			= 700.0 ; must match the ShockWaveSpeed below
+    DamageScalar  			= 25% ALL ALLIES
+	DamageScalar  			= 250% NONE +HERO	//Added for SEE!
+		DamageArc      		= 180	
+	End
+	
+	MetaImpactNugget                    ; A Nugget that throws things back with force
+;		HeroResist			= .75
+		ShockWaveArc      	= 180
+		ShockWaveAmount  	= 40.0
+		ShockWaveRadius   	= CAVETROLLHERO_SMASH_WEAPON_RADIUS
+		ShockWaveTaperOff 	= 1.0
+		ShockWaveZMult	  	= 1.000
+		ShockWaveSpeed	  	= 700.0 
+	End
+End
+
+; ----------------------------------------------------------------------------- SHELOB HERO WEBBING
+
 Weapon ShelobWebbing_SEE ;taken from Legolas' bow - needs designer love
   AttackRange = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 ) //250				
   WeaponSpeed = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 10.0 ) //180         ; 5.0 
@@ -3094,7 +3134,7 @@ Weapon SpellBookMoriaDeteriorate
 	DamageNugget                        ; A basic Nugget that just does damage
 		Damage			= 10		
 		DamageType		= SIEGE
-		DamageFXType	= SWORD_SLASH
+		DamageFXType	= MAGIC //SWORD_SLASH
 		Radius			= MORIA_DETERIORATE_RANGE
 		DeathType		= LASERED ;now always used instead of NORMAL (Sûl)
 		DamageSpeed		= 1400.0
