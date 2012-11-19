@@ -387,6 +387,25 @@ CommandButton Command_ConstructWildMountainGiant
 	ShowProductionCount	= Yes
 End
 
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria hero powers 
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_SpecialAbilityCaveTrollHeroSmash
+  Command               = SPECIAL_POWER 
+  SpecialPower          = SpecialAbilityCaveTrollHeroSmash
+  Options				= NEED_TARGET_POS
+  TextLabel              = CONTROLBAR:CaveTrollHeroSmash
+  ButtonImage           = SBGood_Earthquake
+  RadiusCursorType		= EarthquakeRadiusCursor
+  CursorName		    = Bombard
+  InvalidCursorName		= GenericInvalid
+  ButtonBorderType		= ACTION 
+  DescriptLabel			= CONTROLBAR:ToolTipCaveTrollHeroSmash
+  InPalantir			= Yes
+End
+
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ToggleMountainTrollRockThrow
 	Command				= TOGGLE_WEAPONSET

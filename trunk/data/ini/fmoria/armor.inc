@@ -59,6 +59,24 @@ Armor WildStructureArmor			; NOTE - This is based on StructureArmor (original va
 End
 
 ;------------------------------------------------------------------------------- SEE!
+Armor CaveTrollHeroArmor
+  Armor = DEFAULT         	25%   ; 100%
+  Armor = SLASH           	30%   ; 100%
+  Armor = PIERCE           	10%   ;  50%
+  Armor = SPECIALIST      	75%   ;  50%
+  Armor = CRUSH           	1%   ; 200%
+  Armor = CAVALRY	        50% ;
+  Armor = SIEGE           	100%   ;
+  Armor = FLAME           	75%   ;  30%
+  Armor = FROST				75%
+  Armor = MAGIC           	100%   ;
+  Armor = HERO            	100% ;200%   ;
+  Armor = HERO_RANGED     	100%   ; 
+  Armor = STRUCTURAL    	25%    
+  FlankedPenalty = 			50%      
+End
+
+;------------------------------------------------------------------------------- SEE!
 Armor GoblinFighterArmor
   Armor = DEFAULT         	100%   ; 
   Armor = SLASH           	100%   ; 

@@ -1,10 +1,55 @@
-/////////////////
-// FXLIST.INC //
-///////////////
-//Moria//
-////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
 
-; ----------------------------------------------
+; FXList.INC for MORIA (Wild) faction...
+; ------------------------------------------------------------------------------
+; NOTE: Keep this organized!
+
+;------------------------------------------------------------------------------ CAVE TROLL HERO
+FXList FX_TrollShatterHammer
+  ParticleSystem
+    Name = TrollClubSmashDust //GloinBlastFinalLight
+    Offset = X:50.0 Y:0.0 Z:60   ;X:15.0 on all...
+  End
+  ParticleSystem
+    Name = GloinShatterShockwave
+    Offset = X:50.0 Y:0.0 Z:20.0
+  End
+  ParticleSystem
+    Name = GloinShatterwave
+    Offset = X:50.0 Y:0.0 Z:15.0
+  End
+  ParticleSystem
+    Name = GloinShatterwave2
+    Offset = X:50.0 Y:0.0 Z:15.0
+  End
+
+  Sound
+    Name = GloinShatterHammer
+  End
+  
+  DynamicDecal	; A decal that belongs to nobody, but updates internally to fade and tint and such
+		DecalName		= EXCracks04
+		Size				= 120
+		Color			= R:105 G:105 B:105
+		Offset			= X:50 Y:00 //X:15
+		OpacityStart		= 0
+		OpacityFadeTimeOne	= 200
+		OpacityPeak			= 220	
+		OpacityPeakTime		= 250
+		OpacityFadeTimeTwo	= 30000
+		OpacityEnd			= 0
+
+		StartingDelay		= 350
+		Lifetime		= 64000 //34000
+  End
+	ViewShake 
+		Type = NORMAL ; NORMAL and SUBTLE are the next choices
+	End
+End
+
+;------------------------------------------------------------------------------ SHELOB
 FXList FX_ShelobDigSummon
 
   ParticleSystem
