@@ -249,7 +249,7 @@
 
 #define INSTANT_DEATH_ON_METAIMPACT_OBJFILTER		ANY +PORTER +DwarvenBattleWagon +DwarvenDemolisher +DwarvenCatapult +GondorTrebuchet +IsengardExplosiveMine +IsengardBallista +IsengardBatteringRam +MordorCatapult +MordorBatteringRam +MordorRamCrew +IsengardRamCrew +AngmarTrollSling
 
-#define ATTACK_TROLL_DOMINATE_OBJECT_FILTER		ANY +MordorMountainTroll +GoblinCaveTroll +MordorDrummerTroll +CaveTroll_Slaved +AngmarSnowTroll +AngmarSnowTrollHorde +SnowTroll_Slaved +AngmarHillTroll +AngmarHillTrollHorde +HillTroll_Slaved
+#define ATTACK_TROLL_DOMINATE_OBJECT_FILTER	ANY +TROLL_BUFF_NUGGET -WORKING_PASSENGER -MACHINE -ORC //+MordorMountainTroll +GoblinCaveTroll +MordorDrummerTroll +CaveTroll_Slaved +AngmarSnowTroll +AngmarSnowTrollHorde +SnowTroll_Slaved +AngmarHillTroll +AngmarHillTrollHorde +HillTroll_Slaved
 #define ROGASH_DOMINATE_OBJECT_FILTER			ANY +MordorMountainTroll +GoblinCaveTroll +MordorDrummerTroll +CaveTroll_Slaved +AngmarSnowTroll +AngmarSnowTrollHorde +SnowTroll_Slaved +AngmarHillTroll +AngmarHillTrollHorde +HillTroll_Slaved +MordorAttackTroll
 
 
