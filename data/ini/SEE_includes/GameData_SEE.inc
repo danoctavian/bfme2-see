@@ -30,6 +30,8 @@
 
 ; LEADERSHIP FOR MORIA
 ;------------------------------------------------------------------------------ SEE!
+; Cave Troll of Moria (LS: Cave Trolls)
+#define WILD_CAVETROLLHERO_BUFF_RECIPIENT_OBJECT_FILTER	ANY +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair +CaveTroll_Slaved ALLIES ;+TROLL_BUFF_NUGGET
 ; Shelob (LS: Spiderlings)
 #define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER			ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
 ; Great Goblin (LS: All Moria units)

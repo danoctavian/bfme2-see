@@ -411,8 +411,9 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet CaveTrollHeroCommandSet	; This is Cave Troll of Moria HERO
 	1	= Command_ToggleStance
-	2  	= Command_DominateTroll
-	3	= Command_SpecialAbilityCaveTrollHeroSmash 
+	2	= Command_SpecialAbilityCaveTrollHeroLeadership
+	3  	= Command_DominateTroll
+	4	= Command_SpecialAbilityCaveTrollHeroSmash 
 	13		= Command_AttackMove
 	14		= Command_Stop
 	16  	= Command_SetStanceBattle
