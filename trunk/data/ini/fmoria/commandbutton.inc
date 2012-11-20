@@ -392,6 +392,19 @@ End
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_SpecialAbilityCaveTrollHeroLeadership
+  Command               = SPECIAL_POWER
+  SpecialPower          = SpecialAbilityFakeLeadership
+  Options				= NONPRESSABLE
+  TextLabel              = CONTROLBAR:CaveTrollHeroLeadership
+  ButtonImage           = BWTreasureTrove_ScavengedArmor
+  RadiusCursorType		= TrainingRadiusCursor
+  ButtonBorderType		= ACTION
+  DescriptLabel           = CONTROLBAR:ToolTipCaveTrollHeroLeadership
+  InPalantir		  	= Yes
+End
+
+; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_SpecialAbilityCaveTrollHeroSmash
   Command               = SPECIAL_POWER 
   SpecialPower          = SpecialAbilityCaveTrollHeroSmash

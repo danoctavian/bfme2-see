@@ -50049,6 +50049,12 @@ END
 CONTROLBAR:ToolTipCaveTrollHeroSmash
 "Causes a small earthquake \n around the Cave Troll's location \n \n Strong vs heroes!"
 END
+CONTROLBAR:CaveTrollHeroLeadership
+"Cave Troll Leadership"
+END
+CONTROLBAR:ToolTipCaveTrollHeroLeadership
+"Allied trolls near The Cave Troll of Moria \n gain various fighting bonuses"
+END
 
 OBJECT:WildGolfimbul
 "Golfimbul"
