@@ -25,7 +25,7 @@ AudioEvent CampGoblinUpgradeBannerCarrier				;pickups2
 End
 
 AudioEvent CampGoblinUpgradeDragonsNest					;pickups2
-  Sounds = balrogtotemcomplete
+  Sounds = BalrogTotemComplete	//GCGoUpg_dragona GCGoUpg_dragonb
   Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
   MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
   ; Delay = 11500 11500 Handled in Eva.ini now
@@ -42,7 +42,7 @@ AudioEvent CampGoblinUpgradeFlameArrows					;pickups2
 End
 
 AudioEvent CampGoblinUpgradeForgedBlades					;pickups2
-  Sounds = scavangedblades
+  Sounds = ScavangedBlades		//GCGoUpg_forgeda GCGoUpg_forgedb
   Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
   MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
   Type = world player voice
