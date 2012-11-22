@@ -443,7 +443,15 @@ FXList FX_GandalfWizardDefence_SEE
   End
 End
 
-
+FXList FX_TrollRampageDust
+	;Sound
+	;	Name = GenericRespawn1
+	;End
+	ParticleSystem
+	    Name = HordeUpgradeDust_SEE		
+            Offset = X:0.0 Y:0.0 Z:1.0
+	End		
+End
 
 ;--------------------------- Men Library Upgrade -----------------------------
 FXList FXMenLibraryUpgrade_SEE //Not used in SEE!
