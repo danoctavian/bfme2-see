@@ -25,7 +25,7 @@ AudioEvent CampGoblinUpgradeBannerCarrier				;pickups2
 End
 
 AudioEvent CampGoblinUpgradeDragonsNest					;pickups2
-  Sounds = GCGoUpg_dragona GCGoUpg_dragonb
+  Sounds = balrogtotemcomplete
   Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
   MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
   ; Delay = 11500 11500 Handled in Eva.ini now
@@ -42,7 +42,7 @@ AudioEvent CampGoblinUpgradeFlameArrows					;pickups2
 End
 
 AudioEvent CampGoblinUpgradeForgedBlades					;pickups2
-  Sounds = GCGoUpg_forgeda //GCGoUpg_forgedb				; "GCGoUpg_forgeda" is NEW audio, mixed by NJM for SCAVENGED WEAPONS upgrade tech.
+  Sounds = scavangedblades
   Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
   MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
   Type = world player voice
@@ -473,7 +473,7 @@ AudioEvent CampGoblinCreateGoblinKing
 End
 
 AudioEvent CampGoblinCreateHalf-Trolls
-  Sounds = ECGoSal_GobMara ;ECGoSal_GobMarb
+  Sounds = ECGoSal_GobWarb
   Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
   MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
   Type = world player voice
@@ -514,7 +514,7 @@ AudioEvent CampGoblinCreateSpiderlings
 End
 
 AudioEvent CampGoblinCreateGoblinWarrior
-  Sounds = ECGoSal_GobWara ;ECGoSal_GobWarb
+  Sounds = ECGoSal_GobWara
   Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
   MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
   Type = world player voice
