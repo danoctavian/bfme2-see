@@ -339,3 +339,12 @@ Upgrade Upgrade_MoriaScurry
   Type              = PLAYER
   PersistsInCampaign = Yes
 End
+
+Upgrade Upgrade_TechnologyMoriaScavenger
+	DisplayName     	= UPGRADE:WildHeavyArmor
+	Type            	= OBJECT
+	BuildCost			= 1
+	BuildTime			= 1		
+	ResearchCompleteEvaEvent	= UpgradeScavengedArmorReady
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
+End

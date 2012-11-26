@@ -41,7 +41,7 @@ End
 ; ---------------------------------------------------------------------------------------
 ObjectCreationList OCL_SpellBookMoriaDeteriorate
 	CreateObject
-		ObjectNames				= SpellBookMoriaDeteriorate
+		ObjectNames				= SpellBookMoriaDeteriorateObject
 		Count					= 1
 	End
 End
