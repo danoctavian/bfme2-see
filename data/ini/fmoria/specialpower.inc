@@ -233,6 +233,18 @@ SpecialPower SpellBookMoriaStoneGiants
 	ForbiddenObjectRange		= 110.0 ;90.0
 End
 
+;------------------------------------------------------------------------------
+SpecialPower SpellBookMoriaEarthquake
+	Enum					= SPECIAL_SPELL_BOOK_EARTHQUAKE
+	RadiusCursorRadius		= 300
+	RequiredSciences		= SCIENCE_MoriaEarthquake
+	ReloadTime				= SPELL_RECHARGE_TIME_TIER_4 ; in milliseconds
+	InitiateAtLocationSound	= SpellEarthquakeMS
+	ViewObjectDuration		= 10000
+	ViewObjectRange			= 200
+	Flags					= RESPECT_RECHARGE_TIME_DISCOUNT
+End
+
 
 
 
@@ -249,4 +261,14 @@ SpecialPower SpellBookBalrogAllyFort
 	Flags					= NO_FORBIDDEN_OBJECTS RESPECT_RECHARGE_TIME_DISCOUNT
 	ForbiddenObjectFilter	= NO_SUMMON_NEAR_OBJECT_FILTER
 	ForbiddenObjectRange	= 75.0
+End
+
+
+
+;------------------------------------------------------------------------------
+SpecialPower SpellBookScavengerMoria
+	Enum				= SPECIAL_SPELL_BOOK_SCAVENGER
+//    RequiredSciences			= SCIENCE_Scavenger
+    ReloadTime				= 0   ; in milliseconds
+    Flags				= RESPECT_RECHARGE_TIME_DISCOUNT
 End

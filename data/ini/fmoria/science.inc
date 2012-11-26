@@ -12,21 +12,21 @@
 Science SCIENCE_MoriaDeepDrums ;Drums of the Deep (War Chant)
   PrerequisiteSciences = SCIENCE_EVIL OR SCIENCE_WILD
   SciencePurchasePointCost = EVIL_RANK_1_COST
-  SciencePurchasePointCostMP = 1 ;5
+  SciencePurchasePointCostMP = 5
   IsGrantable = Yes
 End
 
 Science SCIENCE_MoriaPlunder ;Plunder
   PrerequisiteSciences = SCIENCE_EVIL OR SCIENCE_WILD
   SciencePurchasePointCost = EVIL_RANK_1_COST
-  SciencePurchasePointCostMP = 1 ;5
+  SciencePurchasePointCostMP = 5
   IsGrantable = Yes
 End
 
 Science SCIENCE_MoriaCaveBats ;Cave Bats
   PrerequisiteSciences = SCIENCE_EVIL OR SCIENCE_WILD
   SciencePurchasePointCost = EVIL_RANK_1_COST
-  SciencePurchasePointCostMP = 1 ;5
+  SciencePurchasePointCostMP = 5
   IsGrantable = Yes
 End
 
@@ -34,28 +34,28 @@ End
 Science SCIENCE_MoriaCallTheHorde ;Call the Horde
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaDeepDrums
   SciencePurchasePointCost = EVIL_RANK_2_COST
-  SciencePurchasePointCostMP = 1 ;10
+  SciencePurchasePointCostMP = 10
   IsGrantable = Yes
 End
 
 Science SCIENCE_MoriaScurry ;Scurry
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaDeepDrums OR SCIENCE_WILD SCIENCE_MoriaPlunder
   SciencePurchasePointCost = EVIL_RANK_2_COST
-  SciencePurchasePointCostMP = 1 ;10
+  SciencePurchasePointCostMP = 10
   IsGrantable = Yes
 End
 
 Science SCIENCE_MoriaUntamedAllegiance ;Untamed Allegiance
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaCaveBats OR SCIENCE_WILD SCIENCE_MoriaPlunder
   SciencePurchasePointCost = EVIL_RANK_2_COST
-  SciencePurchasePointCostMP = 1 ;10
+  SciencePurchasePointCostMP = 10
   IsGrantable = Yes
 End
 
 Science SCIENCE_MoriaDeteriorate ;Deteriorate
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaCaveBats
   SciencePurchasePointCost = EVIL_RANK_2_COST
-  SciencePurchasePointCostMP = 1 ;10
+  SciencePurchasePointCostMP = 10
   IsGrantable = Yes
 End
 
@@ -63,21 +63,21 @@ End
 Science SCIENCE_MoriaShelob ;Shelob
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaCallTheHorde OR SCIENCE_WILD SCIENCE_MoriaScurry
   SciencePurchasePointCost = EVIL_RANK_3_COST
-  SciencePurchasePointCostMP = 1 ;15
+  SciencePurchasePointCostMP = 15
   IsGrantable = Yes
 End
 
 Science SCIENCE_MoriaDarkness ;Darkness
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaScurry OR SCIENCE_WILD SCIENCE_MoriaUntamedAllegiance
   SciencePurchasePointCost = EVIL_RANK_3_COST
-  SciencePurchasePointCostMP = 1 ;15
+  SciencePurchasePointCostMP = 15
   IsGrantable = Yes
 End
 
 Science SCIENCE_MoriaWatcher ;Watcher in the Water
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaUntamedAllegiance OR SCIENCE_WILD SCIENCE_MoriaDeteriorate
   SciencePurchasePointCost = EVIL_RANK_3_COST
-  SciencePurchasePointCostMP = 1 ;15
+  SciencePurchasePointCostMP = 15
   IsGrantable = Yes
 End
 
@@ -85,22 +85,14 @@ End
 Science SCIENCE_MoriaStoneGiants ;Stone Giants
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaShelob OR SCIENCE_WILD SCIENCE_MoriaDarkness
   SciencePurchasePointCost = EVIL_RANK_4_COST
-  SciencePurchasePointCostMP = 1 ;25
+  SciencePurchasePointCostMP = 25
   IsGrantable = Yes
 End
 
-;WIP!
-Science SCIENCE_MoriaAbyss ;Abyss
+Science SCIENCE_MoriaEarthquake
   PrerequisiteSciences = SCIENCE_WILD SCIENCE_MoriaDarkness OR SCIENCE_WILD SCIENCE_MoriaWatcher
   SciencePurchasePointCost = EVIL_RANK_4_COST
-  SciencePurchasePointCostMP = 1  ;25
+  SciencePurchasePointCostMP = 25
   IsGrantable = Yes
 End
 
-
-Science SCIENCE_Earthquake
-  PrerequisiteSciences = SCIENCE_GOOD SCIENCE_CloudBreak OR SCIENCE_GOOD SCIENCE_Undermine OR SCIENCE_MEN SCIENCE_RohanAllies OR SCIENCE_MEN SCIENCE_CloudBreak OR SCIENCE_ROHAN SCIENCE_RohanAllies OR SCIENCE_ROHAN SCIENCE_CloudBreak OR SCIENCE_DWARVES SCIENCE_Undermine OR SCIENCE_DWARVES SCIENCE_Bombard OR SCIENCE_ARNOR SCIENCE_CloudBreak OR SCIENCE_ARNOR SCIENCE_Bombard OR SCIENCE_WILD SCIENCE_MoriaDarkness OR SCIENCE_WILD SCIENCE_MoriaWatcher
-  SciencePurchasePointCost = 1 ;GOOD_RANK_4_COST
-  SciencePurchasePointCostMP = 1 ;25
-  IsGrantable = Yes
-End

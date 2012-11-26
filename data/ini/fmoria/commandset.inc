@@ -920,27 +920,21 @@ End
 
 CommandSet WildTreasureTroveCommandSet
 	1 = Command_PurchaseTechnologyWildBasicTraining
-	;2 = Command_PurchaseTechnologyWildHeavyArmor
-	;3 = Command_PurchaseTechnologyWildForgedBlades
-	;4 = Command_PurchaseTechnologyWildFireArrows
+	2 = Command_PurchaseTechnologyScavengerMoria
 	5 = Command_PurchaseUpgradeWildTreasureTroveLevel2
 	6 = Command_Sell
 End
 
 CommandSet WildTreasureTroveCommandSetLevel2
 	1 = Command_PurchaseTechnologyWildBasicTraining
-	;2 = Command_PurchaseTechnologyWildHeavyArmor
-	;3 = Command_PurchaseTechnologyWildForgedBlades
-	;4 = Command_PurchaseTechnologyWildFireArrows
+	2 = Command_PurchaseTechnologyScavengerMoria
 	5 = Command_PurchaseUpgradeWildTreasureTroveLevel3
 	6 = Command_Sell
 End
 
 CommandSet WildTreasureTroveCommandSetLevel3
 	1 = Command_PurchaseTechnologyWildBasicTraining
-	;2 = Command_PurchaseTechnologyWildHeavyArmor
-	;3 = Command_PurchaseTechnologyWildForgedBlades
-	;4 = Command_PurchaseTechnologyWildFireArrows
+	2 = Command_PurchaseTechnologyScavengerMoria
 	6 = Command_Sell	
 End
 
@@ -1153,7 +1147,9 @@ CommandSet WildSpellBookCommandSet_SEE
 	15 = Command_SpellBookMoriaWatcher
 	
 	16 = Command_SpellBookMoriaStoneGiants
-	17 = Command_SpellBookEarthquake
+	17 = Command_SpellBookMoriaEarthquake
+
+//	18 = Command_SpellBookScavengerMoria
 End
 
 CommandSet WildSpellStoreCommandSet_SEE
@@ -1171,6 +1167,6 @@ CommandSet WildSpellStoreCommandSet_SEE
 	10 = Command_PurchaseSpellMoriaWatcher
 	
 	11 = Command_PurchaseSpellMoriaStoneGiants
-	12 = Command_PurchaseSpellEarthquake
+	12 = Command_PurchaseSpellMoriaEarthquake
 End
 

@@ -1804,3 +1804,48 @@ CommandButton Command_PurchaseSpellMoriaStoneGiants
     TextLabel			= CONTROLBAR:MoriaSpellbookStoneGiants
 	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookStoneGiants
 End
+
+CommandButton Command_SpellBookMoriaEarthquake
+	Command				= SPELL_BOOK
+    SpecialPower		= SpellBookMoriaEarthquake
+	Options				= NEED_TARGET_POS 
+	TextLabel			= CONTROLBAR:Earthquake
+    ButtonImage			= SBGood_Earthquake
+	ButtonBorderType	= ACTION
+	DescriptLabel		= CONTROLBAR:TooltipEarthquake
+    RadiusCursorType	= EarthquakeRadiusCursor
+    CursorName			= AttackObj
+    InvalidCursorName	= GenericInvalid
+End
+
+CommandButton Command_PurchaseSpellMoriaEarthquake
+	Command				= PURCHASE_SCIENCE
+	ButtonBorderType	= UPGRADE 
+    ButtonImage			= SBGood_Earthquake
+    Science				= SCIENCE_MoriaEarthquake
+    TextLabel			= CONTROLBAR:Earthquake
+	DescriptLabel		= CONTROLBAR:TooltipEarthquake
+End
+
+CommandButton Command_PurchaseTechnologyScavengerMoria
+	Command				= OBJECT_UPGRADE //PLAYER_UPGRADE
+	Options				= NEED_UPGRADE CANCELABLE
+	Upgrade				= Upgrade_TechnologyMoriaScavenger
+	NeededUpgrade		= Upgrade_StructureLevel2
+	TextLabel			= CONTROLBAR:PurchaseTechnologyWildHeavyArmor
+	ButtonImage			= BWTreasureTrove_ScavengedArmor
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
+	Radial				= Yes
+	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure
+End
+
+CommandButton Command_SpellBookScavengerMoria
+	Command				= SPELL_BOOK
+	Options				= NONPRESSABLE
+	TextLabel			= CONTROLBAR:Scavenger
+	DescriptLabel		= CONTROLBAR:TooltipScavenger    
+	SpecialPower		= SpellBookScavengerMoria
+    ButtonImage			= SBEvil_Plus100CommandPoints
+End
