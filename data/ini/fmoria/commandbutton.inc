@@ -397,7 +397,7 @@ CommandButton Command_SpecialAbilityCaveTrollHeroLeadership
   SpecialPower          = SpecialAbilityFakeLeadership
   Options				= NONPRESSABLE
   TextLabel              = CONTROLBAR:CaveTrollHeroLeadership
-  ButtonImage           = BWTreasureTrove_ScavengedArmor
+  ButtonImage           = HSGimliDwarvenGrudge //BWTreasureTrove_ScavengedArmor
   RadiusCursorType		= TrainingRadiusCursor
   ButtonBorderType		= ACTION
   DescriptLabel           = CONTROLBAR:ToolTipCaveTrollHeroLeadership
@@ -410,7 +410,7 @@ CommandButton Command_SpecialAbilityCaveTrollHeroSmash
   SpecialPower          = SpecialAbilityCaveTrollHeroSmash
   Options				= OK_FOR_MULTI_SELECT OK_FOR_MULTI_EXECUTE //NEED_TARGET_POS
   TextLabel              = CONTROLBAR:CaveTrollHeroSmash
-  ButtonImage           = SBGood_Earthquake
+  ButtonImage           = ButtonCaveTrollHammerSmash //SBGood_Earthquake
   ButtonBorderType		= ACTION  
   DescriptLabel			= CONTROLBAR:ToolTipCaveTrollHeroSmash  
   AutoAbility			  	= Yes  
