@@ -1604,7 +1604,7 @@ CommandButton Command_SpellBookMoriaPlunder
 	TextLabel		= CONTROLBAR:MoriaSpellbookPlunder
 	ButtonBorderType	= ACTION
 	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookPlunder
-	RadiusCursorType	= FireBreathRadiusCursor ; - Again, for Naz to decide.
+	RadiusCursorType	= DwarvenRichesRadiusCursor
 	CursorName		= AttackObj
 	InvalidCursorName	= GenericInvalid  
 End
@@ -1678,152 +1678,152 @@ CommandButton Command_PurchaseSpellMoriaScurry
 End
 
 CommandButton Command_SpellBookMoriaUntamedAllegiance
-	Command				= SPELL_BOOK
-	SpecialPower		= SpellBookMoriaUntamedAllegiance
-	Options				= NEED_TARGET_POS 
-	TextLabel			= CONTROLBAR:MoriaSpellbookUntamedAllegiance
-	ButtonImage			= HSSharkuTameBeast
+	Command			= SPELL_BOOK
+	SpecialPower	= SpellBookMoriaUntamedAllegiance
+	Options			= NEED_TARGET_POS 
+	TextLabel		= CONTROLBAR:MoriaSpellbookUntamedAllegiance
+	ButtonImage		= HSSharkuTameBeast
 	ButtonBorderType	= ACTION
 	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookUntamedAllegiance
 	RadiusCursorType	= UntamedAllegianceRadiusCursor
 End
 
 CommandButton Command_PurchaseSpellMoriaUntamedAllegiance
-	ButtonImage			= HSSharkuTameBeast
+	ButtonImage		= HSSharkuTameBeast
 	ButtonBorderType	= ACTION
 	DescriptLabel		= CONTROLBA
-	Command				= PURCHASE_SCIENCE
+	Command			= PURCHASE_SCIENCE
 	ButtonBorderType	= UPGRADE
-    ButtonImage			= HSSharkuTameBeast
-    Science				= SCIENCE_MoriaUntamedAllegiance
-    TextLabel			= CONTROLBAR:MoriaSpellbookUntamedAllegiance
+    ButtonImage		= HSSharkuTameBeast
+    Science			= SCIENCE_MoriaUntamedAllegiance
+    TextLabel		= CONTROLBAR:MoriaSpellbookUntamedAllegiance
 	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookUntamedAllegiance
 End
 
 CommandButton Command_SpellBookMoriaDeteriorate
-	Command = SPELL_BOOK
-    SpecialPower		= SpellBookMoriaDeteriorate
-    ButtonImage			= ZZButtonImage
-   Options				= NEED_TARGET_POS
-	TextLabel			= CONTROLBAR:MoriaSpellbookDeteriorate
+	Command 		= SPELL_BOOK
+    SpecialPower	= SpellBookMoriaDeteriorate
+    ButtonImage		= SBEvil_Deteriorate
+   Options			= NEED_TARGET_POS
+	TextLabel		= CONTROLBAR:MoriaSpellbookDeteriorate
 	ButtonBorderType	= ACTION
 	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookDeteriorate
-	RadiusCursorType	= FireBreathRadiusCursor ; - Again, for Naz to decide.
-	CursorName			= AttackObj
+	RadiusCursorType	= DissentRadiusCursor
+	CursorName		= AttackObj
 	InvalidCursorName	= GenericInvalid
 End
 
 CommandButton Command_PurchaseSpellMoriaDeteriorate
-	Command				= PURCHASE_SCIENCE
+	Command			= PURCHASE_SCIENCE
 	ButtonBorderType	= UPGRADE 
-    ButtonImage			= ZZButtonImage
-    Science				= SCIENCE_MoriaDeteriorate
-    TextLabel			= CONTROLBAR:MoriaSpellbookDeteriorate
+    ButtonImage		= SBEvil_Deteriorate
+    Science			= SCIENCE_MoriaDeteriorate
+    TextLabel		= CONTROLBAR:MoriaSpellbookDeteriorate
 	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookDeteriorate
 End
 
 CommandButton Command_SpellBookMoriaShelob
-	Command				= SPELL_BOOK
-	SpecialPower		= SpellBookMoriaShelob
-	Options				= NEED_TARGET_POS 
-	TextLabel			= CONTROLBAR:MoriaSpellbookShelob
-	ButtonImage			= HIShelob
+	Command			= SPELL_BOOK
+	SpecialPower	= SpellBookMoriaShelob
+	Options			= NEED_TARGET_POS 
+	TextLabel		= CONTROLBAR:MoriaSpellbookShelob
+	ButtonImage		= HIShelob
 	ButtonBorderType	= ACTION
 	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookShelob
 	RadiusCursorType	= SpiderlingsRadiusCursor
-    CursorName          = AttackObj
-    InvalidCursorName   = GenericInvalid  
+    CursorName		= AttackObj
+    InvalidCursorName	= GenericInvalid  
 End
 
 CommandButton Command_PurchaseSpellMoriaShelob
-	Command				= PURCHASE_SCIENCE
+	Command			= PURCHASE_SCIENCE
 	ButtonBorderType	= UPGRADE 
-    ButtonImage			= HIShelob
-	Science				= SCIENCE_MoriaShelob
-    TextLabel			= CONTROLBAR:MoriaSpellbookShelob
+    ButtonImage		= HIShelob
+	Science			= SCIENCE_MoriaShelob
+    TextLabel		= CONTROLBAR:MoriaSpellbookShelob
 	DescriptLabel		= CONTROLBAR:ToolTipMoriaSpellbookShelob
 End
 
 CommandButton Command_SpellBookMoriaDarkness
 	Command			= SPELL_BOOK
-    SpecialPower		= SpellBookMoriaDarkness
-    ButtonImage			= SBEvil_Darkness
+    SpecialPower	= SpellBookMoriaDarkness
+    ButtonImage		= SBEvil_Darkness
 	TextLabel		= CONTROLBAR:MoriaSpellbookDarkness
 	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookDarkness
 End
 
 CommandButton Command_PurchaseSpellMoriaDarkness
-	Command				= PURCHASE_SCIENCE
+	Command			= PURCHASE_SCIENCE
 	ButtonBorderType	= UPGRADE 
-    ButtonImage			= SBEvil_Darkness 
-    Science				= SCIENCE_MoriaDarkness
-    TextLabel			= CONTROLBAR:MoriaSpellbookDarkness
+    ButtonImage		= SBEvil_Darkness 
+    Science			= SCIENCE_MoriaDarkness
+    TextLabel		= CONTROLBAR:MoriaSpellbookDarkness
 	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookDarkness
 End
 
 CommandButton Command_SpellBookMoriaWatcher
-	Command				= SPELL_BOOK
-	SpecialPower		= SpellBookMoriaWatcher
-	Options				= NEED_TARGET_POS 
-	TextLabel			= CONTROLBAR:MoriaSpellbookWatcher
-	ButtonImage			= SBEvil_SummonWatcher
+	Command			= SPELL_BOOK
+	SpecialPower	= SpellBookMoriaWatcher
+	Options			= NEED_TARGET_POS 
+	TextLabel		= CONTROLBAR:MoriaSpellbookWatcher
+	ButtonImage		= SBEvil_SummonWatcher
 	ButtonBorderType	= ACTION
 	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookWatcher
 	RadiusCursorType	= SummonWatcherRadiusCursor
-    CursorName          = AttackObj
-    InvalidCursorName   = GenericInvalid  
+    CursorName		= AttackObj
+    InvalidCursorName	= GenericInvalid  
 End
 
 CommandButton Command_PurchaseSpellMoriaWatcher
-	Command				= PURCHASE_SCIENCE
+	Command			= PURCHASE_SCIENCE
 	ButtonBorderType	= UPGRADE 
-    ButtonImage			= SBEvil_SummonWatcher ;Needs replacement
-	Science				= SCIENCE_MoriaWatcher
-    TextLabel			= CONTROLBAR:MoriaSpellbookWatcher
+    ButtonImage		= SBEvil_SummonWatcher ;Needs replacement
+	Science			= SCIENCE_MoriaWatcher
+    TextLabel		= CONTROLBAR:MoriaSpellbookWatcher
 	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookWatcher
 End
 
 CommandButton Command_SpellBookMoriaStoneGiants
 	Command			= SPELL_BOOK
-	SpecialPower		= SpellBookMoriaStoneGiants
+	SpecialPower	= SpellBookMoriaStoneGiants
 	Options			= NEED_TARGET_POS 
 	TextLabel		= CONTROLBAR:MoriaSpellbookStoneGiants
 	ButtonImage		= KUSummonGiantIcon
 	ButtonBorderType	= ACTION
 	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookStoneGiants
 	RadiusCursorType	= SummonGiantsRadiusCursor
-    CursorName          = AttackObj
-    InvalidCursorName   = GenericInvalid  
+    CursorName		= AttackObj
+    InvalidCursorName	= GenericInvalid  
 End
 
 CommandButton Command_PurchaseSpellMoriaStoneGiants
-	Command				= PURCHASE_SCIENCE
+	Command			= PURCHASE_SCIENCE
 	ButtonBorderType	= UPGRADE 
-    ButtonImage			= KUSummonGiantIcon 
-    Science				= SCIENCE_MoriaStoneGiants
-    TextLabel			= CONTROLBAR:MoriaSpellbookStoneGiants
+    ButtonImage		= KUSummonGiantIcon 
+    Science			= SCIENCE_MoriaStoneGiants
+    TextLabel		= CONTROLBAR:MoriaSpellbookStoneGiants
 	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookStoneGiants
 End
 
 CommandButton Command_SpellBookMoriaEarthquake
-	Command				= SPELL_BOOK
-    SpecialPower		= SpellBookMoriaEarthquake
-	Options				= NEED_TARGET_POS 
-	TextLabel			= CONTROLBAR:Earthquake
-    ButtonImage			= SBGood_Earthquake
+	Command			= SPELL_BOOK
+    SpecialPower	= SpellBookMoriaEarthquake
+	Options			= NEED_TARGET_POS 
+	TextLabel		= CONTROLBAR:Earthquake
+    ButtonImage		= SBGood_Earthquake
 	ButtonBorderType	= ACTION
 	DescriptLabel		= CONTROLBAR:TooltipEarthquake
     RadiusCursorType	= EarthquakeRadiusCursor
-    CursorName			= AttackObj
+    CursorName		= AttackObj
     InvalidCursorName	= GenericInvalid
 End
 
 CommandButton Command_PurchaseSpellMoriaEarthquake
-	Command				= PURCHASE_SCIENCE
+	Command			= PURCHASE_SCIENCE
 	ButtonBorderType	= UPGRADE 
-    ButtonImage			= SBGood_Earthquake
-    Science				= SCIENCE_MoriaEarthquake
-    TextLabel			= CONTROLBAR:Earthquake
+    ButtonImage		= SBGood_Earthquake
+    Science			= SCIENCE_MoriaEarthquake
+    TextLabel		= CONTROLBAR:Earthquake
 	DescriptLabel		= CONTROLBAR:TooltipEarthquake
 End
 
@@ -1845,7 +1845,7 @@ CommandButton Command_SpellBookScavengerMoria
 	Command				= SPELL_BOOK
 	Options				= NONPRESSABLE
 	TextLabel			= CONTROLBAR:Scavenger
-	DescriptLabel		= CONTROLBAR:TooltipScavenger    
+	DescriptLabel			= CONTROLBAR:TooltipScavenger    
 	SpecialPower		= SpellBookScavengerMoria
     ButtonImage			= SBEvil_Plus100CommandPoints
 End
