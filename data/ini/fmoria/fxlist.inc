@@ -7,27 +7,43 @@
 ; NOTE: Keep this organized!
 
 ;------------------------------------------------------------------------------ CAVE TROLL HERO
-FXList FX_TrollShatterHammer
-  ParticleSystem
-    Name = TrollClubSmashDust //GloinBlastFinalLight
-    Offset = X:50.0 Y:0.0 Z:60   ;X:15.0 on all...
-  End
-  ParticleSystem
-    Name = GloinShatterShockwave
-    Offset = X:50.0 Y:0.0 Z:20.0
-  End
-  ParticleSystem
-    Name = GloinShatterwave
-    Offset = X:50.0 Y:0.0 Z:15.0
-  End
-  ParticleSystem
-    Name = GloinShatterwave2
-    Offset = X:50.0 Y:0.0 Z:15.0
-  End
+FXList FX_TrollClubHammerDebris
+	ParticleSystem
+		Name = TrollClubSmashDust //GloinBlastFinalLight
+		Offset = X:50.0 Y:0.0 Z:60
+	End
+	ParticleSystem
+		Name = GloinShatterShockwave
+		Offset = X:50.0 Y:0.0 Z:20.0
+	End
+	ParticleSystem
+		Name = GloinShatterwave
+		Offset = X:50.0 Y:0.0 Z:15.0
+	End
+	ParticleSystem
+		Name = GloinShatterwave2
+		Offset = X:50.0 Y:0.0 Z:15.0
+	End
 
-  Sound
-    Name = GloinShatterHammer
-  End
+	Sound
+		Name = GloinShatterHammer
+	End
+  
+  	ParticleSystem
+		Name = ProjectileSplash01
+		Offset = X:50.0 Y:0.0 Z:1.0
+		OnlyIfOnWater = Yes
+	End
+	ParticleSystem
+		Name = ProjectileSplash02
+		Offset = X:50.0 Y:0.0 Z:1.0
+		OnlyIfOnWater = Yes
+	End
+	ParticleSystem
+		Name = ProjectileSplash03
+		Offset = X:50.0 Y:0.0 Z:1.0
+		OnlyIfOnWater = Yes
+	End  
   
   DynamicDecal	; A decal that belongs to nobody, but updates internally to fade and tint and such
 		DecalName		= EXCracks04
