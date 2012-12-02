@@ -34,13 +34,14 @@
 #define WILD_CAVETROLLHERO_BUFF_RECIPIENT_OBJECT_FILTER	ANY +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair +CaveTroll_Slaved ALLIES ;+TROLL_BUFF_NUGGET
 ; Shelob (LS: Spiderlings)
 #define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER			ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
-; Great Goblin (LS: All Moria units)
-#define WILD_GREATGOBLIN_BUFF_RECIPIENT_OBJECT_FILTER		ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved +WildMarauder +WildBannerMarauder +WildMarauderHorde +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling +GoblinArcherHorde +GoblinArcherHordeInn +GoblinArcher +GoblinArcherHorde_FromDefectedLair +WargSentry  +GoblinWargRider +GoblinWargRiderHorde +GoblinWolfRider +GoblinWolfRiderHorde +GoblinSpiderRider +GoblinSpiderRiderHorde +WildBannerSpiderRider +WildMountainGiant +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair ALLIES
-; Azog (changed from EA's "Goblin King") (LS: Guard of Moria)
-#define WILD_GOBLINKING_BUFF_RECIPIENT_OBJECT_FILTER		ANY +WildBannerMarauder +WildMarauder +WildMarauderHorde ALLIES
+; Great Goblin (LS: Hobgoblins)
+#define WILD_GREATGOBLIN_BUFF_RECIPIENT_OBJECT_FILTER		ANY +WildMarauder +WildMarauderHorde +WildBannerMarauder ALLIES //+GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved +WargSentry  +GoblinWargRider +GoblinWargRiderHorde +GoblinWolfRider +GoblinWolfRiderHorde ALLIES
+; Azog (changed from EA's "Goblin King")
+#define WILD_GOBLINKING_BUFF_RECIPIENT_OBJECT_FILTER		ANY +WildMarauder +WildBannerMarauder +WildMarauderHorde ALLIES
 ; Bolg (LS: Goblin Swordsmen, Pikemen & Arches)
 #define WILD_BOLG_BUFF_RECIPIENT_OBJECT_FILTER				ANY +GoblinFighter +GoblinFighterHorde +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin +GoblinFighterHorde_FromDefectedLair +GoblinArcherFromDefectedLair +GoblinArcher_Slaved +GoblinFighterFromDefectedLair +GoblinFighter_Slaved ALLIES
-
+; Golfimbul (LS: Goblin Archers)
+#define WILD_GOLFIMBUL_BUFF_RECIPIENT_OBJECT_FILTER			ANY +GoblinArcher +GoblinArcherHorde +GoblinArcherHordeInn +GoblinArcherHorde_FromDefectedLair
 
 
 ; ATTACK RANGE & DODGE

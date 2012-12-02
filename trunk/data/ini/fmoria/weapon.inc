@@ -1835,6 +1835,41 @@ Weapon GreatGoblinClub
 	End
 End
 
+; ------------------------------------------------------------------------------ SEE!
+Weapon PoisonMistWeapon
+	RadiusDamageAffects 	= ENEMIES NEUTRALS
+	FireFX				= FX_ShelobPoisonStingerStrike		;FX_GondorSwordHit
+  
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        	= GREAT_GOBLIN_POISON_DAMAGE //25 //35 ;;50
+		Radius        	= 150.0
+		DelayTime     	= 0
+		DamageType    	= POISON //SLASH
+		DamageFXType  	= POISON //SWORD_SLASH
+		DeathType     	= LASERED ;now always used instead of NORMAL (Sûl)
+	End
+	
+	DOTNugget                        ; A basic Nugget that just does damage
+		Damage        	= GREAT_GOBLIN_POISON_DAMAGE
+		AcceptDamageAdd = No
+		Radius        	= 150.0 //250.0
+		DelayTime     	= 0
+		DamageType    	= POISON
+		DamageFXType  	= POISON
+		DeathType     	= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageInterval 	= 500
+		DamageDuration 	= 30000
+		SpecialObjectFilter = AFFECTED_BY_POISON_OBJECTFILTER
+	End
+
+	ParalyzeNugget
+		Radius			= 200.0 //150.0
+		Duration			= POISONED_STINGER_DURATION
+		SpecialObjectFilter	= CRIPPLE_STRIKE_OBJECT_FILTER
+		ParalyzeFX		= FX_PoisonedStunEffect
+	End
+End
+
 ;------------------------------------------------------------------------------
 Weapon WildHillTrollHammer     ; BALANCE Wild Marauder Weapon
   LeechRangeWeapon      	= Yes

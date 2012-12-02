@@ -535,6 +535,7 @@
 #define	GREAT_GOBLIN_BUILDCOST								2000
 #define GREAT_GOBLIN_HEALTH								3000
 #define	GREAT_GOBLIN_CLUB_DAMAGE							275
+#define	GREAT_GOBLIN_POISON_DAMAGE							25
 
 ;--------------------------SHELOB------------------------------------------- SEE!
 #define WILD_SHELOB_BUILDCOST								2500
