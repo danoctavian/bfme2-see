@@ -8,6 +8,51 @@
 
 
 
+FXParticleSystem PoisonMist
+  System
+    Priority = VERY_LOW_OR_ABOVE
+    Shader = ALPHA
+    ParticleName = EXsmokeplume.tga
+    Lifetime = 100 100
+    SortLevel = 1
+    Size = 15 15
+    StartSizeRate = 1 1
+    BurstDelay = 1 1
+    BurstCount = 0 2
+    IsGroundAligned = Yes
+  End
+  Color = DefaultColor
+    Color1 = R:104 G:164 B:46 0
+    Color2 = R:236 G:247 B:253 0
+    Color3 = R:235 G:247 B:254 100
+    ColorScale = -30 20
+  End
+  Alpha = DefaultAlpha
+    Alpha2 = 0.2 0.3 50
+    Alpha3 = 0 0 100
+  End
+  Update = DefaultUpdate
+    SizeRate = 0.5 0.5
+    SizeRateDamping = 1.01 1.01
+    AngleZ = 0 7
+    AngularDamping = 1 1
+    AngularDampingXY = 1 1
+  End
+  Physics = DefaultPhysics
+    VelocityDamping = 1.03 1.03
+  End
+  EmissionVelocity = OrthoEmissionVelocity
+    X = -0.1 0.1
+    Y = -0.1 0.1
+  End
+  EmissionVolume = CylinderEmissionVolume
+    Radius = 150 //200
+    Length = 6
+    Offset = X:0 Y:0 Z:30
+  End
+  Draw = DefaultDraw
+  End
+End
 
 ;-------------------------------------------------------------------
 ; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!

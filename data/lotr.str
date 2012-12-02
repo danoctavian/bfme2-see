@@ -50129,7 +50129,7 @@ CONTROLBAR:TooltipTrollsMountain
 "Summon a pair of Mountain Trolls to create havac on the battlefield \n Left click icon then left click on pathable location"
 END
 CONTROLBAR:PoisonMist
-"Poison Mist"
+"Poisonous Mist"
 END
 CONTROLBAR:TooltipPoisonMist
 "Units within the mist become massivly Poisoned \n Significantly reduces enemy Armor and Damage \n \n Left click icon then left click on target area"

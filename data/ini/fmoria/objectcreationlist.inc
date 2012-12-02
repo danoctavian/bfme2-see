@@ -1,17 +1,19 @@
-/////////////////////////////
-// OBJECTCREATIONLIST.INC //
-///////////////////////////
-//Moria//
-////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
 
-;ObjectCreationList OCL_GreatGoblinPoisonMist
-;    CreateObject
-;        ObjectNames     = GratMistPing
-;		Disposition		= ON_GROUND_ALIGNED USE_WATER_SURFACE USE_CLIFF
-;		Count			= 1
-;		ParticleSystem	= PoisonMist
-;    End
-;End
+; ObjectCreationList.INC for MORIA (Wild) faction...
+; ------------------------------------------------------------------------------
+; NOTE: Keep this organized!
+
+ObjectCreationList OCL_GreatGoblinPoisonMist
+    CreateObject
+        ObjectNames     = GratMistPing
+		Disposition		= ON_GROUND_ALIGNED USE_WATER_SURFACE USE_CLIFF
+		Count			= 1
+		ParticleSystem	= PoisonMist
+    End
+End
 
 ;-------------------------------------------------------------------
 ; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!

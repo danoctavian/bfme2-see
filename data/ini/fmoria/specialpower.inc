@@ -7,6 +7,7 @@
 ; NOTE: Keep this organized!
 
 ;------------------------------------------------------------------------------ BALROG
+
 SpecialPower SpecialAbilityBalrogWings
 	Enum			= SPECIAL_GIMLI_LEAP ;SPECIAL_BALROG_WINGS
 	ReloadTime		= 10000 //10 secs for SEE! ;15000
@@ -28,6 +29,7 @@ SpecialPower SpecialAbilityBalrogBreath
 End
 
 ; ----------------------------------------------------------------------------- CAVE TROLL of MORIA
+
 SpecialPower SpecialAbilityCaveTrollHitDrum
 	Enum			= SPECIAL_AT_VISIBLE_OBJECT
 	ReloadTime		= 60000
@@ -39,7 +41,7 @@ SpecialPower SpecialAbilityCaveTrollHeroSmash
 	//RadiusCursorRadius = GLOIN_SMASH_WEAPON_RADIUS
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ MOUNTAIN GIANT
 
 SpecialPower SpecialAbilityWildMountainGiantStomp
 	Enum			= SPECIAL_WORD_OF_POWER
@@ -54,7 +56,7 @@ SpecialPower SpecialAbilityWildMountainGiantFlingPassenger
 	Enum			= SPECIAL_GENERAL_TARGETLESS
 End
 
-; -----------------------------------------------------------------------------
+; ----------------------------------------------------------------------------- SHELOB
 
 SpecialPower SpecialAbilityWildShelobTunnel
 	Enum			= SPECIAL_BALROG_WINGS
@@ -80,7 +82,7 @@ SpecialPower SpecialAbilityShelobWebbing
 	ObjectFilter	= CRIPPLE_STRIKE_OBJECT_FILTER -MONSTER
 End
 
-;------------------------------------------------------------------------------
+;------------------------------------------------------------------------------ GREAT GOBLIN
 
 SpecialPower SpecialPowerPoisonMist
 	Enum					= SPECIAL_SPELL_BOOK_ENSHROUDING_MIST
@@ -93,12 +95,12 @@ SpecialPower SpecialPowerPoisonMist
 	MaxCastRange			= 150
 End
 
-;-------------------------------------------------------------------
-; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
-;-------------------------------------------------------------------
-
-; Tier 1	
 ;------------------------------------------------------------------------------
+; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
+;------------------------------------------------------------------------------
+
+
+;------------------------------------------------------------------------------ TIER 1
 SpecialPower SpellBookMoriaDeepDrums
 	Enum			= SPECIAL_SPELL_BOOK_WAR_CHANT
 	Flags			= WATER_OK RESPECT_RECHARGE_TIME_DISCOUNT
@@ -131,8 +133,8 @@ SpecialPower SpellBookMoriaCaveBats
 	InitiateAtLocationSound	= SpellCaveBats
 End
 
-; Tier 2
-;------------------------------------------------------------------------------
+
+;------------------------------------------------------------------------------ TIER 2
 SpecialPower SpellBookMoriaCallTheHorde
 	Enum				= SPECIAL_SPELL_BOOK_CALL_THE_HORDE
 	RequiredSciences		= SCIENCE_MoriaCallTheHorde
@@ -182,8 +184,8 @@ End
 //	ObjectFilter			= SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER
 //End
 
-; Tier 3
-;------------------------------------------------------------------------------
+
+;------------------------------------------------------------------------------ TIER 3
 SpecialPower SpellBookMoriaShelob
 	Enum						= SPECIAL_SPELL_BOOK_AWAKEN_WYRM
 	ReloadTime					= SPELL_RECHARGE_TIME_TIER_3   ; in milliseconds
@@ -219,8 +221,8 @@ SpecialPower SpellBookMoriaWatcher
 	ForbiddenObjectRange		= 90.0
 End
 
-; Tier 4
-;------------------------------------------------------------------------------
+
+;------------------------------------------------------------------------------ TIER 4
 SpecialPower SpellBookMoriaStoneGiants
 	Enum						= SPECIAL_SPELL_BOOK_GENERAL_SUMMON
 	Flags						= WATER_OK NO_FORBIDDEN_OBJECTS RESPECT_RECHARGE_TIME_DISCOUNT
@@ -249,7 +251,7 @@ End
 
 
 
-/////////////////////////////////////
+//////////////////////////////////////////// Added by Ridder Geel for SEE! 
 
 SpecialPower SpellBookBalrogAllyFort
 	Enum						= SPECIAL_SPELL_BOOK_BALROG_ALLY
@@ -262,8 +264,6 @@ SpecialPower SpellBookBalrogAllyFort
 	ForbiddenObjectFilter	= NO_SUMMON_NEAR_OBJECT_FILTER
 	ForbiddenObjectRange	= 75.0
 End
-
-
 
 ;------------------------------------------------------------------------------
 SpecialPower SpellBookScavengerMoria
