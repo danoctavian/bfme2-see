@@ -502,11 +502,11 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildGoblinKingCommandSet
 	1	= Command_ToggleStance
-	2	= Command_GoblinKingSkullTotem
+	2	= Command_GoblinKingFakeLeadershipButton 
 	3	= Command_GoblinKingMountScorpion
-	4	= Command_GoblinKingFakeLeadershipButton
-	5	= Command_GoblinKingPoisonedStinger
-	6	= Command_GoblinKingCallFromTheDeep
+	4	= Command_GoblinKingSkullTotem
+	;5	= Command_GoblinKingPoisonedStinger
+	;6	= Command_GoblinKingCallFromTheDeep
 	12 	= Command_CaptureBuilding
 	13	= Command_AttackMove
 	14	= Command_Stop
@@ -516,11 +516,11 @@ CommandSet WildGoblinKingCommandSet
 End
 CommandSet MountedWildGoblinKingCommandSet				; Mounted version.
 	1	= Command_ToggleStance
-	2	= Command_GoblinKingMountedSkullTotem
+	2	= Command_GoblinKingFakeLeadershipButton 
 	3	= Command_GoblinKingMountScorpion
-	4	= Command_GoblinKingFakeLeadershipButton
-	5	= Command_GoblinKingPoisonedStinger
-	6	= Command_GoblinKingCallFromTheDeep
+	4	= Command_GoblinKingMountedSkullTotem
+	;5	= Command_GoblinKingPoisonedStinger
+	;6	= Command_GoblinKingCallFromTheDeep
 	12 	= Command_CaptureBuilding
 	13	= Command_AttackMove
 	14	= Command_Stop
