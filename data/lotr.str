@@ -5379,17 +5379,17 @@ END
 
 Version:Format4
 // context: TRANSLATE ONLY THE WORD Build. DO NOT MODIFY THE VARIABLES  
-"S.E.E. Beta 4.6d"
+"S.E.E. DC beta 1.0"
 END
 
 Version:Format3
 // context: TRANSLATE ONLY THE WORD Version. DO NOT MODIFY THE VARIABLES  
-"S.E.E. Beta 4.6d"
+"S.E.E. DC beta 1.0"
 END
 
 Version:Format2
 // context: TRANSLATE ONLY THE WORD Version. DO NOT MODIFY THE VARIABLES  
-"S.E.E. Beta 4.6d"
+"S.E.E. DC beta 1.0"
 END
 
 Version:BuildTime
