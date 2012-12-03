@@ -194,5 +194,5 @@ ModifierList MoriaStuffcollectionPassiveOutlawLeadership
 	Category = LEADERSHIP //WEAPON
 	Modifier = BOUNTY_PERCENTAGE 100.0%	// Percentage of victim bounty value to build granted to slaying member's player.
 	Duration = 2500						// lasts for 2.5 seconds
-	FX							= FX_GenericLeadershipTESTCUZSOMEONEREMOVEDIT
+	FX							= FX_MollockAuraFX//FX_GenericLeadershipTESTCUZSOMEONEREMOVEDIT
 End
