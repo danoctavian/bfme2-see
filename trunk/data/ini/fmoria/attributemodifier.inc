@@ -1,8 +1,10 @@
-////////////////////////////
-// ATTRIBUTEMODIFIER.INC //
-//////////////////////////
-//Moria//
-////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
+
+; AttributeModifier.INC for MORIA (Wild) faction...
+; ------------------------------------------------------------------------------
+; NOTE: Keep this organized!
 
 
 //----------------Wild Fortress-----------------------
@@ -189,10 +191,10 @@ ModifierList SpellBookMoriaDarkness
 	MultiLevelFX = Yes
 End
 
-
-ModifierList MoriaStuffcollectionPassiveOutlawLeadership
-	Category = LEADERSHIP //WEAPON
-	Modifier = BOUNTY_PERCENTAGE 100.0%	// Percentage of victim bounty value to build granted to slaying member's player.
-	Duration = 2500						// lasts for 2.5 seconds
-	FX							= FX_MollockAuraFX//FX_GenericLeadershipTESTCUZSOMEONEREMOVEDIT
+; ------------------------------------------------------------------------------ SCAVENGER TECH
+ModifierList MoriaScavengerTech //MoriaStuffcollectionPassiveOutlawLeadership
+	Category 	= LEADERSHIP //WEAPON
+	Modifier 	= BOUNTY_PERCENTAGE 100.0%	; Percentage of victim bounty value to build granted to slaying member's player.
+	Duration 	= 2500							; Lasts for 2.5 seconds
+	FX 			= FX_GenericLeadership			; For testing (checking which units receive it!)
 End

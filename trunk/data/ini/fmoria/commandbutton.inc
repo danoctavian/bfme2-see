@@ -1915,7 +1915,7 @@ CommandButton Command_PurchaseTechnologyScavengerMoria
 	Upgrade				= Upgrade_TechnologyMoriaScavenger
 	NeededUpgrade		= Upgrade_StructureLevel2
 	TextLabel			= CONTROLBAR:PurchaseTechnologyWildHeavyArmor
-	ButtonImage			= BWTreasureTrove_ScavengedArmor
+	ButtonImage			= SBEvil_Plus100CommandPoints
 	ButtonBorderType		= UPGRADE
 	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
 	Radial				= Yes
