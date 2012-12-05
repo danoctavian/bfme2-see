@@ -336,15 +336,20 @@ End
 ; Tier 2
 Upgrade Upgrade_MoriaScurry
   DisplayName       = CONTROLBAR:MoriaScurry
-  Type              = PLAYER
-  PersistsInCampaign = Yes
+  Type				= PLAYER
+  PersistsInCampaign	= Yes
 End
 
 Upgrade Upgrade_TechnologyMoriaScavenger
-	DisplayName     	= UPGRADE:WildHeavyArmor
+	DisplayName     	= UPGRADE:WildScavengerTech
 	Type            	= OBJECT
 	BuildCost			= 1
 	BuildTime			= 1		
-	ResearchCompleteEvaEvent	= UpgradeScavengedArmorReady
+	ResearchCompleteEvaEvent	= TreasureTroveUpgraded //GenericBuildingComplete-Builder //UpgradeScavengedArmorReady
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
+
+	;EvaEvent
+	;	EvaEventOwner = TreasureTroveUpgraded
+	;End
+	

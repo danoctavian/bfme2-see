@@ -704,7 +704,19 @@ CommandButton Command_BolgFakeLeadershipButton
   DescriptLabel         	= CONTROLBAR:ToolTipBolgLeadership
   InPalantir            = Yes
 End
-
+CommandButton Command_SpecialAbilityBolgCarnage
+  Command               = SPECIAL_POWER 
+  SpecialPower          = SpecialAbilityLurtzCarnage
+  TextLabel              = CONTROLBAR:SpecialAbilityLurtzCarnage
+  ButtonImage           = HSLurtzCarnageAbility
+  ButtonBorderType       = ACTION 
+  DescriptLabel           = CONTROLBAR:ToolTipSpecialAbilityLurtzCarnage
+  ;EnableOnModelCondition  = WEAPONSET_TOGGLE_1					; enable if currently using sword
+  InPalantir			= Yes
+  AutoAbility			  	= Yes
+  PresetRange			= 50.0
+  UnitSpecificSound = LurtzVoiceAttackCharge
+End
 
 
 
