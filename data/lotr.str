@@ -17540,11 +17540,14 @@ CONTROLBAR:ToolTipSpecialAbilityLurtzCripple
 END
 
 CONTROLBAR:SpecialAbilityLurtzCarnage
-"Ca&rnage"
+"Carnage"
 END
 
 CONTROLBAR:ToolTipSpecialAbilityLurtzCarnage
 "Lurtz gains +100% Damage and +50% Armor \n Can only use with sword equipped \n Left click to activate"
+END
+CONTROLBAR:ToolTipSpecialAbilityBolgCarnage
+"Bolg gains +100% damage and +50% armor \n Left click to activate"
 END
 
 CONTROLBAR:SpecialAbilityUglukCarnage

@@ -7,10 +7,11 @@
 ; NOTE: Keep this organized!
 
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
-; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria structures 
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ STRUCTURES
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 ; ------------------------------------------------------------------------------
+
 Upgrade Upgrade_WildFaction
 	DisplayName		= UPGRADE:WildFaction
 	Type			= PLAYER
@@ -19,13 +20,13 @@ Upgrade Upgrade_GoblinFaction
 	DisplayName		= UPGRADE:GoblinFaction
 	Type			= PLAYER
 End
-
 Upgrade Upgrade_GoblinDualEconomyChoice
 	DisplayName		= UPGRADE:GoblinDualEconomyChoice
 	Type			= PLAYER
 End
 
-; ------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ FORTRESS
+
 Upgrade Upgrade_WildFortressBatCloud
 	Type				= OBJECT
 	BuildCost			= WILD_BATCLOUD_BUILDCOST
@@ -95,7 +96,8 @@ Upgrade Upgrade_HasDragonNestFireDrake
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT
 End
 
-; ------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------ WALLS
+
 Upgrade Upgrade_WildWallHub
 	DisplayName 		= UPGRADE:Upgrade_IsengardWallHub
 	Type				= OBJECT
@@ -104,7 +106,8 @@ Upgrade Upgrade_WildWallHub
 	//ResearchSound			= CampSoldierUpgradeNumenorStonework
 End
 
-; ------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ MINE
+
 Upgrade Upgrade_WildMineShaftLevel2
 	Type			= OBJECT
 	BuildCost		= GOBLIN_MINE_LEVEL2_UPGRADE_COST
@@ -118,7 +121,8 @@ Upgrade Upgrade_WildMineShaftLevel3
 	DisplayName		= Upgrade:WildMineShaftLevel3
 End
 
-; ------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ GOBLIN CAVE
+
 Upgrade Upgrade_WildCaveLevel2
 	Type				= OBJECT
 	BuildCost			= GOBLIN_CAVE_LEVEL2_UPGRADE_COST
@@ -134,7 +138,8 @@ Upgrade Upgrade_WildCaveLevel3
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
-; ------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ FISSURE
+
 Upgrade Upgrade_WildFissureLevel2
 	Type				= OBJECT
 	BuildCost			= GOBLIN_FISSURE_LEVEL2_UPGRADE_COST
@@ -150,7 +155,8 @@ Upgrade Upgrade_WildFissureLevel3
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT //AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
-; ------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ TROLL CAVE
+
 Upgrade Upgrade_WildSpiderPitLevel2
 	Type				= OBJECT
 	BuildCost			= GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_COST
@@ -166,7 +172,8 @@ Upgrade Upgrade_WildSpiderPitLevel3
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
-; ------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ WOLF DEN
+
 Upgrade Upgrade_WildWolfDenLevel2
 	Type				= OBJECT
 	BuildCost			= GOBLIN_WOLFDEN_LEVEL2_UPGRADE_COST
@@ -182,7 +189,8 @@ Upgrade Upgrade_WildWolfDenLevel3
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!
 End
 
-; ------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ TREASURE TROVE
+
 Upgrade Upgrade_WildTreasureTroveLevel2
 	Type				= OBJECT
 	BuildCost			= GOBLIN_TREASURETROVE_LEVEL2_UPGRADE_COST
@@ -198,7 +206,8 @@ Upgrade Upgrade_WildTreasureTroveLevel3
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_FACTORY_UNITUNLOCK //Added for SEE!	
 End
 
-; ------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------ SENTRY TOWER
+
 Upgrade Upgrade_SentryTowerFireArrows
 	Type				= OBJECT
 	BuildCost			= WILD_SENTRY_TOWER_ARROW_UPGRADE_BUILDCOST
@@ -209,10 +218,11 @@ Upgrade Upgrade_SentryTowerFireArrows
 End
 
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
-; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria technology 
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ TECHNOLOGY
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 ; ------------------------------------------------------------------------------ SEE!
+
 Upgrade Upgrade_TechnologyWildBasicTraining
 	DisplayName       	= UPGRADE:WildBasicTraining
 	Type              	= PLAYER
@@ -255,6 +265,7 @@ Upgrade Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience ;cha
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+
 Upgrade Upgrade_WildBasicTraining 
 	DisplayName     	= UPGRADE:WildBasicTraining 
 	Type            	= OBJECT
@@ -322,23 +333,33 @@ Upgrade Upgrade_WildSpiderVenomSacks
 	SkirmishAIHeuristic		= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
 
-Upgrade Upgrade_GoblinKingPoisonedStinger
-	Type			= OBJECT
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ HEROES
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+Upgrade Upgrade_GoblinKingPoisonedStinger //Obsolete in SEE!
+	Type = OBJECT
 End
-Upgrade Upgrade_GoblinKingCallFromTheDeep
-	Type			= OBJECT
+Upgrade Upgrade_GoblinKingCallFromTheDeep //Obsolete in SEE!
+	Type = OBJECT
+End
+Upgrade Upgrade_BolgCarnage
+	Type = OBJECT
 End
 
-;-------------------------------------------------------------------
-; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
-;-------------------------------------------------------------------
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ SPELL BOOK!
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
-; Tier 2
+; ------------------------------------------------------------------------------ TIER 1
+
 Upgrade Upgrade_MoriaScurry
   DisplayName       = CONTROLBAR:MoriaScurry
   Type				= PLAYER
   PersistsInCampaign	= Yes
 End
+
+; ------------------------------------------------------------------------------ Conv. into TECH
 
 Upgrade Upgrade_TechnologyMoriaScavenger
 	DisplayName     	= UPGRADE:WildScavengerTech
@@ -349,7 +370,4 @@ Upgrade Upgrade_TechnologyMoriaScavenger
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
 
-	;EvaEvent
-	;	EvaEventOwner = TreasureTroveUpgraded
-	;End
 	
