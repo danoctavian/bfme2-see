@@ -6,10 +6,28 @@
 ; ------------------------------------------------------------------------------ "SEE!" = The codes have been adapted/converted from the obsolete Beta 4.7 WiP...
 ; NOTE: Keep this organized!
 
+; STRUCTURE BUILD TIMES
+;------------------------------------------------------------------------------
 #define GOBLIN_RESOURCEBUILDING_BUILDTIME					30 ;60  	// 1 minute - Resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
 #define GOBLIN_SENTRY_TOWER_BUILDTIME						60 ;90 		// 1½ minutes - Battletowers!
 #define GOBLIN_BASICBUILDING_BUILDTIME						90 ;120 	// 2 minutes - Non resource buildings! (Barracks, Stables, Armory, etc)
 #define GOBLIN_FORTRESS_BUILDTIME							180 ;240 	// 4 minutes - Fortress Keeps!
+
+; DIVERSIFIED LEADERSHIP
+;------------------------------------------------------------------------------ SEE!
+; Cave Troll of Moria (LS: Cave Trolls)
+#define WILD_CAVETROLLHERO_BUFF_RECIPIENT_OBJECT_FILTER	ANY +GoblinCaveTroll +CaveTroll_Slaved +GoblinCaveTroll_FromTrollLair ALLIES ;+TROLL_BUFF_NUGGET
+; Shelob (LS: Spiderlings)
+#define WILD_SHELOB_BUFF_RECIPIENT_OBJECT_FILTER			ANY +WildSpiderling +WildSpiderlingHordeMember +WildSpiderlingHorde +WildBannerSpiderling ALLIES
+; Great Goblin (LS: Hobgoblins)
+#define WILD_GREATGOBLIN_BUFF_RECIPIENT_OBJECT_FILTER		ANY +WildMarauder +WildMarauderHorde +WildBannerMarauder ALLIES
+; Azog (changed from EA's "Goblin King")
+#define WILD_GOBLINKING_BUFF_RECIPIENT_OBJECT_FILTER		ANY +GoblinWargRider +GoblinWargRiderHorde +GoblinWargRiderBanner +GoblinWolfRider +GoblinWolfRiderHorde +GoblinWolfRiderBanner +WargSentry ALLIES
+; Bolg (LS: Goblin Swordsmen, Pikemen & Arches)
+#define WILD_BOLG_BUFF_RECIPIENT_OBJECT_FILTER				ANY +GoblinFighter +GoblinFighter_Slaved +GoblinFighterFromDefectedLair +GoblinFighterHorde +GoblinFighterHorde_FromDefectedLair +GoblinSpearman +GoblinSpearmanHorde +WildBannerGoblin ALLIES
+; Golfimbul (LS: Goblin Archers)
+#define WILD_GOLFIMBUL_BUFF_RECIPIENT_OBJECT_FILTER			ANY +GoblinArcher +GoblinArcher_Slaved +GoblinArcherFromDefectedLair +GoblinArcherHorde +GoblinArcherHorde_FromDefectedLair +GoblinArcherHordeInn +WildBannerGoblin ALLIES
+
 
 ; ------------------------------------------------------------------------------ SEE!
 #define WILD_FORTRESS_BUILDCOST							25000 //40000
