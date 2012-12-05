@@ -533,7 +533,7 @@ End
 CommandSet WildBolgCommandSet
   1 = Command_ToggleStance
   2 = Command_BolgFakeLeadershipButton
-//  3 = 
+  3 = Command_SpecialAbilityBolgCarnage
 //  4 = 
 //  5 = 
 //  6 = 

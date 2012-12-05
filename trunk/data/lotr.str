@@ -42522,6 +42522,10 @@ UPGRADE:WildBasicTraining
 "Banner Carrier"
 END
 
+UPGRADE:WildScavengerTech
+"Scavenger"
+END
+
 
 
 
