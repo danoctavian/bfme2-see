@@ -6,8 +6,12 @@
 ; ------------------------------------------------------------------------------
 ; NOTE: Keep this organized!
 
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ STRUCTURES
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
-//----------------Wild Fortress-----------------------
+; ------------------------------------------------------------------------------ FORTRESS
+
 ModifierList WildFortressBatCloudBonus
 	Category = STRUCTURE
 	Modifier = SHROUD_CLEARING 	125%		;from 160%, Modified by Sûlherokhh // Additive.  Sum of these is the % bonus to the range at which you clear fog and shroud
@@ -29,7 +33,8 @@ ModifierList WebCocoonExpansion_Bonus
 	Duration = 0
 End
 
-//----------------Wild Cave-----------------------
+; ------------------------------------------------------------------------------ GOBLIN CAVE
+
 ModifierList WildCaveHitPointModLvl2
 	Category = LEVEL
 	Modifier = HEALTH GOBLIN_CAVE_LVL2_HP_ADD	
@@ -52,7 +57,8 @@ ModifierList WildCaveBuildSpeedModLvl3
 	Duration = 0
 End
 
-//----------------Wild Fissure-----------------------
+; ------------------------------------------------------------------------------ FISSURE
+
 ModifierList WildFissureHitPointModLvl2
 	Category = LEVEL
 	Modifier = HEALTH GOBLIN_FISSURE_LVL2_HP_ADD	
@@ -76,7 +82,8 @@ ModifierList WildFissureBuildSpeedModLvl3
 	Duration = 0
 End
 
-//----------------Wild SpiderPit-----------------------
+; ------------------------------------------------------------------------------ SPIDER PIT
+
 ModifierList WildSpiderPitHitPointModLvl2
 	Category = LEVEL
 	Modifier = HEALTH GOBLIN_SPIDERPIT_LVL2_HP_ADD	
@@ -99,7 +106,8 @@ ModifierList WildSpiderPitBuildSpeedModLvl3
 	Duration = 0
 End
 
-//----------------Wild TreasureTrove-----------------------
+; ------------------------------------------------------------------------------ TROVE
+
 ModifierList WildTreasureTroveHitPointModLvl2
 	Category = LEVEL
 	Modifier = HEALTH GOBLIN_TREASURETROVE_LVL2_HP_ADD	
@@ -122,7 +130,21 @@ ModifierList WildTreasureTroveBuildSpeedModLvl3
 	Duration = 0
 End
 
-//---------- For Shelob Web Attack -----------------
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ HEROES
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+; ------------------------------------------------------------------------------ BALROG
+
+ModifierList BalrogIgniteState
+	Category = SPELL
+	Modifier = ARMOR 50%		// Additive.  Sum of these are subtracted from all entries in Armor.ini
+	Modifier = DAMAGE_MULT 200%		// Multiplicitive.  Damage multiplied by this, will compound in multiple bonuses
+	Duration = 30000
+End
+
+; ------------------------------------------------------------------------------ SHELOB
+
 ModifierList ShelobWebbingModifier //Was named ShelobWebbing_SEE (same as weapon) which might have been cause of instability in Beta 4.7!
   Category 	= WEAPON
   Modifier = ARMOR 0%
@@ -133,13 +155,7 @@ ModifierList ShelobWebbingModifier //Was named ShelobWebbing_SEE (same as weapon
   ModelCondition = STONED // Set the model condition for the troll texture swap here.
 End
 
-
-ModifierList BalrogIgniteState
-	Category = SPELL
-	Modifier = ARMOR 50%		// Additive.  Sum of these are subtracted from all entries in Armor.ini
-	Modifier = DAMAGE_MULT 200%		// Multiplicitive.  Damage multiplied by this, will compound in multiple bonuses
-	Duration = 30000
-End
+; ------------------------------------------------------------------------------ BOLG
 
 ModifierList BolgCarnage
 	Category = WEAPON
@@ -149,11 +165,12 @@ ModifierList BolgCarnage
 	FX		 = FX_LurtzBloodRage 		;Try FX_BloodRage15_SEE (from Beta 4.7) when polishing.
 End
 
-;-------------------------------------------------------------------
-; SEE DC MORIA SPELLBOOK! - KEEP ORGANIZED!
-;-------------------------------------------------------------------
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ SPELL BOOK!
+; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
-; Tier 1
+; ------------------------------------------------------------------------------ TIER 1
+
 ModifierList SpellBookMoriaDeepDrums
 	Category = BUFF
 	Modifier = DAMAGE_MULT 150%			// Damage increased 50%
@@ -173,7 +190,8 @@ ModifierList SpellbookMoriaPlunder
 	ModelCondition = DAMAGED ; Up to naz what fx's etc.
 End
 
-; Tier 2
+; ------------------------------------------------------------------------------ TIER 2
+
 ModifierList SpellBookMoriaScurry
 	Category = SPELL
 	Modifier = SPEED 110%		// speed increased 10%
@@ -181,7 +199,8 @@ ModifierList SpellBookMoriaScurry
 	;ModelCondition = USER_9 -LEADS TO CRASHES! WE NEED TO FIND SOMETHING ELSE!
 End
 
-; Tier 3
+; ------------------------------------------------------------------------------ TIER 3
+
 ModifierList SpellBookMoriaDarkness
 	Category = SPELL
 	Modifier = DAMAGE_MULT 125%	
@@ -200,6 +219,7 @@ ModifierList SpellBookMoriaDarkness
 End
 
 ; ------------------------------------------------------------------------------ SCAVENGER TECH
+
 ModifierList MoriaScavengerTech //MoriaStuffcollectionPassiveOutlawLeadership
 	Category 	= LEADERSHIP //WEAPON
 	Modifier 	= BOUNTY_PERCENTAGE 100.0%	; Percentage of victim bounty value to build granted to slaying member's player.
