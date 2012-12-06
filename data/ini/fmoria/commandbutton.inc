@@ -611,48 +611,74 @@ CommandButton Command_SpecialPowerPoisonMist
     InvalidCursorName		= GenericInvalid
 End
 
+; ------------------------------------------------------------------------------
+CommandButton Command_GoblinKingFakeLeadershipButton
+  Command               = SPECIAL_POWER
+  SpecialPower          = SpecialAbilityFakeLeadership
+  Options				= NONPRESSABLE
+  TextLabel             	= CONTROLBAR:Leadership
+  ButtonImage           = BIWargPit_Riders
+  ButtonBorderType      	= ACTION
+  DescriptLabel         	= CONTROLBAR:ToolTipGoblinKingBattleFrenzy
+  InPalantir            = Yes
+End
 
 CommandButton Command_GoblinKingMountScorpion
   Command               = SPECIAL_POWER
   SpecialPower          = SpecialAbilityToggleMounted
-  TextLabel             = CONTROLBAR:GoblinKingMount
-  Options		= TOGGLE_IMAGE_ON_WEAPONSET ON_GROUND_ONLY
-  FlagsUsedForToggle	= MOUNTED
+  TextLabel             	= CONTROLBAR:GoblinKingMount
+  Options				= TOGGLE_IMAGE_ON_WEAPONSET ON_GROUND_ONLY
+  FlagsUsedForToggle		= MOUNTED
   ButtonImage           = UCGoblinKingMount   UCGoblinKingMount
-  ButtonBorderType      = ACTION 
-  DescriptLabel         = CONTROLBAR:ToolTipEowynMount
+  ButtonBorderType      	= ACTION 
+  DescriptLabel         	= CONTROLBAR:ToolTipEowynMount
   InPalantir            = Yes  
-  UnitSpecificSound     = GoblinKingVoiceMountMS	GoblinKingVoiceDismountMS
+  UnitSpecificSound     	= GoblinKingVoiceMountMS	GoblinKingVoiceDismountMS
 End
 
-CommandButton Command_GoblinKingFakeLeadershipButton
-  Command               = SPECIAL_POWER
-  SpecialPower          = SpecialAbilityFakeLeadership
-  Options		= NONPRESSABLE
-  TextLabel             = CONTROLBAR:Leadership
-  ButtonImage           = HSWitchKingLeadership
-  ButtonBorderType      = ACTION
-  DescriptLabel         = CONTROLBAR:ToolTipGoblinKingBattleFrenzy
-  InPalantir            = Yes
+CommandButton Command_GoblinKingSkullTotem
+ 	Command				= SPECIAL_POWER
+ 	SpecialPower		= SpecialAbilitySkullTotem
+ 	TextLabel			= CONTROLBAR:GoblinKingSkullTotem
+ 	ButtonImage			= HSGoblinKingSkullTotem
+ 	Options				= NEED_TARGET_POS CONTEXTMODE_COMMAND
+ 	CursorName			= EvilAbilityObj
+ 	InvalidCursorName		= GenericInvalid  
+ 	ButtonBorderType		= ACTION 
+ 	DescriptLabel			= CONTROLBAR:TooltipGoblinKingSkullTotem
+ 	InPalantir			= Yes
 End
 
-CommandButton Command_GoblinKingPoisonedStinger
-  Command                 	= SPECIAL_POWER
-  SpecialPower            	= SpecialAbilityGoblinKingPoisonedStinger
-  Options                 	= NEED_TARGET_ENEMY_OBJECT
-  TextLabel               	= CONTROLBAR:GoblinKingPoisonedStinger
-  CursorName              	= EvilAbilityObj
-  InvalidCursorName       	= GenericInvalid
-  ButtonImage             	= HSGoblinKingPoisonedStinger
-  ButtonBorderType        	= ACTION
-  DescriptLabel           	= CONTROLBAR:ToolTipGoblinKingPoisonedStinger
+CommandButton Command_GoblinKingMountedSkullTotem
+ 	Command				= SPECIAL_POWER
+ 	SpecialPower		= SpecialAbilityMountedSkullTotem
+ 	TextLabel			= CONTROLBAR:GoblinKingSkullTotem
+ 	ButtonImage			= HSGoblinKingSkullTotem
+ 	Options				= NEED_TARGET_POS CONTEXTMODE_COMMAND
+ 	CursorName			= EvilAbilityObj
+ 	InvalidCursorName		= GenericInvalid  
+ 	ButtonBorderType		= ACTION 
+ 	DescriptLabel			= CONTROLBAR:TooltipGoblinKingSkullTotem
+ 	InPalantir			= Yes
+End
+
+CommandButton Command_GoblinKingPoisonedStinger //Obsolete in SEE!
+  Command                = SPECIAL_POWER
+  SpecialPower           = SpecialAbilityGoblinKingPoisonedStinger
+  Options                = NEED_TARGET_ENEMY_OBJECT
+  TextLabel              = CONTROLBAR:GoblinKingPoisonedStinger
+  CursorName             = EvilAbilityObj
+  InvalidCursorName      = GenericInvalid
+  ButtonImage           = HSGoblinKingPoisonedStinger
+  ButtonBorderType       = ACTION
+  DescriptLabel           = CONTROLBAR:ToolTipGoblinKingPoisonedStinger
   EnableOnModelCondition	= MOUNTED HERO
   ;UnitSpecificSound       	= LurtzVoiceModeCripplingStrike
   InPalantir			= Yes
   AutoAbility			= Yes  
 End
 
-CommandButton Command_GoblinKingCallFromTheDeep
+CommandButton Command_GoblinKingCallFromTheDeep //Obsolete in SEE!
   Command           = SPECIAL_POWER
   SpecialPower      = SpecialAbilityCallFromTheDeep
   TextLabel         = CONTROLBAR:GoblinKingSpawnFireDrakes
@@ -666,40 +692,13 @@ CommandButton Command_GoblinKingCallFromTheDeep
   InPalantir	    = Yes
 End
 
-CommandButton Command_GoblinKingSkullTotem
- 	Command			= SPECIAL_POWER
- 	SpecialPower		= SpecialAbilitySkullTotem
- 	TextLabel		= CONTROLBAR:GoblinKingSkullTotem
- 	ButtonImage		= HSGoblinKingSkullTotem
- 	Options			= NEED_TARGET_POS CONTEXTMODE_COMMAND
- 	CursorName		= EvilAbilityObj
- 	InvalidCursorName	= GenericInvalid  
- 	ButtonBorderType	= ACTION 
- 	DescriptLabel		= CONTROLBAR:TooltipGoblinKingSkullTotem
- 	InPalantir		= Yes
-End
-
-CommandButton Command_GoblinKingMountedSkullTotem
- 	Command			= SPECIAL_POWER
- 	SpecialPower		= SpecialAbilityMountedSkullTotem
- 	TextLabel		= CONTROLBAR:GoblinKingSkullTotem
- 	ButtonImage		= HSGoblinKingSkullTotem
- 	Options			= NEED_TARGET_POS CONTEXTMODE_COMMAND
- 	CursorName		= EvilAbilityObj
- 	InvalidCursorName	= GenericInvalid  
- 	ButtonBorderType	= ACTION 
- 	DescriptLabel		= CONTROLBAR:TooltipGoblinKingSkullTotem
- 	InPalantir		= Yes
-End
-
-
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_BolgFakeLeadershipButton
   Command               = SPECIAL_POWER
   SpecialPower          = SpecialAbilityFakeLeadership
   Options				= NONPRESSABLE
   TextLabel             	= CONTROLBAR:BolgLeadership
-  ButtonImage           = HIGoblinKing
+  ButtonImage           = WFGoblinPikeman_Build
   ButtonBorderType      	= ACTION
   DescriptLabel         	= CONTROLBAR:ToolTipBolgLeadership
   InPalantir            = Yes
