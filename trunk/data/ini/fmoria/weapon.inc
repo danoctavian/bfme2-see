@@ -782,6 +782,36 @@ Weapon WildFortressBatCloudBasicWeapon
 	End
 End
 
+;------------------------------------------------------------------------------
+Weapon GolfimbulFireBomb
+	AttackRange			= MORDOR_CORSAIR_FIRE_BOMB_RANGE			; Horde member so it needs to be bigger than the horde weapon attack range.
+	WeaponSpeed		= 100										; dist/sec 
+	MinWeaponSpeed		= 121
+	MaxWeaponSpeed		= 100										; dist/sec Upper limit on scaling, when attacking past nominal "max" range
+	FireFX				= FX_FirebombThrow
+	HitPercentage			= MORDOR_CORSAIR_FIRE_BOMB_HIT_PERCENTAGE	; When this weapon is used it will hit exactly 50% of the time.
+	ScatterRadius			= MORDOR_CORSAIR_FIRE_BOMB_SCATTER_RADIUS	; When this weapon misses it can randomly miss by as much as this distance.
+	;NoVictimNeeded		= Yes
+
+	OverrideVoiceAttackSound = CorsairVoiceAttackFirebomb
+	OverrideVoiceEnterStateAttackSound = CorsairVoiceEnterStateAttackFirebomb
+
+	AcceptableAimDelta	= 20									; prevent twitchy reaiming in horde on horde
+	DelayBetweenShots	= 0
+	PreAttackDelay		= 400									// MORDOR_CORSAIR_FIRE_BOMB_PREATTACKDELAY (1333)
+	PreAttackType		= PER_SHOT
+	FiringDuration			= MORDOR_CORSAIR_FIRE_BOMB_FIRING_DURATION
+	PreAttackRandomAmount	= MORDOR_CORSAIR_FIRE_BOMB_RANDOM_PREATTACK
+
+	ClipSize				= INFINITE_CLIP_SIZE
+	AutoReloadsClip		= Yes
+	
+	ProjectileNugget
+		ProjectileTemplateName	= CorsairFireBombProjectile
+		WarheadTemplateName		= CorsairFireBombWarhead
+	End
+End
+
 
 
 

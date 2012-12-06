@@ -534,9 +534,18 @@ CommandSet WildBolgCommandSet
   1 = Command_ToggleStance
   2 = Command_BolgFakeLeadershipButton
   3 = Command_SpecialAbilityBolgCarnage
-//  4 = 
-//  5 = 
-//  6 = 
+  13 	= Command_AttackMove
+  14 	= Command_Stop
+  16 	= Command_SetStanceBattle
+  17 	= Command_SetStanceAggressive
+  18 	= Command_SetStanceHoldGround
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandSet WildGolfimbulCommandSet
+  1 = Command_ToggleStance
+  2 = Command_BolgFakeLeadershipButton
+  3 = Command_ToggleCorsairWeapon
   13 	= Command_AttackMove
   14 	= Command_Stop
   16 	= Command_SetStanceBattle
