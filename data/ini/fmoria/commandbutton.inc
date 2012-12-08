@@ -716,6 +716,29 @@ CommandButton Command_SpecialAbilityBolgCarnage
   UnitSpecificSound = AzogVoiceEnterStateAttackCharge //LurtzVoiceAttackCharge
 End
 
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_GolfimbulFakeLeadershipButton
+  Command               = SPECIAL_POWER
+  SpecialPower          = SpecialAbilityFakeLeadership
+  Options				= NONPRESSABLE
+  TextLabel             	= CONTROLBAR:BolgLeadership
+  ButtonImage           = BWCave_GoblinWarrior
+  ButtonBorderType      	= ACTION
+  DescriptLabel         	= CONTROLBAR:ToolTipBolgLeadership
+  InPalantir            = Yes
+End
+CommandButton Command_ToggleGolfimbulWeapon
+	Command				= TOGGLE_WEAPONSET
+	Options				= TOGGLE_IMAGE_ON_WEAPONSET OK_FOR_MULTI_SELECT
+	FlagsUsedForToggle	= WEAPONSET_TOGGLE_1
+	TextLabel			= CONTROLBAR:ThrowFireBombs CONTROLBAR:Knife
+	ButtonImage			= UCCommon_FireBomb BWTreasureTrove_ForgedBlades
+	ButtonBorderType		= ACTION 
+	DescriptLabel			= CONTROLBAR:ToolTipFireBombs CONTROLBAR:ToolTipKnife
+	InPalantir			= Yes
+	UnitSpecificSound		= GolfimbulVoiceWeaponSwitchFirebombs GolfimbulVoiceWeaponSwitchSwords
+End
+
 
 
 

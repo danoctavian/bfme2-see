@@ -43,8 +43,8 @@ End
 
 AudioEvent CampGoblinUpgradeForgedBlades					;pickups2
   Sounds = ScavangedBlades		//GCGoUpg_forgeda GCGoUpg_forgedb
-  Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
-  MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
+  Volume = #ADD( CAMP_GOBLIN_VOLUME 1 )
+  MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 1 )
   Type = world player voice
   SubmixSlider = voice
 End
@@ -2458,6 +2458,305 @@ AudioEvent GoblinVoiceFearTrample
   PlayPercent = FEAR_TRAMPLE_PLAY_PERCENT
   Delay = FEAR_TRAMPLE_MIN_DELAY FEAR_TRAMPLE_MAX_DELAY
   Type = world everyone shrouded
+  SubmixSlider = voice
+End
+
+;--------------------------------- Golfimbul -------------------------------
+
+AudioEvent GolfimbulVoiceAttack
+  Sounds = EUGolf_voiatta EUGolf_voiattb EUGolf_voiattc EUGolf_voiattd EUGolf_voiatte EUGolf_voiattf EUGolf_voiattg
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceEnterStateAttack
+  Sounds = EUGolf_voiatta EUGolf_voiattb EUGolf_voiattc EUGolf_voiattd EUGolf_voiatte EUGolf_voiattf EUGolf_voiattg
+  Limit = 1
+  Volume        = BATTLE_CHATTER_VOLUME
+  MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+  Type          = world allies enemies voice shrouded
+  SubmixSlider  = voice
+  MaxRange      = BATTLE_CHATTER_RANGE
+  PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GolfimbulVoiceAttackBuilding
+  Sounds = EUGolf_voiatba EUGolf_voiatbb EUGolf_voiatbc EUGolf_voiatbd EUGolf_voiatbe
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceEnterStateAttackBuilding
+  Sounds = EUGolf_voiatba EUGolf_voiatbb EUGolf_voiatbc EUGolf_voiatbd EUGolf_voiatbe
+  Limit = 1
+  Volume        = BATTLE_CHATTER_VOLUME
+  MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+  Type          = world allies enemies voice shrouded
+  SubmixSlider  = voice
+  MaxRange      = BATTLE_CHATTER_RANGE
+  PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GolfimbulVoiceAttackCharge
+  Sounds = EUGolf_voiatca EUGolf_voiatcb EUGolf_voiatcc EUGolf_voiatcd
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceEnterStateAttackCharge
+  Sounds = EUGolf_voiatca EUGolf_voiatcb EUGolf_voiatcc EUGolf_voiatcd
+  Limit = 1
+  Volume        = BATTLE_CHATTER_VOLUME
+  MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+  Type          = world allies enemies voice shrouded
+  SubmixSlider  = voice
+  MaxRange      = BATTLE_CHATTER_RANGE
+  PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GolfimbulVoiceAttackFirebomb
+  Sounds = EUGolf_voiat2a EUGolf_voiat2b EUGolf_voiat2c
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceEnterStateAttackFirebomb
+  Sounds = EUGolf_voiat2a EUGolf_voiat2b EUGolf_voiat2c
+  Limit = 1
+  Volume        = BATTLE_CHATTER_VOLUME
+  MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+  Type          = world allies enemies voice shrouded
+  SubmixSlider  = voice
+  MaxRange      = BATTLE_CHATTER_RANGE
+  PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GolfimbulVoiceCaptureBuilding
+  Sounds = EUGolf_voicapa EUGolf_voicapb
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceDie
+  Sounds = EUGolf_voidiea EUGolf_voidieb EUGolf_voidiec EUGolf_voidied EUGolf_voidiee EUGolf_voidief
+  Sounds = EUGolf_voidieg EUGolf_voidieh EUGolf_voidiei EUGolf_voidiej EUGolf_voidiek
+  Volume = #ADD( UNIT_RESPONSE_VOLUME -15 )
+  VolumeShift = -20
+  PitchShift = -5 5
+  Priority = low
+  Limit = 3
+  Type = world shrouded everyone voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceDisengage
+  Sounds = EUGolf_voidisa EUGolf_voidisb EUGolf_voidisc
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceEnterStateDisengage
+  Sounds = EUGolf_voidisa EUGolf_voidisb EUGolf_voidisc
+  Limit = 1
+  Volume        = BATTLE_CHATTER_VOLUME
+  MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+  Type          = world allies enemies voice shrouded
+  SubmixSlider  = voice
+  MaxRange      = BATTLE_CHATTER_RANGE
+  PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GolfimbulVoiceFearCower
+  Sounds = EUGolf_voifeca EUGolf_voifecb EUGolf_voifecc
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceFearDisperse
+  Sounds = EUGolf_voifeda EUGolf_voifedb EUGolf_voifedc EUGolf_voifedd
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceFearDoom
+  Sounds = EUGolf_voifeoa EUGolf_voifeob
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceFearTrample
+  Sounds = EUGolf_voifeta EUGolf_voifetb EUGolf_voifetc EUGolf_voifetd
+  Volume = BATTLE_CHATTER_VOLUME
+  MinRange = BATTLE_CHATTER_RANGE
+  Limit = 1
+  PlayPercent = FEAR_TRAMPLE_PLAY_PERCENT
+  Delay = FEAR_TRAMPLE_MIN_DELAY FEAR_TRAMPLE_MAX_DELAY
+  Type = world everyone shrouded
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceMove
+  Sounds = EUGolf_voimova EUGolf_voimovb EUGolf_voimovc EUGolf_voimovd EUGolf_voimove EUGolf_voimovf
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceEnterStateMove
+  Sounds = EUGolf_voimova EUGolf_voimovb EUGolf_voimovc EUGolf_voimovd EUGolf_voimove EUGolf_voimovf
+  Limit = 1
+  Volume        = BATTLE_CHATTER_VOLUME
+  MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+  Type          = world allies enemies voice shrouded
+  SubmixSlider  = voice
+  MaxRange      = BATTLE_CHATTER_RANGE
+  PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GolfimbulVoiceMoveCamp
+  Sounds = EUGolf_voimoca EUGolf_voimocb
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceEnterStateMoveCamp
+  Sounds = EUGolf_voimoca EUGolf_voimocb
+  Limit = 1
+  Volume        = BATTLE_CHATTER_VOLUME
+  MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+  Type          = world allies enemies voice shrouded
+  SubmixSlider  = voice
+  MaxRange      = BATTLE_CHATTER_RANGE
+  PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GolfimbulVoiceMoveGarrison
+  Sounds = EUGolf_voigara EUGolf_voigarb
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceMoveShip
+  Sounds = EUGolf_voimosa EUGolf_voimosb
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceMoveWalls
+  Sounds = EUGolf_voimowa EUGolf_voimowb EUGolf_voimowc
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceEnterStateMoveWalls
+  Sounds = EUGolf_voimowa EUGolf_voimowb EUGolf_voimowc
+  Limit = 1
+  Volume        = BATTLE_CHATTER_VOLUME
+  MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+  Type          = world allies enemies voice shrouded
+  SubmixSlider  = voice
+  MaxRange      = BATTLE_CHATTER_RANGE
+  PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GolfimbulVoiceRetreat
+  Sounds = EUGolf_voireta EUGolf_voiretb EUGolf_voiretc EUGolf_voiretd
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceEnterStateRetreat
+  Sounds = EUGolf_voireta EUGolf_voiretb EUGolf_voiretc EUGolf_voiretd
+  Limit = 1
+  Volume        = BATTLE_CHATTER_VOLUME
+  MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+  Type          = world allies enemies voice shrouded
+  SubmixSlider  = voice
+  MaxRange      = BATTLE_CHATTER_RANGE
+  PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GolfimbulVoiceSelect
+  Sounds = EUGolf_voisela EUGolf_voiselb EUGolf_voiselc EUGolf_voiseld EUGolf_voisele EUGolf_voiself
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceSelectBattle
+  Sounds = EUGolf_voiseba EUGolf_voisebb EUGolf_voisebc EUGolf_voisebd EUGolf_voisebe EUGolf_voisebf EUGolf_voisebg EUGolf_voisebh
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+Multisound GolfimbulVoiceSelectMS
+  Subsounds = GolfimbulVoiceSelect ;YeomanArcherVoiceSelect2
+End
+
+AudioEvent GolfimbulVoiceWeaponSwitchFirebombs						;pickups2
+  Sounds = EUGolf_voiwe1a EUGolf_voiwe1b
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GolfimbulVoiceWeaponSwitchSwords							;pickups2
+  Sounds = EUGolf_voiwe2a EUGolf_voiwe2b
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
   SubmixSlider = voice
 End
 

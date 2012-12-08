@@ -50070,10 +50070,10 @@ CONTROLBAR:WildGolfimbulRecruit
 "Recruit the Orc chieftain of Mount Gram"
 END
 CONTROLBAR:WildGolfimbulRevive
-"Revive the fallen Hero, Golfimbul"
+"Revive the fallen hero, Golfimbul"
 END
 CONTROLBAR:WildGolfimbulHotkey
-"&Golfimbul"
+"Golfimbul"
 END
 CONTROLBAR:GolfimbulLeadership
 "Leadership"

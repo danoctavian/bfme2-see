@@ -544,8 +544,8 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildGolfimbulCommandSet
   1 = Command_ToggleStance
-  2 = Command_BolgFakeLeadershipButton
-  3 = Command_ToggleCorsairWeapon
+  2 = Command_GolfimbulFakeLeadershipButton
+  3 = Command_ToggleGolfimbulWeapon
   13 	= Command_AttackMove
   14 	= Command_Stop
   16 	= Command_SetStanceBattle
