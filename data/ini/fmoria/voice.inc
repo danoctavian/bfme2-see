@@ -2464,7 +2464,7 @@ End
 ;--------------------------------- Golfimbul -------------------------------
 
 AudioEvent GolfimbulVoiceAttack
-  Sounds = EUGolf_voiatta EUGolf_voiattb EUGolf_voiattc EUGolf_voiattd EUGolf_voiatte EUGolf_voiattf EUGolf_voiattg
+  Sounds = EUGolf_voiatta EUGolf_voiattb EUGolf_voiattc EUGolf_voiatte EUGolf_voiattg
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
@@ -2473,7 +2473,7 @@ AudioEvent GolfimbulVoiceAttack
 End
 
 AudioEvent GolfimbulVoiceEnterStateAttack
-  Sounds = EUGolf_voiatta EUGolf_voiattb EUGolf_voiattc EUGolf_voiattd EUGolf_voiatte EUGolf_voiattf EUGolf_voiattg
+  Sounds = EUGolf_voiatta EUGolf_voiattb EUGolf_voiattc  EUGolf_voiatte EUGolf_voiattg
   Limit = 1
   Volume        = BATTLE_CHATTER_VOLUME
   MinVolume     = BATTLE_CHATTER_MIN_VOLUME
@@ -2504,7 +2504,7 @@ AudioEvent GolfimbulVoiceEnterStateAttackBuilding
 End
 
 AudioEvent GolfimbulVoiceAttackCharge
-  Sounds = EUGolf_voiatca EUGolf_voiatcb EUGolf_voiatcc EUGolf_voiatcd
+  Sounds = EUGolf_voiatca EUGolf_voiatcc
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
@@ -2513,7 +2513,7 @@ AudioEvent GolfimbulVoiceAttackCharge
 End
 
 AudioEvent GolfimbulVoiceEnterStateAttackCharge
-  Sounds = EUGolf_voiatca EUGolf_voiatcb EUGolf_voiatcc EUGolf_voiatcd
+  Sounds = EUGolf_voiatca EUGolf_voiatcc
   Limit = 1
   Volume        = BATTLE_CHATTER_VOLUME
   MinVolume     = BATTLE_CHATTER_MIN_VOLUME
@@ -2524,7 +2524,7 @@ AudioEvent GolfimbulVoiceEnterStateAttackCharge
 End
 
 AudioEvent GolfimbulVoiceAttackFirebomb
-  Sounds = EUGolf_voiat2a EUGolf_voiat2b EUGolf_voiat2c
+  Sounds = EUGolf_voiat2c
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
@@ -2533,7 +2533,7 @@ AudioEvent GolfimbulVoiceAttackFirebomb
 End
 
 AudioEvent GolfimbulVoiceEnterStateAttackFirebomb
-  Sounds = EUGolf_voiat2a EUGolf_voiat2b EUGolf_voiat2c
+  Sounds = EUGolf_voiat2c
   Limit = 1
   Volume        = BATTLE_CHATTER_VOLUME
   MinVolume     = BATTLE_CHATTER_MIN_VOLUME
@@ -2623,7 +2623,7 @@ AudioEvent GolfimbulVoiceFearTrample
 End
 
 AudioEvent GolfimbulVoiceMove
-  Sounds = EUGolf_voimova EUGolf_voimovb EUGolf_voimovc EUGolf_voimovd EUGolf_voimove EUGolf_voimovf
+  Sounds = EUGolf_voimovb EUGolf_voimovc EUGolf_voimovd EUGolf_voimove EUGolf_voimovf
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
@@ -2632,7 +2632,7 @@ AudioEvent GolfimbulVoiceMove
 End
 
 AudioEvent GolfimbulVoiceEnterStateMove
-  Sounds = EUGolf_voimova EUGolf_voimovb EUGolf_voimovc EUGolf_voimovd EUGolf_voimove EUGolf_voimovf
+  Sounds = EUGolf_voimovb EUGolf_voimovc EUGolf_voimovd EUGolf_voimove EUGolf_voimovf
   Limit = 1
   Volume        = BATTLE_CHATTER_VOLUME
   MinVolume     = BATTLE_CHATTER_MIN_VOLUME
@@ -2672,7 +2672,7 @@ AudioEvent GolfimbulVoiceMoveGarrison
 End
 
 AudioEvent GolfimbulVoiceMoveShip
-  Sounds = EUGolf_voimosa EUGolf_voimosb
+  Sounds = EUGolf_voimosa
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
@@ -2681,7 +2681,7 @@ AudioEvent GolfimbulVoiceMoveShip
 End
 
 AudioEvent GolfimbulVoiceMoveWalls
-  Sounds = EUGolf_voimowa EUGolf_voimowb EUGolf_voimowc
+  Sounds = EUGolf_voimowa
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
@@ -2690,7 +2690,7 @@ AudioEvent GolfimbulVoiceMoveWalls
 End
 
 AudioEvent GolfimbulVoiceEnterStateMoveWalls
-  Sounds = EUGolf_voimowa EUGolf_voimowb EUGolf_voimowc
+  Sounds = EUGolf_voimowa
   Limit = 1
   Volume        = BATTLE_CHATTER_VOLUME
   MinVolume     = BATTLE_CHATTER_MIN_VOLUME
@@ -2721,7 +2721,7 @@ AudioEvent GolfimbulVoiceEnterStateRetreat
 End
 
 AudioEvent GolfimbulVoiceSelect
-  Sounds = EUGolf_voisela EUGolf_voiselb EUGolf_voiselc EUGolf_voiseld EUGolf_voisele EUGolf_voiself
+  Sounds = EUGolf_voisele
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
@@ -2730,7 +2730,7 @@ AudioEvent GolfimbulVoiceSelect
 End
 
 AudioEvent GolfimbulVoiceSelectBattle
-  Sounds = EUGolf_voiseba EUGolf_voisebb EUGolf_voisebc EUGolf_voisebd EUGolf_voisebe EUGolf_voisebf EUGolf_voisebg EUGolf_voisebh
+  Sounds = EUGolf_voiseba EUGolf_voisebb EUGolf_voisebc EUGolf_voisebd EUGolf_voisebe EUGolf_voisebf 
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
@@ -2743,7 +2743,7 @@ Multisound GolfimbulVoiceSelectMS
 End
 
 AudioEvent GolfimbulVoiceWeaponSwitchFirebombs						;pickups2
-  Sounds = EUGolf_voiwe1a EUGolf_voiwe1b
+  Sounds = EUGolf_voiwe1b
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
@@ -2752,7 +2752,7 @@ AudioEvent GolfimbulVoiceWeaponSwitchFirebombs						;pickups2
 End
 
 AudioEvent GolfimbulVoiceWeaponSwitchSwords							;pickups2
-  Sounds = EUGolf_voiwe2a EUGolf_voiwe2b
+  Sounds = EUGolf_voiwe2b
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
