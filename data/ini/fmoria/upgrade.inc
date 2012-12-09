@@ -370,4 +370,13 @@ Upgrade Upgrade_TechnologyMoriaScavenger
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
 
-	
+	; ------------------------------------------------------------------------------ Conv. into TECH
+
+Upgrade Upgrade_TechnologyMoriaDemonicTribute
+	DisplayName       	= UPGRADE:WildBasicTraining
+	Type              	= PLAYER
+	BuildCost			= 1	
+	BuildTime			= 1	
+	ResearchCompleteEvaEvent	= UpgradeBannerCarrierTechnologyReady-Wild
+	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
+End

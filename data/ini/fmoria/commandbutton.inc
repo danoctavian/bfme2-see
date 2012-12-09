@@ -1964,3 +1964,27 @@ CommandButton Command_SpellBookScavengerMoria
 	SpecialPower		= SpellBookScavengerMoria
     ButtonImage			= SBEvil_Plus100CommandPoints
 End
+
+CommandButton Command_PurchaseTechnologyMoriaDemonicTribute
+	Command				= PLAYER_UPGRADE
+	Options				= NEED_UPGRADE CANCELABLE
+	Upgrade				= Upgrade_TechnologyMoriaDemonicTribute 
+	NeededUpgrade		= Upgrade_StructureLevel3
+	TextLabel			= CONTROLBAR:PurchaseTechnologyWildFireArrows
+	ButtonImage			= BMOrcPit_FlamingArrows
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
+	Radial				= Yes
+	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
+End
+
+CommandButton Command_SpellBookMoriaDemonicTribute
+	Command			= SPELL_BOOK
+    SpecialPower	= SpellBookMoriaDemonicTribute
+    ButtonImage		= SBEvil_Darkness
+	TextLabel		= CONTROLBAR:MoriaSpellbookDarkness
+	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookDarkness
+	Radial				= Yes
+	InPalantir			= Yes
+End

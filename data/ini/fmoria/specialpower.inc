@@ -269,3 +269,9 @@ SpecialPower SpellBookScavengerMoria
     ReloadTime			= 0   ; in milliseconds
     Flags				= RESPECT_RECHARGE_TIME_DISCOUNT
 End
+
+SpecialPower SpellBookMoriaDemonicTribute
+	Enum                = SPECIAL_TOGGLE_MOUNTED
+	ReloadTime          = 1; RotWK originally SPELL_RECHARGE_TIME_TIER_3 ;600000 in milliseconds
+	InitiateAtLocationSound  = SpellDarkness
+End
