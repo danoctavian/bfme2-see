@@ -1988,3 +1988,16 @@ CommandButton Command_SpellBookMoriaDemonicTribute
 	Radial				= Yes
 	InPalantir			= Yes
 End
+
+
+CommandButton Command_FireWeaponMoriaDemonicTribute
+  Command                 = SPECIAL_POWER 
+  SpecialPower            = SpecialAbilityMenFortressBoilingOil
+  TextLabel               = CONTROLBAR:FireWeaponMoriaShizzleStuffDontMakeThisIntoSomething
+  ButtonImage             = BGFortress_BoilingOil
+  ButtonBorderType        = ACTION 
+  DescriptLabel           = CONTROLBAR:ToolTipFireWeaponMoriaOddShizzleyaknowwhatimean
+  Radial				  = No
+  InPalantir			  = Yes
+End
+
