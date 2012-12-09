@@ -930,6 +930,8 @@ End
 CommandSet WildTreasureTroveCommandSet
 	1 = Command_PurchaseTechnologyWildBasicTraining
 	2 = Command_PurchaseTechnologyScavengerMoria
+	3 = Command_PurchaseTechnologyMoriaDemonicTribute
+	9 = Command_FireWeaponMenFortressBoilingOil
 	5 = Command_PurchaseUpgradeWildTreasureTroveLevel2
 	6 = Command_Sell
 End
@@ -937,6 +939,8 @@ End
 CommandSet WildTreasureTroveCommandSetLevel2
 	1 = Command_PurchaseTechnologyWildBasicTraining
 	2 = Command_PurchaseTechnologyScavengerMoria
+	3 = Command_PurchaseTechnologyMoriaDemonicTribute
+	9 = Command_FireWeaponMenFortressBoilingOil
 	5 = Command_PurchaseUpgradeWildTreasureTroveLevel3
 	6 = Command_Sell
 End
@@ -944,7 +948,9 @@ End
 CommandSet WildTreasureTroveCommandSetLevel3
 	1 = Command_PurchaseTechnologyWildBasicTraining
 	2 = Command_PurchaseTechnologyScavengerMoria
-	6 = Command_Sell	
+	3 = Command_PurchaseTechnologyMoriaDemonicTribute
+	9 = Command_FireWeaponMenFortressBoilingOil
+	6 = Command_Sell
 End
 
 
