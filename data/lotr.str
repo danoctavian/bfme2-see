@@ -8990,7 +8990,7 @@ END
 
 
 UPGRADE:FireArrowUpgrade
-"Fire Arrows"
+"Flaming Arrows"
 END
 
 UPGRADE:ElfStealthUpgrade
@@ -15436,7 +15436,7 @@ CONTROLBAR:ConstructWildTreasureTrove
 "Build Treasure Trove"
 END
 CONTROLBAR:ToolTipConstructWildTreasureTrove
-"Researches Banner Carrier upgrade and \n >>> TBD <<<"
+"Researches Banner Carrier upgrade, \n Moria Vaults upgrade and Demonic Tribute ability."
 END
 
 CONTROLBAR:ConstructWildFortress
@@ -16427,13 +16427,13 @@ CONTROLBAR:ConstructWildTreasureTroveLevel2Upgrade
 "Upgrade Treasure Trove to level 2"
 END
 CONTROLBAR:ToolTipBuildWildTreasureTroveLevel2Upgrade
-"Level 2: Allows xxx \n and xxx"
+"Level 2: Allows research of Moria Vaults"
 END
 CONTROLBAR:ConstructWildTreasureTroveLevel3Upgrade
 "Upgrade Treasure Trove to level 3"
 END
 CONTROLBAR:ToolTipBuildWildTreasureTroveLevel3Upgrade
-"Level 3: Allows xxx"
+"Level 3: Allows research of Demonic Tribute"
 END
 
 CONTROLBAR:ConstructWildSpiderlingHorde
@@ -31328,7 +31328,7 @@ CONTROLBAR:SummonSpiderlingAllies
 END
 
 CONTROLBAR:TooltipSummonSpiderlingAllies
-"Summons a horde of Spiderlings under the caster's control \n Left click icon then left click on pathable location"
+"Shelob gives birth to a horde of Spiderlings"
 END
 
 CONTROLBAR:AwakenWyrm
@@ -32053,7 +32053,7 @@ CONTROLBAR:TooltipGoblinKingSpawnFireDrakes
 END
 
 CONTROLBAR:GoblinKingSkullTotem
-"Skull &Totem"
+"Skull Totem"
 END
 
 CONTROLBAR:TooltipGoblinKingSkullTotem
@@ -32061,15 +32061,15 @@ CONTROLBAR:TooltipGoblinKingSkullTotem
 END
 
 CONTROLBAR:WildShelobInstillTerror
-"&Instill Terror"
+"Instill Terror"
 END
 
 CONTROLBAR:TooltipWildShelobInstillTerror
-"Causes fear in nearby enemies \n Left click to activate"
+"Shelob causes fear in nearby enemies \n Left click to activate"
 END
 
 CONTROLBAR:SpecialAbilityWildShelobTunnel
-"&Tunnel"
+"Tunnel"
 END
 
 CONTROLBAR:ToolTipSpecialAbilityWildShelobTunnel
@@ -32806,7 +32806,7 @@ CONTROLBAR:ShelobWebbing
 "Hero Webbing"
 End
 CONTROLBAR:ToolTipShelobWebbing
-"Cripples enemy heroes, \n cocconed in spider webs"
+"Cripples enemy heroes, \n cocooned in spider webs"
 End
 
 CONTROLBAR:ToolTipSpecialAbilityBatCloud
@@ -41642,7 +41642,7 @@ END
 // ########################################
 // ########################################
 // ########################################
-// ------------------------------------------------------------
+// ------------------------------------------------------------ 
 CONTROLBAR:PurchaseTechnologyWildFireArrows
 "Research Flaming Arrows"
 END
@@ -41676,7 +41676,21 @@ CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
 "Research Venom Sacs"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildSpiderVenomSacks
-"Allows Goblin hordes to acquire Venom Sacs \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
+"Allows goblin hordes to acquire Venom Sacs \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
+END
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseTechnologyMoriaScavenger
+"Research Moria Vaults"
+END
+CONTROLBAR:ToolTipPurchaseTechnologyMoriaScavenger
+"Allows goblin hordes to stash \n scavanged bounty in the trove. When trove is upgraded, all kills earn extra resources. \n \n Passive power as long as trove is intact."
+END
+// ------------------------------------------------------------
+CONTROLBAR:PurchaseTechnologyMoriaDemonicTribute
+"Research Demonic Tribute"
+END
+CONTROLBAR:ToolTipPurchaseTechnologyMoriaDemonicTribute
+"Enables goblins to pay a massive tribute. \n In return, they gain access to \n ALL Moria Spells."
 END
 // ------------------------------------------------------------
 // ########################################
@@ -42510,7 +42524,7 @@ Upgrade:FortressFireDrake
 END
 
 UPGRADE:WildFireArrowUpgrade
-"Fire Arrows"
+"Flaming Arrows"
 END
 
 UPGRADE:WildForgedBlades
@@ -42521,12 +42535,12 @@ UPGRADE:WildHeavyArmor
 "Scavenged Armor"
 END
 
-UPGRADE:WildBasicTraining 
-"Banner Carrier"
+UPGRADE:WildScavengerTech
+"Moria Vaults"
 END
 
-UPGRADE:WildScavengerTech
-"Scavenger"
+UPGRADE:WildDemonicTribute
+"Demonic Tribute"
 END
 
 
@@ -50153,7 +50167,7 @@ UPGRADE:GenericForgedBlades
 END
 
 UPGRADE:GenericFireArrowUpgrade
-"Fire Arrows"
+"Flaming Arrows"
 END
 
 UPGRADE:GenericBasicTraining

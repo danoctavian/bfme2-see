@@ -373,10 +373,10 @@ End
 	; ------------------------------------------------------------------------------ Conv. into TECH
 
 Upgrade Upgrade_TechnologyMoriaDemonicTribute
-	DisplayName       	= UPGRADE:WildBasicTraining
+	DisplayName       	= UPGRADE:WildDemonicTribute
 	Type              	= PLAYER
 	BuildCost			= 1	
 	BuildTime			= 1	
-	ResearchCompleteEvaEvent	= UpgradeBannerCarrierTechnologyReady-Wild
+	ResearchCompleteEvaEvent	= TreasureTroveUpgraded //UpgradeBannerCarrierTechnologyReady-Wild
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
 End

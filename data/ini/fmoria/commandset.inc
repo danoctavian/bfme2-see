@@ -188,6 +188,33 @@ CommandSet WildMineShaftCommandSet
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandSet WildTreasureTroveCommandSet
+	1 = Command_PurchaseTechnologyWildBasicTraining
+	2 = Command_PurchaseTechnologyMoriaScavenger
+	3 = Command_PurchaseTechnologyMoriaDemonicTribute
+	9 = Command_FireWeaponMoriaDemonicTribute
+	5 = Command_PurchaseUpgradeWildTreasureTroveLevel2
+	6 = Command_Sell
+End
+
+CommandSet WildTreasureTroveCommandSetLevel2
+	1 = Command_PurchaseTechnologyWildBasicTraining
+	2 = Command_PurchaseTechnologyMoriaScavenger
+	3 = Command_PurchaseTechnologyMoriaDemonicTribute
+	9 = Command_FireWeaponMoriaDemonicTribute
+	5 = Command_PurchaseUpgradeWildTreasureTroveLevel3
+	6 = Command_Sell
+End
+
+CommandSet WildTreasureTroveCommandSetLevel3
+	1 = Command_PurchaseTechnologyWildBasicTraining
+	2 = Command_PurchaseTechnologyMoriaScavenger
+	3 = Command_PurchaseTechnologyMoriaDemonicTribute
+	9 = Command_FireWeaponMoriaDemonicTribute
+	6 = Command_Sell
+End
+
+; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinCaveCommandSet
 	1 	= Command_ConstructGoblinArcherHorde 
 	2 	= Command_ConstructGoblinFighterHorde
@@ -922,34 +949,6 @@ End
 CommandSet WildSpiderPitCommandSetLevel3_ForFornost
 	1 = Command_ConstructWildSpiderRiderHorde
 	2 = Command_PurchaseTechnologyWildSpiderVenom ;Command_PurchaseSpiderVenomSackScienceUpgrade
-	6 = Command_Sell
-End
-
-
-
-CommandSet WildTreasureTroveCommandSet
-	1 = Command_PurchaseTechnologyWildBasicTraining
-	2 = Command_PurchaseTechnologyScavengerMoria
-	3 = Command_PurchaseTechnologyMoriaDemonicTribute
-	9 = Command_FireWeaponMoriaDemonicTribute
-	5 = Command_PurchaseUpgradeWildTreasureTroveLevel2
-	6 = Command_Sell
-End
-
-CommandSet WildTreasureTroveCommandSetLevel2
-	1 = Command_PurchaseTechnologyWildBasicTraining
-	2 = Command_PurchaseTechnologyScavengerMoria
-	3 = Command_PurchaseTechnologyMoriaDemonicTribute
-	9 = Command_FireWeaponMoriaDemonicTribute
-	5 = Command_PurchaseUpgradeWildTreasureTroveLevel3
-	6 = Command_Sell
-End
-
-CommandSet WildTreasureTroveCommandSetLevel3
-	1 = Command_PurchaseTechnologyWildBasicTraining
-	2 = Command_PurchaseTechnologyScavengerMoria
-	3 = Command_PurchaseTechnologyMoriaDemonicTribute
-	9 = Command_FireWeaponMoriaDemonicTribute
 	6 = Command_Sell
 End
 
