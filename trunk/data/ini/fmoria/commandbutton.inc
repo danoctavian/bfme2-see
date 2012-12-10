@@ -561,7 +561,7 @@ CommandButton Command_SpecialAbilityWildShelobWebbing_SEE
   SpecialPower 			= SpecialAbilityShelobWebbing
   Options 				= NEED_TARGET_ALLY_OBJECT ;NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT CONTEXTMODE_COMMAND
   TextLabel 				= CONTROLBAR:ShelobWebbing
-  ButtonImage 			= HIShelob //HSShelobPoisonedStinger
+  ButtonImage 			= HSShelobHeroWebbing //HSShelobPoisonedStinger
   CursorName 			= EvilAbilityObj
   InvalidCursorName 		= GenericInvalid
   ButtonBorderType 		= ACTION 
@@ -1525,6 +1525,28 @@ CommandButton Command_PurchaseTechnologyWildFireArrows		//"FLAMING ARROWS" (New 
 	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
 End
 
+CommandButton Command_PurchaseTechnologyMoriaScavenger		//"MORIA SCAVENGER" (New passive ability!)
+	Command				= OBJECT_UPGRADE
+	Options				= NEED_UPGRADE CANCELABLE
+	Upgrade				= Upgrade_TechnologyMoriaScavenger
+	NeededUpgrade		= Upgrade_StructureLevel2
+	TextLabel			= CONTROLBAR:PurchaseTechnologyMoriaScavenger
+	ButtonImage			= SBEvil_Plus100CommandPoints
+	ButtonBorderType		= UPGRADE
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyMoriaScavenger
+	Radial				= Yes
+	InPalantir			= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure
+End
+CommandButton Command_SpellBookScavengerMoria				//Not used in SEE, AFAIK? /Naz
+	Command				= SPELL_BOOK
+	Options				= NONPRESSABLE
+	TextLabel			= CONTROLBAR:Scavenger
+	DescriptLabel			= CONTROLBAR:TooltipScavenger    
+	SpecialPower		= SpellBookScavengerMoria
+    ButtonImage			= SBEvil_Plus100CommandPoints
+End
+
 ; ------------------------------------------------------------------------------
 
 CommandButton Command_PurchaseUpgradeWildBasicTraining
@@ -1942,62 +1964,38 @@ CommandButton Command_PurchaseSpellMoriaEarthquake
 	DescriptLabel		= CONTROLBAR:TooltipEarthquake
 End
 
-CommandButton Command_PurchaseTechnologyScavengerMoria
-	Command				= OBJECT_UPGRADE //PLAYER_UPGRADE
-	Options				= NEED_UPGRADE CANCELABLE
-	Upgrade				= Upgrade_TechnologyMoriaScavenger
-	NeededUpgrade		= Upgrade_StructureLevel2
-	TextLabel			= CONTROLBAR:PurchaseTechnologyWildHeavyArmor
-	ButtonImage			= SBEvil_Plus100CommandPoints
-	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
-	Radial				= Yes
-	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure
-End
-
-CommandButton Command_SpellBookScavengerMoria
-	Command				= SPELL_BOOK
-	Options				= NONPRESSABLE
-	TextLabel			= CONTROLBAR:Scavenger
-	DescriptLabel			= CONTROLBAR:TooltipScavenger    
-	SpecialPower		= SpellBookScavengerMoria
-    ButtonImage			= SBEvil_Plus100CommandPoints
-End
 
 CommandButton Command_PurchaseTechnologyMoriaDemonicTribute
 	Command				= PLAYER_UPGRADE
 	Options				= NEED_UPGRADE CANCELABLE
 	Upgrade				= Upgrade_TechnologyMoriaDemonicTribute 
 	NeededUpgrade		= Upgrade_StructureLevel3
-	TextLabel			= CONTROLBAR:PurchaseTechnologyWildFireArrows
-	ButtonImage			= BMOrcPit_FlamingArrows
+	TextLabel			= CONTROLBAR:PurchaseTechnologyMoriaDemonicTribute
+	ButtonImage			= BWTreasureTrove_DemonicTribute
 	ButtonBorderType		= UPGRADE
-	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
+	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyMoriaDemonicTribute
 	Radial				= Yes
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
 End
-
-CommandButton Command_SpellBookMoriaDemonicTribute
-	Command			= SPELL_BOOK
-    SpecialPower	= SpellBookMoriaDemonicTribute
-    ButtonImage		= SBEvil_Darkness
-	TextLabel		= CONTROLBAR:MoriaSpellbookDarkness
-	DescriptLabel		= CONTROLBAR:TooltipMoriaSpellbookDarkness
+CommandButton Command_FireWeaponMoriaDemonicTribute	
+  Command               = SPECIAL_POWER 
+  SpecialPower          = SpecialAbilityMenFortressBoilingOil
+  TextLabel              = CONTROLBAR:FireWeaponMoriaDemonicTribute
+  ButtonImage           = BGFortress_BoilingOil
+  ButtonBorderType		= ACTION 
+  DescriptLabel           = CONTROLBAR:ToolTipFireWeaponMoriaDemonicTribute
+  Radial				= No
+  InPalantir			= Yes
+End
+CommandButton Command_SpellBookMoriaDemonicTribute	//Not used in SEE AFAIK? /Naz
+	Command				= SPELL_BOOK
+    SpecialPower		= SpellBookMoriaDemonicTribute
+    ButtonImage			= SBEvil_Darkness
+	TextLabel			= CONTROLBAR:MoriaSpellbookDarkness
+	DescriptLabel			= CONTROLBAR:TooltipMoriaSpellbookDarkness
 	Radial				= Yes
 	InPalantir			= Yes
 End
 
-
-CommandButton Command_FireWeaponMoriaDemonicTribute
-  Command                 = SPECIAL_POWER 
-  SpecialPower            = SpecialAbilityMenFortressBoilingOil
-  TextLabel               = CONTROLBAR:FireWeaponMoriaShizzleStuffDontMakeThisIntoSomething
-  ButtonImage             = BGFortress_BoilingOil
-  ButtonBorderType        = ACTION 
-  DescriptLabel           = CONTROLBAR:ToolTipFireWeaponMoriaOddShizzleyaknowwhatimean
-  Radial				  = No
-  InPalantir			  = Yes
-End
 
