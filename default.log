@@ -355,3 +355,207 @@ Bytes around EIP:
 77ba8dc9 ff 40 14 8b 5d f4 8b 7d f0 80 3d 82 03 fe 7f 00 ˇ@.ã]Ùã}Ä=Ç.˛.
 77ba8dd9 0f 85 da 99 04 00 8b 45 fc 57 6a 00 83 f8 ff 0f .Ö⁄ô..ãE¸Wj.É¯ˇ.
 77ba8de9 84 23 9a 04 00 50 e8 a8 6a fe ff 3d 02 01 00 00 Ñ#ö..PË®j˛ˇ=....
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000004 was read from.
+
+Exception occured at
+00a3dc78 Worldbuilder.exe+0x63dc78.
+
+Version: internal
+
+EAX:0x00000000 EBX:0x00000000 ECX:0x0000007c
+EDX:0x00000001 ESI:0x12c409a8 EDI:0x00000000
+EIP:0x00a3dc78 ESP:0x0018e170 EBP:0x0018e1c0
+Flags:%00000000000000010000001000000010
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100111
+TW:%1111111111111111
+ErrOfs:      0x009fc9dd ErrSel:  0x015d0023
+DataOfs:     0x0018efac DataSel: 0x0000002b
+Cr0NpxState: 0x00000000
+ST(0) 000000000063cc820540 65.399193
+ST(1) 000000000063cc800540 64.399193
+ST(2) 0000000000000080ff3f 1.000000
+ST(3) 0000000000cc648d03c0 -17.674217
+ST(4) 0000000000000080ff3f 1.000000
+ST(5) 000000000063cc8004c0 -32.199596
+ST(6) 0000000000000080ff3f 1.000000
+ST(7) 0000000000000080ff3f 1.000000
+
+162 addresses:
+(unknown)(0): Worldbuilder.exe+6544504 (unknown)
+(unknown)(0): Worldbuilder.exe+6331350 (unknown)
+(unknown)(0): Worldbuilder.exe+6411635 (unknown)
+(unknown)(0): Worldbuilder.exe+6080832 (unknown)
+(unknown)(0): Worldbuilder.exe+5889935 (unknown)
+(unknown)(0): Worldbuilder.exe+5890034 (unknown)
+(unknown)(0): Worldbuilder.exe+6071716 (unknown)
+(unknown)(0): Worldbuilder.exe+6571968 (unknown)
+(unknown)(0): Worldbuilder.exe+19629051 (unknown)
+(unknown)(0): Worldbuilder.exe+3138689 (unknown)
+(unknown)(0): Worldbuilder.exe+19642342 (unknown)
+(unknown)(0): MSVCR71.dll+67081 strcmpi+45
+(unknown)(0): Worldbuilder.exe+19621966 (unknown)
+(unknown)(0): Worldbuilder.exe+19611041 (unknown)
+(unknown)(0): Worldbuilder.exe+6572308 (unknown)
+(unknown)(0): Worldbuilder.exe+5984418 (unknown)
+(unknown)(0): Worldbuilder.exe+6640633 (unknown)
+(unknown)(0): Worldbuilder.exe+6568344 (unknown)
+(unknown)(0): Worldbuilder.exe+5984418 (unknown)
+(unknown)(0): Worldbuilder.exe+3213847 (unknown)
+(unknown)(0): Worldbuilder.exe+1579916 (unknown)
+(unknown)(0): Worldbuilder.exe+3213847 (unknown)
+(unknown)(0): Worldbuilder.exe+1568426 (unknown)
+(unknown)(0): USER32.dll+94110 GetThreadDesktop+827
+(unknown)(0): USER32.dll+119172 GetWindowLongA+46
+(unknown)(0): USER32.dll+156373 CallNextHookEx+80
+(0): (unknown mod) (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93585 GetThreadDesktop+302
+(unknown)(0): USER32.dll+93521 GetThreadDesktop+238
+(unknown)(0): USER32.dll+93417 GetThreadDesktop+134
+(unknown)(0): USER32.dll+93585 GetThreadDesktop+302
+(unknown)(0): USER32.dll+164662 RemovePropA+178
+(unknown)(0): USER32.dll+486149 GetRawInputDeviceInfoA+506
+(unknown)(0): USER32.dll+93764 GetThreadDesktop+481
+(unknown)(0): ntdll.dll+129226 NtCallbackReturn+18
+(unknown)(0): USER32.dll+93783 GetThreadDesktop+500
+(unknown)(0): ntdll.dll+65802 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+94905 GetPropW+146
+(unknown)(0): USER32.dll+139627 SetWindowTextW+127
+(unknown)(0): USER32.dll+156026 SendMessageA+76
+(unknown)(0): Worldbuilder.exe+1577010 (unknown)
+(unknown)(0): MFC71.DLL+90439 (unknown)
+(unknown)(0): USER32.dll+94110 GetThreadDesktop+827
+(unknown)(0): USER32.dll+119172 GetWindowLongA+46
+(unknown)(0): USER32.dll+156373 CallNextHookEx+80
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+93417 GetThreadDesktop+134
+(unknown)(0): USER32.dll+93672 GetThreadDesktop+389
+(unknown)(0): USER32.dll+93764 GetThreadDesktop+481
+(unknown)(0): ntdll.dll+65802 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+94905 GetPropW+146
+(unknown)(0): USER32.dll+103102 GetWindow+80
+(unknown)(0): USER32.dll+104133 SendMessageW+76
+(unknown)(0): COMCTL32.dll+54673 ImageList_DrawIndirect+5355
+(unknown)(0): USER32.dll+139962 ScreenToClient+61
+(unknown)(0): COMCTL32.dll+297990 TrackMouseEvent+78650
+(unknown)(0): COMCTL32.dll+298617 TrackMouseEvent+79277
+(unknown)(0): COMCTL32.dll+97114 ImageList_Draw+7160
+(unknown)(0): COMCTL32.dll+133280 SetWindowSubclass+24179
+(unknown)(0): COMCTL32.dll+82880 Ordinal342+13663
+(unknown)(0): COMCTL32.dll+303741 TrackMouseEvent+84401
+(unknown)(0): USER32.dll+94264 GetWindowLongW+58
+(unknown)(0): COMCTL32.dll+75609 Ordinal342+6392
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+93417 GetThreadDesktop+134
+(unknown)(0): USER32.dll+134439 GetClientRect+197
+(unknown)(0): USER32.dll+162122 CallWindowProcA+27
+(unknown)(0): MFC71.DLL+195803 (unknown)
+(unknown)(0): MFC71.DLL+188615 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+93417 GetThreadDesktop+134
+(unknown)(0): USER32.dll+96196 CharPrevW+312
+(unknown)(0): USER32.dll+104133 SendMessageW+76
+(unknown)(0): USER32.dll+251434 ScrollWindowEx+191
+(unknown)(0): USER32.dll+96394 DispatchMessageW+15
+(unknown)(0): USER32.dll+247839 IsDialogMessageW+286
+(unknown)(0): USER32.dll+217417 IsDialogMessage+92
+(unknown)(0): MFC71.DLL+167842 (unknown)
+(unknown)(0): MFC71.DLL+81505 (unknown)
+(unknown)(0): MFC71.DLL+81457 (unknown)
+(unknown)(0): MFC71.DLL+28082 (unknown)
+(unknown)(0): MFC71.DLL+168093 (unknown)
+(unknown)(0): MFC71.DLL+168173 (unknown)
+(unknown)(0): MFC71.DLL+168221 (unknown)
+(unknown)(0): Worldbuilder.exe+2704040 (unknown)
+(unknown)(0): MFC71.DLL+168246 (unknown)
+(unknown)(0): Worldbuilder.exe+2704160 (unknown)
+(unknown)(0): MFC71.DLL+168254 (unknown)
+(unknown)(0): Worldbuilder.exe+2703236 (unknown)
+(unknown)(0): MFC71.DLL+208837 (unknown)
+(unknown)(0): Worldbuilder.exe+19676001 (unknown)
+(unknown)(0): kernel32.dll+78746 BaseThreadInitThunk+18
+(unknown)(0): ntdll.dll+237298 RtlInitializeExceptionChain+99
+(unknown)(0): ntdll.dll+237253 RtlInitializeExceptionChain+54
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949166 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949166 (unknown)
+(unknown)(0): Worldbuilder.exe+2949166 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2424914 (unknown)
+(unknown)(0): Worldbuilder.exe+2424914 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949166 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949166 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949166 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+1441908 (unknown)
+(unknown)(0): Worldbuilder.exe+1441908 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2424914 (unknown)
+(unknown)(0): Worldbuilder.exe+2424914 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2949231 (unknown)
+(unknown)(0): Worldbuilder.exe+2883692 (unknown)
+
+Bytes around EIP:
+00a3dc58 55 f4 52 8b 4d 08 e8 0d a1 c6 00 83 f8 74 74 05 UÙRãM.Ë.°∆.É¯tt.
+00a3dc68 e9 ea 04 00 00 8b 4d 08 e8 5b 9c c6 00 8b 45 f4 ÈÍ...ãM.Ë[ú∆.ãEÙ
+00a3dc78 8b 48 04 81 e1 00 00 ff 00 81 f9 00 00 02 00 0f ãH.Å·..ˇ.Å˘.....
+00a3dc88 94 c2 52 6a 01 8b 45 f4 8b 48 2c 51 8b 55 f4 8b î¬Rj.ãEÙãH,QãUÙã
+00a3dc98 42 28 50 8b 4d d0 e8 cd fc fd ff 8b 4d f4 83 c1 B(PãM–ËÕ¸˝ˇãMÙÉ¡
