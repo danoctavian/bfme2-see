@@ -3324,7 +3324,7 @@ END
 
 TOOLTIP:AlreadyUpgradedDefault
 // context: Default message when you highlight an upgrade that has already been purchased -- so you can't buy it again!
-"This upgrade has already been purchased"
+"This upgrade has already been purchased."
 END
 
 TOOLTIP:HasConflictingUpgradeDefault
@@ -28157,7 +28157,7 @@ CONTROLBAR:ConstructWildGiantSentryExpansion
 END
 
 CONTROLBAR:ToolTipConstructWildGiantSentryExpansion
-"A captivated Stone Giant \n that hurls large rocks at enemy units"
+"A captivated Stone Giant \n that hurls large rocks at enemy units."
 END
 
 CONTROLBAR:SelectUpgradesWildFortress
@@ -28165,7 +28165,7 @@ CONTROLBAR:SelectUpgradesWildFortress
 END
 
 CONTROLBAR:ToolTipCommandSelectUpgradesWildFortress
-"Purchase upgrades and \n additional defenses for the fortress."
+"Aquire upgrades and \n additional defenses for the fortress."
 END
 
 CONTROLBAR:SelectRevivablesGoblinFortress
@@ -28361,14 +28361,8 @@ END
 OBJECT:WildBuildingFoundation
 "Fortress Expansion Plot"
 END
-OBJECT:WildSpiderHolesExpansion
-"Spider Den expansion"
-END
-OBJECT:WildArrowDenExpansion
-"Archer Tower expansion"
-END
-OBJECT:WildGiantSentryExpansion
-"Giant Sentry expansion"
+OBJECT:WildBuildingFoundationDescription
+"Constructs expansions \n and additional defences for the fortess."
 END
 
 
@@ -31373,14 +31367,14 @@ CONTROLBAR:PurchaseUpgradeWildFortressBatCloud
 "Bat Cloud"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressBatCloud
-"The Fortress gains a vision bonus \n and can detect stealthed units"
+"The fortress gains a vision bonus \n and can detect stealthed units."
 END
 
 CONTROLBAR:PurchaseUpgradeWildFortressFireArrows
 "Fire Arrows"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressFireArrows
-"Equips your Fortress Towers with Fire Arrows \n Increases damage done by arrows"
+"Equips your fortress towers and arrow dens with fire arrows. \n Increases damage done by arrows."
 END
 
 CONTROLBAR:PurchaseUpgradeWildFortressWebCocoon
@@ -31394,7 +31388,7 @@ CONTROLBAR:PurchaseUpgradeWildFortressRazorSpines
 "Razor Spines"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressRazorSpines
-"Damages enemy units adjacent to the Fortress"
+"Damages enemy units adjacent to the fortress."
 END
 
 CONTROLBAR:PurchaseUpgradeSentryTowerFireArrows
@@ -31405,7 +31399,7 @@ CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerFireArrows
 END
 
 CONTROLBAR:ConstructWildBurrowsExpansion
-"Burrows expansion"
+"Burrows Expansion"
 END
 CONTROLBAR:ToolTipConstructWildBurrowsExpansion
 "Connects this fortress to the tunnel network."
@@ -34743,13 +34737,37 @@ OBJECT:WildCastleWallSegment
 "Wall"
 End
 
+
+
 OBJECT:WildFortressBurrowsExpansion
 "Burrows Expansion"
 End
-
 OBJECT:WildFortressBurrowsExpansionDescription
-"Allows access to the tunnel network."
+"Allows access to the goblin tunnel network."
 End
+
+OBJECT:WildSpiderHolesExpansion
+"Spider Den Expansion"
+END
+OBJECT:WildSpiderHolesExpansionDescription
+"The spiders are ready."
+End
+
+OBJECT:WildArrowDenExpansion
+"Archer Tower Expansion"
+END
+OBJECT:WildArrowDenExpansionDescription
+"Archers are standing by."
+End
+
+OBJECT:WildGiantSentryExpansion
+"Giant Sentry Expansion"
+END
+OBJECT:WildGiantSentryExpansionDescription
+"The giant is standing by."
+End
+
+
 
 OBJECT:WildLaborer
 "Orc Laborer"
@@ -49115,10 +49133,10 @@ CONTROLBAR:PurchaseWildFortressStonePavement_SEE
 "Defiled Ground"
 END
 CONTROLBAR:ToolTipPurchaseWildFortressStonePavement_SEE 
-"Structures built on Defiled Ground gain \n +10% Armor +5% Production Speed \n \n Pre-requisite to Web Cocoon"
+"Structures built on Defiled Ground gain \n +10% armor, +5% production speed. \n \n Pre-requisite to Web Cocoon."
 END
 TOOLTIP:LackWildFortressStonePavement_SEE
-"Increases Fortress armor with 50% \n \n Requires Defiled Ground upgrade"
+"Increases fortress armor with +50%. \n \n Requires Defiled Ground upgrade."
 END
 Upgrade:FortressWildStonePavement_SEE
 "Defiled Ground"
