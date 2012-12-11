@@ -28137,27 +28137,27 @@ END
 //////////////////////////////
 
 CONTROLBAR:ConstructWildSpiderHolesExpansion
-"S&pider Holes Expansion"
+"Spider Holes Expansion"
 END
 
 CONTROLBAR:ToolTipConstructWildSpiderHolesExpansion
-"Spiders will emerge and attack nearby enemy units"
+"Spiders will emerge \n and attack nearby enemy units."
 END
 
 CONTROLBAR:ConstructWildArrowDenExpansion
-"Arrow &Den Expansion"
+"Arrow Den Expansion"
 END
 
 CONTROLBAR:ToolTipConstructWildArrowDenExpansion
-"Fires arrows at nearby enemy units \n Benefits from the Fire Arrows upgrade"
+"Fires arrows at nearby enemy units. \n Benefits from the Fire Arrows upgrade."
 END
 
 CONTROLBAR:ConstructWildGiantSentryExpansion
-"&Giant Sentry Expansion"
+"Giant Sentry Expansion"
 END
 
 CONTROLBAR:ToolTipConstructWildGiantSentryExpansion
-"A captivated Stone Giant that \n hurls large rocks at enemy units"
+"A captivated Stone Giant \n that hurls large rocks at enemy units"
 END
 
 CONTROLBAR:SelectUpgradesWildFortress
@@ -31408,7 +31408,7 @@ CONTROLBAR:ConstructWildBurrowsExpansion
 "Burrows expansion"
 END
 CONTROLBAR:ToolTipConstructWildBurrowsExpansion
-"Connects this Fortress to the tunnel network"
+"Connects this fortress to the tunnel network."
 END
 
 
@@ -34748,7 +34748,7 @@ OBJECT:WildFortressBurrowsExpansion
 End
 
 OBJECT:WildFortressBurrowsExpansionDescription
-"Allows access to the tunnel network"
+"Allows access to the tunnel network."
 End
 
 OBJECT:WildLaborer
