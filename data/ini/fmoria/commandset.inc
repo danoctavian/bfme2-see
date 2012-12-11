@@ -19,7 +19,7 @@ CommandSet WildPorterCommandSet
 	5  	= Command_PorterConstructWildDrum	
 	6  	= Command_PorterConstructWildCave
 	7  	= Command_PorterConstructWildSpiderPit
-	8  	= Command_PorterConstructWildWolfDen 					;Command_ConstructAngmarDen
+	8  	= Command_PorterConstructWildWolfDen 					
 	9  	= Command_PorterConstructWildFissure  
 	10 	= Command_PorterConstructWildTreasureTrove 
 	11 	= Command_PorterConstructWildWargSentry
