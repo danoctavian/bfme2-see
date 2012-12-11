@@ -15443,7 +15443,7 @@ CONTROLBAR:ConstructWildFortress
 "Build Goblin Fortress"
 END
 CONTROLBAR:ToolTipConstructWildFortress
-"Recruits Builders and Heroes"
+"Recruits Moria builders and heroes. \n Can be improved with expansions \n and upgrades."
 END
 
 //Wild Units
@@ -28165,7 +28165,7 @@ CONTROLBAR:SelectUpgradesWildFortress
 END
 
 CONTROLBAR:ToolTipCommandSelectUpgradesWildFortress
-"Purchase upgrades and \n additional defenses for the Fortress"
+"Purchase upgrades and \n additional defenses for the fortress."
 END
 
 CONTROLBAR:SelectRevivablesGoblinFortress
@@ -28197,18 +28197,35 @@ END
 CONTROLBAR:PurchaseUpgradeWildFortressDragonNest
 "Dragon's Nest Monument"
 END
+CONTROLBAR:PurchaseUpgradeWildBalrogMonument
+"Balrog Monument"
+END
 
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressDragonNest
 "Allows summoning of Drogoth, \n - the armored Dragon Lord of the Withered Heath"
+END
+CONTROLBAR:ToolTipPurchaseUpgradeWildBalrogMonument
+"Allows summoning of a Balrog \n - a demon of the ancient world, \n from the depths of Moria, \n under your control."
 END
 
 CONTROLBAR:PurchaseWildFireDrake
 "Drogoth, the Dragon Lord"
 END
+CONTROLBAR:PurchaseWildBalrogAlly
+"Balrog"
+END
 
 CONTROLBAR:ToolTipPurchaseWildFireDrake
 "Summons Drogoth - the Dragon Lord, \n under your control \n Super strong vs. Eagles"
 END
+CONTROLBAR:ToolTipPurchaseWildBalrogAlly
+"Summons a Balrog \n - a demon of the ancient world, \n from the depths of Moria, \n under your control. \n \n Recuires Balrog Monument upgrade. \n \n Super strong vs ALL!"
+END
+CONTROLBAR:ToolTipPurchaseWildBalrogAlly2
+"Summons a Balrog \n - a demon of the ancient world, \n from the depths of Moria, \n under your control. \n \n Super strong vs ALL!"
+END
+
+
 
 CONTROLBAR:WildDrogothHotkey
 "Drogoth, the Dragon Lord"
@@ -28339,7 +28356,7 @@ OBJECT:WildFortress
 "Fortress"
 END
 OBJECT:WildFortressDescription
-"Recruits Builders and Heroes"
+"Recruits Moria builders and heroes. \n Can be improved with expansions \n and upgrades."
 END
 OBJECT:WildBuildingFoundation
 "Fortress Expansion Plot"
@@ -31370,7 +31387,7 @@ CONTROLBAR:PurchaseUpgradeWildFortressWebCocoon
 "Web Cocoon"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoon
-"Increases Fortress armor with 50% \n Pre-requisite to Dragon's Nest"
+"Increases Fortress armor with 50%. \n Pre-requisite to Balrog Monument."
 END
 
 CONTROLBAR:PurchaseUpgradeWildFortressRazorSpines
@@ -36195,7 +36212,10 @@ ToolTip:LackIronPlating
 END
 
 TOOLTIP:LackDragonNest
-"Requires Dragon's Nest Monument"
+"Requires Dragon's Nest"
+END
+TOOLTIP:LackBalrogMonument
+"Requires Balrog Monument"
 END
 
 TOOLTIP:LackEagleNest
@@ -42502,6 +42522,9 @@ END
 Upgrade:FortressDragonsNest
 "Dragon's Nest"
 END
+Upgrade:FortressBalrogMonument
+"Balrog Monument"
+END
 
 Upgrade:FortressBatCloud
 "Bat Cloud"
@@ -46322,7 +46345,7 @@ END
 
 
 TOOLTIP:AlreadySummonedCreature
-"This unit has already been recruited"
+"This unit has already been recruited!"
 END
 
 TOOLTIP:NeedtoRebuildUpgradeStructure
@@ -46401,6 +46424,9 @@ END
 
 TOOLTIP:LackDragonNestWebCocoon
 "Allows summoning of Drogoth, \n -the armored Dragon Lord \n of the Withered Heath \n \n Requires Web Cocoon upgrade"
+END
+TOOLTIP:LackBalrogMonumentWebCocoon
+"Allows summoning of a Balrog, \n - a demon of the ancient world, \n under your control. \n \n Requires Web Cocoon upgrade."
 END
 
 TOOLTIP:LackEagleNestEncasingVines

@@ -1115,30 +1115,34 @@ CommandButton Command_PurchaseBalrogAllyFake
 	Command           = OBJECT_UPGRADE
 	Options				= NEED_UPGRADE
 	NeededUpgrade		= Upgrade_WildFortressDragonNest
-	TextLabel			= CONTROLBAR:SummonBalrog
 	ButtonImage			= SBEvil_BalrogAlly
 	ButtonBorderType	= ACTION
 	Radial				  = Yes
 	InPalantir	   		  = Yes
-	DescriptLabel		= CONTROLBAR:TooltipSummonBalrog
 	RadiusCursorType	= SummonBalrogRadiusCursor
     CursorName          = AttackObj
     InvalidCursorName   = GenericInvalid  
+	TextLabel			= CONTROLBAR:PurchaseWildBalrogAlly	
+	DescriptLabel		= CONTROLBAR:ToolTipPurchaseWildBalrogAlly	
+  LacksPrerequisiteLabel  = TOOLTIP:LackBalrogMonument
+  PurchasedLabel		  = TOOLTIP:AlreadySummonedCreature	
 End
 
 CommandButton Command_PurchaseBalrogAlly
 	Command				= SPELL_BOOK
 	SpecialPower		= SpellBookBalrogAllyFort
 	Options				= NEED_TARGET_POS
-	TextLabel			= CONTROLBAR:SummonBalrog
 	ButtonImage			= SBEvil_BalrogAlly
 	ButtonBorderType	= ACTION
 	Radial				  = Yes
 	InPalantir	   		  = Yes
-	DescriptLabel		= CONTROLBAR:TooltipSummonBalrog
 	RadiusCursorType	= SummonBalrogRadiusCursor
     CursorName          = AttackObj
     InvalidCursorName   = GenericInvalid  
+	TextLabel			= CONTROLBAR:PurchaseWildBalrogAlly	
+	DescriptLabel		= CONTROLBAR:ToolTipPurchaseWildBalrogAlly2	
+  LacksPrerequisiteLabel  = TOOLTIP:LackBalrogMonument
+  PurchasedLabel		  = TOOLTIP:AlreadySummonedCreature	
 End
 
 ;//Wild Fortress Improvements
@@ -1147,13 +1151,13 @@ CommandButton Command_PurchaseUpgradeWildFortressDragonNest
 	Options			  = CANCELABLE NEED_UPGRADE
 	Upgrade           = Upgrade_WildFortressDragonNest Upgrade_DragonNestFireDrakeButtonEnable	
 	NeededUpgrade	  = Upgrade_WildFortressWebCocoon	
-	TextLabel         = CONTROLBAR:PurchaseUpgradeWildFortressDragonNest
+	TextLabel         = CONTROLBAR:PurchaseUpgradeWildBalrogMonument //PurchaseUpgradeWildFortressDragonNest
 	ButtonImage       = BWFortress_DragonNest
 	ButtonBorderType  = UPGRADE
-	DescriptLabel     = CONTROLBAR:ToolTipPurchaseUpgradeWildFortressDragonNest
+	DescriptLabel     = CONTROLBAR:ToolTipPurchaseUpgradeWildBalrogMonument //ToolTipPurchaseUpgradeWildFortressDragonNest
 	Radial            = Yes
 	InPalantir	   	  = No
-	LacksPrerequisiteLabel	= TOOLTIP:LackDragonNestWebCocoon
+	LacksPrerequisiteLabel	= TOOLTIP:LackBalrogMonumentWebCocoon //LackDragonNestWebCocoon
 End
 
 CommandButton Command_PurchaseUpgradeWildFortressBatCloud
