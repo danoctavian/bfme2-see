@@ -907,7 +907,7 @@ FXParticleSystem EvilLevelUpShaftsMotes_SEE
 End
 
 ;---------------------------------------------------
-FXParticleSystem UpgradeBuildingEvilFortressPillar_SEE
+FXParticleSystem UpgradeBuildingEvilFortressPillar ;_SEE
   System
     Priority = ALWAYS_RENDER
     Shader = W3D_EMISSIVE
@@ -946,7 +946,7 @@ FXParticleSystem UpgradeBuildingEvilFortressPillar_SEE
   Draw = RenderObjectDraw
   End
 End
-FXParticleSystem UpgradeBuildingEvilFortressRipples_SEE
+FXParticleSystem UpgradeBuildingEvilFortressRipples ;_SEE
   System
     Priority = HIGH_OR_ABOVE
     ParticleName = EXLvlUpClutter.TGA
