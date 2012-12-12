@@ -28219,7 +28219,7 @@ CONTROLBAR:ToolTipPurchaseWildFireDrake
 "Summons Drogoth - the Dragon Lord, \n under your control \n Super strong vs. Eagles"
 END
 CONTROLBAR:ToolTipPurchaseWildBalrogAlly
-"Summons a Balrog \n - a demon of the ancient world, \n from the depths of Moria, \n under your control. \n \n Recuires Balrog Monument upgrade. \n \n Super strong vs ALL!"
+"Summons a Balrog \n - a demon of the ancient world, \n from the depths of Moria, \n under your control. \n \n Requires Balrog Monument upgrade. \n \n Super strong vs ALL!"
 END
 CONTROLBAR:ToolTipPurchaseWildBalrogAlly2
 "Summons a Balrog \n - a demon of the ancient world, \n from the depths of Moria, \n under your control. \n \n Super strong vs ALL!"
@@ -28362,7 +28362,7 @@ OBJECT:WildBuildingFoundation
 "Fortress Expansion Plot"
 END
 OBJECT:WildBuildingFoundationDescription
-"Constructs expansions \n and additional defences for the fortess."
+"Construct expansions \n and additional defences for the fortess."
 END
 
 

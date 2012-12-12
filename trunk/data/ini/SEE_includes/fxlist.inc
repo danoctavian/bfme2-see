@@ -1074,19 +1074,19 @@ FXList EvilLevelUpFX_SEE
 End
 
 ;---------------------------------------------------
-FXList FX_EvilFortressUpgrade_SEE
-  ParticleSystem
-    Name = UpgradeBuildingEvilFortressPillar_SEE
-    Offset = X:0.0 Y:0.0 Z:5.0
-  End
-  ParticleSystem
-    Name = UpgradeBuildingEvilFortressRipples_SEE
-    Offset = X:0.0 Y:0.0 Z:5.0
-  End
-  Sound
-    Name = DwarfFortressUpgradeGlowEffectMS
-  End
-End
+;FXList FX_EvilFortressUpgrade_SEE
+;  ParticleSystem
+;    Name = UpgradeBuildingEvilFortressPillar_SEE
+;    Offset = X:0.0 Y:0.0 Z:5.0
+;  End
+;  ParticleSystem
+;    Name = UpgradeBuildingEvilFortressRipples_SEE
+;    Offset = X:0.0 Y:0.0 Z:5.0
+;  End
+;  Sound
+;    Name = DwarfFortressUpgradeGlowEffectMS
+;  End
+;End
 
 ; ----------------------------------------------
 FXList FX_AngmarHwaldarInitialSpawn
