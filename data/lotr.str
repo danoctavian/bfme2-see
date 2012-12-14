@@ -28157,7 +28157,7 @@ CONTROLBAR:ConstructWildGiantSentryExpansion
 END
 
 CONTROLBAR:ToolTipConstructWildGiantSentryExpansion
-"A captivated Stone Giant \n that hurls large rocks at enemy units."
+"A stationary Stone Giant \n hurling large rocks at enemy units."
 END
 
 CONTROLBAR:SelectUpgradesWildFortress
@@ -48261,6 +48261,19 @@ CONTROLBAR:ConstructGoblinWolfRiderHorde
 END
 CONTROLBAR:ToolTipBuildGoblinWolfRiderHorde
 "Recruit up to 6 hordes of the fierce \n Goblin Wolf Riders \n \n Requires level 2 Wolf Den \n and Scavenged Weapons upgrade \n \n Strong vs. Archers"
+END
+
+OBJECT:GoblinWolf
+"Wolf Pack member"
+END
+OBJECT:GoblinWolfHorde
+"Wolf Pack"
+END
+CONTROLBAR:ConstructGoblinWolfHorde
+"Wolf Pack"
+END
+CONTROLBAR:ToolTipBuildGoblinWolfHorde
+"Recruit Wolf Packs to scout \n the surroundings fast and effective \n \n Strong vs. Archers"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
