@@ -6,7 +6,7 @@
 
 
 AudioEvent WolfPackHowling
-	Sounds	= WolfHowl
+	Sounds	= wolfhowl
 	Priority	= normal //low
 	Limit		= 1
 	PlayPercent	= 35
