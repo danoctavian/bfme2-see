@@ -7,12 +7,12 @@
 
 AudioEvent WolfPackHowling
 	Sounds	= wolfhowl
-	Priority	= normal //low
+	Priority	= low
 	Limit		= 1
-	PlayPercent	= 35
+	PlayPercent	= 25 //35
 	PitchShift	= 10 30
 	VolumeShift	= -15
-	Volume		= 68
+	Volume		= 50 //68
 	Type		= world shrouded everyone
 	SubmixSlider	= SoundFX
 End
