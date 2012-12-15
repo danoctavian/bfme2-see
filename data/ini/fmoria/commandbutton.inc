@@ -335,7 +335,7 @@ CommandButton Command_ConstructGoblinWolfRiderHorde
 	Options				= CANCELABLE NEED_UPGRADE
 	NeededUpgrade		= Upgrade_WildWolfDenLevel2 Upgrade_TechnologyWildForgedBlades	
 	TextLabel			= CONTROLBAR:ConstructGoblinWolfRiderHorde
-	ButtonImage			= WOR_WolfRider //BWSpiderPit_SpiderRider <<< Will make new button! /Naz
+	ButtonImage			= WOR_WolfRider
 	ButtonBorderType    	= BUILD 
 	DescriptLabel       	= CONTROLBAR:ToolTipBuildGoblinWolfRiderHorde
 	Radial				= Yes
@@ -348,9 +348,9 @@ CommandButton Command_ConstructGoblinWargRiderHorde
 	Command				= UNIT_BUILD
 	Object				= GoblinWargRiderHorde
 	Options				= CANCELABLE NEED_UPGRADE
-	NeededUpgrade		= Upgrade_WildWolfDenLevel3 Upgrade_TechnologyWildForgedBlades	
+	NeededUpgrade		= Upgrade_WildWolfDenLevel3 Upgrade_TechnologyWildForgedBlades Upgrade_TechnologyWildHeavyArmor	
 	TextLabel			= CONTROLBAR:ConstructGoblinWargRiderHorde
-	ButtonImage			= BIWargPit_Riders //BWSpiderPit_SpiderRider <<< Will make new button! /Naz
+	ButtonImage			= BIWargPit_Riders // <<< Will make new button! /Naz
 	ButtonBorderType    	= BUILD 
 	DescriptLabel       	= CONTROLBAR:ToolTipBuildGoblinWargRiderHorde
 	Radial				= Yes
