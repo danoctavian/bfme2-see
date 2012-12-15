@@ -41700,14 +41700,14 @@ CONTROLBAR:PurchaseTechnologyWildForgedBlades
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
 // original //"Allows hordes to acquire Scavenged Weapons \n \n When equipped, increases the damage \n done by melee weapons"
-"Cost: FREE! \n Allows hordes to acquire Scavenged Weapons \n \n Enables training of Goblin Warriors, \n Spearmen, Wolf- and Warg Riders"
+"Cost: FREE! \n Allows hordes to acquire Scavenged Weapons. \n \n Enables training of Goblin Warriors, \n Spearmen and Wolf Riders"
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildHeavyArmor
 "Research Scavenged Armor"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
-"Cost: FREE! \n Allows hordes to acquire Scavenged Armor \n \n When equipped, significantly reduces \n the amount of damage taken"
+"Cost: FREE! \n Allows hordes to acquire Scavenged Armor \n \n When equipped, significantly reduces \n the amount of damage taken. \n \n Enables training of Goblin Warg Riders."
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
@@ -48245,7 +48245,7 @@ CONTROLBAR:ConstructGoblinWargRiderHorde
 "Goblin Warg Riders"
 END
 CONTROLBAR:ToolTipBuildGoblinWargRiderHorde
-"Recruit up to 2 units of The Great Goblin's \n savage Warg Riders of the Misty Mountains \n \n Requires level 3 Wolf Den \n and Scavenged Weapons upgrade \n \n Strong vs. Cavalry and Archers"
+"Recruit up to 4 hordes of the savage \n Goblin Warg Riders of the Misty Mountains. \n \n Requires level 3 Wolf Den, \n Scavenged Weapons and \n Scavanged Armor upgrades. \n \n Strong vs. cavalry and archers."
 END
 
 // ---
@@ -48260,7 +48260,7 @@ CONTROLBAR:ConstructGoblinWolfRiderHorde
 "Goblin Wolf Riders"
 END
 CONTROLBAR:ToolTipBuildGoblinWolfRiderHorde
-"Recruit up to 6 hordes of the fierce \n Goblin Wolf Riders \n \n Requires level 2 Wolf Den \n and Scavenged Weapons upgrade \n \n Strong vs. Archers"
+"Recruit up to 8 hordes of the fierce \n Goblin Wolf Riders of the Misty Mountains. \n \n Requires level 2 Wolf Den \n and Scavenged Weapons upgrade. \n \n Strong vs. archers."
 END
 
 OBJECT:GoblinWolf
@@ -48273,7 +48273,7 @@ CONTROLBAR:ConstructGoblinWolfHorde
 "Wolf Pack"
 END
 CONTROLBAR:ToolTipBuildGoblinWolfHorde
-"Recruit Wolf Packs to scout \n the surroundings fast and effective \n \n Strong vs. Archers"
+"Recruit Wolf Packs to scout \n the surroundings fast and effective. \n \n Strong vs. archers"
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
