@@ -5,6 +5,18 @@
 ////////
 
 
+AudioEvent WolfPackHowling
+	Sounds	= WolfHowl
+	Priority	= normal //low
+	Limit		= 1
+	PlayPercent	= 35
+	PitchShift	= 10 30
+	VolumeShift	= -15
+	Volume		= 68
+	Type		= world shrouded everyone
+	SubmixSlider	= SoundFX
+End
+
 ;========================================= Wild ======================================
 
 	;----------- BEGIN CROWD RESPONSE -------------
