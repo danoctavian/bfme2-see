@@ -11,7 +11,7 @@ AudioEvent WolfPackHowling
 	Limit		= 2 //1
 	PlayPercent	= 25 //35
 	PitchShift	= 10 20 //30
-	VolumeShift	= -15
+	VolumeShift	= -10 //-15
 	Volume		= 40 //68
 	Type		= world shrouded everyone
 	SubmixSlider	= SoundFX

@@ -11,7 +11,20 @@ FXList FX_TrollClubHammerDebris
 	ParticleSystem
 		Name = TrollClubSmashDust //GloinBlastFinalLight
 		Offset = X:50.0 Y:0.0 Z:60
+		OnlyIfOnLand = Yes
 	End
+	ParticleSystem
+		Name = TrollClubLeafDebris
+		Offset = X:36.0 Y:0.0 Z:10.0
+		OrientToObject = Yes   
+		OnlyIfOnLand = Yes
+	End
+	ParticleSystem
+		Name = TrollClubDustDebris
+		Offset = X:36.0 Y:0.0 Z:10.0
+		OrientToObject = Yes
+		OnlyIfOnLand = Yes
+	End	
 	ParticleSystem
 		Name = GloinShatterShockwave
 		Offset = X:50.0 Y:0.0 Z:20.0
@@ -23,10 +36,6 @@ FXList FX_TrollClubHammerDebris
 	ParticleSystem
 		Name = GloinShatterwave2
 		Offset = X:50.0 Y:0.0 Z:15.0
-	End
-
-	Sound
-		Name = GloinShatterHammer
 	End
   
   	ParticleSystem
@@ -44,6 +53,11 @@ FXList FX_TrollClubHammerDebris
 		Offset = X:50.0 Y:0.0 Z:1.0
 		OnlyIfOnWater = Yes
 	End  
+	
+	Sound
+		Name = GloinShatterHammer
+		Name = TrollTreeShake
+	End	
   
   DynamicDecal	; A decal that belongs to nobody, but updates internally to fade and tint and such
 		DecalName		= EXCracks04
@@ -61,7 +75,7 @@ FXList FX_TrollClubHammerDebris
 		Lifetime		= 64000 //34000
   End
 	ViewShake 
-		Type = NORMAL ; NORMAL and SUBTLE are the next choices
+		Type = STRONG ; NORMAL and SUBTLE are the next choices
 	End
 End
 
