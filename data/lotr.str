@@ -82,13 +82,13 @@ OBJECT:WildMineShaft
 "Mine Tunnel"
 END
 OBJECT:WildMineShaftDescription
-"Generates resources based on available terrain \n Provides access to the Goblin tunnel network \n \n Increases command point limit by 50"
+"Generates resources based on available terrain. \n Provides access to the Goblin tunnel network. \n \n Increases command point limit by 50."
 END
 CONTROLBAR:ConstructWildMineShaft
 "Build Mine Tunnel"
 END
 CONTROLBAR:ToolTipConstructWildMineShaft
-"Generates resources based on available terrain \n Provides access to the Goblin tunnel network \n \n Increases command point limit by 50"
+"Generates resources based on available terrain. \n Provides access to the Goblin tunnel network. \n \n Increases command point limit by 50."
 END
 Upgrade:WildMineShaftLevel2
 "Tunnel level 2"
@@ -113,7 +113,7 @@ OBJECT:WildDrum
 "Troll Drum"
 End
 OBJECT:WildDrumDescription
-"Allies near the drum gain +25% damage, \n earn experience 25% faster and \n will heal if not under attack \n \n Reduces the cost of infantry \n \n Increases command point limit by 25"
+"Allies near the drum gain +25% damage, \n earn experience 25% faster and \n will heal if not under attack. \n \n Reduces the cost of infantry. \n \n Increases command point limit by 25."
 END
 
 
@@ -15334,7 +15334,7 @@ CONTROLBAR:ToolTipSlaughterHouse
 "Generates resources based on available terrain \n Increases command point limit by 50 \n Reduces the cost of Trolls and Mûmakil"
 END
 CONTROLBAR:ToolTipGenericLumberMill
-"Orc Snagas harvests resources \n from nearby trees"
+"Orc Snagas harvests resources \n from nearby trees."
 END
 CONTROLBAR:ToolTipFurnace
 "Generates resources based on available terrain \n Increases command point limit by 50"
@@ -15408,35 +15408,35 @@ CONTROLBAR:ConstructWildGoblinCave
 "Build Goblin Cave"
 END
 CONTROLBAR:ToolTipConstructWildGoblinCave
-"Trains Goblin Warriors, Archers, \n Spearmen and Drummers" 
+"Trains Goblin Warriors, Archers and Spearmen." 
 END
 
 CONTROLBAR:ConstructWildGoblinFissure
 "Build Fissure"
 END
 CONTROLBAR:ToolTipConstructWildGoblinFissure
-"Constructs Catapults \n Researches weapon and armor upgrades"
+"Constructs Catapults. \n Researches weapon and armor upgrades."
 END
 
 CONTROLBAR:ConstructWildSpiderPit
 "Build Troll Cave"
 END
 CONTROLBAR:ToolTipConstructWildSpiderPit
-"Trains Hill Trolls and Cave Trolls \n Researches Venom Sacs upgrade"
+"Trains Hill Trolls and Cave Trolls. \n Researches Venom Sacs upgrade."
 END
 
 CONTROLBAR:ConstructWildWolfDen
 "Build Wolf Den"
 END
 CONTROLBAR:ToolTipConstructWildWolfDen
-"Trains Goblin Wolf Riders \n and Goblin Warg Riders"
+"Trains Goblin Wolf Riders and Warg Riders."
 END
 
 CONTROLBAR:ConstructWildTreasureTrove
 "Build Treasure Trove"
 END
 CONTROLBAR:ToolTipConstructWildTreasureTrove
-"Researches Banner Carrier upgrade, \n Moria Vaults upgrade and Demonic Tribute ability."
+"Researches Banner Carrier upgrade, \n Moria Vaults and Demonic Tribute ability."
 END
 
 CONTROLBAR:ConstructWildFortress
@@ -15451,7 +15451,7 @@ CONTROLBAR:ConstructWildPorter
 "Builder"
 END
 CONTROLBAR:ToolTipConstructWildPorter
-"Send forth a Builder \n Builds Moria structures"
+"Send forth a builder. \n Builds Moria structures."
 END
 
 // Ent Buildings
@@ -15585,7 +15585,7 @@ CONTROLBAR:Earthquake
 End
 
 CONTROLBAR:ToolTipEarthquake
-"Creates an Earthquake on an area of terrain, \n causing massive damage to structures \n Left click icon then left click on target area"
+"Creates an earthquake on an area of terrain, \n causing massive damage to structures. \n \n Left click icon then left click on target area."
 END
 
 CONTROLBAR:Conquer
@@ -28314,7 +28314,7 @@ CONTROLBAR:ConstructWildSentryTower
 END
 
 CONTROLBAR:ToolTipConstructWildSentryTower
-"Defensive Arrow Tower \n \n Can be garrisoned with archers \n to increase damage output"
+"Defensive Arrow Tower. \n \n Can be garrisoned with archers \n to increase damage output."
 END
 
 
@@ -31704,11 +31704,11 @@ CONTROLBAR:ToolTipConstructIsengardLumberMill
 END
 
 CONTROLBAR:ConstructIsengardWargSentry
-"Build Warg Sentr&y"
+"Build Warg Sentry"
 END
 
 CONTROLBAR:ToolTipConstructIsengardWargSentry
-"Defensive warg that will attack nearby enemies"
+"Defensive wargs that will attack nearby enemies."
 END
 
 CONTROLBAR:ConstructIsengardFortress
@@ -49073,7 +49073,7 @@ CONTROLBAR:Command_ConstructWildWallHub
 "Build Spiked Fence Node"
 END
 CONTROLBAR:TooltipCommand_ConstructWildWallHub
-"Allows the construction of Spiked Fences"
+"Allows the construction of Spiked Fences."
 END
 
 CONTROLBAR:Command_WildWallUpgradeToHub
@@ -56284,7 +56284,7 @@ CONTROLBAR:MoriaSpellbookDeepDrums
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookDeepDrums
-"Targeted allies gain +50% damage and +50% armor"
+"Targeted allies gain \n +50% damage and +50% armor."
 END
 
 CONTROLBAR:MoriaSpellbookPlunder
@@ -56292,7 +56292,7 @@ CONTROLBAR:MoriaSpellbookPlunder
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookPlunder
-"Enemy target resource structures lose income to your faction"
+"Enemy target resource structure \n lose income to your faction."
 END
 
 CONTROLBAR:MoriaSpellbookCaveBats
@@ -56300,7 +56300,7 @@ CONTROLBAR:MoriaSpellbookCaveBats
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookCaveBats
-"Reveals the shroud and detects stealthed units. Reduces enemy armor and damage with -25%"
+"Reveals the shroud and detects stealthed units. Reduces enemy armor and damage with -25%."
 END
 	
 // Tier 2	
@@ -56310,7 +56310,7 @@ CONTROLBAR:MoriaSpellbookCallTheHorde
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookCallTheHorde
-"Increased Goblin production speed"
+"Increased goblin production speed."
 END
 
 CONTROLBAR:MoriaSpellbookScurry
@@ -56318,7 +56318,7 @@ CONTROLBAR:MoriaSpellbookScurry
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookScurry
-"All goblins permanently gain +10% speed \n Passive power"
+"All goblins permanently gain +10% speed. \n Passive power!"
 END
 
 CONTROLBAR:MoriaScurry
@@ -56330,7 +56330,7 @@ CONTROLBAR:MoriaSpellbookUntamedAllegiance
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookUntamedAllegiance
-"Caster gains control of the targeted lair and associated creatures"
+"Caster gains control of the targeted lair \n and associated creatures."
 END
 
 CONTROLBAR:MoriaSpellbookDeteriorate
@@ -56338,7 +56338,7 @@ CONTROLBAR:MoriaSpellbookDeteriorate
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookDeteriorate
-"Targeted enemy structure slowly falls into decay \n until either the structure has been destroyed \n or a repair spell has been cast on it"
+"Targeted enemy structure slowly falls \n into decay, until either the structure has \n been destroyed, or a repair spell \n has been cast on it."
 END
 
 // Tier 3
@@ -56348,7 +56348,7 @@ CONTROLBAR:MoriaSpellbookShelob
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookShelob
-"Summons the giant spider queen, \n Shelob - guardian of the Pass of Cirith Ungol,  \n under the caster's control"
+"Summons the giant spider queen, \n Shelob - guardian of the Pass of Cirith Ungol,  \n under the caster's control."
 END
 
 CONTROLBAR:MoriaSpellbookDarkness
@@ -56356,7 +56356,7 @@ CONTROLBAR:MoriaSpellbookDarkness
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookDarkness
-"Temporarily covers the entire map in darkness. All ally units gain +25% damage, +50% armor and earn experience 75% faster"
+"Temporarily covers the entire map in darkness. All ally units gain +25% damage, +50% armor and earn experience 75% faster."
 END
 
 CONTROLBAR:MoriaSpellbookWatcher
@@ -56364,7 +56364,7 @@ CONTROLBAR:MoriaSpellbookWatcher
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookWatcher
-"Summons the giant water creature from the gates of Moria, \n killing anyone who comes close"
+"Summons the giant water creature \n from the gates of Moria, \n killing anyone who comes close."
 END
 
 // Tier 4
@@ -56374,7 +56374,7 @@ CONTROLBAR:MoriaSpellbookStoneGiants
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookStoneGiants
-"Summons a group of the extremely powerful Stone Giants of the Misty Mountains under the caster's control"
+"Summons a group of the extremely powerful Stone Giants of the Misty Mountains \n under the caster's control."
 END
 
 CONTROLBAR:MoriaSpellbookAbyss
