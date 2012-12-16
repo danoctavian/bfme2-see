@@ -301,7 +301,7 @@ End
 
 ; ------------------------------------------------------------------------------ GREAT GOBLIN
 ExperienceLevel	WildGreatGoblinLevel10 //WildHeroesGBKLevel10
-	TargetNames					= WildGoblinKing GreatGoblin
+	TargetNames					= WildGoblinKing GreatGoblin WildGoblinKingMounted
 	RequiredExperience			= 1
 	ExperienceAward				= AZOG_LVL10_EXP_AWARD	
 	Rank						= 10
