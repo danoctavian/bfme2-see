@@ -357,7 +357,7 @@ Weapon CaveTrollHeroSmashWeapon
 	PreAttackDelay			= 1900 //2600							; Frame 57 at 1,9 sec
 	PreAttackType			= PER_ATTACK 							; Do the delay each time we attack a new target
 	//PreAttackFX				= FX_GloinShatterPre
-;FireFX					= FX_TrollClubHammerDebris
+	;FireFX					= FX_TrollClubHammerDebris				; FX IS SET IN THE ANIM INSTEAD! (Naz)
 	FiringDuration      		= 1400
 	DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
 	LockWhenUsing			= Yes	

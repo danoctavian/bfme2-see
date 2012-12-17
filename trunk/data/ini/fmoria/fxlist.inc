@@ -9,7 +9,7 @@
 ;------------------------------------------------------------------------------ CAVE TROLL HERO
 FXList FX_TrollClubHammerDebris
 	ParticleSystem
-		Name = TrollClubSmashDust //GloinBlastFinalLight
+		Name = TrollClubSmashDust
 		Offset = X:50.0 Y:0.0 Z:60
 		OnlyIfOnLand = Yes
 	End
@@ -28,14 +28,17 @@ FXList FX_TrollClubHammerDebris
 	ParticleSystem
 		Name = GloinShatterShockwave
 		Offset = X:50.0 Y:0.0 Z:20.0
+		;OnlyIfOnLand = Yes
 	End
 	ParticleSystem
 		Name = GloinShatterwave
 		Offset = X:50.0 Y:0.0 Z:15.0
+		OnlyIfOnLand = Yes
 	End
 	ParticleSystem
 		Name = GloinShatterwave2
 		Offset = X:50.0 Y:0.0 Z:15.0
+		OnlyIfOnLand = Yes
 	End
   
   	ParticleSystem
@@ -53,6 +56,14 @@ FXList FX_TrollClubHammerDebris
 		Offset = X:50.0 Y:0.0 Z:1.0
 		OnlyIfOnWater = Yes
 	End  
+	ParticleSystem
+		Name = MumakilFootSplash
+		OnlyIfOnWater = Yes
+	End	
+	ParticleSystem
+		Name = EntSplash
+		OnlyIfOnWater = Yes
+	End		
 	
 	Sound
 		Name = GloinShatterHammer
