@@ -168,11 +168,11 @@ AnimationState = DYING BURNINGDEATH
 		AnimationBlendTime = 10
 	End
 	ParticleSysBone = BAT_HEAD FireSmall FollowBone:yes
-	ParticleSysBone = BAT_HEAD FireBuildingLargeSmoke FollowBone:yes
+	ParticleSysBone = BAT_HEAD BurningDeathSmoke FollowBone:yes
 	ParticleSysBone = BAT_SPINE2 FireSmall FollowBone:yes			
-	ParticleSysBone = BAT_SPINE2 FireBuildingLargeSmoke FollowBone:yes
+	ParticleSysBone = BAT_SPINE2 BurningDeathSmoke FollowBone:yes
 	ParticleSysBone = BAT_PELVIS FireSmall FollowBone:yes			
-	ParticleSysBone = BAT_PELVIS FireBuildingLargeSmoke FollowBone:yes		
+	ParticleSysBone = BAT_PELVIS BurningDeathSmoke FollowBone:yes		
 End
 
 AnimationState = DYING SPLATTED
@@ -191,11 +191,11 @@ AnimationState = DYING AFLAME
 		AnimationMode = ONCE
 	End
 	ParticleSysBone = BAT_HEAD FireSmall FollowBone:yes
-	ParticleSysBone = BAT_HEAD FireBuildingLargeSmoke FollowBone:yes
+	ParticleSysBone = BAT_HEAD BurningDeathSmoke FollowBone:yes
 	ParticleSysBone = BAT_SPINE2 FireSmall FollowBone:yes			
-	ParticleSysBone = BAT_SPINE2 FireBuildingLargeSmoke FollowBone:yes
+	ParticleSysBone = BAT_SPINE2 BurningDeathSmoke FollowBone:yes
 	ParticleSysBone = BAT_PELVIS FireSmall FollowBone:yes			
-	ParticleSysBone = BAT_PELVIS FireBuildingLargeSmoke FollowBone:yes		
+	ParticleSysBone = BAT_PELVIS BurningDeathSmoke FollowBone:yes		
 End
 
 AnimationState = DYING
@@ -236,11 +236,11 @@ AnimationState = BURNINGDEATH
 	End
 	Flags = RANDOMSTART
 	ParticleSysBone = BAT_HEAD FireSmall FollowBone:yes
-	ParticleSysBone = BAT_HEAD FireBuildingLargeSmoke FollowBone:yes
+	ParticleSysBone = BAT_HEAD BurningDeathSmoke FollowBone:yes
 	ParticleSysBone = BAT_SPINE2 FireSmall FollowBone:yes			
-	ParticleSysBone = BAT_SPINE2 FireBuildingLargeSmoke FollowBone:yes
+	ParticleSysBone = BAT_SPINE2 BurningDeathSmoke FollowBone:yes
 	ParticleSysBone = BAT_PELVIS FireSmall FollowBone:yes			
-	ParticleSysBone = BAT_PELVIS FireBuildingLargeSmoke FollowBone:yes			
+	ParticleSysBone = BAT_PELVIS BurningDeathSmoke FollowBone:yes			
 End
 
 AnimationState = STUNNED_STANDING_UP

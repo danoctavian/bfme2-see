@@ -115,10 +115,22 @@
 #define WEAPON_RANGE_FORTRESS_EXPANSION_MULT				1.15
 #define WEAPON_RANGE_WALL_UPGRADE_MULT					1.05
 
+;------------------------------------------------------------------------------ SEE!
+#define BURNINGDEATH_WANDERSPEED_INFANTRY					50
+#define BURNINGDEATH_DURATION_INFANTRY						8000 //5000 //5 seconds!
 
+#define BURNINGDEATH_WANDERSPEED_CAVALRY					75
+#define BURNINGDEATH_DURATION_CAVALRY						10000 //7000 //2500 //2,5 seconds!
 
+#define BURNINGDEATH_WANDERSPEED_MUMAK					70
+#define BURNINGDEATH_DURATION_MUMAK						15000 //12000 //6000 it's a cool effect!
 
+#define BURNINGDEATH_WANDERSPEED_ENT						90
+#define BURNINGDEATH_DURATION_ENT							20000 //15000 //6000 it's a cool effect, and the Ents are reeeally burning now, in SEE!... ;)
 
+#define BURNINGDEATH_SINKDELAY_HUMANIOD					15000 	; 15 sec, body stay!
+#define BURNINGDEATH_SINKRATE_HUMANIOD						0.30	; Dist/sec!
+#define BURNINGDEATH_DESTRUCTIONDELAY_HUMANIOD			30000	; 30 sec until body's gone!
 
 
 
@@ -147,18 +159,7 @@
 
 
 
-;------------------------------------------------------------------------------ SEE!
-#define BURNINGDEATH_WANDERSPEED_INFANTRY					50
-#define BURNINGDEATH_DURATION_INFANTRY						8000 //5000 //5 seconds!
 
-#define BURNINGDEATH_WANDERSPEED_CAVALRY					75
-#define BURNINGDEATH_DURATION_CAVALRY						10000 //7000 //2500 //2,5 seconds!
-
-#define BURNINGDEATH_WANDERSPEED_MUMAK					70
-#define BURNINGDEATH_DURATION_MUMAK						15000 //12000 //6000 it's a cool effect!
-
-#define BURNINGDEATH_WANDERSPEED_ENT						90
-#define BURNINGDEATH_DURATION_ENT							20000 //15000 //6000 it's a cool effect, and the Ents are reeeally burning now, in SEE!... ;)
 
 
 
@@ -2168,6 +2169,9 @@
 
 #define NORMAL_WILD_CAVALRY_FAST_HORDE_SPEED			150 //120
 #define NORMAL_WILD_CAVALRY_FAST_MEMBER_SPEED		160 //130	; A little faster so when the formation wheels the unit can catch up.
+
+#define NORMAL_WILD_WOLFPACK_FAST_HORDE_SPEED		160 //120
+#define NORMAL_WILD_WOLFPACK_FAST_MEMBER_SPEED		170 //130	; A little faster so when the formation wheels the unit can catch up.
 
 
 #define NORMAL_ELVEN_INFANTRY_HORDE_SPEED		50
