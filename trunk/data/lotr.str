@@ -31374,14 +31374,14 @@ CONTROLBAR:PurchaseUpgradeWildFortressFireArrows
 "Fire Arrows"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressFireArrows
-"Equips your fortress towers and arrow dens with fire arrows. \n Increases damage done by arrows."
+"Equips your fortress towers \n and arrow dens with fire arrows. \n Increases damage done by arrows."
 END
 
 CONTROLBAR:PurchaseUpgradeWildFortressWebCocoon
 "Web Cocoon"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoon
-"Increases Fortress armor with 50%. \n Pre-requisite to Balrog Monument."
+"Increases Fortress armor with 50%. \n \n Pre-requisite to Balrog Monument."
 END
 
 CONTROLBAR:PurchaseUpgradeWildFortressRazorSpines
@@ -56310,7 +56310,7 @@ CONTROLBAR:MoriaSpellbookCallTheHorde
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookCallTheHorde
-"Increased goblin production speed."
+"Maximized goblin production speed."
 END
 
 CONTROLBAR:MoriaSpellbookScurry
