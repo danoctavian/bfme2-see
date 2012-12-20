@@ -151,6 +151,16 @@ AnimationState = STUNNED_FLAILING
 	Flags = RANDOMSTART
 End
 
+AnimationState = DYING SPLATTED
+	Animation = splat
+		AnimationName = MUGobArch_LNDB
+		AnimationMode = ONCE
+	End
+	EnteringStateFX = FX_HumanBodyGroundHit_SEE ;FX_OrcHitGround
+End
+
+; ------------------------------------------------------------------------------ SEE BURNING DEATH - start	
+
 AnimationState = DYING BURNINGDEATH
 	Animation
 		AnimationName = MUGobArch_DIEA
@@ -162,6 +172,7 @@ AnimationState = DYING BURNINGDEATH
 		AnimationMode = ONCE
 		AnimationBlendTime = 10
 	End
+	Flags = RANDOMSTART
 	ParticleSysBone = BAT_HEAD FireSmall FollowBone:yes
 	ParticleSysBone = BAT_HEAD BurningDeathSmoke FollowBone:yes
 	ParticleSysBone = BAT_SPINE2 FireSmall FollowBone:yes			
@@ -169,22 +180,19 @@ AnimationState = DYING BURNINGDEATH
 	ParticleSysBone = BAT_PELVIS FireSmall FollowBone:yes			
 	ParticleSysBone = BAT_PELVIS BurningDeathSmoke FollowBone:yes		
 End
-
-AnimationState = DYING SPLATTED
-	Animation = splat
-		AnimationName = MUGobArch_LNDB
-		AnimationMode = ONCE
-	End
-	EnteringStateFX = FX_HumanBodyGroundHit_SEE ;FX_OrcHitGround
-End
-
-; ------------------------------------------------------------------------------
 
 AnimationState = DYING AFLAME
-	Animation = Flaming_Death
-		AnimationName = MUGobArch_MFDA
+	Animation
+		AnimationName = MUGobArch_DIEA
 		AnimationMode = ONCE
+		AnimationBlendTime = 10
 	End
+	Animation
+		AnimationName = MUGobArch_DIEB
+		AnimationMode = ONCE
+		AnimationBlendTime = 10
+	End
+	Flags = RANDOMSTART
 	ParticleSysBone = BAT_HEAD FireSmall FollowBone:yes
 	ParticleSysBone = BAT_HEAD BurningDeathSmoke FollowBone:yes
 	ParticleSysBone = BAT_SPINE2 FireSmall FollowBone:yes			
@@ -192,6 +200,22 @@ AnimationState = DYING AFLAME
 	ParticleSysBone = BAT_PELVIS FireSmall FollowBone:yes			
 	ParticleSysBone = BAT_PELVIS BurningDeathSmoke FollowBone:yes		
 End
+
+AnimationState = BURNINGDEATH
+	Animation
+		AnimationName = MUGobArch_MFDA
+		AnimationMode = LOOP
+		Distance = 25
+	End
+	ParticleSysBone = BAT_HEAD FireSmall FollowBone:yes
+	ParticleSysBone = BAT_HEAD BurningDeathSmoke FollowBone:yes
+	ParticleSysBone = BAT_SPINE2 FireSmall FollowBone:yes			
+	ParticleSysBone = BAT_SPINE2 BurningDeathSmoke FollowBone:yes
+	ParticleSysBone = BAT_PELVIS FireSmall FollowBone:yes			
+	ParticleSysBone = BAT_PELVIS BurningDeathSmoke FollowBone:yes			
+End
+
+; ------------------------------------------------------------------------------ SEE BURNING DEATH - end
 
 AnimationState = DYING
 	Animation = Dying_1
@@ -221,21 +245,6 @@ AnimationState = DYING
 		elseif GetClientRandomNumberReal(0,1) > 0.50 then return "Dying_1"
 		else return "Dying_2" end
 	EndScript
-End
-
-AnimationState = BURNINGDEATH
-	Animation
-		AnimationName = MUGobArch_MFDA
-		AnimationMode = LOOP
-		Distance = 25
-	End
-	Flags = RANDOMSTART
-	ParticleSysBone = BAT_HEAD FireSmall FollowBone:yes
-	ParticleSysBone = BAT_HEAD BurningDeathSmoke FollowBone:yes
-	ParticleSysBone = BAT_SPINE2 FireSmall FollowBone:yes			
-	ParticleSysBone = BAT_SPINE2 BurningDeathSmoke FollowBone:yes
-	ParticleSysBone = BAT_PELVIS FireSmall FollowBone:yes			
-	ParticleSysBone = BAT_PELVIS BurningDeathSmoke FollowBone:yes			
 End
 
 AnimationState = STUNNED_STANDING_UP
