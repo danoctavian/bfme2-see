@@ -220,19 +220,16 @@
 #define GOBLIN_DRUM_REFUND_VALUE							75
 
 ; ------------------------------------------------------------------------------ SEE!
-#define GOBLIN_CAVE_BUILDCOST								300
-#define GOBLIN_CAVE_LEVEL2_UPGRADE_COST					800 ;150
+#define GOBLIN_CAVE_BUILDCOST								500		
+#define GOBLIN_CAVE_LEVEL2_UPGRADE_COST					1200	; +50% more expensive than upgradring via units, since it's faster! 
 #define GOBLIN_CAVE_LEVEL2_UPGRADE_BUILDTIME				60
-#define GOBLIN_CAVE_LEVEL3_UPGRADE_COST					800 ;300
-#define GOBLIN_CAVE_LEVEL3_UPGRADE_BUILDTIME				80
-#define	GOBLIN_CAVE_SHROUD_CLEAR							160
-#define	GOBLIN_CAVE_VISION_RANGE							160
-#define GOBLIN_CAVE_HEALTH									20000
-#define GOBLIN_CAVE_HEALTH_DAMAGED						10000
-#define GOBLIN_CAVE_HEALTH_REALLY_DAMAGED					5000
-#define GOBLIN_CAVE_HEALTH_HOLE       						5000.0
-#define	GOBLIN_CAVE_BOUNTY_VALUE							100
-#define GOBLIN_CAVE_LVL2_EXP_NEEDED						800 ;2400
+#define GOBLIN_CAVE_LEVEL3_UPGRADE_COST					1200	; +50% more expensive than upgradring via units, since it's faster!
+#define GOBLIN_CAVE_LEVEL3_UPGRADE_BUILDTIME				60 //90	
+
+#define GOBLIN_CAVE_LVL2_BUILD_SPEED 						1.25	; 10% is EA!
+#define GOBLIN_CAVE_LVL3_BUILD_SPEED 						1.50  	; 25% is EA!
+	
+#define GOBLIN_CAVE_LVL2_EXP_NEEDED						800
 #define GOBLIN_CAVE_LVL3_EXP_NEEDED 						1600
 #define	GOBLIN_CAVE_LVL1_EXP_AWARD 						50
 #define	GOBLIN_CAVE_LVL2_EXP_AWARD 						60
@@ -240,8 +237,14 @@
 #define	GOBLIN_CAVE_LVL2_HP_ADD	 						1500
 #define	GOBLIN_CAVE_LVL3_HP_ADD	 						1500
 
-#define GOBLIN_CAVE_LVL2_BUILD_SPEED 						1.33  
-#define GOBLIN_CAVE_LVL3_BUILD_SPEED 						1.50  
+#define GOBLIN_CAVE_HEALTH									20000
+#define GOBLIN_CAVE_HEALTH_DAMAGED						10000
+#define GOBLIN_CAVE_HEALTH_REALLY_DAMAGED					5000
+#define GOBLIN_CAVE_HEALTH_HOLE       						5000.0
+
+#define	GOBLIN_CAVE_SHROUD_CLEAR							160
+#define	GOBLIN_CAVE_VISION_RANGE							160
+#define	GOBLIN_CAVE_BOUNTY_VALUE							200	
 
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_FISSURE_BUILDCOST							700
@@ -264,14 +267,14 @@
 #define GOBLIN_FISSURE_LVL2_HP_ADD							1500
 #define GOBLIN_FISSURE_LVL3_HP_ADD							1500
 
-#define GOBLIN_FISSURE_LVL2_BUILD_SPEED						1.10 //33
-#define GOBLIN_FISSURE_LVL3_BUILD_SPEED						1.25 //50
+#define GOBLIN_FISSURE_LVL2_BUILD_SPEED						1.00 //10 //33
+#define GOBLIN_FISSURE_LVL3_BUILD_SPEED						1.00 //25 //50
 
 ; ------------------------------------------------------------------------------ SEE!
-#define GOBLIN_SPIDERPIT_BUILDCOST							500
-#define GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_COST				600
+#define GOBLIN_SPIDERPIT_BUILDCOST							1000 	//500
+#define GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_COST				2000	//600
 #define GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_BUILDTIME 			60
-#define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_COST				1500
+#define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_COST				4000	//1500
 #define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_BUILDTIME			80
 #define	GOBLIN_SPIDERPIT_SHROUD_CLEAR						160
 #define	GOBLIN_SPIDERPIT_VISION_RANGE						160
@@ -280,15 +283,15 @@
 #define GOBLIN_SPIDERPIT_HEALTH_REALLY_DAMAGED				5000
 #define GOBLIN_SPIDERPIT_HEALTH_HOLE     					5000.0
 #define	GOBLIN_SPIDERPIT_BOUNTY_VALUE						150
-#define GOBLIN_SPIDERPIT_LVL2_EXP_NEEDED					600
-#define GOBLIN_SPIDERPIT_LVL3_EXP_NEEDED					2100
+#define GOBLIN_SPIDERPIT_LVL2_EXP_NEEDED					2000	//600
+#define GOBLIN_SPIDERPIT_LVL3_EXP_NEEDED					4000	//2100
 #define GOBLIN_SPIDERPIT_LVL1_EXP_AWARD						50
 #define GOBLIN_SPIDERPIT_LVL2_EXP_AWARD						60
 #define GOBLIN_SPIDERPIT_LVL3_EXP_AWARD						70
 #define GOBLIN_SPIDERPIT_LVL2_HP_ADD						1500
 #define GOBLIN_SPIDERPIT_LVL3_HP_ADD						1500
 
-#define GOBLIN_SPIDERPIT_LVL2_BUILD_SPEED					1.33
+#define GOBLIN_SPIDERPIT_LVL2_BUILD_SPEED					1.25
 #define GOBLIN_SPIDERPIT_LVL3_BUILD_SPEED					1.50
 
 #define GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_COST				200 ;SEE!
@@ -317,7 +320,7 @@
 #define GOBLIN_WOLFDEN_LVL2_HP_ADD							1500
 #define GOBLIN_WOLFDEN_LVL3_HP_ADD							1500
 
-#define GOBLIN_WOLFDEN_LVL2_BUILD_SPEED					1.33
+#define GOBLIN_WOLFDEN_LVL2_BUILD_SPEED					1.25
 #define GOBLIN_WOLFDEN_LVL3_BUILD_SPEED					1.50
 
 ; ------------------------------------------------------------------------------ SEE!
@@ -341,8 +344,8 @@
 #define GOBLIN_TREASURETROVE_LVL2_HP_ADD					1500
 #define GOBLIN_TREASURETROVE_LVL3_HP_ADD					1500
 
-#define GOBLIN_TREASURETROVE_LVL2_BUILD_SPEED				1.33 //10
-#define GOBLIN_TREASURETROVE_LVL3_BUILD_SPEED				1.50 //25
+#define GOBLIN_TREASURETROVE_LVL2_BUILD_SPEED				1.00 //10
+#define GOBLIN_TREASURETROVE_LVL3_BUILD_SPEED				1.00 //25
 
 ;------------------------SKULL TOTEM --------------------
 
@@ -357,6 +360,7 @@
 ; ------------------------------------------------------------------------------ SEE!
 #define	GOBLIN_FIGHTER_BUILDCOST							100 //75
 #define	GOBLIN_FIGHTER_BUILDTIME							60 //120 ; weak but fast!
+
 #define	GOBLIN_FIGHTER_DAMAGE								30 ;25 for Hobbits as reference
 #define GOBLIN_FIGHTER_FORGEDBLADES_UPGRADE				40
 #define	GOBLIN_FIGHTER_HEALTH								225
@@ -399,8 +403,9 @@
 #define GOBLIN_ARCHER_DAMAGE_POISON_PIERCE    				50 //25	;20
 
 ; ------------------------------------------------------------------------------ SEE!
-#define	GOBLIN_SPEARMAN_BUILDCOST							100//120 //75
+#define	GOBLIN_SPEARMAN_BUILDCOST							200		; 4 hordes to level up to Goblin Cave lvl3!
 #define	GOBLIN_SPEARMAN_BUILDTIME							60
+
 #define	GOBLIN_SPEARMAN_DAMAGE							50 //30
 #define GOBLIN_SPEARMAN_FORGEDBLADES_UPGRADE				60 //40
 #define	GOBLIN_SPEARMAN_HEALTH								225
@@ -420,8 +425,9 @@
 #define	WILD_MARAUDER_BANNERCARRIER_HEALTH_DAMAGED		1000 //900
 
 ; ------------------------------------------------------------------------------ SEE!
-#define WILD_MARAUDER_BUILDCOST							850 ;450 (increased by armor and weapon upgrade cost)
+#define WILD_MARAUDER_BUILDCOST							400 //850 ;450 (increased by armor and weapon upgrade cost)
 #define WILD_MARAUDER_BUILDTIME							60
+
 #define	WILD_MARAUDER_VISION_RANGE 						250 //175
 #define	WILD_MARAUDER_SHROUD_RANGE						300
 #define	WILD_MARAUDER_HORDE_VISION_RANGE 					175
@@ -549,6 +555,13 @@
 #define CAVETROLLHERO_SMASH_WEAPON_DAMAGE				1500 //4500 //9000
 #define CAVETROLLHERO_SMASH_WEAPON_OUTER_RADIUS			75.0 //150.0 //250.0
 #define CAVETROLLHERO_SMASH_WEAPON_OUTER_DAMAGE			1000 //4500
+
+; ------------------------------------------------------------------------------ SEE!
+#define HILL_TROLL_BUILDCOST								500
+#define HILL_TROLL_BUILDTIME									60
+#define	HILL_TROLL_HEALTH 									4000 
+#define HILL_TROLL_HEALTH_DAMAGED							2000 
+#define HILL_TROLL_HEALTH_RAMPAGE_DAMAGED					500 
 
 ; ------------------------------------------------------------------------------ SEE!
 #define	GREAT_GOBLIN_BUILDCOST								2000
