@@ -16375,26 +16375,26 @@ CONTROLBAR:ConstructWildCaveLevel2Upgrade
 "Upgrade Goblin Cave to level 2"
 END
 CONTROLBAR:ToolTipBuildWildCaveLevel2Upgrade
-"Level 2: +33% faster build speed \n \n Allows training of Goblin Spearmen \n and Goblin Drummers"
+"Level 2: +25% faster build speed. \n \n Allows training of Goblin Spearmen."
 END
 CONTROLBAR:ConstructWildCaveLevel3Upgrade
 "Upgrade Goblin Cave to level 3"
 END
 CONTROLBAR:ToolTipBuildWildCaveLevel3Upgrade
-"Level 3: +50% faster build speed \n \n Allows training of \n The Goblin Guard of Gundabad \n \n Adds defensive Arrow Tower"
+"Level 3: +50% faster build speed. \n \n Allows training of \n The Goblin Guard of Gundabad. \n \n Adds defensive arrow tower."
 END
 
 CONTROLBAR:UpgradeWildFissureLevel2
 "Upgrade Fissure to level 2"
 END
 CONTROLBAR:ToolTipBuildWildFissureLevel2Upgrade
-"Allows research of Scavenged Armor upgrade"
+"Allows research of Scavenged Armor upgrade."
 END
 CONTROLBAR:UpgradeWildFissureLevel3
 "Upgrade Fissure to level 3"
 END
 CONTROLBAR:ToolTipBuildWildFissureLevel3Upgrade
-"Allows research of Flaming Arrows upgrade \n and construction of Catapults"
+"Allows research of Flaming Arrows upgrade \n and construction of Catapults."
 END
 
 CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
@@ -16414,13 +16414,13 @@ CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
 "Upgrade Wolf Den to level 2"
 END
 CONTROLBAR:ToolTipBuildWildWolfDenLevel2Upgrade
-"Level 2: +33% faster build speed \n \n Allows training of Goblin Wolf Riders"
+"Level 2: +25% faster build speed. \n \n Allows training of Goblin Wolf Riders."
 END
 CONTROLBAR:ConstructWildWolfDenLevel3Upgrade
 "Upgrade Wolf Den to level 3"
 END
 CONTROLBAR:ToolTipBuildWildWolfDenLevel3Upgrade
-"Level 3: +50% faster build speed \n \n Allows training of Goblin Warg Riders"
+"Level 3: +50% faster build speed. \n \n Allows training of Goblin Warg Riders."
 END
 
 CONTROLBAR:ConstructWildTreasureTroveLevel2Upgrade

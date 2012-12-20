@@ -221,9 +221,9 @@
 
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_CAVE_BUILDCOST								500		
-#define GOBLIN_CAVE_LEVEL2_UPGRADE_COST					1200	; +50% more expensive than upgradring via units, since it's faster! 
+#define GOBLIN_CAVE_LEVEL2_UPGRADE_COST					800 //1600	; +100% more expensive than upgradring via units, since it's faster! 
 #define GOBLIN_CAVE_LEVEL2_UPGRADE_BUILDTIME				60
-#define GOBLIN_CAVE_LEVEL3_UPGRADE_COST					1200	; +50% more expensive than upgradring via units, since it's faster!
+#define GOBLIN_CAVE_LEVEL3_UPGRADE_COST					1600	; +100% more expensive than upgradring via units, since it's faster!
 #define GOBLIN_CAVE_LEVEL3_UPGRADE_BUILDTIME				60 //90	
 
 #define GOBLIN_CAVE_LVL2_BUILD_SPEED 						1.25	; 10% is EA!
@@ -245,6 +245,37 @@
 #define	GOBLIN_CAVE_SHROUD_CLEAR							160
 #define	GOBLIN_CAVE_VISION_RANGE							160
 #define	GOBLIN_CAVE_BOUNTY_VALUE							200	
+
+; ------------------------------------------------------------------------------ SEE!
+#define GOBLIN_WOLFDEN_BUILDCOST							1000
+#define GOBLIN_WOLFDEN_LEVEL2_UPGRADE_COST				800 //1600
+#define GOBLIN_WOLFDEN_LEVEL2_UPGRADE_BUILDTIME 			60
+#define GOBLIN_WOLFDEN_LEVEL3_UPGRADE_COST				1600
+#define GOBLIN_WOLFDEN_LEVEL3_UPGRADE_BUILDTIME			60
+
+#define GOBLIN_WOLFDEN_LVL2_BUILD_SPEED					1.25
+#define GOBLIN_WOLFDEN_LVL3_BUILD_SPEED					1.50
+
+#define GOBLIN_WOLFDEN_LVL2_EXP_NEEDED						800
+#define GOBLIN_WOLFDEN_LVL3_EXP_NEEDED						1600
+#define GOBLIN_WOLFDEN_LVL1_EXP_AWARD						50
+#define GOBLIN_WOLFDEN_LVL2_EXP_AWARD						60
+#define GOBLIN_WOLFDEN_LVL3_EXP_AWARD						70
+#define GOBLIN_WOLFDEN_LVL2_HP_ADD							1500
+#define GOBLIN_WOLFDEN_LVL3_HP_ADD							1500
+
+#define GOBLIN_WOLFDEN_HEALTH								20000
+#define GOBLIN_WOLFDEN_HEALTH_DAMAGED						10000
+#define GOBLIN_WOLFDEN_HEALTH_REALLY_DAMAGED				5000
+#define GOBLIN_WOLFDEN_HEALTH_HOLE     					5000.0
+
+#define	GOBLIN_WOLFDEN_SHROUD_CLEAR						160
+#define	GOBLIN_WOLFDEN_VISION_RANGE						160
+#define	GOBLIN_WOLFDEN_BOUNTY_VALUE						150
+
+
+
+
 
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_FISSURE_BUILDCOST							700
@@ -271,11 +302,11 @@
 #define GOBLIN_FISSURE_LVL3_BUILD_SPEED						1.00 //25 //50
 
 ; ------------------------------------------------------------------------------ SEE!
-#define GOBLIN_SPIDERPIT_BUILDCOST							1000 	//500
-#define GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_COST				2000	//600
+#define GOBLIN_SPIDERPIT_BUILDCOST							1000 	
+#define GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_COST				1600	
 #define GOBLIN_SPIDERPIT_LEVEL2_UPGRADE_BUILDTIME 			60
-#define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_COST				4000	//1500
-#define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_BUILDTIME			80
+#define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_COST				1600	
+#define GOBLIN_SPIDERPIT_LEVEL3_UPGRADE_BUILDTIME			60
 #define	GOBLIN_SPIDERPIT_SHROUD_CLEAR						160
 #define	GOBLIN_SPIDERPIT_VISION_RANGE						160
 #define GOBLIN_SPIDERPIT_HEALTH								20000
@@ -299,29 +330,7 @@
 #define GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_COST		1000
 #define GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_BUILDTIME	30
 
-; ------------------------------------------------------------------------------ SEE!
-#define GOBLIN_WOLFDEN_BUILDCOST							500
-#define GOBLIN_WOLFDEN_LEVEL2_UPGRADE_COST				600
-#define GOBLIN_WOLFDEN_LEVEL2_UPGRADE_BUILDTIME 			60
-#define GOBLIN_WOLFDEN_LEVEL3_UPGRADE_COST				1500
-#define GOBLIN_WOLFDEN_LEVEL3_UPGRADE_BUILDTIME			80
-#define	GOBLIN_WOLFDEN_SHROUD_CLEAR						160
-#define	GOBLIN_WOLFDEN_VISION_RANGE						160
-#define GOBLIN_WOLFDEN_HEALTH								20000
-#define GOBLIN_WOLFDEN_HEALTH_DAMAGED						10000
-#define GOBLIN_WOLFDEN_HEALTH_REALLY_DAMAGED				5000
-#define GOBLIN_WOLFDEN_HEALTH_HOLE     					5000.0
-#define	GOBLIN_WOLFDEN_BOUNTY_VALUE						150
-#define GOBLIN_WOLFDEN_LVL2_EXP_NEEDED						600
-#define GOBLIN_WOLFDEN_LVL3_EXP_NEEDED						2100
-#define GOBLIN_WOLFDEN_LVL1_EXP_AWARD						50
-#define GOBLIN_WOLFDEN_LVL2_EXP_AWARD						60
-#define GOBLIN_WOLFDEN_LVL3_EXP_AWARD						70
-#define GOBLIN_WOLFDEN_LVL2_HP_ADD							1500
-#define GOBLIN_WOLFDEN_LVL3_HP_ADD							1500
 
-#define GOBLIN_WOLFDEN_LVL2_BUILD_SPEED					1.25
-#define GOBLIN_WOLFDEN_LVL3_BUILD_SPEED					1.50
 
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_TREASURETROVE_BUILDCOST						1000
@@ -446,8 +455,8 @@
 #define	GOBLIN_WARGRIDER_BANNERCARRIER_HEALTH_DAMAGED		500 //900
 
 ; ------------------------------------------------------------------------------ SEE!
-#define GOBLIN_WARGRIDER_BUILDCOST							500 //Isen has 600
-#define GOBLIN_WARGRIDER_BUILDTIME							90 //160 
+#define GOBLIN_WARGRIDER_BUILDCOST							400
+#define GOBLIN_WARGRIDER_BUILDTIME							60 
 #define	GOBLIN_WARGRIDER_VISION_RANGE 						250 //175
 #define	GOBLIN_WARGRIDER_SHROUD_RANGE 					350 //400
 #define	GOBLIN_WARGRIDER_HORDE_VISION_RANGE 				175
@@ -479,8 +488,8 @@
 #define	GOBLIN_WOLFRIDER_BANNERCARRIER_HEALTH_DAMAGED		350 //500 //900
 
 ; ------------------------------------------------------------------------------ SEE!
-#define GOBLIN_WOLFRIDER_BUILDCOST							350 //400
-#define GOBLIN_WOLFRIDER_BUILDTIME							60 //120 //30
+#define GOBLIN_WOLFRIDER_BUILDCOST							200
+#define GOBLIN_WOLFRIDER_BUILDTIME							60
 #define	GOBLIN_WOLFRIDER_VISION_RANGE 						200
 #define	GOBLIN_WOLFRIDER_SHROUD_RANGE 						300
 #define	GOBLIN_WOLFRIDER_HORDE_VISION_RANGE 				175
@@ -493,6 +502,26 @@
 #define GOBLIN_WOLFRIDER_PREATTACKDELAY   					800
 #define GOBLIN_WOLFRIDER_DELAYBETWEENSHOTS 				1000
 #define GOBLIN_WOLFRIDER_BOUNTY_VALUE						7 //10
+
+; ------------------------------------------------------------------------------
+#define WILD_GOLBINWOLF_BUILDCOST                			100
+#define WILD_GOLBINWOLF_BUILDTIME                  		30 	; 20
+#define WILD_GOLBINWOLF_HEALTH                    			250
+#define WILD_GOLBINWOLF_HEALTH_DAMAGED            		100
+#define WILD_GOLBINWOLF_HEALTH_RECOVERY_TIME    			10000
+
+#define WILD_GOLBINWOLF_VISION_RANGE              			175 
+#define WILD_GOLBINWOLF_SHROUD_RANGE              		400 
+
+#define WILD_GOLBINWOLF_HORDE_VISION_RANGE        		175
+#define WILD_GOLBINWOLF_HORDE_SHROUD_RANGE	 			400
+
+#define WILD_GOLBINWOLF_SWORD                      		75
+#define WILD_GOLBINWOLF_SWORD_UPGRADE             		80
+#define WILD_GOLBINWOLF_SWORD_PREATTACKDELAY      		800
+#define WILD_GOLBINWOLF_SWORD_DELAYBETWEENSHOTS  		1000
+#define WILD_GOLBINWOLF_SWORD_FIRINGDURATION     			400
+#define WILD_GOLBINWOLF_BOUNTY_VALUE                		8	; originally 5
 
 ; ------------------------------------------------------------------------------ SEE!
 #define WILD_MOUNTAIN_GIANT_BUILDCOST						2000
@@ -959,27 +988,7 @@
 
 
 
-;------------------------DireWolf---------------------
 
-#define WILD_GOLBINWOLF_BUILDCOST                	250
-#define WILD_GOLBINWOLF_BUILDTIME                  	30 	; 20
-#define WILD_GOLBINWOLF_HEALTH                    	250
-#define WILD_GOLBINWOLF_HEALTH_DAMAGED            	100
-#define WILD_GOLBINWOLF_HEALTH_RECOVERY_TIME    	10000
-
-#define WILD_GOLBINWOLF_VISION_RANGE              	175 
-#define WILD_GOLBINWOLF_SHROUD_RANGE              	400 
-
-#define WILD_GOLBINWOLF_HORDE_VISION_RANGE        	175
-#define WILD_GOLBINWOLF_HORDE_SHROUD_RANGE	 	400
-
-
-#define WILD_GOLBINWOLF_SWORD                      	75
-#define WILD_GOLBINWOLF_SWORD_UPGRADE             	80
-#define WILD_GOLBINWOLF_SWORD_PREATTACKDELAY      	800
-#define WILD_GOLBINWOLF_SWORD_DELAYBETWEENSHOTS  	1000
-#define WILD_GOLBINWOLF_SWORD_FIRINGDURATION     	400
-#define WILD_GOLBINWOLF_BOUNTY_VALUE                	8	; originally 5
 
 
 ;//----------------CORRUPTED WILD FIRE DATA-------------
