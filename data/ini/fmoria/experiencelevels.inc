@@ -6,7 +6,213 @@
 ; ------------------------------------------------------------------------------
 ; NOTE: Keep this organized!
 
-; ------------------------------------------------------------------------------ SEE!
+; ------------------------------------------------------------------------------
+; STRUCTURES								
+; ------------------------------------------------------------------------------
+
+; ------------------------------------------------------------------------------ FORTRESS
+ExperienceLevel	DwarvenFortressLevel1
+	TargetNames			= WildFortressCitadel
+	RequiredExperience	= 1
+	ExperienceAward		= 150
+	Rank				= 1
+	Upgrades				= Upgrade_StructureLevel1
+End
+
+; ------------------------------------------------------------------------------ LUMBER MILL
+ExperienceLevel	WildLumberMillLevel1
+	TargetNames				= WildLumberMill
+	RequiredExperience		= 1
+  	ExperienceAward		  	= WILD_LUMBERMILL_LVL1_EXP_AWARD
+  	ExperienceAwardOwnGuysDie = 0
+	Rank					= 1
+	AttributeModifiers			= BasicLevelUpProduction1
+	Upgrades					= Upgrade_StructureLevel1
+End
+ExperienceLevel	WildLumberMillLevel2
+	TargetNames				= WildLumberMill
+	RequiredExperience		= WILD_LUMBERMILL_LVL2_EXP_NEEDED
+  	ExperienceAward		  	= WILD_LUMBERMILL_LVL2_EXP_AWARD
+  	ExperienceAwardOwnGuysDie = 0
+	Rank					= 2
+	AttributeModifiers			= WildLumbermillLevel2Production WildLumbermillPointModLvl2
+	Upgrades					= Upgrade_StructureLevel2
+	LevelUpFx				= FX:WildLumberMillUpgrade
+End
+ExperienceLevel	WildLumberMillLevel3
+	TargetNames				= WildLumberMill
+	RequiredExperience		= WILD_LUMBERMILL_LVL3_EXP_NEEDED
+  	ExperienceAward		  	= WILD_LUMBERMILL_LVL3_EXP_AWARD
+  	ExperienceAwardOwnGuysDie = 0
+	Rank					= 3
+	AttributeModifiers			= WildLumbermillLevel3Production WildLumbermillPointModLvl3
+	Upgrades					= Upgrade_StructureLevel3
+	LevelUpFx				= FX:WildLumberMillUpgrade
+End	
+
+; ------------------------------------------------------------------------------ CAVE
+ExperienceLevel	WildCaveLevel1
+	TargetNames				= GoblinCave
+	RequiredExperience		= 1
+	ExperienceAward		  	= GOBLIN_CAVE_LVL1_EXP_AWARD	
+	Rank					= 1
+	Upgrades					= Upgrade_StructureLevel1
+End
+ExperienceLevel	WildCaveLevel2
+	TargetNames				= GoblinCave
+	RequiredExperience		= GOBLIN_CAVE_LVL2_EXP_NEEDED
+	ExperienceAward		  	= GOBLIN_CAVE_LVL2_EXP_AWARD
+	Rank					= 2
+	AttributeModifiers			= WildCaveHitPointModLvl2 WildCaveBuildSpeedModLvl2
+	Upgrades					= Upgrade_StructureLevel2 Upgrade_WildCaveLevel2
+	LevelUpFx				= FX:WildCaveUpgrade
+End
+ExperienceLevel	WildCaveLevel3
+	TargetNames				= GoblinCave
+	RequiredExperience		= GOBLIN_CAVE_LVL3_EXP_NEEDED
+	ExperienceAward		  	= GOBLIN_CAVE_LVL3_EXP_AWARD
+	Rank					= 3
+	AttributeModifiers			= WildCaveHitPointModLvl3 WildCaveBuildSpeedModLvl3
+	Upgrades					= Upgrade_StructureLevel3 Upgrade_WildCaveLevel3
+	LevelUpFx				= FX:WildCaveUpgrade
+End	
+
+; ------------------------------------------------------------------------------ FISSURE
+ExperienceLevel	WildFissureLevel1
+	TargetNames				= GoblinFissure
+	RequiredExperience			= 1
+	ExperienceAward		  		= GOBLIN_FISSURE_LVL1_EXP_AWARD	
+	Rank					= 1
+	Upgrades				= Upgrade_StructureLevel1
+End
+ExperienceLevel	WildFissureLevel2
+	TargetNames				= GoblinFissure
+	RequiredExperience			= GOBLIN_FISSURE_LVL2_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_FISSURE_LVL2_EXP_AWARD
+	Rank					= 2
+	AttributeModifiers			= WildFissureHitPointModLvl2 WildFissureBuildSpeedModLvl2
+	Upgrades				= Upgrade_StructureLevel2
+	LevelUpFx				= FX:WildFissureUpgrade
+End
+ExperienceLevel	WildFissureLevel3
+	TargetNames				= GoblinFissure
+	RequiredExperience			= GOBLIN_FISSURE_LVL3_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_FISSURE_LVL3_EXP_AWARD
+	Rank					= 3
+	AttributeModifiers			= WildFissureHitPointModLvl3 WildFissureBuildSpeedModLvl3
+	Upgrades				= Upgrade_StructureLevel3
+	LevelUpFx				= FX:WildFissureUpgrade
+End	
+
+; ------------------------------------------------------------------------------ SPIDER PIT
+ExperienceLevel	WildSpiderPitLevel1
+	TargetNames				= WildSpiderPit
+	RequiredExperience			= 1
+	ExperienceAward		  		= GOBLIN_SPIDERPIT_LVL1_EXP_AWARD	
+	Rank					= 1
+	Upgrades				= Upgrade_StructureLevel1
+End
+ExperienceLevel	WildSpiderPitLevel2
+	TargetNames				= WildSpiderPit
+	RequiredExperience			= GOBLIN_SPIDERPIT_LVL2_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_SPIDERPIT_LVL2_EXP_AWARD
+	Rank					= 2
+	AttributeModifiers			= WildSpiderPitHitPointModLvl2 WildSpiderPitBuildSpeedModLvl2
+	Upgrades				= Upgrade_StructureLevel2
+	LevelUpFx				= FX:WildSpiderPitUpgrade
+End
+ExperienceLevel	WildSpiderPitLevel3
+	TargetNames				= WildSpiderPit
+	RequiredExperience			= GOBLIN_SPIDERPIT_LVL3_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_SPIDERPIT_LVL3_EXP_AWARD
+	Rank					= 3
+	AttributeModifiers			= WildSpiderPitHitPointModLvl3 WildSpiderPitBuildSpeedModLvl3
+	Upgrades				= Upgrade_StructureLevel3
+	LevelUpFx				= FX:WildSpiderPitUpgrade
+End	
+
+; ------------------------------------------------------------------------------ WOLF DEN
+ExperienceLevel	WildWolfDenLevel1
+	TargetNames					= WolfWargPit
+	RequiredExperience			= 1
+	ExperienceAward		  		= GOBLIN_WOLFDEN_LVL1_EXP_AWARD	
+	Rank						= 1
+	Upgrades						= Upgrade_StructureLevel1
+End
+ExperienceLevel	WildWolfDenLevel2
+	TargetNames					= WolfWargPit
+	RequiredExperience			= GOBLIN_WOLFDEN_LVL2_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_WOLFDEN_LVL2_EXP_AWARD
+	Rank						= 2
+	AttributeModifiers				= WildFissureHitPointModLvl2 WildFissureBuildSpeedModLvl2
+	Upgrades						= Upgrade_StructureLevel2
+	LevelUpFx					= FX:WildWolfDenUpgrade
+End
+ExperienceLevel	WildWolfDenLevel3
+	TargetNames					= WolfWargPit
+	RequiredExperience			= GOBLIN_WOLFDEN_LVL3_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_WOLFDEN_LVL3_EXP_AWARD
+	Rank						= 3
+	AttributeModifiers				= WildFissureHitPointModLvl3 WildFissureBuildSpeedModLvl3
+	Upgrades						= Upgrade_StructureLevel3
+	LevelUpFx					= FX:WildWolfDenUpgrade
+End	
+
+; ------------------------------------------------------------------------------ TROVE
+ExperienceLevel	WildTreasureTroveLevel1
+	TargetNames				= WildTreasureTrove
+	RequiredExperience			= 1
+	ExperienceAward		  		= GOBLIN_TREASURETROVE_LVL1_EXP_AWARD	
+	Rank					= 1
+	Upgrades				= Upgrade_StructureLevel1 //Upgrade_WildTreasureTroveScavenger1
+End
+ExperienceLevel	WildTreasureTroveLevel2
+	TargetNames				= WildTreasureTrove
+	RequiredExperience			= GOBLIN_TREASURETROVE_LVL2_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_TREASURETROVE_LVL2_EXP_AWARD
+	Rank					= 2
+	AttributeModifiers			= WildTreasureTroveHitPointModLvl2 WildTreasureTroveBuildSpeedModLvl2
+	Upgrades				= Upgrade_StructureLevel2 //Upgrade_WildTreasureTroveScavenger2
+	LevelUpFx				= FX:WildTreasureTroveUpgrade
+End
+ExperienceLevel	WildTreasureTroveLevel3
+	TargetNames				= WildTreasureTrove
+	RequiredExperience			= GOBLIN_TREASURETROVE_LVL3_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_TREASURETROVE_LVL3_EXP_AWARD
+	Rank					= 3
+	AttributeModifiers			= WildTreasureTroveHitPointModLvl3 WildTreasureTroveBuildSpeedModLvl3
+	Upgrades				= Upgrade_StructureLevel3 //Upgrade_WildTreasureTroveScavenger3
+	LevelUpFx				= FX:WildTreasureTroveUpgrade
+End	
+
+; ------------------------------------------------------------------------------ MINE SHAFT
+ExperienceLevel	WildMineShaftLevel1
+	TargetNames				= WildMineShaft
+	RequiredExperience			= 1
+	ExperienceAward		  		= GOBLIN_MINE_LVL1_EXP_AWARD	
+	Rank					= 1
+	Upgrades				= Upgrade_StructureLevel1
+End
+ExperienceLevel	WildMineShaftLevel2
+	TargetNames				= WildMineShaft
+	RequiredExperience			= GOBLIN_MINE_LVL2_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_MINE_LVL2_EXP_AWARD
+	Rank					= 2
+	LevelUpFx				= FX:WildMineShaftUpgrade
+	Upgrades				= Upgrade_StructureLevel2
+	AttributeModifiers			= WildMineShaftProductionBonus1 WildMineShaftArmorBonus1 WildMineShaftHealthBonus1
+End
+ExperienceLevel	WildMineShaftLevel3
+	TargetNames				= WildMineShaft
+	RequiredExperience			= GOBLIN_MINE_LVL3_EXP_NEEDED
+	ExperienceAward		  		= GOBLIN_MINE_LVL3_EXP_AWARD
+	Rank					= 3
+	LevelUpFx				= FX:WildMineShaftUpgrade
+	Upgrades				= Upgrade_StructureLevel3
+	AttributeModifiers			= WildMineShaftProductionBonus2 WildMineShaftArmorBonus1 WildMineShaftHealthBonus2
+End
+
+; ------------------------------------------------------------------------------ TROLL DRUM
 ExperienceLevel	WildTrollDrum1	//Based on Gondor's hero statue!
 	TargetNames						=	TrollDrum
 	RequiredExperience				=	1
@@ -24,27 +230,10 @@ ExperienceLevel	WildTrollDrum1	//Based on Gondor's hero statue!
 		MaxSelectedUnits	  			=	40
 	End		
 End	
+
 ; ------------------------------------------------------------------------------
-
-;------------ Wild ---------------
-ExperienceLevel	WildGenericLevel1	
-	TargetNames						=	Wild  
-	RequiredExperience				=	1
-	ExperienceAward					=	0
-	ExperienceAwardOwnGuysDie		=	0
-	Rank							=	1
-	SelectionDecal
-		Texture						=	decal_I_level1
-		Texture2						=	decal_evil_CO
-		Style						=	SHADOW_MERGE_DECAL
-		OpacityMin					=	80%
-		OpacityMax					=	100%
-		MinRadius					=	HORDE_DECAL_MIN_RADIUS
-		MaxRadius					=	200	
-		MaxSelectedUnits				=	40
-	End	
-END	
-
+; UNITS								
+; ------------------------------------------------------------------------------
 
 ;---------------Fire Drake-------------------------
 ExperienceLevel	FireDrakeLevel10
@@ -375,226 +564,22 @@ ExperienceLevel	WildGolfimbulLevel10
 	End
 End
 
-; --------------- WILD BUILDINGS
-; ------------------------------------------------------------------------------ FORTRESS
-ExperienceLevel	DwarvenFortressLevel1
-	TargetNames				= WildFortressCitadel
-	RequiredExperience		= 1
-	ExperienceAward		  	= 150
-	Rank					= 1
-	Upgrades				= Upgrade_StructureLevel1
-End
+;------------ Wild ---------------
+ExperienceLevel	WildGenericLevel1	
+	TargetNames						=	Wild  
+	RequiredExperience				=	1
+	ExperienceAward					=	0
+	ExperienceAwardOwnGuysDie		=	0
+	Rank							=	1
+	SelectionDecal
+		Texture						=	decal_I_level1
+		Texture2						=	decal_evil_CO
+		Style						=	SHADOW_MERGE_DECAL
+		OpacityMin					=	80%
+		OpacityMax					=	100%
+		MinRadius					=	HORDE_DECAL_MIN_RADIUS
+		MaxRadius					=	200	
+		MaxSelectedUnits				=	40
+	End	
+END	
 
-;------------- WildLumberMill -----------------
-ExperienceLevel	WildLumberMillLevel1
-	TargetNames				= WildLumberMill
-	RequiredExperience			= 1
-  	ExperienceAward		  		= WILD_LUMBERMILL_LVL1_EXP_AWARD
-  	ExperienceAwardOwnGuysDie		= 0
-	Rank					= 1
-	AttributeModifiers			= BasicLevelUpProduction1
-	Upgrades				= Upgrade_StructureLevel1
-End
-
-ExperienceLevel	WildLumberMillLevel2
-	TargetNames				= WildLumberMill
-	RequiredExperience			= WILD_LUMBERMILL_LVL2_EXP_NEEDED
-  	ExperienceAward		  		= WILD_LUMBERMILL_LVL2_EXP_AWARD
-  	ExperienceAwardOwnGuysDie		= 0
-	Rank					= 2
-	AttributeModifiers			= WildLumbermillLevel2Production WildLumbermillPointModLvl2
-	Upgrades				= Upgrade_StructureLevel2
-	LevelUpFx				= FX:WildLumberMillUpgrade
-End
-	
-ExperienceLevel	WildLumberMillLevel3
-	TargetNames				= WildLumberMill
-	RequiredExperience			= WILD_LUMBERMILL_LVL3_EXP_NEEDED
-  	ExperienceAward		  		= WILD_LUMBERMILL_LVL3_EXP_AWARD
-  	ExperienceAwardOwnGuysDie		= 0
-	Rank					= 3
-	AttributeModifiers			= WildLumbermillLevel3Production WildLumbermillPointModLvl3
-	Upgrades				= Upgrade_StructureLevel3
-	LevelUpFx				= FX:WildLumberMillUpgrade
-End	
-
-;------------- Wild Cave ----------------- SEE!
-
-ExperienceLevel	WildCaveLevel1
-	TargetNames				= GoblinCave
-	RequiredExperience		= 1
-	ExperienceAward		  	= GOBLIN_CAVE_LVL1_EXP_AWARD	
-	Rank					= 1
-	Upgrades					= Upgrade_StructureLevel1
-End
-	
-ExperienceLevel	WildCaveLevel2
-	TargetNames				= GoblinCave
-	RequiredExperience		= GOBLIN_CAVE_LVL2_EXP_NEEDED
-	ExperienceAward		  	= GOBLIN_CAVE_LVL2_EXP_AWARD
-	Rank					= 2
-	AttributeModifiers			= WildCaveHitPointModLvl2 WildCaveBuildSpeedModLvl2
-	Upgrades					= Upgrade_StructureLevel2
-	LevelUpFx				= FX:WildCaveUpgrade
-End
-	
-ExperienceLevel	WildCaveLevel3
-	TargetNames				= GoblinCave
-	RequiredExperience		= GOBLIN_CAVE_LVL3_EXP_NEEDED
-	ExperienceAward		  	= GOBLIN_CAVE_LVL3_EXP_AWARD
-	Rank					= 3
-	AttributeModifiers			= WildCaveHitPointModLvl3 WildCaveBuildSpeedModLvl3
-	Upgrades					= Upgrade_StructureLevel3
-	LevelUpFx				= FX:WildCaveUpgrade
-End	
-
-;------------- Wild Fissure -----------------
-
-ExperienceLevel	WildFissureLevel1
-	TargetNames				= GoblinFissure
-	RequiredExperience			= 1
-	ExperienceAward		  		= GOBLIN_FISSURE_LVL1_EXP_AWARD	
-	Rank					= 1
-	Upgrades				= Upgrade_StructureLevel1
-End
-	
-ExperienceLevel	WildFissureLevel2
-	TargetNames				= GoblinFissure
-	RequiredExperience			= GOBLIN_FISSURE_LVL2_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_FISSURE_LVL2_EXP_AWARD
-	Rank					= 2
-	AttributeModifiers			= WildFissureHitPointModLvl2 WildFissureBuildSpeedModLvl2
-	Upgrades				= Upgrade_StructureLevel2
-	LevelUpFx				= FX:WildFissureUpgrade
-End
-	
-ExperienceLevel	WildFissureLevel3
-	TargetNames				= GoblinFissure
-	RequiredExperience			= GOBLIN_FISSURE_LVL3_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_FISSURE_LVL3_EXP_AWARD
-	Rank					= 3
-	AttributeModifiers			= WildFissureHitPointModLvl3 WildFissureBuildSpeedModLvl3
-	Upgrades				= Upgrade_StructureLevel3
-	LevelUpFx				= FX:WildFissureUpgrade
-End	
-
-;------------- Wild SpiderPit -----------------
-
-ExperienceLevel	WildSpiderPitLevel1
-	TargetNames				= WildSpiderPit
-	RequiredExperience			= 1
-	ExperienceAward		  		= GOBLIN_SPIDERPIT_LVL1_EXP_AWARD	
-	Rank					= 1
-	Upgrades				= Upgrade_StructureLevel1
-End
-	
-ExperienceLevel	WildSpiderPitLevel2
-	TargetNames				= WildSpiderPit
-	RequiredExperience			= GOBLIN_SPIDERPIT_LVL2_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_SPIDERPIT_LVL2_EXP_AWARD
-	Rank					= 2
-	AttributeModifiers			= WildSpiderPitHitPointModLvl2 WildSpiderPitBuildSpeedModLvl2
-	Upgrades				= Upgrade_StructureLevel2
-	LevelUpFx				= FX:WildSpiderPitUpgrade
-End
-	
-ExperienceLevel	WildSpiderPitLevel3
-	TargetNames				= WildSpiderPit
-	RequiredExperience			= GOBLIN_SPIDERPIT_LVL3_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_SPIDERPIT_LVL3_EXP_AWARD
-	Rank					= 3
-	AttributeModifiers			= WildSpiderPitHitPointModLvl3 WildSpiderPitBuildSpeedModLvl3
-	Upgrades				= Upgrade_StructureLevel3
-	LevelUpFx				= FX:WildSpiderPitUpgrade
-End	
-
-;------------- Wild WolfDen -----------------
-
-ExperienceLevel	WildWolfDenLevel1
-	TargetNames					= WolfWargPit
-	RequiredExperience			= 1
-	ExperienceAward		  		= GOBLIN_WOLFDEN_LVL1_EXP_AWARD	
-	Rank						= 1
-	Upgrades						= Upgrade_StructureLevel1
-End
-	
-ExperienceLevel	WildWolfDenLevel2
-	TargetNames					= WolfWargPit
-	RequiredExperience			= GOBLIN_WOLFDEN_LVL2_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_WOLFDEN_LVL2_EXP_AWARD
-	Rank						= 2
-	AttributeModifiers				= WildFissureHitPointModLvl2 WildFissureBuildSpeedModLvl2
-	Upgrades						= Upgrade_StructureLevel2
-	LevelUpFx					= FX:WildWolfDenUpgrade
-End
-	
-ExperienceLevel	WildWolfDenLevel3
-	TargetNames					= WolfWargPit
-	RequiredExperience			= GOBLIN_WOLFDEN_LVL3_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_WOLFDEN_LVL3_EXP_AWARD
-	Rank						= 3
-	AttributeModifiers				= WildFissureHitPointModLvl3 WildFissureBuildSpeedModLvl3
-	Upgrades						= Upgrade_StructureLevel3
-	LevelUpFx					= FX:WildWolfDenUpgrade
-End	
-
-
-;------------- Wild TreasureTrove -----------------
-
-ExperienceLevel	WildTreasureTroveLevel1
-	TargetNames				= WildTreasureTrove
-	RequiredExperience			= 1
-	ExperienceAward		  		= GOBLIN_TREASURETROVE_LVL1_EXP_AWARD	
-	Rank					= 1
-	Upgrades				= Upgrade_StructureLevel1 //Upgrade_WildTreasureTroveScavenger1
-End
-	
-ExperienceLevel	WildTreasureTroveLevel2
-	TargetNames				= WildTreasureTrove
-	RequiredExperience			= GOBLIN_TREASURETROVE_LVL2_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_TREASURETROVE_LVL2_EXP_AWARD
-	Rank					= 2
-	AttributeModifiers			= WildTreasureTroveHitPointModLvl2 WildTreasureTroveBuildSpeedModLvl2
-	Upgrades				= Upgrade_StructureLevel2 //Upgrade_WildTreasureTroveScavenger2
-	LevelUpFx				= FX:WildTreasureTroveUpgrade
-End
-	
-ExperienceLevel	WildTreasureTroveLevel3
-	TargetNames				= WildTreasureTrove
-	RequiredExperience			= GOBLIN_TREASURETROVE_LVL3_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_TREASURETROVE_LVL3_EXP_AWARD
-	Rank					= 3
-	AttributeModifiers			= WildTreasureTroveHitPointModLvl3 WildTreasureTroveBuildSpeedModLvl3
-	Upgrades				= Upgrade_StructureLevel3 //Upgrade_WildTreasureTroveScavenger3
-	LevelUpFx				= FX:WildTreasureTroveUpgrade
-End	
-
-;------------- Wild Mine shaft -----------------
-
-ExperienceLevel	WildMineShaftLevel1
-	TargetNames				= WildMineShaft
-	RequiredExperience			= 1
-	ExperienceAward		  		= GOBLIN_MINE_LVL1_EXP_AWARD	
-	Rank					= 1
-	Upgrades				= Upgrade_StructureLevel1
-End
-	
-ExperienceLevel	WildMineShaftLevel2
-	TargetNames				= WildMineShaft
-	RequiredExperience			= GOBLIN_MINE_LVL2_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_MINE_LVL2_EXP_AWARD
-	Rank					= 2
-	LevelUpFx				= FX:WildMineShaftUpgrade
-	Upgrades				= Upgrade_StructureLevel2
-	AttributeModifiers			= WildMineShaftProductionBonus1 WildMineShaftArmorBonus1 WildMineShaftHealthBonus1
-End
-
-ExperienceLevel	WildMineShaftLevel3
-	TargetNames				= WildMineShaft
-	RequiredExperience			= GOBLIN_MINE_LVL3_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_MINE_LVL3_EXP_AWARD
-	Rank					= 3
-	LevelUpFx				= FX:WildMineShaftUpgrade
-	Upgrades				= Upgrade_StructureLevel3
-	AttributeModifiers			= WildMineShaftProductionBonus2 WildMineShaftArmorBonus1 WildMineShaftHealthBonus2
-End

@@ -162,11 +162,6 @@ AnimationState = DYING BURNINGDEATH
 		AnimationMode = ONCE
 		AnimationBlendTime = 10
 	End
-	Animation
-		AnimationName	= MUGobArch_DIEC
-		AnimationMode	= ONCE
-		AnimationBlendTime = 10
-	End
 	ParticleSysBone = BAT_HEAD FireSmall FollowBone:yes
 	ParticleSysBone = BAT_HEAD BurningDeathSmoke FollowBone:yes
 	ParticleSysBone = BAT_SPINE2 FireSmall FollowBone:yes			
@@ -317,13 +312,14 @@ AnimationState = MOVING EMOTION_TERROR
 		Distance = 20
 	End
 	Flags = RANDOMSTART
-	; ParticleSysBone = None InfantryDustTrails
+	ParticleSysBone = None InfantryDustTrails
 End
 
 AnimationState = RAISING_FLAG
 	Animation = CHRA
 		AnimationName = MUGobArch_CHRA
 		AnimationMode = LOOP
+		AnimationSpeedFactorRange	= 0.9 1.1
 	End
 End
 
@@ -345,7 +341,7 @@ AnimationState = MOVING
 		Distance = 20
 	End
 	Flags = RANDOMSTART
-	; ParticleSysBone = None InfantryDustTrails
+	ParticleSysBone = None InfantryDustTrails
 	BeginScript ;script to set transition into moving
 		Prev = CurDrawablePrevAnimationState()
 		if Prev == "STATE_Climbing"  then CurDrawableSetTransitionAnimState("Trans_ClimbingToRunning") return end
@@ -370,6 +366,11 @@ End
 ; ------------------------------------------------------------------------------
 
 AnimationState = FIRING_OR_PREATTACK_B WEAPONSTATE_CLOSE_RANGE
+	Animation = ATKC					; Added for SEE!
+		AnimationName = MUGobArch_ATKC
+		AnimationMode = ONCE
+		UseWeaponTiming = Yes
+	End
 	Animation = ATKB
 		AnimationName = MUGobArch_ATKB
 		AnimationMode = ONCE
@@ -485,16 +486,38 @@ AnimationState = HIT_REACTION HIT_LEVEL_1
 	End
 End
 
-; ------------------------------------------------------------------------------
+; ------------------------------------------------------------------------------ WAR CHANT (for LargeGroupBonus)
 
-AnimationState						= WAR_CHANT
-	Animation						= Chant
-		AnimationName				= MUGobArch_IDLA
-		AnimationMode				= LOOP
-		AnimationSpeedFactorRange	= 0.9 1.1
-	End
-	Flags							= RANDOMSTART RESTART_ANIM_WHEN_COMPLETE
-End
+    AnimationState = WAR_CHANT	; Added for SEE! (Might need SKL.)
+  		Animation = ChantA
+  			AnimationName 	= MUGobArch_CHRA
+  			AnimationMode	= ONCE
+			AnimationSpeedFactorRange	= 0.9 1.1
+  		End
+  		Animation = ChantB
+  			AnimationName 	= MUGobArch_CHRB
+  			AnimationMode 	= ONCE
+			AnimationSpeedFactorRange	= 0.9 1.1
+  		End
+  		Animation = ChantC
+  			AnimationName 	= MUGobArch_CHRC
+  			AnimationMode 	= ONCE
+			AnimationSpeedFactorRange	= 0.9 1.1
+  		End
+		Animation = IdleC
+  			AnimationName 	= MUGobArch_IDLC
+  			AnimationMode 	= ONCE
+  		End
+  		Animation = IdleD
+  			AnimationName 	= MUGobArch_IDLD
+  			AnimationMode 	= ONCE
+  		End
+  		Animation = IdleE
+  			AnimationName 	= MUGobArch_IDLE
+  			AnimationMode 	= ONCE
+  		End
+  		Flags = RANDOMSTART RESTART_ANIM_WHEN_COMPLETE
+  	End
 
 AnimationState						= EMOTION_AFRAID
 	Animation						= FERA
@@ -543,7 +566,7 @@ End
 
 AnimationState						= EMOTION_CELEBRATING
 	Animation						= CHRA
-		AnimationName				= MUGobArch_CHRA
+		AnimationName				= MUGobArch_CHRB //A
 		AnimationMode				= LOOP
 		AnimationSpeedFactorRange	= 0.9 1.1
 	End

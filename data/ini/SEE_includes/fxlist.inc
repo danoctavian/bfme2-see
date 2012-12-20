@@ -714,15 +714,18 @@ FXList FX_InfiniteGenericLeadership_SEE
     ; Color = R:75 G:50 B:0
   ; End
   ParticleSystem
-    Name = EvilLeadership_SEE ;SpellWarChantReceive ;
+    Name = EvilLeadershipFX_SEE ;SpellWarChantReceive
     Offset = X:0.0 Y:0.0 Z:3.0
+  End
+  Sound
+    Name = MoriaGoblinsDrummerArrives_SEE
   End
 End
 ; ----------------------------------------------
 FXList FX_GenericBuffStop_SEE
   BuffNugget
   	BuffType = Buff
-  	BuffLifeTime = 0
+  	BuffLifeTime = 30000 //0			; No response?
   End
 End
 

@@ -986,12 +986,12 @@ FXParticleSystem UpgradeBuildingEvilFortressRipples ;_SEE
 End
 
 ;---------------------------------------------------
-FXParticleSystem EvilLeadership_SEE  ;right now the LargeGroupBonus
+FXParticleSystem EvilLeadershipFX_SEE  ;right now the LargeGroupBonus
   System
     Priority = ALWAYS_RENDER
     ParticleName = EXHPicsubtle.tga
     Lifetime = 80 80 ;40 40
-    SystemLifetime = 1
+    SystemLifetime = 5 //1
     SortLevel = 1
     BurstDelay = 2 2
     BurstCount = 1 1
