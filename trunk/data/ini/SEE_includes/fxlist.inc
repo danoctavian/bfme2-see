@@ -174,12 +174,12 @@ FXList FX_HumanBodyGroundHit_SEE
 		Name = BodyFallOrc
 	End
 	ParticleSystem
-		Name =  TrollBashDust ;TrollClubHitDust ;HumanBodyImpactDustFX_SEE ;TrollRockBounce ;TrollSplatDust
+		Name =  HumanBodyImpactDustFX_SEE //TrollBashDust ;TrollClubHitDust ;HumanBodyImpactDustFX_SEE ;TrollRockBounce ;TrollSplatDust
 		Offset = X:0.0 Y:0.0 Z:1.0
-    ; OrientToObject = Yes
-    OnlyIfOnLand = Yes
+		;OrientToObject = Yes
+		OnlyIfOnLand = Yes
 	End
-  ParticleSystem
+	ParticleSystem
 		Name = ProjectileSplash01
 		Offset = X:0.0 Y:0.0 Z:1.0
 		OnlyIfOnWater = Yes
@@ -194,19 +194,19 @@ FXList FX_HumanBodyGroundHit_SEE
 		; Offset = X:0.0 Y:0.0 Z:1.0
 		; OnlyIfOnWater = Yes
 	; End
-  ViewShake 
-    Type = SUBTLE ;NONE
-  End
+  //ViewShake 
+  //  Type = SUBTLE ;NONE
+  //End
 End
 FXList FX_HorseBodyGroundHit_SEE
 	; Sound
 		; Name = ImpactEntRock ;TrollBodyfall ;BodyFallOrc
 	; End
 	ParticleSystem
-		Name =  TrebuchetImpactDust ;HorseBodyImpactDustFX_SEE ;TrollClubHitDust
-    Offset = X:0.0 Y:0.0 Z:5.0
-    ; OrientToObject = Yes
-    OnlyIfOnLand = Yes
+		Name =  HorseBodyImpactDustFX_SEE //TrebuchetImpactDust ;HorseBodyImpactDustFX_SEE ;TrollClubHitDust
+		Offset = X:0.0 Y:0.0 Z:5.0
+		;OrientToObject = Yes
+		OnlyIfOnLand = Yes
 	End
   ParticleSystem
 		Name = ProjectileSplash01
@@ -224,7 +224,7 @@ FXList FX_HorseBodyGroundHit_SEE
 		OnlyIfOnWater = Yes
 	End
   ViewShake 
-    Type = NORMAL ;SUBTLE
+    Type = SUBTLE //NORMAL ;SUBTLE
   End
 End
 
