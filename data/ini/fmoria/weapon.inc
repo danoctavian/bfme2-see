@@ -1498,36 +1498,36 @@ End
 
 ;------------------------------------------------------------------------------
 Weapon FireDrakeFlame
-	AttackRange			= FIREDRAKE_FLAME_RANGE
+	AttackRange				= FIREDRAKE_FLAME_RANGE
 	WeaponSpeed			= FIREDRAKE_FLAME_SPEED
-	MinWeaponSpeed		= FIREDRAKE_FLAME_MINSPEED
-	MaxWeaponSpeed		= FIREDRAKE_FLAME_MAXSPEED
-	;FireFX				= FX_DrakeFireNormalAttack
-	ScaleWeaponSpeed	= No
-	HitPercentage		= 100
-	ScatterRadius		= 0
+	MinWeaponSpeed			= FIREDRAKE_FLAME_MINSPEED
+	MaxWeaponSpeed			= FIREDRAKE_FLAME_MAXSPEED
+	;FireFX					= FX_DrakeFireNormalAttack
+	ScaleWeaponSpeed		= No
+	HitPercentage				= 100
+	ScatterRadius				= 0
 
-	AcceptableAimDelta	= 0	; prevent twitchy reaiming in horde on horde
-	DelayBetweenShots   = 3000      ;FIREDRAKE_FLAME_DELAYBETWEENSHOTS
-	PreAttackDelay      = FIREDRAKE_FLAME_PREATTACKDELAY
-	PreAttackRandomAmount     = 0
-	PreAttackType       = PER_POSITION
-	FiringDuration      = 1400     ;FIREDRAKE_FLAME_FIRINGDURATION
-    MeleeWeapon			= Yes
+	AcceptableAimDelta		= 0	; prevent twitchy reaiming in horde on horde
+	DelayBetweenShots   		= 3000      ;FIREDRAKE_FLAME_DELAYBETWEENSHOTS
+	PreAttackDelay     		= FIREDRAKE_FLAME_PREATTACKDELAY
+	PreAttackRandomAmount	= 0
+	PreAttackType       		= PER_POSITION
+	FiringDuration      		= 1400     ;FIREDRAKE_FLAME_FIRINGDURATION
+    MeleeWeapon				= Yes
 
-	ClipSize			= 1
-	AutoReloadsClip		= Yes
-	AutoReloadWhenIdle	= 1	
-	ClipReloadTime		= 2000
-	ContinuousFireOne	= 0
-	ContinuousFireCoast	= FIREDRAKE_FLAME_RELOADTIME_MAX 
+	ClipSize					= 1
+	AutoReloadsClip			= Yes
+	AutoReloadWhenIdle		= 1	
+	ClipReloadTime			= 2000
+	ContinuousFireOne			= 0
+	ContinuousFireCoast		= FIREDRAKE_FLAME_RELOADTIME_MAX 
 
-	AntiAirborneVehicle	= No
-	AntiAirborneMonster	= No
+	AntiAirborneVehicle		= No
+	AntiAirborneMonster		= No
 	HitPassengerPercentage	= 20%
 	CanBeDodged				= No ; Will check for a DodgePercent on the target to have a second chance at failing HitPercent
 		
-	ProjectileStreamName	= FlamethrowerProjectileStream
+	ProjectileStreamName		= FlamethrowerProjectileStream
 	
 	ProjectileNugget
 		ProjectileTemplateName	= FireDrakeProjectile
@@ -1537,15 +1537,15 @@ End
 
 ;----------------------------
 Weapon FireDrakeWarhead
-  	RadiusDamageAffects	= ENEMIES 
-	HitStoredTarget		= Yes	; Always hits initial target.
+  	RadiusDamageAffects		= ENEMIES 
+	HitStoredTarget			= Yes	; Always hits initial target.
   	DamageNugget                        ; A basic Nugget that just does damage
-		Damage			= FIREDRAKE_FLAME_DAMAGE
-		Radius			= FIREDRAKE_FLAME_RADIUS	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
-		DelayTime		= FIREDRAKE_FLAME_DELAY
-		DamageType		= FLAME
+		Damage				= FIREDRAKE_FLAME_DAMAGE
+		Radius				= FIREDRAKE_FLAME_RADIUS	; HitStoredTarget means we hurt the person we launched at.  And nobody else.  So a miss hurts nobody.
+		DelayTime			= FIREDRAKE_FLAME_DELAY
+		DamageType			= FLAME
 		DamageFXType		= FLAME
-		DeathType		= BURNED
+		DeathType			= BURNED
 	End
 	;FireLogicNugget
 	;	LogicType		= INCREASE_FUEL
@@ -1570,16 +1570,16 @@ End
 
 ;----------------------------
 Weapon FireDrakeInferno		; BALANCE
-	IdleAfterFiringDelay = 0
-	AttackRange = 60.0
-	WeaponSpeed = 401         ; dist/sec 
-	RadiusDamageAffects = ALLIES ENEMIES NOT_SIMILAR
-	DelayBetweenShots = 5000               ; time between shots, msec
-	PreAttackDelay        = 2600
-	PreAttackType         = PER_ATTACK ; Do the delay each time we attack a new target
-	PreAttackFX           = FX_GandalfPreAttackBlast
+	IdleAfterFiringDelay 	= 0
+	AttackRange 		= 60.0
+	WeaponSpeed 		= 401         ; dist/sec 
+	RadiusDamageAffects 	= ALLIES ENEMIES NOT_SIMILAR
+	DelayBetweenShots 	= 5000               ; time between shots, msec
+	PreAttackDelay		= 2600
+	PreAttackType		= PER_ATTACK ; Do the delay each time we attack a new target
+	PreAttackFX			= FX_GandalfPreAttackBlast
 	;FireFX                = FX_FireDrakeInferno ;FX_BalrogBreath ---- commented out for E3, now controled by particle spawning
-	FiringDuration      = 1400
+	FiringDuration      	= 1400
 	DamageDealtAtSelfPosition = Yes 
 
 	DamageNugget                        ; A basic Nugget that just does damage
@@ -1587,7 +1587,7 @@ Weapon FireDrakeInferno		; BALANCE
 		Radius			= FIREDRAKE_INFERNO_RADIUS
 		DelayTime		= 1000
 		DamageType		= FLAME
-		DamageFXType		= FLAME
+		DamageFXType	= FLAME
 		DeathType		= BURNED
 		DamageArc		= 90
 		DamageMaxHeight = 50 ;We won't hurt something far above us.  Birds fly at around 100

@@ -2,20 +2,20 @@
 
 ;############################################################;Sûlherokhh mod start
 ;-------------Added for SEE since almost all units use this.
-  Behavior = SlowDeathBehavior ModuleTag_FallingDeathHumanBody
+	Behavior = SlowDeathBehavior ModuleTag_FallingDeathHumanBody
     DeathTypes          = NONE +NORMAL
-    SinkDelay           	= 3000
-		SinkRate 		= 0.60     ; in Dist/Sec
-		DestructionDelay 	= 10000
-    DeathFlags			= DEATH_5     ; Controls animation and weapon choice. Sets BOTH model condition and object status bits.
-    ; FX					= INITIAL FX_HumanBodyGroundHit_SEE
-    ShadowWhenDead		= Yes      ; Volumetric shadows don't look so bad when sinking into ground
-  End
+		SinkDelay		= BURNINGDEATH_SINKDELAY_HUMANIOD
+		SinkRate			= BURNINGDEATH_SINKRATE_HUMANIOD
+		DestructionDelay	= BURNINGDEATH_DESTRUCTIONDELAY_HUMANIOD
+		DeathFlags		= DEATH_5     ; Controls animation and weapon choice. Sets BOTH model condition and object status bits.
+		;FX				= INITIAL FX_HumanBodyGroundHit_SEE
+		ShadowWhenDead	= Yes      ; Volumetric shadows don't look so bad when sinking into ground
+	End
 	Behavior = FireWeaponWhenDeadBehavior ModuleTag_FallingDeathHumanBodyImpact
     DeathTypes    		= NONE +NORMAL
 		RequiredStatus	= DEATH_5
 		StartsActive	= Yes
-		DelayTime		=  10
+		DelayTime		= 10
 		DeathWeapon		= HumanBodyImpactWarhead_SEE
 		WeaponOffset	= X:0 Y:0 Z:0
 	End
@@ -35,7 +35,7 @@
 		BounceSecondHeight			= 24
 		BounceFirstPercentIndent		= 20%	// Percentage of shot distance control points are placed
 		BounceSecondPercentIndent	= 80%
-	//	GroundHitFX       = FX_HumanBodyGroundHit_SEE
-	//	GroundBounceFX    = FX_HumanBodyGroundHit_SEE
+		GroundHitFX		= FX_HumanBodyGroundHit_SEE
+		GroundBounceFX	= FX_HumanBodyGroundHit_SEE
 	End
 ;############################################################;Sûlherokhh mod end

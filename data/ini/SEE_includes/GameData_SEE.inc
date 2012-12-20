@@ -63,12 +63,6 @@
 #define ARCHER_BOMBARD_SCATTER_RADIUS						60
 #define ARCHER_BOMBARD_FIREARROW_BURNRATEINCREASE			5
 ;------------------------------------------------------------------------------ SEE!
-#define TROOP_AFLAME_DURATION     							1000
-#define TROOP_AFLAME_DAMAGE_AMOUNT  						0
-#define TROOP_AFLAME_DAMAGE_DELAY   						500
-#define TROOP_FLAME_DAMAGE_LIMIT    						0
-#define TROOP_FLAME_DAMAGE_EXPIRATION 					1000
-;------------------------------------------------------------------------------ SEE!
 #define VETERAN_TROOP_FEAR_RESISTANCE						40%
 #define GENERIC_HERO_LEADERSHIP_FEAR_RESISTANCE			20%
 #define GENERIC_STATUE_FEAR_RESISTANCE				    	40%
@@ -116,21 +110,28 @@
 #define WEAPON_RANGE_WALL_UPGRADE_MULT					1.05
 
 ;------------------------------------------------------------------------------ SEE!
+#define TROOP_AFLAME_DURATION     							1000
+#define TROOP_AFLAME_DAMAGE_AMOUNT  						0
+#define TROOP_AFLAME_DAMAGE_DELAY   						500
+#define TROOP_FLAME_DAMAGE_LIMIT    						0
+#define TROOP_FLAME_DAMAGE_EXPIRATION 					1000
+
+;------------------------------------------------------------------------------ SEE!
 #define BURNINGDEATH_WANDERSPEED_INFANTRY					50
-#define BURNINGDEATH_DURATION_INFANTRY						8000 //5000 //5 seconds!
+#define BURNINGDEATH_DURATION_INFANTRY						15000 //8000 //5000 //5 seconds!
 
 #define BURNINGDEATH_WANDERSPEED_CAVALRY					75
-#define BURNINGDEATH_DURATION_CAVALRY						10000 //7000 //2500 //2,5 seconds!
+#define BURNINGDEATH_DURATION_CAVALRY						15000 //10000 //7000 //2500 //2,5 seconds!
 
 #define BURNINGDEATH_WANDERSPEED_MUMAK					70
-#define BURNINGDEATH_DURATION_MUMAK						15000 //12000 //6000 it's a cool effect!
+#define BURNINGDEATH_DURATION_MUMAK						20000 //15000 //12000 //6000 it's a cool effect!
 
 #define BURNINGDEATH_WANDERSPEED_ENT						90
 #define BURNINGDEATH_DURATION_ENT							20000 //15000 //6000 it's a cool effect, and the Ents are reeeally burning now, in SEE!... ;)
 
 #define BURNINGDEATH_SINKDELAY_HUMANIOD					15000 	; 15 sec, body stay!
-#define BURNINGDEATH_SINKRATE_HUMANIOD						0.30	; Dist/sec!
-#define BURNINGDEATH_DESTRUCTIONDELAY_HUMANIOD			30000	; 30 sec until body's gone!
+#define BURNINGDEATH_SINKRATE_HUMANIOD						0.40	; Dist/sec!
+#define BURNINGDEATH_DESTRUCTIONDELAY_HUMANIOD			40000	; 40 sec until body's gone!
 
 
 
