@@ -15,10 +15,10 @@ PlayerTemplate FactionWild
 	StartingBuilding			= WildFortress
 	
 	;------------- NO STARTING UNITS FOR YOU -------
-	;StartingUnit0 		= GoblinArcherHorde 
-	;StartingUnitOffset0 	= X:-60 Y:200 Z:0
+	StartingUnit3 		= FireDrake_Slaved //GoblinArcherHorde 
+	StartingUnitOffset3 	= X:-60 Y:200 Z:0
 	
-	StartingUnit1 		= FireDrake_Slaved //WildPorter 
+	StartingUnit1 		= WildPorter 
 	StartingUnitOffset1 	= X:30 Y:215 Z:0
 	
 	StartingUnit0 			= WildPorter
