@@ -16401,13 +16401,13 @@ CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
 "Upgrade Troll Cave to level 2"
 END
 CONTROLBAR:ToolTipBuildWildSpiderPitLevel2Upgrade
-"Level 2: +33% faster build speed \n \n Allows training of Cave Trolls"
+"Level 2: +25% faster build speed. \n \n Allows training of Cave Trolls."
 END
 CONTROLBAR:ConstructWildSpiderPitLevel3Upgrade
 "Upgrade Troll Cave to level 3"
 END
 CONTROLBAR:ToolTipBuildWildSpiderPitLevel3Upgrade
-"Level 3: +50% faster build speed \n \n Allows recruitment of the Cave Troll of Moria \n Allows research of Spider Venom Sacs"
+"Level 3: +50% faster build speed. \n \n Allows research of Spider Venom Sacs."
 END
 
 CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
@@ -16420,7 +16420,7 @@ CONTROLBAR:ConstructWildWolfDenLevel3Upgrade
 "Upgrade Wolf Den to level 3"
 END
 CONTROLBAR:ToolTipBuildWildWolfDenLevel3Upgrade
-"Level 3: +50% faster build speed. \n \n Allows training of Goblin Warg Riders."
+"Level 3: +50% faster build speed. \n \n Allows training of Goblin Warg Riders. \n \n Adds defensive arrow tower."
 END
 
 CONTROLBAR:ConstructWildTreasureTroveLevel2Upgrade
@@ -24511,7 +24511,7 @@ OBJECT:IsengardArmoryDescription
 END
 
 OBJECT:GoblinCaveDescription
-"Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
+"Level 2: +25% faster build speed. \n Level 3: +50% faster build speed."
 END
 
 APT:BirthDateTitle
@@ -28328,14 +28328,14 @@ OBJECT:WildSpiderPit
 "Troll Cave and Spider Venom Factory"
 END
 OBJECT:WildSpiderPitDescription
-"Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
+"Level 2: +25% faster build speed. \n Level 3: +50% faster build speed."
 END
 
 OBJECT:WildWolfDen
 "Wolf Den"
 END
 OBJECT:WildWolfDenDescription
-"Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
+"Level 2: +25% faster build speed. \n Level 3: +50% faster build speed."
 END
 
 OBJECT:WildSentryTower

@@ -118,7 +118,7 @@ ExperienceLevel	WildSpiderPitLevel2
 	ExperienceAward		  	= GOBLIN_SPIDERPIT_LVL2_EXP_AWARD
 	Rank					= 2
 	AttributeModifiers			= WildSpiderPitHitPointModLvl2 WildSpiderPitBuildSpeedModLvl2
-	Upgrades					= Upgrade_StructureLevel2
+	Upgrades					= Upgrade_StructureLevel2 Upgrade_WildSpiderPitLevel2
 	LevelUpFx				= FX:WildSpiderPitUpgrade
 End
 ExperienceLevel	WildSpiderPitLevel3
@@ -127,7 +127,7 @@ ExperienceLevel	WildSpiderPitLevel3
 	ExperienceAward		  	= GOBLIN_SPIDERPIT_LVL3_EXP_AWARD
 	Rank					= 3
 	AttributeModifiers			= WildSpiderPitHitPointModLvl3 WildSpiderPitBuildSpeedModLvl3
-	Upgrades					= Upgrade_StructureLevel3
+	Upgrades					= Upgrade_StructureLevel3 Upgrade_WildSpiderPitLevel3
 	LevelUpFx				= FX:WildSpiderPitUpgrade
 End	
 
