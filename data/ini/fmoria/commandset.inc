@@ -18,8 +18,8 @@ CommandSet WildPorterCommandSet
 	4  	= Command_PorterConstructWildMineShaft
 	5  	= Command_PorterConstructWildDrum	
 	6  	= Command_PorterConstructWildCave
-	7  	= Command_PorterConstructWildSpiderPit
-	8  	= Command_PorterConstructWildWolfDen 					
+	7  	= Command_PorterConstructWildWolfDen 
+	8  	= Command_PorterConstructWildSpiderPit 					
 	9  	= Command_PorterConstructWildFissure  
 	10 	= Command_PorterConstructWildTreasureTrove 
 	11 	= Command_PorterConstructWildWargSentry
@@ -292,7 +292,7 @@ CommandSet GoblinFissureCommandSet
 	2 	= Command_PurchaseTechnologyWildHeavyArmor
 	3 	= Command_PurchaseTechnologyWildFireArrows
 	4 	= Command_ConstructWildTrollSling
-	5 	= Command_UpgradeWildFissureLevel2
+	;5 	= Command_UpgradeWildFissureLevel2					; Took it out since we don't need it. It does the same as buying the 1st tech...
 	6 	= Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel2
@@ -308,7 +308,6 @@ CommandSet GoblinFissureCommandSetLevel3
 	2 	= Command_PurchaseTechnologyWildHeavyArmor
 	3 	= Command_PurchaseTechnologyWildFireArrows 	
 	4 	= Command_ConstructWildTrollSling
-	;5	= Command_ConstructWildMountainGiant					//TEMP for testing! Will be summon only!
 	6 	= Command_Sell
 End
 

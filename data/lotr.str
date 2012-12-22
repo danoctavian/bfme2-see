@@ -113,7 +113,7 @@ OBJECT:WildDrum
 "Troll Drum"
 End
 OBJECT:WildDrumDescription
-"Allies near the drum gain +25% damage, \n earn experience 25% faster and \n will heal if not under attack. \n \n Reduces the cost of infantry. \n \n Increases command point limit by 25."
+"Allies near the drum gain +25% damage, \n earn experience 25% faster and \n will heal if not under attack. \n \n Reduces the cost of infantry with -5%. \n \n Increases command point limit by 25."
 END
 
 
@@ -15408,7 +15408,7 @@ CONTROLBAR:ConstructWildGoblinCave
 "Build Goblin Cave"
 END
 CONTROLBAR:ToolTipConstructWildGoblinCave
-"Trains Goblin Warriors, Archers and Spearmen." 
+"Trains Goblin Warriors, Archers \n and Spearmen." 
 END
 
 CONTROLBAR:ConstructWildGoblinFissure
