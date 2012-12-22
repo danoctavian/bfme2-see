@@ -134,27 +134,27 @@ End
 ; ------------------------------------------------------------------------------ FISSURE
 ExperienceLevel	WildFissureLevel1
 	TargetNames				= GoblinFissure
-	RequiredExperience			= 1
-	ExperienceAward		  		= GOBLIN_FISSURE_LVL1_EXP_AWARD	
+	RequiredExperience		= 1
+	ExperienceAward		  	= GOBLIN_FISSURE_LVL1_EXP_AWARD	
 	Rank					= 1
-	Upgrades				= Upgrade_StructureLevel1
+	Upgrades					= Upgrade_StructureLevel1
 End
 ExperienceLevel	WildFissureLevel2
 	TargetNames				= GoblinFissure
-	RequiredExperience			= GOBLIN_FISSURE_LVL2_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_FISSURE_LVL2_EXP_AWARD
+	RequiredExperience		= GOBLIN_FISSURE_LVL2_EXP_NEEDED
+	ExperienceAward		  	= GOBLIN_FISSURE_LVL2_EXP_AWARD
 	Rank					= 2
 	AttributeModifiers			= WildFissureHitPointModLvl2 WildFissureBuildSpeedModLvl2
-	Upgrades				= Upgrade_StructureLevel2
+	Upgrades					= Upgrade_StructureLevel2 Upgrade_WildFissureLevel2
 	LevelUpFx				= FX:WildFissureUpgrade
 End
 ExperienceLevel	WildFissureLevel3
 	TargetNames				= GoblinFissure
-	RequiredExperience			= GOBLIN_FISSURE_LVL3_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_FISSURE_LVL3_EXP_AWARD
+	RequiredExperience		= GOBLIN_FISSURE_LVL3_EXP_NEEDED
+	ExperienceAward		  	= GOBLIN_FISSURE_LVL3_EXP_AWARD
 	Rank					= 3
 	AttributeModifiers			= WildFissureHitPointModLvl3 WildFissureBuildSpeedModLvl3
-	Upgrades				= Upgrade_StructureLevel3
+	Upgrades					= Upgrade_StructureLevel3 Upgrade_WildFissureLevel3
 	LevelUpFx				= FX:WildFissureUpgrade
 End	
 
