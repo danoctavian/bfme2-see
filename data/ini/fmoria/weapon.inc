@@ -2061,14 +2061,14 @@ Weapon MoriaCaveTrollRampage // AN ABSOLUTE PAIN TO TIME CORRECTLY!!! This will 
   ClipSize 					= 4 //5 //6                      			; There are 4 hits in total in animation _RPGC (Naz)
   ClipReloadTime 				= 999                 			; Should be maximum 1 sec I guess since there are 30 frames between each hit? ^^ (Naz)
 
-  ; Sequential order of the target positions to follow this list. THIS is where you TIME the 4 attacks of the ramapage! /Naz
+  ; Sequential order of the target positions to follow this list. THIS is where you TIME the 4 attacks of the ramapage! (Naz)
   IgnoreLinearFirstTarget 		= No ;Yes
   LinearTarget 				= X: 0.0   Y: 0.0	T:5
-  LinearTarget 				= X: 25.0  Y: 15.0	T:4 //X: 20.0  Y: 10.0	T:4
-  LinearTarget 				= X: 0.0   Y: 30.0	T:2 ;4 //X: 0.0   Y: 20.0	T:5
-  LinearTarget 				= X:-25.0  Y: -15.0	T:4 ///0 ;1 ;3 //X:-20.0  Y: 0.0	T:5
-  ;LinearTarget = X: 0.0   Y:-30.0	T:0 //X: 0.0   Y:-20.0	T:0
-  ;LinearTarget = X: 0.0   Y: 0.0	T:5
+  LinearTarget 				= X: 25.0  Y: 15.0	T:4 	//X: 20.0  Y: 10.0	
+  LinearTarget 				= X: 0.0   Y: 30.0	T:2 ;4 	//X: 0.0   Y: 20.0	
+  LinearTarget 				= X:-25.0  Y: -15.0	T:2	;5 	//T:0 ;1 ;3 ;4 //X:-20.0  Y: 0.0	
+  ;LinearTarget 				= X: 0.0   Y:-30.0	T:0 	//X: 0.0   Y:-20.0	T:0
+  ;LinearTarget 				= X: 0.0   Y: 0.0	T:5
 
   DamageNugget                        ; A basic Nugget that just does damage
 	;DamageMaxHeightAboveTerrain = 10

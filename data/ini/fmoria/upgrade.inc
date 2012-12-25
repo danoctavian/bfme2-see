@@ -258,8 +258,8 @@ End
 Upgrade Upgrade_TechnologyWildSpiderVenomSacks //WildSpiderVenomSackScience ;change to TechnologyWildSpiderVenomSacks
 	DisplayName			= UPGRADE:WildPoisonBlades //Upgrade:WildVenomSacs
 	Type				= PLAYER
-	BuildCost			= GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_COST
-	BuildTime			= GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_BUILDTIME
+	BuildCost			= WILD_TECH_VENOM_SACKS_BUILDCOST //GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_COST
+	BuildTime			= WILD_TECH_VENOM_SACKS_BUILDTIME //GOBLIN_SPIDERPIT_VENOMSACK_SCIENCE_UPGRADE_BUILDTIME
 	ResearchCompleteEvaEvent	= UpgradeVenomSacsReady
 	SkirmishAIHeuristic		= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
@@ -324,8 +324,8 @@ Upgrade Upgrade_WildSpiderVenomSacks
 	DisplayName			= Upgrade:WildVenomSacs
 	Type				= OBJECT
 	Tooltip				= TOOLTIP:WildVenomSacs
-	BuildCost			= GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_COST
-	BuildTime			= GOBLIN_SPIDERPIT_VENOMSACK_UPGRADE_BUILDTIME
+	BuildCost			= WILD_PERSONAL_VENOM_SACKS_BUILDCOST
+	BuildTime			= WILD_PERSONAL_VENOM_SACKS_BUILDTIME
 	ResearchSound		= UpgradeVenomSacks //SpiderRiderVoicePoison?
 	UpgradeFX			= FX_PorterDeliverSilverthornArrows //Added for SEE!	
 	RequiredObjectFilter	= NONE +WildSpiderPit	
@@ -364,19 +364,19 @@ End
 Upgrade Upgrade_TechnologyMoriaScavenger
 	DisplayName     	= UPGRADE:WildScavengerTech
 	Type            	= OBJECT
-	BuildCost			= 1
-	BuildTime			= 1		
+	BuildCost			= WILD_TECH_SCAVENGER_BUILDCOST
+	BuildTime			= WILD_TECH_SCAVENGER_BUILDTIME	
 	ResearchCompleteEvaEvent	= TreasureTroveUpgraded //GenericBuildingComplete-Builder //UpgradeScavengedArmorReady
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
 End
 
-	; ------------------------------------------------------------------------------ Conv. into TECH
+; ------------------------------------------------------------------------------ Conv. into TECH
 
 Upgrade Upgrade_TechnologyMoriaDemonicTribute
 	DisplayName       	= UPGRADE:WildDemonicTribute
 	Type              	= PLAYER
-	BuildCost			= 1	
-	BuildTime			= 1	
+	BuildCost			= WILD_TECH_DEMONIC_TRIBUTE_BUILDCOST	
+	BuildTime			= WILD_TECH_DEMONIC_TRIBUTE_BUILDTIME
 	ResearchCompleteEvaEvent	= TreasureTroveUpgraded //UpgradeBannerCarrierTechnologyReady-Wild
 	SkirmishAIHeuristic 	= AI_UPGRADEHEURISTIC_IMPORTANT	
 End

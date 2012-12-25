@@ -158,32 +158,30 @@ ExperienceLevel	WildFissureLevel3
 	LevelUpFx				= FX:WildFissureUpgrade
 End	
 
-
-
 ; ------------------------------------------------------------------------------ TROVE
 ExperienceLevel	WildTreasureTroveLevel1
 	TargetNames				= WildTreasureTrove
-	RequiredExperience			= 1
-	ExperienceAward		  		= GOBLIN_TREASURETROVE_LVL1_EXP_AWARD	
+	RequiredExperience		= 1
+	ExperienceAward		  	= GOBLIN_TREASURETROVE_LVL1_EXP_AWARD	
 	Rank					= 1
-	Upgrades				= Upgrade_StructureLevel1 //Upgrade_WildTreasureTroveScavenger1
+	Upgrades					= Upgrade_StructureLevel1 
 End
 ExperienceLevel	WildTreasureTroveLevel2
 	TargetNames				= WildTreasureTrove
-	RequiredExperience			= GOBLIN_TREASURETROVE_LVL2_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_TREASURETROVE_LVL2_EXP_AWARD
+	RequiredExperience		= GOBLIN_TREASURETROVE_LVL2_EXP_NEEDED
+	ExperienceAward		  	= GOBLIN_TREASURETROVE_LVL2_EXP_AWARD
 	Rank					= 2
 	AttributeModifiers			= WildTreasureTroveHitPointModLvl2 WildTreasureTroveBuildSpeedModLvl2
-	Upgrades				= Upgrade_StructureLevel2 //Upgrade_WildTreasureTroveScavenger2
+	Upgrades					= Upgrade_StructureLevel2 Upgrade_WildTreasureTroveLevel2
 	LevelUpFx				= FX:WildTreasureTroveUpgrade
 End
 ExperienceLevel	WildTreasureTroveLevel3
 	TargetNames				= WildTreasureTrove
-	RequiredExperience			= GOBLIN_TREASURETROVE_LVL3_EXP_NEEDED
-	ExperienceAward		  		= GOBLIN_TREASURETROVE_LVL3_EXP_AWARD
+	RequiredExperience		= GOBLIN_TREASURETROVE_LVL3_EXP_NEEDED
+	ExperienceAward		  	= GOBLIN_TREASURETROVE_LVL3_EXP_AWARD
 	Rank					= 3
 	AttributeModifiers			= WildTreasureTroveHitPointModLvl3 WildTreasureTroveBuildSpeedModLvl3
-	Upgrades				= Upgrade_StructureLevel3 //Upgrade_WildTreasureTroveScavenger3
+	Upgrades					= Upgrade_StructureLevel3 Upgrade_WildTreasureTroveLevel3
 	LevelUpFx				= FX:WildTreasureTroveUpgrade
 End	
 
