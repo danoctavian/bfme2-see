@@ -159,16 +159,16 @@ CommandSet WildWallUpgradeNodeCommandSet
 	7 	= Command_StartSelfRepair 
 End
 
-	CommandSet WildCastleWallHubCommandSetAI_SEE
+CommandSet WildCastleWallHubCommandSetAI_SEE
 	1 = Command_WildCastleWallHub_BeginWallSpanAI_SEE	
 	4 = Command_CancelWallSpan
 	6 = Command_Sell
 	End
-	CommandSet WildWallUpgradeNodeCommandSetHoleAI
+CommandSet WildWallUpgradeNodeCommandSetHoleAI
 	1 = Command_WildWallUpgradeToOpeningAI //Command_IsengardWallUpgradeToRegularGate
 	6 = Command_Sell
 	7 = Command_StartSelfRepair
-	End
+End
 
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildLumberMillCommandSetLevel1
@@ -185,33 +185,6 @@ CommandSet WildMineShaftCommandSet
 	5 	= Command_ExitGarrison
 	6 	= Command_Sell
 	12 	= Command_Evacuate ; Added for SEE!	
-End
-
-; ------------------------------------------------------------------------------ SEE!
-CommandSet WildTreasureTroveCommandSet
-	1 = Command_PurchaseTechnologyWildBasicTraining
-	2 = Command_PurchaseTechnologyMoriaScavenger
-	3 = Command_PurchaseTechnologyMoriaDemonicTribute
-	9 = Command_FireWeaponMoriaDemonicTribute
-	5 = Command_PurchaseUpgradeWildTreasureTroveLevel2
-	6 = Command_Sell
-End
-
-CommandSet WildTreasureTroveCommandSetLevel2
-	1 = Command_PurchaseTechnologyWildBasicTraining
-	2 = Command_PurchaseTechnologyMoriaScavenger
-	3 = Command_PurchaseTechnologyMoriaDemonicTribute
-	9 = Command_FireWeaponMoriaDemonicTribute
-	5 = Command_PurchaseUpgradeWildTreasureTroveLevel3
-	6 = Command_Sell
-End
-
-CommandSet WildTreasureTroveCommandSetLevel3
-	1 = Command_PurchaseTechnologyWildBasicTraining
-	2 = Command_PurchaseTechnologyMoriaScavenger
-	3 = Command_PurchaseTechnologyMoriaDemonicTribute
-	9 = Command_FireWeaponMoriaDemonicTribute
-	6 = Command_Sell
 End
 
 ; ------------------------------------------------------------------------------ SEE!
@@ -243,28 +216,6 @@ CommandSet GoblinCaveCommandSetLevel3
 End
 
 ; ------------------------------------------------------------------------------ SEE!
-CommandSet WildSpiderPitCommandSet 			;(Troll Cave in SEE)
-	1 	= Command_ConstructWildHillTrollHorde  					//Command_ConstructWildSpiderlingHorde
-	2 	= Command_ConstructWildCaveTroll 							//Command_ConstructWildSpiderRiderHorde
-	3 	= Command_PurchaseTechnologyWildSpiderVenom			//Command_PurchaseSpiderVenomSackScienceUpgrade
-	4 	= Command_PurchaseUpgradeWildSpiderPitLevel2
-	6 	= Command_Sell
-End
-CommandSet WildSpiderPitCommandSetLevel2
-	1 	= Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
-	2 	= Command_ConstructWildCaveTroll 							//Command_ConstructWildSpiderRiderHorde
-	3 	= Command_PurchaseTechnologyWildSpiderVenom
-	4 	= Command_PurchaseUpgradeWildSpiderPitLevel3
-	6 	= Command_Sell
-End
-CommandSet WildSpiderPitCommandSetLevel3
-	1 	= Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
-	2 	= Command_ConstructWildCaveTroll 							//Command_ConstructWildSpiderRiderHorde
-	3 	= Command_PurchaseTechnologyWildSpiderVenom
-	6 	= Command_Sell
-End
-
-; ------------------------------------------------------------------------------ SEE!
 CommandSet WildWolfDenCommandSet
 	1   = Command_ConstructGoblinWolfHorde
 	2 	= Command_ConstructGoblinWolfRiderHorde
@@ -287,12 +238,34 @@ CommandSet WildWolfDenCommandSetLevel3
 End
 
 ; ------------------------------------------------------------------------------ SEE!
+CommandSet WildSpiderPitCommandSet 			;(Troll Cave in SEE)
+	1 	= Command_ConstructWildHillTrollHorde  					//Command_ConstructWildSpiderlingHorde
+	2 	= Command_ConstructWildCaveTroll 							//Command_ConstructWildSpiderRiderHorde
+	3 	= Command_PurchaseTechnologyWildSpiderVenom			//Command_PurchaseSpiderVenomSackScienceUpgrade
+	4 	= Command_PurchaseUpgradeWildSpiderPitLevel2
+	6 	= Command_Sell
+End
+CommandSet WildSpiderPitCommandSetLevel2
+	1 	= Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
+	2 	= Command_ConstructWildCaveTroll 							//Command_ConstructWildSpiderRiderHorde
+	3 	= Command_PurchaseTechnologyWildSpiderVenom
+	4 	= Command_PurchaseUpgradeWildSpiderPitLevel3
+	6 	= Command_Sell
+End
+CommandSet WildSpiderPitCommandSetLevel3
+	1 	= Command_ConstructWildHillTrollHorde 					//Command_ConstructWildSpiderlingHorde
+	2 	= Command_ConstructWildCaveTroll 							//Command_ConstructWildSpiderRiderHorde
+	3 	= Command_PurchaseTechnologyWildSpiderVenom
+	6 	= Command_Sell
+End
+
+; ------------------------------------------------------------------------------ SEE!
 CommandSet GoblinFissureCommandSet	
 	1 	= Command_PurchaseTechnologyWildForgedBlades
 	2 	= Command_PurchaseTechnologyWildHeavyArmor
 	3 	= Command_PurchaseTechnologyWildFireArrows
 	4 	= Command_ConstructWildTrollSling
-	;5 	= Command_UpgradeWildFissureLevel2					; Took it out since we don't need it. It does the same as buying the 1st tech...
+	5 	= Command_UpgradeWildFissureLevel2					; It does the same as buying the 1st tech... but we need it in case structure is destoyed and you build a new one, when the 1st tech is bought!
 	6 	= Command_Sell
 End
 CommandSet GoblinFissureCommandSetLevel2
@@ -309,6 +282,33 @@ CommandSet GoblinFissureCommandSetLevel3
 	3 	= Command_PurchaseTechnologyWildFireArrows 	
 	4 	= Command_ConstructWildTrollSling
 	6 	= Command_Sell
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandSet WildTreasureTroveCommandSet
+	1 = Command_PurchaseTechnologyWildBasicTraining
+	2 = Command_PurchaseTechnologyMoriaScavenger
+	3 = Command_PurchaseTechnologyMoriaDemonicTribute
+	9 = Command_FireWeaponMoriaDemonicTribute
+	5 = Command_PurchaseUpgradeWildTreasureTroveLevel2		; It does the same as buying the 1st tech... but we need it in case structure is destoyed and you build a new one, when the 1st tech is bought!
+	6 = Command_Sell
+End
+
+CommandSet WildTreasureTroveCommandSetLevel2
+	1 = Command_PurchaseTechnologyWildBasicTraining
+	2 = Command_PurchaseTechnologyMoriaScavenger
+	3 = Command_PurchaseTechnologyMoriaDemonicTribute
+	9 = Command_FireWeaponMoriaDemonicTribute
+	5 = Command_PurchaseUpgradeWildTreasureTroveLevel3
+	6 = Command_Sell
+End
+
+CommandSet WildTreasureTroveCommandSetLevel3
+	1 = Command_PurchaseTechnologyWildBasicTraining
+	2 = Command_PurchaseTechnologyMoriaScavenger
+	3 = Command_PurchaseTechnologyMoriaDemonicTribute
+	9 = Command_FireWeaponMoriaDemonicTribute
+	6 = Command_Sell
 End
 
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
@@ -905,13 +905,13 @@ End
 
 CommandSet WildMountainGiantSentryCommandSet
 	1  = Command_ToggleTrebAutoAcquire
-	3  = Command_BombardEvil
+	2  = Command_BombardEvil
 	14 = Command_Stop
 End
 
 CommandSet WildMountainGiantSentryCommandSetStopBombard
 	1  = Command_ToggleTrebAutoAcquire
-	3  = Command_StopBombard
+	2  = Command_StopBombard
 	14 = Command_Stop
 End
 

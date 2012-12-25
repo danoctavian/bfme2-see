@@ -293,6 +293,7 @@ CommandButton Command_ConstructGoblinFighterHorde
 	Radial				= Yes
 	InPalantir	   		= Yes
 	ShowProductionCount	= Yes
+	;LacksPrerequisiteLabel	= CONTROLBAR:LackPrereqsForGoblinFighterHorde	; No worky?
 End
 
 ; ------------------------------------------------------------------------------ SEE!
@@ -308,7 +309,7 @@ CommandButton Command_ConstructGoblinSpearmanHorde
 	Radial				= Yes
 	InPalantir	   		= Yes
 	ShowProductionCount	= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Cave	
+	;LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Cave	
 End
 
 ; ------------------------------------------------------------------------------ SEE!
@@ -323,9 +324,8 @@ CommandButton Command_ConstructWildMarauderHorde
 	DescriptLabel			= CONTROLBAR:ToolTipBuildWildMarauderHorde
 	Radial				= Yes
 	InPalantir	   		= Yes
-	ShowProductionCount	= Yes
-	; LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Cave ;; new, mod by Sûlherokhh	
-	LacksPrerequisiteLabel		= TOOLTIP:LackLevelWildTreasureTrove_SEE  ;;
+	ShowProductionCount	= Yes	
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevelWildTreasureTrove_SEE
 End
 
 ; ------------------------------------------------------------------------------ SEE!
@@ -1442,6 +1442,9 @@ End
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ Moria technology 
 ; ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
+	;TextLabel			= CONTROLBAR:ConstructAngmarTrollSling
+	;DescriptLabel       	= CONTROLBAR:ToolTipBuildAngmarTrollSling
+
 CommandButton Command_PurchaseTechnologyWildBasicTraining		//"MORIA BANNER CARRIER"
 	Command				= PLAYER_UPGRADE
 	Options				= CANCELABLE
@@ -1477,19 +1480,6 @@ CommandButton Command_PurchaseTechnologyWildHeavyArmor		//"SCAVENGED ARMOR"
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure
 End
-CommandButton Command_PurchaseTechnologyWildSpiderVenom 		//"VENOM SACS"
-	Command           	= PLAYER_UPGRADE
-	Options			  	= NEED_UPGRADE CANCELABLE	
-	Upgrade           	= Upgrade_TechnologyWildSpiderVenomSacks //Upgrade_WildSpiderVenomSackScience
-	TextLabel         	= CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
-	ButtonImage       	= BWSpiderPit_VenomSacks
-	ButtonBorderType  	= UPGRADE
-	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseTechnologyWildSpiderVenomSacks
-	NeededUpgrade	  	= Upgrade_StructureLevel3 Upgrade_TechnologyWildBasicTraining
-	Radial            	= Yes
-	InPalantir	      	= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacks
-End
 CommandButton Command_PurchaseTechnologyWildFireArrows		//"FLAMING ARROWS" (New generic ability!)
 	Command				= PLAYER_UPGRADE
 	Options				= NEED_UPGRADE CANCELABLE
@@ -1503,6 +1493,19 @@ CommandButton Command_PurchaseTechnologyWildFireArrows		//"FLAMING ARROWS" (New 
 	InPalantir			= Yes
 	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
 End
+CommandButton Command_PurchaseTechnologyWildSpiderVenom 		//"VENOM SACS"
+	Command           	= PLAYER_UPGRADE
+	Options			  	= NEED_UPGRADE CANCELABLE	
+	Upgrade           	= Upgrade_TechnologyWildSpiderVenomSacks //Upgrade_WildSpiderVenomSackScience
+	TextLabel         	= CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
+	ButtonImage       	= BWSpiderPit_VenomSacks
+	ButtonBorderType  	= UPGRADE
+	DescriptLabel     	= CONTROLBAR:ToolTipPurchaseTechnologyWildSpiderVenomSacks
+	NeededUpgrade	  	= Upgrade_StructureLevel3 Upgrade_TechnologyWildBasicTraining
+	Radial            	= Yes
+	InPalantir	      	= Yes
+	LacksPrerequisiteLabel	= TOOLTIP:LackVenomSacks
+End
 
 CommandButton Command_PurchaseTechnologyMoriaScavenger		//"MORIA SCAVENGER" (New passive ability!)
 	Command				= OBJECT_UPGRADE
@@ -1515,7 +1518,7 @@ CommandButton Command_PurchaseTechnologyMoriaScavenger		//"MORIA SCAVENGER" (New
 	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyMoriaScavenger
 	Radial				= Yes
 	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2Fissure
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel2TreasureTrove
 End
 CommandButton Command_SpellBookScavengerMoria				//Not used in SEE, AFAIK? /Naz
 	Command				= SPELL_BOOK
@@ -1955,7 +1958,7 @@ CommandButton Command_PurchaseTechnologyMoriaDemonicTribute
 	DescriptLabel			= CONTROLBAR:ToolTipPurchaseTechnologyMoriaDemonicTribute
 	Radial				= Yes
 	InPalantir			= Yes
-	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3Fissure
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevel3TreasureTrove
 End
 CommandButton Command_FireWeaponMoriaDemonicTribute	
   Command               = SPECIAL_POWER 

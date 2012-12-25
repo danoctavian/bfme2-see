@@ -60,19 +60,19 @@ END
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
 
 TOOLTIP:LackWildBasicTraining
-"Research Banner Carriers at Trove \n to enable this equipment \n \n When equipped, a Banner Carrier \n increases this battalion to level 2"
+"Research Banner Carriers at Trove \n to enable this equipment. \n \n When equipped, a Banner Carrier \n increases this battalion to level 2."
 END
 TOOLTIP:LackWildForgedBlades
-"Research Scavenged Weapons at Fissure \n to enable this equipment \n \n When equipped, increases the damage \n done by melee weapons"
+"Research Scavenged Blades at Fissure \n to enable this equipment. \n \n When equipped, increases the damage \n done by melee weapons."
 END
 TOOLTIP:LackWildHeavyArmor
-"Research Scavenged Armor at Fissure \n to enable this equipment \n \n When equipped, significantly reduces \n the amount of damage taken"
+"Research Scavenged Armor at Fissure \n to enable this equipment. \n \n When equipped, significantly reduces \n the amount of damage taken."
 END
 TOOLTIP:LackVenomSacksTechnology
-"Research Venom Sacs at Troll Cave \n and purchase Banner Carrier \n to enable this equipment \n \n When equipped, weapons inflict poison \n to enemies causing damage over time"
+"Research Venom Sacs at Troll Cave \n and purchase Banner Carrier \n to enable this equipment. \n \n When equipped, weapons inflict poison \n to enemies causing damage over time."
 END
 TOOLTIP:LackWildFireArrows
-"Research Flaming Arrows at Fissure \n to enable this ability \n \n When equipped, hordes can fire \n powerful single shot attacks \n with flaming arrows"
+"Research Flaming Arrows at Fissure \n to enable this equipment. \n \n When equipped, hordes can fire \n powerful single shot attacks \n with flaming arrows."
 END
 
 // いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
@@ -1510,7 +1510,7 @@ END
 
 TOOLTIP:TooltipNotEnoughMoneyToBuild
 // context: Appended to button descriptions for building units, structures, or upgrades that you can't afford.
-"Insufficient funds"
+"Insufficient funds!"
 END
 
 TOOLTIP:TooltipNoMoreCommandPoints
@@ -7372,7 +7372,7 @@ END
 
 GUI:ErrorNoMoreMoney
 // context: used when player tries to click on a build-units button, but doesn't have enough cash to build the unit/upgrade/whatever
-"Insufficient funds."
+"Insufficient funds!"
 END
 
 // context: DO NOT TRANSLATE
@@ -15408,7 +15408,7 @@ CONTROLBAR:ConstructWildGoblinCave
 "Build Goblin Cave"
 END
 CONTROLBAR:ToolTipConstructWildGoblinCave
-"Trains Goblin Warriors, Archers \n and Spearmen." 
+"Trains Goblin Archers, Warriors \n and Spearmen." 
 END
 
 CONTROLBAR:ConstructWildGoblinFissure
@@ -16271,35 +16271,38 @@ CONTROLBAR:ConstructGoblinArcherHorde
 "Goblin Archers"
 END
 CONTROLBAR:ToolTipBuildGoblinArcherHorde
-"Recruit the wild Goblin archers \n from the intracate caves of Moria \n \n Strong vs. Swordsmen"
+"Recruit the wild Goblin archers \n from the intracate caves of Moria. \n \n Strong vs Swordsmen."
 END
 
 CONTROLBAR:ConstructGoblinFighterHorde
 "Goblin Warriors"
 END
 CONTROLBAR:ToolTipBuildGoblinFighterHorde
-"Recruit the wild Goblin warriors \n from the intracate caves of Moria \n \n Requires Scavenged Weapons upgrade \n \n Strong vs. Pikemen"
+"Recruit the wild Goblin warriors \n from the intracate caves of Moria. \n \n Strong vs Pikemen. \n \n Requires Scavenged Blades upgrade."
+END
+CONTROLBAR:LackPrereqsForGoblinFighterHorde
+""
 END
 
 CONTROLBAR:ConstructGoblinSpearmanHorde
 "Goblin Spearmen"
 END
 CONTROLBAR:ToolTipBuildGoblinSpearmanHorde
-"Recruit the wild Goblin spearmen \n from the intracate caves of Moria \n \n Requires level 2 Goblin Cave \n and Scavenged Weapons upgrade \n \n Strong vs. Cavalry"
+"Recruit the wild Goblin spearmen \n from the intracate caves of Moria. \n \n Strong vs Cavalry. \n \n Requires level 2 Goblin Cave \n and Scavenged Blades upgrade."
 END
 
 CONTROLBAR:ConstructWildMarauderHorde
 "Hobgoblins"
 END
 CONTROLBAR:ToolTipBuildWildMarauderHorde
-"Recruit up to 2 units of The Great Goblin's wild hobgoblin elite \n -the Guardians of Gundabad \n \n Requires level 3 Goblin Cave, Fissure \n Scavenged Weapons- and Armor upgrades \n \n Strong vs. most units, incl heroes"
+"Recruit up to 2 units of The Great Goblin's wild hobgoblin elite \n -the Guardians of Gundabad. \n \n Strong vs most units, incl heroes. \n \n Requires level 3 Goblin Cave, Fissure, \n Scavenged Blades and Armor upgrades."
 END
 
 CONTROLBAR:ConstructGoblinCave
 "Build Goblin Cave"
 END
 CONTROLBAR:ToolTipGoblinCave
-"Trains Goblin Warriors, Spearmen \n and Archers"
+"Trains Goblin Warriors, Spearmen \n and Archers."
 END
 
 
@@ -16307,27 +16310,27 @@ CONTROLBAR:ConstructWildHillTrollHorde
 "Hill Trolls"
 End
 CONTROLBAR:ToolTipBuildWildHillTrollHorde
-"Recruit the wild Hill Trolls of Gundabad \n Strong vs. Cavalry"
+"Recruit the wild Hill Trolls of Gundabad. \n Strong vs Cavalry."
 End
 
 CONTROLBAR:ConstructGoblinCaveTroll
 "Cave Troll"
 END
 CONTROLBAR:ToolTipBuildGoblinCaveTroll
-"Recruit the ferocious Cave Trolls of Moria \n Strong vs. Units and Structures \n \n Requires level 2 Troll Cave"
+"Recruit the ferocious Cave Trolls of Moria. \n \n Strong vs units and structures. \n \n Requires level 2 Troll Cave."
 END
 
 CONTROLBAR:ConstructGoblinFissure
 "Build Fissure"
 END
 CONTROLBAR:ToolTipGoblinFissure
-"Trains Spiderlings, Cave Trolls and Mountain Giants"
+"Trains Spiderlings, Cave Trolls and Mountain Giants."
 END
 OBJECT:GoblinFissure
 "Fissure"
 END
 OBJECT:GoblinFissureDescription
-"Researches Moria Technology upgrades"
+"Researches Moria technology upgrades."
 END
 OBJECT:GoblinArcher
 "Goblin Archers"
@@ -16381,7 +16384,7 @@ CONTROLBAR:ConstructWildCaveLevel3Upgrade
 "Upgrade Goblin Cave to level 3"
 END
 CONTROLBAR:ToolTipBuildWildCaveLevel3Upgrade
-"Level 3: +50% faster build speed. \n \n Allows training of \n The Goblin Guard of Gundabad. \n \n Adds defensive arrow tower."
+"Level 3: +50% faster build speed. \n \n Allows training of Hobgoblins. \n \n Adds defensive arrow tower."
 END
 
 CONTROLBAR:UpgradeWildFissureLevel2
@@ -16427,17 +16430,17 @@ CONTROLBAR:ConstructWildTreasureTroveLevel2Upgrade
 "Upgrade Treasure Trove to level 2"
 END
 CONTROLBAR:ToolTipBuildWildTreasureTroveLevel2Upgrade
-"Level 2: Allows research of Moria Vaults"
+"Level 2: Allows research of Moria Vaults."
 END
 CONTROLBAR:ConstructWildTreasureTroveLevel3Upgrade
 "Upgrade Treasure Trove to level 3"
 END
 CONTROLBAR:ToolTipBuildWildTreasureTroveLevel3Upgrade
-"Level 3: Allows research of Demonic Tribute"
+"Level 3: Allows research of Demonic Tribute."
 END
 
 CONTROLBAR:ConstructWildSpiderlingHorde
-"Spider&lings"
+"Spiderlings"
 END
 
 CONTROLBAR:ToolTipBuildWildSpiderlingHorde
@@ -16445,7 +16448,7 @@ CONTROLBAR:ToolTipBuildWildSpiderlingHorde
 END
 
 CONTROLBAR:ConstructWildSpiderRiderHorde
-"Goblin Spide&r Riders"
+"Goblin Spider Riders"
 END
 
 CONTROLBAR:ToolTipBuildWildSpiderRiderHorde
@@ -16453,7 +16456,7 @@ CONTROLBAR:ToolTipBuildWildSpiderRiderHorde
 END
 
 CONTROLBAR:ConstructWildMountainGiant
-"Mountain &Giant"
+"Mountain Giant"
 END
 
 CONTROLBAR:ToolTipBuildWildMountainGiant
@@ -26638,11 +26641,11 @@ APPDATA:PictureFolder
 END
 
 APT:SaveFileDiskFull
-"Insufficient disc space."
+"Insufficient disc space!"
 END
 
 APT:SaveFileDiskFullMultiplayer
-"The other player requested saving the game. However, you have insufficient disc space."
+"The other player requested saving the game. However, you have insufficient disc space!"
 END
 
 FtpError:NoSuchFile
@@ -28137,7 +28140,7 @@ END
 //////////////////////////////
 
 CONTROLBAR:ConstructWildSpiderHolesExpansion
-"Spider Holes Expansion"
+"Spider Den Expansion"
 END
 
 CONTROLBAR:ToolTipConstructWildSpiderHolesExpansion
@@ -28349,7 +28352,7 @@ OBJECT:WildTreasureTrove
 "Treasure Trove"
 END
 OBJECT:WildTreasureTroveDescription
-"Level 2: +33% faster build speed \n Level 3: +50% faster build speed"
+"Researches Moria technology upgrades"
 END
 
 OBJECT:WildFortress
@@ -28393,19 +28396,8 @@ OBJECT:WildGoblinKing
 "Azog"
 END
 
-TOOLTIP:LackLevel3Fissure
-"Requires level 3 Fissure"
-END
-TOOLTIP:LackLevel2Fissure
-"Requires level 2 Fissure"
-END
 
-TOOLTIP:LackLevel3TreasureTrove
-"Requires level 3 Treasure Trove"
-END
-TOOLTIP:LackLevel2TreasureTrove
-"Requires level 2 Treasure Trove"
-END
+
 
 
 
@@ -31708,7 +31700,7 @@ CONTROLBAR:ConstructIsengardWargSentry
 END
 
 CONTROLBAR:ToolTipConstructIsengardWargSentry
-"Defensive wargs that will attack nearby enemies."
+"Defensive wargs will attack nearby enemies."
 END
 
 CONTROLBAR:ConstructIsengardFortress
@@ -41680,13 +41672,6 @@ END
 // ########################################
 // ########################################
 // ########################################
-// ------------------------------------------------------------ 
-CONTROLBAR:PurchaseTechnologyWildFireArrows
-"Research Flaming Arrows"
-END
-CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
-"Allows hordes to acquire Flaming Arrows \n \n When equipped, significantly increases \n the damage done by arrows in \n powerful single shot attacks \n \n Strong vs. structures"
-END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildBasicTraining
 "Research Moria Banner Carriers"
@@ -41696,18 +41681,25 @@ CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildForgedBlades
-"Research Scavenged Weapons"
+"Research Scavenged Blades"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades
 // original //"Allows hordes to acquire Scavenged Weapons \n \n When equipped, increases the damage \n done by melee weapons"
-"Cost: FREE! \n Allows hordes to acquire Scavenged Weapons. \n \n Enables training of Goblin Warriors, \n Spearmen and Wolf Riders"
+"Allows hordes to acquire Scavenged Blades. \n \n Enables training of Goblin Warriors, \n Spearmen and Wolf Riders."
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildHeavyArmor
 "Research Scavenged Armor"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildHeavyArmor
-"Cost: FREE! \n Allows hordes to acquire Scavenged Armor \n \n When equipped, significantly reduces \n the amount of damage taken. \n \n Enables training of Goblin Warg Riders."
+"Allows hordes to acquire Scavenged Armor. \n When equipped, significantly reduces \n the amount of damage taken. \n \n Enables training of Goblin Warg Riders."
+END
+// ------------------------------------------------------------ 
+CONTROLBAR:PurchaseTechnologyWildFireArrows
+"Research Flaming Arrows"
+END
+CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows
+"Allows hordes to acquire Flaming Arrows. \n When equipped, significantly increases \n the damage done by arrows \n in powerful single shot attacks. \n \n Strong vs. structures."
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildSpiderVenomSacks
@@ -41739,49 +41731,65 @@ CONTROLBAR:PurchaseUpgradeWildFireArrows
 "Purchase Flaming Arrows"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrows
-"Upgrades this horde with Flaming Arrows \n When equipped, significantly increases \n the damage done by arrows, \n in powerful single shot attacks"
+"Upgrades this horde with Flaming Arrows. \n When equipped, significantly increases \n the damage done by arrows \n in powerful single shot attacks."
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildBasicTraining
 "Purchase Moria Banner Carrier"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildBasicTraining
-"Increases this horde to level 2 \n (Can only be equipped at level 1) \n \n Pre-requisite to Venom Sacs"
+"Increases this horde to level 2. \n (Can only be equipped at level 1) \n \n Pre-requisite to Venom Sacs."
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildForgedBlade
-"Purchase Scavenged Weapons"
+"Purchase Scavenged Blades"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildForgedBlade
-"Upgrades this horde with Scavenged Weapons \n When equipped, increases the damage done by Melee Weapons"
+"Upgrades this horde with Scavenged Blades. \n When equipped, increases the damage done by melee weapons."
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildHeavyArmor
 "Purchase Scavenged Armor"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildHeavyArmor
-"Upgrades this horde with Scavenged Armor \n When equipped, significantly reduces the amount of damage taken"
+"Upgrades this horde with Scavenged Armor. \n When equipped, significantly reduces the amount of damage taken."
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildVenomBlade
 "Purchase Blade Venom"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildVenomBlade
-"Upgrades this horde's Banner Carrier \n with Venom Sacs \n \n When equipped, weapons inflict poison \n to enemies, causing damage over time"
+"Upgrades this horde's Banner Carrier \n with Venom Sacs. \n \n When equipped, weapons inflict poison \n to enemies, causing damage over time."
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseUpgradeWildVenomArrow
 "Purchase Arrow Venom"
 END
 CONTROLBAR:ToolTipPurchaseUpgradeWildVenomArrow
-"Upgrades this horde's Banner Carrier \n with Venom Sacs \n \n When equipped, arrows inflict poison \n to enemies, causing damage over time"
+"Upgrades this horde's Banner Carrier \n with Venom Sacs. \n \n When equipped, arrows inflict poison \n to enemies, causing damage over time."
 END
 // ------------------------------------------------------------
 // ########################################
 // ########################################
 // ########################################
 // ------------------------------------------------------------
+TOOLTIP:LackLevel2Fissure
+//"Requires level 2 Fissure"
+"Allows hordes to acquire Scavenged Armor. \n When equipped, significantly reduces \n the amount of damage taken. \n \n Enables training of Goblin Warg Riders. \n \n Requires level 2 Fissure."
+END
+TOOLTIP:LackLevel3Fissure
+//"Requires level 3 Fissure"
+"Allows hordes to acquire Flaming Arrows. \n When equipped, significantly increases \n the damage done by arrows in \n powerful single shot attacks. \n \n Strong vs. structures. \n \n Requires level 3 Fissure."
+END
 
+TOOLTIP:LackLevel2TreasureTrove
+//"Requires level 2 Treasure Trove"
+"Allows goblin hordes to stash \n scavanged bounty in the trove. When trove is upgraded, all kills earn extra resources. \n \n Passive power as long as trove is intact. \n \n Requires level 2 Treasure Trove."
+END
+TOOLTIP:LackLevel3TreasureTrove
+//"Requires level 3 Treasure Trove"
+"Enables goblins to pay a massive tribute. \n In return, they gain access to \n ALL Moria Spells. \n \n Requires level 3 Treasure Trove."
+END
 
 
 
@@ -46444,7 +46452,7 @@ TOOLTIP:LackDragonNestWebCocoon
 "Allows summoning of Drogoth, \n -the armored Dragon Lord \n of the Withered Heath \n \n Requires Web Cocoon upgrade"
 END
 TOOLTIP:LackBalrogMonumentWebCocoon
-"Allows summoning of a Balrog, \n - a demon of the ancient world, \n under your control. \n \n Requires Web Cocoon upgrade."
+"Allows summoning of a Balrog, \n - a demon of the ancient world, \n from the depths of Moria, \n under your control. \n \n Requires Web Cocoon upgrade."
 END
 
 TOOLTIP:LackEagleNestEncasingVines
@@ -48245,7 +48253,7 @@ CONTROLBAR:ConstructGoblinWargRiderHorde
 "Goblin Warg Riders"
 END
 CONTROLBAR:ToolTipBuildGoblinWargRiderHorde
-"Recruit up to 4 hordes of the savage \n Goblin Warg Riders of the Misty Mountains. \n \n Requires level 3 Wolf Den, \n Scavenged Weapons and \n Scavanged Armor upgrades. \n \n Strong vs. cavalry and archers."
+"Recruit up to 4 hordes of the savage \n Goblin Warg Riders of the Misty Mountains. \n \n Requires level 3 Wolf Den, \n Scavenged Blades and \n Scavanged Armor upgrades. \n \n Strong vs. cavalry and archers."
 END
 
 // ---
@@ -48260,7 +48268,7 @@ CONTROLBAR:ConstructGoblinWolfRiderHorde
 "Goblin Wolf Riders"
 END
 CONTROLBAR:ToolTipBuildGoblinWolfRiderHorde
-"Recruit up to 8 hordes of the fierce \n Goblin Wolf Riders of the Misty Mountains. \n \n Requires level 2 Wolf Den \n and Scavenged Weapons upgrade. \n \n Strong vs. archers."
+"Recruit up to 8 hordes of the fierce \n Goblin Wolf Riders of the Misty Mountains. \n \n Requires level 2 Wolf Den \n and Scavenged Blades upgrade. \n \n Strong vs. archers."
 END
 
 OBJECT:GoblinWolf
@@ -51519,7 +51527,7 @@ CONTROLBAR:ToolTipBuildAngmarBarracksLevel2Upgrade
 End
 
 CONTROLBAR:TooltipBuildAngmarTrollSling
-"Troll powered siege weapon \n Requires level 3 Fissure \n Strong vs. Structures"
+"Troll powered siege weapon. \n Strong vs structures. \n \n Requires level 3 Fissure."
 End
 
 CONTROLBAR:SpecialAbilityChillSoul
