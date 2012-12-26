@@ -496,6 +496,11 @@ CommandSet WildMountainGiantRockCommandSetStopBombard
 	18  	= Command_SetStanceHoldGround
 End
 
+CommandSet GoblinUpgradeCommandSetBuyNewGiantSentry
+	1 = Command_GoblinPurchaseNewWallGiantSentry
+	6 = Command_Sell	
+End
+
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildShelobCommandSet
   1 = Command_ToggleStance
@@ -1132,11 +1137,22 @@ CommandSet CaveTrollRockCommandSetStopBombard
 	19  	= Command_SetStanceHoldGround
 End
 
+CommandSet WildSpellStoreCommandSet_SEE
+	1 = Command_PurchaseSpellMoriaDeepDrums
+	2 = Command_PurchaseSpellMoriaPlunder
+	3 = Command_PurchaseSpellMoriaCaveBats
 
-//---Goblin Giant Sentry---
-CommandSet GoblinUpgradeCommandSetBuyNewGiantSentry
-	1 = Command_GoblinPurchaseNewWallGiantSentry
-	6 = Command_Sell	
+	4 = Command_PurchaseSpellMoriaCalltheHorde
+	5 = Command_PurchaseSpellMoriaScurry
+	6 = Command_PurchaseSpellMoriaUntamedAllegiance
+	7 =	Command_PurchaseSpellMoriaDeteriorate
+	
+	8 = Command_PurchaseSpellMoriaShelob
+	9 = Command_PurchaseSpellMoriaDarkness
+	10 = Command_PurchaseSpellMoriaWatcher
+	
+	11 = Command_PurchaseSpellMoriaStoneGiants
+	12 = Command_PurchaseSpellMoriaEarthquake
 End
 
 CommandSet WildSpellBookCommandSet_SEE
@@ -1165,21 +1181,4 @@ CommandSet WildSpellBookCommandSet_SEE
 //	18 = Command_SpellBookScavengerMoria
 End
 
-CommandSet WildSpellStoreCommandSet_SEE
-	1 = Command_PurchaseSpellMoriaDeepDrums
-	2 = Command_PurchaseSpellMoriaPlunder
-	3 = Command_PurchaseSpellMoriaCaveBats
-
-	4 = Command_PurchaseSpellMoriaCalltheHorde
-	5 = Command_PurchaseSpellMoriaScurry
-	6 = Command_PurchaseSpellMoriaUntamedAllegiance
-	7 =	Command_PurchaseSpellMoriaDeteriorate
-	
-	8 = Command_PurchaseSpellMoriaShelob
-	9 = Command_PurchaseSpellMoriaDarkness
-	10 = Command_PurchaseSpellMoriaWatcher
-	
-	11 = Command_PurchaseSpellMoriaStoneGiants
-	12 = Command_PurchaseSpellMoriaEarthquake
-End
 
