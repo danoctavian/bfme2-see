@@ -15585,7 +15585,7 @@ CONTROLBAR:Earthquake
 End
 
 CONTROLBAR:ToolTipEarthquake
-"Creates an earthquake on an area of terrain, \n causing massive damage to structures. \n \n Left click icon then left click on target area."
+"Creates an earthquake on an area of terrain, \n causing massive damage to structures \n and killing any units within ground zero. \n \n Left click icon then left click on target area."
 END
 
 CONTROLBAR:Conquer
@@ -56356,7 +56356,7 @@ CONTROLBAR:MoriaSpellbookShelob
 End
 
 CONTROLBAR:ToolTipMoriaSpellbookShelob
-"Summons the giant spider queen, \n Shelob - guardian of the Pass of Cirith Ungol,  \n under the caster's control."
+"Summons the giant spider queen, \n Shelob - guardian of the Pass of Cirith Ungol, \n under the caster's control."
 END
 
 CONTROLBAR:MoriaSpellbookDarkness
