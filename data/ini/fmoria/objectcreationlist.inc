@@ -28,7 +28,6 @@ ObjectCreationList OCL_SpellBookMoriaPlunder
 	End
 End
 
-; ---------------------------------------------------------------------------------------
 ObjectCreationList OCL_SpellBookMoriaCaveBats
 	CreateObject
 		ObjectNames			= WildCaveBats
@@ -39,7 +38,6 @@ ObjectCreationList OCL_SpellBookMoriaCaveBats
 End
 
 ; Tier 2
-
 ; ---------------------------------------------------------------------------------------
 ObjectCreationList OCL_SpellBookMoriaDeteriorate
 	CreateObject
@@ -62,7 +60,6 @@ ObjectCreationList OCL_SpellBookMoriaShelobEgg
 	End
 End
 
-; ---------------------------------------------------------------------------------------
 ObjectCreationList OCL_SpellBookMoriaShelob
 	CreateObject
 		ObjectNames		= WildShelob
@@ -81,12 +78,11 @@ ObjectCreationList OCL_MoriaStoneGiantsEgg
 	CreateObject
 		ObjectNames			= MoriaStoneGiantsEgg
 		Count				= 1
-		FadeIn					= No
+		FadeIn				= No
 		ClearRemovables		= Yes
 	End
 End
 
-; ---------------------------------------------------------------------------------------
 ; Create A bunch of Stone Giants out of thin air. 
 ObjectCreationList OCL_MoriaStoneGiants
 	CreateObject

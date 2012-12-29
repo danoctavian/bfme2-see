@@ -106,7 +106,7 @@ FXParticleSystem SummonStoneGiantsSmoke
     Priority = LOW_OR_ABOVE
     Shader = ALPHA
     ParticleName = EXsmokeplume.tga
-    Lifetime = 50 50
+    Lifetime = 100 100 //50 50
     SystemLifetime = 100
     SortLevel = 1
     Size = 1 1
@@ -117,7 +117,7 @@ FXParticleSystem SummonStoneGiantsSmoke
   End
   Alpha = DefaultAlpha
     Alpha2 = 0.35 0.35 15
-    Alpha3 = 0 0 30
+    Alpha3 = 0 0 100 //0 0 50 ;30
   End
   Update = DefaultUpdate
     SizeRate = 10 20
@@ -140,10 +140,6 @@ FXParticleSystem SummonStoneGiantsSmoke
   Draw = DefaultDraw
   End
 End
-
-
-/////
-//GAINTS///
 
 FXParticleSystem GiantSplatDust ;from TreebeardSplatDust
   System

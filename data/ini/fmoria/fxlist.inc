@@ -57,11 +57,11 @@ FXList FX_TrollClubHammerDebris
 		OnlyIfOnWater = Yes
 	End  
 	ParticleSystem
-		Name = MumakilFootSplash
-		OnlyIfOnWater = Yes
-	End	
-	ParticleSystem
 		Name = EntSplash
+		OnlyIfOnWater = Yes
+	End		
+	ParticleSystem
+		Name = MumakilFootSplash
 		OnlyIfOnWater = Yes
 	End		
 	
