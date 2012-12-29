@@ -1892,7 +1892,7 @@ Weapon PoisonMistWeapon
 	End
 
 	ParalyzeNugget
-		Radius			= 200.0 //150.0
+		Radius			= 150.0
 		Duration			= POISONED_STINGER_DURATION
 		SpecialObjectFilter	= CRIPPLE_STRIKE_OBJECT_FILTER
 		ParalyzeFX		= FX_PoisonedStunEffect

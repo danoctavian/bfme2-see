@@ -1016,10 +1016,10 @@
 #define WILD_PERSONAL_VENOM_SACKS_BUILDCOST				200 ;SEE!
 #define WILD_PERSONAL_VENOM_SACKS_BUILDTIME				30
 
-#define WILD_TECH_SCAVENGER_BUILDCOST						5000 
+#define WILD_TECH_SCAVENGER_BUILDCOST						5; 000 
 #define WILD_TECH_SCAVENGER_BUILDTIME						120
 
-#define WILD_TECH_DEMONIC_TRIBUTE_BUILDCOST				10000 	; 1 is for testing obviously!
+#define WILD_TECH_DEMONIC_TRIBUTE_BUILDCOST				1 ;0000 	; 1 is for testing obviously!
 #define WILD_TECH_DEMONIC_TRIBUTE_BUILDTIME				120
 
 ; ------------------------------------------------------------------------------
