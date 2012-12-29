@@ -2021,9 +2021,10 @@
 ; -------------------------------------------------------------------------------
 
 
-#define WATCHER_LIFETIME				30000
-#define WATCHER_CALDERA_LIFETIME			32000	; This number should be bigger than LurkerLifetime by the "DestructionDelay" in "ModuleTag_HatchProcess" in "LurkerEgg"
-#define WATCHER_ARM_HEALTH				2000
+#define WATCHER_LIFETIME									60000 //30000
+#define WATCHER_CALDERA_LIFETIME							64000 //32000	; This number should be bigger than LurkerLifetime by the "DestructionDelay" in "ModuleTag_HatchProcess" in "LurkerEgg"
+#define WATCHER_HEAD_HEALTH								18000
+#define WATCHER_ARM_HEALTH								12000 //2000
 
 
 ;-------------- Wyrm ---------------

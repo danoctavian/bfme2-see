@@ -34770,7 +34770,7 @@ OBJECT:WildLumberMillDescription
 End
 
 OBJECT:WildStructureHole
-"Building Rubble \n Will rebuild the structure over time"
+"BUILDING RUBBLE \n - Will rebuild the structure over time!"
 End
 
 OBJECT:WildmenBuildingHouse
@@ -41677,7 +41677,7 @@ CONTROLBAR:PurchaseTechnologyWildBasicTraining
 "Research Moria Banner Carriers"
 END
 CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining
-"Enables research of Venom Sacs \n and allows hordes to acquire \n the Moria Banner Carrier \n \n When equipped, increases a horde to level 2"
+"Enables research of Venom Sacs \n and allows hordes to acquire \n the Moria Banner Carrier. \n \n When equipped, increases a horde to level 2."
 END
 // ------------------------------------------------------------
 CONTROLBAR:PurchaseTechnologyWildForgedBlades
