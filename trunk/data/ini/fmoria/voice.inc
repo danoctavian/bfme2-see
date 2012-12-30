@@ -1344,7 +1344,7 @@ AudioEvent GoblinBuilderVoiceCompleteFissure
   SubmixSlider = voice
 End
 AudioEvent GoblinBuilderVoiceCompleteTreasureTrove
-  Sounds = trovecomplete
+  Sounds = trovecompletea trovecompleteb
   Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
   MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
   Priority = high
