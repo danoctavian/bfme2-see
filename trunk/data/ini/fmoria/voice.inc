@@ -681,6 +681,13 @@ AudioEvent CampGoblinDiscoveredGoblins
   Type = world player voice
   SubmixSlider = voice
 End
+AudioEvent CampGoblinDiscoveredCorsairs
+  Sounds = ecdisco_corsairs 
+  Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
+  MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
+  Type = world player voice
+  SubmixSlider = voice
+End
 
 AudioEvent CampGoblinDiscoveredGollum
   Sounds = ECGoGol_discova ECGoGol_discovb ECGoGol_discovc
