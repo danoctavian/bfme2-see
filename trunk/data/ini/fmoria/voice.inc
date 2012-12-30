@@ -1343,6 +1343,14 @@ AudioEvent GoblinBuilderVoiceCompleteFissure
   Type = world player voice
   SubmixSlider = voice
 End
+AudioEvent GoblinBuilderVoiceCompleteTreasureTrove
+  Sounds = trovecomplete
+  Volume = #ADD( UNIT_RESPONSE_VOLUME 0 )
+  MinVolume = #ADD( UNIT_RESPONSE_MINVOLUME 0 )
+  Priority = high
+  Type = world player voice
+  SubmixSlider = voice
+End
 
 AudioEvent GoblinBuilderVoiceCompleteFortress
   Sounds = ECGoBui_voicfoa ECGoBui_voicfob
