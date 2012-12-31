@@ -607,6 +607,13 @@ AudioEvent CampElfDiscoveredGoblins
   Type = world player voice
   SubmixSlider = voice
 End
+AudioEvent CampElfDiscoveredCorsairs
+  Sounds = gcdwdisco_corsairs
+  Volume = #ADD( CAMP_ELF_VOLUME 0 )
+  MinVolume = #ADD( CAMP_ELF_MINVOLUME 0 )
+  Type = world player voice
+  SubmixSlider = voice
+End
 
 AudioEvent CampElfDiscoveredGollum			;2nd set
   Sounds = GCElGol_discova GCElGol_discovb GCElGol_discovc GCElGol_discovd

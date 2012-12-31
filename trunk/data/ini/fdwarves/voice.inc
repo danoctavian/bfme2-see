@@ -614,6 +614,13 @@ AudioEvent CampDwarfDiscoveredGoblins
   Type = world player voice
   SubmixSlider = voice
 End
+AudioEvent CampDwarfDiscoveredCorsairs
+  Sounds = gcdisco_corsairsb
+  Volume = #ADD( CAMP_DWARF_VOLUME 0 )
+  MinVolume = #ADD( CAMP_DWARF_MINVOLUME 0 )
+  Type = world player voice
+  SubmixSlider = voice
+End
 
 AudioEvent CampDwarfDiscoveredGollum
   Sounds = GCDwGol_discova GCDwGol_discovb
