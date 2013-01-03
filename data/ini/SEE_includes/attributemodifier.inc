@@ -28,6 +28,11 @@ ModifierList MordorLargeGroupBonus_SEE
   FX 			= FX_InfiniteGenericLeadership_SEE 
   EndFX 		= FX_GenericBuffStop_SEE
 End
+ModifierList MordorLargeGroupBonus_SEE_DisableChant ; Hack by Ridder geel ;)
+  Category 		= SPELL
+  Duration 		= 30000				; Sets when to stop cheering!
+  ClearModelCondition 	= WAR_CHANT 	; Stops special AnimationState (and sound) in the Horde!
+End
 
 ;---------- For AI flyers -----------------
 ModifierList GiantBirdVisionBonusAI_SEE
