@@ -3203,12 +3203,13 @@ End
 ;------------------------------------------------------------------------------
 Weapon SpellBookMoriaDeteriorateWeapon
 	AttackRange			= 0 //MORIA_DETERIORATE_RANGE	
-	DelayBetweenShots	= 0          ; time between shots, msec	
-	FiringDuration      = 0
+	DelayBetweenShots	= 0         ; Time between shots, msec	
+	FiringDuration      	= 0
 	CanFireWhileMoving	= Yes
-	HitPercentage		= 100
-	HitStoredTarget		= Yes			; Always hits initial target.
-;	DamageNugget                        ; A basic Nugget that just does damage
+	HitPercentage			= 100
+	HitStoredTarget		= Yes		; Always hits initial target.
+	
+;	DamageNugget            ; A basic Nugget that just does damage
 ;		Damage			= 10		
 ;		DamageType		= SIEGE
 ;		DamageFXType	= MAGIC //SWORD_SLASH
@@ -3218,7 +3219,7 @@ Weapon SpellBookMoriaDeteriorateWeapon
 ;	End
 
 	DOTNugget	; A basic Nugget that just does damage
-		Damage        		= 10
+		Damage        		= MORIA_DETERIORATE_DAMAGE //10
 		AcceptDamageAdd 	= No
 		Radius        		= MORIA_DETERIORATE_RANGE
 		DelayTime     		= 0
@@ -3227,6 +3228,6 @@ Weapon SpellBookMoriaDeteriorateWeapon
 		DeathType     		= LASERED ;now always used instead of NORMAL (Sûl)
 		DamageInterval 		= 1
 		DamageDuration 		= -1 ;30000
-		SpecialObjectFilter 	= NONE +STRUCTURE
+		SpecialObjectFilter 	= SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER //NONE +STRUCTURE
 	End
 End

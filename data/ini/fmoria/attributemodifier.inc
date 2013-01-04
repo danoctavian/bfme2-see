@@ -183,11 +183,11 @@ End
 
 ModifierList SpellbookMoriaPlunder
 	Category						= SPELL
-	Modifier = PRODUCTION 25%		// Production increased x1/4
+	;Modifier 					= PRODUCTION 25% // Production increased x1/4
 	Duration						= 3000
 	ReplaceInCategoryIfLongest		= No
 	IgnoreIfAnticategoryActive		= No
-	ModelCondition = DAMAGED ; Up to naz what fx's etc.
+	ModelCondition = DAMAGED ; Up to naz what fx's etc (RB). DAMAGEd state is ok (Naz)
 End
 
 ; ------------------------------------------------------------------------------ TIER 2
