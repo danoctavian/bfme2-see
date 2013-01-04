@@ -1027,13 +1027,13 @@
 ; ------------------------------------------------------------------------------
 
 #define SPELLBOOK_MORIA_PLUNDER_OBJECT_FILTER				ANY +GondorFarm +ElvenMallornTree +DwarvenMineShaft +MordorSlaughterHouse +IsengardFurnace +WildMineShaft +ArnorFarm +AngmarMill ENEMIES
-#define MORIA_PLUNDER_MONEY_TIME 							6000
-#define MORIA_PLUNDER_MONEY_AMOUNT						15
+#define MORIA_PLUNDER_MONEY_AMOUNT						15		; Steal this much $...
+#define MORIA_PLUNDER_MONEY_TIME 							6000 	; ...this often, in ms!
 #define	MORIA_PLUNDER_SHROUD_CLEAR							300
 #define	MORIA_PLUNDER_VISION_RANGE							160
 
 #define SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER			ANY +STRUCTURE ENEMIES
+#define MORIA_DETERIORATE_DAMAGE							66.0 //5000.0
+#define MORIA_DETERIORATE_RANGE							45.0
 #define	MORIA_DETERIORATE_SHROUD_CLEAR						300
 #define	MORIA_DETERIORATE_VISION_RANGE						160
-#define MORIA_DETERIORATE_DAMAGE							5000.0
-#define MORIA_DETERIORATE_RANGE							45.0
