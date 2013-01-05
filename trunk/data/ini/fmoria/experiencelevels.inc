@@ -64,7 +64,7 @@ ExperienceLevel	WildCaveLevel2
 	ExperienceAward		  	= GOBLIN_CAVE_LVL2_EXP_AWARD
 	Rank					= 2
 	AttributeModifiers			= WildCaveHitPointModLvl2 WildCaveBuildSpeedModLvl2
-	Upgrades					= Upgrade_StructureLevel2 Upgrade_WildCaveLevel2
+	Upgrades					= Upgrade_StructureLevel2
 	LevelUpFx				= FX:WildCaveUpgrade
 End
 ExperienceLevel	WildCaveLevel3
@@ -73,7 +73,7 @@ ExperienceLevel	WildCaveLevel3
 	ExperienceAward		  	= GOBLIN_CAVE_LVL3_EXP_AWARD
 	Rank					= 3
 	AttributeModifiers			= WildCaveHitPointModLvl3 WildCaveBuildSpeedModLvl3
-	Upgrades					= Upgrade_StructureLevel3 Upgrade_WildCaveLevel3
+	Upgrades					= Upgrade_StructureLevel3
 	LevelUpFx				= FX:WildCaveUpgrade
 End	
 
