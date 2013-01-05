@@ -183,7 +183,7 @@ End
 
 ModifierList SpellbookMoriaPlunder
 	Category						= SPELL
-	;Modifier 					= PRODUCTION 25% // Production increased x1/4
+	Modifier 					= PRODUCTION MORIA_PLUNDER_MONEY_DECREASE //25% // Production increased x1/4
 	Duration						= 3000
 	ReplaceInCategoryIfLongest		= No
 	IgnoreIfAnticategoryActive		= No
