@@ -10193,6 +10193,10 @@ OBJECT:CaveTrollLair
 "Cave Troll Lair"
 END
 
+OBJECT:OrcLair
+"Orc Lair"
+END
+
 OBJECT:BarrowWightLair
 "Wight Lair"
 END
@@ -41284,6 +41288,10 @@ END
 
 OBJECT:CaveTrollLairDescription
 "Allows training of Cave Trolls"
+END
+
+OBJECT:OrcLairDescription
+"Allows training of orcs"
 END
 
 OBJECT:FireDrakeLairDescription
