@@ -149,11 +149,11 @@ End
 				AnimationMode	= ONCE
 				AnimationBlendTime = 10
 			End
-			Animation
-				AnimationName	= MUGblnSwrd_DIEB
-				AnimationMode	= ONCE
-				AnimationBlendTime = 10
-			End
+			;Animation
+			;	AnimationName	= MUGblnSwrd_DIEB		; Doesn't fit for BD. Is a knock back death.
+			;	AnimationMode	= ONCE
+			;	AnimationBlendTime = 10
+			;End
 			Flags = RANDOMSTART
 			ParticleSysBone     = BAT_HEAD FireSmall FollowBone:yes
 			ParticleSysBone     = BAT_HEAD BurningDeathSmoke FollowBone:yes 
@@ -170,11 +170,11 @@ End
 				AnimationMode	= ONCE
 				AnimationBlendTime = 10
 			End
-			Animation
-				AnimationName	= MUGblnSwrd_DIEB
-				AnimationMode	= ONCE
-				AnimationBlendTime = 10
-			End
+			;Animation
+			;	AnimationName	= MUGblnSwrd_DIEB			; Doesn't fit for BD. Is a knock back death.
+			;	AnimationMode	= ONCE
+			;	AnimationBlendTime = 10
+			;End
 			Flags = RANDOMSTART
 			ParticleSysBone     = BAT_HEAD FireSmall FollowBone:yes
 			ParticleSysBone     = BAT_HEAD BurningDeathSmoke FollowBone:yes 
