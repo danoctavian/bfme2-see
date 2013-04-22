@@ -315,7 +315,7 @@ End
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructWildMarauderHorde
 	Command				= UNIT_BUILD
-	Object				= WildMarauderHorde
+	Object				= GoblinPikemanHorde //WildMarauderHorde
 	Options				= CANCELABLE NEED_UPGRADE
 	NeededUpgrade   	= Upgrade_WildCaveLevel3 Upgrade_TechnologyWildForgedBlades Upgrade_TechnologyWildHeavyArmor //Upgrade_TechnologyWildSpiderVenomSacks  
 	TextLabel			= CONTROLBAR:ConstructWildMarauderHorde
