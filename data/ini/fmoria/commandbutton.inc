@@ -1424,7 +1424,7 @@ End
 CommandButton Command_ConstructWildTrollSling
 	Command				= UNIT_BUILD
 	Options				= NEED_UPGRADE CANCELABLE	
-	Object				= AngmarTrollSling
+	Object				= WildTrollSling
 	NeededUpgrade		= Upgrade_WildFissureLevel3	
 	TextLabel			= CONTROLBAR:ConstructAngmarTrollSling
 	ButtonImage			= KUTrollSlingIcon

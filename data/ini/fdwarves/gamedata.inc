@@ -1,12 +1,55 @@
-///////////////////
-// GAMEDATA.INC //
-/////////////////
-//Dwarves//
-//////////
+; ####################################################
+; "Battle for Middle Earth II - Special Extended Edition - Director's Cut"
+; ####################################################
+
+; Gamedata.INC for EREBOR (Dwarven) faction...
+; ------------------------------------------------------------------------------ "SEE!" = The codes have been adapted/converted from the obsolete Beta 4.7 WiP...
+; NOTE: Keep this organized!
 
 
-;//=========================DWARVEN===========================
-;//==========================UNITS============================
+
+; DIVERSIFIED LEADERSHIP
+;------------------------------------------------------------------------------
+
+; STRUCTURE BUILD TIMES (NOTE: Remember build speed modifier is additive +10% +25% at lvl3!)
+;------------------------------------------------------------------------------ SEE!
+#define DWARVEN_RESOURCEBUILDING_BUILDTIME					90 ;60  		// 1½ minute - Resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
+#define DWARVEN_BASICBUILDING_BUILDTIME						120 ;90 	// 2 minutes - Non resource buildings! (Barracks, Stables, Armory, etc)
+#define DWARVEN_SENTRY_TOWER_BUILDTIME					180 ;120 	// 3 minutes - Battletowers!
+#define DWARVEN_FORTRESS_BUILDTIME							300 ;240 	// 5 minutes - Fortress Keeps!
+
+; ------------------------------------------------------------------------------ SEE!
+#define DWARVEN_MINE_BUILDCOST								300
+#define DWARVEN_MINE_LEVEL2_UPGRADE_COST					500		; Not used! using XP only!
+#define DWARVEN_MINE_LEVEL2_UPGRADE_BUILDTIME 				30		; Not used! using XP only!
+#define DWARVEN_MINE_LEVEL3_UPGRADE_COST					1000	; Not used! using XP only!
+#define DWARVEN_MINE_LEVEL3_UPGRADE_BUILDTIME				60		; Not used! using XP only!
+
+#define DWARVEN_MINE_LVL2_PRODUCTION			  			1.25 	; Additive!
+#define DWARVEN_MINE_LVL3_PRODUCTION 						1.50  	; Additive!
+
+#define DWARVEN_MINE_LVL2_EXP_NEEDED						4000 //1500
+#define DWARVEN_MINE_LVL3_EXP_NEEDED 						8000 //3000
+#define	DWARVEN_MINE_LVL1_EXP_AWARD 						40
+#define	DWARVEN_MINE_LVL2_EXP_AWARD 						50
+#define	DWARVEN_MINE_LVL3_EXP_AWARD 						60
+
+#define DWARVEN_MINE_HEALTH								20000 //2000
+#define DWARVEN_MINE_HEALTH_DAMAGED						10000 //1333
+#define DWARVEN_MINE_HEALTH_REALLY_DAMAGED				5000 //667
+#define DWARVEN_MINE_LVL2_HP_ADD							2000 //500
+#define DWARVEN_MINE_LVL3_HP_ADD							4000 //1000
+
+#define DWARVEN_MINE_MONEY_AMOUNT						100 //25
+#define DWARVEN_MINE_MONEY_RANGE							125 //300
+#define DWARVEN_MINE_MONEY_TIME 							10000 //6000
+
+#define	DWARVEN_MINE_SHROUD_CLEAR							300
+#define	DWARVEN_MINE_VISION_RANGE							160
+#define	DWARVEN_MINE_BOUNTY_VALUE							200 //75
+
+#define DWARVEN_MINE_BUILDTIME 15 ; Not used!
+
 
 ;------------------------MEN OF DALE-------------------------
 
@@ -247,7 +290,6 @@
 ;//------------------------Dwarven Fortress------------------
 
 #define DWARVEN_FORTRESS_BUILDCOST				5000
-#define DWARVEN_FORTRESS_BUILDTIME				120
 #define DWARVEN_FORTRESS_VISION_RANGE				400
 #define	DWARVEN_FORTRESS_SHROUD_CLEAR				800
 #define DWARVEN_FORTRESS_HEALTH					7500
@@ -335,7 +377,6 @@
 
 #define DWARVEN_SENTRY_TOWER_HEALTH				3000
 #define DWARVEN_SENTRY_TOWER_BUILDCOST				500
-#define DWARVEN_SENTRY_TOWER_BUILDTIME				60
 #define DWARVEN_SENTRY_TOWER_BOUNTY				250
 
 #define DWARVEN_SENTRY_TOWER_HEALTH_DAMAGED			2000
@@ -524,34 +565,6 @@
 #define DWARVEN_TECH_FIRE_ARROWS_BUILDTIME			30
 
 ;------------------------MINE SHAFT -------------
-
-#define DWARVEN_MINE_BUILDCOST					300
-#define DWARVEN_MINE_BUILDTIME					15
-
-#define DWARVEN_MINE_HEALTH					2000
-#define DWARVEN_MINE_HEALTH_DAMAGED				1333
-#define DWARVEN_MINE_HEALTH_REALLY_DAMAGED			667
-
-#define DWARVEN_MINE_LEVEL2_UPGRADE_COST			500
-#define DWARVEN_MINE_LEVEL2_UPGRADE_BUILDTIME 			30
-#define DWARVEN_MINE_LEVEL3_UPGRADE_COST			1000
-#define DWARVEN_MINE_LEVEL3_UPGRADE_BUILDTIME			60
-#define	DWARVEN_MINE_BOUNTY_VALUE				75
-#define	DWARVEN_MINE_VISION_RANGE				160
-#define	DWARVEN_MINE_SHROUD_CLEAR				300
-
-#define DWARVEN_MINE_LVL2_EXP_NEEDED				1500
-#define DWARVEN_MINE_LVL3_EXP_NEEDED 				3000
-#define	DWARVEN_MINE_LVL1_EXP_AWARD 				40
-#define	DWARVEN_MINE_LVL2_EXP_AWARD 				50
-#define	DWARVEN_MINE_LVL3_EXP_AWARD 				60
-
-#define DWARVEN_MINE_LVL2_HP_ADD				500
-#define DWARVEN_MINE_LVL3_HP_ADD				1000
-
-#define DWARVEN_MINE_MONEY_TIME 				6000
-#define DWARVEN_MINE_MONEY_AMOUNT				25
-#define DWARVEN_MINE_MONEY_RANGE				300
 
 ;------------------------ Mithril Mine
 #define DWARVEN_GEMMINE_BUILDCOST						2000

@@ -1250,7 +1250,7 @@
 #define	ANGMAR_STONETHROWER_LVL1_EXP_AWARD 		10
 
 #define ANGMAR_STONETHROWER_ROCK_PREATTACKDELAY 	666
-#define ANGMAR_STONETHROWER_ROCK_DELAYBETWEENSHOTS 	8000
+#define ANGMAR_STONETHROWER_ROCK_DELAYBETWEENSHOTS 	4000 //8000
 #define ANGMAR_STONETHROWER_ROCK_FIRINGDURATION 	2880
 
 #define	ANGMAR_STONETHROWER_ROCK_RANGE			400 	; 400
@@ -2220,8 +2220,8 @@
 #define NORMAL_SIEGE_FAST_HORDE_SPEED			45
 #define NORMAL_SIEGE_FAST_MEMBER_SPEED			50	; A little faster so when the formation wheels the unit can catch up.
 
-#define NORMAL_SIEGE_MED_HORDE_SPEED			35
-#define NORMAL_SIEGE_MED_MEMBER_SPEED			40	; A little faster so when the formation wheels the unit can catch up.
+#define NORMAL_SIEGE_MED_HORDE_SPEED			25 //35
+#define NORMAL_SIEGE_MED_MEMBER_SPEED			30 //40	; A little faster so when the formation wheels the unit can catch up.
 
 
 

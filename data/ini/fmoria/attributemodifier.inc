@@ -33,6 +33,40 @@ ModifierList WebCocoonExpansion_Bonus
 	Duration = 0
 End
 
+; ------------------------------------------------------------------------------ MINE
+
+ModifierList WildMineShaftArmorBonus1 ; Not used in SEE! Why should a structure gain armor with leveling up, unless something substantial changed? /Naz
+	Category		= SPELL
+	Modifier	= ARMOR 50%
+	Duration		= 0
+End
+
+ModifierList WildMineShaftHealthBonus1
+	Category		= LEVEL
+	Modifier	= HEALTH GOBLIN_MINE_LVL2_HP_ADD
+	Duration		= 0
+End
+
+ModifierList WildMineShaftHealthBonus2
+	Category		= LEVEL
+	Modifier	= HEALTH GOBLIN_MINE_LVL3_HP_ADD
+	Duration		= 0
+End
+
+ModifierList WildMineShaftProductionBonus1
+	Category		= SPELL
+	Modifier	= PRODUCTION GOBLIN_MINE_LVL2_PRODUCTION // 125%			
+	Modifier	= COMMAND_POINT_BONUS 25	// Additive.
+	Duration		= 0
+End
+
+ModifierList WildMineShaftProductionBonus2
+	Category		= SPELL
+	Modifier	= PRODUCTION GOBLIN_MINE_LVL3_PRODUCTION // 150%			
+	Modifier	= COMMAND_POINT_BONUS 25	// Additive.
+	Duration		= 0
+End
+
 ; ------------------------------------------------------------------------------ GOBLIN CAVE
 
 ModifierList WildCaveHitPointModLvl2
