@@ -200,7 +200,7 @@ ExperienceLevel	WildMineShaftLevel2
 	Rank					= 2
 	LevelUpFx				= FX:WildMineShaftUpgrade
 	Upgrades				= Upgrade_StructureLevel2
-	AttributeModifiers			= WildMineShaftProductionBonus1 WildMineShaftArmorBonus1 WildMineShaftHealthBonus1
+	AttributeModifiers			= WildMineShaftProductionBonus1 WildMineShaftHealthBonus1 //WildMineShaftArmorBonus1
 End
 ExperienceLevel	WildMineShaftLevel3
 	TargetNames				= WildMineShaft
@@ -209,7 +209,7 @@ ExperienceLevel	WildMineShaftLevel3
 	Rank					= 3
 	LevelUpFx				= FX:WildMineShaftUpgrade
 	Upgrades				= Upgrade_StructureLevel3
-	AttributeModifiers			= WildMineShaftProductionBonus2 WildMineShaftArmorBonus1 WildMineShaftHealthBonus2
+	AttributeModifiers			= WildMineShaftProductionBonus2 WildMineShaftHealthBonus2 //WildMineShaftArmorBonus1
 End
 
 ; ------------------------------------------------------------------------------ TROLL DRUM

@@ -925,9 +925,16 @@ End
 ;//-----------------------------------
 ;//-----------------------------------
 Weapon DwarvenIronHillsCatapultRockWarhead
-	ProjectileCollidesWith = MONSTERS STRUCTURES	; Structures is the default, btw.
+	ProjectileCollidesWith = MONSTERS NEUTRAL STRUCTURES	; Structures is the default, btw.
 	RadiusDamageAffects = ENEMIES NEUTRALS ALLIES
 	HitPassengerPercentage = 50%
+	
+	MetaImpactNugget                    ; A Nugget that throws things back with force 
+;		HeroResist		   = .75
+		ShockWaveAmount  = 25.0
+		ShockWaveRadius   = 20.0
+		ShockWaveTaperOff = 0.75
+	End	
 	
 	DamageNugget                        ; A basic Nugget that just does damage
 		Damage        = DWARVEN_CATAPULT_ROCK_DAMAGE  ; Hella damage.  structures are on a different order of magnitude for hitpoints, and we want to be sure to outscore the fire damage so we can knock bits off.
@@ -937,16 +944,9 @@ Weapon DwarvenIronHillsCatapultRockWarhead
 		DamageType    = SIEGE
 		DamageFXType  = BIG_ROCK
 		DeathType     = EXPLODED
-	    DamageScalar  = 0% ALL ALLIES			; No damage to allies
+	    DamageScalar  = 50% ALL ALLIES			; LESS damage to allies (instead of NO) /Naz
 	    DamageScalar  = 25% ANY ENEMIES +INFANTRY
 	    DamageScalar  = 25% ANY ENEMIES +CAVALRY 
-	End
-
-	MetaImpactNugget                    ; A Nugget that throws things back with force 
-;		HeroResist			= .75
-		ShockWaveAmount   = 25.0
-		ShockWaveRadius   = 20.0
-		ShockWaveTaperOff = 0.75
 	End
 End
 

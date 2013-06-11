@@ -1544,12 +1544,12 @@ function OnMoriaGoblinsSwordCreated(self)
 	end
 
   -- set the bow; note: we need one of them, so there's no "empty" possibility
-  if helmet <= 0.33 then
+  if helmet <= 0.8 then
       ObjectHideSubObjectPermanently( self, "HEAD01", false )
-    elseif helmet <= 0.66 then
-      ObjectHideSubObjectPermanently( self, "HEAD02", false )
+--    elseif helmet <= 0.66 then
+--      ObjectHideSubObjectPermanently( self, "HEAD03", false )
     else
-      ObjectHideSubObjectPermanently( self, "HEAD03", false )
+      ObjectHideSubObjectPermanently( self, "HEAD02", false )
   end
 
   -- set the arms;
@@ -1697,12 +1697,12 @@ function OnMoriaGoblinsBowCreated(self)
   end
 
   -- set the bow; note: we need one of them, so there's no "empty" possibility
-  if helmet <= 0.33 then
+  if helmet <= 0.5 then
       ObjectHideSubObjectPermanently( self, "HEAD01", false )
-    elseif helmet <= 0.66 then
-      ObjectHideSubObjectPermanently( self, "HEAD02", false )
+--    elseif helmet <= 0.66 then
+--      ObjectHideSubObjectPermanently( self, "HEAD03", false )
     else
-      ObjectHideSubObjectPermanently( self, "HEAD03", false )
+      ObjectHideSubObjectPermanently( self, "HEAD02", false )
   end
 
   -- set the arms;

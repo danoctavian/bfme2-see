@@ -16337,13 +16337,13 @@ OBJECT:GoblinFissureDescription
 "Researches Moria technology upgrades."
 END
 OBJECT:GoblinArcher
-"Goblin Archers"
+"Goblin Archer"
 END
 OBJECT:GoblinFighter
-"Goblin Warriors"
+"Goblin Warrior"
 END
 OBJECT:GoblinSpearman
-"Goblin Spearmen"
+"Goblin Spearman"
 END
 OBJECT:WildPorter
 "Orc Snaga Builder"
@@ -24418,7 +24418,7 @@ OBJECT:DwarvenSentryTowerDescription
 END
 
 OBJECT:DwarvenMineShaftDescription
-"Allows access to the tunnel network"
+"Generates resources based on available terrain. \n Provides access to the Dwarven tunnel network. \n \n Increases command point limit by 50."
 END
 
 OBJECT:DwarvenWorkPitDescription

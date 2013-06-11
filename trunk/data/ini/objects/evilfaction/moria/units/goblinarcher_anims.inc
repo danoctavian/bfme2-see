@@ -1,7 +1,5 @@
 //The anims and model... Since all that changes are the "random" skins...
 
-WadingParticleSys = WaterRipplesTrail  //Used when the unit is wading in shallow water. Make sure ALL units (inc monsters, machines, etc) has this! (Naz)
-
 DefaultModelConditionState
 	Model = MUBowGob_NHA //MUBowGob_SKN ;MUGobArch_SKN
 	Skeleton = MUGobArch_SKL
@@ -321,7 +319,7 @@ AnimationState = MOVING EMOTION_TERROR
 		Distance = 20
 	End
 	Flags = RANDOMSTART
-	ParticleSysBone = None InfantryDustTrails
+	//ParticleSysBone = None InfantryDustTrails
 End
 
 AnimationState = RAISING_FLAG
@@ -350,7 +348,7 @@ AnimationState = MOVING
 		Distance = 20
 	End
 	Flags = RANDOMSTART
-	ParticleSysBone = None InfantryDustTrails
+	//ParticleSysBone = None InfantryDustTrails
 	BeginScript ;script to set transition into moving
 		Prev = CurDrawablePrevAnimationState()
 		if Prev == "STATE_Climbing"  then CurDrawableSetTransitionAnimState("Trans_ClimbingToRunning") return end

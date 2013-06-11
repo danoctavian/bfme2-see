@@ -25,10 +25,10 @@
 
 ; STRUCTURE BUILD TIMES (NOTE: Remember build speed modifier is additive +10% +25% at lvl3!)
 ;------------------------------------------------------------------------------ SEE!
-#define GOBLIN_RESOURCEBUILDING_BUILDTIME					30 ;60  	// 1 minute - Resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
-#define GOBLIN_BASICBUILDING_BUILDTIME						60 ;90 ;120 	// 2 minutes - Non resource buildings! (Barracks, Stables, Armory, etc)
-#define GOBLIN_SENTRY_TOWER_BUILDTIME						90 ;60 ;90 	// 1½ minutes - Battletowers!
-#define GOBLIN_FORTRESS_BUILDTIME							180 ;240 	// 4 minutes - Fortress Keeps!
+#define GOBLIN_RESOURCEBUILDING_BUILDTIME					30 ;60  		// ½ minute - Resource buildings! (Farm, Mallorn tree, SlaughterHouse, LumberMill, Windmill, etc)
+#define GOBLIN_BASICBUILDING_BUILDTIME						60 ;90 		// 1 minute - Non resource buildings! (Barracks, Stables, Armory, etc)
+#define GOBLIN_SENTRY_TOWER_BUILDTIME						90 ;120 		// 1½ minutes - Battletowers!
+#define GOBLIN_FORTRESS_BUILDTIME							180 ;240 	// 3 minutes - Fortress Keeps!
 
 ; MORIA FORTRESS
 ; ------------------------------------------------------------------------------ SEE!
@@ -177,16 +177,16 @@
 
 ; ------------------------------------------------------------------------------ SEE!
 #define GOBLIN_MINE_BUILDCOST								250
-#define GOBLIN_MINE_LEVEL2_UPGRADE_COST					200		; Not used! using XP only!
+#define GOBLIN_MINE_LEVEL2_UPGRADE_COST					500		; Not used! using XP only!
 #define GOBLIN_MINE_LEVEL2_UPGRADE_BUILDTIME 				30		; Not used! using XP only!
-#define GOBLIN_MINE_LEVEL3_UPGRADE_COST					400		; Not used! using XP only!
+#define GOBLIN_MINE_LEVEL3_UPGRADE_COST					1000	; Not used! using XP only!
 #define GOBLIN_MINE_LEVEL3_UPGRADE_BUILDTIME				60		; Not used! using XP only!
 
 #define GOBLIN_MINE_LVL2_PRODUCTION			  			1.25 //10	
 #define GOBLIN_MINE_LVL3_PRODUCTION 						1.50 //25 ; Additive!
 
-#define GOBLIN_MINE_LVL2_EXP_NEEDED							2400
-#define GOBLIN_MINE_LVL3_EXP_NEEDED 						4800
+#define GOBLIN_MINE_LVL2_EXP_NEEDED							2000 //2400
+#define GOBLIN_MINE_LVL3_EXP_NEEDED 						4000 //4800
 #define	GOBLIN_MINE_LVL1_EXP_AWARD 						40
 #define	GOBLIN_MINE_LVL2_EXP_AWARD 						50
 #define	GOBLIN_MINE_LVL3_EXP_AWARD 						60
@@ -203,7 +203,7 @@
 
 #define GOBLIN_MINE_MONEY_AMOUNT							25 //30
 #define GOBLIN_MINE_MONEY_RANGE							125
-#define GOBLIN_MINE_MONEY_TIME 							10000 //6000
+#define GOBLIN_MINE_MONEY_TIME 							5000 //6000
 
 #define	GOBLIN_MINE_SHROUD_CLEAR							300
 #define	GOBLIN_MINE_VISION_RANGE							160

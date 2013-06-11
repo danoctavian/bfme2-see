@@ -1,7 +1,5 @@
 //The anims and model... Since all that changes are the "random" skins...
 
-WadingParticleSys = WaterRipplesTrail  //Used when the unit is wading in shallow water. Make sure ALL units (inc monsters, machines, etc) has this! (Naz)
-
 DefaultModelConditionState
 	Model = MUSwrdGob_NHA
 	Skeleton = MUGblnSwrd_SKL
@@ -288,7 +286,7 @@ End
 				AnimationMode = LOOP
 			End
 			Flags = RANDOMSTART
-			ParticleSysBone = None InfantryDustTrails //Was out?
+			//ParticleSysBone = None InfantryDustTrails //Was out?
 		End
     
 		AnimationState						= MOVING BACKING_UP
@@ -325,7 +323,7 @@ End
 ;				AnimationSpeedFactorRange	= 0.9 1.1
 ;			End
 			Flags							= RANDOMSTART
-			ParticleSysBone					= None InfantryDustTrails
+			//ParticleSysBone					= None InfantryDustTrails
 		End
 		
 		AnimationState						= MOVING
@@ -345,7 +343,7 @@ End
 ;				Distance					= 10
 ;			End
 			Flags							= RANDOMSTART
-			ParticleSysBone					= None InfantryDustTrails
+			//ParticleSysBone					= None InfantryDustTrails
 			BeginScript;script to set transition into moving
 				Prev = CurDrawablePrevAnimationState()
 				if Prev == "STATE_Climbing"  then CurDrawableSetTransitionAnimState("Trans_ClimbingToRunning") return end
@@ -378,8 +376,13 @@ End
 				AnimationMode				= ONCE
 				UseWeaponTiming				= Yes	
 			End
-			Animation						= ATKA
+			Animation						= ATKC
 				AnimationName				= MUGblnSwrd_ATKC
+				AnimationMode				= ONCE
+				UseWeaponTiming				= Yes	
+			End
+			Animation						= ATKB
+				AnimationName				= MUGblnSwrd_ATKB
 				AnimationMode				= ONCE
 				UseWeaponTiming				= Yes	
 			End
@@ -506,11 +509,17 @@ End
 ; ------------------------------------------------------------------------------
 
 		AnimationState = SELECTED USER_4
+			SimilarRestart				= Yes
 			Animation				= Selected_Loop
 				AnimationName		= MUGblnSwrd_ATNB
 				AnimationMode		= LOOP
 				AnimationBlendTime	= 10
 			End
+			Animation				= Selected_Loop
+				AnimationName		= MUGblnSwrd_ATNB
+				AnimationMode		= LOOP
+				AnimationBlendTime	= 10
+			End			
 			StateName				= Selected
 			BeginScript
 				Prev = CurDrawablePrevAnimationState()
@@ -529,11 +538,17 @@ End
 		End
     
 		AnimationState = SELECTED
+			SimilarRestart				= Yes
 			Animation				= Selected_Loop
 				AnimationName		= MUGblnSwrd_ATNB
 				AnimationMode		= LOOP
 				AnimationBlendTime	= 10
 			End
+			Animation				= Selected_Loop
+				AnimationName		= MUGblnSwrd_ATNB
+				AnimationMode		= LOOP
+				AnimationBlendTime	= 10
+			End			
 			StateName				= Selected
 			BeginScript
 				Prev = CurDrawablePrevAnimationState()
