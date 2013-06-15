@@ -3217,11 +3217,6 @@ Weapon SpellBookMoriaDeteriorateWeapon
 ;		DeathType		= LASERED ;now always used instead of NORMAL (Sûl)
 ;		DamageSpeed		= 1400.0
 ;	End
-	AttributeModifierNugget
-		AttributeModifier = SpellbookMoriaDeteriorate ;The attribute modifier used.
-	//	DamageFXType = SWORD_SLASH ;used to cross with their DamageFX listing to determine what effect to play
-		SpecialObjectFilter 	= SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER //NONE +STRUCTURE
-	End
 
 	DOTNugget	; A basic Nugget that just does damage
 		Damage        		= MORIA_DETERIORATE_DAMAGE //10
