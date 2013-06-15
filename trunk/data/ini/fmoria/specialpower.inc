@@ -166,25 +166,6 @@ SpecialPower SpellBookMoriaUntamedAllegiance
 	ObjectFilter		= CREEP_OBJECTFILTER
 End
 
-SpecialPower SpellBookMoriaUntamedAllegianceTwoPointO
-	Enum					= SPECIAL_AT_VISIBLE_GROUNDED_OBJECT ;;SPECIAL_SPELL_BOOK_UNTAMED_ALLEGIANCE ;SPECIAL_DOMINATE_ENEMY
-	;*****************************	IMPORTANT ***********************************************
-	ReloadTime				= 300000	; This value MUST	be greater than the DefectDuration in the Behavior 
-										; TemporarilyDefectUpdate ModuleTag_TemporarilyDefectUpdate section 
-										; of the data/ini/object.ini file. See the comments in that section!
-	;*****************************	IMPORTANT ***********************************************
-;	ObjectFilter	= ROGASH_DOMINATE_OBJECT_FILTER
-
-;	Flags				= NEEDS_OBJECT_FILTER RESPECT_RECHARGE_TIME_DISCOUNT
-;	RadiusCursorRadius	= 60
-;	RequiredSciences		= SCIENCE_MoriaUntamedAllegiance
-;	ReloadTime			= SPELL_RECHARGE_TIME_TIER_2						; in milliseconds
-;	ViewObjectDuration	= 10000
-;	ViewObjectRange		= 200
-;	ObjectFilter		= CREEP_OBJECTFILTER
-
-End	
-
 SpecialPower SpellBookMoriaDeteriorate
 	Enum				= SPECIAL_SPELL_BOOK_EAGLE_ALLIES
 	ReloadTime			= SPELL_RECHARGE_TIME_TIER_2   ; in milliseconds
