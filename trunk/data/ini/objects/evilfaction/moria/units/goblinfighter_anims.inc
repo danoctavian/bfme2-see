@@ -514,12 +514,8 @@ End
 				AnimationName		= MUGblnSwrd_ATNB
 				AnimationMode		= LOOP
 				AnimationBlendTime	= 10
-			End
-			Animation				= Selected_Loop
-				AnimationName		= MUGblnSwrd_ATNB
-				AnimationMode		= LOOP
-				AnimationBlendTime	= 10
-			End			
+				AnimationSpeedFactorRange	= 0.5 1.3 //not da same speed
+			End		
 			StateName				= Selected
 			BeginScript
 				Prev = CurDrawablePrevAnimationState()
@@ -543,12 +539,8 @@ End
 				AnimationName		= MUGblnSwrd_ATNB
 				AnimationMode		= LOOP
 				AnimationBlendTime	= 10
-			End
-			Animation				= Selected_Loop
-				AnimationName		= MUGblnSwrd_ATNB
-				AnimationMode		= LOOP
-				AnimationBlendTime	= 10
-			End			
+				AnimationSpeedFactorRange	= 0.5 1.3 //not da same speed
+			End	
 			StateName				= Selected
 			BeginScript
 				Prev = CurDrawablePrevAnimationState()
@@ -565,6 +557,7 @@ End
 			Animation = Transition
 				AnimationName = MUGblnSwrd_ATNA
 				AnimationMode = ONCE
+				AnimationSpeedFactorRange	= 0.5 1.3 //not da same speed
 			End
 		End
 	    
