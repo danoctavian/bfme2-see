@@ -1168,7 +1168,7 @@ CommandSet WildSpellBookCommandSet_SEE
 
 	9 = Command_SpellBookMoriaCalltheHorde
 	10 = Command_SpellBookMoriaScurry
-	11 = Command_SpellBookMoriaUntamedAllegiance
+	11 = Command_SpellBookMoriaUntamedAllegiance ;Command_SpellBookMoriaUntamedAllegianceTwoPointO ;Command_SpellBookMoriaUntamedAllegiance
 	12 = Command_SpellBookMoriaDeteriorate
 	
 	13 = Command_SpellBookMoriaShelob

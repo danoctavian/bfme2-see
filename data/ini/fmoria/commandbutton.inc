@@ -1807,6 +1807,46 @@ CommandButton Command_SpellBookMoriaUntamedAllegiance
 	RadiusCursorType	= UntamedAllegianceRadiusCursor
 End
 
+CommandButton Command_SpellBookMoriaUntamedAllegianceTwoPointO
+  Command                 = SPELL_BOOK ;SPECIAL_POWER
+  SpecialPower            = SpellBookMoriaUntamedAllegianceTwoPointO
+  Options                 = NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT ;NEED_TARGET_POS CONTEXTMODE_COMMAND
+  TextLabel               = CONTROLBAR:MoriaSpellbookUntamedAllegiance
+  ButtonImage             = HSSharkuTameBeast
+;  RadiusCursorType        = UntamedAllegianceRadiusCursor
+	CursorName		= EvilAbilityObj
+	InvalidCursorName	= GenericInvalid  
+  ButtonBorderType        = ACTION
+  DescriptLabel           = CONTROLBAR:ToolTipMoriaSpellbookUntamedAllegiance
+End
+;CommandButton Command_CreateAHero_SpecialAbilityDominateTroll_Level1
+;	Command			   = SPECIAL_POWER
+;	SpecialPower	   = SpecialAbilityCreateAHeroDominateTroll
+;//	Options			   = NEED_TARGET_POS CONTEXTMODE_COMMAND
+;	Options			   = NEED_TARGET_ENEMY_OBJECT NEED_TARGET_NEUTRAL_OBJECT
+;	TextLabel		   = CONTROLBAR:CAH_DominateTroll_Level1
+;	ButtonImage		   = HSSharkuTameBeast
+;//	RadiusCursorType   = UntamedAllegianceRadiusCursor
+;	CursorName		= EvilAbilityObj
+;	InvalidCursorName	= GenericInvalid  
+;	ButtonBorderType   = ACTION
+;	DescriptLabel	   = CONTROLBAR:ToolTipDominateTroll
+;	InPalantir		   = Yes
+;End
+;CommandButton Command_SpecialAbilityDominateEnemy
+;  Command                 = SPECIAL_POWER
+;  SpecialPower            = SpecialAbilityDominateEnemy
+;  Options                 = NEED_TARGET_POS CONTEXTMODE_COMMAND
+;  TextLabel               = CONTROLBAR:Dominate
+;  ButtonImage             = HSSarumanDominate
+;  RadiusCursorType        = DominateRadiusCursor
+;  ButtonBorderType        = ACTION
+;  DescriptLabel           = CONTROLBAR:ToolTipDominate
+;  InPalantir			  = Yes
+;  ;UnitSpecificSound       = SarumanVoiceDominate
+;End
+
+
 CommandButton Command_PurchaseSpellMoriaUntamedAllegiance
 	ButtonImage		= HSSharkuTameBeast
 	ButtonBorderType	= ACTION
