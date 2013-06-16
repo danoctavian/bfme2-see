@@ -212,6 +212,9 @@ ExperienceLevel	WildMineShaftLevel3
 	AttributeModifiers			= WildMineShaftProductionBonus2 WildMineShaftHealthBonus2 //WildMineShaftArmorBonus1
 End
 
+; ------------------------------------------------------------------------------ WARG SENTRY
+
+
 ; ------------------------------------------------------------------------------ TROLL DRUM
 ExperienceLevel	WildTrollDrum1	//Based on Gondor's hero statue!
 	TargetNames						=	TrollDrum
