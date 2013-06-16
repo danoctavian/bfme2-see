@@ -222,6 +222,26 @@ ModifierList SpellbookMoriaPlunder
 	ReplaceInCategoryIfLongest		= No
 	IgnoreIfAnticategoryActive		= No
 	ModelCondition = DAMAGED ; Up to naz what fx's etc (RB). DAMAGEd state is ok (Naz)
+	//lolol
+	FX = FX_PlunderStructure
+End
+
+ModifierList SpellbookMoriaDeteriorate //The weapon casts this ModList to give upgrade for visual
+	Category						= SPELL
+	Duration						= 100
+	ReplaceInCategoryIfLongest		= No
+	IgnoreIfAnticategoryActive		= No
+	//lolol
+	Upgrade = Upgrade_Deteriorating Delay:1 //To deteriorate FX
+End
+
+ModifierList SpellbookMoriaDeteriorating //The visual ModList
+	Category						= SPELL
+	Duration						= 3000
+	ReplaceInCategoryIfLongest		= No
+	IgnoreIfAnticategoryActive		= No
+	//lolol
+	FX = FX_DeteriorateStructure
 End
 
 ; ------------------------------------------------------------------------------ TIER 2

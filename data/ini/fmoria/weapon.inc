@@ -3201,7 +3201,7 @@ End
 ;-------------------------------------------------------------------
 
 ;------------------------------------------------------------------------------
-Weapon SpellBookMoriaDeteriorateWeapon
+Weapon SpellBookMoriaDeteriorateWeapon //Trigger Deteriorate
 	AttackRange			= 0 //MORIA_DETERIORATE_RANGE	
 	DelayBetweenShots	= 0         ; Time between shots, msec	
 	FiringDuration      	= 0
@@ -3217,8 +3217,12 @@ Weapon SpellBookMoriaDeteriorateWeapon
 ;		DeathType		= LASERED ;now always used instead of NORMAL (Sûl)
 ;		DamageSpeed		= 1400.0
 ;	End
+	AttributeModifierNugget //FX visual
+		AttributeModifier = SpellbookMoriaDeteriorate ;The attribute modifier used.
+		SpecialObjectFilter 	= SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER //NONE +STRUCTURE
+	End
 
-	DOTNugget	; A basic Nugget that just does damage
+	DOTNugget	; A basic Nugget that just does damage //The Damage
 		Damage        		= MORIA_DETERIORATE_DAMAGE //10
 		AcceptDamageAdd 	= No
 		Radius        		= MORIA_DETERIORATE_RANGE
@@ -3229,5 +3233,29 @@ Weapon SpellBookMoriaDeteriorateWeapon
 		DamageInterval 		= 1
 		DamageDuration 		= -1 ;30000
 		SpecialObjectFilter 	= SPELLBOOK_MORIA_DETERIORATE_OBJECT_FILTER //NONE +STRUCTURE
+	End
+End
+
+;------------------------------------------------------------------------------
+Weapon SpellBookBuildingHealWeapon //Remove Deteriorate with attribmodlist
+	AttackRange			= 0 //MORIA_DETERIORATE_RANGE	
+	DelayBetweenShots	= 0         ; Time between shots, msec	
+	FiringDuration      	= 0
+	CanFireWhileMoving	= Yes
+	HitPercentage			= 100
+	HitStoredTarget		= Yes		; Always hits initial target.
+	
+	AttributeModifierNugget //Remove the heal
+		AttributeModifier = SpellBookBuildingHealCastUpgrade ;The attribute modifier used.
+		SpecialObjectFilter 	= ANY +STRUCTURE ALLIES
+	End
+
+	DamageNugget ;fake damage to trigger the attrib mod nugget
+		Damage			= -1		
+		DamageType		= SIEGE
+		DamageFXType	= MAGIC //SWORD_SLASH
+		Radius			= SPELL_REBUILD_RADIUS_STRUCTURE_SCAN
+		DeathType		= LASERED ;now always used instead of NORMAL (Sûl)
+		SpecialObjectFilter 	= ANY +STRUCTURE ALLIES
 	End
 End
