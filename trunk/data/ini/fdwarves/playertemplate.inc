@@ -41,7 +41,7 @@ PlayerTemplate FactionDwarves
 	// attached to the first two buttons in the command set. 
 
 	BuildableHeroesMP			= CreateAHero DwarvenCaptainofDale DwarvenGloin DwarvenGimli DwarvenDain 	; Added CaptainofDale for Expansion
-	BuildableRingHeroesMP			= ElvenGaladriel_RingHero
+	BuildableRingHeroesMP			= RohanFrodo_RingHero ; ElvenGaladriel_RingHero
 	SpellStoreCurrentPowerLabel 		= APT:SpellStoreCurrentEvenstarPower
 	SpellStoreMaximumPowerLabel 		= APT:SpellStoreMaximumEvenstarPower
 	ResourceModifierObjectFilter 		= RESOURCE_MODIFIER_OBJECT_FILTER
