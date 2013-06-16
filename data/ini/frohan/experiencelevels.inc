@@ -392,7 +392,7 @@ End
 
 ;----------------------	FRODO -------------------------------------	
 ExperienceLevel	FrodoLevel1
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_Summoned
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_Summoned RohanFrodo_RingHero
 	RequiredExperience				=	1	
 	ExperienceAward					=	HOBBIT_LVL1_EXP_AWARD 
 	Rank							=	1
@@ -408,7 +408,7 @@ ExperienceLevel	FrodoLevel1
 End	
 
 ExperienceLevel	FrodoLevel2
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_RingHero
 	RequiredExperience				=	HOBBIT_LVL2_EXP_NEEDED 
 	ExperienceAward					=	HOBBIT_LVL2_EXP_AWARD 
 	LevelUpFx						=	FX:GandalfLevelUp1FX
@@ -427,7 +427,7 @@ ExperienceLevel	FrodoLevel2
 End	
 
 ExperienceLevel	FrodoLevel3
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_RingHero
 	RequiredExperience				=	HOBBIT_LVL3_EXP_NEEDED 
 	ExperienceAward					=	HOBBIT_LVL3_EXP_AWARD 	
 	LevelUpFx						=	FX:GandalfLevelUp1FX
@@ -446,7 +446,7 @@ ExperienceLevel	FrodoLevel3
 End	
 
 ExperienceLevel	FrodoLevel4
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_RingHero
 	RequiredExperience				=	HOBBIT_LVL4_EXP_NEEDED 
 	ExperienceAward					=	HOBBIT_LVL4_EXP_AWARD 	
 	LevelUpFx						=	FX:GandalfLevelUp1FX
@@ -465,7 +465,7 @@ ExperienceLevel	FrodoLevel4
 End	
 
 ExperienceLevel	FrodoLevel5
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_RingHero
 	RequiredExperience				=	HOBBIT_LVL5_EXP_NEEDED 
 	ExperienceAward					=	HOBBIT_LVL5_EXP_AWARD 	
 	LevelUpFx						=	FX:GandalfLevelUp1FX
@@ -485,7 +485,7 @@ ExperienceLevel	FrodoLevel5
 End	
 
 ExperienceLevel	FrodoLevel6
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_RingHero
 	RequiredExperience				=	HOBBIT_LVL6_EXP_NEEDED 
 	ExperienceAward					=	HOBBIT_LVL6_EXP_AWARD 	
 	LevelUpFx						=	FX:GandalfLevelUp1FX
@@ -504,7 +504,7 @@ ExperienceLevel	FrodoLevel6
 End	
 
 ExperienceLevel	FrodoLevel7
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_RingHero
 	RequiredExperience				=	HOBBIT_LVL7_EXP_NEEDED 
 	ExperienceAward					=	HOBBIT_LVL7_EXP_AWARD 	
 	LevelUpFx						=	FX:GandalfLevelUp1FX
@@ -523,7 +523,7 @@ ExperienceLevel	FrodoLevel7
 End	
 
 ExperienceLevel	FrodoLevel8
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_RingHero
 	RequiredExperience				=	HOBBIT_LVL8_EXP_NEEDED 
 	ExperienceAward					=	HOBBIT_LVL8_EXP_AWARD 	
 	LevelUpFx						=	FX:GandalfLevelUp1FX
@@ -542,7 +542,7 @@ ExperienceLevel	FrodoLevel8
 End	
 
 ExperienceLevel	FrodoLevel9
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_RingHero
 	RequiredExperience				=	HOBBIT_LVL9_EXP_NEEDED 
 	ExperienceAward					=	HOBBIT_LVL9_EXP_AWARD 	
 	LevelUpFx						=	FX:GandalfLevelUp1FX
@@ -561,7 +561,7 @@ ExperienceLevel	FrodoLevel9
 End	
 
 ExperienceLevel	FrodoLevel10
-	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers
+	TargetNames						=	RohanFrodo RohanSamWithFrodoPowers RohanFrodo_RingHero
 	RequiredExperience				=	HOBBIT_LVL10_EXP_NEEDED 
 	ExperienceAward					=	HOBBIT_LVL10_EXP_AWARD 	
 	LevelUpFx						=	FX:GandalfLevelUp1FX
