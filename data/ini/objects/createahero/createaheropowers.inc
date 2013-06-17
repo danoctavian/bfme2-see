@@ -1501,6 +1501,7 @@ Behavior = StealthDetectorUpdate ModuleTag_CreateAHeroWTrueSightUpdate
 	DetectionRate		= 100   // how often to rescan for stealthed things in my sight (msec)
 	CancelOneRingEffect = Yes	// forces uses of one-ring to pop out of it
 	InitiallyDisabled	= Yes
+			ExtraRequiredKindOf   = SELECTABLE ; WE DON'T GET TO SEE FRODO'S OBJECTIVE
 //		RequiredUpgrade		= Upgrade_WildFortressBatCloud //Won't work until this upgrade is purchased
 End
 

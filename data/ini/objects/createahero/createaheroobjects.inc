@@ -1254,6 +1254,7 @@ Object CreateAHeroFamiliar_Base
 	// Detects other stealth units
 	Behavior = StealthDetectorUpdate StealthDetectorUpdateModuleTag
 		DetectionRate		= 500   // how often to rescan for stealthed things in my sight (msec)
+		ExtraRequiredKindOf   = SELECTABLE ; WE DON'T GET TO SEE FRODO'S OBJECTIVE
 	End
 
 	Behavior = SlowDeathBehavior ModuleTag_05
