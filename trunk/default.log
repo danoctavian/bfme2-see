@@ -770,3 +770,64 @@ Bytes around EIP:
 7c3429c1 f3 a5 ff 24 95 dc 2a 34 7c 8b c7 ba 03 00 00 00 С╔Ъ$∙э*4|▀г╨....
 7c3429d1 83 e9 04 72 0c 83 e0 03 03 c8 ff 24 85 ec 29 34 ┐И.r.┐Ю..хЪ$┘Л)4
 7c3429e1 7c ff 24 8d ec 2a 34 7c ff 24 8d 70 2a 34 7c fc |Ъ$█Л*4|Ъ$█p*4|Э
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000024 was written to.
+
+Exception occured at
+0068df78 Worldbuilder.exe+0x28df78.
+
+Version: internal
+
+EAX:0x00000024 EBX:0x00406efb ECX:0x00000009
+EDX:0x00000024 ESI:0x7d072604 EDI:0x00000024
+EIP:0x0068df78 ESP:0x0018f9b8 EBP:0x0018f9e0
+Flags:%00000000000000010000001000000110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000100100011
+TW:%1111111111111111
+ErrOfs:      0x00727884 ErrSel:  0x05d80023
+DataOfs:     0x01ddc550 DataSel: 0x0000002b
+Cr0NpxState: 0x030a7043
+ST(0) 000000000063cc820540 65.399193
+ST(1) 000000000063cc800540 64.399193
+ST(2) 0000000000000080ff3f 1.000000
+ST(3) 00000000002071f7fe3f 0.966570
+ST(4) 0000000000a0e5ba07c0 -373.793945
+ST(5) 000000000000e0f6febf -0.964355
+ST(6) 00000000000000a00240 10.000000
+ST(7) 00000000000000a00240 10.000000
+
+19 addresses:
+(unknown)(0): Worldbuilder.exe+2678648 (unknown)
+(unknown)(0): Worldbuilder.exe+2668210 (unknown)
+(unknown)(0): Worldbuilder.exe+2540603 (unknown)
+(unknown)(0): Worldbuilder.exe+2551671 (unknown)
+(unknown)(0): Worldbuilder.exe+2243601 (unknown)
+(unknown)(0): Worldbuilder.exe+2351820 (unknown)
+(unknown)(0): Worldbuilder.exe+2355737 (unknown)
+(unknown)(0): MFC71.DLL+204137 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+96196 CharPrevW+312
+(unknown)(0): USER32.dll+97226 DispatchMessageA+15
+(unknown)(0): Worldbuilder.exe+2704483 (unknown)
+(unknown)(0): MFC71.DLL+168254 (unknown)
+
+Bytes around EIP:
+0068df58 f4 8b 4d ec 3b 4d 10 74 2a 8b 55 f4 89 55 f0 83 Т▀MЛ;M.t*▀UТ┴UП┐
+0068df68 7d f0 00 74 15 8b 75 ec b9 09 00 00 00 8b 7d f0 }П.t.▀uЛ╧....▀}П
+0068df78 f3 a5 8b 45 f0 89 45 e0 eb 07 c7 45 e0 00 00 00 С╔▀EП┴EЮК.гEЮ...
+0068df88 00 eb bc 8b 45 fc 5f 5e 8b e5 5d c2 0c 00 cc cc .К╪▀EЭ_^▀Е]б..лл
+0068df98 cc cc cc cc cc cc cc cc cc cc cc cc cc cc cc cc лллллллллллллллл
