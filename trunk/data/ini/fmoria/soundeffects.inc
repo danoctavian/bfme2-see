@@ -1200,7 +1200,7 @@ AudioEvent WildSpiderlingMoveLoop
 End
 
 AudioEvent WildSpiderlingVoxAttack
-  Sounds = EUShelo_voiatta EUShelo_voiattb EUShelo_voiattc EUShelo_voiattd EUShelo_voidieb EUShelo_voidied EUShelo_voisela EUShelo_voiselc EUShelo_voiselk
+  Sounds = EUShelo_voiatta EUShelo_voiattb EUShelo_voiattc EUShelo_voiattd EUShelo_voidieb EUShelo_voidied EUShelo_voisela EUShelo_voiselc EUShelo_voiselk spidersfeast spiderskillemnow spiderstaste spidersfatandjuicy
   Priority = high
   Limit = 1
   Volume = 115
@@ -1235,7 +1235,7 @@ AudioEvent WildSpiderlingVoxDie
 End
 
 AudioEvent WildSpiderlingVoxHurt
-  Sounds = EUShelo_voidiea EUShelo_voidieb EUShelo_voidiec EUShelo_voidied EUShelo_voidiee
+  Sounds = EUShelo_voidiea EUShelo_voidieb EUShelo_voidiec EUShelo_voidied EUShelo_voidiee spiderscurseit spidersstings
   Priority = low
   Limit = 3
   Volume = 105
@@ -1262,7 +1262,7 @@ End
 ; WildSpiderlingVoxEnterStateMove in Voice.ini to use the BATTLE_CHATTER defines
 
 AudioEvent WildSpiderlingVoxSelect
-  Sounds = EUShelo_voimova:500 EUShelo_voisela:500 EUSHelo_voiselb:500 EUSHelo_voiselc:500 EUSHelo_voiseld:500 EUSHelo_voisele:500 EUSHelo_voiself:500 EUSHelo_voiselg EUShelo_voiselh EUShelo_voiseli EUShelo_voiselj EUShelo_voiselk EUShelo_voisell EUShelo_voiselm 
+  Sounds = EUShelo_voimova:500 EUShelo_voisela:500 EUSHelo_voiselb:500 EUSHelo_voiselc:500 EUSHelo_voiseld:500 EUSHelo_voisele:500 EUSHelo_voiself:500 EUSHelo_voiselg EUShelo_voiselh EUShelo_voiseli EUShelo_voiselj EUShelo_voiselk EUShelo_voisell EUShelo_voiselm spiderswhatisit spidersfeastfeast spidersletusfeast
   Priority = high
   Limit = 1
   Volume = 115
@@ -1273,7 +1273,7 @@ AudioEvent WildSpiderlingVoxSelect
 End
 
 AudioEvent WildSpiderlingVoxSelectBattle
-  Sounds = EUShelo_voimova:500 EUShelo_voisela:500 EUSHelo_voiselb:500 EUSHelo_voiselc:500 EUSHelo_voiseld:500 EUSHelo_voisele:500 EUSHelo_voiself:500 EUSHelo_voiselg EUShelo_voiselh EUShelo_voiseli EUShelo_voiselj EUShelo_voiselk EUShelo_voisell EUShelo_voiselm 
+  Sounds = EUShelo_voimova:500 EUShelo_voisela:500 EUSHelo_voiselb:500 EUSHelo_voiselc:500 EUSHelo_voiseld:500 EUSHelo_voisele:500 EUSHelo_voiself:500 EUSHelo_voiselg EUShelo_voiselh EUShelo_voiseli EUShelo_voiselj EUShelo_voiselk EUShelo_voisell EUShelo_voiselm spidersitsalive spidersjuiceinside
   Priority = high
   Limit = 1
   Volume = 115
