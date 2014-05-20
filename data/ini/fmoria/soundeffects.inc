@@ -1200,7 +1200,7 @@ AudioEvent WildSpiderlingMoveLoop
 End
 
 AudioEvent WildSpiderlingVoxAttack
-  Sounds = EUShelo_voiatta EUShelo_voiattb EUShelo_voiattc EUShelo_voiattd EUShelo_voidieb EUShelo_voidied EUShelo_voisela EUShelo_voiselc EUShelo_voiselk spidersfeast spiderskillemnow spiderstaste spidersfatandjuicy
+  Sounds = EUShelo_voiatta EUShelo_voiattb EUShelo_voiattc EUShelo_voiattd EUShelo_voidieb EUShelo_voidied EUShelo_voisela EUShelo_voiselc EUShelo_voiselk spidersfeast:500 spiderskillemnow:500 spiderstaste:500 spidersfatandjuicy:500
   Priority = high
   Limit = 1
   Volume = 115
@@ -1235,7 +1235,7 @@ AudioEvent WildSpiderlingVoxDie
 End
 
 AudioEvent WildSpiderlingVoxHurt
-  Sounds = EUShelo_voidiea EUShelo_voidieb EUShelo_voidiec EUShelo_voidied EUShelo_voidiee spiderscurseit spidersstings
+  Sounds = EUShelo_voidiea EUShelo_voidieb EUShelo_voidiec EUShelo_voidied EUShelo_voidiee spiderscurseit:500 spidersstings:500
   Priority = low
   Limit = 3
   Volume = 105
@@ -1249,7 +1249,7 @@ End
 ; WildSpiderlingVoxEnterStateHurt in Voice.ini to use the BATTLE_CHATTER defines
 
 AudioEvent WildSpiderlingVoxMove
-  Sounds = EUShelo_voimova EUShelo_voisela EUShelo_voiselb EUShelo_voiselc EUShelo_voiseld EUShelo_voisele EUShelo_voiself EUShelo_voiselg:500 EUSHelo_voiselh:500 EUSHelo_voiseli:500 EUSHelo_voiselj:500 EUSHelo_voiselk:500 EUSHelo_voisell:500 EUSHelo_voiselm:500
+  Sounds = EUShelo_voimova EUShelo_voisela EUShelo_voiselb EUShelo_voiselc EUShelo_voiseld EUShelo_voisele EUShelo_voiself EUShelo_voiselg:500 EUSHelo_voiselh:500 EUSHelo_voiseli:500 EUSHelo_voiselj:500 EUSHelo_voiselk:500 EUSHelo_voisell:500 EUSHelo_voiselm:500 spidersfeastfeast:500 spidersletusfeast:500 spiderswhatisit:500 
   Priority = high
   Limit = 1
   Volume = 115
@@ -1262,7 +1262,7 @@ End
 ; WildSpiderlingVoxEnterStateMove in Voice.ini to use the BATTLE_CHATTER defines
 
 AudioEvent WildSpiderlingVoxSelect
-  Sounds = EUShelo_voimova:500 EUShelo_voisela:500 EUSHelo_voiselb:500 EUSHelo_voiselc:500 EUSHelo_voiseld:500 EUSHelo_voisele:500 EUSHelo_voiself:500 EUSHelo_voiselg EUShelo_voiselh EUShelo_voiseli EUShelo_voiselj EUShelo_voiselk EUShelo_voisell EUShelo_voiselm spiderswhatisit spidersfeastfeast spidersletusfeast
+  Sounds = EUShelo_voimova:500 EUShelo_voisela:500 EUSHelo_voiselb:500 EUSHelo_voiselc:500 EUSHelo_voiseld:500 EUSHelo_voisele:500 EUSHelo_voiself:500 EUSHelo_voiselg EUShelo_voiselh EUShelo_voiseli EUShelo_voiselj EUShelo_voiselk EUShelo_voisell EUShelo_voiselm spiderswhatisit:500 spidersfeastfeast:500 spidersletusfeast:500
   Priority = high
   Limit = 1
   Volume = 115
@@ -1273,7 +1273,7 @@ AudioEvent WildSpiderlingVoxSelect
 End
 
 AudioEvent WildSpiderlingVoxSelectBattle
-  Sounds = EUShelo_voimova:500 EUShelo_voisela:500 EUSHelo_voiselb:500 EUSHelo_voiselc:500 EUSHelo_voiseld:500 EUSHelo_voisele:500 EUSHelo_voiself:500 EUSHelo_voiselg EUShelo_voiselh EUShelo_voiseli EUShelo_voiselj EUShelo_voiselk EUShelo_voisell EUShelo_voiselm spidersitsalive spidersjuiceinside
+  Sounds = EUShelo_voimova:500 EUShelo_voisela:500 EUSHelo_voiselb:500 EUSHelo_voiselc:500 EUSHelo_voiseld:500 EUSHelo_voisele:500 EUSHelo_voiself:500 EUSHelo_voiselg EUShelo_voiselh EUShelo_voiseli EUShelo_voiselj EUShelo_voiselk EUShelo_voisell EUShelo_voiselm spidersitsalive:500 spidersjuiceinside:500 
   Priority = high
   Limit = 1
   Volume = 115
