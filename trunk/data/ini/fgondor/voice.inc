@@ -244,7 +244,7 @@ AudioEvent BoromirVoiceSelectBattle
 End
 
 AudioEvent BoromirVoiceSelect
-  Sounds        = GUBorom_voisela GUBorom_voiselb GUBorom_voiselc GUBorom_voiseld GUBorom_voisele GUBorom_voiself GUBorom_voiselg 
+  Sounds        = boromirsel1 boromirsel2 boromirsel3 boromirsel4 boromirsel5 boromirsel6 boromirsel7 boromirsel8 boromirsel9 boromirsel10 boromirsel11
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
@@ -264,7 +264,7 @@ AudioEvent BoromirVoiceSpeech
 End
 
 AudioEvent BoromirVoiceCaptainOfGondor
-  Sounds        = GUBorom_voispec
+  Sounds        = boromirexp1 boromirexp2
   Volume        = 120
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
