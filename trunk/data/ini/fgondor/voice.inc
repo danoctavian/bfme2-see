@@ -119,7 +119,7 @@ End
 ;------------------------------------------- Boromir ---------------------------------------------
 
 AudioEvent BoromirVoiceAttackBuilding
-  Sounds        = GUBorom_voiatba GUBorom_voiatbb GUBorom_voiatbc GUBorom_voiattd
+  Sounds        = boromirattb1 boromirattb2
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
@@ -136,7 +136,7 @@ AudioEvent BoromirVoiceAttackCharge
 End
 
 AudioEvent BoromirVoiceAttack
-  Sounds        = GUBorom_voiatta GUBorom_voiattb GUBorom_voiattc GUBorom_voiattd GUBorom_voiatte 
+  Sounds        = boromiratt1 boromiratt2 boromiratt3 boromiratt4 boromiratt5
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
@@ -236,7 +236,7 @@ AudioEvent BoromirVoiceSalute
 End
 
 AudioEvent BoromirVoiceSelectBattle
-  Sounds        = GUBorom_voiseba GUBorom_voisebb GUBorom_voisebc GUBorom_voisebd GUBorom_voisebe GUBorom_voisebf GUBorom_voisebg 
+  Sounds        =  boromirattsel1 boromirattsel2 boromirattsel3
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
