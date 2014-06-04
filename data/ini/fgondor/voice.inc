@@ -153,7 +153,7 @@ AudioEvent BoromirVoiceDie
 End
 
 AudioEvent BoromirVoiceDisengage
-  Sounds        = GUBorom_voidisa GUBorom_voidisb GUBorom_voidisc GUBorom_voidisd 
+  Sounds        = boromirdis1 boromirdis2 boromirdis3
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
@@ -161,7 +161,7 @@ AudioEvent BoromirVoiceDisengage
 End
 
 AudioEvent BoromirVoiceGarrison
-  Sounds        = GUBorom_voigara GUBorom_voigarb GUBorom_voigarc 
+  Sounds        = boromirgar1
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
@@ -194,7 +194,7 @@ AudioEvent BoromirVoiceMoveCamp
 End
 
 AudioEvent BoromirVoiceMove
-  Sounds        = GUBorom_voimova GUBorom_voimovb GUBorom_voimovc GUBorom_voimovd GUBorom_voimove GUBorom_voimovf GUBorom_voimovg GUBorom_voimovh 
+  Sounds        = boromirmov1 boromirmov2 boromirmov3 boromirmov4 boromirmov5 boromirmov6 boromirmov7 boromirmov8
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   PlayPercent = VOICE_MOVE_PLAY_PERCENT
@@ -203,7 +203,7 @@ AudioEvent BoromirVoiceMove
 End
 
 AudioEvent BoromirVoiceMoveGroup
-  Sounds        = GUBorom_voimova GUBorom_voimovb GUBorom_voimovc GUBorom_voimovd GUBorom_voimove GUBorom_voimovf GUBorom_voimovg GUBorom_voimovh 
+  Sounds        = boromirmov1 boromirmov2 boromirmov3 boromirmov4 boromirmov5 boromirmov6 boromirmov7 boromirmov8
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
@@ -211,7 +211,7 @@ AudioEvent BoromirVoiceMoveGroup
 End
 
 AudioEvent BoromirVoiceRespawn
-  Sounds        = GUBorom_voiresa GUBorom_voiresb GUBorom_voiresc 
+  Sounds        = boromirattsel3 boromirsal3
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
@@ -219,7 +219,7 @@ AudioEvent BoromirVoiceRespawn
 End
 
 AudioEvent BoromirVoiceRetreat
-  Sounds        = GUBorom_voireta 
+  Sounds        = boromirret1 
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
@@ -227,7 +227,7 @@ AudioEvent BoromirVoiceRetreat
 End
 
 AudioEvent BoromirVoiceSalute
-  Sounds        = GUBorom_voisald ;GUBorom_voisala GUBorom_voisalb GUBorom_voisalc 
+  Sounds        = boromirsal1 boromirsal2 boromirsal3
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Limit = 1
@@ -236,7 +236,7 @@ AudioEvent BoromirVoiceSalute
 End
 
 AudioEvent BoromirVoiceSelectBattle
-  Sounds        =  boromirattsel1 boromirattsel2 boromirattsel3
+  Sounds        = boromirattsel1 boromirattsel2 boromirattsel3
   Volume        = UNIT_RESPONSE_VOLUME
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
@@ -256,7 +256,7 @@ Multisound BoromirVoiceSelectMS
 End
 
 AudioEvent BoromirVoiceSpeech
-  Sounds        = GUBorom_voispea GUBorom_voispeb GUBorom_voispec GUBorom_voisped 
+  Sounds        = boromirexp2 boromirattsel3 boromirsal3
   Volume        = 120
   MinVolume	= UNIT_RESPONSE_MINVOLUME
   Type          = world player voice
