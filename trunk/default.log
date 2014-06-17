@@ -1032,3 +1032,247 @@ Bytes around EIP:
 7c342eee f3 a5 ff 24 95 0c 30 34 7c 8b c7 ba 03 00 00 00 Û•ˇ$ï.04|ã«∫....
 7c342efe 83 e9 04 72 0c 83 e0 03 03 c8 ff 24 85 1c 2f 34 ÉÈ.r.É‡..»ˇ$Ö./4
 7c342f0e 7c ff 24 8d 1c 30 34 7c ff 24 8d a0 2f 34 7c 90 |ˇ$ç.04|ˇ$ç†/4|ê
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was written to.
+
+Exception occured at
+7c342eee MSVCR71.dll+0x2eee, memcpy+0x33.
+
+Version: internal
+
+EAX:0x0017f19c EBX:0x00000000 ECX:0x00000040
+EDX:0x00000000 ESI:0x0017f09c EDI:0x00000000
+EIP:0x7c342eee ESP:0x0017f024 EBP:0x0017f02c
+Flags:%00000000000000010000001000010010
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000100100111
+TW:%1111111111111111
+ErrOfs:      0x016c361f ErrSel:  0x011c0023
+DataOfs:     0x0017f0f0 DataSel: 0x0000002b
+Cr0NpxState: 0x06b48e10
+ST(0) fffffbff0000fbffffff -1.#QNAN0
+ST(1) 00000000fbffffffffff -1.#QNAN0
+ST(2) 0000000000000080ff3f 1.000000
+ST(3) 0000000000ac7f841240 542714.750000
+ST(4) 00000000003b8ee50840 918.222351
+ST(5) 000000000000809107c0 -291.000000
+ST(6) 00000000000000ff0640 255.000000
+ST(7) 00000000000000000000 0.000000
+
+49 addresses:
+(unknown)(0): MSVCR71.dll+12014 memcpy+51
+(unknown)(0): Worldbuilder.exe+2788703 (unknown)
+(unknown)(0): Worldbuilder.exe+8236069 (unknown)
+(unknown)(0): Worldbuilder.exe+2788194 (unknown)
+(unknown)(0): Worldbuilder.exe+2791400 (unknown)
+(unknown)(0): MFC71.DLL+605642 (unknown)
+(unknown)(0): Worldbuilder.exe+2805888 (unknown)
+(unknown)(0): Worldbuilder.exe+2804872 (unknown)
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): MFC71.DLL+204969 (unknown)
+(unknown)(0): MFC71.DLL+204882 (unknown)
+(unknown)(0): MFC71.DLL+204228 (unknown)
+(unknown)(0): Worldbuilder.exe+1235968 (unknown)
+(unknown)(0): MFC71.DLL+220376 (unknown)
+(unknown)(0): MFC71.DLL+220751 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+93672 GetThreadDesktop+389
+(unknown)(0): USER32.dll+93764 GetThreadDesktop+481
+(unknown)(0): ntdll.dll+65802 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+104133 SendMessageW+76
+(unknown)(0): COMCTL32.dll+183848 CreateToolbar+10348
+(unknown)(0): COMCTL32.dll+45087 CreateMappedBitmap+2626
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+134439 GetClientRect+197
+(unknown)(0): USER32.dll+162122 CallWindowProcA+27
+(unknown)(0): MFC71.DLL+195803 (unknown)
+(unknown)(0): MFC71.DLL+188615 (unknown)
+(unknown)(0): MFC71.DLL+209821 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+96196 CharPrevW+312
+(unknown)(0): USER32.dll+96394 DispatchMessageW+15
+(unknown)(0): USER32.dll+247839 IsDialogMessageW+286
+(unknown)(0): USER32.dll+217417 IsDialogMessage+92
+(unknown)(0): MFC71.DLL+81505 (unknown)
+(unknown)(0): MFC71.DLL+168093 (unknown)
+(unknown)(0): MFC71.DLL+168246 (unknown)
+(unknown)(0): MFC71.DLL+168254 (unknown)
+
+Bytes around EIP:
+7c342ece c6 3b fe 76 08 3b f8 0f 82 7b 01 00 00 f7 c7 03 ∆;˛v.;¯.Ç{...˜«.
+7c342ede 00 00 00 75 14 c1 e9 02 83 e2 03 83 f9 08 72 28 ...u.¡È.É‚.É˘.r(
+7c342eee f3 a5 ff 24 95 0c 30 34 7c 8b c7 ba 03 00 00 00 Û•ˇ$ï.04|ã«∫....
+7c342efe 83 e9 04 72 0c 83 e0 03 03 c8 ff 24 85 1c 2f 34 ÉÈ.r.É‡..»ˇ$Ö./4
+7c342f0e 7c ff 24 8d 1c 30 34 7c ff 24 8d a0 2f 34 7c 90 |ˇ$ç.04|ˇ$ç†/4|ê
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was written to.
+
+Exception occured at
+7c3429c1 MSVCR71.dll+0x29c1, memmove+0x33.
+
+Version: internal
+
+EAX:0x637c84f0 EBX:0x00406efb ECX:0x00003c28
+EDX:0x00000000 ESI:0x637b9450 EDI:0x00000000
+EIP:0x7c3429c1 ESP:0x0018f9e8 EBP:0x0018f9f0
+Flags:%00000000000000010000001000000010
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100111
+TW:%1111111111111111
+ErrOfs:      0x00727884 ErrSel:  0x05d80023
+DataOfs:     0x01ddc550 DataSel: 0x0000002b
+Cr0NpxState: 0x0328a043
+ST(0) 000000000063cc820540 65.399193
+ST(1) 000000000063cc800540 64.399193
+ST(2) 0000000000000080ff3f 1.000000
+ST(3) 0000000000a058f7fe3f 0.966196
+ST(4) 0000000000c0a6b607c0 -365.302734
+ST(5) 000000000000b3880440 34.174805
+ST(6) 00000000000000a00240 10.000000
+ST(7) 00000000000000a00240 10.000000
+
+20 addresses:
+(unknown)(0): MSVCR71.dll+10689 memmove+51
+(unknown)(0): Worldbuilder.exe+2678140 (unknown)
+(unknown)(0): Worldbuilder.exe+2665140 (unknown)
+(unknown)(0): Worldbuilder.exe+2541034 (unknown)
+(unknown)(0): Worldbuilder.exe+2551671 (unknown)
+(unknown)(0): Worldbuilder.exe+2243601 (unknown)
+(unknown)(0): Worldbuilder.exe+2351820 (unknown)
+(unknown)(0): Worldbuilder.exe+2355737 (unknown)
+(unknown)(0): MFC71.DLL+204137 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+96196 CharPrevW+312
+(unknown)(0): USER32.dll+97226 DispatchMessageA+15
+(unknown)(0): Worldbuilder.exe+2704483 (unknown)
+(unknown)(0): MFC71.DLL+168254 (unknown)
+
+Bytes around EIP:
+7c3429a1 c6 3b fe 76 08 3b f8 0f 82 78 01 00 00 f7 c7 03 ∆;˛v.;¯.Çx...˜«.
+7c3429b1 00 00 00 75 14 c1 e9 02 83 e2 03 83 f9 08 72 28 ...u.¡È.É‚.É˘.r(
+7c3429c1 f3 a5 ff 24 95 dc 2a 34 7c 8b c7 ba 03 00 00 00 Û•ˇ$ï‹*4|ã«∫....
+7c3429d1 83 e9 04 72 0c 83 e0 03 03 c8 ff 24 85 ec 29 34 ÉÈ.r.É‡..»ˇ$ÖÏ)4
+7c3429e1 7c ff 24 8d ec 2a 34 7c ff 24 8d 70 2a 34 7c fc |ˇ$çÏ*4|ˇ$çp*4|¸
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was written to.
+
+Exception occured at
+7c342eee MSVCR71.dll+0x2eee, memcpy+0x33.
+
+Version: internal
+
+EAX:0x0017f19c EBX:0x00000000 ECX:0x00000040
+EDX:0x00000000 ESI:0x0017f09c EDI:0x00000000
+EIP:0x7c342eee ESP:0x0017f024 EBP:0x0017f02c
+Flags:%00000000000000010000001000010010
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000100100111
+TW:%1111111111111111
+ErrOfs:      0x016c361f ErrSel:  0x011c0023
+DataOfs:     0x0017f0f0 DataSel: 0x0000002b
+Cr0NpxState: 0x0ca7a310
+ST(0) 0000000000000000ffff -1.#IND00
+ST(1) 0000000000000000ffff -1.#IND00
+ST(2) 0000000000000080ff3f 1.000000
+ST(3) 00000000002071f7fe3f 0.966570
+ST(4) 000000000040819d07c0 -315.009766
+ST(5) 000000000000809107c0 -291.000000
+ST(6) 00000000000000ff0640 255.000000
+ST(7) 00000000000000000000 0.000000
+
+49 addresses:
+(unknown)(0): MSVCR71.dll+12014 memcpy+51
+(unknown)(0): Worldbuilder.exe+2788703 (unknown)
+(unknown)(0): Worldbuilder.exe+8236069 (unknown)
+(unknown)(0): Worldbuilder.exe+2788194 (unknown)
+(unknown)(0): Worldbuilder.exe+2791400 (unknown)
+(unknown)(0): MFC71.DLL+605642 (unknown)
+(unknown)(0): Worldbuilder.exe+2805888 (unknown)
+(unknown)(0): Worldbuilder.exe+2804872 (unknown)
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): MFC71.DLL+204969 (unknown)
+(unknown)(0): MFC71.DLL+204882 (unknown)
+(unknown)(0): MFC71.DLL+204228 (unknown)
+(unknown)(0): Worldbuilder.exe+1235968 (unknown)
+(unknown)(0): MFC71.DLL+220376 (unknown)
+(unknown)(0): MFC71.DLL+220751 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+93672 GetThreadDesktop+389
+(unknown)(0): USER32.dll+93764 GetThreadDesktop+481
+(unknown)(0): ntdll.dll+65802 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+104133 SendMessageW+76
+(unknown)(0): COMCTL32.dll+183848 CreateToolbar+10348
+(unknown)(0): COMCTL32.dll+45087 CreateMappedBitmap+2626
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+134439 GetClientRect+197
+(unknown)(0): USER32.dll+162122 CallWindowProcA+27
+(unknown)(0): MFC71.DLL+195803 (unknown)
+(unknown)(0): MFC71.DLL+188615 (unknown)
+(unknown)(0): MFC71.DLL+209821 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+90874 gapfnScSendMessage+818
+(unknown)(0): USER32.dll+93498 GetThreadDesktop+215
+(unknown)(0): USER32.dll+96196 CharPrevW+312
+(unknown)(0): USER32.dll+96394 DispatchMessageW+15
+(unknown)(0): USER32.dll+247839 IsDialogMessageW+286
+(unknown)(0): USER32.dll+217417 IsDialogMessage+92
+(unknown)(0): MFC71.DLL+81505 (unknown)
+(unknown)(0): MFC71.DLL+168093 (unknown)
+(unknown)(0): MFC71.DLL+168246 (unknown)
+(unknown)(0): MFC71.DLL+168254 (unknown)
+
+Bytes around EIP:
+7c342ece c6 3b fe 76 08 3b f8 0f 82 7b 01 00 00 f7 c7 03 ∆;˛v.;¯.Ç{...˜«.
+7c342ede 00 00 00 75 14 c1 e9 02 83 e2 03 83 f9 08 72 28 ...u.¡È.É‚.É˘.r(
+7c342eee f3 a5 ff 24 95 0c 30 34 7c 8b c7 ba 03 00 00 00 Û•ˇ$ï.04|ã«∫....
+7c342efe 83 e9 04 72 0c 83 e0 03 03 c8 ff 24 85 1c 2f 34 ÉÈ.r.É‡..»ˇ$Ö./4
+7c342f0e 7c ff 24 8d 1c 30 34 7c ff 24 8d a0 2f 34 7c 90 |ˇ$ç.04|ˇ$ç†/4|ê
