@@ -28,6 +28,18 @@ CommandSet WildPorterCommandSet
 	14 	= Command_PorterConstructWildFortress
 End
 
+CommandSet WildFoundationCommandSet
+    	1  	= Command_ConstructWildMineShaft
+	2  	= Command_ConstructWildDrum	
+	3  	= Command_ConstructWildCave
+	4  	= Command_ConstructWildWolfDen 
+	5  	= Command_ConstructWildSpiderPit 					
+	6  	= Command_ConstructWildFissure  
+	7 	= Command_ConstructWildTreasureTrove 
+	8 	= Command_ConstructWildWargSentry	
+	9 	= Command_ConstructWildSentryTower
+End
+
 ; ------------------------------------------------------------------------------ SEE!
 CommandSet WildFortressCommandSet
 	InitialVisible = 6
