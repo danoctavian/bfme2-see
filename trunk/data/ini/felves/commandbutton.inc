@@ -371,9 +371,10 @@ CommandButton Command_PurchaseUpgradeElvenFortressCrystalMoat
   	InPalantir	   	= No
 End
 
+;//---------Foundation Structures-------------------
 ;//--Elven Structures
 CommandButton Command_ConstructElvenEntMoot
-  Command          = DOZER_CONSTRUCT
+  Command          = FOUNDATION_CONSTRUCT
   Object           = ElvenEntMoot
   TextLabel        = CONTROLBAR:ConstructEntMoot
   ButtonImage      = BEEntMoot
@@ -383,6 +384,109 @@ CommandButton Command_ConstructElvenEntMoot
 End
 
 CommandButton Command_ConstructEregionForge
+	Command          = FOUNDATION_CONSTRUCT
+	Object           = EregionForge
+	TextLabel        = CONTROLBAR:ConstructEregionForge
+	ButtonImage      = BEEregionForge
+	ButtonBorderType = BUILD 
+	DescriptLabel    = CONTROLBAR:ToolTipEregionForge
+	Radial           = Yes  
+End
+
+CommandButton Command_ConstructElvenBarracks
+	Command          = FOUNDATION_CONSTRUCT
+	Object           = ElvenBarracks
+	TextLabel        = CONTROLBAR:ConstructElvenBarracks
+	ButtonImage      = BEElvenBarracks
+	ButtonBorderType = BUILD 
+	DescriptLabel    = CONTROLBAR:ToolTipElvenBarracks
+	Radial           = Yes  
+End
+
+CommandButton Command_ConstructERElvenBarracks
+  Command          	= FOUNDATION_CONSTRUCT
+  Object           	= ElderRacesElvenBarracks
+  TextLabel        	= CONTROLBAR:ConstructElvenBarracks
+  ButtonImage      	= BEElvenBarracks
+  ButtonBorderType 	= BUILD 
+  DescriptLabel    	= CONTROLBAR:ToolTipElvenBarracks
+  Radial           	= Yes  
+End
+
+CommandButton Command_ConstructElvenGreenPasture
+  Command          	= FOUNDATION_CONSTRUCT
+  Object           	= ElvenGreenPasture
+  TextLabel        	= CONTROLBAR:ConstructElvenStable
+  ButtonImage      	= BEGreenPasture
+  ButtonBorderType 	= BUILD 
+  DescriptLabel    	= CONTROLBAR:ToolTipGreenPasture
+  Radial           	= Yes  
+End
+
+CommandButton Command_ConstructElvenStatue
+  Command          = FOUNDATION_CONSTRUCT
+  Object           = ElvenStatue
+  TextLabel        = CONTROLBAR:ConstructElvenStatue
+  ButtonImage      = BEHeroicStatue
+  ButtonBorderType = BUILD 
+  DescriptLabel    = OBJECT:HeroicStatueDescription
+  Radial           = Yes  
+End
+
+CommandButton Command_ConstructElvenWatchTower
+  Command          = FOUNDATION_CONSTRUCT
+  Object           = ElvenBattleTower
+  TextLabel        = CONTROLBAR:ConstructElvenBattleTower
+  ButtonImage      = BEBattleTower
+  ButtonBorderType = BUILD 
+  DescriptLabel    = CONTROLBAR:ToolTipBattleTower
+  Radial           = Yes  
+End
+
+CommandButton Command_ConstructElvenMallornTree
+  Command          = FOUNDATION_CONSTRUCT
+  Object           = ElvenMallornTree
+  TextLabel        = CONTROLBAR:ConstructElvenMallornTree
+  ButtonImage      = BEMallornTree
+  ButtonBorderType = BUILD 
+  DescriptLabel    = CONTROLBAR:ToolTipMallornTree
+  Radial           = Yes  
+End
+
+CommandButton Command_ConstructElvenGrove
+  Command          = FOUNDATION_CONSTRUCT
+  Object           = ElvenGrove
+  TextLabel        = CONTROLBAR:ConstructElvenGrove
+;  ButtonImage      = BCElvenGrove
+  ButtonBorderType = BUILD 
+  DescriptLabel    = CONTROLBAR:ToolTipElvenBarracks
+  Radial           = Yes  
+End
+
+CommandButton Command_ConstructElvenMirrorOfGaladriel
+  Command          = FOUNDATION_CONSTRUCT
+  Object           = ElvenMirrorOfGaladriel
+  TextLabel        = CONTROLBAR:ConstructGaladrielsWell
+  ButtonImage      = BEMirrorGaladriel
+  ButtonBorderType = BUILD 
+  DescriptLabel    = OBJECT:HearthWellDescription
+  Radial           = Yes  
+End
+
+
+
+;//--Porter Structures
+CommandButton Command_PorterConstructElvenEntMoot
+  Command          = DOZER_CONSTRUCT
+  Object           = ElvenEntMoot
+  TextLabel        = CONTROLBAR:ConstructEntMoot
+  ButtonImage      = BEEntMoot
+  ButtonBorderType = BUILD 
+  DescriptLabel    = CONTROLBAR:ToolTipElvenEntMoot
+  Radial           = Yes  
+End
+
+CommandButton Command_PorterConstructEregionForge
 	Command          = DOZER_CONSTRUCT
 	Object           = EregionForge
 	TextLabel        = CONTROLBAR:ConstructEregionForge
@@ -420,7 +524,7 @@ CommandButton Command_PurchaseUpgradeEregionForgeLevel3
 End
 
 
-CommandButton Command_ConstructElvenBarracks
+CommandButton Command_PorterConstructElvenBarracks
 	Command          = DOZER_CONSTRUCT
 	Object           = ElvenBarracks
 	TextLabel        = CONTROLBAR:ConstructElvenBarracks
@@ -428,16 +532,6 @@ CommandButton Command_ConstructElvenBarracks
 	ButtonBorderType = BUILD 
 	DescriptLabel    = CONTROLBAR:ToolTipElvenBarracks
 	Radial           = Yes  
-End
-
-CommandButton Command_ConstructERElvenBarracks
-  Command          	= FOUNDATION_CONSTRUCT
-  Object           	= ElderRacesElvenBarracks
-  TextLabel        	= CONTROLBAR:ConstructElvenBarracks
-  ButtonImage      	= BEElvenBarracks
-  ButtonBorderType 	= BUILD 
-  DescriptLabel    	= CONTROLBAR:ToolTipElvenBarracks
-  Radial           	= Yes  
 End
 
 CommandButton Command_PurchaseUpgradeElvenBarracksLevel2
@@ -452,7 +546,6 @@ CommandButton Command_PurchaseUpgradeElvenBarracksLevel2
    InPalantir        	= Yes
 End
 
-
 CommandButton Command_PurchaseUpgradeElvenBarracksLevel3
    Command           	= OBJECT_UPGRADE
    Upgrade           	= Upgrade_ElvenBarracksLevel3
@@ -465,7 +558,7 @@ CommandButton Command_PurchaseUpgradeElvenBarracksLevel3
    InPalantir        	= Yes
 End
 
-CommandButton Command_ConstructElvenGreenPasture
+CommandButton Command_PorterConstructElvenGreenPasture
   Command          	= DOZER_CONSTRUCT
   Object           	= ElvenGreenPasture
   TextLabel        	= CONTROLBAR:ConstructElvenStable
@@ -499,7 +592,7 @@ CommandButton Command_ConstructElvenGreenPastureLevel3
    InPalantir        = Yes
 End
 
-CommandButton Command_ConstructElvenStatue
+CommandButton Command_PorterConstructElvenStatue
   Command          = DOZER_CONSTRUCT
   Object           = ElvenStatue
   TextLabel        = CONTROLBAR:ConstructElvenStatue
@@ -509,33 +602,7 @@ CommandButton Command_ConstructElvenStatue
   Radial           = Yes  
 End
 
-;CommandButton Command_ConstructElvenGreenPastureLevel2
- ;  Command           = OBJECT_UPGRADE
- ;  Upgrade           = Upgrade_ElvenGreenPastureLevel2
- ;  Options           = CANCELABLE
- ;  TextLabel         = CONTROLBAR:PurchaseUpgradeElvenGreenPastureLevel2
- ;  ButtonImage       = UCCommon_UpgradeStructureNew
- ;  ButtonBorderType  = BUILD
- ;  DescriptLabel     = CONTROLBAR:ToolTipBuildElvenGreenPastureLevel2
- ;  Radial            = Yes
-   ;InPalantir        = Yes
-;End
-
-
-;CommandButton Command_ConstructElvenGreenPastureLevel3
-  ; Command           = OBJECT_UPGRADE
-  ; Upgrade           = Upgrade_ElvenGreenPastureLevel3
-  ; Options           = CANCELABLE
-  ; TextLabel         = CONTROLBAR:PurchaseUpgradeElvenGreenPastureLevel3
-  ; ButtonImage       = UCCommon_UpgradeStructureNew
-  ; ButtonBorderType  = BUILD
-  ; DescriptLabel     = CONTROLBAR:ToolTipBuildElvenGreenPastureLevel3
- ;  Radial            = Yes
-   ;InPalantir        = Yes
-;End
-
-
-CommandButton Command_ConstructElvenWatchTower
+CommandButton Command_PorterConstructElvenWatchTower
   Command          = DOZER_CONSTRUCT
   Object           = ElvenBattleTower
   TextLabel        = CONTROLBAR:ConstructElvenBattleTower
@@ -545,7 +612,7 @@ CommandButton Command_ConstructElvenWatchTower
   Radial           = Yes  
 End
 
-CommandButton Command_ConstructElvenMallornTree
+CommandButton Command_PorterConstructElvenMallornTree
   Command          = DOZER_CONSTRUCT
   Object           = ElvenMallornTree
   TextLabel        = CONTROLBAR:ConstructElvenMallornTree
@@ -555,7 +622,7 @@ CommandButton Command_ConstructElvenMallornTree
   Radial           = Yes  
 End
 
-CommandButton Command_ConstructElvenGrove
+CommandButton Command_PorterConstructElvenGrove
   Command          = DOZER_CONSTRUCT
   Object           = ElvenGrove
   TextLabel        = CONTROLBAR:ConstructElvenGrove
@@ -565,7 +632,7 @@ CommandButton Command_ConstructElvenGrove
   Radial           = Yes  
 End
 
-CommandButton Command_ConstructElvenMirrorOfGaladriel
+CommandButton Command_PorterConstructElvenMirrorOfGaladriel
   Command          = DOZER_CONSTRUCT
   Object           = ElvenMirrorOfGaladriel
   TextLabel        = CONTROLBAR:ConstructGaladrielsWell
