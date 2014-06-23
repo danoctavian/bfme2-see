@@ -45,18 +45,19 @@ End
 CommandSet ElvenPorterCommandSet   
    1  = Command_Stop
    2  = Command_PorterExtinguishFire   
-   3  = Command_ConstructElvenMallornTree
-   4  =	Command_ConstructElvenBarracks
-   5  = Command_ConstructElvenGreenPasture
-   6  =	Command_ConstructElvenEntMoot
-   7  = Command_ConstructElvenStatue
-   8  =	Command_ConstructElvenWatchTower
-   9  = Command_ConstructElvenMirrorOfGaladriel   
-   10 = Command_ConstructEregionForge
+   3  = Command_PorterConstructElvenMallornTree
+   4  =	Command_PorterConstructElvenBarracks
+   5  = Command_PorterConstructElvenGreenPasture
+   6  =	Command_PorterConstructElvenEntMoot
+   7  = Command_PorterConstructElvenStatue
+   8  =	Command_PorterConstructElvenWatchTower
+   9  = Command_PorterConstructElvenMirrorOfGaladriel   
+   10 = Command_PorterConstructEregionForge
    11 =	Command_ConstructElvenWallHub  
    12 = Command_ConstructElvenFortress
 
 End
+
 
 CommandSet ElvenMirkwoodArcherCommandSet
 	 1 	= Command_ToggleStance
@@ -549,16 +550,15 @@ End
 
 
 CommandSet ElvenFoundationCommandSet  
-  2  = Command_ConstructERElvenBarracks
-  3	 = Command_ConstructDwarvenBarracks
-  4  = Command_ConstructDwarvenHearth
-  5  = Command_ConstructDwarvenForgeWorks
-  6  = Command_ConstructElvenWatchTower
-  8  = Command_ConstructElvenMallornTree
-  9  = Command_ConstructElvenGreenPasture  
-  11 = Command_ConstructElvenMirrorOfGaladriel
+   3  = Command_ConstructElvenMallornTree
+   4  =	Command_ConstructElvenBarracks
+   5  = Command_ConstructElvenGreenPasture
+   6  =	Command_ConstructElvenEntMoot
+   7  = Command_ConstructElvenStatue
+   8  =	Command_ConstructElvenWatchTower
+   9  = Command_ConstructElvenMirrorOfGaladriel   
+   10 = Command_ConstructEregionForge
 End
-
 
 CommandSet ElvenMonumentFortressCommandSet	
 	InitialVisible	= 6
