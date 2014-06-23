@@ -48,29 +48,6 @@ CommandButton Command_ConstructWildCave
 	Radial				= Yes  
 	;InPalantir			= Yes
 END
-CommandButton Command_PurchaseUpgradeWildCaveLevel2
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildCaveLevel2
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:ConstructWildCaveLevel2Upgrade
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildCaveLevel2Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-CommandButton Command_PurchaseUpgradeWildCaveLevel3
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildCaveLevel3
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:ConstructWildCaveLevel3Upgrade
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildCaveLevel3Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructWildSpiderPit
 	Command				= FOUNDATION_CONSTRUCT
@@ -82,29 +59,6 @@ CommandButton Command_ConstructWildSpiderPit
 	Radial				= Yes  
 	;InPalantir			= Yes
 END
-CommandButton Command_PurchaseUpgradeWildSpiderPitLevel2
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildSpiderPitLevel2
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:ConstructWildSpiderPitLevel2Upgrade
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildSpiderPitLevel2Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-CommandButton Command_PurchaseUpgradeWildSpiderPitLevel3
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildSpiderPitLevel3
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:ConstructWildSpiderPitLevel3Upgrade
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildSpiderPitLevel3Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructWildWolfDen
 	Command				= FOUNDATION_CONSTRUCT
@@ -116,29 +70,6 @@ CommandButton Command_ConstructWildWolfDen
 	Radial				= Yes  
 	;InPalantir			= Yes
 END
-CommandButton Command_PurchaseUpgradeWildWolfDenLevel2
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildWolfDenLevel2
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:ConstructWildWolfDenLevel2Upgrade
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildWolfDenLevel2Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-CommandButton Command_PurchaseUpgradeWildWolfDenLevel3
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildWolfDenLevel3
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:ConstructWildWolfDenLevel3Upgrade
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildWolfDenLevel3Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructWildFissure
 	Command				= FOUNDATION_CONSTRUCT
@@ -150,29 +81,6 @@ CommandButton Command_ConstructWildFissure
 	Radial				= Yes  
 	;InPalantir			= Yes
 END
-CommandButton Command_UpgradeWildFissureLevel2
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildFissureLevel2
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:UpgradeWildFissureLevel2
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildFissureLevel2Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-CommandButton Command_PurchaseUpgradeWildFissureLevel3
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildFissureLevel3
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:UpgradeWildFissureLevel3
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildFissureLevel3Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructWildTreasureTrove
 	Command				= FOUNDATION_CONSTRUCT
@@ -184,29 +92,6 @@ CommandButton Command_ConstructWildTreasureTrove
 	Radial				= Yes
 	;InPalantir			= Yes
 END
-CommandButton Command_PurchaseUpgradeWildTreasureTroveLevel2
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildTreasureTroveLevel2
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:ConstructWildTreasureTroveLevel2Upgrade
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildTreasureTroveLevel2Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-CommandButton Command_PurchaseUpgradeWildTreasureTroveLevel3
-  Command           	= OBJECT_UPGRADE
-  Upgrade           	= Upgrade_WildTreasureTroveLevel3
-  Options				= CANCELABLE
-  TextLabel         		= CONTROLBAR:ConstructWildTreasureTroveLevel3Upgrade
-  ButtonImage       	= UCCommon_UpgradeStructureNew
-  ButtonBorderType  		= UPGRADE
-  DescriptLabel     		= CONTROLBAR:ToolTipBuildWildTreasureTroveLevel3Upgrade
-  Radial            	= Yes
-  InPalantir	   		= Yes
-End
-
 ; ------------------------------------------------------------------------------ SEE!
 CommandButton Command_ConstructWildWargSentry
 	Command				= FOUNDATION_CONSTRUCT
