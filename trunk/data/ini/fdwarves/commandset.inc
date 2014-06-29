@@ -586,17 +586,29 @@ End
 CommandSet DwarvenPorterCommandSet
    1  = Command_Stop
    2  = Command_PorterExtinguishFire
-   3  = Command_ConstructDwarvenMineShaft
-   4  =	Command_ConstructDwarvenBarracks
-   5  = Command_ConstructDwarvenArcheryRange
-   6  = Command_ConstructDwarvenForgeWorks
-   7  = Command_ConstructDwarvenSentryTower
-   8  =	Command_ConstructDwarvenHearth
-   9  = Command_ConstructDwarvenStatue
+   3  = Command_PorterConstructDwarvenMineShaft
+   4  =	Command_PorterConstructDwarvenBarracks
+   5  = Command_PorterConstructDwarvenArcheryRange
+   6  = Command_PorterConstructDwarvenForgeWorks
+   7  = Command_PorterConstructDwarvenSentryTower
+   8  =	Command_PorterConstructDwarvenHearth
+   9  = Command_PorterConstructDwarvenStatue
    10 = Command_ConstructDwarvenWallHub
    11 =	Command_PorterConstructDwarvenFortress 
  
 End
+
+CommandSet DwarvenFoundationCommandSet
+   1  = Command_ConstructDwarvenMineShaft
+   2  = Command_ConstructDwarvenBarracks
+   3  = Command_ConstructDwarvenArcheryRange
+   4  = Command_ConstructDwarvenForgeWorks
+   5  = Command_ConstructDwarvenSentryTower
+   6  = Command_ConstructDwarvenHearth
+   7  = Command_ConstructDwarvenStatue
+ 
+End
+
 
 CommandSet DwarvenWallUpgradeNodeCommandSet
 	1 = Command_DwarvenWallUpgradeToHub
