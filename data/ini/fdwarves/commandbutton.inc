@@ -182,6 +182,83 @@ CommandButton Command_ConstructDwarvenPorter
 	ShowProductionCount		= Yes     
 End
 
+
+;;----------------Build Plot Structures--------------------
+
+CommandButton Command_ConstructDwarvenArcheryRange
+	Command          	= FOUNDATION_CONSTRUCT
+	Object           	= DwarvenArcheryRange
+	TextLabel        	= CONTROLBAR:ConstructDwarvenArcheryRange
+	ButtonImage      	= BDArcheryRange
+	ButtonBorderType 	= BUILD 
+	DescriptLabel    	= CONTROLBAR:TooltipConstructDwarvenArcheryRange
+	Radial           	= Yes  
+End
+
+CommandButton Command_ConstructDwarvenSentryTower
+	Command				= FOUNDATION_CONSTRUCT
+	Object				= DwarvenSentryTower
+	TextLabel			= CONTROLBAR:ConstructDwarvenSentryTower
+	ButtonImage			= SBGood_LoneTower
+	ButtonBorderType		= BUILD
+	DescriptLabel			= CONTROLBAR:ToolTipConstructDwarvenSentryTower
+	Radial				= Yes
+End
+
+CommandButton Command_ConstructDwarvenBarracks
+	Command          	= FOUNDATION_CONSTRUCT
+	Object           	= DwarfBarracks
+	TextLabel        	= CONTROLBAR:ConstructDwarvenBarracks
+	ButtonImage      	= BDHallWarriors
+	ButtonBorderType 	= BUILD 
+	DescriptLabel    	= CONTROLBAR:ToolTipConstructDwarvenBarracks
+	Radial           	= Yes  
+End
+
+CommandButton Command_ConstructDwarvenHearth
+	Command         	= FOUNDATION_CONSTRUCT
+	Object           	= DwarvenHearth
+	TextLabel        	= CONTROLBAR:ConstructDwarvenHearth
+	ButtonImage	 	= BDHearth
+	ButtonBorderType 	= BUILD 
+	DescriptLabel    	= OBJECT:HearthWellDescription
+	Radial           	= Yes  
+End
+
+CommandButton Command_ConstructDwarvenForgeWorks
+ 	Command          = FOUNDATION_CONSTRUCT
+ 	Object           = DwarvenSiegeWorks ;//Note this object is really the Forge works just named incorrectly.
+ 	TextLabel        = CONTROLBAR:ConstructDwarvenForgeWorks
+ 	ButtonImage      = BDForgeWorks
+ 	ButtonBorderType = BUILD 
+ 	DescriptLabel    = CONTROLBAR:ToolTipConstructDwarvenForgeWorks
+ 	Radial           = Yes  
+ End
+
+
+CommandButton Command_ConstructDwarvenMineShaft
+	Command          = FOUNDATION_CONSTRUCT
+	Object           = DwarvenMineShaft
+	TextLabel        = CONTROLBAR:ConstructDwarvenMineShaft
+	ButtonImage      = BDMineShaft
+	ButtonBorderType = BUILD 
+	DescriptLabel    = CONTROLBAR:TooltipConstructDwarvenMineShaft
+	Radial           = Yes  
+End
+
+CommandButton Command_ConstructDwarvenStatue
+	Command          = FOUNDATION_CONSTRUCT
+	Object           = DwarvenStatue
+	TextLabel        = CONTROLBAR:ConstructDwarvenStatue
+	ButtonImage      = BDHeroicStatue
+	ButtonBorderType = BUILD 
+	DescriptLabel    = OBJECT:HeroicStatueDescription
+	Radial           = Yes  
+End
+
+;;----------------Porter Structures------------------------
+
+
 CommandButton Command_PorterConstructDwarvenFortress
 	Command				= DOZER_CONSTRUCT
 	Object				= DwarvenFortress
@@ -193,7 +270,7 @@ CommandButton Command_PorterConstructDwarvenFortress
 	;InPalantir			= Yes
 End
 
-CommandButton Command_ConstructDwarvenSentryTower
+CommandButton Command_PorterConstructDwarvenSentryTower
 	Command				= DOZER_CONSTRUCT
 	Object				= DwarvenSentryTower
 	TextLabel			= CONTROLBAR:ConstructDwarvenSentryTower
@@ -203,7 +280,7 @@ CommandButton Command_ConstructDwarvenSentryTower
 	Radial				= Yes
 End
 
-CommandButton Command_ConstructDwarvenBarracks
+CommandButton Command_PorterConstructDwarvenBarracks
 	Command          	= DOZER_CONSTRUCT
 	Object           	= DwarfBarracks
 	TextLabel        	= CONTROLBAR:ConstructDwarvenBarracks
@@ -213,7 +290,7 @@ CommandButton Command_ConstructDwarvenBarracks
 	Radial           	= Yes  
 End
 
-CommandButton Command_ConstructDwarvenHearth
+CommandButton Command_PorterConstructDwarvenHearth
 	Command         	= DOZER_CONSTRUCT
 	Object           	= DwarvenHearth
 	TextLabel        	= CONTROLBAR:ConstructDwarvenHearth
@@ -223,6 +300,46 @@ CommandButton Command_ConstructDwarvenHearth
 	Radial           	= Yes  
 End
 
+CommandButton Command_PorterConstructDwarvenForgeWorks
+ 	Command          = DOZER_CONSTRUCT
+ 	Object           = DwarvenSiegeWorks ;//Note this object is really the Forge works just named incorrectly.
+ 	TextLabel        = CONTROLBAR:ConstructDwarvenForgeWorks
+ 	ButtonImage      = BDForgeWorks
+ 	ButtonBorderType = BUILD 
+ 	DescriptLabel    = CONTROLBAR:ToolTipConstructDwarvenForgeWorks
+ 	Radial           = Yes  
+ End
+
+
+CommandButton Command_PorterConstructDwarvenMineShaft
+	Command          = DOZER_CONSTRUCT
+	Object           = DwarvenMineShaft
+	TextLabel        = CONTROLBAR:ConstructDwarvenMineShaft
+	ButtonImage      = BDMineShaft
+	ButtonBorderType = BUILD 
+	DescriptLabel    = CONTROLBAR:TooltipConstructDwarvenMineShaft
+	Radial           = Yes  
+End
+
+CommandButton Command_PorterConstructDwarvenStatue
+	Command          = DOZER_CONSTRUCT
+	Object           = DwarvenStatue
+	TextLabel        = CONTROLBAR:ConstructDwarvenStatue
+	ButtonImage      = BDHeroicStatue
+	ButtonBorderType = BUILD 
+	DescriptLabel    = OBJECT:HeroicStatueDescription
+	Radial           = Yes  
+End
+
+CommandButton Command_PorterConstructDwarvenArcheryRange
+	Command          	= DOZER_CONSTRUCT
+	Object           	= DwarvenArcheryRange
+	TextLabel        	= CONTROLBAR:ConstructDwarvenArcheryRange
+	ButtonImage      	= BDArcheryRange
+	ButtonBorderType 	= BUILD 
+	DescriptLabel    	= CONTROLBAR:TooltipConstructDwarvenArcheryRange
+	Radial           	= Yes  
+End
 
 CommandButton Command_PurchaseTechnologyDwarvenFireArrows ;building
 	Command				= PLAYER_UPGRADE
@@ -430,36 +547,6 @@ End
   	InPalantir			= Yes
  End
 
- CommandButton Command_ConstructDwarvenForgeWorks
- 	Command          = DOZER_CONSTRUCT
- 	Object           = DwarvenSiegeWorks ;//Note this object is really the Forge works just named incorrectly.
- 	TextLabel        = CONTROLBAR:ConstructDwarvenForgeWorks
- 	ButtonImage      = BDForgeWorks
- 	ButtonBorderType = BUILD 
- 	DescriptLabel    = CONTROLBAR:ToolTipConstructDwarvenForgeWorks
- 	Radial           = Yes  
- End
-
-
-CommandButton Command_ConstructDwarvenMineShaft
-	Command          = DOZER_CONSTRUCT
-	Object           = DwarvenMineShaft
-	TextLabel        = CONTROLBAR:ConstructDwarvenMineShaft
-	ButtonImage      = BDMineShaft
-	ButtonBorderType = BUILD 
-	DescriptLabel    = CONTROLBAR:TooltipConstructDwarvenMineShaft
-	Radial           = Yes  
-End
-
-CommandButton Command_ConstructDwarvenStatue
-	Command          = DOZER_CONSTRUCT
-	Object           = DwarvenStatue
-	TextLabel        = CONTROLBAR:ConstructDwarvenStatue
-	ButtonImage      = BDHeroicStatue
-	ButtonBorderType = BUILD 
-	DescriptLabel    = OBJECT:HeroicStatueDescription
-	Radial           = Yes  
-End
 
 CommandButton Command_ConstructDwarvenWallHub
 	Command       		= DOZER_CONSTRUCT
@@ -509,17 +596,6 @@ CommandButton Command_DwarvenCastleWallHub_SmallWallSpan
 	InPalantir	   	= No
 End
 
-
-
-CommandButton Command_ConstructDwarvenArcheryRange
-	Command          	= DOZER_CONSTRUCT
-	Object           	= DwarvenArcheryRange
-	TextLabel        	= CONTROLBAR:ConstructDwarvenArcheryRange
-	ButtonImage      	= BDArcheryRange
-	ButtonBorderType 	= BUILD 
-	DescriptLabel    	= CONTROLBAR:TooltipConstructDwarvenArcheryRange
-	Radial           	= Yes  
-End
 	
 CommandButton Command_DwarvenWallUpgradeToHub
 	Command			= OBJECT_UPGRADE 
