@@ -1,24 +1,24 @@
 //The anims and model... Since all that changes are the "random" skins...
 
 DefaultModelConditionState
-	Model = MUSwrdGob_NHA
+	Model = MUGob_War_NHA //MUSwrdGob_NHA
 	Skeleton = MUGblnSwrd_SKL
 End
 
-ModelConditionState 	= USER_9
-	Model = MUSwrdGob_NHA 
+ModelConditionState 	= USER_9							; For the "Scurry" power!
+	Model = MUGob_War_NHA //MUSwrdGob_NHA 
 	Skeleton = MUGblnSwrd_SKL
 	ParticleSysBone     = NONE MoriaSpellbookScurry
 End
 
-//CREATE_A_HERO_00
+//CREATE_A_HERO_00 (The new LUA based HA)
 	ModelConditionState = CREATE_A_HERO_00
-		Model = MUSwrdGob_SKN
+		Model = MUGob_War_SKN //MUSwrdGob_SKN
 		Skeleton = MUGblnSwrd_SKL 
 	End
 
-	ModelConditionState = CREATE_A_HERO_00 USER_9
-		Model = MUSwrdGob_SKN
+	ModelConditionState = CREATE_A_HERO_00 USER_9			; For the "Scurry" power!
+		Model = MUGob_War_SKN //MUSwrdGob_SKN
 		Skeleton = MUGblnSwrd_SKL 
 		ParticleSysBone = NONE MoriaSpellbookScurry
 	End
