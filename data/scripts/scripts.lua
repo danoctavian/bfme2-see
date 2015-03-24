@@ -1507,73 +1507,78 @@ function OnMoriaGoblinsSwordCreated(self)
 	ObjectHideSubObjectPermanently( self, "WEAPON03", true )
 	ObjectHideSubObjectPermanently( self, "WEAPON04", true )
 	ObjectHideSubObjectPermanently( self, "WEAPON05", true )
+	
+	ObjectHideSubObjectPermanently( self, "HELMET_TOP", true )	
+	ObjectHideSubObjectPermanently( self, "HELMET_FRONT", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_JAW", true )	
 
-	ObjectHideSubObjectPermanently( self, "HEAD01", true )
-	ObjectHideSubObjectPermanently( self, "HEAD02", true )
-	ObjectHideSubObjectPermanently( self, "HEAD03", true )
-
-	ObjectHideSubObjectPermanently( self, "ARM", true )
+	ObjectHideSubObjectPermanently( self, "ARMOUR_SHOULDER", true )
+	ObjectHideSubObjectPermanently( self, "ARMOUR_ARMS", true )
+	ObjectHideSubObjectPermanently( self, "ARMOUR_FEET", true )
 	ObjectHideSubObjectPermanently( self, "SHIELD", true )
-	ObjectHideSubObjectPermanently( self, "SHOULDER", true )
-	ObjectHideSubObjectPermanently( self, "FEET", true )
 
-	--haxor, we dont wanna rebind or whatever the model...	
-	ObjectHideSubObjectPermanently( self, "MRA", true )
-	ObjectHideSubObjectPermanently( self, "DLEIHS", true )
-	ObjectHideSubObjectPermanently( self, "REDLUOHS", true )
-	ObjectHideSubObjectPermanently( self, "TEEF", true )
+	-- Haxor, we dont wanna rebind or whatever the model...	
+	ObjectHideSubObjectPermanently( self, "HELMET_TOP_X", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_JAW_X", true )
+	ObjectHideSubObjectPermanently( self, "HELMET_FRONT_X", true )	
+	ObjectHideSubObjectPermanently( self, "ARMOUR_SHOULD_X", true )	
+	ObjectHideSubObjectPermanently( self, "ARMOUR_ARMS_X", true )
+	ObjectHideSubObjectPermanently( self, "ARMOUR_FEET_X", true )	
+	ObjectHideSubObjectPermanently( self, "SHIELD_X", true )
 
-	-- define the locals as random numbers
-	local sword = GetRandomNumber()
+	-- Define the locals as random numbers
 	local helmet = GetRandomNumber()
-	local shield = GetRandomNumber()
+	local shoulders = GetRandomNumber()	
+--	local arms = GetRandomNumber ()		
 	local feet = GetRandomNumber()
-	local shoulder = GetRandomNumber()
+	local shield = GetRandomNumber()
+	local weapon = GetRandomNumber()
 
-	-- set the bow; note: we need one of them, so there's no "empty" possibility
-	if sword <= 0.2 then
+	-- Set the WEAPON. Note: we need one of them, so there's no "empty" possibility!
+	if weapon <= 0.2 then
       ObjectHideSubObjectPermanently( self, "WEAPON01", false )
-	elseif sword <= 0.4 then
+	elseif weapon <= 0.4 then
       ObjectHideSubObjectPermanently( self, "WEAPON02", false )
-	elseif sword <= 0.6 then
+	elseif weapon <= 0.6 then
       ObjectHideSubObjectPermanently( self, "WEAPON03", false )
-	elseif sword <= 0.8 then
+	elseif weapon <= 0.8 then
       ObjectHideSubObjectPermanently( self, "WEAPON04", false )
 	else
       ObjectHideSubObjectPermanently( self, "WEAPON05", false )
 	end
 
-  -- set the bow; note: we need one of them, so there's no "empty" possibility
-  if helmet <= 0.8 then
-      ObjectHideSubObjectPermanently( self, "HEAD01", false )
---    elseif helmet <= 0.66 then
---      ObjectHideSubObjectPermanently( self, "HEAD03", false )
+	-- set the HELMET
+	if helmet <= 0.5 then
+		ObjectHideSubObjectPermanently( self, "HELMET_TOP", false )
+		ObjectHideSubObjectPermanently( self, "HELMET_FRONT", false )
+		ObjectHideSubObjectPermanently( self, "HELMET_JAW", false )	  
     else
-      ObjectHideSubObjectPermanently( self, "HEAD02", false )
-  end
+		ObjectHideSubObjectPermanently( self, "NOTHING", false )		
+	end
 
-  -- set the arms;
-  if shield <= 0.33 then
-      ObjectHideSubObjectPermanently( self, "ARM", false )
+	-- set the SHOULDER
+	if shoulders <= 0.5 then
+		ObjectHideSubObjectPermanently( self, "ARMOUR_SHOULDER", false )
+    else
+		ObjectHideSubObjectPermanently( self, "NOTHING", false )		
+	end  
+  
+	-- set the ARM/SHIELD;
+	if shield <= 0.33 then
+		ObjectHideSubObjectPermanently( self, "ARMOUR_ARMS", false )
     elseif shield <= 0.66 then
-      ObjectHideSubObjectPermanently( self, "SHIELD", false )
+		ObjectHideSubObjectPermanently( self, "SHIELD", false )
     else
-      ObjectHideSubObjectPermanently( self, "NOTHING", false )
-  end
+		ObjectHideSubObjectPermanently( self, "NOTHING", false )		
+	end
 
-  -- set the bow; note: we need one of them, so there's no "empty" possibility
-  if feet <= 0.5 then
-      ObjectHideSubObjectPermanently( self, "FEET", false )
+	-- set the FEET
+	if feet <= 0.5 then
+		ObjectHideSubObjectPermanently( self, "ARMOUR_FEET", false )
     else
-      ObjectHideSubObjectPermanently( self, "NOTHING", false )
-  end
-
-  -- set the bow; note: we need one of them, so there's no "empty" possibility
-  if shoulder <= 0.5 then
-      ObjectHideSubObjectPermanently( self, "SHOULDER", false )
-    else
-      ObjectHideSubObjectPermanently( self, "NOTHING", false )
-  end
+		ObjectHideSubObjectPermanently( self, "NOTHING", false )		
+	end
+	
 end
 
 --// いいいいいいいいいいいいいいいいいいいいいいいいいいいいい
