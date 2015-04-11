@@ -116,7 +116,7 @@ ObjectCreationList OCL_WildStoneGiants
 		FadeTime = 10000 //2000
 		IgnoreCommandPointLimit = Yes
 		Disposition = SPAWN_AROUND
-		DispositionAngle = 72 ;90	;SpawnAround uses this as the arc between guys
+		DispositionAngle = 180 //72 ;90	;SpawnAround uses this as the arc between guys
 		DispositionIntensity = 350 ;200 ; and this for distance from center
         UseJustBuiltFlag = Yes
         StartingBusyTime = 5000
