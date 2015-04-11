@@ -220,7 +220,7 @@
 				AnimationMode = ONCE
 				AnimationBlendTime = 20
 			End
-			FXEvent	= Frame:54 Name:FX_EntRightFootStep	
+			FXEvent	= Frame:54 Name:FX_StoneGiantRightFootStep	
 		End
 ;-----------------------
 		
@@ -240,6 +240,7 @@
 				AnimationName     = RUTreeberd_TRNL 
 				AnimationMode     = LOOP
 				AnimationSpeedFactorRange = 1.1 1.1
+				Distance = 100	;Added for SEE!
 			End
       BeginScript
         CurDrawableHideSubObjectPermanently("ROCK")
@@ -251,6 +252,7 @@
 				AnimationName     = RUTreeberd_TRNR 
 				AnimationMode     = LOOP
 				AnimationSpeedFactorRange = 1.1 1.1
+				Distance = 100	;Added for SEE!
 			End
       BeginScript
         CurDrawableHideSubObjectPermanently("ROCK")
@@ -328,8 +330,8 @@
 			BeginScript
 				CurDrawableHideSubObjectPermanently("ROCK")
 			EndScript
-			FXEvent	= Frame:4 Name:FX_EntLeftFootStep
-			FXEvent	= Frame:18 Name:FX_EntRightFootStep
+			FXEvent	= Frame:4 Name:FX_StoneGiantLeftFootStep
+			FXEvent	= Frame:18 Name:FX_StoneGiantRightFootStep
 		End
 
     AnimationState = WEAPONSET_ENRAGED AFLAME WADING
@@ -357,10 +359,10 @@
 				if Prev == "Turn" then CurDrawableSetTransitionAnimState("TRANS_AccelerateENR") end
 			EndScript			
 			Flags = MAINTAIN_FRAME_ACROSS_STATES
-			FXEvent	= Frame:0 Name:FX_EntLeftFootStep
-			FXEvent	= Frame:39 Name:FX_EntRightFootStep
-			FXEvent	= Frame:79 Name:FX_EntLeftFootStep
-			FXEvent	= Frame:129 Name:FX_EntRightFootStep
+			FXEvent	= Frame:0 Name:FX_StoneGiantLeftFootStep
+			FXEvent	= Frame:39 Name:FX_StoneGiantRightFootStep
+			FXEvent	= Frame:79 Name:FX_StoneGiantLeftFootStep
+			FXEvent	= Frame:129 Name:FX_StoneGiantRightFootStep
 		End
 
 		AnimationState						= WEAPONSET_ENRAGED HIT_REACTION HIT_LEVEL_1 
@@ -395,6 +397,7 @@
       Animation = Walk
         AnimationName = RUTreeberd_TRNL 
         AnimationMode = LOOP
+		Distance = 100	;Added for SEE!
       End
       BeginScript
         CurDrawableHideSubObjectPermanently("ROCK")
@@ -404,6 +407,7 @@
       Animation = Walk
         AnimationName = RUTreeberd_TRNR 
         AnimationMode = LOOP
+		Distance = 100	;Added for SEE!
       End
       BeginScript
         CurDrawableHideSubObjectPermanently("ROCK")
@@ -418,8 +422,8 @@
         Distance = 50
       End
       Flags = MAINTAIN_FRAME_ACROSS_STATES
-      FXEvent = Frame:4 Name:FX_EntLeftFootStep
-      FXEvent = Frame:18 Name:FX_EntRightFootStep
+      FXEvent = Frame:4 Name:FX_StoneGiantLeftFootStep
+      FXEvent = Frame:18 Name:FX_StoneGiantRightFootStep
       BeginScript
         CurDrawableHideSubObjectPermanently("ROCK")
         CurDrawablePlaySound("EntRunFire")
@@ -458,6 +462,7 @@
 				AnimationName		= RUTreeberd_TNR2
 				AnimationMode		= LOOP
 				AnimationSpeedFactorRange = 1.1 1.1
+				Distance = 100	;Added for SEE!
 			End
 		End
 
@@ -467,6 +472,7 @@
 				AnimationName		= RUTreeberd_TNL2
 				AnimationMode		= LOOP
 				AnimationSpeedFactorRange = 1.1 1.1
+				Distance = 100	;Added for SEE!
 			End
 		End
 
@@ -511,6 +517,7 @@
 			Animation				= Walk
 				AnimationName		= RUTreeberd_TRNR 
 				AnimationMode		= LOOP
+				Distance = 100	;Added for SEE!
 			End
 		End
 		
@@ -519,6 +526,7 @@
 			Animation				= Walk
 				AnimationName		= RUTreeberd_TRNL 
 				AnimationMode		= LOOP
+				Distance = 100	;Added for SEE!
 			End
 		End
 		
@@ -626,15 +634,15 @@
 			BeginScript
 				CurDrawableHideSubObjectPermanently("ROCK")
 			EndScript
-			FXEvent	= Frame:4 Name:FX_EntLeftFootStep
-			FXEvent	= Frame:18 Name:FX_EntRightFootStep
+			FXEvent	= Frame:4 Name:FX_StoneGiantLeftFootStep
+			FXEvent	= Frame:18 Name:FX_StoneGiantRightFootStep
 		End
 	
 		AnimationState				= MOVING WEAPONSET_TOGGLE_1
 			StateName				= Moving
 			Animation
-				AnimationName		= RUTreeberd_WLKE
-				Distance			= 50
+				AnimationName		= RUTreeberd_WLKB //E
+				Distance				= 100 //50		; Sets speed of anim, not movement. Lower = faster (Naz)
 				AnimationMode		= LOOP
 				AnimationBlendTime	= 5
 			End
@@ -644,15 +652,15 @@
 				if Prev == "Turn" then CurDrawableSetTransitionAnimState("TRANS_AccelerateR") end
 			EndScript
 			Flags = MAINTAIN_FRAME_ACROSS_STATES
-			FXEvent	= Frame:0 Name:FX_EntLeftFootStep
-			FXEvent	= Frame:26 Name:FX_EntRightFootStep
+			FXEvent	= Frame:0 Name:FX_StoneGiantLeftFootStep
+			FXEvent	= Frame:40 Name:FX_StoneGiantRightFootStep //26
 		End
 
 		AnimationState				= MOVING
 			StateName				= Moving
 			Animation				= Walk
-				AnimationName		= RUTreeberd_WLKC 
-				Distance			= 50
+				AnimationName		= RUTreeberd_WLKA //C 
+				Distance				= 100 //50
 				AnimationMode		= LOOP
 				AnimationBlendTime	= 5
 			End
@@ -663,10 +671,10 @@
 				if Prev == "Turn" then CurDrawableSetTransitionAnimState("TRANS_Accelerate") end
 			EndScript			
 			Flags = MAINTAIN_FRAME_ACROSS_STATES
-			FXEvent	= Frame:0 Name:FX_EntLeftFootStep
-			FXEvent	= Frame:39 Name:FX_EntRightFootStep
-			FXEvent	= Frame:79 Name:FX_EntLeftFootStep
-			FXEvent	= Frame:129 Name:FX_EntRightFootStep
+			FXEvent	= Frame:0 Name:FX_StoneGiantLeftFootStep
+			FXEvent	= Frame:39 Name:FX_StoneGiantRightFootStep
+			FXEvent	= Frame:79 Name:FX_StoneGiantLeftFootStep
+			FXEvent	= Frame:129 Name:FX_StoneGiantRightFootStep
 		End
 
 
