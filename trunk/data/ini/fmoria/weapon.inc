@@ -346,6 +346,87 @@ Weapon MordorBalrogHeroEffect
   End
 End
 
+; ----------------------------------------------------------------------------- STONE GIANTS
+;	This is the toggle weapon for ents. They will reload, throw, reload straight away, and constantly hold a rock.
+Weapon StoneGiantRockThrow									//This weapon is used by ALL Ents!!! /Naz
+	HoldDuringReload			= Yes							; Cache any commands during the reload so we don't wander off half way through reload.
+	AttackRange				= ROHAN_TREEBEARD_ROCK_RANGE
+	
+	RangeBonusMinHeight			= 10
+	RangeBonus				= 1
+	RangeBonusPerFoot			= #MULTIPLY( ROHAN_TREEBEARD_ROCK_RANGE .01 )
+	
+	WeaponSpeed				= 200.0							; dist/sec (huge value == effectively instant)
+	FireFX					= FX_EntThrowSmallRock
+	PreAttackDelay				= 2200
+	FiringDuration				= 3000
+	PreAttackType				= PER_SHOT						; Do the delay each time we attack a new target
+	DelayBetweenShots			= 6000
+	HitPercentage				= 0								; never auto hits, always hits ground
+	ScatterRadius				= 4.0							; When this weapon misses it can randomly miss by as much as this distance.
+	IsAimingWeapon				= Yes							; Shooter will use his AimWeaponBehavior to get extra model condition flags
+	NoVictimNeeded				= Yes							; Need no target
+	LeechRangeWeapon			= Yes
+
+	HoldAfterFiringDelay		= 5200
+	AutoReloadWhenIdle			= 2000
+	AutoReloadsClip 			= No
+	ClipReloadTime 				= 3000
+
+	ProjectileNugget                    			; A Nugget that creates an Object and sends it to the target with a Warhead
+		ProjectileTemplateName	= RockBigStoneGiant
+		WarheadTemplateName		= StoneGiantRockFromThinAirWarhead
+	End
+	
+	ProjectileNugget													; This nugget is to create a revealing object, so fire
+		AlwaysAttackHereOffset	= X:0 Y:0 Z:0							; it directly on top of us, and just use an empty warhead
+		UseAlwaysAttackOffset	= Yes									; so we don't assert.
+		ProjectileTemplateName  = ShroudRevealer_Bombard
+		WarheadTemplateName     = ShipRevealBombardWarhead_Dummy
+	End
+End
+
+;---------------------------- ^^ & vv
+Weapon StoneGiantRockFromThinAirWarhead
+  ;FireFX= FX_ImpactEntRock
+  ProjectileCollidesWith = ENEMIES NEUTRAL STRUCTURES WALLS ALLIES
+  RadiusDamageAffects	= ENEMIES NEUTRALS ALLIES
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = ROHAN_TREEBEARD_ROCK_DAMAGE //ROHAN_ENT_ROCK_DAMAGE //M_ROHAN_TREEBEARD_ROCK_DAMAGE
+    Radius         = 30.0 ;20.0
+    DelayTime     = 0
+    DamageType    = SIEGE
+    DamageFXType  = SMALL_ROCK
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar  = 25% ALL ALLIES
+    DamageScalar		= 200% NONE +STRUCTURE +WildMountainGiant +MordorAttackTroll +MordorDrummerTroll +MordorMountainTroll +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair	//Added for SEE! 
+    DamageScalar  	= 400% NONE +HERO +MordorMumakil				//Added for SEE! 	
+    DamageScalar  	= 500% NONE +SHIP								//Added for SEE! 
+  End
+  
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        = ROHAN_TREEBEARD_ROCK_DAMAGE  ; Hella damage.  structures are on a different order of magnitude for hitpoints, and we want to be sure to outscore the fire damage so we can knock bits off.
+		DamageTaperOff = 50
+		Radius        = 100.0
+		DelayTime     = 0
+		DamageType    = SIEGE
+		DamageFXType  = BIG_ROCK
+		DeathType     = EXPLODED
+		DamageScalar  = 0% ALL ENEMIES -WALL_UPGRADE -WALL_HUB -WALL_SEGMENT -DEFENSIVE_WALL	-FS_BASE_DEFENSE		; No damage to allied structures.
+		DamageScalar  = 0% ALL ALLIES
+		DamageScalar  = 120% ANY ENEMIES +FS_BASE_DEFENSE ; ;
+	End
+  
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+    ; HeroResist			= .75
+    ShockWaveAmount   = 50.0
+    ShockWaveRadius   = 30.0
+    ShockWaveTaperOff = 0.75
+    ; ShockWaveZMult    = 1.20
+  End
+  
+End
+
 ; ----------------------------------------------------------------------------- CAVE TROLL
 
 Weapon CaveTrollHeroSmashWeapon
