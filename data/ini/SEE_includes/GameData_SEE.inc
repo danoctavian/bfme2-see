@@ -269,7 +269,7 @@
 
 #define CAMOUFLAGE_RADIUS									100.0
 #define ELVEN_MIST_CAMOUFLAGE_DETECTION_RANGE		100.0
-#define ELVEN_MIST_OBJECT_FILTER			ANY +HORDE +HERO +DOZER +RohanEntFir_Summoned +RohanEntBirch_Summoned +RohanEntFir +RohanEntBirch +RohanEntAsh +MordorMountainTroll +MordorDrummerTroll +MordorAttackTroll +WildMountainGiant +GoblinCaveTroll +CaveTroll_Slaved +MordorCaveTroll_Summoned +MordorAttackTroll_Summoned +WildMountainGiant_Summoned -Drogoth -GondorGwaihir_Summoned -GondorGwaihir -MordorFellBeast -MordorWitchKingOnFellBeast -ElvenFortressEagle -SpellBookDragonStrikeDragon -KhamulFellBeast -MorgomirFellBeast ALLIES
+#define ELVEN_MIST_OBJECT_FILTER			ANY +HORDE +HERO +DOZER +RohanEntFir_Summoned +RohanEntBirch_Summoned +RohanEntFir +RohanEntBirch +RohanEntAsh +MordorMountainTroll +MordorDrummerTroll +MordorAttackTroll +WildMountainGiant +WildStoneGiant +GoblinCaveTroll +CaveTroll_Slaved +MordorCaveTroll_Summoned +MordorAttackTroll_Summoned +WildMountainGiant_Summoned +WildStoneGiant_Summoned -Drogoth -GondorGwaihir_Summoned -GondorGwaihir -MordorFellBeast -MordorWitchKingOnFellBeast -ElvenFortressEagle -SpellBookDragonStrikeDragon -KhamulFellBeast -MorgomirFellBeast ALLIES
 
 ; ------------------------------------------------------------------- SEE!
 #define CAMOUFLAGE_DETECTION_DISTANCE_SHORT		0.5

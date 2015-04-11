@@ -82,12 +82,36 @@ ObjectCreationList OCL_MoriaStoneGiantsEgg
 		ClearRemovables		= Yes
 	End
 End
-
 ; Create A bunch of Stone Giants out of thin air. 
 ObjectCreationList OCL_MoriaStoneGiants
 	CreateObject
 		ObjectNames = WildMountainGiant
 		Count = 5
+		FadeIn = Yes
+		FadeTime = 10000 //2000
+		IgnoreCommandPointLimit = Yes
+		Disposition = SPAWN_AROUND
+		DispositionAngle = 72 ;90	;SpawnAround uses this as the arc between guys
+		DispositionIntensity = 350 ;200 ; and this for distance from center
+        UseJustBuiltFlag = Yes
+        StartingBusyTime = 5000
+	End
+End
+; Tier 4
+; ---------------------------------------------------------------------------------------
+ObjectCreationList OCL_WildStoneGiantsEgg
+	CreateObject
+		ObjectNames			= WildStoneGiantsEgg
+		Count				= 1
+		FadeIn				= No
+		ClearRemovables		= Yes
+	End
+End
+; Create A bunch of Stone Giants out of thin air. 
+ObjectCreationList OCL_WildStoneGiants
+	CreateObject
+		ObjectNames = WildStoneGiant
+		Count = 2 //5
 		FadeIn = Yes
 		FadeTime = 10000 //2000
 		IgnoreCommandPointLimit = Yes
