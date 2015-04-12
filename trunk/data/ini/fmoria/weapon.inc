@@ -393,13 +393,13 @@ Weapon StoneGiantRockFromThinAirWarhead
   RadiusDamageAffects	= ENEMIES NEUTRALS ALLIES
   DamageNugget                        ; A basic Nugget that just does damage
     Damage        = ROHAN_TREEBEARD_ROCK_DAMAGE //ROHAN_ENT_ROCK_DAMAGE //M_ROHAN_TREEBEARD_ROCK_DAMAGE
-    Radius         = 30.0 ;20.0
+    Radius         = 60.0 //30.0 ;20.0
     DelayTime     = 0
     DamageType    = SIEGE
-    DamageFXType  = SMALL_ROCK
+    DamageFXType  = BIG_ROCK //SMALL_ROCK
     DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
 		DamageScalar  = 25% ALL ALLIES
-    DamageScalar		= 200% NONE +STRUCTURE +WildMountainGiant +MordorAttackTroll +MordorDrummerTroll +MordorMountainTroll +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair	//Added for SEE! 
+    DamageScalar		= 200% NONE +STRUCTURE +WildStoneGiant +WildMountainGiant +MordorAttackTroll +MordorDrummerTroll +MordorMountainTroll +GoblinCaveTroll +GoblinCaveTroll_FromTrollLair	//Added for SEE! 
     DamageScalar  	= 400% NONE +HERO +MordorMumakil				//Added for SEE! 	
     DamageScalar  	= 500% NONE +SHIP								//Added for SEE! 
   End
@@ -419,8 +419,8 @@ Weapon StoneGiantRockFromThinAirWarhead
   
   MetaImpactNugget                    ; A Nugget that throws things back with force
     ; HeroResist			= .75
-    ShockWaveAmount   = 50.0
-    ShockWaveRadius   = 30.0
+    ShockWaveAmount   = 100.0 //50.0
+    ShockWaveRadius   = 60.0 //30.0
     ShockWaveTaperOff = 0.75
     ; ShockWaveZMult    = 1.20
   End
