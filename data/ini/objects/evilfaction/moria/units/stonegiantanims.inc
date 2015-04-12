@@ -16,7 +16,7 @@
 				if Prev == "Moving" then CurDrawableSetTransitionAnimState("TRANS_Stop00") return end
         if Prev == "STATE_JustBuilt" then CurDrawableSetTransitionAnimState("TRANS_Sprout") end
 			EndScript			
-      ParticleSysBone     = BAT_SPINE1 TreeBeardIdleLeaves FollowBone: no
+      // ParticleSysBone     = BAT_SPINE1 TreeBeardIdleLeaves FollowBone: no
 		End
 ;-----------------------
 
@@ -28,7 +28,7 @@
 				AnimationMode = ONCE
 				AnimationBlendTime = 10
 			End
-			ParticleSysBone = BAT_SPINE1 TreebeardSplatDust FollowBone:Yes //Added for SEE!			
+			ParticleSysBone = BAT_SPINE1 TreebeardSplatDust FollowBone:Yes //Added for SEE!					CHANGE INTO BIGGER FX!!!	
 			; Animation
 				; AnimationName = RUTreeberd_DIE
 				; AnimationMode = ONCE
@@ -240,7 +240,6 @@
 				AnimationName     = RUTreeberd_TRNL 
 				AnimationMode     = LOOP
 				AnimationSpeedFactorRange = 1.1 1.1
-				Distance = 100	;Added for SEE!
 			End
       BeginScript
         CurDrawableHideSubObjectPermanently("ROCK")
@@ -252,7 +251,6 @@
 				AnimationName     = RUTreeberd_TRNR 
 				AnimationMode     = LOOP
 				AnimationSpeedFactorRange = 1.1 1.1
-				Distance = 100	;Added for SEE!
 			End
       BeginScript
         CurDrawableHideSubObjectPermanently("ROCK")
@@ -397,7 +395,7 @@
       Animation = Walk
         AnimationName = RUTreeberd_TRNL 
         AnimationMode = LOOP
-		Distance = 100	;Added for SEE!
+		AnimationSpeedFactorRange	= 0.5 0.5 ; Added for SEE! Slow down turning with 50%
       End
       BeginScript
         CurDrawableHideSubObjectPermanently("ROCK")
@@ -407,7 +405,7 @@
       Animation = Walk
         AnimationName = RUTreeberd_TRNR 
         AnimationMode = LOOP
-		Distance = 100	;Added for SEE!
+		AnimationSpeedFactorRange	= 0.5 0.5 ; Added for SEE! Slow down turning with 50%
       End
       BeginScript
         CurDrawableHideSubObjectPermanently("ROCK")
@@ -453,7 +451,7 @@
 			FXEvent	= Frame:24	Name: FX_EntRockYank			
 			BeginScript
 				CurDrawableShowSubObjectPermanently("ROCK")
-			EndScript
+			EndScript	
 		End
 		
 		AnimationState				= TURN_RIGHT WEAPONSET_TOGGLE_1
@@ -461,8 +459,7 @@
 			Animation
 				AnimationName		= RUTreeberd_TNR2
 				AnimationMode		= LOOP
-				AnimationSpeedFactorRange = 1.1 1.1
-				Distance = 100	;Added for SEE!
+				AnimationSpeedFactorRange = 0.2 0.2 //1.1 1.1
 			End
 		End
 
@@ -471,8 +468,7 @@
 			Animation
 				AnimationName		= RUTreeberd_TNL2
 				AnimationMode		= LOOP
-				AnimationSpeedFactorRange = 1.1 1.1
-				Distance = 100	;Added for SEE!
+				AnimationSpeedFactorRange = 0.2 0.2 //1.1 1.1
 			End
 		End
 
@@ -517,16 +513,16 @@
 			Animation				= Walk
 				AnimationName		= RUTreeberd_TRNR 
 				AnimationMode		= LOOP
-				Distance = 100	;Added for SEE!
+				//Distance = 100	;Added for SEE!
+				AnimationSpeedFactorRange	= 0.2 0.2 ; Added for SEE! Slow down turning with 80%
 			End
 		End
-		
 		AnimationState				= TURN_LEFT
 			StateName				= Turn
 			Animation				= Walk
 				AnimationName		= RUTreeberd_TRNL 
 				AnimationMode		= LOOP
-				Distance = 100	;Added for SEE!
+				AnimationSpeedFactorRange	= 0.2 0.2 ; Added for SEE! Slow down turning with 80%
 			End
 		End
 		
