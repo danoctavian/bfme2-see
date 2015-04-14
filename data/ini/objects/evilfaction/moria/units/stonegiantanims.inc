@@ -385,7 +385,7 @@
 				if Prev == "Moving" then CurDrawableSetTransitionAnimState("TRANS_Stop00") return end
         if Prev == "STATE_JustBuilt" then CurDrawableSetTransitionAnimState("TRANS_Sprout") end
 			EndScript			
-      ParticleSysBone     = BAT_SPINE1 TreeBeardIdleLeaves FollowBone: no
+      //ParticleSysBone     = BAT_SPINE1 TreeBeardIdleLeaves FollowBone: no
 		End
 ;-----------------------
 		
@@ -703,7 +703,7 @@
 				if Prev == "Moving" and CurDrawablePrevAnimFraction()>0.125 then CurDrawableSetTransitionAnimState("TRANS_Stop25R") return end
 				if Prev == "Moving" then CurDrawableSetTransitionAnimState("TRANS_Stop00R") return end
 			EndScript			
-			ParticleSysBone     = BAT_SPINE1 TreeBeardIdleLeaves FollowBone: no
+			//ParticleSysBone     = BAT_SPINE1 TreeBeardIdleLeaves FollowBone: no
 		End
 ;-----------------------
 

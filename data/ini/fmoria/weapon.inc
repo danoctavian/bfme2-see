@@ -347,6 +347,72 @@ Weapon MordorBalrogHeroEffect
 End
 
 ; ----------------------------------------------------------------------------- STONE GIANTS
+Weapon StoneGiantPunch  ; BALANCE TreeBeard Weapon Normal
+  LeechRangeWeapon = Yes
+  AttackRange				= 30.0
+  MeleeWeapon				= Yes
+  DelayBetweenShots			= 2000            ; time between shots, msec
+  FiringDuration			= 1900            ; min 1900 for anim
+  PreAttackDelay			= 1100
+  PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
+  FireFX					= FX_TreeBeardPunch
+  RadiusDamageAffects		= ENEMIES NEUTRALS
+  DamageDealtAtSelfPosition = Yes ; A melee based AoE.  Arc radiates from me, not them
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = ROHAN_TREEBEARD_PUNCH_DAMAGE
+    Radius        = ROHAN_TREEBEARD_PUNCH_RADIUS
+    DelayTime     = 0
+    DamageType    = SIEGE
+    DamageFXType  = CLUBBING
+    DeathType     = NORMAL
+    DamageArc	  = 60 //40
+  End
+  MetaImpactNugget                    ; A Nugget that throws things back with force
+    ShockWaveAmount   = 100.0 //50.0
+    ShockWaveRadius   = ROHAN_TREEBEARD_PUNCH_RADIUS
+    ShockWaveTaperOff = 1.0
+    ShockWaveArc      = 60 //40
+;    ShockWaveZMult   = 0.75
+;    HeroResist		  = 0.90		; 90% resistance to heroes
+  End
+End
+
+; ------------------------------------------------------------------------------
+
+Weapon StoneGiantBuildingTeardown  ; BALANCE TreeBeard building teardown attack
+  RadiusDamageAffects = ENEMIES NEUTRALS
+  CanFireWhileMoving    = No
+  	LeechRangeWeapon = Yes	;Just like the troll, this needs to go with Melee to let me hurt round buildings.
+  AttackRange           = 20.0
+  AntiStructure         = Yes            ; Ram ONLY affects structures -- buildings, walls, gates
+  AntiGround            = No             ; ditto
+  MeleeWeapon           = Yes
+  AcceptableAimDelta    = 20             ; Can't ram sideways (but give a little slack)
+  FireFX                = FX_StoneGiantBash
+  DelayBetweenShots			= 3900            ; time between shots, msec
+  FiringDuration			= 1900            ; min 1900 for anim
+  PreAttackDelay			= 1100
+  PreAttackType         = PER_SHOT        ; Do the delay each time we attack a new target
+
+  DamageNugget                        ; A basic Nugget that just does damage
+    Damage        = ROHAN_TREEBEARD_BUILDINGATTACK_DAMAGE
+    Radius        = 0.0
+    DelayTime     = 0
+    DamageType    = SIEGE
+    DamageFXType  = CLUBBING
+    DeathType     = NORMAL
+  End
+;  MetaImpactNugget                    ; A Nugget that throws things back with force
+;	HeroResist			= .75
+;   ShockWaveAmount   = 10.0
+;    ShockWaveRadius   = 8.0
+;    ShockWaveTaperOff = 1.0
+;    ShockWaveZMult    = 0.40
+;  End
+End
+
+; ------------------------------------------------------------------------------
 ;	This is the toggle weapon for ents. They will reload, throw, reload straight away, and constantly hold a rock.
 Weapon StoneGiantRockThrow									//This weapon is used by ALL Ents!!! /Naz
 	HoldDuringReload			= Yes							; Cache any commands during the reload so we don't wander off half way through reload.
