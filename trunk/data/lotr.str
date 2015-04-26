@@ -16302,6 +16302,20 @@ CONTROLBAR:ToolTipBuildWildMarauderHorde
 "Recruit up to 2 units of The Great Goblin's wild hobgoblin elite \n -the Guardians of Gundabad. \n \n Strong vs most units, incl heroes. \n \n Requires level 3 Goblin Cave, Fissure, \n Scavenged Blades and Armor upgrades."
 END
 
+CONTROLBAR:ConstructGundabadOrcPikemanHorde
+"Gundabad Orc Pikemen"
+END
+CONTROLBAR:ToolTipBuildGundabadOrcPikemanHorde
+"Recruit up to 2 units of Azog's pikemen elite \n -the armoured Orcs of Gundabad. \n \n Strong vs most units, incl heroes. \n \n Requires level 3 Goblin Cave, Fissure, \n Scavenged Blades and Armor upgrades."
+END
+
+CONTROLBAR:ConstructGundabadOrcSwordsmanHorde
+"Gundabad Orc Swordsmen"
+END
+CONTROLBAR:ToolTipBuildGundabadOrcSwordsmanHorde
+"Recruit up to 2 units of Azog's swordsmen elite \n -the armoured Orcs of Gundabad. \n \n Strong vs most units, incl heroes. \n \n Requires level 3 Goblin Cave, Fissure, \n Scavenged Blades and Armor upgrades."
+END
+
 CONTROLBAR:ConstructGoblinCave
 "Build Goblin Cave"
 END
@@ -16360,12 +16374,21 @@ END
 OBJECT:WildSpiderRiderHorde
 "Goblin Spider Rider"
 END   
-OBJECT:WildMarauder
-"Guardians of Moria"
+OBJECT:GundabadOrcPikeman
+"Gundabad Orc Pikemen"
 END
-OBJECT:WildMarauderHorde
-"Guardian of Moria"
+OBJECT:GundabadOrcPikemanHorde
+"Gundabad Orc Pikeman"
 END
+OBJECT:GundabadOrcSwordsman
+"Gundabad Orc Swordsmen"
+END
+OBJECT:GundabadOrcSwordsmanHorde
+"Gundabad Orc Swordsman"
+END
+
+
+
 OBJECT:DwarvenCastleWallHubExpansion
 "Wall Hub Expansion"
 END

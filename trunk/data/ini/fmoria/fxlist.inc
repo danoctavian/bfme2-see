@@ -296,3 +296,145 @@ FXList FX_WildMountaingiantSplatDustAtBAT_SPINE1
 		BoneName = BAT_SPINE1
 	End
 End
+
+;----------------------------------------------
+FXList FX_GreatGoblinRightFootStep_Dust
+	ParticleSystem
+		Name = entFootDust
+		OnlyIfOnLand = Yes			//Added for SEE!
+		Offset = X:0.0 Y:2.0 Z:0.0	//Added for SEE! (Y is set to "2" for RIGHT FOOT ONLY as EA missplaced the FX in relation to the bone! /Naz)
+	End
+	ParticleSystem
+		Name = MumakilFootSplash
+		OnlyIfOnWater = Yes
+	End
+
+    DynamicDecal	; A decal that belongs to nobody, but updates internally to fade and tint and such
+		DecalName	= SCCTrollFoot
+		Size			= 15				; Match radius in SpellBookSummonBalrog (this is square length, and there is radius, so this should be double that one)
+		Color		= R:128 G:128 B:128
+
+		OpacityStart			= 0
+		OpacityFadeTimeOne	= 500
+		OpacityPeak			= 255
+		OpacityPeakTime		= 255
+		OpacityFadeTimeTwo	= 20000
+		OpacityEnd			= 0
+
+		StartingDelay	= 0
+		Lifetime	= 21000
+	End
+End
+;----------------------------------------------
+FXList FX_GreatGoblinLeftFootStep_Dust
+	ParticleSystem
+		Name = entFootDust
+		OnlyIfOnLand = Yes			//Added for SEE!
+		Offset = X:0.0 Y:-2.0 Z:0.0	//Added for SEE!
+	End
+	ParticleSystem
+		Name = MumakilFootSplash
+		OnlyIfOnWater = Yes
+	End
+
+    DynamicDecal	; A decal that belongs to nobody, but updates internally to fade and tint and such
+		DecalName	= SCCTrollFoot
+		Size			= 15				; Match radius in SpellBookSummonBalrog (this is square length, and there is radius, so this should be double that one)
+		Color		= R:128 G:128 B:128
+
+		OpacityStart			= 0
+		OpacityFadeTimeOne	= 500
+		OpacityPeak			= 255
+		OpacityPeakTime		= 255
+		OpacityFadeTimeTwo	= 20000
+		OpacityEnd			= 0
+
+		StartingDelay	= 0
+		Lifetime	= 21000
+	End
+End
+
+;----------------------------------------------
+FXList FX_GreatGoblinRightFootStep_Snow
+
+	ParticleSystem
+		Name = trollFootDust_Snow
+		OnlyIfOnLand = Yes			//Added for SEE!
+		Offset = X:-4.0 Y:2.0 Z:0.0	//Added for SEE! (Y is set to "2" for RIGHT FOOT ONLY as EA missplaced the FX in relation to the bone! /Naz)
+	End
+	ParticleSystem
+		Name = MumakilFootSplash
+		OnlyIfOnWater = Yes
+	End
+
+    DynamicDecal	; A decal that belongs to nobody, but updates internally to fade and tint and such
+		DecalName	= SCCTrollFoot_Snow
+		Size			= 15				; Match radius in SpellBookSummonBalrog (this is square length, and there is radius, so this should be double that one)
+		Color		= R:200 G:200 B:225
+
+		OpacityStart			= 0
+		OpacityFadeTimeOne	= 100
+		OpacityPeak			= 255
+		OpacityPeakTime		= 255
+		OpacityFadeTimeTwo	= 20000
+		OpacityEnd			= 0
+
+		StartingDelay	= 0
+		Lifetime	= 21000
+	End
+End
+;----------------------------------------------
+FXList FX_GreatGoblinLeftFootStep_Snow
+
+	ParticleSystem
+		Name = trollFootDust_Snow
+		OnlyIfOnLand = Yes			//Added for SEE!
+		Offset = X:-4.0 Y:-2.0 Z:0.0	//Added for SEE!
+	End
+	ParticleSystem
+		Name = MumakilFootSplash
+		OnlyIfOnWater = Yes
+	End
+
+    DynamicDecal	; A decal that belongs to nobody, but updates internally to fade and tint and such
+		DecalName		= SCCTrollFoot_Snow
+		Size			= 15				; Match radius in SpellBookSummonBalrog (this is square length, and there is radius, so this should be double that one)
+		Color			= R:200 G:200 B:225
+
+		OpacityStart		= 0
+		OpacityFadeTimeOne	= 100
+		OpacityPeak			= 255
+		OpacityPeakTime		= 255
+		OpacityFadeTimeTwo	= 20000
+		OpacityEnd			= 0
+
+		StartingDelay	= 0
+		Lifetime		= 21000
+	End
+End
+;----------------------------------------------
+FXList FX_GreatGoblinRightFootStep
+	FXListAtBonePos
+		FX = FX_GreatGoblinRightFootStep_Dust
+		BoneName = "Bip R Foot"
+		Weather = NORMAL
+	End
+	FXListAtBonePos
+		FX = FX_GreatGoblinRightFootStep_Snow
+		BoneName = "Bip R Foot"
+		Weather = SNOWY
+	End
+End
+;----------------------------------------------
+FXList FX_GreatGoblinLeftFootStep
+	FXListAtBonePos
+		FX = FX_GreatGoblinLeftFootStep_Dust
+		BoneName = "Bip L Foot"
+		Weather = NORMAL
+	End
+	FXListAtBonePos
+		FX = FX_GreatGoblinLeftFootStep_Snow
+		BoneName = "Bip L Foot"
+		Weather = SNOWY
+	End
+End

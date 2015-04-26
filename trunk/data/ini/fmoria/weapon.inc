@@ -365,7 +365,7 @@ Weapon StoneGiantPunch  ; BALANCE TreeBeard Weapon Normal
     DelayTime     = 0
     DamageType    = SIEGE
     DamageFXType  = CLUBBING
-    DeathType     = NORMAL
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
     DamageArc	  = 60 //40
   End
   MetaImpactNugget                    ; A Nugget that throws things back with force
@@ -401,7 +401,7 @@ Weapon StoneGiantBuildingTeardown  ; BALANCE TreeBeard building teardown attack
     DelayTime     = 0
     DamageType    = SIEGE
     DamageFXType  = CLUBBING
-    DeathType     = NORMAL
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
   End
 ;  MetaImpactNugget                    ; A Nugget that throws things back with force
 ;	HeroResist			= .75
@@ -735,7 +735,7 @@ Weapon MinorSpiderMandibles				; BALANCE Minor Spider Weapon
     DelayTime     = 0
     DamageType    = HERO
     DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
     FlankingBonus = 50%
   End
 ;	MetaImpactNugget                    ; A Nugget that throws things back with force
@@ -764,7 +764,7 @@ Weapon SummonedSpiderlingMandibles				; BALANCE Wild Spiderling Weapon
     DelayTime     = 0
     DamageType    = CAVALRY
    ; DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
     FlankingBonus = 50%
   End
 End
@@ -867,7 +867,7 @@ Weapon WildGoblinKingPoisonedStinger
 		DelayTime     = 0
 		DamageType    = SLASH
 		DamageFXType  = SWORD_SLASH
-		DeathType     = NORMAL
+		DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
 	End
 
 	DOTNugget                        ; A basic Nugget that just does damage
@@ -877,7 +877,7 @@ Weapon WildGoblinKingPoisonedStinger
 		DelayTime     = 0
 		DamageType    = POISON
 		DamageFXType  = POISON
-		DeathType     = NORMAL
+		DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
 		DamageInterval = 1000
 		DamageDuration = 30000
 		SpecialObjectFilter = AFFECTED_BY_POISON_OBJECTFILTER
@@ -923,7 +923,7 @@ Weapon WildFortressBatCloudBasicWeapon
 		Radius		= 50.0
 		DamageType	= PIERCE
 		;DamageFXType	= MAGIC
-		DeathType	= NORMAL
+		DeathType	= LASERED ;now always used instead of NORMAL (Sûl)
 		DamageSpeed	= 1400.0
 	End
 End
@@ -1569,7 +1569,7 @@ Weapon GoblinFighterSwordPoisonedUpgraded						//This is not used, I think? (Naz
 		DelayTime				= 0
 		DamageType				= SLASH
 		DamageFXType			= SWORD_SLASH
-		DeathType				= NORMAL
+		DeathType				= LASERED ;now always used instead of NORMAL (Sûl)
 		FlankingBonus			= 50%
 	End
 
@@ -1580,7 +1580,7 @@ Weapon GoblinFighterSwordPoisonedUpgraded						//This is not used, I think? (Naz
 		DelayTime				= 0
 		DamageType				= POISON
 		DamageFXType			= POISON
-		DeathType				= NORMAL
+		DeathType				= LASERED ;now always used instead of NORMAL (Sûl)
 		DamageInterval			= 1000
 		DamageDuration			= 30000
 		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER
@@ -1621,7 +1621,7 @@ Weapon CrebainBasicWeapon
 		Radius			= 10.0
 		DamageType		= SLASH
 		DamageFXType		= MAGIC
-		DeathType		= NORMAL
+		DeathType		= LASERED ;now always used instead of NORMAL (Sûl)
 		;DamageSpeed		= 1400.0
 	End
 End
@@ -3085,7 +3085,7 @@ Weapon WildSpiderRiderBowWarhead
     DelayTime     = 0
     DamageType    = PIERCE
     DamageFXType  = EVIL_ARROW_PIERCE
-    DeathType     = NORMAL
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
     DamageScalar  = 50% NONE +GondorTowerShieldGuard +RohanSpearmen +ElvenMithlondSentry +DwarvenPhalanx +ArnorTowerShieldGuard
     DamageScalar  = 50% NONE +AngmarRhudaurSpearman +WildMarauder +IsengardPikeman +AngmarHillTroll +MordorEasterling
   End
@@ -3125,7 +3125,7 @@ Weapon WildSpiderRiderBowFireWarhead
 		DelayTime     = 0
 		DamageType    = PIERCE
 		DamageFXType  = EVIL_ARROW_PIERCE
-		DeathType     = NORMAL
+		DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
 	    	DamageScalar  = 50% NONE +GondorTowerShieldGuard +RohanSpearmen +ElvenMithlondSentry +DwarvenPhalanx +ArnorTowerShieldGuard
 	    	DamageScalar  = 50% NONE +AngmarRhudaurSpearman +WildMarauder +IsengardPikeman +AngmarHillTroll +MordorEasterling
 	End
@@ -3148,7 +3148,7 @@ Weapon WildSpiderRiderSword
 		Radius					= 0.0
 		DelayTime				= 0
 		DamageType				= CAVALRY
-		DeathType				= NORMAL
+		DeathType				= LASERED ;now always used instead of NORMAL (Sûl)
 		FlankingBonus				= 50%
 		ForbiddenUpgradeNames			= Upgrade_WildForgedBlades
 	End
@@ -3159,7 +3159,7 @@ Weapon WildSpiderRiderSword
 		DelayTime				= 0
 		DamageType				= CAVALRY
 		DamageFXType				= SWORD_SLASH
-		DeathType				= NORMAL
+		DeathType				= LASERED ;now always used instead of NORMAL (Sûl)
 		RequiredUpgradeNames			= Upgrade_WildForgedBlades
 		FlankingBonus 				= 50%
 	End
@@ -3171,7 +3171,7 @@ Weapon WildSpiderRiderSword
 		DelayTime			= 0
 		DamageType			= POISON
 		DamageFXType			= POISON
-		DeathType			= NORMAL
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
 		DamageInterval			= 1000
 		DamageDuration			= 10000
 		SpecialObjectFilter		= AFFECTED_BY_POISON_OBJECTFILTER 
@@ -3228,7 +3228,7 @@ Weapon WildMountainGiantRockMeleeAttack							// Smash straight down with the ro
     DelayTime     = 0
     DamageType    = SIEGE
     DamageFXType  = CLUBBING
-    DeathType     = NORMAL
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
     DamageArc	  = 180
   End
   MetaImpactNugget                    ; A Nugget that throws things back with force
@@ -3307,7 +3307,7 @@ Weapon WildMountainGiantRockFromThinAirWarhead
     DelayTime     = 0
     DamageType    = SIEGE
     DamageFXType  = SMALL_ROCK
-    DeathType     = NORMAL
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
   End
   MetaImpactNugget                    ; A Nugget that throws things back with force
 ;	HeroResist			= .75
@@ -3338,7 +3338,7 @@ Weapon GoblinWolfWeapon
 //    DamageScalar  = 300% NONE +GondorTowerShieldGuard +GondorTowerShieldGuardHorde +RohanSpearmen +RohanSpearmenHorde +ElvenMithlondSentry +ElvenMithlondSentryHorde +DwarvenPhalanx +DwarvenPhalanxHorde  
  //   DamageScalar  = 300% NONE +MordorEasterling +MordorEasterlingHorde +IsengardPikeman +IsengardPikemanHorde +AngmarHillTrollHorde +AngmarHillTroll +AngmarRhudaurSpearmen +AngmarRhudaurSpearman 
     DamageFXType  = SWORD_SLASH
-    DeathType     = NORMAL
+    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
     DamageScalar  = 10% ANY +STRUCTURE
   End
 End

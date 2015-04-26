@@ -20,9 +20,9 @@
 #define HERO_RESPAWN_TIME									180000	// 3 minutes - All fortress heroes time to get revived from death!
 #define HERO_RESPAWN_TIME_LONG							240000	// 4 minutes - Gandalf the White's time to get revived from death!
 ;--------  New SEE Hero resurrection stats!
-#define HERO_RESPAWN_COST_MIN								500		// Minimal heroes like Hobbit Heroes!
-#define HERO_RESPAWN_COST_LO								1000	// Normal heroes like Arwen, Eowyn & GoblinKing, etc!
-#define HERO_RESPAWN_COST_MED								2000   // Bigger heroes like Aragorn, Legolas, Gimli, etc!
+#define HERO_RESPAWN_COST_MIN								500		// Minimal heroes like Hobbit heroes!
+#define HERO_RESPAWN_COST_LO								1000	// Normal heroes like Arwen, Eowyn, Eomer, Yazneg, Fimbul, etc!
+#define HERO_RESPAWN_COST_MED								2000   // Bigger heroes like Aragorn, Legolas, Gimli, Azog, Bolg, etc!
 #define HERO_RESPAWN_COST_HI								3000	// Major heroes like WitchKing, Saruman, Gandalf, Giant Eagles, etc!
 #define HERO_RESPAWN_COST_VHI								5000	// Gandalf the White!
 
@@ -2113,11 +2113,11 @@
 
 #define NORMAL_DWARF_HERO_SPEED				45
 #define NORMAL_GOOD_HERO_SPEED				50
-#define NORMAL_EVIL_HERO_SPEED				55	; RotWK originally 50
+#define NORMAL_EVIL_HERO_SPEED					55	; RotWK originally 50
 #define NORMAL_EVIL_FAST_HERO_SPEED			60	; RotWK originally 55
 
-#define NORMAL_GOOD_LEGOLAS_SPEED			50
-#define NORMAL_GOOD_HOBBIT_SPEED			35
+#define NORMAL_GOOD_LEGOLAS_SPEED				50
+#define NORMAL_GOOD_HOBBIT_SPEED				35
 #define NORMAL_GOOD_THRANDUIL_SPEED			50
 
 

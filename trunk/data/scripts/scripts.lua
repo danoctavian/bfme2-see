@@ -1891,3 +1891,42 @@ function OnDwarvenMinerCreated(self)
 	
 end
 
+function OnGundabadOrcsCreated(self)
+
+	ObjectHideSubObjectPermanently( self, "s1", true )
+	ObjectHideSubObjectPermanently( self, "s2", true )
+	ObjectHideSubObjectPermanently( self, "s3", true )
+
+	ObjectHideSubObjectPermanently( self, "h1", true )
+	ObjectHideSubObjectPermanently( self, "h2", true )
+	ObjectHideSubObjectPermanently( self, "h3", true )
+	ObjectHideSubObjectPermanently( self, "h4", true )
+	ObjectHideSubObjectPermanently( self, "h5", true )
+
+	ObjectHideSubObjectPermanently( self, "FORGED_BLADE", true )
+	ObjectHideSubObjectPermanently( self, "FORGED_BLADES", true )
+
+    local helmet         =    GetRandomNumber()
+    local armor          =    GetRandomNumber()
+
+    if helmet <= 0.333 then
+        ObjectHideSubObjectPermanently( self, "s1", false )
+    elseif helmet <= 0.666 then
+        ObjectHideSubObjectPermanently( self, "s2", false )
+     else
+        ObjectHideSubObjectPermanently( self, "s3", false )
+    end   
+
+    if armor <= 0.200 then
+        ObjectHideSubObjectPermanently( self, "h1", false )
+    elseif armor <= 0.400 then
+        ObjectHideSubObjectPermanently( self, "h2", false )
+    elseif armor <= 0.600 then
+        ObjectHideSubObjectPermanently( self, "h3", false )
+    elseif armor <= 0.800 then
+        ObjectHideSubObjectPermanently( self, "h4", false )
+    else
+        ObjectHideSubObjectPermanently( self, "h5", false )
+    end  
+
+end
