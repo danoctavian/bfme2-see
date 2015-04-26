@@ -2799,3 +2799,167 @@ AudioEvent MoriaGoblinDrumHit_SEE
   Type   = world shrouded everyone
   SubmixSlider = SoundFX
 End
+
+;------------------------------------ GREAT GOBLIN (Weta)
+
+AudioEvent GreatGoblinVoiceCaptureBuilding
+  Sounds = GreatG_BonesWillBe GreatG_YoullBeHung GreatG_NeverBeFound GreatG_DownInTheDeep 
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GreatGoblinVoiceAttackBuilding
+  Sounds = GreatG_BringUpTheMangler GreatG_BoneBreaker GreatG_SpiesThievesAssasins GreatG_MakeThemSquak
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GreatGoblinVoiceAttackCharge
+  Sounds = GreatG_JustTheHead GreatG_WhatAreU GreatG_WhatAreYouDoing GreatG_YouThought  
+  Sounds = GreatG_CutOff GreatG_IKnowSomeone GreatG_JustTheHead GreatG_KillThemAll GreatG_MakeThemSquak GreatG_SlashThem 
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GreatGoblinVoiceEnterStateAttackCharge
+  Sounds = GreatG_JustTheHead GreatG_WhatAreU GreatG_WhatAreYouDoing GreatG_YouThought  
+  Sounds = GreatG_CutOff GreatG_IKnowSomeone GreatG_JustTheHead GreatG_KillThemAll GreatG_MakeThemSquak GreatG_SlashThem 
+    Limit = 1
+    Volume        = BATTLE_CHATTER_VOLUME
+    MinVolume     = BATTLE_CHATTER_MIN_VOLUME
+    Type          = world allies enemies voice shrouded
+    SubmixSlider  = voice
+    MaxRange      = BATTLE_CHATTER_RANGE
+    PlayPercent   = BATTLE_CHATTER_PLAY_PERCENT
+End
+
+AudioEvent GreatGoblinVoiceAttack
+  Sounds = GreatG_JustTheHead GreatG_WhatAreU GreatG_WhatAreYouDoing GreatG_YouThought
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+Multisound GreatGoblinVoiceAttackMS
+	Subsounds = GreatGoblinVoiceAttack //OrcVoiceAttack2
+End
+
+AudioEvent GreatGoblinVoiceDie
+  Sounds = GreatG_ThatWillDoIt //MUBlOrc_voidiea MUBlOrc_voidieb MUBlOrc_voidiec MUBlOrc_voidied MUBlOrc_voidiee MUBlOrc_voidief MUBlOrc_voidieg MUBlOrc_voidieh MUBlOrc_voidiei
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinRange = 500
+  MaxRange = 1000
+  Type        = world shrouded everyone voice
+  SubmixSlider = voice
+End
+
+AudioEvent GreatGoblinVoiceDisengage
+  Sounds = GreatG_GoblinCleaver GreatG_DontJustStand
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = HELPME_MINVOLUME 
+  Type        = world player voice
+  Priority = critical
+  SubmixSlider = voice
+End
+
+
+AudioEvent GreatGoblinVoiceMoveCamp
+  Sounds = GreatG_DontJustStand GreatG_SpiesThievesAssasins GreatG_VeryWell 
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GreatGoblinVoiceMoveShip
+  Sounds = GreatG_VeryWell GreatG_WellWellWell  
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GreatGoblinVoiceMoveGarr
+  Sounds = GreatG_VeryWell GreatG_WellWellWell 
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+
+AudioEvent GreatGoblinVoiceMove
+  Sounds = GreatG_DefilingDays GreatG_DontJustStand GreatG_IKnowSomeone GreatG_VeryWell
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  PlayPercent = VOICE_MOVE_PLAY_PERCENT
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+Multisound GreatGoblinVoiceMoveMS
+	Subsounds = GreatGoblinVoiceMove //OrcVoiceMove2
+End
+
+
+AudioEvent GreatGoblinVoiceMoveGroup
+  Sounds = GreatG_DefilingDays GreatG_DontJustStand GreatG_IKnowSomeone GreatG_VeryWell
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GreatGoblinVoiceSalute
+  Sounds = GreatG_DefilingDays GreatG_IKnowSomeone GreatG_WellWellWell  
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GreatGoblinVoiceSelectBattle
+  Sounds = GreatG_WhoWouldBe GreatG_VeryWell GreatG_Speak GreatG_LookWhoItIs GreatG_KingUnder GreatG_MakesYouNobody
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+AudioEvent GreatGoblinVoiceSelect
+  Sounds = GreatG_WhoWouldBe GreatG_VeryWell GreatG_Speak GreatG_LookWhoItIs GreatG_KingUnder GreatG_MakesYouNobody
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+
+Multisound GreatGoblinVoiceSelectMS
+	Subsounds = GreatGoblinVoiceSelect //HeroVoiceSelect2
+End
+
+AudioEvent GreatGoblinVoiceRetreat
+  Sounds = GreatG_GoblinCleaver GreatG_DontJustStand GreatG_ThatWillDoIt
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+
+
+AudioEvent GreatGoblinVoiceLeap
+  Sounds = GreatG_CutOff GreatG_KillThemAll GreatG_SlashThem 
+  Volume      = UNIT_RESPONSE_VOLUME
+  MinVolume   = UNIT_RESPONSE_MINVOLUME
+  Type        = world player voice
+  SubmixSlider = voice
+End
+

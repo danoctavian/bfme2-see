@@ -835,6 +835,10 @@
 		<!-- This contains events specific to the IsengardFighter. Kris -->
         <EventHandler EventName="OnCreated"				ScriptFunctionName="OnMoriaGoblinsSpearCreated" DebugSingleStep="false"/>
     </EventList>
+	
+    <EventList Name="GundabadOrcFunctions" Inherit="MordorFighterFunctions">
+        <EventHandler EventName="OnCreated"             ScriptFunctionName="OnGundabadOrcsCreated" DebugSingleStep="false"/>
+    </EventList>	
     
     <EventList Name="UpgradeProviderFunctions" Inherit="BaseScriptFunctions">
 		<!-- This contains events specific to Ents. -->
@@ -847,6 +851,6 @@
 	
 	<EventList Name="DwarvenMinerFunctions" Inherit="InfantryFunctions">
     <EventHandler EventName="OnCreated"				ScriptFunctionName="OnDwarvenMinerCreated" DebugSingleStep="false"/>
-    </EventList>
+    </EventList>	
 	
 </SageLuaScriptSection>

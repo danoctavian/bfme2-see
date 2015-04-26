@@ -205,7 +205,7 @@ CommandSet GoblinCaveCommandSet
 	2 	= Command_ConstructGoblinFighterHorde
 	3 = Command_ConstructGoblinSpearmanHorde //Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer			;Maybe scrap this one?
-	4 	= Command_ConstructWildMarauderHorde		;This will require FB & HA (and thus come with it fully upgraded!)
+	4 	= Command_ConstructGundabadOrcSwordsmanHorde //Command_ConstructGundabadOrcPikemanHorde		;This will require FB & HA (and thus come with it fully upgraded!)
 	5 	= Command_PurchaseUpgradeWildCaveLevel2
 	6 	= Command_Sell
 End
@@ -214,7 +214,7 @@ CommandSet GoblinCaveCommandSetLevel2
 	2 	= Command_ConstructGoblinFighterHorde
 	3 = Command_ConstructGoblinSpearmanHorde //Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
-	4 	= Command_ConstructWildMarauderHorde	
+	4 	= Command_ConstructGundabadOrcSwordsmanHorde	
 	5 	= Command_PurchaseUpgradeWildCaveLevel3	
 	6 	= Command_Sell	
 End
@@ -223,7 +223,7 @@ CommandSet GoblinCaveCommandSetLevel3
 	2 	= Command_ConstructGoblinFighterHorde 
 	3 	= Command_ConstructGoblinSpearmanHorde //Command_ConstructGoblinPikemanHorde
 	;4 = Command_ConstructGoblinDrummer
-	4 	= Command_ConstructWildMarauderHorde	
+	4 	= Command_ConstructGundabadOrcSwordsmanHorde	
 	6 	= Command_Sell
 End
 
@@ -396,6 +396,19 @@ CommandSet WildMarauderCommandSet
 	4 	= Command_PurchaseUpgradeWildForgedBlade				; Pre-req!
 	5 	= Command_PurchaseUpgradeWildHeavyArmor				; Pre-req!
 	6 	= Command_PurchaseUpgradeWildSpiderVenomBlades //Command_PurchaseUpgradeWildBasicTraining
+	12 	= Command_CaptureBuilding
+	13 	= Command_AttackMove
+	14 	= Command_Stop
+	16	= Command_SetStanceBattle
+	17	= Command_SetStanceAggressive
+	18	= Command_SetStanceHoldGround
+End
+CommandSet GundabadOrcPikemanCommandSet
+	1  	= Command_ToggleStance
+	2  	= Command_IsengardPikemanPorcupineFormation
+	3	= Command_PurchaseUpgradeWildBasicTraining
+	4 	= Command_PurchaseUpgradeWildForgedBlade				; Pre-req!
+	5 	= Command_PurchaseUpgradeWildHeavyArmor				; Pre-req!
 	12 	= Command_CaptureBuilding
 	13 	= Command_AttackMove
 	14 	= Command_Stop
@@ -912,7 +925,7 @@ CommandSet EGH_WildPorterCommandSet
 End
 
 CommandSet EGH_GoblinFissureCommandSet	
-	1 = Command_ConstructWildMarauderHorde
+	1 = Command_ConstructGundabadOrcPikemanHorde //Command_ConstructWildMarauderHorde
 	//2 = Command_ConstructGoblinTroll
 	//3 = Command_ConstructWildMountainGiant
 	//4 = Command_PurchaseUpgradeWildFissureLevel2

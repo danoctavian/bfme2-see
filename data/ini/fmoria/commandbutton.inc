@@ -418,15 +418,31 @@ CommandButton Command_ConstructGoblinSpearmanHorde
 End
 
 ; ------------------------------------------------------------------------------ SEE!
-CommandButton Command_ConstructWildMarauderHorde
+CommandButton Command_ConstructGundabadOrcPikemanHorde //Command_ConstructWildMarauderHorde
 	Command				= UNIT_BUILD
-	Object				= GoblinPikemanHorde //WildMarauderHorde
+	Object				= GundabadOrcPikemanHorde //WildMarauderHorde
 	Options				= CANCELABLE NEED_UPGRADE
 	NeededUpgrade   	= Upgrade_WildCaveLevel3 Upgrade_TechnologyWildForgedBlades Upgrade_TechnologyWildHeavyArmor //Upgrade_TechnologyWildSpiderVenomSacks  
-	TextLabel			= CONTROLBAR:ConstructWildMarauderHorde
+	TextLabel			= CONTROLBAR:ConstructGundabadOrcPikemanHorde
 	ButtonImage			= BWFissure_Marauder
 	ButtonBorderType		= BUILD  	
-	DescriptLabel			= CONTROLBAR:ToolTipBuildWildMarauderHorde
+	DescriptLabel			= CONTROLBAR:ToolTipBuildGundabadOrcPikemanHorde
+	Radial				= Yes
+	InPalantir	   		= Yes
+	ShowProductionCount	= Yes	
+	LacksPrerequisiteLabel	= TOOLTIP:LackLevelWildTreasureTrove_SEE
+End
+
+; ------------------------------------------------------------------------------ SEE!
+CommandButton Command_ConstructGundabadOrcSwordsmanHorde //Command_ConstructWildMarauderHorde
+	Command				= UNIT_BUILD
+	Object				= GundabadOrcSwordsmanHorde //WildMarauderHorde
+	Options				= CANCELABLE NEED_UPGRADE
+	NeededUpgrade   	= Upgrade_WildCaveLevel3 Upgrade_TechnologyWildForgedBlades Upgrade_TechnologyWildHeavyArmor //Upgrade_TechnologyWildSpiderVenomSacks  
+	TextLabel			= CONTROLBAR:ConstructGundabadOrcPikemanHorde
+	ButtonImage			= BWFissure_Marauder
+	ButtonBorderType		= BUILD  	
+	DescriptLabel			= CONTROLBAR:ToolTipBuildGundabadOrcPikemanHorde
 	Radial				= Yes
 	InPalantir	   		= Yes
 	ShowProductionCount	= Yes	
