@@ -594,14 +594,14 @@
 
 ; ------------------------------------------------------------------------------ SEE!
 #define	GREAT_GOBLIN_BUILDCOST								2000
-#define GREAT_GOBLIN_HEALTH								3000
-#define	GREAT_GOBLIN_CLUB_DAMAGE							275
+#define GREAT_GOBLIN_HEALTH								9000
+#define	GREAT_GOBLIN_CLUB_DAMAGE							300
 #define	GREAT_GOBLIN_POISON_DAMAGE							25
 
 ;--------------------------SHELOB------------------------------------------- SEE!
 #define WILD_SHELOB_BUILDCOST								2500
-#define WILD_SHELOB_HEALTH									25000
-#define WILD_SHELOB_HEALTH_DAMAGED						11000
+#define WILD_SHELOB_HEALTH									33000
+#define WILD_SHELOB_HEALTH_DAMAGED						15000
 #define WILD_SHELOB_HEALTH_RECOVERY_TIME					10000
 #define	WILD_SHELOB_VISION_RANGE 							175
 #define WILD_SHELOB_TUNNEL_DISTANCE						9999999 ; this large so she can teleport to all points on screen
