@@ -562,9 +562,9 @@ AudioEvent CampGoblinDieFortressAlly
 End
 
 AudioEvent CampGoblinDieGoblinKing
-  Sounds = ECGoKin_diea ECGoKin_dieb
-  Volume = #ADD( CAMP_GOBLIN_VOLUME 0 )
-  MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 0 )
+  Sounds = GreatG_ThatWillDoIt //ECGoKin_diea ECGoKin_dieb
+  Volume = #ADD( CAMP_GOBLIN_VOLUME 10 )
+  MinVolume = #ADD( CAMP_GOBLIN_MINVOLUME 10 )
   Type = world player voice
   SubmixSlider = voice
 End
@@ -2896,7 +2896,7 @@ End
 
 
 AudioEvent GreatGoblinVoiceMove
-  Sounds = GreatG_DefilingDays GreatG_DontJustStand GreatG_IKnowSomeone GreatG_VeryWell
+  Sounds = GreatG_DefilingDays GreatG_DontJustStand GreatG_IKnowSomeone GreatG_JustTheHead GreatG_VeryWell
   Volume      = UNIT_RESPONSE_VOLUME
   MinVolume   = UNIT_RESPONSE_MINVOLUME
   PlayPercent = VOICE_MOVE_PLAY_PERCENT
@@ -2910,7 +2910,7 @@ End
 
 
 AudioEvent GreatGoblinVoiceMoveGroup
-  Sounds = GreatG_DefilingDays GreatG_DontJustStand GreatG_IKnowSomeone GreatG_VeryWell
+  Sounds = GreatG_DefilingDays GreatG_DontJustStand GreatG_IKnowSomeone GreatG_JustTheHead GreatG_VeryWell
   Volume      = UNIT_RESPONSE_VOLUME
   MinVolume   = UNIT_RESPONSE_MINVOLUME
   Type        = world player voice

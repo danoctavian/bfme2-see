@@ -348,33 +348,39 @@ End
 
 ; ----------------------------------------------------------------------------- STONE GIANTS
 Weapon StoneGiantPunch  ; BALANCE TreeBeard Weapon Normal
-  LeechRangeWeapon = Yes
+  LeechRangeWeapon 			= Yes
   AttackRange				= 30.0
   MeleeWeapon				= Yes
   DelayBetweenShots			= 2000            ; time between shots, msec
-  FiringDuration			= 1900            ; min 1900 for anim
-  PreAttackDelay			= 1100
+  FiringDuration				= 1900            ; min 1900 for anim
+  PreAttackDelay				= 1100
   PreAttackType				= PER_SHOT ; Do the delay each time we attack a new target
   FireFX					= FX_TreeBeardPunch
-  RadiusDamageAffects		= ENEMIES NEUTRALS
-  DamageDealtAtSelfPosition = Yes ; A melee based AoE.  Arc radiates from me, not them
+  RadiusDamageAffects		= ENEMIES NEUTRALS ALLIES
+  DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
 
   DamageNugget                        ; A basic Nugget that just does damage
-    Damage        = ROHAN_TREEBEARD_PUNCH_DAMAGE
-    Radius        = ROHAN_TREEBEARD_PUNCH_RADIUS
-    DelayTime     = 0
-    DamageType    = SIEGE
-    DamageFXType  = CLUBBING
-    DeathType     = LASERED ;now always used instead of NORMAL (Sûl)
-    DamageArc	  = 60 //40
+    Damage        			= ROHAN_TREEBEARD_PUNCH_DAMAGE
+    Radius        			= ROHAN_TREEBEARD_PUNCH_RADIUS
+    DelayTime     			= 0
+    DamageType    			= SIEGE
+    DamageFXType  			= CLUBBING
+    DeathType     			= LASERED ;now always used instead of NORMAL (Sûl)
+    DamageArc	  			= 60 //40
+	DamageScalar  		= 25% ALL ALLIES
+	DamageScalar			= 150% NONE +STRUCTURE //Added for SEE!
+	DamageScalar			= 200% NONE +HERO	//Added for SEE!
+	//DamageScalar  		= 200% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!		
+		
   End
   MetaImpactNugget                    ; A Nugget that throws things back with force
-    ShockWaveAmount   = 100.0 //50.0
-    ShockWaveRadius   = ROHAN_TREEBEARD_PUNCH_RADIUS
-    ShockWaveTaperOff = 1.0
-    ShockWaveArc      = 60 //40
-;    ShockWaveZMult   = 0.75
-;    HeroResist		  = 0.90		; 90% resistance to heroes
+    HeroResist		  	= 0.00		; 0% resistance to heroes    
+	ShockWaveAmount   	= 100.0 //50.0
+    ShockWaveRadius   	= 100.0
+    ShockWaveArc      	= 60 //40	
+    ShockWaveTaperOff 	= 1.0
+	ShockWaveSpeed		= 0.0	
+    ShockWaveZMult   	= 1.50 //0.75
   End
 End
 
@@ -544,9 +550,124 @@ Weapon CaveTrollHeroSmashWeapon
 	End
 End
 
-; ----------------------------------------------------------------------------- SHELOB HERO WEBBING
+; ------------------------------------------------------------------------------ GREAT GOBLIN
+Weapon GreatGoblinClubSwing
+	LeechRangeWeapon		= Yes
+	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
+	RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	MeleeWeapon				= Yes
+	DelayBetweenShots		= 1000 //LURTZ_DELAYBETWEENSHOTS  					; (1500) time between shots, msec
+	PreAttackDelay			= 2000 //500 ;WITCHKING_SWORD_PREATTACKDELAY  		; 300 is mace swing delay time before contact with target.
+	PreAttackType			= PER_SHOT 										; Do the delay each time we attack
+	PreAttackFX          	= FX_TrollTreeSwing
+	FireFX               	= FX_TrollPunchGeneric //FX_GondorSwordHit
+	FiringDuration				= 2000 //1000 ;WITCHKING_FIRINGDURATION  				; Duration of the mace swing 
+	DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+	AcceptableAimDelta		= 15.0 
 
-Weapon ShelobWebbing_SEE ;taken from Legolas' bow - needs designer love
+	DamageNugget                        									; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 10		
+		Damage        		= GREAT_GOBLIN_CLUB_DAMAGE			
+		Radius				= 50.0
+		DamageArc			= 45 
+		;DelayTime			= 0
+		DamageType			= HERO
+		DamageFXType		= CLUBBING
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar  		= 25% ALL ALLIES
+		DamageScalar			= 150% NONE +STRUCTURE //Added for SEE!
+		DamageScalar			= 200% NONE +HERO	//Added for SEE!
+		//DamageScalar  		= 200% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!		
+	End
+	
+	MetaImpactNugget                   										; A Nugget that throws things back with force
+;		HeroResist			= .75
+		ShockWaveAmount	= 40.0
+		ShockWaveRadius		= 40.0
+		ShockWaveArc		= 45											; Should generally be equal to damage arc
+		ShockWaveTaperOff	= 1.0
+		ShockWaveSpeed		= 0.0
+		ShockWaveZMult		= 1.20 //1.6
+	End
+End
+
+Weapon GreatGoblinClubSmash
+	LeechRangeWeapon		= Yes
+	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
+	RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR ALLIES
+	MeleeWeapon				= Yes
+	DelayBetweenShots		= LURTZ_DELAYBETWEENSHOTS  					; (1500) time between shots, msec
+	PreAttackDelay			= 2500 //500 ;WITCHKING_SWORD_PREATTACKDELAY  		; 300 is mace swing delay time before contact with target.
+	PreAttackType			= PER_SHOT 										; Do the delay each time we attack
+	PreAttackFX          	= FX_TrollTreeSwing
+	FireFX               	= FX_TrollPunchGeneric //FX_GondorSwordHit
+	FiringDuration				= 2000 //1000 ;WITCHKING_FIRINGDURATION  				; Duration of the mace swing 
+	DamageDealtAtSelfPosition 	= Yes ; A melee based AoE.  Arc radiates from me, not them
+	AcceptableAimDelta		= 15.0 
+
+	DamageNugget                        									; A basic Nugget that just does damage
+		DamageMaxHeightAboveTerrain = 10		
+		Damage        		= GREAT_GOBLIN_CLUB_DAMAGE			
+		Radius				= 50.0
+		DamageArc			= 45 
+		;DelayTime			= 0
+		DamageType			= HERO
+		DamageFXType		= CLUBBING
+		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageScalar  		= 25% ALL ALLIES
+		DamageScalar			= 150% NONE +STRUCTURE //Added for SEE!
+		DamageScalar			= 200% NONE +HERO	//Added for SEE!
+		//DamageScalar  		= 200% NONE +RohanTreeBerd +RohanEntBirch +RohanEntBirch_Summoned +RohanEntFir +RohanEntFir_Summoned +RohanEntAsh +RohanEntAsh_Summoned +RohanEntOak +RohanEntOak_Summoned +RohanGenericEnt //Added for SEE!		
+	End
+	
+	MetaImpactNugget                   										; A Nugget that throws things back with force
+;		HeroResist			= .75
+		ShockWaveAmount	= 40.0
+		ShockWaveRadius		= 40.0
+		ShockWaveArc		= 45											; Should generally be equal to damage arc
+		ShockWaveTaperOff	= 1.0
+		ShockWaveSpeed		= 0.0
+		ShockWaveZMult		= 1.20 //1.6
+	End
+End
+
+; ------------------------------------------------------------------------------ SEE!
+Weapon PoisonMistWeapon
+	RadiusDamageAffects 	= ENEMIES NEUTRALS
+	FireFX				= FX_ShelobPoisonStingerStrike		;FX_GondorSwordHit
+  
+	DamageNugget                        ; A basic Nugget that just does damage
+		Damage        	= GREAT_GOBLIN_POISON_DAMAGE //25 //35 ;;50
+		Radius        	= 150.0
+		DelayTime     	= 0
+		DamageType    	= POISON //SLASH
+		DamageFXType  	= POISON //SWORD_SLASH
+		DeathType     	= LASERED ;now always used instead of NORMAL (Sûl)
+	End
+	
+	DOTNugget                        ; A basic Nugget that just does damage
+		Damage        	= GREAT_GOBLIN_POISON_DAMAGE
+		AcceptDamageAdd = No
+		Radius        	= 150.0 //250.0
+		DelayTime     	= 0
+		DamageType    	= POISON
+		DamageFXType  	= POISON
+		DeathType     	= LASERED ;now always used instead of NORMAL (Sûl)
+		DamageInterval 	= 500
+		DamageDuration 	= 30000
+		SpecialObjectFilter = AFFECTED_BY_POISON_OBJECTFILTER
+	End
+
+	ParalyzeNugget
+		Radius			= 150.0
+		Duration			= POISONED_STINGER_DURATION
+		SpecialObjectFilter	= CRIPPLE_STRIKE_OBJECT_FILTER
+		ParalyzeFX		= FX_PoisonedStunEffect
+	End
+End
+
+; ----------------------------------------------------------------------------- SHELOB HERO WEBBING
+Weapon ShelobWebbing_SEE
   AttackRange = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 2 ) //250				
   WeaponSpeed = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 10.0 ) //180         ; 5.0 
   MinWeaponSpeed = #MULTIPLY( STANDARD_MELEE_ATTACK_RANGE 9.9 )//120
@@ -715,7 +836,6 @@ Weapon WildShelobPoisonedStinger
 		SpecialObjectFilter 	= AFFECTED_BY_POISON_OBJECTFILTER
 	End
 End
-
 
 ;------------------------------------------------------------------------------
 Weapon MinorSpiderMandibles				; BALANCE Minor Spider Weapon 
@@ -1975,76 +2095,6 @@ Weapon WolfRiderWeapon_Goblin
 	End
 End
 
-; ------------------------------------------------------------------------------ SEE!
-Weapon GreatGoblinClub
-	LeechRangeWeapon		= Yes
-	AttackRange				= STANDARD_MELEE_ATTACK_RANGE
-	RadiusDamageAffects 		= ENEMIES NEUTRALS NOT_SIMILAR
-	MeleeWeapon				= Yes
-	DelayBetweenShots		= LURTZ_DELAYBETWEENSHOTS  					; time between shots, msec
-	PreAttackDelay			= 500 ;WITCHKING_SWORD_PREATTACKDELAY  		; 300 is mace swing delay time before contact with target.
-	PreAttackType			= PER_SHOT 										; Do the delay each time we attack
-	FireFX					= FX_GondorSwordHit
-	FiringDuration				= 1000 ;WITCHKING_FIRINGDURATION  				; Duration of the mace swing 
-	;ClipSize					= 1  											; Commented out, don't see why we need clips for the mace. - 7/9/04
-	;AutoReloadsClip			= Yes
-	;ClipReloadTime			= 5000
-
-	DamageNugget                        									; A basic Nugget that just does damage
-		Damage        		= GREAT_GOBLIN_CLUB_DAMAGE			
-		Radius				= 20.0
-		;DamageArc			= 45 //40 ;Don't use this! Disables damage on enemies? (Naz)
-		DelayTime			= 0
-		DamageType			= HERO
-		DamageFXType		= CLUBBING
-		DeathType			= LASERED ;now always used instead of NORMAL (Sûl)
-	End
-	
-	MetaImpactNugget                   										; A Nugget that throws things back with force
-;		HeroResist			= .75
-		ShockWaveAmount	= 20 //25 //35
-		ShockWaveRadius		= 20
-		ShockWaveArc		= 45 //80 ; ;40				; Should generally be equal to damage arc
-		ShockWaveTaperOff	= 1.0
-		ShockWaveSpeed		= 0.0
-		ShockWaveZMult		= 1.6
-	End
-End
-
-; ------------------------------------------------------------------------------ SEE!
-Weapon PoisonMistWeapon
-	RadiusDamageAffects 	= ENEMIES NEUTRALS
-	FireFX				= FX_ShelobPoisonStingerStrike		;FX_GondorSwordHit
-  
-	DamageNugget                        ; A basic Nugget that just does damage
-		Damage        	= GREAT_GOBLIN_POISON_DAMAGE //25 //35 ;;50
-		Radius        	= 150.0
-		DelayTime     	= 0
-		DamageType    	= POISON //SLASH
-		DamageFXType  	= POISON //SWORD_SLASH
-		DeathType     	= LASERED ;now always used instead of NORMAL (Sûl)
-	End
-	
-	DOTNugget                        ; A basic Nugget that just does damage
-		Damage        	= GREAT_GOBLIN_POISON_DAMAGE
-		AcceptDamageAdd = No
-		Radius        	= 150.0 //250.0
-		DelayTime     	= 0
-		DamageType    	= POISON
-		DamageFXType  	= POISON
-		DeathType     	= LASERED ;now always used instead of NORMAL (Sûl)
-		DamageInterval 	= 500
-		DamageDuration 	= 30000
-		SpecialObjectFilter = AFFECTED_BY_POISON_OBJECTFILTER
-	End
-
-	ParalyzeNugget
-		Radius			= 150.0
-		Duration			= POISONED_STINGER_DURATION
-		SpecialObjectFilter	= CRIPPLE_STRIKE_OBJECT_FILTER
-		ParalyzeFX		= FX_PoisonedStunEffect
-	End
-End
 
 ;------------------------------------------------------------------------------
 Weapon WildHillTrollHammer     ; BALANCE Wild Marauder Weapon
